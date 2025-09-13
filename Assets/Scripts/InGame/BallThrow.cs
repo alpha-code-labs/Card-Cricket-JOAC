@@ -59,7 +59,9 @@ public enum BallLine
     MiddleStump,
     LegStump,
     DowntheLeg,
-    WayDownLeg,
+    // WayDownLeg,
+
+    WayDowntheLegSide
 }
 public enum BattingTiming
 {

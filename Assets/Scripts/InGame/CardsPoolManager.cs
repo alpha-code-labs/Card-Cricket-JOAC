@@ -31,7 +31,7 @@ public class CardsPoolManager : MonoBehaviour
 
     void Start()
     {
-        // InitTextDeck();
+        InitTextDeck();// Initialize the deck with random cards for batiing and bowling disable to keep deck in scene
         InstantiateCards();
         StartTurn();
         // EnergyManager.Instance.RefreshEnergyText();
@@ -57,7 +57,7 @@ public class CardsPoolManager : MonoBehaviour
             card.gameObject.SetActive(false); // Optionally deactivate the card
         }
         HandCards.Clear();
-        // EnergyManager.Instance.IncreaseEnergy(1); // Increment energy at the end of the turn
+        // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
         StartTurn(); // Start the next turn
     }
@@ -90,46 +90,44 @@ public class CardsPoolManager : MonoBehaviour
     void InitTextDeck()
     {
         Deck.Clear();
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.BackfootDefense, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.CutShot, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.PullShot, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.ForwardDefense, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.SquareDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.CoverDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.StraightDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.LegDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.LegGlance, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.Block, EnergyCost = 3 });
-
+        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
+        {
+            Deck.Add(new AttackCardData(strategy));
+        }
+        RandomizeDeck();
         BallThrows.Clear();
 
-        // // 1st Over - Fast Bowler (6 balls)
-        // // Ball 1: Fast, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.Fast));
-        // // Ball 2: In Swing, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.InSwing));
-        // // Ball 3: Fast, Leg Line, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.Leg, BallType.Fast));
-        // // Ball 4: Out Swing, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.OutSwing));
-        // // Ball 5: Fast, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.Fast));
-        // // Ball 6: In Swing, At the Stumps, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.AtTheStumps, BallType.InSwing));
+        //Over - Fast Bowler Right Arm (6 balls)
+        // Initialize bowler variables outside the loop
+        TypeOfBowler bowlerType = TypeOfBowler.Fast;
+        Side bowlerSide = Side.RightArm;
 
-        // // 2nd Over - Spin Bowler (6 balls)
-        // // Ball 1: Off Spin, Off Line, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.OffLine, BallType.OffSpin));
-        // // Ball 2: Leg Spin, At the Stumps, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.AtTheStumps, BallType.LegSpin));
-        // // Ball 3: Off Spin, Leg Line, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.Leg, BallType.OffSpin));
-        // // Ball 4: Leg Spin, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.LegSpin));
-        // // Ball 5: Off Spin, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.OffSpin));
-        // // Ball 6: Leg Spin, At the Stumps, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.AtTheStumps, BallType.LegSpin));
+        for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
+        {
+            // Randomize bowler type and side every 6 balls (start of each over)
+            if (i % 6 == 0)
+            {
+                bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
+                bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+            }
+            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide));
+        }
+    }
+
+    /// <summary>
+    /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
+    /// </summary>
+    [ContextMenu("Randomize Deck")]
+    void RandomizeDeck()
+    {
+        for (int i = Deck.Count - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            AttackCardData temp = Deck[i];
+            Deck[i] = Deck[randomIndex];
+            Deck[randomIndex] = temp;
+        }
+        Debug.Log("Deck has been randomized!");
     }
 
     public BallThrow CurrentBallThrow

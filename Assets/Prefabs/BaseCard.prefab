@@ -166,11 +166,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4274104613330713964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -13.080002, y: 12.63}
   m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!222 &8585434157449616626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2520634405035006231}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -226,10 +226,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -452,8 +452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 12.3, y: 2.5}
-  m_SizeDelta: {x: 125, y: 25}
+  m_AnchoredPosition: {x: 0, y: -191.4}
+  m_SizeDelta: {x: 175, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8988503911832887334
 CanvasRenderer:
@@ -492,8 +492,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.9
+  m_fontSize: 34.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardData:
     battingStrategy: 0
+    cardSprite: {fileID: 0}
     EnergyCost: 3
   titleText: {fileID: 3191242734839578746}
   energyCostText: {fileID: 8613502768501754176}
@@ -655,12 +656,15 @@ MonoBehaviour:
   cardImage: {fileID: 7392748642718047794}
   sprites:
   - {fileID: 21300000, guid: 5c83ad86f21321a42a711545843b8a5e, type: 3}
+  - {fileID: 21300000, guid: 998663c8bc11d93469e123dd578d0727, type: 3}
   - {fileID: 21300000, guid: fdf4c688cac3e844794c05c689f46dd6, type: 3}
   - {fileID: 21300000, guid: 6f5f891fd32213742a4045a757b15dcb, type: 3}
+  - {fileID: 21300000, guid: f4b3a6cee0b90144894096c51c7e492c, type: 3}
+  - {fileID: 21300000, guid: 90be6d53e70d5bc42ae26f33c4c1e6aa, type: 3}
+  - {fileID: 21300000, guid: 2f9e5b8493340c04da17fb8e1325f872, type: 3}
   - {fileID: 21300000, guid: 1704ed32e1a27264f998dbf244f6db38, type: 3}
-  - {fileID: 21300000, guid: 1470d26380d8b6348ac74bd49d023502, type: 3}
-  - {fileID: 21300000, guid: 998663c8bc11d93469e123dd578d0727, type: 3}
   - {fileID: 21300000, guid: bc9150bcb61c14242a5d6890ed7e6fdd, type: 3}
+  - {fileID: 21300000, guid: 1470d26380d8b6348ac74bd49d023502, type: 3}
   - {fileID: 21300000, guid: 289621f7aa17b574ea200d8c6844e5ba, type: 3}
   - {fileID: 21300000, guid: adb4d371a27b4ae48878da86f2adeeac, type: 3}
   - {fileID: 21300000, guid: 0e2da9c7292bc1843ba99149a5a0caed, type: 3}

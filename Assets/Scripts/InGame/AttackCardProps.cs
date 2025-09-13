@@ -27,13 +27,16 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler
     void UpdateDescription()
     {
         descriptionText.text = "";
-        energyCostText.text = "";
+        energyCostText.text = cardData.EnergyCost.ToString();
     }
     string GetTitle()
     {
-        string title = cardData.battingStrategy.ToString().Replace("Shot", " Shot").Replace("Drive", " Drive").Replace("Glance", " Glance").Replace("Defense", " Defense");
-        int index = (int)cardData.battingStrategy;
-        cardImage.sprite = sprites[index];
+        string title = cardData.excelBattinStrategy.ToString().Replace("Shot", " Shot").Replace("Drive", " Drive").Replace("Glance", " Glance").Replace("Defense", " Defense");
+
+        Sprite selectedSprite = cardData.cardSprite;
+        if (selectedSprite != null)
+            cardImage.sprite = selectedSprite;
+
         return title;
     }
     public void OnPointerClick(PointerEventData eventData)
@@ -42,7 +45,16 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler
     }
     void OnClick()
     {
-        ScoreManager.Instance.PlayCard(cardData.battingStrategy);
+        if (EnergyManager.Instance.GetEnergy() < cardData.EnergyCost)
+        {
+            Debug.LogWarning("Not enough energy to play this card.");
+            return;
+        }
+        else
+        {
+            EnergyManager.Instance.HandelEnergyChange(cardData.EnergyCost);
+        }
+        ScoreManager.Instance.PlayExcelBattingStrategy(cardData.excelBattinStrategy);
     }
 
     void OnEnable()
@@ -54,37 +66,4 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler
         CardsPoolManager.OnTurnStarted -= UpdateDescription;
     }
 
-}
-[Serializable]
-public class AttackCardData
-{
-    [SerializeField] internal BattingStrategy battingStrategy;
-    [SerializeField] internal int EnergyCost = 3;
-}
-
-public enum BattingStrategy
-{
-    BackfootDefence,
-    CoverDrive,
-    Cut,
-    ForwardDefence,
-    // LegDrive,
-    LegGlance,
-    Leave,
-    OnDrive,
-    Pull,
-    SquareDrive,
-    StraightDrive,
-    Sweep
-}
-
-public enum OutCome
-{
-    NoRunWideBall = -2,
-    Out = -1,
-    NoRun = 0,
-    OneRuns = 1,
-    TwoRuns = 2,
-    FourRuns = 4,
-    SixRuns = 6
 }

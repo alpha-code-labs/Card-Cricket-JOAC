@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -16,8 +17,7 @@ public class OutComeCalculator : ScriptableObject
     public string excelFilePath = "Data/CricketOutcomes.xlsx";
 
     [Header("Parsed Data")]
-    [SerializeField]
-    private List<OutcomeEntry> outcomeEntries = new List<OutcomeEntry>();
+    [SerializeField, HideInInspector] private List<OutcomeEntry> outcomeEntries = new List<OutcomeEntry>();
 
     // Runtime lookup dictionary
     private Dictionary<OutcomeKey, OutCome> outcomeLookup;
@@ -35,7 +35,6 @@ public class OutComeCalculator : ScriptableObject
             }
         }
     }
-
     // Overloaded method with bowler details
     public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow,
                                     BattingTiming timing)
@@ -55,14 +54,59 @@ public class OutComeCalculator : ScriptableObject
             timing = timing,
             shotSelected = battingStrategy
         };
-
+        string debugKey = $"{key.typeOfBowler}, {key.side}, {key.typeOfBall}, {key.lineOfBall}, {key.lengthOfBall}, {key.shotSelected}";
         if (outcomeLookup.TryGetValue(key, out OutCome outcome))
         {
+            Debug.Log($"Outcome found: {outcome} for {battingStrategy} with keys {debugKey}");
             return outcome;
         }
+        Debug.LogWarning($"No outcome found for: {battingStrategy} with {timing} timing vs Key: {debugKey}");
 
-        Debug.LogWarning($"No outcome found for: {battingStrategy} with {timing} timing vs {ballThrow}");
         return OutCome.NoRun; // Default fallback
+    }
+
+    public BallThrow GetRandomBallThrow(TypeOfBowler bowlerType, Side bowlerSide)
+    {
+        if (outcomeLookup == null || outcomeLookup.Count == 0)
+        {
+            BuildLookupDictionary();
+        }
+
+        // Get all keys that match the specified bowler type and side
+        var matchingKeys = outcomeLookup.Keys.Where(key =>
+            key.typeOfBowler == bowlerType &&
+            key.side == bowlerSide).ToList();
+
+        if (matchingKeys.Count == 0)
+        {
+            Debug.LogWarning($"No matching keys found for bowler type: {bowlerType}, side: {bowlerSide}. Using random generation.");
+            // Fallback to random generation
+            var random = new System.Random();
+            return new BallThrow
+            {
+                bowlerType = bowlerType,
+                bowlerSide = bowlerSide,
+                ballType = (BallType)random.Next(Enum.GetValues(typeof(BallType)).Length),
+                ballLine = (BallLine)random.Next(Enum.GetValues(typeof(BallLine)).Length),
+                ballLength = (BallLength)random.Next(Enum.GetValues(typeof(BallLength)).Length)
+            };
+        }
+
+        // Select a random key from the matching keys
+        var random2 = new System.Random();
+        var selectedKey = matchingKeys[random2.Next(matchingKeys.Count)];
+
+        // Create BallThrow from the selected key
+        var ballThrow = new BallThrow
+        {
+            bowlerType = selectedKey.typeOfBowler,
+            bowlerSide = selectedKey.side,
+            ballType = selectedKey.typeOfBall,
+            ballLine = selectedKey.lineOfBall,
+            ballLength = selectedKey.lengthOfBall
+        };
+
+        return ballThrow;
     }
 
 #if UNITY_EDITOR
@@ -198,13 +242,13 @@ public class OutComeCalculator : ScriptableObject
                 typeOfBall = ParseEnum<BallType>(worksheet.Cells[row, 3].Value?.ToString()),
                 lineOfBall = ParseEnum<BallLine>(worksheet.Cells[row, 4].Value?.ToString()),
                 lengthOfBall = ParseEnum<BallLength>(worksheet.Cells[row, 5].Value?.ToString()),
-                timing = ParseEnum<BattingTiming>(worksheet.Cells[row, 6].Value?.ToString()),
-                shotSelected = ParseEnum<BattingStrategy>(worksheet.Cells[row, 7].Value?.ToString()),
+                // timing = ParseEnum<BattingTiming>(worksheet.Cells[row, 6].Value?.ToString()),
+                shotSelected = ParseEnum<BattingStrategy>(worksheet.Cells[row, 6].Value?.ToString()),
             };
 
             // Handle outcome with special cases
-            string outcomeStr = worksheet.Cells[row, 8].Value?.ToString();
-            string specialOutcome = worksheet.Cells[row, 9].Value?.ToString();
+            string outcomeStr = worksheet.Cells[row, 7].Value?.ToString();
+            string specialOutcome = worksheet.Cells[row, 8].Value?.ToString();
 
             // Check for Wide Ball special case
             if (outcomeStr == "No Run" && specialOutcome == "Wide Ball")
@@ -246,6 +290,8 @@ public class OutComeCalculator : ScriptableObject
                     return (T)(object)OutCome.OneRuns;
                 case "2 Runs":
                     return (T)(object)OutCome.TwoRuns;
+                case "3 Runs":
+                    return (T)(object)OutCome.ThreeRuns;
                 case "4 Runs":
                     return (T)(object)OutCome.FourRuns;
                 case "6 Runs":
@@ -258,7 +304,7 @@ public class OutComeCalculator : ScriptableObject
         }
 
         // Clean the string for enum parsing (existing logic)
-        string cleanValue = value.Replace(" ", "").Replace("_", "");
+        string cleanValue = value.Replace(" ", "").Replace("_", "").Replace("-", "");
 
         if (Enum.TryParse<T>(cleanValue, true, out T result))
         {

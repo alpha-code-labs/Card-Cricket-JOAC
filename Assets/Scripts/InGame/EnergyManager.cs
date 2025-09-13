@@ -10,23 +10,47 @@ public class EnergyManager : MonoBehaviour
     {
         Instance = this;
     }
+    void Start()
+    {
+        RefreshEnergyText();
+    }
 
     [SerializeField] TextMeshProUGUI EnergyText; // Text to display current energy
-    private int energy = 10;
-    public void DecreaseEnergy(int amount)
+    private int energy = 24;
+    private const int maxEnergy = 24;
+    void DecreaseEnergy(int amount)
     {
         energy -= amount;
         if (energy < 0)
         {
-            energy = 0; // Prevent negative energy
-            Debug.LogWarning("Energy cannot be negative. Resetting to 0.");
+            energy = 24; // Prevent negative energy
+            ScoreManager.Instance.LooseWicket();
+            Debug.LogWarning("Energy dropped below zero. Resetting to 24 and losing a wicket.");
         }
         RefreshEnergyText();
     }
-    public void IncreaseEnergy(int amount)
+    void IncreaseEnergy(int amount)
     {
-        RefreshEnergyText();
         energy += amount;
+        if (energy > maxEnergy)
+        {
+            energy = maxEnergy; // Cap energy at 10
+            Debug.LogWarning("Energy cannot exceed 10. Capping to 10.");
+        }
+        RefreshEnergyText();
+    }
+    public void HandelEnergyChange(int amount)// Positive amount to increase, negative to decrease
+    {
+        Debug.Log("Handling energy change: " + amount);
+        if (amount > 0)
+        {
+            DecreaseEnergy(amount);
+        }
+        else
+        {
+            Debug.Log("Increasing energy by: " + (-amount));
+            IncreaseEnergy(-amount);
+        }
     }
     public int GetEnergy()
     {
@@ -34,6 +58,6 @@ public class EnergyManager : MonoBehaviour
     }
     public void RefreshEnergyText()
     {
-        EnergyText.text = "Energy: " + energy.ToString() + " / 10"; // Display current energy and max energy
+        EnergyText.text = "Energy: " + energy.ToString() + " / " + maxEnergy; // Display current energy and max energy
     }
 }
