@@ -1,11 +1,71 @@
 ﻿title: Start
+position: -116,-165
 ---
-Wow!
-My first ever Yarn script in Unity!
+<<declare $acceptedAryan = false>>
+// Setup
+Do you want to spend time with Aryan today?
+-> Yes
+	<<set $acceptedAryan = true>>    
+	<<jump Scene_Mockery>>        
+-> No
+	<<set $acceptedAryan = false>>
+	You decide not to spend time with Aryan today.
+	<<stop>>
+===
 
--> Gosh!
--> Incredible!
--> I'm amazed!
+title: Scene_Mockery
+position: 91,78
+---
+// Scene/Narration
 
-Anyway, time to get writing!
+Despite knowing the discomfort it brings, Raju chooses to accompany his mother to the high-rise complex today, carrying her work basket. He could stay home, but he volunteers to help her, even though he knows this means potentially encountering the privileged children who look down on him. The Meridian Heights complex represents a world of wealth that contrasts sharply with his own neighborhood - marble floors, air conditioning, and expensive children's bicycles that cost more than his family earns in months.
+
+
+
+Aryan emerges from the main building, his clothes clearly expensive even to Raju's untrained eye. His school uniform is perfectly pressed, his shoes polished to a mirror shine, and his hair neatly combed with what must be imported hair products. At eight years old, he already carries himself with the unconscious arrogance of someone who has never doubted his place in the world.
+
+
+ARYAN: Oh, look who's back. The servant boy returns. What's the matter, slum boy - did you lose your way to the garbage dump again?
+
+
+Raju feels his cheeks burn with shame and anger. He's heard these taunts before, but something about the casual, dismissive way Aryan delivers them - as if Raju isn't even worth getting worked up about - cuts deeper than usual. His mother's warnings about keeping his temper echo in his mind, but his hands still clench into fists at his sides.
+
+
+RAJU: I'm not your servant. I'm not anybody's servant. I'm here to help my mother, that's all.
+
+ARYAN: Help? Oh, that's rich! That's what poor kids call working for free, isn't it? Your mother cleans our toilets, and you carry her bags. Very inspiring.
+
+
+He circles around Raju like a predator, his confidence growing with each word. Other children from the complex begin to emerge from the buildings, drawn by the commotion, their presence adding an audience that emboldens Aryan further.
+
+
+ARYAN: I bet you think you're special because you can kick a ball around in the dirt with the other slum kids. But that's not real cricket, you know. You probably can't even hold a bat properly.
+
+
+Something inside Raju snaps. Cricket is sacred to him - it's his dream, his passion, the one thing that makes him feel like he might be more than just another poor kid from the slums. To have it mocked, to have his dedication dismissed as nothing more than playing in the dirt, ignites a fire in his chest.
+
+
+RAJU: I can play cricket. Better than you think. Better than you, probably.
+
+ARYAN: Better than me? Ha! That's the funniest thing I've heard all week. You with your bare feet and torn clothes think you can play better than someone who has a real bat, real gear, real coaching?
+
+
+He gestures grandly toward the building behind him, as if its very presence proves his superiority.
+
+
+ARYAN: Tell you what, slum boy. If you're so confident, if you really think you can play - come back tomorrow. Bring whatever pathetic excuse for cricket equipment you have. We'll see just how good you really are.
+
+
+The challenge hangs in the air between them, loaded with social tensions that go far beyond a simple game of cricket. This isn't just about sport - it's about dignity, respect, and the vast chasm that separates their two worlds.
+
+
+
+As Kamla gently pulls Raju away, her face carefully neutral to avoid any further confrontation, Raju's mind is already racing. The humiliation burns in his chest, but beneath it, a determination is growing. Tomorrow, he decides, he'll show this privileged boy that talent doesn't come from expensive equipment - it comes from heart, from hunger, from the kind of desperate love for the game that no amount of money can buy.
+
+
+
+The rivalry between Raju and Aryan is now ignited, born not just from casual playground cruelty, but from the deeper social divisions that define their world. Aryan sees Raju as beneath him in every way, while Raju's wounded pride and genuine love for cricket combine to fuel a determination to prove that worth isn't measured by wealth alone.
+
+
+<<stop>>
 ===
