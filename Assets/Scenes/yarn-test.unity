@@ -340,7 +340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: autoStart
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: startNode
+      value: day3
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: yarnProject
@@ -877,10 +881,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e41e660db67301642836ac49fb9f2e17, type: 3}
   - {fileID: 21300000, guid: 618851c0d7ae2e84abe7f86e31b55914, type: 3}
   - {fileID: 21300000, guid: 89d7ed73dd2440146a80a7474c16a381, type: 3}
+  - {fileID: 0}
   currentCharSprite: {fileID: 240849774}
   currentBGSprite: {fileID: 1157624751}
   currentDay: 0
-  aryanPath: 0
+  aryanPath: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

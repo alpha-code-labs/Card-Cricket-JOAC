@@ -14,7 +14,20 @@ public class BasicFlagManager : MonoBehaviour
     {
         Instance = this;
     }
-    public int currentDay;
+    [SerializeField] string currentNode;// = "day3";//"day4"
+    void Start()
+    {
+        DialogueRunner dialogueRunner = GetComponent<DialogueRunner>();
+        // dialogueRunner.StartDialogue(currentNode);
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            DialogueRunner dialogueRunner = GetComponent<DialogueRunner>();
+            dialogueRunner.StartDialogue(currentNode);
+        }
+    }
     [SerializeField] public AryanPath aryanPath;
     [YarnFunction("GetAryanPath")]
     public static string GetAryanPath()
