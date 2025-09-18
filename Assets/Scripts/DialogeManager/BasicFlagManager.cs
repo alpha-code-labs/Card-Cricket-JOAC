@@ -21,6 +21,27 @@ public class BasicFlagManager : MonoBehaviour
     {
         return Instance.aryanPath.ToString();
     }
+
+    [YarnCommand("SetAryanPath")]
+    public static void SetAryanPath(string path)
+    {
+        switch (path)
+        {
+            case "Serious":
+                Instance.aryanPath = AryanPath.Serious;
+                break;
+            case "Angry":
+                Instance.aryanPath = AryanPath.Angry;
+                break;
+            case "Quizical":
+                Instance.aryanPath = AryanPath.Quizical;
+                break;
+            default:
+                Debug.LogError("Invalid path string passed to SetAryanPath");
+                break;
+        }
+    }
+
     [YarnCommand("SetCharSprite")]
     public static void SetCharSprite(int index)
     {

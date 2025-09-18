@@ -1,7 +1,7 @@
-﻿title: Start
+﻿title: day4
 position: -204,-277
 ---
-<<declare $currentAryanPath = GetAryanPath()>>
+
 <<SetBGSprite 14>>
 // Setup
 	<<if $currentAryanPath == "Serious">>	
@@ -16,7 +16,7 @@ position: -204,-277
 ===
 
 title: Scene_Serious
-position: -236,188
+position: 107,-500
 ---
 
 
@@ -39,7 +39,7 @@ Raju:Tomorrow will show what we've both learned about cricket. That's all that m
 <<stop>>
 ===
 title: Scene_Angry
-position: 9,107
+position: 126,-277
 ---
 <<SetCharSprite 17>>
 On the fourth day, the tension between them has escalated into open hostility, with both boys feeding off each other's aggression.
@@ -58,7 +58,7 @@ Raju:My dreams are stronger than your toys. You'll see.
 <<stop>>
 ===
 title: Scene_Quizical
-position: -431,0
+position: 115,-87
 ---
 
 <<SetCharSprite 17>>
