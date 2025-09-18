@@ -11,8 +11,8 @@ public class ScoreManager : MonoBehaviour
         Instance = this;
     }
     int currentRuns = 0; // Current runs scored
-    int TargetScore = 30; // The target score to reach
-    int MaxBalls = 12; // Maximum balls in the game (e.g., 6 overs)
+    public int TargetScore = 30; // The target score to reach
+    public int MaxBalls = 12; // Maximum balls in the game (e.g., 6 overs)
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     public void UpdateBallsAndOvers(int ballsBowled)
@@ -43,5 +43,31 @@ public class ScoreManager : MonoBehaviour
     {
         UpdateScore(0); // Initialize score display
         UpdateBallsAndOvers(0); // Initialize balls and overs display
+    }
+    public void SetTargetFromEventName(string eventName)
+    {
+        ScriptableObject gameObject = Resources.Load<ScriptableObject>(eventName);
+        switch (eventName)
+        {
+            case "Event1":
+                TargetScore = 10;
+                MaxBalls = 6;
+                break;
+            case "Event2":
+                TargetScore = 20;
+                MaxBalls = 9;
+                break;
+            case "Event3":
+                TargetScore = 30;
+                MaxBalls = 12;
+                break;
+            default:
+                TargetScore = 30;
+                MaxBalls = 12;
+                Debug.LogWarning("No target score set for this event, using default values.");
+                break;
+        }
+        UpdateScore(0); // Reset score display
+        UpdateBallsAndOvers(0); // Reset balls and overs display
     }
 }
