@@ -38,6 +38,8 @@ public class CalanderSystem : MonoBehaviour
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
+                // LoadDialoageSystem(events.eventName);  // dialogueRunner.StartDialogue("FirstTimeIntro");
+
                 //Load cutscene
                 break;
             case TypeOfEvent.FreeTime:
