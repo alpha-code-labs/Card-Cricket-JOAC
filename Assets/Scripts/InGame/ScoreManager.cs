@@ -44,4 +44,30 @@ public class ScoreManager : MonoBehaviour
         UpdateScore(0); // Initialize score display
         UpdateBallsAndOvers(0); // Initialize balls and overs display
     }
+    public void SetTargetFromEventName(string eventName)
+    {
+        ScriptableObject gameObject = Resources.Load<ScriptableObject>(eventName);
+        switch (eventName)
+        {
+            case "Event1":
+                TargetScore = 10;
+                MaxBalls = 6;
+                break;
+            case "Event2":
+                TargetScore = 20;
+                MaxBalls = 9;
+                break;
+            case "Event3":
+                TargetScore = 30;
+                MaxBalls = 12;
+                break;
+            default:
+                TargetScore = 30;
+                MaxBalls = 12;
+                Debug.LogWarning("No target score set for this event, using default values.");
+                break;
+        }
+        UpdateScore(0); // Reset score display
+        UpdateBallsAndOvers(0); // Reset balls and overs display
+    }
 }

@@ -50,8 +50,7 @@ public class CalanderSystem : MonoBehaviour
                 //Skip to next day or evening
                 break;
             case TypeOfEvent.GamePlay:
-                ScoreManager.Instance.TargetScore = 30;
-                ScoreManager.Instance.MaxBalls = 12;
+                ScoreManager.Instance.SetTargetFromEventName(events.eventName);
                 //Load GamePlay                
                 break;
             default:
