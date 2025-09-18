@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CalanderRecord
+  m_EditorClassIdentifier: Assembly-CSharp::CalanderRecord
+  dates:
+  - date: 1988/07/18
+    events:
+    - eventName: Scene 1
+      eventDescription: Bat Handover
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+  - date: 1988/07/23
+    events:
+    - eventName: Scene 2
+      eventDescription: Pre-Tutorial Cutscene
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: Tutorial Scene
+      eventDescription: Pre-Tutorial Cutscene
+      eventType: 2
+    - eventName: Scene 3
+      eventDescription: Post-Tutorial Cutscene
+      eventType: 0
