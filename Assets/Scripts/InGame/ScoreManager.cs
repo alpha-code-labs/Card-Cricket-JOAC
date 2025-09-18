@@ -11,8 +11,8 @@ public class ScoreManager : MonoBehaviour
         Instance = this;
     }
     int currentRuns = 0; // Current runs scored
-    int TargetScore = 30; // The target score to reach
-    int MaxBalls = 12; // Maximum balls in the game (e.g., 6 overs)
+    public int TargetScore = 30; // The target score to reach
+    public int MaxBalls = 12; // Maximum balls in the game (e.g., 6 overs)
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     public void UpdateBallsAndOvers(int ballsBowled)
