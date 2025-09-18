@@ -2,6 +2,7 @@
 position: -204,-277
 ---
 <<declare $currentAryanPath = GetAryanPath()>>
+<<SetBGSprite 14>>
 // Setup
 	<<if $currentAryanPath == "Serious">>	
 	<<jump Scene_Serious>>
@@ -17,9 +18,22 @@ position: -204,-277
 title: Scene_Serious
 position: -236,188
 ---
-<<SetCharSprite 0>>
-<<SetBGSprite 14>>
-This is the serious path.
+
+
+<<SetCharSprite 17>>
+On the fourth day, Raju maintains his composed approach, focusing on preparation rather than verbal sparring.
+<<SetCharSprite 16>>
+Aryan: Still playing the dignified act, slum boy? Wait until the pressure hits tomorrow. Let's see how calm you stay then.
+
+<<SetCharSprite 15>>
+Raju:Pressure is just another condition to adapt to. Like playing in rain or wind - you adjust and continue.
+
+<<SetCharSprite 16>>
+Aryan:You're either very wise or very stupid. Tomorrow will show which one.
+<<SetCharSprite 15>>
+Raju:Tomorrow will show what we've both learned about cricket. That's all that matters.
+
+
 
 
 <<stop>>
@@ -27,8 +41,18 @@ This is the serious path.
 title: Scene_Angry
 position: 9,107
 ---
-<<SetCharSprite 1>>
-This is the Angry path.
+<<SetCharSprite 17>>
+On the fourth day, the tension between them has escalated into open hostility, with both boys feeding off each other's aggression.
+<<SetCharSprite 16>>
+Aryan: Ready for war, slum boy? Because that's what tomorrow is - a war between your kind and mine.
+
+<<SetCharSprite 15>>
+Raju:Bring your war. I've been fighting my whole life while you've been playing with expensive toys.
+
+<<SetCharSprite 16>>
+Aryan: Those expensive toys are going to destroy your pathetic dreams tomorrow!
+<<SetCharSprite 15>>
+Raju:My dreams are stronger than your toys. You'll see.
 
 
 <<stop>>
@@ -36,8 +60,18 @@ This is the Angry path.
 title: Scene_Quizical
 position: -431,0
 ---
-<<SetCharSprite 3>>
-This is the Quizical path.
+
+<<SetCharSprite 17>>
+On the fourth day, Raju continues his careful observation, studying Aryan's playing style and looking for tactical advantages.
+<<SetCharSprite 16>>
+Aryan: Stop staring at me like that! You're trying to get in my head, but it won't work.
+
+<<SetCharSprite 15>>
+Raju:I'm not trying to get in your head. I'm trying to understand your game. Knowledge is the best equipment I can have.
+<<SetCharSprite 16>>
+Aryan: All the studying in the world won't help you when you face superior skill and equipment!
+<<SetCharSprite 15>>
+Raju:We'll see. Sometimes understanding your opponent is better than having better gear.
 
 
 <<stop>>
