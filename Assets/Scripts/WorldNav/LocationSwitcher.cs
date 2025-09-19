@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System;
 
 public class LocationSwitcher : MonoBehaviour
 {
@@ -31,6 +31,7 @@ public class LocationSwitcher : MonoBehaviour
             locationDictionary.Add(enumKey, locations[i]);
         }
     }
+    public static Action AreaSwitched;
     public void SwitchLocation(Locations location)
     {
         foreach (var loc in locations)
@@ -46,11 +47,19 @@ public class LocationSwitcher : MonoBehaviour
         else
         {
             SwitchToThisLocation.SetActive(true);
+            AreaBackground[] areaBackgrounds = SwitchToThisLocation.GetComponentsInChildren<AreaBackground>();
+            if (areaBackgrounds.Length != 1)
+            {
+                Debug.LogError($"Expected exactly one AreaBackground in location '{location}', but found {areaBackgrounds.Length}.");
+                return;
+            }
+            Camera.main.GetComponent<PanAndZoomManager>().InitCamera(areaBackgrounds[0].GetComponent<BoxCollider2D>());
             SwitchToThisLocation.transform.position = SwitchToThisLocation.transform.position; // Ping (no-op)
 #if UNITY_EDITOR
             UnityEditor.EditorGUIUtility.PingObject(SwitchToThisLocation);
 #endif
             Debug.Log($"Switched to location: {location}");
+            AreaSwitched?.Invoke();
         }
     }
 

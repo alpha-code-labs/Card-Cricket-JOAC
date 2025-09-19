@@ -64,6 +64,23 @@ public class PanAndZoomManager : MonoBehaviour
             startTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             lastTouchPosition = startTouchPosition;
             isSwiping = true;
+            //
+            // {
+            //     // Convert mouse position to world coordinates
+            //     Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            //     // Cast a ray in 2D
+            //     RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+
+            //     if (hit.collider != null)
+            //     {
+            //         Debug.Log($"Hit: {hit.collider.name} on layer {hit.collider.gameObject.layer}");
+            //     }
+            //     else
+            //     {
+            //         Debug.Log("No 2D collider hit");
+            //     }
+            // }
         }
         else if (Input.GetMouseButton(0) && isSwiping) // Move while dragging
         {
@@ -83,6 +100,7 @@ public class PanAndZoomManager : MonoBehaviour
             Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize, MinZoom, MaxZoom); // Clamp zoom
             CalculateCameraBounds(); // Recalculate bounds when zooming
         }
+
     }
 
     void HandleTouchInput()
