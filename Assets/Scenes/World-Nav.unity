@@ -794,7 +794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &136978993
 Transform:
   m_ObjectHideFlags: 0
@@ -1469,7 +1469,7 @@ Transform:
   m_GameObject: {fileID: 538013791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.92, y: -0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1532,10 +1532,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -5.0525985, y: 2.5931616}
-      - {x: -6.367806, y: 3.1994674}
-      - {x: -6.1432953, y: -2.6425521}
-      - {x: -4.917799, y: -2.4693627}
+    - - {x: 0.9791846, y: 3.272767}
+      - {x: -0.347364, y: 3.444326}
+      - {x: -0.35409778, y: -2.152721}
+      - {x: 0.957791, y: -1.8606112}
   m_UseDelaunayMesh: 0
 --- !u!1 &573036410
 GameObject:
@@ -2710,7 +2710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1043336258
 Transform:
   m_ObjectHideFlags: 0
