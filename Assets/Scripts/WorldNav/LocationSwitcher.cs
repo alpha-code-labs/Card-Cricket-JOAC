@@ -26,7 +26,7 @@ public class LocationSwitcher : MonoBehaviour
                 Debug.LogError($"Failed to parse location name '{locations[i].name}' to Locations enum.");
                 continue;
             }
-            Debug.Log($"Mapping location '{locations[i].name}' to enum '{enumKey}'");
+            // Debug.Log($"Mapping location '{locations[i].name}' to enum '{enumKey}'");
 
             locationDictionary.Add(enumKey, locations[i]);
         }
@@ -46,9 +46,14 @@ public class LocationSwitcher : MonoBehaviour
         else
         {
             SwitchToThisLocation.SetActive(true);
+            SwitchToThisLocation.transform.position = SwitchToThisLocation.transform.position; // Ping (no-op)
+#if UNITY_EDITOR
+            UnityEditor.EditorGUIUtility.PingObject(SwitchToThisLocation);
+#endif
             Debug.Log($"Switched to location: {location}");
         }
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
