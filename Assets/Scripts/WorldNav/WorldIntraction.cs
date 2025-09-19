@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldIntraction : MonoBehaviour
+public class WorldIntraction : ClickAbleObjectHandler
 {
     public IntractionType intractionType;
     public Locations location;
-    public void OnIntraction()
+    public override void OnClick()
     {
-        // Debug.Log("Intraction");
-        ConfirmIntraction();
-    }
-    void ConfirmIntraction()
-    {
-        // Debug.Log("Confirm Intraction");
+        Debug.Log("Clicked on " + gameObject.name);
         ContinueIntraction();
     }
     void ContinueIntraction()
@@ -22,7 +17,6 @@ public class WorldIntraction : MonoBehaviour
         {
             LocationSwitcher.instance.SwitchLocation(location);
         }
-        // Debug.Log("Continue Intraction");
     }
 }
 public enum IntractionType
