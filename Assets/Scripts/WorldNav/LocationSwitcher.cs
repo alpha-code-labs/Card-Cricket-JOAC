@@ -65,7 +65,7 @@ public class LocationSwitcher : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
         {
             Debug.Log("Add UI Button for this -Escape Key Pressed - Switching to MapSprite");
             SwitchLocation(Locations.MapSprite);
