@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WorldNavManager : MonoBehaviour
+public class PanAndZoomManager : MonoBehaviour
 {
     [SerializeField] private float swipeSensitivity = 1f; // Adjust camera movement speed
     [SerializeField] private float pinchSensitivity = 1f; // Adjust zoom speed
