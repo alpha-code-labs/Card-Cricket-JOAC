@@ -19,7 +19,6 @@ public class BallThrow
     }
 }
 
-
 public enum BallType
 {
     ArmBall,

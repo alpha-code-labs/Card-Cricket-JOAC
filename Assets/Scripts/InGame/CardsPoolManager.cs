@@ -43,6 +43,7 @@ public class CardsPoolManager : MonoBehaviour
     [ContextMenu("Start Turn")]
     void StartTurn(bool incrementBalls = true)
     {
+        Timer.Instance.StartTurnTimer();
         if (incrementBalls)
             ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
         BallThrowText.text = CurrentBallThrow.ToString();
@@ -55,6 +56,7 @@ public class CardsPoolManager : MonoBehaviour
     [ContextMenu("End Turn")]
     public void EndTurn(bool incrementBalls = true)
     {
+        Timer.Instance.EndTurnTimer();
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
         foreach (var card in HandCards)
         {
