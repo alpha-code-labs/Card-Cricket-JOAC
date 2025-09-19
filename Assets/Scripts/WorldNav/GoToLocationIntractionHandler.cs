@@ -2,26 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldIntraction : ClickAbleObjectHandler
+public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 {
-    public IntractionType intractionType;
     public Locations location;
     public override void OnClick()
     {
         Debug.Log("Clicked on " + gameObject.name);
-        ContinueIntraction();
+        LocationSwitcher.instance.SwitchLocation(location);
     }
-    void ContinueIntraction()
-    {
-        if (intractionType == IntractionType.GoToLocation)
-        {
-            LocationSwitcher.instance.SwitchLocation(location);
-        }
-    }
-}
-public enum IntractionType
-{
-    GoToLocation,
 }
 public enum Locations
 {
