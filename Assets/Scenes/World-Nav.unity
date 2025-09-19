@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136978993}
   m_Layer: 0
-  m_Name: Hut
+  m_Name: HutInterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intractionType: 0
-  location: 0
+  location: 13
 --- !u!1 &804547043
 GameObject:
   m_ObjectHideFlags: 0

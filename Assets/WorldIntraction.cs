@@ -22,7 +22,7 @@ public class WorldIntraction : MonoBehaviour
         {
             LocationSwitcher.instance.SwitchLocation(location);
         }
-        Debug.Log("Continue Intraction");
+        // Debug.Log("Continue Intraction");
     }
 }
 public enum IntractionType
@@ -31,9 +31,20 @@ public enum IntractionType
 }
 public enum Locations
 {
-    Home,
-    Map,
-    Shop,
-    Inventory,
-    Profile,
+    Inavlid = -1,
+    HutInterior,
+    KohliwadaGround,
+    PublicSchool,
+    SportsAcademy,
+    WellingtonEstate,
+    SurakshaHospital,
+    ShivTemple,
+    AutoStand,
+    GeneralStore,
+    FatimaDhaba,
+    CobblerShop,
+    MunnaTyreShop,
+    ChaiStall,
+    //
+    MapSprite
 }

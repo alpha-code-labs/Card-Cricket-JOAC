@@ -11,12 +11,36 @@ public class LocationSwitcher : MonoBehaviour
         instance = this;
     }
     public List<GameObject> locations; // Assign location GameObjects in the Inspector
+    public Dictionary<Locations, GameObject> locationDictionary = new Dictionary<Locations, GameObject>();
+    void Start()
+    {
+        BuildLocationDictionary();
+    }
+    void BuildLocationDictionary()
+    {
+        for (int i = 0; i < locations.Count; i++)
+        {
+            Locations enumKey = (Locations)(int)-1;
+            if (!System.Enum.TryParse(locations[i].name, out enumKey))
+            {
+                Debug.LogError($"Failed to parse location name '{locations[i].name}' to Locations enum.");
+                continue;
+            }
+            locationDictionary.Add(enumKey, locations[i]);
+        }
+    }
     public void SwitchLocation(Locations location)
     {
         foreach (var loc in locations)
         {
             loc.SetActive(false); // Deactivate all locations
         }
-        locations[(int)location].SetActive(true); // Activate the selected location
+        GameObject SwitchToThisLocation = locationDictionary[location];
+        if (SwitchToThisLocation == null)
+        {
+            Debug.LogError($"Location '{location}' not found in dictionary.");
+            return;
+        }
+        SwitchToThisLocation.SetActive(true);
     }
 }
