@@ -26,6 +26,8 @@ public class LocationSwitcher : MonoBehaviour
                 Debug.LogError($"Failed to parse location name '{locations[i].name}' to Locations enum.");
                 continue;
             }
+            Debug.Log($"Mapping location '{locations[i].name}' to enum '{enumKey}'");
+
             locationDictionary.Add(enumKey, locations[i]);
         }
     }
@@ -41,6 +43,18 @@ public class LocationSwitcher : MonoBehaviour
             Debug.LogError($"Location '{location}' not found in dictionary.");
             return;
         }
-        SwitchToThisLocation.SetActive(true);
+        else
+        {
+            SwitchToThisLocation.SetActive(true);
+            Debug.Log($"Switched to location: {location}");
+        }
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Add UI Button for this -Escape Key Pressed - Switching to MapSprite");
+            SwitchLocation(Locations.MapSprite);
+        }
     }
 }
