@@ -5,13 +5,9 @@ using Yarn.Unity;
 
 public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 {
-    public static bool selectingLocation = false;
     public Locations location;
     public override void OnClick()
     {
-        // LocationSwitcher.instance.SwitchLocation(location);
-        if (selectingLocation) return;
-        selectingLocation = true;
         WorldIntractionDialougeManager.instance.location = location;
         WorldIntractionDialougeManager.instance.dialogueRunner.StartDialogue("ConfirmLocation");
     }
@@ -26,7 +22,6 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
         {
             Debug.Log("User cancelled location switch.");
         }
-        selectingLocation = false;
     }
 }
 public enum Locations

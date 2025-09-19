@@ -13,4 +13,8 @@ public class WorldIntractionDialougeManager : MonoBehaviour
         instance = this;
     }
     internal Locations location;
+    public bool IsDialogueCurrentlyRunning()
+    {
+        return dialogueRunner.IsDialogueRunning;
+    }
 }

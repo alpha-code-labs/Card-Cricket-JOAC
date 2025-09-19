@@ -53,7 +53,7 @@ public class LocationSwitcher : MonoBehaviour
                 Debug.LogError($"Expected exactly one AreaBackground in location '{location}', but found {areaBackgrounds.Length}.");
                 return;
             }
-            Camera.main.GetComponent<PanAndZoomManager>().InitCamera(areaBackgrounds[0].GetComponent<BoxCollider2D>());
+            
             SwitchToThisLocation.transform.position = SwitchToThisLocation.transform.position; // Ping (no-op)
 #if UNITY_EDITOR
             UnityEditor.EditorGUIUtility.PingObject(SwitchToThisLocation);

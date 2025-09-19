@@ -15,7 +15,7 @@ public class PanAndZoomManager : MonoBehaviour
     private bool isPinching = false;
     void Start()
     {
-        InitCamera(boxCollider2D);
+        // InitCamera(boxCollider2D);
     }
     [SerializeField] BoxCollider2D boxCollider2D;
     internal void InitCamera(BoxCollider2D cameraBoundsCollider)
@@ -50,6 +50,10 @@ public class PanAndZoomManager : MonoBehaviour
 
     void Update()
     {
+        if (boxCollider2D == null)
+        {
+            return;
+        }
 #if UNITY_EDITOR || UNITY_STANDALONE
         HandleMouseInput();  // Allow testing with a mouse
 #endif
