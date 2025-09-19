@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 95773915}
   - component: {fileID: 95773914}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (2)
+  m_Name: GoTo PublicSchool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 125349227}
   - component: {fileID: 125349226}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (10)
+  m_Name: GoTo CobblerShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 240262277}
   - component: {fileID: 240262276}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (1)
+  m_Name: GoTo HutInterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1275,7 +1275,7 @@ GameObject:
   - component: {fileID: 431357078}
   - component: {fileID: 431357077}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (3)
+  m_Name: GoTo SportsAcademy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1549,7 +1549,7 @@ GameObject:
   - component: {fileID: 573036413}
   - component: {fileID: 573036412}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (6)
+  m_Name: GoTo ShivTemple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2217,7 +2217,7 @@ GameObject:
   - component: {fileID: 897337457}
   - component: {fileID: 897337456}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (9)
+  m_Name: GoTo FatimaDhaba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2725,8 +2725,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1051076803}
-  - {fileID: 95856196}
   - {fileID: 240262275}
+  - {fileID: 95856196}
   - {fileID: 95773913}
   - {fileID: 431357076}
   - {fileID: 1220350281}
@@ -3272,7 +3272,7 @@ GameObject:
   - component: {fileID: 1219716861}
   - component: {fileID: 1219716860}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (12)
+  m_Name: GoTo ChaiStall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3367,7 +3367,7 @@ GameObject:
   - component: {fileID: 1220350283}
   - component: {fileID: 1220350282}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (4)
+  m_Name: GoTo WellingtonEstate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 1626744292}
   - component: {fileID: 1626744291}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (7)
+  m_Name: GoTo AutoStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4985,7 +4985,7 @@ GameObject:
   - component: {fileID: 1714125968}
   - component: {fileID: 1714125967}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (8)
+  m_Name: GoTo GeneralStore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5636,7 +5636,7 @@ GameObject:
   - component: {fileID: 1936631482}
   - component: {fileID: 1936631481}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (11)
+  m_Name: GoTo MunnaTyreShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5731,7 +5731,7 @@ GameObject:
   - component: {fileID: 1976550507}
   - component: {fileID: 1976550506}
   m_Layer: 0
-  m_Name: GoTo KohliwadaGround (5)
+  m_Name: GoTo SurakshaHospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
