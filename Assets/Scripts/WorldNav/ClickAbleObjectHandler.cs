@@ -15,7 +15,7 @@ public class ClickAbleObjectHandler : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Clicked on " + gameObject.name);
-        // if (!PanAndZoomManager.isSwiping)
+        if (!PanAndZoomManager.isSwiping)
         {
             // onClickAction?.Invoke();
             GetComponent<WorldIntraction>()?.OnIntraction();
