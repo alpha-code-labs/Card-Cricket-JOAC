@@ -5,6 +5,8 @@ using UnityEngine;
 public class ExcelDataSOManager : MonoBehaviour
 {
     public static ExcelDataSOManager Instance;
+    public OutComeCalculator outComeCalculator;
+
     void Awake()
     {
         Instance = this;
@@ -13,5 +15,10 @@ public class ExcelDataSOManager : MonoBehaviour
     {
         outComeCalculator.BuildLookupDictionary();
     }
-    public OutComeCalculator outComeCalculator;
+
+    [ContextMenu("Test Outcome Calculator")]
+    public void Test()
+    {
+        Debug.Log("Testing Outcome Calculator");
+    }
 }

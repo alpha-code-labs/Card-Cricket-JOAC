@@ -179,16 +179,16 @@ public enum BattingStrategy
     OnDriveLofted,
 
     // Cut variations
-    CutPush,
-    CutNormal,
-    CutAggressive,
-    CutLofted,
+    CutShotPush,
+    CutShotNormal,
+    CutShotAggressive,
+    CutShotLofted,
 
     // Pull variations
-    PullPush,
-    PullNormal,
-    PullAggressive,
-    PullLofted,
+    PullShotPush,
+    PullShotNormal,
+    PullShotAggressive,
+    PullShotLofted,
 
     // Sweep variations
     SweepPush,
@@ -203,8 +203,8 @@ public enum BattingStrategy
     LegGlanceLofted,
 
     // Defensive shots
-    ForwardDefensePush,
-    BackfootDefensePush
+    ForwardDefense,
+    BackfootDefense
 }
 
 public enum TrueBattingStrategy11
@@ -225,6 +225,7 @@ public enum TrueBattingStrategy11
 public enum OutCome
 {
     NoRunWideBall = -2,
+    OneRunWideBall = -3,
     Out = -1,
     NoRun = 0,
     OneRuns = 1,
@@ -234,6 +235,11 @@ public enum OutCome
     SixRuns = 6
 }
 
+public enum SpecialOutcome
+{
+    WideBall,
+    Null
+}
 public enum BattingIntensity
 {
     Leave = -1,
@@ -242,4 +248,10 @@ public enum BattingIntensity
     Normal = 1,
     Aggressive = 2,
     Lofted = 3
+}
+
+public enum PitchCondition
+{
+    Friendly,
+    Hostile
 }

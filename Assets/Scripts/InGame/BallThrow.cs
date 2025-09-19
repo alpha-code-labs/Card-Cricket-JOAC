@@ -11,6 +11,8 @@ public class BallThrow
     public BallLine ballLine;
     public BallLength ballLength;
 
+    public PitchCondition pitchCondition;
+
     override public string ToString()
     {
         return $"Type of Bowler: {bowlerType}\nBowler Side: {bowlerSide}\nBall Type: {ballType}\nBall Line: {ballLine} \nBall Length: {ballLength}";
@@ -20,20 +22,20 @@ public class BallThrow
 
 public enum BallType
 {
-    Straight,
-    OutSwinger,
-    InSwinger,
-    SlowerBall,
-    OffCutter,
-    LegCutter,
-    Doosra,
     ArmBall,
-    TopSpinner,
-    Googly,
-    Slider,
+    Doosra,
     Flipper,
+    Googly,
+    InSwinger,
     LegSpin,
-    OffSpin
+    LegCutter,
+    OffSpinner,
+    OffCutter,
+    OutSwinger,
+    Slider,
+    SlowerBall,
+    Straight,
+    TopSpinner
 }
 public enum TypeOfBowler
 {
@@ -60,8 +62,7 @@ public enum BallLine
     LegStump,
     DowntheLeg,
     // WayDownLeg,
-
-    WayDowntheLegSide
+    WayDowntheLeg
 }
 public enum BattingTiming
 {

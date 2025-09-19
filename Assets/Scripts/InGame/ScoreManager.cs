@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
+
+    //load rewards stats to update these hardcoded for now
+    public int maxTimeToChooseStrategy = 5; // seconds
+    public int maxEnergy = 24;
+
     void Awake()
     {
         Instance = this;
     }
+
     int currentRuns = 0; // Current runs scored
     int TargetScore = 40; // The target score to reach
     internal int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
     int wickets = 3; // Wickets before game over
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
+    [SerializeField] Button redrawButton; // Assign in Inspector
+    [SerializeField] TextMeshProUGUI redrawButtonText;
     public void UpdateBallsAndOvers(int ballsBowled)
     {
         int overs = ballsBowled / 6;
@@ -50,6 +59,12 @@ public class ScoreManager : MonoBehaviour
         {
             LooseWicket();
         }
+        if (runs == -3)
+        {
+            currentRuns += 1; // Add one run for wide ball
+            scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
+            
+        }
     }
     public void LooseWicket()
     {
@@ -67,12 +82,14 @@ public class ScoreManager : MonoBehaviour
         // Temporary outcome for testing
         // OutCome outcome = OutCome.Out;
         // OutCome outcome = outComeCalculator.CalculateOutcome(battingStrategy, new BallThrow() { ballType = BallType.Straight, bowlerSide = Side.RightHanded, bowlerType = TypeOfBowler.Fast, ballLength = BallLength.GoodLength, ballLine = BallLine.OffStump }, BattingTiming.Perfect);
-        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, CardsPoolManager.Instance.CurrentBallThrow, BattingTiming.Perfect);
+        BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
+        PitchCondition pitchCondition = currentBallThrow.pitchCondition;
+        Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
+        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
 
         UpdateScore((int)outcome);
         AnimateOnScreenText(battingStrategy, outcome);
-        CardsPoolManager.Instance.EndTurn();
-
+        CardsPoolManager.Instance.EndTurn((int)outcome != -3); // End turn and increment balls only if not out
     }
 
     [SerializeField] TextMeshProUGUI outcomeText;
@@ -95,9 +112,38 @@ public class ScoreManager : MonoBehaviour
         seq.AppendInterval(0.5f);
         seq.Append(outcomeText.DOFade(0f, 0.4f));
     }
+    void OnRedrawButtonClicked()
+    {
+        CardsPoolManager.Instance.RedrawHand();
+        UpdateRedrawButton();
+    }
+
+    void UpdateRedrawButton()
+    {
+        if (redrawButton == null) return;
+        
+        bool canRedraw = CardsPoolManager.Instance.CanRedraw();
+        redrawButton.interactable = canRedraw;
+        
+        // Update button text if available
+        if (redrawButtonText != null)
+        {
+            int remaining = CardsPoolManager.Instance.GetRedrawsRemaining();
+            redrawButtonText.text = $"Redraw ({remaining})";
+            
+            // Optional: Change color based on availability
+            redrawButtonText.color = canRedraw ? Color.white : Color.gray;
+        }
+    }
+    
     void Start()
     {
         UpdateScore(0); // Initialize score display
         UpdateBallsAndOvers(0); // Initialize balls and overs display
+        if (redrawButton != null)
+        {
+            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
+            UpdateRedrawButton();
+        }
     }
 }

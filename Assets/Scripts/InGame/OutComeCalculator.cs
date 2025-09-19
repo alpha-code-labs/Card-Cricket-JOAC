@@ -12,36 +12,72 @@ using OfficeOpenXml; // You'll need EPPlus package for Excel reading
 [CreateAssetMenu(fileName = "OutComeCalculator", menuName = "Cricket/OutCome Calculator")]
 public class OutComeCalculator : ScriptableObject
 {
-    [Header("Excel Source")]
-    [Tooltip("Path to Excel file relative to Assets folder")]
-    public string excelFilePath = "Data/CricketOutcomes.xlsx";
+    [Header("Excel Sources")]
+    [Tooltip("Path to Friendly pitch Excel file relative to Assets folder")]
+    public string friendlyExcelFilePath = "Data/CricketOutcomes_Friendly.xlsx";
+    
+    [Tooltip("Path to Hostile pitch Excel file relative to Assets folder")]
+    public string hostileExcelFilePath = "Data/CricketOutcomes_Hostile.xlsx";
 
     [Header("Parsed Data")]
-    [SerializeField, HideInInspector] private List<OutcomeEntry> outcomeEntries = new List<OutcomeEntry>();
+    [SerializeField, HideInInspector] private List<OutcomeEntry> friendlyOutcomeEntries = new List<OutcomeEntry>();
+    [SerializeField, HideInInspector] private List<OutcomeEntry> hostileOutcomeEntries = new List<OutcomeEntry>();
 
-    // Runtime lookup dictionary
-    private Dictionary<OutcomeKey, OutCome> outcomeLookup;
+    // Runtime lookup dictionaries for each pitch condition
+    private Dictionary<OutcomeKey, OutCome> friendlyOutcomeLookup;
+    private Dictionary<OutcomeKey, OutCome> hostileOutcomeLookup;
 
     public void BuildLookupDictionary()
     {
-        Debug.Log("Building outcome lookup dictionary...");
-        outcomeLookup = new Dictionary<OutcomeKey, OutCome>();
-        foreach (var entry in outcomeEntries)
+        Debug.Log("Building outcome lookup dictionaries...");
+
+        Debug.Log($"Friendly entries count: {friendlyOutcomeEntries.Count}");
+        Debug.Log($"Hostile entries count: {hostileOutcomeEntries.Count}");
+
+        // Build friendly lookup
+        friendlyOutcomeLookup = new Dictionary<OutcomeKey, OutCome>();
+        int friendlyCount = 0;
+        int hostileCount = 0;
+
+        foreach (var entry in friendlyOutcomeEntries)
         {
             var key = new OutcomeKey(entry);
-            if (!outcomeLookup.ContainsKey(key))
+            if (!friendlyOutcomeLookup.ContainsKey(key))
             {
-                outcomeLookup[key] = entry.outcome;
+                friendlyOutcomeLookup[key] = entry.outcome;
+                friendlyCount++;
             }
         }
+
+        // Build hostile lookup
+        hostileOutcomeLookup = new Dictionary<OutcomeKey, OutCome>();
+        foreach (var entry in hostileOutcomeEntries)
+        {
+            var key = new OutcomeKey(entry);
+            if (!hostileOutcomeLookup.ContainsKey(key))
+            {
+                hostileOutcomeLookup[key] = entry.outcome;
+                hostileCount++;
+            }
+        }
+        
+        Debug.Log($"Built friendly outcome lookup with {friendlyOutcomeLookup.Count} entries and hostile outcome lookup with {hostileOutcomeLookup.Count} entries.");
     }
+
     // Overloaded method with bowler details
-    public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow,
-                                    BattingTiming timing)
+    public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing, PitchCondition pitchCondition)
     {
-        if (outcomeLookup == null || outcomeLookup.Count == 0)
+        // Select the appropriate lookup based on pitch condition
+        Dictionary<OutcomeKey, OutCome> selectedLookup = pitchCondition == PitchCondition.Friendly 
+            ? friendlyOutcomeLookup 
+            : hostileOutcomeLookup;
+        
+        if (selectedLookup == null || selectedLookup.Count == 0)
         {
             BuildLookupDictionary();
+            selectedLookup = pitchCondition == PitchCondition.Friendly 
+                ? friendlyOutcomeLookup 
+                : hostileOutcomeLookup;
         }
 
         var key = new OutcomeKey
@@ -54,33 +90,45 @@ public class OutComeCalculator : ScriptableObject
             timing = timing,
             shotSelected = battingStrategy
         };
+        
         string debugKey = $"{key.typeOfBowler}, {key.side}, {key.typeOfBall}, {key.lineOfBall}, {key.lengthOfBall}, {key.shotSelected}";
-        if (outcomeLookup.TryGetValue(key, out OutCome outcome))
+        if (selectedLookup.TryGetValue(key, out OutCome outcome))
         {
-            Debug.Log($"Outcome found: {outcome} for {battingStrategy} with keys {debugKey}");
+            Debug.Log($"Outcome found: {outcome} for {battingStrategy} with keys {debugKey} on {pitchCondition} pitch");
             return outcome;
         }
-        Debug.LogWarning($"No outcome found for: {battingStrategy} with {timing} timing vs Key: {debugKey}");
+        Debug.LogWarning($"No outcome found for: {battingStrategy} with {timing} timing vs Key: {debugKey} on {pitchCondition} pitch");
 
-        return OutCome.NoRun; // Default fallback
+        return OutCome.NoRun;
     }
-
-    public BallThrow GetRandomBallThrow(TypeOfBowler bowlerType, Side bowlerSide)
+    
+    //original method for backward compatibility
+    public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing)
     {
-        if (outcomeLookup == null || outcomeLookup.Count == 0)
+        // Default to friendly pitch for backward compatibility
+        return CalculateOutcome(battingStrategy, ballThrow, timing, PitchCondition.Friendly);
+    }
+    public BallThrow GetRandomBallThrow(TypeOfBowler bowlerType, Side bowlerSide, PitchCondition pitchCondition = PitchCondition.Friendly)
+    {
+        Dictionary<OutcomeKey, OutCome> selectedLookup = pitchCondition == PitchCondition.Friendly 
+            ? friendlyOutcomeLookup 
+            : hostileOutcomeLookup;
+            
+        if (selectedLookup == null || selectedLookup.Count == 0)
         {
             BuildLookupDictionary();
+            selectedLookup = pitchCondition == PitchCondition.Friendly 
+                ? friendlyOutcomeLookup 
+                : hostileOutcomeLookup;
         }
 
-        // Get all keys that match the specified bowler type and side
-        var matchingKeys = outcomeLookup.Keys.Where(key =>
+        var matchingKeys = selectedLookup.Keys.Where(key =>
             key.typeOfBowler == bowlerType &&
             key.side == bowlerSide).ToList();
 
         if (matchingKeys.Count == 0)
         {
             Debug.LogWarning($"No matching keys found for bowler type: {bowlerType}, side: {bowlerSide}. Using random generation.");
-            // Fallback to random generation
             var random = new System.Random();
             return new BallThrow
             {
@@ -92,18 +140,17 @@ public class OutComeCalculator : ScriptableObject
             };
         }
 
-        // Select a random key from the matching keys
         var random2 = new System.Random();
         var selectedKey = matchingKeys[random2.Next(matchingKeys.Count)];
 
-        // Create BallThrow from the selected key
         var ballThrow = new BallThrow
         {
             bowlerType = selectedKey.typeOfBowler,
             bowlerSide = selectedKey.side,
             ballType = selectedKey.typeOfBall,
             ballLine = selectedKey.lineOfBall,
-            ballLength = selectedKey.lengthOfBall
+            ballLength = selectedKey.lengthOfBall,
+            pitchCondition = pitchCondition
         };
 
         return ballThrow;
@@ -111,12 +158,33 @@ public class OutComeCalculator : ScriptableObject
 
 #if UNITY_EDITOR
     List<string> exceptions;
-    [ContextMenu("Load From Excel")]
-    public void LoadFromExcel()
+    
+    [ContextMenu("Load Friendly Excel")]
+    public void LoadFriendlyExcel()
     {
-        Debug.Log("Loading outcome data from Excel...");
+        LoadFromExcel(friendlyExcelFilePath, friendlyOutcomeEntries, "Friendly");
+    }
+    
+    [ContextMenu("Load Hostile Excel")]
+    public void LoadHostileExcel()
+    {
+        LoadFromExcel(hostileExcelFilePath, hostileOutcomeEntries, "Hostile");
+    }
+    
+    [ContextMenu("Load Both Excel Files")]
+    public void LoadBothExcelFiles()
+    {
+        LoadFriendlyExcel();
+        LoadHostileExcel();
+    }
+    
+    private void LoadFromExcel(string excelPath, List<OutcomeEntry> targetList, string pitchType)
+    {
+        // ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+        ExcelPackage.License.SetNonCommercialPersonal("Alpha Code Labs");
+        Debug.Log($"Loading {pitchType} outcome data from Excel...");
         exceptions = new List<string>();
-        string fullPath = Path.Combine(Application.dataPath, excelFilePath);
+        string fullPath = Path.Combine(Application.dataPath, excelPath);
 
         if (!File.Exists(fullPath))
         {
@@ -124,16 +192,14 @@ public class OutComeCalculator : ScriptableObject
             return;
         }
 
+        int sheetIndex = pitchType == "Friendly" ? 3 : 2;
+
         try
         {
-            outcomeEntries.Clear();
-
-            // Set up EPPlus license context for non-commercial use
-            ExcelPackage.License.SetNonCommercialPersonal("Unity Game Developer");
-
+            targetList.Clear();
             using (var package = new ExcelPackage(new FileInfo(fullPath)))
             {
-                var worksheet = package.Workbook.Worksheets[0];
+                var worksheet = package.Workbook.Worksheets[sheetIndex];
                 int rowCount = worksheet.Dimension?.Rows ?? 0;
 
                 if (rowCount < 2)
@@ -142,13 +208,12 @@ public class OutComeCalculator : ScriptableObject
                     return;
                 }
 
-                // Parse each row (starting from row 2 to skip headers)
                 for (int row = 2; row <= rowCount; row++)
                 {
                     var entry = ParseRow(worksheet, row);
                     if (entry != null)
                     {
-                        outcomeEntries.Add(entry);
+                        targetList.Add(entry);
                     }
                 }
             }
@@ -158,8 +223,8 @@ public class OutComeCalculator : ScriptableObject
                 exceptionsText += ex + "\n";
             }
 
-            Debug.Log($"Successfully loaded {outcomeEntries.Count} outcome entries from Excel with {exceptions.Count} Exceptions!\n" + exceptionsText);
-            CheckForExtraEnums();
+            Debug.Log($"Successfully loaded {targetList.Count} {pitchType} outcome entries from Excel with {exceptions.Count} Exceptions!\n" + exceptionsText);
+            CheckForExtraEnums(targetList);
             EditorUtility.SetDirty(this);
             AssetDatabase.SaveAssets();
         }
@@ -168,9 +233,9 @@ public class OutComeCalculator : ScriptableObject
             Debug.LogError($"Error loading Excel file: {e.Message}\n{e.StackTrace}");
         }
     }
-    private void CheckForExtraEnums()
+    
+    private void CheckForExtraEnums(List<OutcomeEntry> entries)
     {
-        // Track which enum values were actually used
         var usedBowlerTypes = new HashSet<TypeOfBowler>();
         var usedSides = new HashSet<Side>();
         var usedBallTypes = new HashSet<BallType>();
@@ -180,8 +245,7 @@ public class OutComeCalculator : ScriptableObject
         var usedStrategies = new HashSet<BattingStrategy>();
         var usedOutcomes = new HashSet<OutCome>();
 
-        // Collect all used enum values from parsed entries
-        foreach (var entry in outcomeEntries)
+        foreach (var entry in entries)
         {
             usedBowlerTypes.Add(entry.typeOfBowler);
             usedSides.Add(entry.side);
@@ -193,7 +257,6 @@ public class OutComeCalculator : ScriptableObject
             usedOutcomes.Add(entry.outcome);
         }
 
-        // Check for unused enum values and log them
         CheckUnusedEnumValues<TypeOfBowler>(usedBowlerTypes, "Type of Bowler");
         CheckUnusedEnumValues<Side>(usedSides, "Side");
         CheckUnusedEnumValues<BallType>(usedBallTypes, "Ball Type");
@@ -222,19 +285,12 @@ public class OutComeCalculator : ScriptableObject
             string unusedList = string.Join(", ", unusedValues);
             Debug.LogWarning($"Unused {enumName} enum values: {unusedList}");
         }
-        // else Debug.Log($"All {enumName} enum values are used in the data.");
-
     }
 
     private OutcomeEntry ParseRow(ExcelWorksheet worksheet, int row)
     {
         try
         {
-            // Column mapping based on your Excel structure:
-            // 1: Type of Bowler, 2: Side, 3: Type of Ball, 4: Line of Ball, 
-            // 5: Length of Ball, 6: Timing, 7: Shot Selected, 8: Outcome, 
-            // 9: Special Outcome, 10: Comments
-
             var entry = new OutcomeEntry
             {
                 typeOfBowler = ParseEnum<TypeOfBowler>(worksheet.Cells[row, 1].Value?.ToString()),
@@ -242,18 +298,19 @@ public class OutComeCalculator : ScriptableObject
                 typeOfBall = ParseEnum<BallType>(worksheet.Cells[row, 3].Value?.ToString()),
                 lineOfBall = ParseEnum<BallLine>(worksheet.Cells[row, 4].Value?.ToString()),
                 lengthOfBall = ParseEnum<BallLength>(worksheet.Cells[row, 5].Value?.ToString()),
-                // timing = ParseEnum<BattingTiming>(worksheet.Cells[row, 6].Value?.ToString()),
                 shotSelected = ParseEnum<BattingStrategy>(worksheet.Cells[row, 6].Value?.ToString()),
             };
 
-            // Handle outcome with special cases
-            string outcomeStr = worksheet.Cells[row, 7].Value?.ToString();
-            string specialOutcome = worksheet.Cells[row, 8].Value?.ToString();
+            string outcomeStr = worksheet.Cells[row, 8].Value?.ToString();
+            string specialOutcome = worksheet.Cells[row, 9].Value?.ToString();
 
-            // Check for Wide Ball special case
-            if (outcomeStr == "No Run" && specialOutcome == "Wide Ball")
+            if ((outcomeStr == "1 Run" || outcomeStr == "1 Run Run") && specialOutcome == "Wide Ball")
             {
-                entry.outcome = OutCome.NoRunWideBall;
+                entry.outcome = OutCome.OneRunWideBall;
+            }
+            else if (outcomeStr == "1 Run Run")
+            {
+                entry.outcome = OutCome.OneRuns;
             }
             else
             {
@@ -278,12 +335,10 @@ public class OutComeCalculator : ScriptableObject
             throw new ArgumentException($"Empty value for enum {typeof(T).Name}");
         }
 
-        // Special handling for OutCome enum
         if (typeof(T) == typeof(OutCome))
         {
             string trimmedValue = value.Trim();
 
-            // Handle specific OutCome cases
             switch (trimmedValue)
             {
                 case "1 Run":
@@ -303,7 +358,6 @@ public class OutComeCalculator : ScriptableObject
             }
         }
 
-        // Clean the string for enum parsing (existing logic)
         string cleanValue = value.Replace(" ", "").Replace("_", "").Replace("-", "");
 
         if (Enum.TryParse<T>(cleanValue, true, out T result))
@@ -317,8 +371,10 @@ public class OutComeCalculator : ScriptableObject
     [ContextMenu("Clear Data")]
     public void ClearData()
     {
-        outcomeEntries.Clear();
-        outcomeLookup?.Clear();
+        friendlyOutcomeEntries.Clear();
+        hostileOutcomeEntries.Clear();
+        friendlyOutcomeLookup?.Clear();
+        hostileOutcomeLookup?.Clear();
         EditorUtility.SetDirty(this);
         AssetDatabase.SaveAssets();
         Debug.Log("Cleared all outcome data");
@@ -327,10 +383,15 @@ public class OutComeCalculator : ScriptableObject
     [ContextMenu("Debug: Show Entry Count")]
     public void ShowEntryCount()
     {
-        Debug.Log($"Total entries stored: {outcomeEntries.Count}");
-        if (outcomeEntries.Count > 0)
+        Debug.Log($"Friendly entries: {friendlyOutcomeEntries.Count}");
+        Debug.Log($"Hostile entries: {hostileOutcomeEntries.Count}");
+        if (friendlyOutcomeEntries.Count > 0)
         {
-            Debug.Log($"First entry: {outcomeEntries[0].shotSelected} vs {outcomeEntries[0].typeOfBall} = {outcomeEntries[0].outcome}");
+            Debug.Log($"First friendly entry: {friendlyOutcomeEntries[0].shotSelected} vs {friendlyOutcomeEntries[0].typeOfBall} = {friendlyOutcomeEntries[0].outcome}");
+        }
+        if (hostileOutcomeEntries.Count > 0)
+        {
+            Debug.Log($"First hostile entry: {hostileOutcomeEntries[0].shotSelected} vs {hostileOutcomeEntries[0].typeOfBall} = {hostileOutcomeEntries[0].outcome}");
         }
     }
 #endif
@@ -346,9 +407,10 @@ public class OutcomeEntry
     public BallType typeOfBall;
     public BallLine lineOfBall;
     public BallLength lengthOfBall;
-    public BattingTiming timing;
     public BattingStrategy shotSelected;
+    public BattingTiming timing;
     public OutCome outcome;
+    public SpecialOutcome specialOutcome; // New field for special outcomes
 }
 
 [Serializable]

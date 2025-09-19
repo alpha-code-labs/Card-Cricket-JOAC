@@ -17,12 +17,16 @@ public class CardsPoolManager : MonoBehaviour
     public int CurrntTurn = 0; // Current turn number
     public List<BallThrow> BallThrows; // List to hold BallThrow instances
     [Header("Difficulty Settings")]
-    [SerializeField] int maxHandSize = 5;
+    [SerializeField] public int maxHandSize = 5;
+    public int maxRedraws = 1; // Maximum redraws per game
+    private int redraws = 0; // Track number of redraws used
+
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
     [SerializeField] TextMeshProUGUI BallThrowText; // Text to display current BallThrow
     public static CardsPoolManager Instance;
     public static event System.Action OnTurnStarted;
+    public static event System.Action<int, int> OnHandRedrawn; // Event to notify when hand is redrawn
     public GameObject cardPrefab; // Assign in inspector
     void Awake()
     {
@@ -37,9 +41,10 @@ public class CardsPoolManager : MonoBehaviour
         // EnergyManager.Instance.RefreshEnergyText();
     }
     [ContextMenu("Start Turn")]
-    void StartTurn()
+    void StartTurn(bool incrementBalls = true)
     {
-        ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        if (incrementBalls)
+            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
         BallThrowText.text = CurrentBallThrow.ToString();
         for (int i = 0; i < maxHandSize; i++)
         {
@@ -48,7 +53,7 @@ public class CardsPoolManager : MonoBehaviour
         OnTurnStarted?.Invoke();
     }
     [ContextMenu("End Turn")]
-    public void EndTurn()
+    public void EndTurn(bool incrementBalls = true)
     {
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
         foreach (var card in HandCards)
@@ -59,7 +64,7 @@ public class CardsPoolManager : MonoBehaviour
         HandCards.Clear();
         // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
-        StartTurn(); // Start the next turn
+        StartTurn(incrementBalls); // Start the next turn
     }
     [ContextMenu("Draw Card")]
     void DrawCard()
@@ -74,6 +79,42 @@ public class CardsPoolManager : MonoBehaviour
         HandCards.Add(card);
         card.gameObject.SetActive(true); // Activate the card when drawn 
     }
+
+    public void RedrawHand()
+    {
+        if (redraws >= maxRedraws)
+        {
+            Debug.LogWarning($"Cannot redraw: Maximum redraws ({maxRedraws}) already used!");
+            return;
+        }
+        
+        if (HandCards.Count == 0)
+        {
+            Debug.LogWarning("No cards in hand to redraw!");
+            return;
+        }
+        
+        // Move current hand cards to discard pile
+        foreach (var card in HandCards)
+        {
+            DiscardPile.Add(card);
+            card.gameObject.SetActive(false);
+        }
+        HandCards.Clear();
+        
+        // Draw new cards
+        for (int i = 0; i < maxHandSize; i++)
+        {
+            DrawCard();
+        }
+        
+        redraws++;
+        Debug.Log($"Hand redrawn! Redraws used: {redraws}/{maxRedraws}");
+        
+        // Optional: Trigger an event for UI updates
+        OnHandRedrawn?.Invoke(redraws, maxRedraws);
+    }
+
     void InstantiateCards()
     {
         DrawPile.Clear();
@@ -87,7 +128,7 @@ public class CardsPoolManager : MonoBehaviour
     }
 
     [ContextMenu("Init Text Deck")]
-    void InitTextDeck()
+    void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
     {
         Deck.Clear();
         foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
@@ -101,7 +142,7 @@ public class CardsPoolManager : MonoBehaviour
         // Initialize bowler variables outside the loop
         TypeOfBowler bowlerType = TypeOfBowler.Fast;
         Side bowlerSide = Side.RightArm;
-
+        
         for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
         {
             // Randomize bowler type and side every 6 balls (start of each over)
@@ -110,7 +151,7 @@ public class CardsPoolManager : MonoBehaviour
                 bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
                 bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
             }
-            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide));
+            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
         }
     }
 
@@ -128,6 +169,21 @@ public class CardsPoolManager : MonoBehaviour
             Deck[randomIndex] = temp;
         }
         Debug.Log("Deck has been randomized!");
+    }
+
+     public bool CanRedraw()
+    {
+        return redraws < maxRedraws && HandCards.Count > 0;
+    }
+
+    public int GetRedrawsRemaining()
+    {
+        return Mathf.Max(0, maxRedraws - redraws);
+    }
+
+    public void ResetRedraws()
+    {
+        redraws = 0;
     }
 
     public BallThrow CurrentBallThrow
