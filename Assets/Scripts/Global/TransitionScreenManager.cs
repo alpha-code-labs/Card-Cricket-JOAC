@@ -91,7 +91,8 @@ public class TransitionScreenManager : MonoBehaviour
 
 public enum SceneNames
 {
-    CardGameScene
+    CardGameScene,
+    NewDayScene
 }
 public enum TransitionTypes
 {
