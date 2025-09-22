@@ -653,6 +653,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 254390138}
+  - {fileID: 1355007686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1098709798
@@ -667,6 +668,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4262ee35bc525eb479d1ebd6ceb8c6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentSaveData:
+    currentDate: 1998-07-18
+    humility: 0
+    courage: 0
+    resourcefulness: 0
+    foresight: 0
 --- !u!1 &1351753825
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +766,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1355007685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355007686}
+  - component: {fileID: 1355007687}
+  m_Layer: 0
+  m_Name: CalanderSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1355007686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355007685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1098709797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1355007687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355007685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a048ad7e359e7d4ea76f6510ed04459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calanderRecord: {fileID: 11400000, guid: ba57f6b4232bf6f45b6efacd6209b5f0, type: 2}
 --- !u!1 &1679794968
 GameObject:
   m_ObjectHideFlags: 0
