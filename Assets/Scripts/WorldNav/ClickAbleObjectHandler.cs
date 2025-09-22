@@ -5,22 +5,10 @@ using UnityEngine.Events;
 
 public abstract class ClickAbleObjectHandler : MonoBehaviour
 {
+    public GameObject availabilityIndicatorPrefab;
     protected void Start()
     {
         RefreshCollider();
-        CreateAvailabilityIndicator();
-    }
-    private void CreateAvailabilityIndicator()
-    {
-        GameObject availabilityIndicator = new GameObject("AvailabilityIndicator");
-        availabilityIndicator.transform.SetParent(transform);
-        availabilityIndicator.transform.localPosition = Vector3.zero;
-        availabilityIndicator.transform.localScale = Vector3.one * 0.1f; // Scale down the indicator
-        SpriteRenderer sr = availabilityIndicator.AddComponent<SpriteRenderer>();
-        sr.sprite = Resources.Load<Sprite>("Textures/AvailabilityIndicator");
-        sr.sortingOrder = 100; // Ensure it's rendered above other objects
-        sr.color = new Color(1, 1, 1, 0.5f); // Semi-transparent
-        availabilityIndicator.SetActive(true); // Initially hidden
     }
     private void OnMouseDown()
     {
@@ -35,19 +23,11 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
     private void OnMouseEnter()
     {
         if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
-        Transform availabilityIndicator = transform.Find("AvailabilityIndicator");
-        if (availabilityIndicator != null)
-        {
-            availabilityIndicator.gameObject.transform.localScale = Vector3.one * 1.2f; // Slightly larger on hover
-        }
+        availabilityIndicatorPrefab.transform.localScale = Vector3.one * 1.2f;
     }
     private void OnMouseExit()
     {
-        Transform availabilityIndicator = transform.Find("AvailabilityIndicator");
-        if (availabilityIndicator != null)
-        {
-            availabilityIndicator.gameObject.transform.localScale = Vector3.one * 0.8f;
-        }
+        availabilityIndicatorPrefab.transform.localScale = Vector3.one * 0.8f;
     }
     public abstract void OnClick();
     protected void RefreshCollider()
