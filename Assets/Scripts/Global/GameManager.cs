@@ -13,4 +13,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
     }
+    void Start()
+    {
+        SaveSystem.LoadData();
+    }
 }
