@@ -8,9 +8,13 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     [SerializeField] Locations location;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.StartGoToDialogue(location);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, go to " + location.ToString(), "No, stay here", OnConfirmed);
     }
-    
+    void OnConfirmed()
+    {
+        LocationSwitcher.instance.SwitchLocation(location);
+    }
+
 }
 public enum Locations
 {

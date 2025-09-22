@@ -1,7 +1,0 @@
-﻿title: ConfirmLocation
----
--> Yes, go to {get_next_location()}
-    <<confirm_location true>>
--> No, stay here
-    <<confirm_location false>>
-===

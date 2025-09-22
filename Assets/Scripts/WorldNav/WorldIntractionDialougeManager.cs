@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,36 +13,39 @@ public class WorldIntractionDialougeManager : MonoBehaviour
     {
         instance = this;
     }
-    void Start()
-    {
-        // dialogueRunner.AddFunction<string>("get_next_location", GetNextLocation);
-    }
     public bool IsDialogueCurrentlyRunning()
     {
         return dialogueRunner.IsDialogueRunning;
     }
-    internal Locations location;
-    public void StartGoToDialogue(Locations locations)
+    string YesChoice;
+    string NoChoice;
+    Action OnDialogueConfirmed;
+    public void StartConfirmationDialogue(string YesChoice, string NoChoice, Action onDialogueConfirmed = null)
     {
-        location = locations;
-        dialogueRunner.StartDialogue("ConfirmLocation");
+        OnDialogueConfirmed = onDialogueConfirmed;
+        this.YesChoice = YesChoice;
+        this.NoChoice = NoChoice;
+
+        dialogueRunner.StartDialogue("ConfirmationDialogue");
+
     }
-    [YarnCommand("confirm_location")]
-    public static void ConfirmLocation(bool userConfirmed)
+    [YarnCommand("confirm_choice")]
+    public static void ConfirmChoice(bool userConfirmed)
     {
         if (userConfirmed)
         {
-            LocationSwitcher.instance.SwitchLocation(instance.location);
-        }
-        else
-        {
-            Debug.Log("User cancelled location switch.");
+            instance.OnDialogueConfirmed?.Invoke();
         }
     }
-    [YarnFunction("get_next_location")]
-    public static string GetNextLocation()
+    [YarnFunction("get_yes_choice")]
+    public static string GetYesChoice()
     {
-        return instance.location.ToString();
+        return instance.YesChoice;
+    }
+    [YarnFunction("get_no_choice")]
+    public static string GetNoChoice()
+    {
+        return instance.NoChoice;
     }
 
 }

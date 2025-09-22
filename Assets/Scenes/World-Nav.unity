@@ -1432,6 +1432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 655418089}
   - component: {fileID: 655418090}
+  - component: {fileID: 655418091}
   m_Layer: 0
   m_Name: RamuBase
   m_TagString: Untagged
@@ -1506,6 +1507,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &655418091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655418088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d2f361208c8cf43b6b6cfbabe466f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availabilityIndicatorPrefab: {fileID: 0}
+  character: 0
 --- !u!1 &660425488
 GameObject:
   m_ObjectHideFlags: 0

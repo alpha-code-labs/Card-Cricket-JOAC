@@ -4,10 +4,40 @@ using UnityEngine;
 
 public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
 {
-    // public Locations location;
+    public Characters character;
     public override void OnClick()
     {
-        Debug.Log("Clicked on " + gameObject.name);
-        // LocationSwitcher.instance.SwitchLocation(location);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, " + GetIntractionMessage(), "No, don't talk", OnConfirmed);
     }
+    void OnConfirmed()
+    {
+    }
+    string GetIntractionMessage()
+    {
+        return "Talk to " + character.ToString();
+    }
+}
+public enum Characters
+{
+    Ramu,
+    Kamla,
+    ShivPrasad,
+    Bed,
+    Amit,
+    Sumit,
+    Pinky,
+    RamCharan,
+    Priya,
+    Naresh,
+    CoachSharma,
+    SunitaMam,
+    Aryan,
+    CricketDada,
+    Amarjeet,
+    Suresh,
+    AgarwalUncle,
+    Fatima,
+    MochiUncle,
+    MunnaBhai,
+    Vikram
 }
