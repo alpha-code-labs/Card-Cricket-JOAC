@@ -16,14 +16,32 @@ public class WorldIntractionDialougeManager : MonoBehaviour
     {
         // dialogueRunner.AddFunction<string>("get_next_location", GetNextLocation);
     }
-    internal Locations location;
     public bool IsDialogueCurrentlyRunning()
     {
         return dialogueRunner.IsDialogueRunning;
+    }
+    internal Locations location;
+    public void StartGoToDialogue(Locations locations)
+    {
+        location = locations;
+        dialogueRunner.StartDialogue("ConfirmLocation");
+    }
+    [YarnCommand("confirm_location")]
+    public static void ConfirmLocation(bool userConfirmed)
+    {
+        if (userConfirmed)
+        {
+            LocationSwitcher.instance.SwitchLocation(instance.location);
+        }
+        else
+        {
+            Debug.Log("User cancelled location switch.");
+        }
     }
     [YarnFunction("get_next_location")]
     public static string GetNextLocation()
     {
         return instance.location.ToString();
     }
+
 }

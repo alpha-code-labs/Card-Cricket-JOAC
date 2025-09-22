@@ -5,24 +5,12 @@ using Yarn.Unity;
 
 public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 {
-    public Locations location;
+    [SerializeField] Locations location;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.location = location;
-        WorldIntractionDialougeManager.instance.dialogueRunner.StartDialogue("ConfirmLocation");
+        WorldIntractionDialougeManager.instance.StartGoToDialogue(location);
     }
-    [YarnCommand("confirm_location")]
-    public static void ConfirmLocation(bool userConfirmed)
-    {
-        if (userConfirmed)
-        {
-            LocationSwitcher.instance.SwitchLocation(WorldIntractionDialougeManager.instance.location);
-        }
-        else
-        {
-            Debug.Log("User cancelled location switch.");
-        }
-    }
+    
 }
 public enum Locations
 {
