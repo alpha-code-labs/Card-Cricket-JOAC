@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3717013262446990922}
   - component: {fileID: 1103619064874303902}
-  - component: {fileID: 2449191762255656797}
+  - component: {fileID: 3158808672264194072}
   m_Layer: 0
   m_Name: GoTo
   m_TagString: Untagged
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availabilityIndicatorPrefab: {fileID: 5071839976451216632}
   location: 13
---- !u!60 &2449191762255656797
-PolygonCollider2D:
+--- !u!58 &3158808672264194072
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -81,22 +81,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.9791846, y: 3.272767}
-      - {x: -0.347364, y: 3.444326}
-      - {x: -0.35409778, y: -2.152721}
-      - {x: 0.957791, y: -1.8606112}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &2954853518334024082
 GameObject:
   m_ObjectHideFlags: 0

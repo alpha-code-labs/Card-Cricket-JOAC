@@ -27,7 +27,7 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
     }
     private void OnMouseExit()
     {
-        availabilityIndicatorPrefab.transform.localScale = Vector3.one * 0.8f;
+        availabilityIndicatorPrefab.transform.localScale = Vector3.one * 1f;
     }
     public abstract void OnClick();
     protected void RefreshCollider()
