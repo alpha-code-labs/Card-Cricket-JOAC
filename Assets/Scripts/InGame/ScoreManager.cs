@@ -21,8 +21,13 @@ public class ScoreManager : MonoBehaviour
     int currentRuns = 0; // Current runs scored
     int TargetScore = 40; // The target score to reach
     internal int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
-    int wickets = 3; // Wickets before game over
+    public int wickets = 3; // Wickets before game over
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
+    [SerializeField] TextMeshProUGUI currentRunsText; 
+    [SerializeField] TextMeshProUGUI totalRunsNeededText; 
+    [SerializeField] TextMeshProUGUI remainingBallsText; 
+    [SerializeField] TextMeshProUGUI remainingWicketsText; 
+    [SerializeField] TextMeshProUGUI totalWicketsText; 
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     [SerializeField] Button redrawButton; // Assign in Inspector
     [SerializeField] TextMeshProUGUI redrawButtonText;
@@ -33,6 +38,8 @@ public class ScoreManager : MonoBehaviour
         int ballDisplay = balls + 1;
         int overDisplay = overs + 1;
         int ballsRemain = MaxBalls - ballsBowled;
+        remainingBallsText.text = ballsRemain.ToString();
+
         ballsAndOversText.text = $"Ball {ballDisplay} of over {overDisplay}\n total balls remain {ballsRemain}\n Wickets: {wickets}";
         if (ballsBowled >= MaxBalls)
         {
@@ -47,7 +54,11 @@ public class ScoreManager : MonoBehaviour
     bool targetReached = false;
     public void UpdateScore(int runs)
     {
-        currentRuns += runs;
+        if(runs > 0)
+            currentRuns += runs;
+        currentRunsText.text = currentRuns.ToString();
+        totalRunsNeededText.text = "/ "+TargetScore.ToString();
+        remainingWicketsText.text = wickets.ToString();
         scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
         if (currentRuns >= TargetScore && !targetReached)
         {
@@ -63,33 +74,78 @@ public class ScoreManager : MonoBehaviour
         {
             currentRuns += 1; // Add one run for wide ball
             scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
-            
         }
     }
     public void LooseWicket()
     {
+
         wickets--;
+        remainingWicketsText.text = wickets.ToString();
         if (wickets <= 0)
         {
             Debug.Log("All Wickets Lost! Game Over!");
             // Logic to handle game over, e.g., showing a game over screen
         }
     }
-    public void PlayExcelBattingStrategy(BattingStrategy battingStrategy)
-    {
-        // TimingManager.Instance.StartTimingMeter(battingStrategy);
+    // public void PlayExcelBattingStrategy(BattingStrategy battingStrategy)
+    // {
+    //     // TimingManager.Instance.StartTimingMeter(battingStrategy);
 
-        // Temporary outcome for testing
-        // OutCome outcome = OutCome.Out;
-        // OutCome outcome = outComeCalculator.CalculateOutcome(battingStrategy, new BallThrow() { ballType = BallType.Straight, bowlerSide = Side.RightHanded, bowlerType = TypeOfBowler.Fast, ballLength = BallLength.GoodLength, ballLine = BallLine.OffStump }, BattingTiming.Perfect);
+    //     // Temporary outcome for testing
+    //     // OutCome outcome = OutCome.Out;
+    //     // OutCome outcome = outComeCalculator.CalculateOutcome(battingStrategy, new BallThrow() { ballType = BallType.Straight, bowlerSide = Side.RightHanded, bowlerType = TypeOfBowler.Fast, ballLength = BallLength.GoodLength, ballLine = BallLine.OffStump }, BattingTiming.Perfect);
+    //     BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
+    //     PitchCondition pitchCondition = currentBallThrow.pitchCondition;
+    //     Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
+    //     OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
+
+    //     UpdateScore((int)outcome);
+    //     AnimateOnScreenText(battingStrategy, outcome);
+    //     CardsPoolManager.Instance.EndTurn((int)outcome != -3); // End turn and increment balls only if not out
+    // }
+
+    public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
+    {
+        StartCoroutine(PlayCardSequence(battingStrategy, cardObject, cardSprite));
+    }
+
+    private IEnumerator PlayCardSequence(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
+    {
+        // Pause timer during animation
+        Timer.Instance.PauseTimer();
+        
+        // Calculate outcome
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
-        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
+        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
+            battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
+        
+        
+        
+        // Play animation sequence
+        if (CardPlayAnimationController.Instance != null)
+        {
+            yield return CardPlayAnimationController.Instance.PlayCardSequence(
+                cardObject, cardSprite, battingStrategy, outcome);
+        }
+        else
+        {
+            // Fallback if no animation controller
+            yield return new WaitForSeconds(1f);
+        }
 
+        // Update score immediately (but don't show yet)
         UpdateScore((int)outcome);
-        AnimateOnScreenText(battingStrategy, outcome);
-        CardsPoolManager.Instance.EndTurn((int)outcome != -3); // End turn and increment balls only if not out
+
+        CardsPoolManager.Instance.DestroyCurrentBallCard();
+
+        yield return new WaitForSeconds(3f);
+        // Resume timer
+        Timer.Instance.ResumeTimer();
+        
+        // End turn
+        CardsPoolManager.Instance.EndTurn((int)outcome != -3);
     }
 
     [SerializeField] TextMeshProUGUI outcomeText;
@@ -138,6 +194,7 @@ public class ScoreManager : MonoBehaviour
     
     void Start()
     {
+        totalWicketsText.text = "/ " + wickets.ToString();
         UpdateScore(0); // Initialize score display
         UpdateBallsAndOvers(0); // Initialize balls and overs display
         if (redrawButton != null)

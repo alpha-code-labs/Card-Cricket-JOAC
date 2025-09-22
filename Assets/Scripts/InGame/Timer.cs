@@ -9,6 +9,10 @@ public class Timer : MonoBehaviour
 
     public static Timer Instance;
     public int maxTimeToChooseStrategy = 5; // seconds
+    private bool isPaused = false;
+    private float pausedTimeRemaining = 0;
+    private Coroutine currentTimerCoroutine;
+
     void Awake()
     {
         Instance = this;
@@ -18,30 +22,53 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerText.text = "Time Left: " + maxTimeToChooseStrategy.ToString() + "s";
+        timerText.text = maxTimeToChooseStrategy.ToString() + "s";
+    }
+
+    public void PauseTimer()
+    {
+        isPaused = true;
+        if (currentTimerCoroutine != null)
+        {
+            StopCoroutine(currentTimerCoroutine);
+        }
+    }
+
+    public void ResumeTimer()
+    {
+        if (isPaused && pausedTimeRemaining > 0)
+        {
+            isPaused = false;
+            currentTimerCoroutine = StartCoroutine(TimerCoroutine(Mathf.CeilToInt(pausedTimeRemaining)));
+        }
     }
     public void StartTurnTimer()
     {
-        StartCoroutine(TimerCoroutine(maxTimeToChooseStrategy));
+        isPaused = false;
+        pausedTimeRemaining = maxTimeToChooseStrategy;
+        currentTimerCoroutine = StartCoroutine(TimerCoroutine(maxTimeToChooseStrategy));
     }
 
     public void EndTurnTimer()
     {
         StopAllCoroutines();
-        timerText.text = "Time Left: " + maxTimeToChooseStrategy.ToString() + "s";
+        timerText.text = "" + maxTimeToChooseStrategy.ToString() + "s";
     }
 
     IEnumerator TimerCoroutine(int duration)
     {
         float timeLeft = duration;
+        pausedTimeRemaining = timeLeft;
+        
         while (timeLeft > 0)
         {
-            timerText.text = "Time Left: " + Mathf.CeilToInt(timeLeft).ToString() + "s";
+            pausedTimeRemaining = timeLeft;
+            timerText.text = "" + Mathf.CeilToInt(timeLeft).ToString() + "s";
             yield return new WaitForSeconds(1f);
             timeLeft -= 1f;
         }
+        
         timerText.text = "Time's Up!";
-        // Handle time up scenario, e.g., auto-select a strategy or end turn
         CardsPoolManager.Instance.EndTurn(true);
     }
 }

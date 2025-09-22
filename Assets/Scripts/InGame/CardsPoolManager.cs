@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class CardsPoolManager : MonoBehaviour
 {
@@ -20,14 +18,20 @@ public class CardsPoolManager : MonoBehaviour
     [SerializeField] public int maxHandSize = 5;
     public int maxRedraws = 1; // Maximum redraws per game
     private int redraws = 0; // Track number of redraws used
+    private bool cardsInteractable = true;
 
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
+    [SerializeField] Transform ballerCardTransform;
     [SerializeField] TextMeshProUGUI BallThrowText; // Text to display current BallThrow
     public static CardsPoolManager Instance;
     public static event System.Action OnTurnStarted;
     public static event System.Action<int, int> OnHandRedrawn; // Event to notify when hand is redrawn
     public GameObject cardPrefab; // Assign in inspector
+
+    public GameObject ballerCard;
+
+    public GameObject ballerCardPrefab;
     void Awake()
     {
         Instance = this;
@@ -43,9 +47,19 @@ public class CardsPoolManager : MonoBehaviour
     [ContextMenu("Start Turn")]
     void StartTurn(bool incrementBalls = true)
     {
+        if (CurrntTurn >= ScoreManager.Instance.MaxBalls || ScoreManager.Instance.wickets < 1)
+        {
+            //Game ended 
+            
+            return;    
+        }
+
         Timer.Instance.StartTurnTimer();
         if (incrementBalls)
             ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        if (ballerCard != null)
+            Destroy(ballerCard);
+        ballerCard = InstantiateBallerCard(CurrentBallThrow);
         BallThrowText.text = CurrentBallThrow.ToString();
         for (int i = 0; i < maxHandSize; i++)
         {
@@ -63,6 +77,8 @@ public class CardsPoolManager : MonoBehaviour
             DiscardPile.Add(card);
             card.gameObject.SetActive(false); // Optionally deactivate the card
         }
+        
+        SetCardsInteractable(true);
         HandCards.Clear();
         // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
@@ -80,6 +96,9 @@ public class CardsPoolManager : MonoBehaviour
         DrawPile.RemoveAt(0);
         HandCards.Add(card);
         card.gameObject.SetActive(true); // Activate the card when drawn 
+        SimpleHandArcManager arcManager = hand.GetComponent<SimpleHandArcManager>();
+            if (arcManager != null)
+                arcManager.RefreshCardArrangement();
     }
 
     public void RedrawHand()
@@ -128,6 +147,24 @@ public class CardsPoolManager : MonoBehaviour
             card.gameObject.SetActive(false); // Deactivate the card initially
         }
     }
+
+
+    public void DestroyCurrentBallCard()
+    {
+        if (ballerCard != null)
+            ballerCard.SetActive(false);
+            Destroy(ballerCard);
+    }
+
+    GameObject InstantiateBallerCard(BallThrow ballThrow)
+    {
+        GameObject ballerCard = Instantiate(ballerCardPrefab, ballerCardTransform);
+        BallerCardProps cardProps = ballerCard.GetComponent<BallerCardProps>();
+        cardProps.assignBallerProps(ballThrow);
+        return ballerCard;
+    }
+
+    
 
     [ContextMenu("Init Text Deck")]
     void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
@@ -186,6 +223,33 @@ public class CardsPoolManager : MonoBehaviour
     public void ResetRedraws()
     {
         redraws = 0;
+    }
+
+    public void SetCardsInteractable(bool interactable)
+    {
+        cardsInteractable = interactable;
+        
+        // Disable/enable all card interactions
+        foreach (var card in HandCards)
+        {
+            if (card != null && card.gameObject != null)
+            {
+                var canvasGroup = card.GetComponent<CanvasGroup>();
+                if (canvasGroup == null)
+                    canvasGroup = card.gameObject.AddComponent<CanvasGroup>();
+                
+                canvasGroup.interactable = interactable;
+                canvasGroup.blocksRaycasts = interactable;
+                
+                // Optional: visual feedback
+                canvasGroup.alpha = interactable ? 1f : 1f;
+            }
+        }
+    }
+
+    public bool AreCardsInteractable()
+    {
+        return cardsInteractable;
     }
 
     public BallThrow CurrentBallThrow
