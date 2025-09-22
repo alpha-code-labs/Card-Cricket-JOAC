@@ -31,6 +31,24 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
             OnClick();
         }
     }
+    // Hover Effect
+    private void OnMouseEnter()
+    {
+        if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
+        Transform availabilityIndicator = transform.Find("AvailabilityIndicator");
+        if (availabilityIndicator != null)
+        {
+            availabilityIndicator.gameObject.transform.localScale = Vector3.one * 1.2f; // Slightly larger on hover
+        }
+    }
+    private void OnMouseExit()
+    {
+        Transform availabilityIndicator = transform.Find("AvailabilityIndicator");
+        if (availabilityIndicator != null)
+        {
+            availabilityIndicator.gameObject.transform.localScale = Vector3.one * 0.8f;
+        }
+    }
     public abstract void OnClick();
     protected void RefreshCollider()
     {
