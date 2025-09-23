@@ -27,7 +27,6 @@ public class WorldIntractionDialougeManager : MonoBehaviour
         this.NoChoice = NoChoice;
 
         dialogueRunner.StartDialogue("ConfirmationDialogue");
-
     }
     [YarnCommand("confirm_choice")]
     public static void ConfirmChoice(bool userConfirmed)

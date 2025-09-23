@@ -23,7 +23,7 @@ MonoBehaviour:
       eventType: 3
   - date: 1988/07/23
     events:
-    - eventName: Scene 2
+    - eventName: scene_2
       eventDescription: Pre-Tutorial Cutscene
       eventType: 0
     - eventName: Skip

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using Unity.Collections.LowLevel.Unsafe;
 
 public class LocationSwitcher : MonoBehaviour
 {
@@ -32,8 +33,24 @@ public class LocationSwitcher : MonoBehaviour
         }
     }
     public static Action AreaSwitched;
+    public void SwitchLocation(string locationName)
+    {
+        if (Enum.TryParse(locationName, out Locations location))
+        {
+            SwitchLocation(location);
+        }
+        else
+        {
+            Debug.LogError($"Invalid location name: {locationName}");
+        }
+    }
     public void SwitchLocation(Locations location)
     {
+        if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning())
+        {
+            Debug.Log("Cannot switch location while dialogue is running.");
+            return;
+        }
         foreach (var loc in locations)
         {
             loc.SetActive(false); // Deactivate all locations
@@ -53,7 +70,7 @@ public class LocationSwitcher : MonoBehaviour
                 Debug.LogError($"Expected exactly one AreaBackground in location '{location}', but found {areaBackgrounds.Length}.");
                 return;
             }
-            
+
             SwitchToThisLocation.transform.position = SwitchToThisLocation.transform.position; // Ping (no-op)
 #if UNITY_EDITOR
             UnityEditor.EditorGUIUtility.PingObject(SwitchToThisLocation);
