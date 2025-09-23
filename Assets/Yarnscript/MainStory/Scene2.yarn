@@ -16,7 +16,22 @@ Ramu: Captain. Good—you came. Our lane doesn't have a coach, so you get me. To
 Raju: Ok.
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: There are five things you'll carry every time you pick up the bat. Not heavy, but important. One—Eyes. See before you decide. Greed makes you blind; focus makes you early. Two—Feet. Quiet feet, quick mind. Don't rush like a bus late for the depot. Settle first. Three—Hands. Gentle guide, not angry hammer. Let the bat speak, you just hold the mic. Four—Timing. Poor people like us can't waste anything—not food, not movement, not moments. Wait for your moment. Five—Temper. Runs come and go; manners stay. Miss once, breathe. Miss twice, breathe longer.
+Ramu: There are five things you'll carry every time you pick up the bat. Not heavy, but important. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: One—Eyes. See before you decide. Greed makes you blind; focus makes you early. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Two—Feet. Quiet feet, quick mind. Don't rush like a bus late for the depot. Settle first. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Three—Hands. Gentle guide, not angry hammer. Let the bat speak, you just hold the mic. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Four—Timing. Poor people like us can't waste anything—not food, not movement, not moments. Wait for your moment. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Five—Temper. Runs come and go; manners stay. Miss once, breathe. Miss twice, breathe longer.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Eyes, feet, hands, timing, tempe... five.
