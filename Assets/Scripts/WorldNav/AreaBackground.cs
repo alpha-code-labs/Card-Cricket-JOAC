@@ -15,4 +15,8 @@ public class AreaBackground : MonoBehaviour
     {
         // Debug.Log("Clicked on AreaBackground");
     }
+    void OnEnable()
+    {
+        Camera.main.GetComponent<PanAndZoomManager>().InitCamera(GetComponent<BoxCollider2D>());
+    }
 }

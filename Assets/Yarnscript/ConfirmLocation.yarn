@@ -1,8 +1,0 @@
-﻿title: ConfirmLocation
----
-Are you sure you want to go to this location?
--> Yes
-    <<confirm_location true>>
--> No
-    <<confirm_location false>>
-===

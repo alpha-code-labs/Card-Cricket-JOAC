@@ -1,50 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using Yarn.Unity;
 
 public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 {
-    public static bool selectingLocation = false;
-    public Locations location;
+    [SerializeField] Locations location;
     public override void OnClick()
     {
-        // LocationSwitcher.instance.SwitchLocation(location);
-        if (selectingLocation) return;
-        selectingLocation = true;
-        WorldIntractionDialougeManager.instance.location = location;
-        WorldIntractionDialougeManager.instance.dialogueRunner.StartDialogue("ConfirmLocation");
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue(GetYesChoice(), "No, stay here", OnConfirmed);
     }
-    [YarnCommand("confirm_location")]
-    public static void ConfirmLocation(bool userConfirmed)
+    string GetYesChoice()
     {
-        if (userConfirmed)
-        {
-            LocationSwitcher.instance.SwitchLocation(WorldIntractionDialougeManager.instance.location);
-        }
-        else
-        {
-            Debug.Log("User cancelled location switch.");
-        }
-        selectingLocation = false;
+        string locationName = AddSpacesToEnum(location.ToString());
+        return "Yes, go to " + locationName;
     }
+    void OnConfirmed()
+    {
+        LocationSwitcher.instance.SwitchLocation(location);
+    }
+    public static string AddSpacesToEnum(string enumName)
+    {
+        return Regex.Replace(enumName, "([a-z])([A-Z])", "$1 $2");
+    }
+
 }
 public enum Locations
 {
     Inavlid = -1,
-    HutInterior,
-    KohliwadaGround,
-    PublicSchool,
-    SportsAcademy,
-    WellingtonEstate,
-    SurakshaHospital,
-    ShivTemple,
-    AutoStand,
-    GeneralStore,
-    FatimaDhaba,
-    CobblerShop,
-    MunnaTyreShop,
-    ChaiStall,
+    HutInterior = 0,
+    KohliwadaGround = 1,
+    PublicSchool = 2,
+    SportsAcademy = 3,
+    WellingtonEstate = 4,
+    SurakshaHospital = 5,
+    ShivTemple = 6,
+    AutoStand = 7,
+    GeneralStore = 8,
+    FatimaDhaba = 9,
+    CobblerShop = 10,
+    MunnaTyreShop = 11,
+    ChaiStall = 12,
     //
-    MapSprite
+    MapSprite = 13 // Special case for map sprite
 }
