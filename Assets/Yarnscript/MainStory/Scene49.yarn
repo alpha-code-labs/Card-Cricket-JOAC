@@ -3,10 +3,10 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ShowDateScreen "April 11th 1990 - Morning">>
+ 
 <<wait 5>>
 
-<<PlayBackgroundMusic "heartbeat">>
+ 
 <<SetBGSprite hutInterior>>
 
 <<SetCharacterExpression "Ramu" "Excited">>

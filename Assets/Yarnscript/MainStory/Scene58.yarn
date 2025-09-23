@@ -4,8 +4,8 @@ colorID: 0
 position: 0,0
 ---
 
-<<ShowDateScreen "March 17th 1990 - Evening">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite "KohliwadaGroundground">>

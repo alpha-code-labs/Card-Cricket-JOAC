@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ShowDateScreen "February 1st 1989">>
-<<wait 5>>
+ 
+ 
 
 <<SetBGSprite KohliwadaGroundground>>
 

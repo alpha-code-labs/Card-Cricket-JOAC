@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<PlayBackgroundMusic "heartbeat">>
+ 
 <<SetBGSprite hutInterior>>
 
 <<SetCharacterExpression "Ramu" "Smiling">>

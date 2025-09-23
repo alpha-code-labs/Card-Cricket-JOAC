@@ -3,17 +3,15 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<PlayBackgroundMusic "heartbeat">>
 
-<<ShowDateScreen "18th July 1988 - Raju's Birthday">>
-<<wait 5>>
+
+
 
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite hutInterior>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Oye, birthday hero… close your eyes.
-
 
 <<SetCharacterExpression "Raju" "Groggy">>
 Raju: Closed! But I can still see through my eyelashes.
