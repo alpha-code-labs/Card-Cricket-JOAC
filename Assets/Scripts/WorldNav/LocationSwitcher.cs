@@ -46,11 +46,11 @@ public class LocationSwitcher : MonoBehaviour
     }
     public void SwitchLocation(Locations location)
     {
-        if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning())
-        {
-            Debug.Log("Cannot switch location while dialogue is running.");
-            return;
-        }
+        // if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning())
+        // {
+        //     Debug.Log("Cannot switch location while dialogue is running.");
+        //     return;
+        // }
         foreach (var loc in locations)
         {
             loc.SetActive(false); // Deactivate all locations
