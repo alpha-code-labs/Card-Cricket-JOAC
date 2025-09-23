@@ -49,6 +49,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
 
         Debug.Log($"Starting Dialogue at node: {currentNode}");
+        HideAllCharacters();
         dialogueRunner.StartDialogue(currentNode);
     }
 
