@@ -4,6 +4,7 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.UI;
 using System.Collections;
+using DG.Tweening;
 
 public class DialogueScriptCommandHandler : MonoBehaviour
 {
@@ -23,16 +24,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static string currentNode;
     [SerializeField] DialogueRunner dialogueRunner;
 
-
-
-    [Header("Date Display")]
-    [SerializeField] GameObject dateDisplayCanvas;
-    [SerializeField] TextMeshProUGUI dateText;
-    [SerializeField] float fadeDuration = 1f;
-
-    [Header("Fade Settings")]
-    [SerializeField] GameObject fadePanel;
-
     [Header("Audio Settings")]
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] List<AudioClip> backgroundMusicClips;
@@ -51,6 +42,12 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     void Start()
     {
+        if (currentNode == null)//This should only happen if we directly load the scene for testing
+        {
+            currentNode = "scene_1";//Default Starting Node
+            Debug.LogWarning("Testing?: currentNode was null, defaulting to 'scene_1'");
+        }
+
         Debug.Log($"Starting Dialogue at node: {currentNode}");
         dialogueRunner.StartDialogue(currentNode);
     }
@@ -220,47 +217,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         Instance.rightCharacterImage.gameObject.SetActive(false);
     }
 
-    // DATE DISPLAY
-    [YarnCommand("ShowDateScreen")]
-    public static void ShowDateScreen(string dateString)
-    {
-        Instance.StartCoroutine(Instance.DisplayDateSequence(dateString));
-    }
-
-    private IEnumerator DisplayDateSequence(string dateString)
-    {
-        dateDisplayCanvas.SetActive(true);
-        dateText.text = dateString;
-
-        CanvasGroup canvasGroup = dateDisplayCanvas.GetComponent<CanvasGroup>();
-        if (canvasGroup == null) canvasGroup = dateDisplayCanvas.AddComponent<CanvasGroup>();
-
-        canvasGroup.alpha = 0f;
-
-        // Fade in
-        float elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            canvasGroup.alpha = elapsed / fadeDuration;
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-        canvasGroup.alpha = 1f;
-
-        yield return new WaitForSeconds(3f);
-
-        // Fade out
-        elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            canvasGroup.alpha = 1f - (elapsed / fadeDuration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        dateDisplayCanvas.SetActive(false);
-    }
-
     // FADE EFFECTS
     [YarnCommand("FadeToBlack")]
     public static void FadeToBlack()
@@ -268,28 +224,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         //Instance.StartCoroutine(Instance.FadeToBlackSequence());
         NewDayManager.currentEventIndex++;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
-    }
-
-    private IEnumerator FadeToBlackSequence()
-    {
-        if (fadePanel != null)
-        {
-            CanvasGroup canvasGroup = fadePanel.GetComponent<CanvasGroup>();
-            if (canvasGroup == null)
-                canvasGroup = fadePanel.AddComponent<CanvasGroup>();
-
-            fadePanel.SetActive(true);
-            canvasGroup.alpha = 0f;
-
-            float elapsed = 0f;
-            while (elapsed < fadeDuration)
-            {
-                canvasGroup.alpha = elapsed / fadeDuration;
-                elapsed += Time.deltaTime;
-                yield return null;
-            }
-            canvasGroup.alpha = 1f;
-        }
     }
 
     // AUDIO COMMANDS
