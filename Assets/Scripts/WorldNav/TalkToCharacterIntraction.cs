@@ -11,6 +11,9 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     }
     void OnConfirmed()
     {
+        NewDayManager.isEvening = true;
+        NewDayManager.currentEventIndex++;
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     string GetIntractionMessage()
     {

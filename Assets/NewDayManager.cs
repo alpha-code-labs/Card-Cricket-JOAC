@@ -19,7 +19,7 @@ public class NewDayManager : MonoBehaviour
     }
     IEnumerator StartEventAfterDelay(EventRecord events)
     {
-        Debug.Log($"Starting Event {events.eventName} after delay");
+        Debug.Log($"Starting Event {currentDateRecord.date} {events.eventName} after delay");
         yield return new WaitForSeconds(3f);
         StartEvent(events);
     }
