@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         NewDayManager.currentEventIndex = 0;//Day starts from 0 if game is starting from main menu
+        NewDayManager.isEvening = false;
         SaveSystem.LoadData();
     }
 }

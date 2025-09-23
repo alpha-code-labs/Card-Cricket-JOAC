@@ -1,0 +1,46 @@
+﻿title: Amarjeet_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple, Day 2
+True to his promise, Raju returns to the temple the following evening, determined to learn more about the mental discipline that Amarjeet described.
+
+The temple courtyard glows softly in the evening light as Amarjeet tends to the oil lamps with the same steady devotion that characterizes all his actions. His movements reflect decades of disciplined practice, each gesture purposeful and unhurried. When he sees Raju approaching with obvious eagerness to continue their previous conversation, his expression shows the pleased surprise of a teacher whose student has demonstrated genuine commitment to learning.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: So, you came back, beta. Few boys your age keep promises, especially when the teaching involves hard work rather than easy answers.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+// Raju feels both pride in having kept his commitment and nervous anticipation about whether he has understood and applied yesterday's lessons correctly. The priest's acknowledgment of his return gives him confidence to share his experiences and ask the questions that have been building throughout the day.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, I've been thinking about what you said about mental steadiness. I tried to focus only on each individual ball during today's practice. It felt... different. Better, but also more difficult than I expected.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: You've discovered something important - that discipline transforms the quality of both success and failure. When your mind is steady, even errors become teachers rather than sources of discouragement.
+
+Amarjeet: But tell me this - was it easy to maintain that focus throughout your entire practice session? Did your mind want to wander to other thoughts?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: No, Baba, it wasn't easy at all. My mind kept wanting to think about other things. Keeping attention on just the current moment felt like... like holding water in cupped hands.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: A perfect analogy, beta. Mental discipline is indeed like holding water - it requires constant, gentle attention. The skill is in finding the right amount of focused care.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So how do I get better at this holding, Baba? How do I make my focus stronger and more consistent?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Come back tomorrow if you wish to learn more about applying this discipline in different areas of your life.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju walks home from the temple carrying both practical techniques for developing focus and growing recognition that Amarjeet's teachings extend far beyond cricket, he feels the satisfaction of a student who has engaged seriously with challenging material. His voluntary return has deepened the priest's investment in his education and opened the door to more advanced teachings about mental discipline and its applications.
+
+<<set $Amarjeet_Day = 3>>
+<<EndEvent true>>
+===
