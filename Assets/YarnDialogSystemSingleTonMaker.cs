@@ -21,6 +21,12 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     void Start()
     {
         dialogueRunner = GetComponent<DialogueRunner>();
+
     }
     public DialogueRunner dialogueRunner;
+    [YarnCommand("AutoAdvance")]
+    public static void AutoAdvance(bool isAuto)
+    {
+        instance.dialogueRunner.GetComponentInChildren<LinePresenter>().autoAdvance = isAuto;
+    }
 }
