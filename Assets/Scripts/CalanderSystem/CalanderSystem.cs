@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments;
 using UnityEngine;
 
 public class CalanderSystem : MonoBehaviour
@@ -36,5 +34,14 @@ public class CalanderSystem : MonoBehaviour
             UnityEngine.Debug.LogError($"No date record found for date: {date}");
             return null;
         }
+    }
+    public string GetNextDate(string currentDate)
+    {
+        int indexOfCurrentDate = calanderRecord.dates.FindIndex(d => d.date == currentDate);
+        indexOfCurrentDate++;
+        DateRecord nextDateRecord = calanderRecord.dates[indexOfCurrentDate];
+        string nextDateString = nextDateRecord.date;
+        Debug.Log($"Next date is {nextDateString}");
+        return nextDateString;
     }
 }

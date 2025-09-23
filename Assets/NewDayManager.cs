@@ -38,6 +38,11 @@ public class NewDayManager : MonoBehaviour
                 //Load Special Event
                 break;
             case TypeOfEvent.SkipDayOrEvening:
+                if (isEvening)
+                    EndDay();
+                isEvening = true;
+                currentEventIndex++;
+                TransitionScreenManager.instance.LoadScene("NewDayScene");
                 //Skip to next day or evening
                 break;
             case TypeOfEvent.GamePlay:
@@ -49,6 +54,14 @@ public class NewDayManager : MonoBehaviour
                 Debug.LogError("No event type found");
                 break;
         }
+    }
+    public void EndDay()
+    {
+        currentEventIndex = 0;
+        isEvening = false;
+        GameManager.instance.currentSaveData.currentDate = CalanderSystem.instance.GetNextDate(GameManager.instance.currentSaveData.currentDate);
+        SaveSystem.SaveDataToFile();
+        TransitionScreenManager.instance.LoadScene("NewDayScene");
     }
 
 }
