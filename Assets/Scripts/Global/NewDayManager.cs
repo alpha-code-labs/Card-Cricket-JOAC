@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class NewDayManager : MonoBehaviour
 {
@@ -80,6 +81,14 @@ public class NewDayManager : MonoBehaviour
                 Debug.LogError("No event type found");
                 break;
         }
+    }
+    [YarnCommand("EndEvent")]
+    public static void EndEvent(bool FreeTimeConsumed = false)
+    {
+        if (FreeTimeConsumed)
+            isEvening = true;
+        currentEventIndex++;
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     public void EndDay()
     {
