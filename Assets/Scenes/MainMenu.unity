@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb03671e0d4f85640aa341775a114633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basicBlackFadeTransition: {fileID: 1679794970}
 --- !u!1 &484104836
 GameObject:
   m_ObjectHideFlags: 0

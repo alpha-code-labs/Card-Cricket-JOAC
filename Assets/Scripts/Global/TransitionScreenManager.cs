@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class TransitionScreenManager : MonoBehaviour
 {
     public static TransitionScreenManager instance;
+    [SerializeField] BasicBlackFadeTransition basicBlackFadeTransition;
 
     void Awake()
     {
@@ -32,10 +33,9 @@ public class TransitionScreenManager : MonoBehaviour
         Action LoadSceneAction = () => { StartCoroutine(LoadSceneCoroutine(SceneName.ToString())); };//This is What Needs to Happen After Transition has Started or During Loading
 
         // GetComponent<MochiBounceSceneTransition>().AnimateLoadingScreen(LoadSceneAction);//This is the Intro Animation
-        BasicBlackFadeTransition instance = GetComponentInChildren<BasicBlackFadeTransition>();
-        instance.gameObject.SetActive(true);
+        basicBlackFadeTransition.gameObject.SetActive(true);
 
-        GetComponentInChildren<BasicBlackFadeTransition>().SetupTransition(LoadSceneAction, SceneTransitionFinishedAction);
+        basicBlackFadeTransition.SetupTransition(LoadSceneAction, SceneTransitionFinishedAction);
 
         IEnumerator LoadSceneCoroutine(string sceneName)
         {
@@ -61,7 +61,8 @@ public class TransitionScreenManager : MonoBehaviour
     IEnumerator WaitTipReading()
     {
         float timer = 0f;
-        float waitTime = 5f;
+        float waitTime = 5f;//this is max time to wait
+        waitTime = 0;//Setting this to 0 for now as we dont have tips yet
         // bool touched = false;
 
         // Wait for 3 seconds or until touch/mouse down
@@ -92,7 +93,8 @@ public class TransitionScreenManager : MonoBehaviour
 public enum SceneNames
 {
     CardGameScene,
-    NewDayScene
+    NewDayScene,
+    WorldNav,
 }
 public enum TransitionTypes
 {

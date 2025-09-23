@@ -6,17 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class NewDayManager : MonoBehaviour
 {
-    public static NewDayManager instance;
     TextMeshProUGUI dateText;
-    DateRecord currentDateRecord;
+    public static DateRecord currentDateRecord;
     public static int currentEventIndex = 0;//Dont Modify This Directly you are probably making a mistake if you want to
-    bool isEvening = false;
+    public static bool isEvening = false;
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
         dateText.text = GameManager.instance.currentSaveData.currentDate;
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
-        StartEvent(currentDateRecord.events[currentEventIndex]);
+        StartCoroutine(StartEventAfterDelay(currentDateRecord.events[currentEventIndex]));
+    }
+    IEnumerator StartEventAfterDelay(EventRecord events)
+    {
+        Debug.Log($"Starting Event {events.eventName} after delay");
+        yield return new WaitForSeconds(3f);
+        StartEvent(events);
     }
     public string GetCurrentEventName()
     {
@@ -29,10 +34,11 @@ public class NewDayManager : MonoBehaviour
         {
             case TypeOfEvent.ForcedCutscene:
                 // LoadDialoageSystem(events.eventName);  // dialogueRunner.StartDialogue("FirstTimeIntro");
-                TransitionScreenManager.instance.LoadScene("yarn-test");
+                TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
+                // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
-                TransitionScreenManager.instance.LoadScene("World-Nav");
+                TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
             case TypeOfEvent.Speical:
                 //Load Special Event
@@ -42,12 +48,12 @@ public class NewDayManager : MonoBehaviour
                     EndDay();
                 isEvening = true;
                 currentEventIndex++;
-                TransitionScreenManager.instance.LoadScene("NewDayScene");
+                TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
                 //Skip to next day or evening
                 break;
             case TypeOfEvent.GamePlay:
                 ScoreManager.Instance.SetTargetFromEventName(events.eventName);
-                TransitionScreenManager.instance.LoadScene("CardGameScene");
+                TransitionScreenManager.instance.LoadScene(SceneNames.CardGameScene);
                 //Load GamePlay                
                 break;
             default:
