@@ -16,7 +16,7 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     }
     string GetIntractionMessage()
     {
-        return "Talk to " + character.ToString();
+        return "Talk to " + PrettyStrings.GetPrettyEnumString(character.ToString());
     }
 }
 public enum Characters

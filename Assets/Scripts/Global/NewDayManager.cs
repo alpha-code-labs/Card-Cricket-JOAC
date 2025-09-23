@@ -15,7 +15,7 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
-        string prettyDate = GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
+        string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
         dateText.text = prettyDate;
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
@@ -24,19 +24,7 @@ public class NewDayManager : MonoBehaviour
         }
         StartCoroutine(StartEventAfterDelay(currentDateRecord.events[currentEventIndex]));
     }
-    string GetPrettyDateString(string date)
-    {
-        if (DateTime.TryParse(date, out DateTime dt))
-        {
-            int day = dt.Day;
-            string suffix = "th";
-            if (day % 10 == 1 && day != 11) suffix = "st";
-            else if (day % 10 == 2 && day != 12) suffix = "nd";
-            else if (day % 10 == 3 && day != 13) suffix = "rd";
-            return $"{day}{suffix} {dt:MMMM yyyy}";
-        }
-        return date;
-    }
+
     IEnumerator StartEventAfterDelay(EventRecord events)
     {
         Debug.Log($"Starting Event {currentDateRecord.date} {events.eventName} after delay");
