@@ -1,0 +1,247 @@
+﻿title: Scene_one
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "heartbeat">>
+
+<<ShowDateScreen "18th July 1988 - Raju's Birthday">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Oye, birthday hero… close your eyes.
+
+
+<<SetCharacterExpression "Raju" "Groggy">>
+Raju: Closed! But I can still see through my eyelashes.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then close them properly, na. This is a sacred ceremony.
+
+
+<<SetCharacterExpression "Raju" "Sleeping">>
+Raju: Sacred like when Maa hides the last piece of papad?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Exactly that sacred. No peeking.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Okay… open.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Bhai!!! Your Bat!
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Wrong. Your bat. From today.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: But this is the bat. The one that hit Chintu's six over the scooter. The one with the scratch that looks like the map of India!
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: The same one. She's got more stories than that radio which only plays static.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: The grip is new?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Borrowed a bicycle tube from the tyre repair shop. Wrapped it tight last night. See this tape on the toe? That crack won't spread now. And I sanded it with brick—don't tell Masterji; he'll make me do real sanding at school.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Why are you giving it to me? You love this bat.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: You're eight now, little tiger. Time to carry something heavier than your school bag. And… dreams don't grow if they're sitting in someone else's hands.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Will it like me?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Bats like discipline.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I can give it biscuits.
+
+
+<<SetCharacterExpression "Raju" "Disgusted">>
+Raju: But discipline… does it taste like karela?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Worse. But good for you. Listen—if you accept this gift, there are rules.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Rules? On my birthday?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Big gifts, big rules. Ready?
+
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Ready.
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule one: You'll study first. Even Sachin had homework. If you fail Maths, this bat will hide under the cot and won't come out.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule two: You'll share. Gully cricket is not only for heroes. Even if you score a hundred, you pass the bat to the next kid.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule three: You'll respect the bat. No throwing it in anger. No leaning on it like a tired buffalo. When it rests, it rests with face up.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule four: No fighting if someone calls it "old." Old means seasoned. Like Maa's iron tawa—flat, honest, does the job. Understood?
+
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Understood.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Bhai, this faded sticker… who's this player?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's your future photo. Space kept ready.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I will try.
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good. Heavy makes your hands strong. Now, stand up. Let's do the first lesson.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Bottom hand firm, top hand gentle. Not strangling a chicken—guiding a kite.
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Like this?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Better. Feet shoulder width. Bend the knees a little. Imagine the pitch chalk line here. Eyes on the ball—even if the ball is invisible.
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: So I stare at nothing?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: You stare at possibility. Now, pretend I bowl. Slow first. Ball coming to off-stump. What shot?
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Umm… straight drive?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good choice. Now a bouncer—short ball. What will you do?
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Duck!
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Excellent survival instinct, Captain. Some days the smartest run is away from the ball.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Will people laugh because it's old?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: People laugh when they're afraid you'll pass them. The bat is old; your courage is new. That's a dangerous combo.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Did you… did you want to keep it?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I had my turn.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Bhai… when I hold it, my hands shake.
+
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's because you can feel its history. Listen to it. It will tell you: "Keep your head still. Play late. Don't swing like a ceiling fan."
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: And one more rule.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: There's a rule five?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: The most important. When you miss, you try again. When you get out, you smile. When someone else scores, you clap. We don't let poverty take our manners.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: We won't.
+
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Now blow the candle and make a wish.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I wished that the bat never feels hungry.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then feed it. With practice. Come, take your first bite.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Right here?
+
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Outside. Sun is our floodlight. The chalk line is our red carpet. And remember what I said: face up when it rests, chin up when you walk.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Face up. Chin up. Captain Raju reporting.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Thank you.
+
+
+<<SetCharacterExpression "Ramu" "Quizzical">>
+Ramu: Who are you talking to?
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: The bat. And also… you.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

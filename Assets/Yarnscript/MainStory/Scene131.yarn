@@ -1,0 +1,45 @@
+﻿title: Scene_onethirtyone
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "April 15th 1990 - Evening">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "light">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+ShivPrasad: How did it go?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I am not sure. I tried my best.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: I guess we will find out soon.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I guess.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: He is being modest. I am sure he has cracked it.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: His eyes look like he is unsure. I read him well. I am his mother.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: We will wait and watch.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: in 15 days.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: In 15 days.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

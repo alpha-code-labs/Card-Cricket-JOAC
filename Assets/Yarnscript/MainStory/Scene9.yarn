@@ -1,0 +1,28 @@
+﻿title: Scene_nine
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Captain. Well played. Good effort.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I could have done better. I wanted to make more.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes I am aware. I am completely switched on. I can do this.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

@@ -1,0 +1,24 @@
+﻿title: Scene_three
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: We are all set. Hope you are ready too. Make good choices. Keep your focus and I am sure you will kill it.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Ok. I am set. I know the drill. Practice. Study. Play. Repeat. With focus and discipline. I am determined bhaiyya.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: That's like my brother. Let's go.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

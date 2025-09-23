@@ -1,0 +1,79 @@
+﻿title: Scene_five
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Bhai? Your turn?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Our turn. Listen—Sunil broke his ankle in warm-up. We need a substitute.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: A… substitute? Me?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: You. I asked. They said yes. Today, you belong. Can you stand brave on this ground?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm eight.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: And you're Raju. Eight is a number. Heart is a decision. What do we say?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Face up. Chin up.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Remember our five—eyes, feet, hands, timing, temper. Keep them with you like five coins in your pocket. If noise grows loud, touch each in your mind.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Will they laugh?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Maybe. People laugh before they clap. Let them finish both. We don't let poverty steal our manners or our moment. Look at this field. It's big, but it's not bigger than you.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: What do I do first?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: First, be seen. Walk straight to the captain, say, "Substitute reporting." Say your name. Let the ground learn it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju. Reporting.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: One last thing. This isn't magic. It's a memory. Every step you take is a promise to try again.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: I'm scared.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Fear is proof you're at the door. Courage is turning the handle. I'm right here. When you look up, you'll find me.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm ready.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Then go. Touch the ground with your hand, touch your heart, and step in. Let the evening remember you.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju—reporting.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Play well.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

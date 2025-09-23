@@ -1,0 +1,105 @@
+﻿title: Scene_onethirtyfour
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "CoachDev" "Excited">>
+CoachDev: Permission to make noise?
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: If the noise is short and respectful.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Come in, Dev-sir.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I did it Sir.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: I heard before your feet reached the lane. Shiv Prasadji… congratulations. You kept a hard line. He crossed it.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: He did. The house ate dal sweeter than usual today.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Top work. Numbers first, then nets—that's how the game shakes hands with life. Proud of you.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Thank you, sir.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: May I talk next steps? No pressure—just a clean plan.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Talk. The door is open because the boy opened it.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: We're ready with notebooks if needed.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Good. Phase One is trial and onboarding. Three pieces: Documents: school ID, ration card, and two passport photos. If the birth certificate is missing, I'll help you file for a copy—no fees to me. Trial slot: Saturday evening or Sunday morning. You choose. I'll put him in a group where the bowling is honest and the judging is stricter than applause. Parent signature: simple consent form; I'll bring it.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Cost?
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Trial is free. If he clears it—and I believe he will—we push for a fee waiver. Even with a waiver, there's bus fare and small things. I can arrange a shared ride with two boys from your side for the first month while we stabilize.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Time?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: We keep school first. My suggestion: Tuesday & Thursday evenings (one hour), Sunday morning (longer net). No late nights. On exam weeks, we pause automatically.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: I'll escort him.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Done. Phase Two is kit basics. Not the fancy bag—just what keeps him safe and learning: Inner gloves and a simple abdominal guard—I'll source at wholesale. If we can, second-hand pads in his size. If not, he'll rotate with the lane set; I'll sanitize. Shoes: I'll ask Ganesh cycle-wala to redo soles properly; I'll pay him from the academy fund.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Food?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Banana before. Chana after. Water through. If there's milk, great; if not, no guilt. Fuel is discipline as much as diet.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Three things: shape, choices, and character. Shape—how your stance holds under real pace. Choices—when you leave, when you commit. Character—how you react to a bad call or a loud bowler. You've already shown me that third one.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Choices. No half-yes.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: And the studies?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: We lock it in writing. You drop below eighty-five in any term, we reduce sessions until it's fixed. Training is a ladder, not a tunnel.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: We also keep one rule from home: no boasting on roads, no sulking on returns.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That rule is now academy policy—for him. I'll put it on my board.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Last bit: communication. If money pinches, you call me. If he's tired, you tell me. If a coach raises a voice, I'll ensure it raises teaching, not fear.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: And if the city throws rain at this plan?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Then we practice under the stand or we go home early. Safety, school, dignity—always first.
+
+<<SetCharacterExpression "CoachDev" "Excited">>
+CoachDev: Enough planning. Come here, all of you—this is the part I'm not strict about.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

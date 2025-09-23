@@ -1,0 +1,28 @@
+﻿title: Scene_eight
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "disappointing">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Captain. Could have been a better performance. Play as per the situation. You should have played a few more aggressive shots to get more runs.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: No excuses. I need to get better and apply myself more.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes I am aware. I am completely switched on. I can do this.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

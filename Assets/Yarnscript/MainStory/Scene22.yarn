@@ -1,0 +1,19 @@
+﻿title: Scene_twentytwo
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "March 1st 1990 - Evening">>
+<<wait 5>>
+
+
+
+// Open map interface and transition to free play system
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

@@ -1,0 +1,118 @@
+﻿title: Scene_fortynine
+tags: 
+colorID: 0
+position: 0,0
+---
+<<ShowDateScreen "April 11th 1990 - Morning">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "heartbeat">>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Reporting.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Today's not like the lane matches. There's a pot at the end—real notes, not bragging rights. Half goes to ground repairs, the rest to the winners.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it twice in my head.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Count your breath the same way—twice, before anything important. And remember: prize money is a reason, not a target. We play to our habits.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Eyes, feet, hands, timing, temper—five coins in the pocket.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Exactly. You're the youngest boy on any team sheet here. Some will test you just because you're ten. Let them. People laugh before they clap—let them finish both.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: If they bowl words at me, I'll leave those outside off.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Leave well. And listen—the older boys, even ours, might want the big moment for themselves. If they glare when you speak, lower your voice and raise your game. Pride is loud; respect is heard.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'll be a good teammate first, a good anything else after.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's the order. The captain knows you from the banyan side. He'll watch how you walk before he watches how you play. Head up, shoulders easy. When he calls, you answer with your name.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju reporting.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: For us. And one more thing—stakes twist the wind. You'll feel it on your skin. When the wind pushes, don't push back; lean with it, then choose your moment. We are poor in money, not in patience.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: The bat is lighter now.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's you getting stronger. I retaped the toe last night—brick-sanded, like old times. Face up when it rests?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Always.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Today is also about seeing. Not just balls—see the ground breathe. The boy with the red scarf fields lazy at square; the tall one ties his shoe twice when he's nervous; the umpire taps his pocket before he speaks. Little truths. Collect them.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Like Parle-G crumbs—small but sweet.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Maa said, "Play brave and come back hungry." So we'll bring hunger home—the good kind. If you miss, you breathe. If you shine, you breathe. If someone else shines, you clap like it's your own sun.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Bhai, if we win, can we fix the tarp before the rain?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: First we fix our hearts before the toss. Tarp will follow. Look at me.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: I'm not asking you to be special. I'm asking you to be steady. Special happens to steady boys when the world is looking somewhere else.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Steady is my job.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Right. And when pressure knocks, don't argue—open the door and say, "Sit. Watch me work." You've earned that tone.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Thank you.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Thank me by showing up like you did at dawn for fourteen months. The boys your brother's age will look across and see a kid. Make them see a teammate. Make them forget your age.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: If someone asks how old I am?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Say, "Old enough to keep my promises."
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: You'll wait near the scorers' table, face up, chin up. If your name's late, you still stay early in your mind. No sulks, no throws. We don't let poverty steal our manners.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: We don't.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Whatever happens, we walk out and we walk back the same way—heads steady. If we carry anything extra, it's gratitude.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Go on, Captain. Make the ground remember you without making a noise about it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Reporting.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

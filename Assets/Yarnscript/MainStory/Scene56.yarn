@@ -1,0 +1,37 @@
+title: Scene_fiftysix
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "March 16th 1990 - Evening">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. You beauty. You did exactly what was required. The team salutes you.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: 5 coins. That's all I focussed on
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: That's my boy. Thats what we need. Thats the only thing we need.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Big day tomorrow. Lets go home and rest.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Tomorrow another day. Fresh challenge. Yes, lets go and sleep
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes sir.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

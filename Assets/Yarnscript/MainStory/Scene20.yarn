@@ -1,0 +1,115 @@
+﻿title: Scene_twenty
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "heartbeat">>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Captain… you sleeping?
+
+<<SetCharacterExpression "Raju" "Groggy">>
+Raju: Bhai? Is it school already?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Not yet. It's good news o'clock.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Did we… are we…?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Maa and Baba said yes.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes… like yes yes?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Like "open window, let the wind in" yes. Three months. Routine, respect, and no shortcuts. We get to try properly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: They really said it?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Baba said, "No money wasted. Marks steady. Manners steady." Maa touched the bat and my forehead and said, "Bring him when the temple bell rings." That's permission with a blessing.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: What if I mess up?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then we learn, fix, and try again. We don't let poverty steal our manners—or our second chances.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: What do we do first?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: First, we say thank you. Not big speeches—small actions. We keep the bat face-up when it rests, our heads up when we walk, and our promises upright all day.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Ok.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Our promise stack: Up with the first bell. We step out when the street is still yawning. Water bottle filled, towel in, laces tied—no scrambling. After we return: chores, bath, school on time. Evenings: half an hour of study with me. If the page is messy, the ground is off-limits next morning. Deal?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Deal. Will you be there every time?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Every dawn I'm your shadow. You won't carry cost; you'll carry care.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Baba will still have pain in his knees. Maybe… maybe I can heat the towel before we go?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's the spirit. Dreamers who help at home dream longer. Add it to the routine: warm towel for Baba, tea for Maa. Then we go.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Bhai… today the ground will feel different?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Today the ground will know your name was spoken at home with blessing. That changes how dust rises under your feet.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I can't Wait.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Remember our five coins?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Eyes, feet, hands, timing, temper.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Keep them in your pocket. When noise gets loud, touch each one in your mind and breathe. Not to impress anyone—just to keep your promise.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: What should I call this three months?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: A season, not a test. Tests end with marks; seasons end with learning. At the end, we'll check both.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: If I shine…?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: We will take it as it comes.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Face up. Chin up.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: And heart steady. Come—touch the floor, touch your heart, then tie your laces. The bell will ring soon.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Thank you, Maa. Thank you, Baba. Thank you, bat. Thank you, Bhai.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: From today, you practice like you're choosing yourself. Let's go open that window.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

@@ -1,0 +1,69 @@
+﻿title: Scene_four
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "exciting">>
+<<ShowDateScreen "31st January 1989">>
+<<wait 5>>
+
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain! Pack your cheers. I'm playing a mini tournament—three evenings—at Kohliwada ground. It starts today.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Today-today? Like… in a few hours?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: If we blink too long, it'll be yesterday. You coming?
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Maa will say homework first.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Already told her. You read your poem to her in the night; she melted like hot jaggery. She said, "Take your brother. Sit where the wind is free."
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Kohliwada ground… The big lights?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Today there'll be sunlight and a lot of shouting. Good enough. Tomorrow and day-after too—three days, best-of-best boys from our lanes.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Where do I sit?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Near the banyan, left of the broken scoreboard. If someone taller blocks you, tap their elbow and say, "Excuse me, future captain reporting."
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: What do I bring?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Water in the steel bottle, that hand towel, and your eyes. Big ones. I want you to see how noise feels, how waiting feels, how the ground breathes.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: If it rains?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: We get a free shower and louder claps. Deal?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Deal. Bhai… can I yell your name?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Only if you add "Raju watching!" at the end.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Face up. Chin up. I'm ready.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Good. Then today, you watch. Next time, you belong out there. Come.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

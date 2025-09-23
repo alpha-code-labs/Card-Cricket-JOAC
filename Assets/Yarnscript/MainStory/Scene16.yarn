@@ -1,0 +1,28 @@
+﻿title: Scene_sixteen
+tags: 
+colorID: 0
+position: 0,0
+---
+<<ShowDateScreen "February 2nd 1989">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: It's the Finals captain. We are batting second. You are at number 8. The last 2 overs remain. We have to get 15 runs to win the tournament. Are you up for it?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I am all in. Completely focussed. Ready to roar.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Let's go.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

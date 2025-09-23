@@ -1,0 +1,48 @@
+﻿title: Scene_onetwentythree
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "angry">>
+<<SetBGSprite "KohliwadaGroundground">>
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Slum boy, your luck has maxed out. That luck runs out now.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I wish you the best of luck too.
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: The poor can only come so far slum boy. This is the maximum you can go. This is the height of your achievements. From this point onwards, we rich boys rule.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I dont want to comment on that. Will let my bat do the talking.
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Your bat is broken just like your life. Your shoes are embarrassing. Your hair is unruly. You smell like garbage. Dont you dare dream about rubbing shoulders with us.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: 5 coins.
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: What?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: 5 coins.
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Yes thats what your life is worth. Just 5 coins.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: 5 coins.
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Talking gibberish just like you always do. See you on the field, beggar.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
