@@ -266,6 +266,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static void FadeToBlack()
     {
         //Instance.StartCoroutine(Instance.FadeToBlackSequence());
+        NewDayManager.currentEventIndex++;
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
 
     private IEnumerator FadeToBlackSequence()

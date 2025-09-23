@@ -15,6 +15,10 @@ public class NewDayManager : MonoBehaviour
         dateText = GetComponentInChildren<TextMeshProUGUI>();
         dateText.text = GameManager.instance.currentSaveData.currentDate;
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
+        if (currentEventIndex >= currentDateRecord.events.Count)
+        {
+            EndDay();
+        }
         StartCoroutine(StartEventAfterDelay(currentDateRecord.events[currentEventIndex]));
     }
     IEnumerator StartEventAfterDelay(EventRecord events)
