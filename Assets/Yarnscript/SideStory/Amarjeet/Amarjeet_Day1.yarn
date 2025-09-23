@@ -50,4 +50,6 @@ Raju: Thank you, Baba. I will come back. I want to learn this kind of focus.
 // Scene Conclusion
 As Raju walks home from the temple carrying both his cricket bat and new perspective on the relationship between mental discipline and physical performance, he understands that Amarjeet has offered him something more valuable than cricket technique - insight into the mental foundations that support all achievement. His voluntary visit has introduced him to concepts of focus and steadiness that could transform not just his game but his entire approach to pursuing goals.
 
+<<set $Amarjeet_Day = 2>>
+<<EndEvent true>>
 ===
