@@ -1,0 +1,53 @@
+﻿title: Amarjeet_Day1
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple
+After a particularly frustrating cricket practice where his shots lacked consistency and his focus kept wandering, Raju chooses to visit the small neighborhood temple where Amarjeet, the elderly priest, has always offered quiet wisdom.
+
+The evening shadows lengthen across the temple courtyard as the familiar scent of incense mingles with the distant sounds of the neighborhood settling into dusk. Raju's footsteps slow as he approaches the sacred space, his cricket bat feeling heavy in his hand, weighed down not by its physical presence but by the day's accumulated frustrations and questions that seem to have no clear answers.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Ah, young one. You come running with dust on your face and a bat in your hand, but I can see something troubling you. Your cricket practice didn't go as planned today, did it?
+
+<<SetCharacterExpression "Raju" "Surprised">>
+// Raju feels surprised by the priest's perceptiveness. He had hoped his frustration wasn't so obvious, but Amarjeet's years of observing people seem to make him particularly skilled at reading the emotions of young visitors to his temple.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Baba, I don't understand why some days I can hit every ball perfectly, and other days I can't connect with anything. I practice the same way, but the results keep changing. Am I doing something wrong?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tell me, beta, what do you think discipline means? Most young people think they understand this word, but few grasp its deeper significance.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: To... follow rules? To practice regularly? I try to do both of those things with my cricket.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Rules and practice, yes - those are the surface of discipline. But deeper than that, true discipline is focus. It is the ability to keep your mind steady regardless of external circumstances.
+
+Amarjeet: See this diya, child? The wind pushes against it, trying to extinguish the flame, yet the light survives because it has found steadiness. So too must your mind be if you want your cricket skills to rise above inconsistency.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So when my shots are inconsistent, it's not because I'm practicing wrong - it's because my mind isn't steady like the flame?
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Exactly, beta. Your hands know the technique, your body understands the movements, but your mind wanders. True discipline means keeping your attention only on this moment, this shot, this breath.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: I think I understand what you mean, Baba. But achieving that kind of focus... it's not easy, is it?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Nothing worth achieving is easy, child. If you truly wish to learn this deeper discipline, return tomorrow evening. We will continue this conversation.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Thank you, Baba. I will come back. I want to learn this kind of focus.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju walks home from the temple carrying both his cricket bat and new perspective on the relationship between mental discipline and physical performance, he understands that Amarjeet has offered him something more valuable than cricket technique - insight into the mental foundations that support all achievement. His voluntary visit has introduced him to concepts of focus and steadiness that could transform not just his game but his entire approach to pursuing goals.
+
+===

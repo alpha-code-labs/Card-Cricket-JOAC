@@ -316,7 +316,8 @@ public enum CharacterType
     CoachDev,
     Aryan,
     Imtiaz,
-    Vivek
+    Vivek,
+    Amarjeet
 }
 
 public enum EmotionType

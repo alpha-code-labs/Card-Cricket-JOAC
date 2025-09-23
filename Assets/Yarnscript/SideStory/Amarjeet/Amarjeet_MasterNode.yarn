@@ -1,4 +1,8 @@
 ﻿title: Amarjeet
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+<<if $Amarjeet_Day==0>>//This is for testing purpose only, remove later
+    <<jump Amarjeet_Day1>>  
+<<elseif $Amarjeet_Day==1>>
+    <<jump Amarjeet_Day1>>
+<<endif>>
 ===
