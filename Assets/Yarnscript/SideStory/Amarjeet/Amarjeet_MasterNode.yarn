@@ -4,5 +4,7 @@
     <<jump Amarjeet_Day1>>  
 <<elseif $Amarjeet_Day==1>>
     <<jump Amarjeet_Day1>>
+    <<elseif $Amarjeet_Day==2>>
+    <<jump Amarjeet_Day2>>
 <<endif>>
 ===

@@ -22,7 +22,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     [Header("Dialogue Settings")]
     public static string currentNode;
-    [SerializeField] DialogueRunner dialogueRunner;
 
     [Header("Audio Settings")]
     [SerializeField] AudioSource musicAudioSource;
@@ -50,16 +49,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
         Debug.Log($"Starting Dialogue at node: {currentNode}");
         HideAllCharacters();
-        dialogueRunner.StartDialogue(currentNode);
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            if (dialogueRunner != null)
+            if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
             {
-                dialogueRunner.StartDialogue(currentNode);
+                YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
             }
             else
             {

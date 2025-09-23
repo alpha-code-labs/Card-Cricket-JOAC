@@ -1,5 +1,6 @@
 ﻿title: ConfirmationDialogue
 ---
+Confirm Choice
 -> {get_yes_choice()}
     <<confirm_choice true>>
 -> {get_no_choice()}

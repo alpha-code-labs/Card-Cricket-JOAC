@@ -8,14 +8,13 @@ using Yarn.Unity;
 public class WorldIntractionDialougeManager : MonoBehaviour
 {
     public static WorldIntractionDialougeManager instance;
-    [SerializeField] internal DialogueRunner dialogueRunner;
     void Awake()
     {
         instance = this;
     }
     public bool IsDialogueCurrentlyRunning()
     {
-        return dialogueRunner.IsDialogueRunning;
+        return YarnDialogSystemSingleTonMaker.instance.dialogueRunner.IsDialogueRunning;
     }
     string YesChoice;
     string NoChoice;
@@ -26,7 +25,7 @@ public class WorldIntractionDialougeManager : MonoBehaviour
         this.YesChoice = YesChoice;
         this.NoChoice = NoChoice;
 
-        dialogueRunner.StartDialogue("ConfirmationDialogue");
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("ConfirmationDialogue");
     }
     [YarnCommand("confirm_choice")]
     public static void ConfirmChoice(bool userConfirmed)
