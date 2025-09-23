@@ -14,6 +14,7 @@ public class SaveData
     public SaveData()
     {
         currentDate = "1988/07/18";//B-Day Scene
+        // currentDate = "1990/02/03";//First FreeTime
         humility = 0;
         courage = 0;
         resourcefulness = 0;

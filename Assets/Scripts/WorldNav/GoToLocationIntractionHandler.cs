@@ -29,19 +29,19 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 public enum Locations
 {
     Inavlid = -1,
-    HutInterior,
-    KohliwadaGround,
-    PublicSchool,
-    SportsAcademy,
-    WellingtonEstate,
-    SurakshaHospital,
-    ShivTemple,
-    AutoStand,
-    GeneralStore,
-    FatimaDhaba,
-    CobblerShop,
-    MunnaTyreShop,
-    ChaiStall,
+    HutInterior = 0,
+    KohliwadaGround = 1,
+    PublicSchool = 2,
+    SportsAcademy = 3,
+    WellingtonEstate = 4,
+    SurakshaHospital = 5,
+    ShivTemple = 6,
+    AutoStand = 7,
+    GeneralStore = 8,
+    FatimaDhaba = 9,
+    CobblerShop = 10,
+    MunnaTyreShop = 11,
+    ChaiStall = 12,
     //
-    MapSprite
+    MapSprite = 13 // Special case for map sprite
 }

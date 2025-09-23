@@ -1,6 +1,9 @@
 
+using System.Diagnostics;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public static class SaveSystem
 {
@@ -10,6 +13,32 @@ public static class SaveSystem
     private static string GetSavePath()
     {
         return Path.Combine(Application.persistentDataPath, SaveFileName);
+    }
+    [MenuItem("Tools/Save System/Open Save Folder")]//This is prorably create compile time erros in build
+    public static void OpenSaveFolder()
+    {
+        string savePath = GetSavePath();
+        string folderPath = Path.GetDirectoryName(savePath);
+
+        // Create the directory if it doesn't exist
+        if (!Directory.Exists(folderPath))
+        {
+            Directory.CreateDirectory(folderPath);
+        }
+
+        // Open the folder in the system's file explorer
+        OpenInFileExplorer(folderPath);
+
+    }
+    private static void OpenInFileExplorer(string path)
+    {
+#if UNITY_EDITOR_WIN
+        Process.Start("explorer.exe", $"/select,\"{path}\"");
+#elif UNITY_EDITOR_OSX
+            Process.Start("open", $"-R \"{path}\"");
+#elif UNITY_EDITOR_LINUX
+            Process.Start("xdg-open", $"\"{Path.GetDirectoryName(path)}\"");
+#endif
     }
 
     // Load data from file or create new if none exists
