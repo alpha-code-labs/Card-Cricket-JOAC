@@ -34,7 +34,8 @@ public class NewDayManager : MonoBehaviour
         {
             case TypeOfEvent.ForcedCutscene:
                 // LoadDialoageSystem(events.eventName);  // dialogueRunner.StartDialogue("FirstTimeIntro");
-                TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
+                DialogueScriptCommandHandler.currentNode = events.eventName;
+                TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:

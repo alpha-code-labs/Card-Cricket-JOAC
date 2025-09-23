@@ -20,7 +20,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] Image currentBGSprite;
 
     [Header("Dialogue Settings")]
-    [SerializeField] string currentNode;
+    public static string currentNode;
     [SerializeField] DialogueRunner dialogueRunner;
 
 
@@ -51,9 +51,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     void Start()
     {
-        DialogueRunner dialogueRunner = GetComponent<DialogueRunner>();
-
-   
+        Debug.Log($"Starting Dialogue at node: {currentNode}");
+        dialogueRunner.StartDialogue(currentNode);
     }
 
     void Update()
@@ -404,10 +403,10 @@ public enum EmotionType
 
 public enum MusicType
 {
-    Heartbeat = 0,  
-    Exciting = 1,      
-    Disappointing = 2, 
-    Light = 3,        
-    Emotional = 4,    
+    Heartbeat = 0,
+    Exciting = 1,
+    Disappointing = 2,
+    Light = 3,
+    Emotional = 4,
     Angry = 5
 }
