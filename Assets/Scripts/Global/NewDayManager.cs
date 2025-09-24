@@ -10,6 +10,11 @@ using Yarn.Unity;
 
 public class NewDayManager : MonoBehaviour
 {
+    public static NewDayManager instance;
+    void Awake()
+    {
+        instance = this;
+    }
     TextMeshProUGUI dateText;
     public static DateRecord currentDateRecord;
     public static int currentEventIndex = 0;//Dont Modify This Directly you are probably making a mistake if you want to
@@ -17,7 +22,10 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
-
+        BeginNewDaySequence();
+    }
+    public void BeginNewDaySequence()
+    {
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
@@ -32,7 +40,7 @@ public class NewDayManager : MonoBehaviour
         if (currentEventIndex == 0)
         {
             SetFilmGrain(true);
-            yield return DisplayTextThenFade(prettyDate, 2f, 1f);
+            yield return DisplayTextThenFade(prettyDate);
         }
         else
         {
@@ -45,29 +53,30 @@ public class NewDayManager : MonoBehaviour
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
-                // dateText.text = "";
-                // LoadDialoageSystem(events.eventName);  // dialogueRunner.StartDialogue("FirstTimeIntro");
+                yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
-                yield return DisplayTextThenFade("Free Time", 2f, 1f);
+                yield return DisplayTextThenFade("Free Time");
                 TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
             case TypeOfEvent.Speical:
+                yield return DisplayTextThenFade("");
                 //Load Special Event
                 break;
             case TypeOfEvent.SkipDayOrEvening:
-                yield return DisplayTextThenFade("Evening", 2f, 1f);
+                yield return DisplayTextThenFade("Evening");
                 if (isEvening)
                     EndDay();
                 isEvening = true;
                 currentEventIndex++;
-                TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+                BeginNewDaySequence();
                 //Skip to next day or evening
                 break;
             case TypeOfEvent.GamePlay:
+                yield return DisplayTextThenFade("");
                 ScoreManager.Instance.SetTargetFromEventName(events.eventName);
                 TransitionScreenManager.instance.LoadScene(SceneNames.CardGameScene);
                 //Load GamePlay                

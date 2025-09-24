@@ -28,6 +28,7 @@ public class TransitionScreenManager : MonoBehaviour
     public Action LoadingFinsihed;
     public void LoadScene(SceneNames SceneName)
     {
+        Debug.Log($"Loading Scene: {SceneName}");
         // FirebaseManager.OnSceneTransistion(SceneName);
         Action SceneTransitionFinishedAction = () => { SceneTransitionFinished(SceneName); };//This What Needs to Happen After Transition is Finished
         Action LoadSceneAction = () => { StartCoroutine(LoadSceneCoroutine(SceneName.ToString())); };//This is What Needs to Happen After Transition has Started or During Loading
