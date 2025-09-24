@@ -317,7 +317,8 @@ public enum CharacterType
     Aryan,
     Imtiaz,
     Vivek,
-    Amarjeet
+    Amarjeet,
+    Pinky
 }
 
 public enum EmotionType

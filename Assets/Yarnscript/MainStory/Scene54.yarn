@@ -7,7 +7,7 @@ position: 0,0
  
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: It's the Semifinals today captain. We are batting first. You are opening. 10 overs. Anything below 110 runs is a problem with the opposition having some very good batsmen. Are you up for it?

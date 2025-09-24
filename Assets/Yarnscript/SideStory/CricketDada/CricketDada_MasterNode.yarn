@@ -1,0 +1,268 @@
+title: Cricket_Dada
+---
+<<if $Cricket_Dada_Day==0>>
+    <<jump Cricket_Dada_Day1>>
+<<elseif $Cricket_Dada_Day==1>>
+    <<jump Cricket_Dada_Day1>>
+<<elseif $Cricket_Dada_Day==2>>
+    <<jump Cricket_Dada_Day2>>
+<<elseif $Cricket_Dada_Day==3>>
+    <<jump Cricket_Dada_Day3>>
+<<elseif $Cricket_Dada_Day==4>>
+    <<jump Cricket_Dada_Day4>>
+<<endif>>
+===
+
+title: Cricket_Dada_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Emotional">>
+<<SetBGSprite SurakshaHospital>>
+
+// Scene Setup - Hospital visit
+While running errands for his mother near the local hospital, Raju chooses to visit the patient ward after hearing familiar cricket commentary echoing from one of the rooms. His curiosity about cricket is stronger than his nervousness about hospitals.
+
+The sterile corridors of Suraksha Hospital seem less intimidating to Raju as the distant sound of cricket commentary draws him toward one of the patient wards, his natural curiosity about the sport overcoming his usual discomfort with medical facilities. The familiar rhythm of a cricket match broadcast creates an unexpected island of comfort in an environment typically associated with illness and anxiety, while his footsteps echo softly as he approaches the source of the commentary that has captured his attention.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Ah, beta! Another cricket lover, I see. Do you know what shot Vishwanath just played? A classic cover drive - the kind they don't teach anymore.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: You know Gundappa Vishwanath personally? The way you describe his batting, it sounds like you've watched him play many times.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Beta, I've been following cricket for fifty years. I've seen Kapil Dev's World Cup victory, Gavaskar's determination, Vishwanath's elegance. Each generation brings new heroes, but the spirit of cricket remains the same.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: How do you remember so many details about matches from decades ago?
+
+<<SetCharacterExpression "Cricket_Dada" "Smiling">>
+Cricket Dada: When you love something truly, every moment becomes precious. I remember Kapil Dev's catch to dismiss Viv Richards in 1983 like it happened yesterday. That catch changed everything for Indian cricket.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Don't your family members visit to listen to matches with you?
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: Family... well, cricket is enough company for an old man. These young cricketers today, they play with such fire, such determination. Like you, beta - I can see the cricket passion in your eyes.
+
+// Scene Conclusion
+As Raju leaves the hospital with Cricket Dada's stories of legendary matches echoing in his mind, he carries both the excitement of discovering a living library of cricket history and a subtle sadness about the elderly man's apparent isolation. The encounter has opened a window into the rich heritage of Indian cricket while also revealing the loneliness that can accompany old age, creating a complex mixture of inspiration and concern that will draw him back to continue their conversation.
+
+<<set $Cricket_Dada_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Cricket_Dada_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Emotional">>
+<<SetBGSprite SurakshaHospital>>
+
+// Scene Setup - Day 2
+Eager to continue yesterday's fascinating conversation about cricket legends, Raju chooses to return to the hospital during his free time after school. He brings a notebook this time, hoping to record some of the incredible stories.
+
+The hospital corridors feel more familiar today as Raju navigates toward Cricket Dada's room with a notebook tucked under his arm, his eagerness to continue learning about cricket history outweighing any remaining discomfort with the medical environment. The elderly man's wealth of knowledge and passionate storytelling have transformed what began as casual curiosity into genuine appreciation for the sport's heritage, while the notebook represents his serious intention to preserve these precious memories and insights.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Ah, my young cricket friend returns! I was hoping you would come back. I spent all night thinking of stories to share with you.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I brought this to write down the stories you tell me. I want to remember everything - the matches, the players, the moments that made cricket special.
+
+<<SetCharacterExpression "Cricket_Dada" "Smiling">>
+Cricket Dada: Very good, beta. Cricket history should be preserved, passed from generation to generation. Let me tell you about the 1971 series against the West Indies.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Dada, you talk about cricket like it teaches life lessons, not just sports techniques.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Exactly! Cricket is life, beta. Every match teaches you something about facing challenges, working with others, handling success and failure. When Kapil Dev led that team to World Cup victory, they proved that determination can overcome any disadvantage.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: So when people say cricket is just a game, they don't understand what it really means?
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: They don't understand that cricket mirrors life's most important battles. Every bowler faces rejection, every batsman faces failure, every team faces impossible odds. How you respond defines your character.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's exactly what I feel when I play! Like cricket is teaching me how to be stronger, how to handle pressure, how to never give up.
+
+<<SetCharacterExpression "Cricket_Dada" "Quizzical">>
+Cricket Dada: Tell me about your cricket dreams, beta. What drives your passion for this beautiful game?
+
+// Scene Conclusion
+As Raju walks home from the hospital with his notebook filled with cricket wisdom and historical anecdotes, he understands that he has discovered more than just entertaining stories - he has found a mentor who sees cricket as a metaphor for life's greatest challenges and triumphs. Cricket Dada's passionate philosophy about the sport has deepened his own understanding of why cricket captivates him so completely, while the older man's interest in his personal dreams has created a meaningful connection that transcends their age difference.
+
+<<set $Cricket_Dada_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Cricket_Dada_Day3
+tags:
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Emotional">>
+<<SetBGSprite SurakshaHospital>>
+
+// Scene Setup - Day 3
+After two days of incredible cricket stories and wisdom, Raju chooses to visit Cricket Dada again, this time bringing a small gift - a cricket magazine he purchased with his lunch money. However, today he notices something different - a sadness beneath Cricket Dada's usual enthusiasm.
+
+The hospital room carries a different energy today as Raju arrives with his carefully chosen gift, his developing sensitivity to Cricket Dada's moods allowing him to detect a melancholy that wasn't apparent during their previous enthusiastic discussions about cricket history. The cricket magazine tucked under his arm represents a sacrifice of his lunch money, demonstrating his growing affection for the elderly man, while his observant nature prepares him to offer support that goes beyond their shared passion for cricket.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I brought you this cricket magazine, Dada. It has articles about current players and some history sections you might enjoy.
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: Beta, you didn't need to spend money on an old man. But this... this means more to me than you know. It's been so long since anyone thought to bring me something.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Dada, I can see something is troubling you today. How would you like me to help?
+
+-> Raju: I can see you're sad, Dada. Would you like to talk about what's troubling you? Sometimes sharing helps.
+    <<jump Cricket_Dada_Day3a>>
+-> Raju: Dada, I noticed the photo you tried to hide. Are you missing your family? Sometimes it helps to be direct about what's hurting us.
+    <<jump Cricket_Dada_Day3b>>
+-> Raju: The cricket heroes you tell me about - they faced lonely times too. How did they handle it? What would Kapil Dev do in your situation?
+    <<jump Cricket_Dada_Day3c>>
+
+===
+
+title: Cricket_Dada_Day3a
+tags:
+position: -308,129
+---
+<<set $Cricket_Dada_Path = "a">>
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: You're very perceptive, beta. Most people don't notice when old men are struggling inside. It's... it's about loneliness, about choices I made long ago.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm here to listen, Dada. Take your time. Sometimes the heart needs to speak as much as the mind needs to remember cricket stories.
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: Your gentleness reminds me of my daughter Priya. She used to listen to my problems with the same patience you're showing now.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: She sounds wonderful, Dada. What happened with your family? Why aren't they here with you?
+
+<<jump Cricket_Dada_Day3_Continue>>
+===
+
+title: Cricket_Dada_Day3b
+tags:
+position: -55,122
+---
+<<set $Cricket_Dada_Path = "b">>
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: You don't miss much, do you beta? Yes, that photo... it's all I have left of happier times. I made mistakes, said things in anger.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: What kind of mistakes, Dada? Did you fight with them? Arguments can be fixed if both sides want to fix them.
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: I felt like they didn't respect me anymore, that they saw me as a burden. So I stopped calling them, expecting them to reach out first.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: But Dada, maybe they think the same thing? Maybe they're waiting for you to call them? Someone has to make the first move.
+
+<<jump Cricket_Dada_Day3_Continue>>
+===
+
+title: Cricket_Dada_Day3c
+tags:
+position: 184,122
+---
+<<set $Cricket_Dada_Path = "c">>
+<<SetCharacterExpression "Cricket_Dada" "Quizzical">>
+Cricket Dada: That's... that's an interesting way to think about it, beta. Kapil Dev never gave up, even when the odds seemed impossible. Even when his team was losing.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: So what would he do if he had a family misunderstanding? Would he wait for the other team to make the first move, or would he take action?
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: He would... he would be brave. He would take the risk, make the play that could win or lose everything. Just like in that 1983 World Cup.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Maybe it's time for you to be as brave as your cricket heroes, Dada. What's the worst that could happen if you tried to reconnect?
+
+<<jump Cricket_Dada_Day3_Continue>>
+===
+
+title: Cricket_Dada_Day3_Continue
+tags:
+---
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: That was taken fifteen years ago at a cricket match. My wife Kamala, my son Sunil, my daughter Priya. We used to attend matches together, listen to commentary at home, argue about player selections.
+
+<<SetCharacterExpression "Cricket_Dada" "Sad">>
+Cricket Dada: I thought they didn't want me around anymore. They became busy with their own lives, their own families. I convinced myself they were better off without their stubborn old father.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: But Dada, what if they think you abandoned them? What if they're waiting for you to reach out? All these years might have been a terrible misunderstanding.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: What do you mean, beta?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: When I fight with my brother Ramu, we both wait for the other person to apologize first. But someone has to make the first move, or we stay angry forever. The cricket heroes you admire - they never gave up when things looked impossible.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Beta, you might be right. All these years, I thought they abandoned me. But what if they think I abandoned them? Maybe it's time to be brave like the champions I've spent my life admiring?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: The cricket heroes you told me about - they never gave up when things looked impossible. Maybe it's time to be brave like them?
+
+// Scene Conclusion
+As Raju leaves the hospital carrying the weight of Cricket Dada's family revelation and the hope that his advice might help bridge fifteen years of separation, he understands that their conversation has transformed from cricket history lessons into something far more meaningful - a chance to apply the courage and determination celebrated in sports to the more complex challenges of family relationships. The elderly man's pain has become his own concern, while his suggestion about reaching out represents the practical application of cricket wisdom to real-life problems.
+
+<<set $Cricket_Dada_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Cricket_Dada_Day4
+tags:
+---
+
+<<PlayBackgroundMusic "Emotional">>
+<<SetBGSprite SurakshaHospital>>
+
+// Scene Setup - Day 4
+Curious about whether Cricket Dada followed through on yesterday's revelation about contacting his family, Raju chooses to make what might be his final visit to the hospital.
+
+The hospital corridors seem to buzz with different energy today as Raju approaches Cricket Dada's room with nervous anticipation about whether his advice yesterday might have sparked any action, the uncertainty creating a mixture of hope and anxiety about what he might find. His growing emotional investment in the elderly man's wellbeing has transformed a casual cricket conversation into a deeper relationship that demonstrates how genuine human connection can transcend age, background, and circumstances.
+
+<<SetCharacterExpression "Cricket_Dada" "Excited">>
+Cricket Dada: Beta! Come, meet my family. Kamala, Sunil, Priya - this is Raju, the young cricket enthusiast I told you about. The one who gave me the wisdom to call you.
+
+<<SetCharacterExpression "Kamala" "Smiling">>
+Kamala: Raju, beta, my husband tells me you encouraged him to reach out to us. We were so afraid he didn't want to see us anymore.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: You were both waiting for the other to make the first move, just like I thought.
+
+<<SetCharacterExpression "Sunil" "Smiling">>
+Sunil: Fifteen years of missing each other because we were all too proud to pick up the phone. It took a wise young boy to show us what cricket teaches - sometimes you have to take risks to win the match.
+
+<<SetCharacterExpression "Cricket_Dada" "Smiling">>
+Cricket Dada: Beta, you taught me something more valuable than any cricket statistic. You showed me that the best innings aren't played on the field - they're played in life, when you find the courage to rebuild what seemed broken.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: Papa has told us so much about your cricket dreams. He says you remind him of the champions he's watched over the decades - determined, passionate, never giving up.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket Dada taught me that cricket and life follow the same rules. Every champion faces impossible odds, but they win by staying focused and never losing hope.
+
+<<SetCharacterExpression "Cricket_Dada" "Smiling">>
+Cricket Dada: And you taught me that wisdom flows both ways, beta. Sometimes the teacher learns the most important lesson from the student.
+
+// Scene Conclusion
+As Raju prepares to leave the hospital for the final time in this chapter of his relationship with Cricket Dada, he carries with him the profound satisfaction of witnessing a family reunited through courage, wisdom, and the practical application of values learned through cricket. The transformation of a lonely old man into a surrounded patriarch represents more than personal success - it demonstrates how genuine concern for others and thoughtful advice can create positive change that extends far beyond the original relationship, teaching him that meaningful impact often comes through quiet acts of caring rather than grand gestures.
+
+<<set $Cricket_Dada_Complete = true>>
+<<GiveReward "Humility">>
+<<EndEvent true>>
+===

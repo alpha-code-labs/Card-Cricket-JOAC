@@ -1,0 +1,405 @@
+title: MunnaBhai
+---
+<<if $MunnaBhai_Day==0>>
+    <<jump MunnaBhai_Day1>>
+<<elseif $MunnaBhai_Day==1>>
+    <<jump MunnaBhai_Day1>>
+<<elseif $MunnaBhai_Day==2>>
+    <<jump MunnaBhai_Day2>>
+<<elseif $MunnaBhai_Day==3>>
+    <<jump MunnaBhai_Day3>>
+<<elseif $MunnaBhai_Day==4>>
+    <<jump MunnaBhai_Day4>>
+<<elseif $MunnaBhai_Day==5>>
+    <<jump MunnaBhai_Day5>>
+<<elseif $MunnaBhai_Day==6>>
+    <<jump MunnaBhai_Day6>>
+<<endif>>
+===
+
+title: MunnaBhai_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Scene Setup - Day 1 at the tire shop during busy afternoon
+After noticing the long line of bicycles waiting for repairs outside Munna Bhai's tire shop and hearing his mother mention how hard local mechanics work, Raju chooses to visit during the busy afternoon period to see if the skilled repairman might need assistance.
+
+The narrow tire shop resonates with the rhythmic sounds of air pumps and the metallic clanging of tire irons as Raju approaches Munna Bhai's workspace, where dozens of bicycles in various stages of repair create an organized chaos that speaks to the neighborhood's complete dependence on this single skilled mechanic. Munna Bhai moves between deflated tires, puncture patches, and air pumps with practiced efficiency, but the sweat on his brow and the growing queue of customers suggest that even his years of experience are being overwhelmed by today's unexpectedly heavy demand for bicycle repairs.
+
+<<SetCharacterExpression "MunnaBhai" "Sad">>
+MunnaBhai: Arre beta, perfect timing, but also terrible timing! Everyone's bicycle needs repair at the same time, and I'm just one person with two hands. Look at this line - it's going to take me until midnight to fix all these punctures and tire problems.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Munna bhai, you look completely exhausted! Is there anything I can do to help? I have some free time and I'd love to learn about bicycle repair work.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Help? Beta, bicycle repair isn't child's play. These tires cost people their daily wages, puncture patches must be applied perfectly, and one mistake means a customer's bicycle fails on the road. This work feeds my family - it can't afford errors.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand it's serious work, bhai. But I'm careful with tools and I learn quickly. Maybe I could start with something simple, just to help reduce your workload a little?
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Simple? Child, there's nothing simple about keeping people's transportation working! Every tire must hold perfect pressure, every patch must seal completely, every repair must last for months. One failed repair and people can't get to work, school, or market.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's exactly why I want to help, bhai! You provide such essential service to our entire neighborhood. Surely there's some small way I could assist without causing problems?
+
+<<SetCharacterExpression "MunnaBhai" "Quizzical">>
+MunnaBhai: You really want to learn about mechanical work? Even knowing how demanding customers can be when their transportation fails, how precise tire repair must be, how exhausting these long days become?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm not afraid of hard work or demanding customers, bhai. My father always says that skilled trades are the foundation of any community, and I want to understand what that really means.
+
+// Scene Conclusion
+As Raju exits the busy tire shop with the sounds of ongoing mechanical work and customer negotiations filling his ears, he carries both deep appreciation for the complexity of bicycle repair operations and strengthened determination to prove that his offer represents genuine commitment to learning rather than casual curiosity. The intricate balance of technical skill, customer service, and time management that Munna Bhai demonstrates has revealed the sophisticated expertise that successful bicycle repair requires, while the mechanic's initial skepticism about his capabilities has only intensified his resolve to demonstrate reliability and mechanical aptitude.
+
+<<set $MunnaBhai_Day = 2>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Scene Setup - Day 2 during morning setup period
+Despite yesterday's introduction to the demanding world of bicycle repair, Raju chooses to return during the morning setup period, hoping to observe how Munna Bhai organizes his tools and prepares for the day's mechanical work.
+
+The tire shop emanates methodical efficiency in the early morning as Raju arrives to find Munna Bhai systematically checking tools, organizing repair materials, and inspecting yesterday's completed work with the precision of someone who understands that preparation and quality control prevent mistakes during the intensive repair work that fills his days. The peaceful atmosphere contrasts sharply with yesterday's customer rush, revealing the careful planning and systematic approach that enables skilled mechanics to maintain consistent excellence despite working with hand tools and time-tested techniques.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Back again, beta? I thought yesterday's reality check about the difficulty of mechanical work might have discouraged you from pursuing trades. Most young people lose interest when they discover that real skill takes years to develop.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Actually, bhai, watching you work yesterday made me more fascinated, not less. I've never seen anyone use simple hand tools to diagnose problems and create such precise, reliable repairs.
+
+<<SetCharacterExpression "MunnaBhai" "Sad">>
+MunnaBhai: Fascinated? Beta, society doesn't value mechanics the way they should. People need our services desperately but don't respect our skills. They want instant, cheap fixes instead of quality work that lasts.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: How did you learn such detailed repair techniques? Did someone teach you, or did you develop these skills through experience?
+
+<<SetCharacterExpression "MunnaBhai" "Sad">>
+MunnaBhai: My uncle was a bicycle mechanic, and I started helping him at age ten. Eighteen years I've been perfecting these techniques, learning to diagnose problems by sound, touch, and experience. But young people today want office jobs - they think mechanical work is beneath them.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: That must be frustrating, bhai. Seeing such valuable skills being undervalued by people who don't understand how much expertise mechanical work requires.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: They don't understand that every bicycle repair requires problem-solving, precision, and responsibility. When someone's transportation fails, their entire day is ruined. When my repairs work perfectly, people can earn their living, children can get to school, families can function.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's exactly why I want to learn, bhai! Mechanical skills create immediate, practical value for people's daily lives. I don't want to miss the chance to understand such important knowledge.
+
+<<SetCharacterExpression "MunnaBhai" "Quizzical">>
+MunnaBhai: You keep expressing interest in learning, but mechanical training means different levels of responsibility and skill. What exactly do you think you could contribute to professional bicycle repair?
+
+// Scene Conclusion
+As their second conversation concludes with Munna Bhai's direct question about the nature of his potential contribution to professional bicycle repair, Raju recognizes that his persistent interest in learning has moved beyond polite dismissal into serious consideration, creating both opportunity and responsibility to articulate a clear vision for how his dedication could genuinely benefit the established mechanical operation. The revelation of the mechanic's frustration about society's undervaluation of skilled trades has transformed his motivation from simple curiosity into genuine respect for someone whose expertise serves essential community needs.
+
+<<set $MunnaBhai_Day = 3>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Scene Setup - Day 3 during mid-morning repair period
+With Munna Bhai's question about his potential contribution to mechanical work weighing on his mind, Raju chooses to return during the mid-morning repair period, ready to demonstrate rather than simply describe how he might assist in bicycle maintenance and repair.
+
+The tire shop hums with the steady rhythm of professional mechanical work as Raju arrives during the period when Munna Bhai balances active repairs with careful attention to detail that ensures customer satisfaction, creating the perfect environment for observing how skilled trades integrate technical knowledge, practical problem-solving, and customer service. Today carries special significance from previous visits because yesterday's honest conversation about societal attitudes toward mechanical work has established an atmosphere of mutual evaluation - the mechanic assessing his genuine commitment while he prepares to prove that his interest stems from deep respect rather than superficial fascination.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Well beta, you've been expressing interest in mechanical work for three days now. Today I'm handling complex repairs that could give you real understanding of what bicycle maintenance requires. But first, tell me - how do you think you could best contribute to this trade?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I've been observing and thinking, bhai. There are several ways I could help, but I want to focus on what would be most meaningful for learning essential mechanical skills.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Show me you understand mechanical work beyond just wanting to help. What specific approach would you take to contribute effectively?
+
+-> Raju: I want to learn basic repair techniques, bhai. Teach me fundamental tool handling, tire maintenance, and simple repair methods so I can understand the foundation of your craft.
+    <<jump MunnaBhai_Day3a>>
+-> Raju: Let me help with customer service, bhai. I can interact with customers, understand their problems, and help them appreciate the quality of professional bicycle repair.
+    <<jump MunnaBhai_Day3b>>
+-> Raju: I want to help improve your workshop efficiency, bhai. Let me observe your workflow and suggest ways to serve more customers without sacrificing quality.
+    <<jump MunnaBhai_Day3c>>
+
+===
+
+title: MunnaBhai_Day3a
+tags:
+position: -308,129
+---
+<<set $MunnaBhai_Path = "a">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to learn basic repair techniques, bhai. Teach me fundamental tool handling, tire maintenance, and simple repair methods so I can understand the foundation of your craft.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Basic repair techniques? Beta, these tools have been used the same way for decades. One wrong movement can damage expensive bicycle parts or create unsafe repairs. Mechanical work requires perfect precision and years of practice.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand the responsibility, bhai. But I'm patient and careful with tools. I want to learn the correct way from the beginning, even if it takes months to master basic skills.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Very well. But you start with tool care and basic cleaning only. No actual repairs until you prove you understand the discipline that professional mechanical work requires.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you for sharing your knowledge, bhai! I'll be the most careful and respectful student you've ever had for mechanical techniques.
+
+// Scene Conclusion
+As Raju begins his introduction to basic mechanical techniques under Munna Bhai's careful instruction, both understand that his choice to focus on fundamental skills represents a commitment to understanding the technical foundation of professional bicycle repair rather than seeking immediate involvement in complex tasks. The decision to start with tool care and cleaning reflects both his respect for the complexity of mechanical work and the mechanic's willingness to invest in teaching someone who demonstrates genuine reverence for skilled trades and patient skill development.
+
+<<set $MunnaBhai_Day = 4>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day3b
+tags:
+position: -55,122
+---
+<<set $MunnaBhai_Path = "b">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let me help with customer service, bhai. I can interact with customers, understand their problems, and help them appreciate the quality of professional bicycle repair.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Customer service? Beta, dealing with customers means explaining complex repairs, managing expectations when fixes take time, and representing eighteen years of reputation. If you disappoint customers, they blame my entire operation.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand the responsibility, bhai. But I can help customers understand why quality repairs take time and cost more than quick fixes. I want them to appreciate skilled work the way I do.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Customer education could help people value mechanical trades more. Very well - you can help with basic customer interaction, but all technical discussions and repair estimates go through me directly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I won't disappoint you, bhai! Every customer will leave understanding why professional mechanical work creates better, longer-lasting results than cheap shortcuts.
+
+// Scene Conclusion
+As Raju prepares to take on customer service responsibilities that will put him in direct contact with people whose appreciation for skilled mechanical work could determine whether these trades maintain their value in the community, both recognize that his choice represents a desire to bridge the gap between professional expertise and customer understanding. The decision to trust him with customer education reflects growing confidence in his genuine appreciation for mechanical work values and his ability to communicate the superiority of quality repairs over quick fixes.
+
+<<set $MunnaBhai_Day = 4>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day3c
+tags:
+position: 184,122
+---
+<<set $MunnaBhai_Path = "c">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to help improve your workshop efficiency, bhai. Let me observe your workflow and suggest ways to serve more customers without sacrificing quality.
+
+<<SetCharacterExpression "MunnaBhai" "Quizzical">>
+MunnaBhai: Workshop efficiency? Beta, I've been running this shop for eighteen years. You think a young boy can identify improvements that I haven't already considered?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Not improvements to your expertise, bhai - opportunities to apply fresh perspective! Sometimes new eyes can spot workflow possibilities that experience might overlook.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Interesting approach. Very well - observe and record what you can, but remember that any suggestions must be practical and cost-effective for a small mechanical business.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll approach this systematically, bhai! Every observation will honor the complexity of your work while identifying ways to help more customers without compromising quality standards.
+
+// Scene Conclusion
+As Raju embarks on his systematic analysis of workshop operations with the goal of identifying efficiency opportunities that preserve quality standards, both participants understand that his choice represents an unusual approach that combines deep respect for established mechanical expertise with confidence in his ability to contribute strategic insights. The decision to focus on workflow optimization rather than direct mechanical work reflects his belief that intellectual contribution might prove as valuable as physical assistance, while Munna Bhai's willingness to consider outside perspectives demonstrates openness to innovation despite his years of established practices.
+
+<<set $MunnaBhai_Day = 4>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day4
+---
+<<if $MunnaBhai_Path=="a">>
+    <<jump MunnaBhai_Day4a>>
+<<elseif $MunnaBhai_Path=="b">>
+    <<jump MunnaBhai_Day4b>>
+<<elseif $MunnaBhai_Path=="c">>
+    <<jump MunnaBhai_Day4c>>
+<<endif>>
+===
+
+title: MunnaBhai_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Day 4 - Path A: Learning Basic Repair Techniques
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tire shop early to begin implementing his chosen approach before the day's repair demands test his abilities under real workshop pressure.
+
+The tire shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex repair deadlines. Munna Bhai's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional mechanical work or remains a well-intentioned but impractical interest, while his own understanding of skilled trades will deepen through hands-on experience that tests respect against the practical realities of professional bicycle repair.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Ready for your first real day of mechanical work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of professional bicycle repair and customer service.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, bhai! I've been thinking about this opportunity all night and I'm eager to prove that my respect for mechanical work can translate into meaningful contribution.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: We'll see how you handle the precision required when working with tools and customers who depend on perfect repairs. Mechanical work tests both your technical skills and your reliability under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, bhai. But I believe that learning mechanical skills will teach me valuable lessons about precision, problem-solving, and the importance of skilled trades in community life.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for mechanical work. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Munna Bhai maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established professional practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when mechanical reputation and customer satisfaction depend on flawless execution of time-tested repair methods.
+
+<<set $MunnaBhai_Day = 5>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Day 4 - Path B: Customer Service Focus
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tire shop early to begin implementing his chosen approach before the day's repair demands test his abilities under real workshop pressure.
+
+The tire shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex repair deadlines. Munna Bhai's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional mechanical work or remains a well-intentioned but impractical interest, while his own understanding of skilled trades will deepen through hands-on experience that tests respect against the practical realities of professional bicycle repair.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Ready for your first real day of mechanical work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of professional bicycle repair and customer service.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, bhai! I've been thinking about this opportunity all night and I'm eager to prove that my respect for mechanical work can translate into meaningful contribution.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: We'll see how you handle the precision required when working with tools and customers who depend on perfect repairs. Mechanical work tests both your technical skills and your reliability under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, bhai. But I believe that learning mechanical skills will teach me valuable lessons about precision, problem-solving, and the importance of skilled trades in community life.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for mechanical work. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Munna Bhai maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established professional practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when mechanical reputation and customer satisfaction depend on flawless execution of time-tested repair methods.
+
+<<set $MunnaBhai_Day = 5>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Day 4 - Path C: Workshop Efficiency Focus
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tire shop early to begin implementing his chosen approach before the day's repair demands test his abilities under real workshop pressure.
+
+The tire shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex repair deadlines. Munna Bhai's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional mechanical work or remains a well-intentioned but impractical interest, while his own understanding of skilled trades will deepen through hands-on experience that tests respect against the practical realities of professional bicycle repair.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Ready for your first real day of mechanical work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of professional bicycle repair and customer service.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, bhai! I've been thinking about this opportunity all night and I'm eager to prove that my respect for mechanical work can translate into meaningful contribution.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: We'll see how you handle the precision required when working with tools and customers who depend on perfect repairs. Mechanical work tests both your technical skills and your reliability under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, bhai. But I believe that learning mechanical skills will teach me valuable lessons about precision, problem-solving, and the importance of skilled trades in community life.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for mechanical work. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Munna Bhai maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established professional practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when mechanical reputation and customer satisfaction depend on flawless execution of time-tested repair methods.
+
+<<set $MunnaBhai_Day = 5>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day5
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Day 5 - Building on success
+After successfully completing his first full day of mechanical work, Raju chooses to return for a second day, eager to build on yesterday's experience and continue proving his value to professional bicycle repair operations.
+
+The familiar sights and sounds of the tire shop greet Raju as he returns with growing confidence in his ability to contribute meaningfully to professional mechanical work, yesterday's successful navigation of workshop pressure having validated both his capabilities and Munna Bhai's decision to trust him with real responsibilities. The second day carries different energy as both participants move beyond experimental assistance into the beginning of genuine skill transfer partnership, with accumulated experience providing foundation for more sophisticated collaboration and deeper mutual understanding of what professional bicycle repair requires.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: You returned, beta! Yesterday was quite impressive - you showed more respect for mechanical work than I expected. Are you prepared to deepen your understanding today?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely, bhai! Yesterday taught me so much about mechanical precision and the responsibility that comes with repair work. I feel like I understand your craft much more deeply now.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Excellent! Today I want to see if you can handle more complex mechanical challenges. Yesterday was basic introduction - today we test whether you can truly contribute to professional bicycle repair.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm ready for whatever challenge you have, bhai. Working here has shown me how much skill and knowledge professional mechanical work contains.
+
+<<SetCharacterExpression "MunnaBhai" "Serious">>
+MunnaBhai: Then let's see if you can maintain yesterday's quality while handling increased responsibility. Professional mechanics must deliver excellence consistently, regardless of pressure or complexity.
+
+// Scene Conclusion
+As the second day of collaboration unfolds with expanded responsibilities and higher expectations, both Raju and Munna Bhai recognize that they are moving beyond the experimental phase into a potentially meaningful relationship that could benefit both his education and the preservation of skilled mechanical trades. The progression from basic introduction to more complex challenges reflects growing mutual trust and competence, while the continued emphasis on quality reinforces the understanding that personal success must always serve the larger goal of maintaining professional standards and community service.
+
+<<set $MunnaBhai_Day = 6>>
+<<EndEvent true>>
+===
+
+title: MunnaBhai_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite MunnaTyreShop>>
+
+// Day 6 - Final conversation and apprenticeship offer
+With two successful days of mechanical work behind him, Raju chooses to approach Munna Bhai about making their collaboration more formal and discussing what this experience has taught him about skilled trades, community service, and the value of professional expertise.
+
+The tire shop atmosphere reflects the comfortable working relationship that has developed between Raju and Munna Bhai over their days of collaboration, with established respect and mutual understanding replacing the initial uncertainty and evaluation that characterized their early interactions. Today's conversation carries weight beyond immediate mechanical concerns as both participants prepare to discuss the broader implications of their successful partnership and what it might mean for Raju's ongoing education about skilled trades, community responsibility, and the vital role that professional mechanics play in maintaining the transportation systems that enable daily life.
+
+<<SetCharacterExpression "MunnaBhai" "Excited">>
+MunnaBhai: Beta, I must admit - when you first expressed interest in mechanical work, I assumed it was typical modern curiosity that would fade when you encountered real labor. But these past few days have revealed something remarkable about your respect for skilled trades and quality work.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, bhai! Working here has been incredibly meaningful. I've learned so much about mechanical techniques, but also about precision, problem-solving, and the importance of skilled trades in community life.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: You've demonstrated that appreciation for mechanical work isn't determined by family background - it's determined by character and genuine respect for professional expertise. Your help has not only made my work more manageable, but it's given me hope that skilled trades will maintain their value.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This experience has taught me that mechanical work embodies the same principles as any form of excellence - dedication, attention to detail, and genuine care for creating results that people can depend on. Whether someone is mastering bicycle repair or pursuing cricket, success requires the same fundamental respect for quality and patient skill development.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Exactly, beta! And you've shown that young people can contribute meaningfully to preserving skilled trades when they approach mechanical work with genuine reverence and willingness to learn proper methods.
+
+<<SetCharacterExpression "MunnaBhai" "Excited">>
+MunnaBhai: I want to offer you ongoing mechanical training - regular sessions where you can continue learning professional techniques while helping me with shop work. You've earned the right to be considered a legitimate apprentice, not just an interested observer.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's incredibly generous, bhai! But more than the training, I value what I've learned about the importance of skilled trades and the dignity that comes from providing essential services that people depend on daily.
+
+<<SetCharacterExpression "MunnaBhai" "Smiling">>
+MunnaBhai: Then we both benefit perfectly - you gain mechanical knowledge that will serve you well in any future endeavor, and I gain confidence that these skills will continue to receive the respect and appreciation they deserve from the next generation.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of preserving skilled mechanical trades, Raju and Munna Bhai understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and social gaps to create partnerships that strengthen both individuals and the skilled trade knowledge systems they work together to preserve and honor.
+
+<<set $MunnaBhai_Complete = true>>
+<<EndEvent true>>
+===

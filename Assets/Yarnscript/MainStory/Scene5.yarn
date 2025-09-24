@@ -4,7 +4,7 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Captain.

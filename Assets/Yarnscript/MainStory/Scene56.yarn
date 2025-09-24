@@ -8,7 +8,7 @@ position: 0,0
  
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Captain. You beauty. You did exactly what was required. The team salutes you.
