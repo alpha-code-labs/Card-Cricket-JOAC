@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 using Yarn.Unity;
 
 public class NewDayManager : MonoBehaviour
@@ -15,44 +17,49 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
-        string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
-        dateText.text = prettyDate;
+
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
             EndDay();
         }
-        StartCoroutine(StartEventAfterDelay(currentDateRecord.events[currentEventIndex]));
+        StartCoroutine(StartEventWithTransition(currentDateRecord.events[currentEventIndex]));
     }
 
-    IEnumerator StartEventAfterDelay(EventRecord events)
+    IEnumerator StartEventWithTransition(EventRecord events)
     {
-        Debug.Log($"Starting Event {currentDateRecord.date} {events.eventName} after delay");
-        yield return new WaitForSeconds(3f);
-        StartEvent(events);
-    }
-    public string GetCurrentEventName()
-    {
-        return currentDateRecord.events[currentEventIndex].eventName;
-    }
-    public void StartEvent(EventRecord events)
-    {
+        string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
+        if (currentEventIndex == 0)
+        {
+            SetFilmGrain(true);
+            yield return DisplayTextThenFade(prettyDate, 2f, 1f);
+        }
+        else
+        {
+            SetFilmGrain(false);
+            dateText.text = "";
+        }
+
         Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
+
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
+                // dateText.text = "";
                 // LoadDialoageSystem(events.eventName);  // dialogueRunner.StartDialogue("FirstTimeIntro");
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
+                yield return DisplayTextThenFade("Free Time", 2f, 1f);
                 TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
             case TypeOfEvent.Speical:
                 //Load Special Event
                 break;
             case TypeOfEvent.SkipDayOrEvening:
+                yield return DisplayTextThenFade("Evening", 2f, 1f);
                 if (isEvening)
                     EndDay();
                 isEvening = true;
@@ -70,6 +77,24 @@ public class NewDayManager : MonoBehaviour
                 break;
         }
     }
+    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 2f, float fadeDuration = 1f)
+    {
+        dateText.text = textToDisplay;
+        dateText.alpha = 1f;
+        yield return new WaitForSeconds(displayDuration);
+        yield return dateText.DOFade(0f, fadeDuration).WaitForCompletion();
+    }
+    VideoPlayer videoPlayer;
+    void SetFilmGrain(bool enable)
+    {
+        videoPlayer = Camera.main.GetComponent<VideoPlayer>();
+        videoPlayer.enabled = enable;
+    }
+    public string GetCurrentEventName()
+    {
+        return currentDateRecord.events[currentEventIndex].eventName;
+    }
+
     [YarnCommand("EndEvent")]
     public static void EndEvent(bool FreeTimeConsumed = false)
     {
