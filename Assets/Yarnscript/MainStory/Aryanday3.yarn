@@ -1,0 +1,94 @@
+﻿title: day3
+position: -114,-301
+---
+<<declare $currentAryanPath = GetAryanPath()>>
+<<SetBGSprite 14>>
+<<jump aryan_dialogues>>
+// Setup
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
+
+title: aryan_dialogues
+position: -112,-82
+---
+
+<<SetCharSprite 16>>
+Aryan: It doesn't matter if he has some natural ability, Rohit. When you have proper equipment, professional coaching, and dedicated practice facilities, raw talent becomes meaningless.
+Aryan: Oh look, everyone! The challenger arrives! Perfect timing - I was just telling my friends about tomorrow's entertainment. Are you ready for your public humiliation, slum boy?
+
+Choose your response
+ -> I'll let my cricket speak for itself. Actions matter more than words.
+    <<jump choice_serious>>
+ -> I'm not backing down from you or your friends. You want a fight? You'll get one.
+    <<jump choice_angry>>
+ -> I need to understand what I'm facing. Show me what you can do first.
+    <<jump choice_quizical>>
+<<stop>>
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
+
+
+title: choice_serious
+position: 212,-280
+---
+ <<SetAryanPath Serious>>
+ <<SetCharSprite 16>>
+ Aryan: How noble! The slum boy takes the high road. How boring. I expected more fire from someone so confident.
+ <<SetCharSprite 15>>
+ Raju: Fire without control burns everything, including the person who starts it. I prefer focused determination.
+  <<SetCharSprite 16>>
+ Aryan: Your calm act won't help you when you're facing real cricket tomorrow. My friends expect entertainment, not philosophy lessons.
+ <<SetCharSprite 15>>
+ Raju: Then they'll see real cricket. That should be entertainment enough.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
+
+title: choice_angry
+position: 215,-106
+---
+ <<SetAryanPath Angry>>
+ Aryan: Now THIS is more like it! The slum boy shows his true colors - angry, desperate, emotional. Perfect!
+ <<SetCharSprite 15>>
+ Raju: You think being rich makes you tough? You've never had to fight for anything in your life!
+  <<SetCharSprite 16>>
+ Aryan:And you've never had anything worth fighting for until now! This is going to be so satisfying to watch.
+ <<SetCharSprite 15>>
+ Raju: We'll see who's more satisfied when this is over. Your money can't buy you heart or skill.
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
+
+title: choice_quizical
+position: 251,31
+---
+ <<SetAryanPath Quizical>>
+  Aryan: Smart move, slum boy. At least you're not completely delusional. Watch and learn what real cricket looks like.
+ <<SetCharSprite 15>>
+ Raju: I'm watching. I see good technique, expensive equipment, professional coaching. But I also see patterns.
+  <<SetCharSprite 16>>
+ Aryan: Patterns? What do you mean, patterns?
+ <<SetCharSprite 15>>
+ Raju: Every player has habits, preferences, weaknesses. Even well-trained ones. Especially well-trained ones.
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

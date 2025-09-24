@@ -1,0 +1,30 @@
+﻿title: scene_128
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "April 14th 1990 - Morning">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "light">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: All right captain. Time to buckle down and do revisions. No going out today. Focus on your task.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes sir. On it.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: All the best. I am heading out to work. You focus and remember the 5 coins apply everywhere.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes sir.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

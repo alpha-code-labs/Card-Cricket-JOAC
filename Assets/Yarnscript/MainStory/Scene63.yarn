@@ -1,0 +1,111 @@
+﻿title: scene_63
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "emotional">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Namaste, ShivPrasad. I'm Dev.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Namaste. Sit. Tea?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Not for me, thank you. I know you leave for the mill soon. I'll be brief—and honest.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Brief and honest pair well. Say.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: I watched your younger boy today. Raju sees the ball before others realise it's left the hand. And he carries himself… steady. That's rarer than runs. I run an academy in Matunga. I want him to come for structured training—real turf, proper nets, boys who will stretch him the right way.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Matunga sounds far when pockets are near-empty.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: I understand the worry. So let me put it plain. There are fee waivers for boys who earn them. I can get him a trial first—no promises beyond the trial, but I'll stand with him in the queue. If he qualifies, we'll fight for concessions. If he doesn't, we fold our palms and keep working here. No shame in either path.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Trial is also cost. Bus fare is not air. Shoes don't grow on trees. Time is a wage. Who will walk him? His mother washes floors. I watch gates. The city doesn't pause if a child swings a bat.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: True. The city won't. But sometimes it makes space for a boy who won't waste it. We can arrange morning batches or late evening. I can write a note—some employers allow a shift adjustment now and then. I can escort him the first few times.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Sir, notes do not bend night shifts. And your feet won't always be free to escort sons of men like me. Today you saw him at a good hour, with good wind. Tomorrow the bus breaks, rain floods, coin is short—who carries him then?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Many boys come with less and make it through because a father said yes once, even when the maths looked ugly.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Many boys also come back with less—less sleep, less hope, pockets turned inside out. I have seen scouts who took money for "trials." I have seen promises that ate our rice. Forgive me, I carry rust on my trust.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: I won't ask for a rupee. Not for a trial. If anyone does, you call me first. Ration card, school ID—we will manage the rest.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: And if he enters your ground and the world enters his head? My lane is small but it guards him. Your turf is big. Big places make small boys feel like kings, and then the fall is long.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Raju doesn't strut. He thanks umpires. He shares water. Your elder one has taught him to keep the bat face up and the head the same. That is a foundation. I'm not promising stardom. I'm offering a door to learning.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Doors creak. Hinges cost oil. Sir, you talk nicely. The world speaks sweet when it wants something. What do you want?
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: I want to see whether a boy with a clear mind and quick hands can grow where there is better light. If he cannot, we accept it. If he can, we do not let poverty steal his chance.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Poverty steals quietly because it knows our house. We lock what we can. Fourteen months ago I agreed to routine here—dawn, handpump, chalk. That was my "yes." It did not cost bus fare or new fear.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: And it gave him muscles memory can trust. The next inch needs better bowling, better correction. I can promise to keep his lane inside his head. Same bell, same breath—just longer shadows.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Longer shadows also hide things. I report at eight. If Matunga takes him far and he returns late, his studies slip, his mother walks alone in the dark. The city counts our slips very loudly.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Allow me one month. Two sessions a week. I'll pick him up from the banyan. You come once, see the place, meet the boys, talk to other parents. If your heart says no after that, I step back.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: My heart already says no, sir. It says feed the house, not the dream. It says keep the boy near until the world proves it won't swallow him. It says men like me don't gamble with bus routes and borrowed promises.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: I respect a father who protects his own. But may I leave a number? If ever the sums change—if a shift moves, if a neighbor can accompany, if the rains are kind—call me. I won't push. I'll just answer.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Leave the number. Numbers don't eat. Words sometimes do.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Here. No pressure. Only possibility.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Sir, I thank you for the respect. For speaking to me as if my "no" matters. It does. For now—No. Completely. Let the boy be a boy in his lane, where the ground knows his name and the shortcuts don't tempt him.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Understood.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: May your boys play well. May mine sleep well. Both are victories where we live.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: True. I'll take your leave. Ramu, you're raising him well. Keep the bat face up.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Yes, sir.
+
+<<SetCharacterExpression "CoachDev" "Serious">>
+CoachDev: Good night, ShivPrasad-ji.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Good night.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

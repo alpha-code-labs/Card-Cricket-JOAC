@@ -1,0 +1,524 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7c2874adec39640a756a9623482dc3, type: 3}
+  m_Name: CalanderRecord
+  m_EditorClassIdentifier: Assembly-CSharp::CalanderRecord
+  dates:
+  - date: 1988/07/18
+    events:
+    - eventName: scene_1
+      eventDescription: Bat Handover
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+  - date: 1988/07/23
+    events:
+    - eventName: scene_2
+      eventDescription: Pre-Tutorial Cutscene
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: Tutorial Scene
+      eventDescription: Pre-Tutorial Cutscene
+      eventType: 2
+    - eventName: scene_3
+      eventDescription: Post-Tutorial Cutscene
+      eventType: 0
+  - date: 1989/01/31
+    events:
+    - eventName: scene_4
+      eventDescription: Brotherhood through sports
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_5
+      eventDescription: Sunil broke his ankle
+      eventType: 0
+    - eventName: scene_6
+      eventDescription: quarterfinals captain
+      eventType: 0
+    - eventName: Card Gameplay 1
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1989/02/01
+    events:
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_11
+      eventDescription: Semifinal
+      eventType: 0
+    - eventName: Card Gameplay 2
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1989/02/02
+    events:
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_16
+      eventDescription: Finalcaptain
+      eventType: 0
+    - eventName: Card Gameplay 3
+      eventDescription: Gameplay System
+      eventType: 4
+    - eventName: scene_19
+      eventDescription: Brother becomes advocate
+      eventType: 0
+    - eventName: scene_20
+      eventDescription: school already
+      eventType: 0
+  - date: 1990/03/01
+    events:
+    - eventName: scene_21
+      eventDescription: Real-world cricket lessons
+      eventType: 0
+    - eventName: scene_22
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/02
+    events:
+    - eventName: scene_23
+      eventDescription: Map system
+      eventType: 1
+    - eventName: scene_24
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/03
+    events:
+    - eventName: scene_25
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_26
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/04
+    events:
+    - eventName: scene_27
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_28
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/05
+    events:
+    - eventName: scene_29
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_30
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/06
+    events:
+    - eventName: scene_31
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_32
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/07
+    events:
+    - eventName: scene_33
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_34
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/08
+    events:
+    - eventName: scene_35
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_36
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/09
+    events:
+    - eventName: scene_37
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_38
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/10
+    events:
+    - eventName: scene_39
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_40
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/11
+    events:
+    - eventName: scene_41
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_42
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/12
+    events:
+    - eventName: scene_43
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_44
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/13
+    events:
+    - eventName: scene_45
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_46
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/14
+    events:
+    - eventName: scene_47
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_48
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/15
+    events:
+    - eventName: scene_49
+      eventDescription: "Maa\u2019s medicines, Baba\u2019s knee towel"
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_50
+      eventDescription: Quarterfinals captain
+      eventType: 0
+    - eventName: Card Gameplay 4
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1990/03/16
+    events:
+    - eventName: scene_53
+      eventDescription: 
+      eventType: 1
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_54
+      eventDescription: Semifinals today captain
+      eventType: 0
+    - eventName: Card Gameplay 5
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1990/03/17
+    events:
+    - eventName: scene_57
+      eventDescription: Map System
+      eventType: 1
+    - eventName: Skip
+      eventDescription: 
+      eventType: 1
+    - eventName: scene_58
+      eventDescription: We are chasing
+      eventType: 0
+    - eventName: Card Gameplay 6
+      eventDescription: Gameplay System
+      eventType: 4
+    - eventName: scene_61
+      eventDescription: Man of the series
+      eventType: 0
+    - eventName: scene_62
+      eventDescription: Dev acedemy
+      eventType: 0
+    - eventName: scene_63
+      eventDescription: run acedemy matunga
+      eventType: 0
+    - eventName: scene_64
+      eventDescription: acedemy trial matunga
+      eventType: 0
+  - date: 1990/03/18
+    events:
+    - eventName: scene_65
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_66
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/19
+    events:
+    - eventName: scene_67
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_68
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/20
+    events:
+    - eventName: scene_69
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_70
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/21
+    events:
+    - eventName: scene_71
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_72
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/22
+    events:
+    - eventName: scene_73
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_74
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/23
+    events:
+    - eventName: scene_75
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_76
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/24
+    events:
+    - eventName: scene_77
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_78
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/25
+    events:
+    - eventName: scene_79
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_80
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/26
+    events:
+    - eventName: scene_81
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_82
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/27
+    events:
+    - eventName: scene_83
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_84
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/28
+    events:
+    - eventName: scene_85
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_86
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/29
+    events:
+    - eventName: scene_87
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_88
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/30
+    events:
+    - eventName: scene_89
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_90
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/03/31
+    events:
+    - eventName: scene_91
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_92
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/01
+    events:
+    - eventName: scene_93
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_94
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/02
+    events:
+    - eventName: scene_95
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_96
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/03
+    events:
+    - eventName: scene_97
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_98
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/04
+    events:
+    - eventName: scene_99
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_100
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/05
+    events:
+    - eventName: scene_101
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_102
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/06
+    events:
+    - eventName: scene_103
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_104
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/07
+    events:
+    - eventName: scene_105
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_106
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/08
+    events:
+    - eventName: scene_107
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_108
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/09
+    events:
+    - eventName: scene_109
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_110
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/10
+    events:
+    - eventName: scene_111
+      eventDescription: Map System
+      eventType: 1
+    - eventName: scene_112
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/11
+    events:
+    - eventName: scene_113
+      eventDescription: real prize money
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_114
+      eventDescription: Quaterfinal batting first
+      eventType: 0
+    - eventName: Card Gameplay 7
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1990/04/12
+    events:
+    - eventName: scene_117
+      eventDescription: 
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_118
+      eventDescription: 'Semifinal batting '
+      eventType: 0
+    - eventName: Card Gameplay 8
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1990/04/13
+    events:
+    - eventName: scene_121
+      eventDescription: 
+      eventType: 0
+    - eventName: Skip
+      eventDescription: 
+      eventType: 3
+    - eventName: scene_122
+      eventDescription: Chasing 125 over 10 balls
+      eventType: 0
+    - eventName: scene_123
+      eventDescription: luck has maxed
+      eventType: 0
+    - eventName: Card Gameplay 9
+      eventDescription: Gameplay System
+      eventType: 4
+    - eventName: scene_126
+      eventDescription: Dont hold the grudge
+      eventType: 0
+    - eventName: scene_127
+      eventDescription: First paper
+      eventType: 0
+  - date: 1990/04/14
+    events:
+    - eventName: scene_128
+      eventDescription: revision
+      eventType: 0
+    - eventName: Quiz Gameplay 10
+      eventDescription: Gameplay System
+      eventType: 4
+  - date: 1990/04/15
+    events:
+    - eventName: scene_129
+      eventDescription: prepared well
+      eventType: 0
+    - eventName: Quiz Gameplay 11
+      eventDescription: Gameplay System
+      eventType: 4
+    - eventName: scene_131
+      eventDescription: 
+      eventType: 0
+  - date: 1990/04/30
+    events:
+    - eventName: scene_132
+      eventDescription: Visual Noval System
+      eventType: 0
+    - eventName: scene_133
+      eventDescription: VN system
+      eventType: 0
+    - eventName: scene_134
+      eventDescription: 'Coach dev congratulate '
+      eventType: 0
+    - eventName: scene_135
+      eventDescription: 'Uncle dev take the wheel inside the net '
+      eventType: 0

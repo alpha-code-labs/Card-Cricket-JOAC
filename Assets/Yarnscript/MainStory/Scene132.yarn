@@ -1,0 +1,93 @@
+﻿title: scene_132
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "April 30th 1990 - Morning">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Don't rub the collar, beta, it will start shining like tin. Here— hair behind the ear… lie down.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Is it sticking up again?
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Like a stubborn blade of grass. There. Good boy.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Baba… what time will they pin the sheets?
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: When the peon finishes his tea and finds the drawing pin. We'll reach before him and watch the wall like it owes us money.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Drink two sips. Not more. Too much water makes numbers blur.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: My hands are sweaty.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's because they remember holding a bat and a pencil on the same week. Proud hands sweat early.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Pride can wait. Today we read marks. After that we decide what pride is allowed to say.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: He studied till the fan scolded him. He slept without stories. He woke before the milkman. That's the work we could do.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: If your heart starts running when we see the crowd, breathe like the drum: in… hold… out. Look at the rusty nail on the old notice board. That's our anchor.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: In… hold… out.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Anchor won't change the tide. But it keeps the boat from lying.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: True. Listen, captain. Whatever the paper says, you walk the same—straight, without running or drooping. If it's good, we thank it and go home. If it's not, we learn where the holes are and we fill them. No big face, no small face.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Will you stand near me?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Like a shadow with laces.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: One rule before we step out. We don't ask others their number. We don't announce ours. We don't compare on the road. The wall is for reading; the lane is for walking.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: We carry each other. Not just today. Everyday.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: And we walk together. No racing ahead, Ramu.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I'll keep pace. If I run, you pull my shirt.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Promise.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Lock the door, then we go. We'll be early and quiet. Let the wall do the talking.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Shoes tied?
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Double knot.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+ShivPrasad: Good. Come, all of you.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

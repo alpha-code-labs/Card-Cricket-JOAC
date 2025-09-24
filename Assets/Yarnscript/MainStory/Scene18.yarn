@@ -1,0 +1,28 @@
+﻿title: scene_18
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. You beauty. You were brilliant out there today.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I guess I was just lucky.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my boy. Stay humble and grounded. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Thank you bhai. Thank you for this chance. I really appreciate it.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

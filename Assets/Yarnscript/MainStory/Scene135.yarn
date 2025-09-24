@@ -1,0 +1,114 @@
+﻿title: scene_135
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "emotional">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Today I change seats, Captain. Till now I drove the bus. From here, I ring the bell and keep time. Uncle Dev will take the wheel inside the nets.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: If you change seats, will I still hear you?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Not over his voice. Between it. Like the space in a drumbeat. That's where habits live.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: What if he moves my feet different? Or changes my grip? We did it one way for months.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then you try his way first. No arguing inside the net. You try, you feel, you file it here. After practice, we ask why together. Learning looks clumsy before it looks clever.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: So… try now, ask later.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Exactly. Three permissions for you, before we step forward. One: Permission to look ordinary while you learn something extraordinary. Two: Permission to ask questions that sound silly but save time. Three: Permission to disappoint me for one session if it means you did the right thing slowly.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I accept.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: And three promises I want back.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: School stays first. Numbers don't drop because nets are exciting. Two: Manners louder than talent—no throwing, no showing off, no shrinking. Three: Health over heroics—if something hurts, you speak.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I promise. What about you?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: My turn.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: One: I won't coach over Uncle Dev. My mouth will be in my pocket; my eyes will be on your effort. Two: I'll be there—early, steady, and boring in the best way. Three: I'll keep home soft and honest. Win or wobble, you'll find warmth, water, and work waiting.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: I'm excited. Also… a little scared. With you I know the answers. With him I'll be asked new ones.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: New questions mean new rooms. We're opening doors, not breaking walls. If doubt knocks, say your name once and check your anchor—the rusty nail on the board, the breath you count, the thread on your wrist. You're not alone; you're just growing.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Bhai… who am I when I walk in there?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Many things, in this order: student, teammate, worker. The applause can join the line at the end. Walk like work.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Will you clap if I do something right?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: I'll clap in my chest. Outside, I'll be a quiet yes. Let Dev-sir measure. I'll count effort.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: And if I miss?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: We've practiced missing with manners. You already know that dance. You bow to it, learn, and move.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Bhai… thank you for the mornings. For the towel, the tape, the brick sanding. For calling me captain when I was only learning to stand.
+
+<<SetCharacterExpression "Ramu" "Sad">>
+Ramu: Thank you for showing up when sleeping was easier. For keeping the bat face up and your promises the same. For letting me be your first coach.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: You'll always be my first coach.
+
+<<SetCharacterExpression "Ramu" "Sad">>
+Ramu: And always your brother after that. If the ground ever makes you feel small, remember: the lane made you tall.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Can I—
+
+<<SetCharacterExpression "Ramu" "Sad">>
+Ramu: Come here.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I'll make you proud, but not noisy.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Make yourself honest. Pride will find us if it needs to. Alright, little-big man. Put the bat face-up for a breath… good. Pocket your pencil. Lift your eyes. Walk your work.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Reporting.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Through here. When you look back, I'll be right where you left me—light on, mouth shut, heart loud.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Lighthouse.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Captain.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

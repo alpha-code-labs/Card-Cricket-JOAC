@@ -1,0 +1,27 @@
+﻿title: scene_118
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "April 12th 1990 - Evening">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "KohliwadaGroundground">>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: It's the Semifinals today captain. We are batting first. You are opening. Conditions are hostile. We need to have a steady start. You need to get 30 runs in the first 5 overs. A steady start is essential. Hang in there. Watch the swing and the seam.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I am all in. Completely focussed. Ready to roar.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Let's go.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

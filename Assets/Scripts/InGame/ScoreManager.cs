@@ -21,8 +21,8 @@ public class ScoreManager : MonoBehaviour
     }
 
     int currentRuns = 0; // Current runs scored
-    int TargetScore = 40; // The target score to reach
-    internal int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
+    public int TargetScore = 40; // The target score to reach
+    internal public int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
     public int wickets = 3; // Wickets before game over
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI currentRunsText;
@@ -257,5 +257,31 @@ public class ScoreManager : MonoBehaviour
         {
             batterOriginalPosition = BatterImage.rectTransform.anchoredPosition;
         }
+    }
+    public void SetTargetFromEventName(string eventName)
+    {
+        ScriptableObject gameObject = Resources.Load<ScriptableObject>(eventName);
+        switch (eventName)
+        {
+            case "Event1":
+                TargetScore = 10;
+                MaxBalls = 6;
+                break;
+            case "Event2":
+                TargetScore = 20;
+                MaxBalls = 9;
+                break;
+            case "Event3":
+                TargetScore = 30;
+                MaxBalls = 12;
+                break;
+            default:
+                TargetScore = 30;
+                MaxBalls = 12;
+                Debug.LogWarning("No target score set for this event, using default values.");
+                break;
+        }
+        UpdateScore(0); // Reset score display
+        UpdateBallsAndOvers(0); // Reset balls and overs display
     }
 }

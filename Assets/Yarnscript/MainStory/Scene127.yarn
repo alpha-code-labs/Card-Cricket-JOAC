@@ -1,0 +1,129 @@
+﻿title: scene_127
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: I know we're keeping quiet for the neighbors, but my chest is making noise. Maa… Baba… you should've seen your boy.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: I saw the clay on his elbows and the shine in his eyes. Enough seeing for a mother. Speak softly.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: What happened is done. Tell it in short words. He has long pages tomorrow.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Short words then: he held his spine like a flagpole. When the ground shouted, he answered with silence. When the moment got heavy, he didn't rush. He turned it, like a knob, one click at a time.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Bhai.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Hush, champion. I won't tell the whole story. Just this—he remembered the team before himself. Twice he could have taken the loud option. He chose the right one.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Right options taste better than sweet ones. But the laddu of marks is still not cooked. Day after tomorrow morning, yes?
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Yes, Maa. First paper.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Then tonight we eat simple, talk simple, and sleep simple. The brain learns best when the room is boring.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I've already made boring into a plan. Table of contents, two laps. Dictation for new words. Ten sums till they stop wobbling. After that, lights off—no hero tales.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Good. Raju, wash your feet again. Mud doesn't enter a mind that needs to stay clean.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I know the deal. Ninety. We heard it with both ears.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: You heard it. Did you taste it? Numbers have a flavor—sweat and ink. He can soak in applause for ten minutes. After that, he soaks in ink.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Baba, I'll bring the ink home. Promise.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Promises are lighter than notebooks, beta. Sit. Open the page with the long division that bites you.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Before we start—one minute for what your hands did well today. Say it once, then we lock the ground outside and invite the pages in.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I… waited. I didn't try to win everything in one breath.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Remember that same waiting here. Sums are also bowls of hot milk—sip, don't gulp.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Ramu, put the trophy under the books.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Under?
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Yes. Let it carry the weight of tomorrow's work. If it bends, it wasn't worth much.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Raju. Today the ground said your name. Day after, the paper will ask your name too—hundred little ways. Write it with the same hand. Neat. Patient. No swagger.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I don't know how to swagger, Baba.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Good. Keep it that way. Pride sits on a shoulder and makes the neck sore. We need your neck free for thinking.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Maa, when I close my eyes I can still hear the drum from the ground. It thumps here.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Then give it a new beat: "Read… write… check… next." Keep tapping that till sleep comes.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Also, we're setting alarms—mine and his. First bell, revision; second bell, breakfast; third bell, leave early. I'll walk him to the gate even if the sky decides to become a river.
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: Take an extra pencil. Extra eraser. And that small hand towel—sweaty hands make silly mistakes.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Baba, Maa… if I get the ninety, then—
+
+<<SetCharacterExpression "Kamla" "Smiling">>
+Kamla: No "then" tonight. The only prize we discuss is a clean page and a calm head. The rest is a door we will knock on when the ink dries.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: He's ready. I vouch for his hours, not just his highlights.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: I believe your watch. But belief and permission are cousins, not twins. I will keep my word. He brings me ninety percent, I walk him to that banyan, and I tell my fear to take a holiday for one day.
+
+<<SetCharacterExpression "Kamla" "Quizzical">>
+Kamla: And if he brings eighty-nine?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: We shake his hand for trying and we keep him here longer. The world is not kind; let the rules be clear at home.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Last instruction for tonight, captain: when you close this notebook, you also close the stadium inside your head. Lock it. Key under the pillow. Tomorrow evening, you can visit it again.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Day after tomorrow, the paper will ask if you can keep a promise. Answer "yes" with numbers. If you bring me ninety percent, the road to that academy opens. If not, it doesn't. No anger. No tears. Clear skies, clear rules.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Understood. I accept.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+ShivPrasad: Now let's make the home quiet enough for the answers to hear us.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

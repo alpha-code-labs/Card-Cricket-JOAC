@@ -1,0 +1,7 @@
+﻿title: ConfirmationDialogue
+---
+-> {get_yes_choice()}
+    <<confirm_choice true>>
+-> {get_no_choice()}
+    <<confirm_choice false>>
+===

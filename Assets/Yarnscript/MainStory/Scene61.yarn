@@ -1,0 +1,81 @@
+﻿title: scene_61
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "KohliwadaGroundground">>
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Arre Ramu, what did you feed this kid—rocket fuel? He made boys our size look like traffic cones.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: "Man of the Series" at ten! Ten! When I was ten, my biggest achievement was stealing jalebi.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Forget jalebi. Did you see that calm? Bowlers barked, he blinked slow like a cat and—phut—game gone.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: He plays like he's late for nothing. Just… on time. Every ball.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Fourteen months of showing up. Same chalk, same dawn, same rules.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: And same bat! This antique with tape and blessings. We should put it in a museum after it buys all of us new soles.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: Prize money talk—listen: ground repairs first like we promised. The rest—you take home. Your Maa's medicines, Baba's towel, Raju's shoes.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: We split fair, like agreed. And Raju gets exactly what the team gets—no extra crowns, only extra practice.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: Haan, king without crown—that's the scary kind. He doesn't shout, the runs shout for him.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Boys from two lanes over were asking his age. I told them, "Old enough to keep promises." They shut up.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: Next time crowds will come with proper banners. Today half the lane was screaming his name… and he still said thank you to the umpire. Who taught him that?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Poverty doesn't get to steal our manners.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Write that on his sticker, yaar. Also write: "Don't bowl short to Raju unless you want regret."
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: Oye, little captain! What do you want after all this? New bat? New cap?
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: New chalk. And a bigger water bottle so I can share.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: That's why he's dangerous—wants tools, not trophies.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Ramu, protect this routine like it's gold. The city will notice if you keep him steady.
+
+<<SetCharacterExpression "Vivek" "Excited">>
+Vivek: And when it gets louder—papers, bigger grounds—don't change the lane inside his head.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That lane is locked. Same bell, same breath.
+
+<<SetCharacterExpression "Imtiaz" "Excited">>
+Imtiaz: Chal, team photo! Trophy in front, kid in the middle, the rest of us pretending we taught him anything.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Face up. Chin up.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: For us.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

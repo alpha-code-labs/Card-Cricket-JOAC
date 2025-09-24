@@ -1,0 +1,30 @@
+﻿title: scene_12
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic "disappointing">>
+<<SetBGSprite KohliwadaGroundground>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Captain all ok?
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I let you down. I let the team down. I am not ready.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: But this is cricket captain. You have good days and bad days. You cannot be so dejected by failure. Don't let the head hang in shame.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I know. But still, I just did not make the right shot selection. I could not even play proper shots. I am embarrassed.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Smile captain. We will have more chances don't get yourself down. Heads up. Smile. Tomorrow is another day.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

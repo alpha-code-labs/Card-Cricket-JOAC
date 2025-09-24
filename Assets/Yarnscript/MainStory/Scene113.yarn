@@ -1,0 +1,126 @@
+﻿title: Scene_113
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<ShowDateScreen "April 11th 1990 - Morning">>
+<<wait 5>>
+
+<<PlayBackgroundMusic "exciting">>
+<<SetBGSprite "HutInterior">>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Reporting.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Big ground, bigger noise. Breathe with the drum, not against it.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: In… hold… out.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Two new things today. First—stakes. There's real prize money on the table. Not story money—notes. It can fix the tarp, buy Maa's medicines for months, pay your school fees, even leave a little for better soles. That's heavy… but it doesn't sit on your shoulders unless you invite it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: So I keep it on the table, not in my head.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Exactly. Second—eyes on you that weren't here before. See near the scorers' desk? Green umbrella, clipboard, cap pulled low?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Coach Dev.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: He'll pretend he's counting pigeons. He's counting how you carry yourself when the ground tries to carry you away. No showing off. No shrinking. Walk like work.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Walk like work. Got it.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Today you'll hear clever jokes thrown like bouncers. Let them pass. Your reply is your rhythm. If someone bumps you, you become water—flow around, don't splash.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Water wins by staying.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: You've been listening. Now, new checklist—different from our lane rules. Three switches to keep on: Calm—slow eyes, steady breath. Courage—say your name when doubt whispers. Care—for the team, the ground, your bat. If one switch flickers, touch the red thread, and it'll remind you to turn it back on.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Calm. Courage. Care. On.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Also, two promises for today: Promise one: Compete clean. If the call is tight, accept it. We don't borrow luck by shouting. Promise two: Carry someone else. A word, a clap, a nod. Make a teammate taller.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I can do both.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: One secret, too—finish fully. Whatever you start—a run, a call, a moment—complete it. Half-decisions break more than bats.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Finish fully. Even if the noise jumps.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Especially then. And if your heart runs ahead, look at something still. See that rusty nail on the banyan board? That's your anchor. One look. One breath. World slows.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Slower already.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Remember why you are here, not why they are. Crowds come to see a show; we came to keep a promise. Same boy who woke at dawn, same boy who warmed Baba's towel, same boy who wrote neat pages last night. This ground is bigger, but your work is the same size.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Familiar work, unfamiliar volume.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Nicely said. And about Dev-sir—don't chase his eyes. Let them find you working. He respects silence that does the job. If he nods, fine. If he doesn't, still fine. Our measure isn't his cap; it's your compass.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Compass says: north is effort.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: And east is humility. West is patience. South is team. If some older boy tests you—age, elbows, words—answer with the ball, not your mouth. Tiny boys start arguments; steady boys start overs.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: You're in coach mode today.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: I'm in brother mode who knows the rent is due. But listen—win or lose, we walk out and back the same way. If we lift notes later, we lift gratitude first.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: To Maa, to Baba, to the lane, to this bat.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's my captain. One more thing—when you hear your name, don't rush. Place the bat face-up for a heartbeat, touch the soil, then pick it. It tells the ground, "I'm here to work, not to pose."
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Work, not pose.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Alright. The drum is ours now. Whatever happens, we meet by the banyan after the final whistle—no excuses, no vanishing. If the evening is kind, we'll count notes. If not, we'll count lessons. Either way, we count together.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Together.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Go on, little-big man. Let the game find the boy it's been hearing about. And if the world gets faster than you like—
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I slow it. One look, one breath.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's it. Play like work.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Reporting.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
