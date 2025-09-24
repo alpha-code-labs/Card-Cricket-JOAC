@@ -7,7 +7,7 @@ position: 0,0
  
  
 
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Captain. Good—you came. Our lane doesn't have a coach, so you get me. Today, before we step out, I'm telling you the spine of batting in this world. No secrets, just honesty.

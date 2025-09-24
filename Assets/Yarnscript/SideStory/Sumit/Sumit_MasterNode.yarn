@@ -1,0 +1,327 @@
+title: Sumit
+---
+<<if $Sumit_Day==0>>
+    <<jump Sumit_Day1>>
+<<elseif $Sumit_Day==1>>
+    <<jump Sumit_Day1>>
+<<elseif $Sumit_Day==2>>
+    <<jump Sumit_Day2>>
+<<elseif $Sumit_Day==3>>
+    <<jump Sumit_Day3>>
+<<elseif $Sumit_Day==4>>
+    <<jump Sumit_Day4>>
+<<elseif $Sumit_Day==5>>
+    <<jump Sumit_Day5>>
+<<elseif $Sumit_Day==6>>
+    <<jump Sumit_Day6>>
+<<endif>>
+===
+
+title: Sumit_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Scene Setup - Day 1 at Koliwada Ground
+After finishing his homework early and feeling restless on a quiet afternoon, Raju chooses to visit his friend Sumit who had mentioned wanting to organize some kind of intellectual challenge or competition to break the monotony of their usual activities.
+
+The familiar surroundings of the neighborhood take on a different quality as Raju approaches Sumit's usual gathering spot, where his friend sits with the restless energy of someone whose active mind craves stimulation beyond the routine activities that typically occupy their afternoons. The quiet period between school and evening chores has left both boys with time to fill, creating the perfect opportunity for intellectual engagement that could challenge their minds while strengthening their friendship through shared mental exercise and friendly competition.
+
+<<SetCharacterExpression "Sumit" "Sad">>
+Sumit: Raju yaar, I'm so bored with our usual routine! Every day it's the same thing - school, homework, maybe some cricket if we're lucky. I want to do something that actually challenges our minds and makes us think differently.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I totally understand that feeling, Sumit! What kind of mental challenge are you thinking about? Something that would be both fun and intellectually stimulating?
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Exactly! I want something that tests our intelligence, creativity, and quick thinking. Maybe some kind of competition that proves who's really the sharper thinker between us, but in a friendly way.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: That sounds interesting, but what kind of intellectual challenge would be fair to both of us? We each have different strengths and knowledge areas.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: That's exactly what would make it exciting! We could test different types of intelligence - word puzzles, logical reasoning, creative thinking, memory challenges. Multiple rounds to see who's more well-rounded intellectually.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I like the idea of testing different mental skills instead of just one area. It would be more about overall intellectual agility than specialized knowledge.
+
+<<SetCharacterExpression "Sumit" "Serious">>
+Sumit: But here's the thing - I want this to be a real challenge, not just casual games. Something that pushes both of us to perform at our mental peak and maybe teaches us about our own thinking strengths and weaknesses.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That sounds perfect! Intellectual competition that's both challenging and educational. When do you want to organize this mental challenge?
+
+// Scene Conclusion
+As Raju leaves their initial planning conversation with anticipation building for tomorrow's intellectual challenge, he carries both excitement about testing his mental abilities against a peer and appreciation for Sumit's desire to engage in activities that stimulate rather than merely entertain. The prospect of organized intellectual competition has transformed a routine afternoon into the beginning of something that could teach both participants valuable lessons about their cognitive strengths, competitive spirit, and the satisfaction that comes from exercising their minds in systematic and challenging ways.
+
+<<set $Sumit_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Scene Setup - Day 2
+Eager to begin the intellectual competition they planned yesterday, Sumit chooses to meet Raju at their usual spot, bringing specific ideas about how to structure their mental challenges fairly and effectively.
+
+The neighborhood setting provides a comfortable environment for launching their intellectual competition as both friends arrive with focused energy and strategic thinking about how to create challenges that will test their mental abilities while maintaining the spirit of friendly rivalry. Today's conversation will determine the specific structure and rules for their competition, with both participants bringing different ideas about what constitutes fair and meaningful intellectual challenge.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Ready to put our brains to the test, yaar? I've been thinking about how to make this competition both challenging and fair for both of us.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely! I'm curious to see what kind of mental challenges you've come up with. This should be really interesting for both of us.
+
+<<SetCharacterExpression "Sumit" "Serious">>
+Sumit: I want to make sure we're both challenged appropriately. We have different academic strengths, so the competition should test multiple types of intelligence and thinking skills.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: That makes sense. What specific areas do you think we should focus on to make this a comprehensive test of mental agility?
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: I was thinking about word puzzles, pattern recognition, logical reasoning, creative problem-solving, and maybe some memory challenges. Different rounds testing different mental skills.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's a really comprehensive approach! Testing multiple types of intelligence instead of just academic knowledge. It would show us both where our thinking strengths and weaknesses lie.
+
+<<SetCharacterExpression "Sumit" "Serious">>
+Sumit: Exactly! And I think the competition should be challenging enough that we both have to really concentrate and perform at our best. No easy questions that we can answer without thinking.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I agree completely. The whole point is to push our mental limits and see what we're truly capable of when we focus intensely.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: How should we structure this competition to maximize the intellectual challenge while keeping it fun and fair for both participants?
+
+// Scene Conclusion
+As their second planning conversation concludes with both friends having established comprehensive criteria for their intellectual competition, both participants understand that they have moved beyond casual entertainment into serious mental exercise that could provide valuable insights about their cognitive abilities and competitive approaches. The systematic thinking they've applied to designing fair challenges reflects their growing maturity in approaching competition as educational opportunity rather than simple rivalry.
+
+<<set $Sumit_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Scene Setup - Day 3 - Choice Day
+With their competition structure planned and anticipation building, Sumit chooses to meet Raju to finalize the specific format and rules for their intellectual challenge before beginning the actual competition.
+
+The familiar meeting spot takes on new significance as the launching point for their carefully planned intellectual competition, with both participants bringing focused determination and strategic thinking to what has evolved from casual idea into systematic mental challenge. Today's session will establish the final parameters for their competition while testing their ability to balance competitive spirit with fair play and mutual respect.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Time to finalize our intellectual competition, Raju! I'm really excited to see how this turns out. Are you ready to discover which one of us is the ultimate thinking champion?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Definitely! This has been such an interesting project to plan. I'm curious to see not just who performs better, but what we both learn about our mental strengths.
+
+<<SetCharacterExpression "Sumit" "Serious">>
+Sumit: Before we begin, let's agree on what type of intellectual challenge would be most meaningful and fair. What approach do you think would best test our mental abilities?
+
+-> Raju: Let's focus on comprehensive mental agility, Sumit. Multiple short challenges testing different types of intelligence - verbal, logical, creative, and analytical thinking all combined.
+    <<jump Sumit_Day3a>>
+-> Raju: Let's focus on creative problem-solving, Sumit. Challenges that require innovative thinking, imagination, and the ability to find unique solutions to complex problems.
+    <<jump Sumit_Day3b>>
+-> Raju: Let's focus on rapid-fire mental challenges, Sumit. Quick thinking exercises that test how fast and accurately we can process information under time pressure.
+    <<jump Sumit_Day3c>>
+
+===
+
+title: Sumit_Day3a
+tags:
+position: -308,129
+---
+<<set $Sumit_Path = "a">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on comprehensive mental agility, Sumit. Multiple short challenges testing different types of intelligence - verbal, logical, creative, and analytical thinking all combined.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Comprehensive testing sounds perfect! We'll discover who's more well-rounded intellectually by challenging multiple cognitive skills rather than just one specialized area.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! This way we both get to demonstrate our strongest thinking skills while also discovering areas where we might need to improve our mental agility.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: I love this approach because it's educational as well as competitive. We'll learn about our own thinking patterns while having fun with intellectual challenges.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Perfect! Comprehensive mental agility testing will give us both valuable insights into our cognitive strengths while providing really engaging intellectual competition.
+
+// Scene Conclusion
+As the friends commit to a comprehensive mental agility approach that emphasizes testing multiple types of intelligence, both understand that this strategy will provide the most educational and fair competition while challenging them to demonstrate versatility rather than just specialized knowledge. Their systematic approach to intellectual challenge reflects growing maturity in competitive activities.
+
+<<set $Sumit_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day3b
+tags:
+position: -55,122
+---
+<<set $Sumit_Path = "b">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on creative problem-solving, Sumit. Challenges that require innovative thinking, imagination, and the ability to find unique solutions to complex problems.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Creative problem-solving sounds fascinating! Testing our ability to think outside conventional patterns and generate original solutions rather than just recall memorized information.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! This approach would show us who's better at innovative thinking and adapting to unexpected challenges that don't have obvious answers.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: I love how creative challenges would test our imagination and flexibility rather than just academic knowledge. It's more about how we think than what we know.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Perfect! Creative problem-solving will challenge us both to demonstrate innovative thinking while discovering new approaches to mental challenges.
+
+// Scene Conclusion
+As the friends commit to a creative problem-solving approach that emphasizes innovative thinking over conventional knowledge, both understand that this strategy will test their mental flexibility and imagination while potentially revealing cognitive capabilities that traditional academic work might not demonstrate. Their focus on creativity reflects appreciation for non-traditional forms of intelligence.
+
+<<set $Sumit_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day3c
+tags:
+position: 184,122
+---
+<<set $Sumit_Path = "c">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on rapid-fire mental challenges, Sumit. Quick thinking exercises that test how fast and accurately we can process information under time pressure.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Rapid-fire challenges sound intense! Testing our ability to think quickly and maintain accuracy when under pressure - that's a really practical mental skill.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! This approach would show us who performs better when there's no time for overthinking - just pure mental reflexes and quick processing ability.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: I love how time pressure would eliminate second-guessing and force us to trust our instincts and rapid mental processing. It's about mental speed and confidence.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Perfect! Rapid-fire mental challenges will test our ability to think quickly and accurately while maintaining composure under competitive pressure.
+
+// Scene Conclusion
+As the friends commit to a rapid-fire approach that emphasizes quick thinking and mental reflexes, both understand that this strategy will test their ability to perform under pressure while potentially revealing how they handle stress and time constraints in competitive situations. Their focus on speed reflects appreciation for mental agility and quick processing skills.
+
+<<set $Sumit_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day4
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Day 4 - Implementation Day (All paths converge here)
+After yesterday's finalization of their competition format, Sumit chooses to meet Raju to begin the actual intellectual challenges they've been planning and building anticipation for over several days.
+
+The neighborhood setting transforms into an arena for intellectual competition as both friends arrive with focused energy and nervous excitement about testing their mental abilities against each other in the systematic challenge they've carefully designed. Today marks the transition from planning to performance, with both participants eager to discover not just who performs better but what they learn about their own cognitive strengths and competitive responses under mental pressure.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: The moment of truth has arrived, yaar! Ready to put all our planning into action and see who emerges as the thinking champion of our neighborhood?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm both nervous and excited! This is going to be really interesting. Whatever the outcome, I think we'll both learn something valuable about our mental abilities.
+
+<<SetCharacterExpression "Sumit" "Serious">>
+Sumit: Let's make sure we both give our absolute best effort. The whole point of this competition is to push our intellectual limits and see what we're truly capable of achieving.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Agreed! Win or lose, I want to perform at my mental peak and discover things about my thinking abilities that I might not know yet.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Then let's begin our intellectual battle! May the best mind win, and may we both become smarter through this challenge!
+
+// Scene Conclusion
+As the competitive phase begins with both participants bringing their full mental focus to the challenges they've designed, the friendly rivalry tests not only their cognitive abilities but also their capacity to maintain good sportsmanship while striving for intellectual victory. The competition provides immediate feedback about their mental strengths while strengthening their friendship through shared challenge and mutual respect.
+
+<<set $Sumit_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day5
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Day 5 - Continuing Competition
+After successfully completing their first day of intellectual competition, Sumit chooses to continue the challenge with Raju, eager to build on yesterday's mental exercises and explore different aspects of their cognitive abilities.
+
+The familiar competition setting welcomes both friends as they return with growing understanding of their respective mental strengths and areas for improvement, yesterday's challenges having provided valuable insights into their cognitive abilities while maintaining the spirit of friendly intellectual rivalry. The second day of competition carries different energy as both participants move beyond initial nervousness into more confident engagement with mental challenges that test their developing intellectual skills.
+
+<<SetCharacterExpression "Sumit" "Smiling">>
+Sumit: Back for round two of our intellectual competition! Yesterday was really enlightening - I learned things about my own thinking patterns that I never realized before.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Same here! The competition was challenging in ways I didn't expect. I discovered both mental strengths I didn't know I had and areas where I definitely need more practice.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: That's exactly what I hoped would happen! Today let's make the challenges even more complex to really push our intellectual boundaries and see how much we can improve.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm ready for more advanced challenges! Yesterday gave me confidence that I can handle intellectual pressure better than I thought.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Perfect attitude! Let's see if we can both perform even better today by applying what we learned about our thinking styles from yesterday's competition.
+
+// Scene Conclusion
+As the second day of intellectual competition unfolds with increased complexity and growing confidence from both participants, their friendly rivalry continues to provide educational value while strengthening their appreciation for mental challenges and competitive activities that enhance rather than diminish their friendship. The progression reflects their growing comfort with intellectual competition as a form of mutual improvement.
+
+<<set $Sumit_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Sumit_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite KohliwadaGround>>
+
+// Day 6 - Final Reflection
+With several days of intellectual competition behind them, Sumit chooses to meet Raju for a final session to reflect on what they've learned about themselves and their friendship through their systematic mental challenges.
+
+The competition venue takes on new significance as both friends prepare for what feels like a culminating conversation about their intellectual journey, with several days of mental challenges having provided insights not just about their cognitive abilities but about the value of friendly competition, mutual encouragement, and shared intellectual growth. Today's discussion will synthesize their experiences while considering how their approach to intellectual challenge might influence their future academic and personal development.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: Raju, I have to say - this whole intellectual competition project has been one of the most interesting things we've done together. It's taught me so much about how my mind works and how much I enjoy mental challenges.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I completely agree! The competition pushed me to think in ways I normally don't, and it showed me that I can handle intellectual pressure much better than I expected. Plus it was really fun competing with you.
+
+<<SetCharacterExpression "Sumit" "Smiling">>
+Sumit: You've demonstrated that intellectual competition doesn't have to damage friendship - it can actually strengthen it when both people approach challenges with respect and good sportsmanship. Win or lose, we both became better thinkers.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This experience has taught me that challenging your mind is just as important as challenging your body through cricket or other physical activities. Whether someone is competing intellectually or athletically, growth comes from pushing your limits while maintaining respect for your opponent.
+
+<<SetCharacterExpression "Sumit" "Smiling">>
+Sumit: Exactly! And you've shown me that some of the best competitions are the ones where everybody wins because everybody learns something valuable about their capabilities and potential for improvement.
+
+<<SetCharacterExpression "Sumit" "Excited">>
+Sumit: I want to make this intellectual competition a regular part of our friendship - maybe weekly mental challenges that help us both stay sharp while having fun together. Are you interested in continuing this kind of intellectual exercise?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That sounds wonderful! I'd love to keep challenging my mind this way while building an even stronger friendship with you through shared intellectual growth and friendly competition.
+
+<<SetCharacterExpression "Sumit" "Smiling">>
+Sumit: Then we both benefit perfectly - you continue developing your mental agility and competitive skills while I gain a reliable partner for intellectual challenges, and together we prove that competition can bring people closer instead of driving them apart.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As their conversation concludes with plans for ongoing intellectual competition that strengthens rather than strains their friendship, Sumit and Raju understand that they have discovered something valuable about the nature of healthy competition, mental development, and mutual encouragement. Their systematic approach to intellectual challenge has created a model for how competitive activities can enhance personal growth while building rather than threatening meaningful relationships.
+
+<<set $Sumit_Complete = true>>
+<<EndEvent true>>
+===

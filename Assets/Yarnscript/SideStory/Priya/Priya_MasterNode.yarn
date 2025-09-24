@@ -1,0 +1,405 @@
+title: Priya
+---
+<<if $Priya_Day==0>>
+    <<jump Priya_Day1>>
+<<elseif $Priya_Day==1>>
+    <<jump Priya_Day1>>
+<<elseif $Priya_Day==2>>
+    <<jump Priya_Day2>>
+<<elseif $Priya_Day==3>>
+    <<jump Priya_Day3>>
+<<elseif $Priya_Day==4>>
+    <<jump Priya_Day4>>
+<<elseif $Priya_Day==5>>
+    <<jump Priya_Day5>>
+<<elseif $Priya_Day==6>>
+    <<jump Priya_Day6>>
+<<endif>>
+===
+
+title: Priya_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Scene Setup - Day 1 at the library
+After noticing his classmate Priya looking worried about upcoming exams during school break, Raju chooses to approach her in the library where she's been studying alone, hoping to offer assistance with her academic preparations.
+
+The quiet atmosphere of the school library provides a sanctuary for serious study as Raju approaches the corner table where Priya sits surrounded by textbooks, notebooks, and the visible stress of someone struggling to master material that seems to resist understanding. Her furrowed brow and the pile of crumpled papers beside her reveal the frustration of a dedicated student whose effort isn't translating into the comprehension she desperately needs, while the approaching exam deadline creates mounting pressure that threatens to overwhelm even her persistent attempts to succeed through determination alone.
+
+<<SetCharacterExpression "Priya" "Sad">>
+Priya: Oh Raju, I'm so worried about next week's exams! I've been studying for hours every day, but some of these subjects just aren't making sense no matter how hard I try.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Don't worry so much, Priya! Which subjects are giving you the most trouble? Maybe we can figure out a better approach together.
+
+<<SetCharacterExpression "Priya" "Sad">>
+Priya: Mathematics and science are both confusing me. I understand when the teacher explains concepts in class, but when I try to solve problems alone, I get completely lost and make silly mistakes.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That sounds like you understand the concepts but need practice applying them. Maybe studying together would help both of us understand the material better?
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: You really think collaborative studying could help? I've always tried to learn everything by myself, but maybe discussing problems with someone else would clarify my thinking.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Definitely! Sometimes explaining concepts to each other helps both people understand better. We could quiz each other and work through difficult problems together.
+
+<<SetCharacterExpression "Priya" "Sad">>
+Priya: But what if I'm too far behind? What if my confusion just makes studying harder for you? I don't want to waste your time when you probably understand everything already.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Don't think like that, Priya! Teaching and explaining actually helps me understand concepts more deeply too. We'd both benefit from working together instead of struggling alone.
+
+// Scene Conclusion
+As Raju leaves the library with Priya's academic worries weighing on his mind, he carries both determination to help a classmate succeed and growing understanding that academic collaboration can benefit both participants when approached with mutual respect and shared commitment to learning. The complexity of balancing individual study with collaborative support has revealed opportunities for meaningful educational partnership, while Priya's self-doubt about her abilities has motivated him to demonstrate that academic struggles can be overcome through systematic effort and peer assistance.
+
+<<set $Priya_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Priya_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Scene Setup - Day 2 during lunch break
+Despite her initial hesitation about collaborative studying, Priya chooses to meet Raju in the library during lunch break, hoping that working together might help clarify the academic concepts that have been confusing her.
+
+The familiar quiet of the school library welcomes both students as they settle into collaborative study that represents a new approach for Priya, whose independent learning style has reached its limits when confronted with challenging material that requires different strategies for mastery. Today's session carries the potential to transform individual academic struggle into shared learning experience, while both participants bring different strengths and perspectives that could enhance their understanding beyond what either could achieve alone.
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: I'm glad you convinced me to try studying together, Raju. Last night I kept thinking about what you said regarding collaborative learning, and maybe you're right that isolation isn't always the best approach.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm really happy you decided to give it a chance! Sometimes the best insights come from discussing problems with someone who sees things from a different angle.
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: You're probably much better at these subjects than I am. I've been struggling with basic concepts while you always seem confident during class discussions.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Don't underestimate yourself, Priya! I notice you ask really thoughtful questions in class, and that shows you're thinking deeply about the material. Sometimes people who struggle initially understand concepts more thoroughly once they master them.
+
+<<SetCharacterExpression "Priya" "Quizzical">>
+Priya: Do you really think questioning and struggling can be signs of deeper learning? I always assumed they meant I wasn't smart enough to understand things quickly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely! People who ask good questions and work through difficulties often develop stronger understanding than those who accept everything immediately. Your careful thinking could be a strength, not a weakness.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: That's a completely different way of looking at my academic challenges. Maybe instead of feeling ashamed about needing extra time, I should appreciate that thorough understanding takes effort.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! And working together means we can combine your careful analysis with different perspectives to master material more effectively than either of us could alone.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: How should we structure our study sessions to maximize both our learning? What approach would work best for tackling these challenging subjects?
+
+// Scene Conclusion
+As their second conversation concludes with Priya's growing confidence about collaborative learning and her shifting perspective on academic struggle, both students recognize that they have begun developing a study partnership that could benefit both participants while challenging negative assumptions about intelligence and learning styles. The conversation has transformed Priya's self-doubt into curiosity about how different approaches to education might unlock understanding that independent study has failed to achieve.
+
+<<set $Priya_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Priya_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Scene Setup - Day 3 ready to begin partnership
+With yesterday's encouraging conversation about collaborative learning fresh in her mind, Priya chooses to meet Raju again in the library, ready to begin implementing their planned study partnership with specific academic goals.
+
+The school library provides the perfect environment for launching their collaborative study experiment as both students bring focused energy and strategic thinking to what has evolved from casual assistance into systematic partnership aimed at academic improvement. Today's session will test whether their theoretical discussions about learning styles and collaborative benefits can translate into practical study methods that enhance understanding and exam preparation for both participants.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Ready to put our collaborative study plan into action, Raju? I've been thinking about our conversation yesterday, and I'm eager to try this new approach to learning.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely! I brought some ideas about how we could structure our sessions to help both of us understand the material better. What subjects should we focus on first?
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: I think we should start with the areas where I'm most confused, but I want to make sure our approach also helps you learn. How should we organize our study time?
+
+-> Raju: Let's focus on intensive review sessions, Priya. We can quiz each other systematically and work through practice problems until we both master every concept completely.
+    <<jump Priya_Day3a>>
+-> Raju: Let's focus on conceptual understanding, Priya. Instead of just memorizing, we can explore why things work the way they do and connect ideas across different subjects.
+    <<jump Priya_Day3b>>
+-> Raju: Let's focus on mutual teaching, Priya. We can take turns explaining concepts to each other, which will help both of us understand material more deeply.
+    <<jump Priya_Day3c>>
+
+===
+
+title: Priya_Day3a
+tags:
+position: -308,129
+---
+<<set $Priya_Path = "a">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on intensive review sessions, Priya. We can quiz each other systematically and work through practice problems until we both master every concept completely.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Intensive review sounds perfect! I learn best when I can practice concepts repeatedly until they become automatic. Systematic drilling might be exactly what I need.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Great! We can create comprehensive question sets for each subject and keep practicing until we can answer everything quickly and accurately. Repetition builds confidence.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: I love this systematic approach! When I know I've practiced enough to handle any question, the exam anxiety disappears and I can focus on demonstrating what I've learned.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! Intensive review will give us both the thorough preparation and confidence we need to excel on these exams. Let's start with your most challenging subject.
+
+// Scene Conclusion
+As the students commit to an intensive review strategy that emphasizes systematic practice and comprehensive preparation, both understand that this approach will test their dedication and persistence while potentially providing the thorough mastery that exam success requires. The decision to focus on repetitive drilling reflects Priya's learning style preferences while offering Raju opportunities to reinforce his own understanding through teaching and explanation.
+
+<<set $Priya_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Priya_Day3b
+tags:
+position: -55,122
+---
+<<set $Priya_Path = "b">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on conceptual understanding, Priya. Instead of just memorizing, we can explore why things work the way they do and connect ideas across different subjects.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Conceptual understanding appeals to me! I always feel more confident when I grasp the underlying principles instead of just following procedures without comprehension.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Perfect! We can discuss the logic behind mathematical formulas, explore scientific principles through real examples, and help each other see patterns that connect different topics.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: I love how this approach makes learning feel more meaningful! When I understand why concepts work, I remember them better and can apply them to new situations more easily.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! Conceptual understanding will help us both develop deeper knowledge that goes beyond memorization to genuine comprehension. Let's start exploring the principles behind your challenging topics.
+
+// Scene Conclusion
+As the students commit to a conceptual understanding strategy that emphasizes deep learning over surface memorization, both recognize that this approach will require more intellectual effort while potentially providing more lasting and transferable knowledge. The decision to focus on underlying principles reflects both students' desire for meaningful learning that extends beyond immediate exam requirements.
+
+<<set $Priya_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Priya_Day3c
+tags:
+position: 184,122
+---
+<<set $Priya_Path = "c">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let's focus on mutual teaching, Priya. We can take turns explaining concepts to each other, which will help both of us understand material more deeply.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Mutual teaching sounds wonderful! I learn so much better when I have to explain things clearly to someone else. It forces me to organize my thoughts properly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Exactly! When you teach something, you discover gaps in your own understanding and strengthen areas where you're already solid. We'll both benefit from being both teacher and student.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: I love how this approach makes us equal partners in learning! Instead of feeling like the struggling student, I get to contribute by helping you understand things from my perspective too.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Perfect! Mutual teaching will help us both develop communication skills while mastering academic content. Let's start by choosing topics where each of us can teach the other something valuable.
+
+// Scene Conclusion
+As the students commit to a mutual teaching strategy that emphasizes collaborative learning and shared expertise, both understand that this approach will challenge them to articulate their understanding clearly while potentially building confidence through the recognition that everyone has valuable knowledge to contribute. The decision to focus on reciprocal teaching reflects their growing appreciation for learning as a social activity that benefits all participants.
+
+<<set $Priya_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Priya_Day4
+---
+<<if $Priya_Path=="a">>
+    <<jump Priya_Day4a>>
+<<elseif $Priya_Path=="b">>
+    <<jump Priya_Day4b>>
+<<elseif $Priya_Path=="c">>
+    <<jump Priya_Day4c>>
+<<endif>>
+===
+
+title: Priya_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Day 4 - Path A: Intensive Review Implementation
+After yesterday's selection of their specific study strategy, Priya chooses to meet Raju in the library during after-school hours to begin implementing their chosen approach before exam pressure intensifies further.
+
+The quiet after-school library provides ideal conditions for implementing their collaborative study plan without the distractions of busy lunch periods or time constraints, with both students bringing focused energy and systematic thinking to what has evolved from casual assistance into serious academic partnership. Today's session will test whether their chosen approach can actually improve understanding and reduce anxiety while building the foundation for exam success through sustained collaborative effort.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Ready to put our study strategy into practice, Raju? I'm nervous but also excited to see whether our collaborative approach actually helps me understand these difficult concepts.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm really looking forward to this! Yesterday's planning gave us a clear approach, and now we get to test whether working together really produces better results than studying alone.
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: I hope our method works better than my previous solo efforts. These exams feel so important, and I'm worried about disappointing my family if I don't perform well.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand that pressure, but remember that doing your best is what matters most. Our collaborative approach should help you feel more prepared and confident going into these exams.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: You're right about focusing on preparation rather than worry. Let's begin our study session and see how much we can accomplish together!
+
+// Scene Conclusion
+As the first implementation session begins with both students bringing enthusiasm tempered by realistic understanding of the challenges ahead, their collaboration will test whether systematic partnership can overcome individual academic obstacles while building confidence and competence for both participants. The combination of their different strengths and perspectives creates potential for enhanced learning that neither could achieve alone.
+
+<<set $Priya_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Priya_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Day 4 - Path B: Conceptual Understanding Implementation
+After yesterday's selection of their specific study strategy, Priya chooses to meet Raju in the library during after-school hours to begin implementing their chosen approach before exam pressure intensifies further.
+
+The quiet after-school library provides ideal conditions for implementing their collaborative study plan without the distractions of busy lunch periods or time constraints, with both students bringing focused energy and systematic thinking to what has evolved from casual assistance into serious academic partnership. Today's session will test whether their chosen approach can actually improve understanding and reduce anxiety while building the foundation for exam success through sustained collaborative effort.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Ready to put our study strategy into practice, Raju? I'm nervous but also excited to see whether our collaborative approach actually helps me understand these difficult concepts.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm really looking forward to this! Yesterday's planning gave us a clear approach, and now we get to test whether working together really produces better results than studying alone.
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: I hope our method works better than my previous solo efforts. These exams feel so important, and I'm worried about disappointing my family if I don't perform well.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand that pressure, but remember that doing your best is what matters most. Our collaborative approach should help you feel more prepared and confident going into these exams.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: You're right about focusing on preparation rather than worry. Let's begin our study session and see how much we can accomplish together!
+
+// Scene Conclusion
+As the first implementation session begins with both students bringing enthusiasm tempered by realistic understanding of the challenges ahead, their collaboration will test whether systematic partnership can overcome individual academic obstacles while building confidence and competence for both participants. The combination of their different strengths and perspectives creates potential for enhanced learning that neither could achieve alone.
+
+<<set $Priya_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Priya_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Day 4 - Path C: Mutual Teaching Implementation
+After yesterday's selection of their specific study strategy, Priya chooses to meet Raju in the library during after-school hours to begin implementing their chosen approach before exam pressure intensifies further.
+
+The quiet after-school library provides ideal conditions for implementing their collaborative study plan without the distractions of busy lunch periods or time constraints, with both students bringing focused energy and systematic thinking to what has evolved from casual assistance into serious academic partnership. Today's session will test whether their chosen approach can actually improve understanding and reduce anxiety while building the foundation for exam success through sustained collaborative effort.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Ready to put our study strategy into practice, Raju? I'm nervous but also excited to see whether our collaborative approach actually helps me understand these difficult concepts.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm really looking forward to this! Yesterday's planning gave us a clear approach, and now we get to test whether working together really produces better results than studying alone.
+
+<<SetCharacterExpression "Priya" "Serious">>
+Priya: I hope our method works better than my previous solo efforts. These exams feel so important, and I'm worried about disappointing my family if I don't perform well.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand that pressure, but remember that doing your best is what matters most. Our collaborative approach should help you feel more prepared and confident going into these exams.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: You're right about focusing on preparation rather than worry. Let's begin our study session and see how much we can accomplish together!
+
+// Scene Conclusion
+As the first implementation session begins with both students bringing enthusiasm tempered by realistic understanding of the challenges ahead, their collaboration will test whether systematic partnership can overcome individual academic obstacles while building confidence and competence for both participants. The combination of their different strengths and perspectives creates potential for enhanced learning that neither could achieve alone.
+
+<<set $Priya_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Priya_Day5
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Day 5 - Building on success
+After successfully completing their first collaborative study session, Priya chooses to continue meeting Raju in the library, eager to build on yesterday's progress and further develop their academic partnership.
+
+The familiar setting of the library welcomes both students as they return with growing confidence in their collaborative approach, yesterday's successful session having validated their belief that working together produces better results than individual struggle. The second day of sustained partnership carries different energy as both participants move beyond experimental assistance into genuine academic collaboration that benefits both while preparing them more effectively for upcoming examinations.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: I'm so glad we decided to study together! Yesterday's session helped me understand concepts that have been confusing me for weeks. Are you ready to continue building on our progress?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely! Yesterday showed me how much explaining concepts to you helped me understand them more deeply too. Collaborative learning really does benefit both people involved.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Exactly! I feel so much more confident about the material now. Today I want to tackle some of the more advanced problems to make sure we're really ready for anything the exams might include.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's a great attitude! Let's challenge ourselves with more complex material while continuing to support each other through any difficulties we encounter.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: I never thought I could feel this positive about academics before. Our partnership has transformed studying from something stressful into something enjoyable and productive.
+
+// Scene Conclusion
+As the second day of collaboration unfolds with expanded challenges and growing confidence, both students recognize that they have successfully transformed individual academic struggle into shared learning experience that enhances understanding while reducing anxiety. The progression from tentative partnership to confident collaboration reflects their growing competence in both academic content and collaborative learning skills.
+
+<<set $Priya_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Priya_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite PublicSchool>>
+
+// Day 6 - Final conversation and ongoing partnership
+With their study partnership well-established and exam confidence growing, Priya chooses to meet Raju for what may be their final preparation session before the important exams that will test everything they've learned together.
+
+The library atmosphere reflects the comfortable academic partnership that has developed between Priya and Raju over their days of collaborative study, with established routines and mutual support replacing the initial anxiety and uncertainty that characterized Priya's solo study attempts. Today's conversation carries weight beyond immediate exam preparation as both participants prepare to discuss the broader implications of their successful collaboration and what it has taught them about learning, friendship, and academic achievement.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: Raju, I have to tell you - when I first approached you about my academic worries, I never imagined how much our study partnership would transform my entire approach to learning. You've helped me discover strengths I didn't know I had.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, Priya! But this partnership has been just as valuable for me. Teaching and discussing concepts with you has deepened my own understanding while showing me how much I enjoy collaborative learning.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: You've demonstrated that academic ability isn't fixed - it can be developed through proper support and effective strategies. Your patient explanations and encouragement have helped me overcome years of self-doubt about my intelligence.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This experience has taught me that helping others succeed doesn't diminish your own achievements - it enhances them. Whether someone is supporting classmates or pursuing cricket, success becomes more meaningful when it's shared with people who understand the struggle.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: Exactly! And you've shown me that academic challenges don't have to be faced alone. When students support each other instead of competing, everyone can achieve more than they thought possible.
+
+<<SetCharacterExpression "Priya" "Excited">>
+Priya: I want to continue our study partnership even after these exams. Would you be interested in maintaining our collaboration for future academic challenges and helping other struggling students discover the power of collaborative learning?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That sounds wonderful! I'd love to continue working together while helping other students realize that academic success doesn't have to come at the expense of friendship and mutual support.
+
+<<SetCharacterExpression "Priya" "Smiling">>
+Priya: Then we both benefit perfectly - you continue developing your teaching and communication skills while I gain confidence in my academic abilities, and together we can show other students that collaboration enhances rather than threatens individual achievement.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As their conversation concludes with plans for ongoing academic partnership that extends beyond immediate exam preparation, Priya and Raju understand that they have created something more valuable than temporary study assistance - they have demonstrated how collaborative learning can transform individual struggle into shared success while building friendships and academic confidence that will serve them well throughout their educational journey and beyond.
+
+<<set $Priya_Complete = true>>
+<<EndEvent true>>
+===

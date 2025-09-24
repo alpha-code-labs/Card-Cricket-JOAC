@@ -7,7 +7,7 @@ position: 0,0
  
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: It's the Finals captain. We are batting second. You are at number 8. The last 2 overs remain. We have to get 15 runs to win the tournament. Are you up for it?

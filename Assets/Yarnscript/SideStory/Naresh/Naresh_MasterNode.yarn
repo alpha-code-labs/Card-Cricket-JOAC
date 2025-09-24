@@ -1,0 +1,443 @@
+title: Naresh
+---
+<<if $Naresh_Day==0>>
+    <<jump Naresh_Day1>>
+<<elseif $Naresh_Day==1>>
+    <<jump Naresh_Day1>>
+<<elseif $Naresh_Day==2>>
+    <<jump Naresh_Day2>>
+<<elseif $Naresh_Day==3>>
+    <<jump Naresh_Day3>>
+<<elseif $Naresh_Day==4>>
+    <<jump Naresh_Day4>>
+<<elseif $Naresh_Day==5>>
+    <<jump Naresh_Day5>>
+<<elseif $Naresh_Day==6>>
+    <<jump Naresh_Day6>>
+<<elseif $Naresh_Day==7>>
+    <<jump Naresh_Day7>>
+<<endif>>
+===
+
+title: Naresh_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Sports academy visit
+Drawn by curiosity about professional cricket facilities, Raju chooses to walk past the prestigious sports academy on his way home from school. He knows this place represents the pinnacle of cricket training but despite knowing he doesn't belong, he can't resist getting closer to witness what serious cricket looks like.
+
+The imposing walls of the sports academy loom before Raju as he approaches the facility that represents everything he dreams of achieving in cricket, its professional-grade nets and manicured grounds standing in stark contrast to the makeshift playing areas of his neighborhood. The sound of leather on willow echoes from within the complex, creating an almost magnetic pull that draws him closer despite his awareness that he has no legitimate reason to be here. Naresh, the academy's groundskeeper, watches from his position near the entrance with the wary eye of someone responsible for maintaining security and protecting expensive equipment.
+
+<<SetCharacterExpression "Naresh" "Angry">>
+Naresh: Oi! You there, boy! What are you doing lurking around here? This is not a public playground for slum kids. Go play your street cricket in your own galli where you belong.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I just wanted to watch for a moment, bhaiya. I won't disturb anyone or touch anything. I've never seen proper cricket nets before, and I'm trying to learn how real cricket is played.
+
+<<SetCharacterExpression "Naresh" "Angry">>
+Naresh: Watch? Listen, boy, I have strict rules to follow here. If Coach Sharma or any of the academy officials see me letting unauthorized people onto the grounds, I'll lose this job faster than you can say 'cricket.' This is my livelihood, not a charity for curious children.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: These facilities cost more money than your entire neighborhood sees in a year. The insurance alone would bankrupt me if something gets damaged by someone who shouldn't be here. Now move along before you get both of us in trouble.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand, bhaiya. I don't want to cause you problems. But one day, I'll play here too. Not as someone sneaking around, but as someone who belongs.
+
+<<SetCharacterExpression "Naresh" "Angry">>
+Naresh: Hmph. Big dreams for such a small boy. But dreams don't pay academy fees or buy proper equipment. Reality is harder than fantasy, child.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Maybe. But without dreams, there's no reason to work toward reality.
+
+// Scene Conclusion
+As Raju walks away from the academy grounds with Naresh's dismissive words ringing in his ears, he carries both the disappointment of being turned away and an unexpected determination that stems from glimpsing what professional cricket training actually looks like. The brief encounter has reinforced his understanding of the barriers that separate him from quality cricket education while simultaneously strengthening his resolve to find a way to overcome those obstacles, transforming rejection into motivation for proving that belonging can be earned through dedication rather than inherited through circumstance.
+
+<<set $Naresh_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Day 2
+Despite yesterday's clear dismissal, Raju chooses to return to the academy at the same time, hoping for another chance to observe the professional cricket training. He positions himself at a respectful distance from the grounds, hoping to watch without causing trouble.
+
+The afternoon sun casts long shadows across the academy grounds as Raju returns for his second attempt to observe professional cricket training, his positioning at a careful distance from the entrance demonstrating both respect for yesterday's boundaries and persistence in pursuing his educational goals. Naresh notices the young man's return with a mixture of irritation and grudging recognition that this particular observer shows more restraint and genuine interest than the typical troublemakers who occasionally attempt to access the facilities, though his responsibility for security still requires vigilance against any unauthorized presence.
+
+<<SetCharacterExpression "Naresh" "Angry">>
+Naresh: You again? I thought I made myself clear yesterday. Don't you boys have anything better to do than hang around places where you don't belong?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I can't stop thinking about cricket, bhaiya. Every night I try to practice what I saw yesterday, but I know I'm missing things. I just want to learn, even if I can only watch from out here. I won't cause any trouble or ask for anything.
+
+<<SetCharacterExpression "Naresh" "Quizzical">>
+Naresh: Hmph. I've worked here for ten years, watched hundreds of kids try to sneak in, fool around, and break expensive equipment. But you... you just stand there with those big eyes, staring at every single ball like your life depends on it.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Because I want to remember everything! The way their feet move before each shot, how they hold the bat differently for different deliveries, the way they position their bodies to generate power. I try to copy it all later when I practice at home.
+
+<<SetCharacterExpression "Naresh" "Quizzical">>
+Naresh: You're analyzing technique just by watching? Most of the paying students inside can't remember basic instruction from one session to the next, but you're studying cricket like it's... like it's science.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket is science, isn't it? Every movement has a purpose, every technique solves a problem. The students inside have coaches explaining everything, but I have to figure it out by watching. Maybe that makes me see things differently.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: ...Crazy kid. Standing out here in the heat just to watch cricket practice. But maybe... maybe not completely useless. At least you're not throwing rocks at the equipment or trying to sneak in like the others.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I would never damage anything, bhaiya. This place is too precious. Even watching from outside teaches me more about cricket than I could learn anywhere else.
+
+// Scene Conclusion
+As the second day's interaction concludes with Naresh showing the first signs of softening toward Raju's persistent presence, both groundskeeper and aspiring cricketer begin to recognize that something unusual is developing - a grudging respect based on demonstrated seriousness rather than typical childhood mischief. Raju's analytical approach to observing cricket practice has distinguished him from other unauthorized visitors, while his respectful distance and genuine reverence for the facilities suggest a level of maturity that challenges Naresh's initial assumptions about slum children and their motivations.
+
+<<set $Naresh_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day3
+tags:
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Day 3
+For the third consecutive day, Raju chooses to return to the academy, this time bringing a small notebook where he's been recording observations from his previous visits. He wants to demonstrate that his watching serves a genuine educational purpose.
+
+The familiar routine of returning to the academy takes on new significance as Raju approaches with his notebook tucked carefully under his arm, the written record of his observations representing both evidence of his serious educational approach and a tangible demonstration that his presence here serves genuine learning purposes rather than idle curiosity. Naresh's growing awareness of this particular young observer's unusual dedication has begun to create cracks in his professional skepticism, while the notebook promises to provide concrete evidence of the analytical thinking that has already begun to impress the experienced groundskeeper.
+
+<<SetCharacterExpression "Naresh" "Quizzical">>
+Naresh: Back again, I see. And what's that you're carrying? Don't tell me you're planning to write complaints about being kept out.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: It's my cricket journal, bhaiya. I've been writing down everything I observe here - different techniques, how the students hold their bats, what the coach corrects them for. I study it every night and practice the movements at home.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: You're... taking notes? On cricket technique? By watching from outside the fence?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yesterday I saw a student struggling with his forward defensive shot. The coach showed him three times how to position his front foot, but I could see he wasn't transferring his weight properly. I've been practicing that weight transfer myself to understand why it matters.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: And did you figure it out? Why the weight transfer matters?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes! Without proper weight transfer, you can't adjust quickly if the ball bounces differently than expected. The front foot position creates the foundation, but the weight shift creates the flexibility to respond. It's like... like building a house that can bend without breaking.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: You learned that just from watching? That's more cricket understanding than half my paying students develop after months of direct instruction.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Show me this notebook. I want to see what you've been recording.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: These drawings... these notes... beta, you've created your own cricket textbook. Look at this analysis of different bowling grips and how they affect ball movement. Some of our advanced students couldn't explain this.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket makes sense when you watch it carefully, bhaiya. Every technique solves a specific problem. I may not have access to coaching, but I can still learn if I pay attention.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: You know what, boy? In ten years of maintaining these grounds, I've never seen anyone study cricket with this kind of... scientific approach. Most kids just want to hit big shots and look impressive.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: How do you plan to build on this foundation you've created? What's your next step in this cricket education?
+
+-> Raju: I want to show you more of my cricket analysis, bhaiya. Let me prove my understanding goes deeper. I've been studying ball physics, different pitch conditions, even player psychology from watching their reactions.
+    <<jump Naresh_Day3a>>
+-> Raju: Let me earn your trust by helping you, bhaiya. I could assist with maintenance work to prove my dedication. I want to show respect for this place through actions, not just words.
+    <<jump Naresh_Day3b>>
+-> Raju: I want to share my cricket dreams with you, bhaiya. Help me understand how to make them real. You see cricket at its highest level every day - guide me toward that same excellence.
+    <<jump Naresh_Day3c>>
+
+===
+
+title: Naresh_Day3a
+tags:
+position: -308,129
+---
+<<set $Naresh_Path = "a">>
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: Ball physics? Player psychology? You're approaching cricket like a university course, beta. Most coaches don't teach these advanced concepts until much later.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I've noticed that successful batsmen read the bowler's grip and wrist position before the ball is even released. It's like solving puzzles - every movement gives clues about what's coming next.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: Show me these observations about reading bowlers. If you've truly identified patterns that predict delivery types, that's professional-level cricket intelligence.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Watch how that student's shoulders drop slightly before his slower ball. And see how his grip changes for his googly? These are tells that batsmen can learn to recognize with careful observation.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Your analytical skills are remarkable, beta. You're identifying subtleties that take years of playing experience to recognize. This level of cricket study deserves proper guidance.
+
+<<jump Naresh_Day3_Continue>>
+===
+
+title: Naresh_Day3b
+tags:
+position: -55,122
+---
+<<set $Naresh_Path = "b">>
+<<SetCharacterExpression "Naresh" "Quizzical">>
+Naresh: You want to work? Most kids your age try to avoid responsibility, but you're volunteering for unpaid labor just to be around cricket?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: This academy is sacred to me, bhaiya. If I can help maintain the nets, organize equipment, clean the grounds - anything that keeps this place perfect for cricket - I'd consider it an honor, not work.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: Maintenance is serious responsibility, beta. These nets cost thousands of rupees. The equipment must be handled with perfect care. Are you truly willing to be held accountable for such valuable items?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand the responsibility, bhaiya. I'd treat every piece of equipment like my own dreams depend on it - because they do. You can trust me with anything cricket-related.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Your attitude shows maturity beyond your years, beta. Most paying students treat expensive equipment carelessly, but you speak of it with reverence. That kind of respect is rare and valuable.
+
+<<jump Naresh_Day3_Continue>>
+===
+
+title: Naresh_Day3c
+tags:
+position: 184,122
+---
+<<set $Naresh_Path = "c">>
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: Dreams are fragile things, beta. I've seen many young cricketers with big ambitions but little understanding of what it takes to achieve them. What makes your dreams different?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Because cricket isn't just what I want to do, bhaiya - it's who I am. When I watch the students practice, I don't just see techniques, I see my future self. Every shot they play, every skill they develop, that's where I belong.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: I can hear it in your voice, beta. That hunger for excellence, that need to be part of something greater than yourself. I felt the same way once, before circumstances changed my path.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Then you understand why I can't give up, bhaiya. Help me find the path from watching cricket to playing cricket. Show me how dreams become reality.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Your passion reminds me why I fell in love with cricket in the first place, beta. That kind of dedication deserves guidance, not just encouragement.
+
+<<jump Naresh_Day3_Continue>>
+===
+
+title: Naresh_Day3_Continue
+tags:
+---
+
+// Scene Conclusion
+As Naresh examines Raju's detailed cricket observations and recognizes the sophisticated analytical thinking that has produced this self-made textbook, the relationship between groundskeeper and young observer undergoes a fundamental transformation from suspicious monitoring to genuine mentorship consideration. The notebook has provided concrete evidence that validates Raju's claims about serious cricket study, while Naresh's professional experience allows him to appreciate the quality of analysis that few paying students achieve, creating the foundation for a deeper educational relationship.
+
+<<set $Naresh_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day4
+---
+<<if $Naresh_Path=="a">>
+    <<jump Naresh_Day4a>>
+<<elseif $Naresh_Path=="b">>
+    <<jump Naresh_Day4b>>
+<<elseif $Naresh_Path=="c">>
+    <<jump Naresh_Day4c>>
+<<endif>>
+===
+
+title: Naresh_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Day 4 - Path A: Advanced Cricket Analysis
+Raju demonstrates advanced cricket analysis that rivals professional-level understanding through his systematic observation of bowling tells and batsman responses.
+
+As Raju demonstrates advanced cricket analysis that rivals professional-level understanding through his systematic observation of bowling tells and batsman responses, Naresh recognizes that he is witnessing something extraordinary - a young mind capable of extracting sophisticated insights from limited access to cricket instruction. The depth of analytical thinking displayed transforms their relationship from grudging tolerance to active recognition of exceptional potential that deserves cultivation despite the institutional barriers that separate talent from opportunity.
+
+<<set $Naresh_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Day 4 - Path B: Earning Trust Through Service
+Raju demonstrates his understanding of responsibility and reverence for cricket equipment through offers of volunteer service.
+
+As Raju demonstrates his understanding of responsibility and reverence for cricket equipment through offers of volunteer service, Naresh observes a level of maturity and respect that contrasts sharply with the entitled attitudes of many paying students who take expensive facilities for granted. The young man's willingness to earn trust through humble service rather than demanding recognition reveals character traits that suggest genuine worthiness for the kind of access and guidance that institutional barriers have denied him.
+
+<<set $Naresh_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Day 4 - Path C: Sharing Cricket Dreams
+Raju shares his deep emotional connection to cricket and his vision of belonging in the world of professional training.
+
+As Raju shares his deep emotional connection to cricket and his vision of belonging in the world of professional training that surrounds them, Naresh recognizes the authentic passion that distinguishes genuine calling from casual interest, while simultaneously confronting his own abandoned cricket dreams that find new purpose in potentially guiding someone whose dedication might achieve what circumstances prevented him from accomplishing. The emotional resonance between mentor and student creates the foundation for a relationship that could transform dreams into achievable goals.
+
+<<set $Naresh_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day5
+tags:
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Day 5
+Encouraged by yesterday's positive response, Raju chooses to approach the academy during equipment maintenance time, hoping to engage Naresh in deeper conversation about cricket techniques.
+
+The quiet period of equipment maintenance provides the perfect opportunity for deeper conversation as Raju approaches the academy during the lull between training sessions, when Naresh's responsibilities shift from security monitoring to technical preparation of cricket facilities. The accumulated trust and respect built over four days of demonstrated seriousness has created space for more substantive cricket education, while the practical setting allows for hands-on discussion of techniques and equipment that could advance Raju's understanding beyond pure observation.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Ah, the cricket scholar returns. What observations have you added to that famous notebook of yours today?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I've been thinking about something I observed yesterday, bhaiya. When students practice their drives, they focus on power, but the most successful shots seem to emphasize timing and placement over force. Is that because of the equipment quality, or is it a fundamental technique principle?
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: That's... that's actually a very sophisticated observation, beta. You're identifying the difference between amateur enthusiasm and professional competence. Power without control is just wild hitting.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: See, most people think cricket is about strength, but it's really about understanding physics - angles, timing, momentum transfer. The expensive equipment here allows for precision that rough gear can't match, but the fundamental principle is the same.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So proper technique could work with any equipment, but better equipment makes proper technique more effective?
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Exactly! You understand cricket at a level that would make Coach Sharma proud. Most students here have every advantage but lack your analytical thinking.
+
+<<SetCharacterExpression "Naresh" "Sad">>
+Naresh: You know, boy, your dedication reminds me of why I fell in love with cricket in the first place. Before family responsibilities made professional training impossible, I used to dream of playing at higher levels.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: You played cricket seriously, bhaiya?
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: District level, before life got complicated. I understand exactly what you're feeling - that hunger to improve, to understand every detail of the game. It's rare to find someone who studies cricket the way you do.
+
+// Scene Conclusion
+As Naresh reveals his own cricket background and the circumstances that redirected his athletic ambitions into facility maintenance, both mentor and student discover a profound connection based on shared passion for cricket excellence and similar dreams deferred by economic realities. The revelation transforms their relationship from observer and authority figure into kindred spirits separated by circumstances rather than fundamental differences, while Naresh's experience provides both technical knowledge and emotional understanding of what Raju faces in pursuing cricket from disadvantaged circumstances.
+
+<<set $Naresh_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day6
+tags:
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Day 6
+Building on yesterday's revelation about Naresh's cricket background, Raju chooses to visit during the quiet period between training sessions, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
+
+The academy grounds take on new significance as Raju returns to continue learning from someone who bridges the gap between playing and maintaining cricket at professional levels, Naresh's revelation about his district-level experience having established him as a credible source of both technical knowledge and practical wisdom about pursuing athletic excellence. The quiet period between training sessions provides ideal conditions for more detailed cricket instruction, while their growing mentor-student relationship creates space for sharing insights that could only come from someone who has navigated both playing and supporting roles in organized cricket.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: Back for more cricket analysis, scholar? I've been thinking about our conversation yesterday, about technique versus equipment. Want to see something interesting?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Always, bhaiya! What did you want to show me?
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Watch this. I'm going to demonstrate something about grip and stance that most students here take months to understand.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: See how I'm holding the bat? Not just with my hands, but with my entire body engaged. The grip determines everything else - balance, power transfer, shot selection. Most people focus on the swing, but cricket really starts with the setup.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Your stance looks different from what the students here use. More... compact? Balanced?
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Exactly! These academy boys learn modern techniques, but fundamental principles remain the same. Compact stance gives you more options, better balance against different deliveries.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: This is knowledge that comes from playing, not just coaching. I learned these adjustments through experience - what works under pressure, what fails when the game gets difficult.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Could... could you teach me some of these fundamentals? I know you can't let me use the facilities, but maybe just the knowledge?
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: You know, beta, knowledge wants to be shared. And you appreciate cricket in a way that deserves respect. What if... what if I helped you understand technique through observation and explanation? Not official coaching, just... cricket discussion.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That would be incredible, bhaiya! I'd learn more from your experience than from any expensive coaching.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: Then let's start with the basics. Tomorrow, if you want to continue this cricket education, I'll show you some things that no amount of watching can teach. But remember - this stays between us.
+
+// Scene Conclusion
+As Naresh commits to providing informal cricket instruction that transcends the institutional boundaries that have excluded Raju from formal training, both mentor and student understand that they are embarking on something that could be professionally risky for the groundskeeper while representing unprecedented opportunity for the aspiring cricketer. The promise of hands-on cricket education based on playing experience rather than theoretical knowledge creates anticipation for tomorrow's session while establishing trust that must remain carefully protected from official scrutiny.
+
+<<set $Naresh_Day = 7>>
+<<EndEvent true>>
+===
+
+title: Naresh_Day7
+tags:
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite SportsAcademy>>
+
+// Scene Setup - Day 7 (Final Day)
+With anticipation building from yesterday's promise of deeper cricket education, Raju chooses to arrive at the academy as dusk settles over the grounds, knowing this quiet period might offer the privacy needed for informal mentorship.
+
+The academy grounds take on an almost sacred quality as evening settles and the last traces of official activity fade away, creating the perfect environment for the clandestine cricket instruction that Naresh has promised despite the professional risks involved. The empty facility represents both opportunity and danger - a chance for genuine hands-on learning that could transform Raju's understanding of cricket technique, balanced against the constant threat of discovery that could end Naresh's employment and terminate this unique educational relationship before it fully develops.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Psst! Over here, beta. The paying students are gone, Coach Sharma won't return until morning, and the administrative staff has left for the day.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: What is it, bhaiya? You seem... different today.
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: Five days of watching your dedication, your analytical approach, your genuine love for cricket... I've decided to do something I've never done before. Something that could cost me my job if anyone finds out.
+
+<<SetCharacterExpression "Naresh" "Excited">>
+Naresh: I'm going to let you inside. Just for a short while. You can experience what real cricket equipment feels like, maybe practice a few shots in the nets. But absolutely no one can ever know about this.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Really? You're... you're going to let me practice with professional equipment?
+
+<<SetCharacterExpression "Naresh" "Serious">>
+Naresh: Don't make me regret this decision, boy. You've earned this chance through your dedication and respect. I'm trusting you with access that could destroy everything I've worked for here.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: This ball has seen better days, but it still has lessons to teach. The weight, the feel, the way it moves through the air - these are things you can't learn from watching alone.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, bhaiya. I'll never forget this kindness. And I swear on my cricket dreams - no one will ever know I was here.
+
+<<SetCharacterExpression "Naresh" "Smiling">>
+Naresh: Go on then, scholar. Show me if all that watching and note-taking translated into real cricket understanding. You have thirty minutes to experience what professional cricket feels like.
+
+// Scene Conclusion
+As Raju steps into the professional cricket facility that has been the object of his dreams and observations for seven days, he carries both the weight of extraordinary opportunity and the responsibility of protecting the trust that Naresh has placed in him at great personal risk. The moment represents the culmination of persistence, analytical thinking, and respectful behavior transforming institutional barriers into genuine access, while the limited time available creates pressure to absorb maximum learning from this unprecedented chance to experience cricket at the level he aspires to reach.
+
+<<set $Naresh_Complete = true>>
+<<GiveReward "Courage">>
+<<EndEvent true>>
+===
