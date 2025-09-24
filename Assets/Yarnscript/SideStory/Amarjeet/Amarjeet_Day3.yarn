@@ -1,0 +1,69 @@
+﻿title: Amarjeet_Day3
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple, Day 3
+Encouraged by yesterday's practical guidance and the noticeable improvements in his cricket focus, Raju chooses to continue learning from Amarjeet, hoping to understand how the principles of mental discipline can help him handle not just individual shots but the longer-term challenges of developing his skills and managing setbacks that inevitably occur in serious training.
+
+The temple atmosphere carries its usual sense of peaceful contemplation as Amarjeet completes his evening duties, his actions reflecting the steady rhythm of someone who has found deep satisfaction in consistent spiritual practice. When he sees Raju approaching with what appears to be specific questions rather than general seeking, his expression shows the warm interest of a mentor whose student has been actively applying previous teachings.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: You return faithfully, beta. Today I offer you three paths to deepen your understanding. How do you wish to approach the challenge of mastering your mind?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju feels grateful for the priest's perceptiveness. Indeed, his growing understanding of moment-to-moment focus has raised larger questions about how to maintain discipline over weeks and months of practice, especially when progress feels slow or when setbacks occur.
+Confirm Choice
+-> I want to learn through prayer and spiritual practice, Baba. Teach me the sacred way.//Serious
+    <<jump Amarjeet_Day3a>>
+-> I need practical exercises to strengthen my mind, Baba. Show me how to train like a warrior.//Smiling
+    <<jump Amarjeet_Day3b>>
+-> Help me understand the science behind focus, Baba. I want to know why these techniques work.//Quizzical
+    <<jump Amarjeet_Day3c>>
+    
+
+// <<set $Amarjeet_Day = 4>>
+// <<EndEvent true>>
+===
+title: Amarjeet_Day3a
+tags:
+---
+<<set $Amarjeet_Path = "a">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Ah, you choose the path of devotion. Come, beta. True focus begins with surrendering the ego that creates distraction.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Sit with me in meditation. We will practice focusing on the divine breath. When your mind wanders to cricket or worry, gently return it to the sacred rhythm within.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Baba, during the meditation, I felt... different. Like my thoughts became quiet water instead of rushing river.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: This is the gift of spiritual discipline, child. When we connect to something greater than our small worries, the mind naturally finds steadiness.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tomorrow, we will learn how service to others creates the selflessness needed for perfect focus.
+
+<<PlayBackgroundMusic "Emotional">>
+As Raju leaves the temple after choosing the path of devotion, he carries with him a sense of inner quiet that he has never experienced before. The meditation session has revealed glimpses of a deeper peace that exists beneath the surface turbulence of daily worries and ambitions, opening his heart to the possibility that spiritual practice might be the key to the mental steadiness he seeks.
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day3b
+tags:
+---
+<<set $Amarjeet_Path = "b">>
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day3c
+tags:
+---
+<<set $Amarjeet_Path = "c">>
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
