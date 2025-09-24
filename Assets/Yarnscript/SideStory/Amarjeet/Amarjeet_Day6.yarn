@@ -1,0 +1,33 @@
+﻿title: Amarjeet_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 6 - Final Day - All Paths Converge
+On the final day, Raju arrives to find Amarjeet in deep contemplation, ready to offer his ultimate blessing and wisdom.
+
+The temple radiates an atmosphere of completion and transformation as Amarjeet prepares to offer his final teachings to a student who has demonstrated remarkable dedication and growth. The priest's bearing reflects both the satisfaction of a teacher whose guidance has been successfully received and the gravity of someone preparing to send a young person forth with tools that will shape his entire future.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Beta, through your chosen path, you have discovered what all true seekers find - that discipline creates inner strength that transcends any single goal.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, your teachings have changed something fundamental inside me. I feel steady in a way I never did before.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: The techniques you learned are tools, child. But the real gift is the inner strength that will carry you through any challenge life presents.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Remember - the flame we cultivated together will light your way far beyond these narrow lanes, perhaps even into greatness that inspires others.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, Baba. You've given me something more valuable than cricket skills - you've shown me who I can become.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Use these gifts wisely, beta, and share them generously. The world needs those who carry inner light.
+
+As Raju walks away from the temple for the final time in this series of teachings, he carries within him not just techniques for mental discipline but a transformed understanding of his own potential and purpose. The accumulated wisdom from his chosen path has created an inner foundation of strength and clarity that will serve him in every future challenge, whether on the cricket field or in the larger arena of life itself.
+
+<<set $Amarjeet_Complete = true>>
+<<EndEvent true>>
+===
