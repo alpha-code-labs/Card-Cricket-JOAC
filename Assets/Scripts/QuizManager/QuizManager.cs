@@ -179,13 +179,13 @@ public class QuizManager : MonoBehaviour
         // Update total questions display
         if (totalQuestionsText != null)
         {
-            totalQuestionsText.text = $"Total: {quizData.totalQuestions}";
+            totalQuestionsText.text = $"{quizData.totalQuestions}";
         }
 
         // Update current question attempt display
         if (attemptingText != null)
         {
-            attemptingText.text = $"Question: {currentQuestionIndex + 1}";
+            attemptingText.text = $"{currentQuestionIndex + 1}";
         }
     }
 
