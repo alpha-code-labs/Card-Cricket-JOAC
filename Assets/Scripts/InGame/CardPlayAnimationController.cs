@@ -38,7 +38,7 @@ public class CardPlayAnimationController : MonoBehaviour
         isAnimating = true;
         
         // Phase 1: Card flies to center (0.3s)
-        yield return StartCoroutine(AnimateCardToCenter(cardObject, cardSprite));
+        // yield return StartCoroutine(AnimateCardToCenter(cardObject, cardSprite));
         
         // Phase 2: Shot name appears (0.2s)
         yield return StartCoroutine(ShowShotName(strategy));
@@ -50,7 +50,7 @@ public class CardPlayAnimationController : MonoBehaviour
         yield return StartCoroutine(AnimateStatsUpdate());
         
         // Phase 5: Processing pause
-        yield return new WaitForSeconds(processingPause);
+        // yield return new WaitForSeconds(processingPause);
         
         isAnimating = false;
     }

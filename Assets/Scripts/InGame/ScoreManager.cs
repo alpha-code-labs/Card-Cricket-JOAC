@@ -1,3 +1,5 @@
+// Most the of UI for the game is done via this script
+// Also game sounds
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -23,14 +25,22 @@ public class ScoreManager : MonoBehaviour
     internal int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
     public int wickets = 3; // Wickets before game over
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
-    [SerializeField] TextMeshProUGUI currentRunsText; 
-    [SerializeField] TextMeshProUGUI totalRunsNeededText; 
-    [SerializeField] TextMeshProUGUI remainingBallsText; 
-    [SerializeField] TextMeshProUGUI remainingWicketsText; 
-    [SerializeField] TextMeshProUGUI totalWicketsText; 
+    [SerializeField] TextMeshProUGUI currentRunsText;
+    [SerializeField] TextMeshProUGUI totalRunsNeededText;
+    [SerializeField] TextMeshProUGUI remainingBallsText;
+    [SerializeField] TextMeshProUGUI remainingWicketsText;
+    [SerializeField] TextMeshProUGUI totalWicketsText;
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     [SerializeField] Button redrawButton; // Assign in Inspector
     [SerializeField] TextMeshProUGUI redrawButtonText;
+
+    [Header("Batter Animation")]
+    [SerializeField] Image BatterImage;
+    [SerializeField] float swingDistance = 100f; // How far to move right
+    [SerializeField] float swingDuration = 0.15f; // Fast swing duration
+    [SerializeField] float returnDuration = 0.3f; // Slower return duration
+    [SerializeField] AnimationCurve swingEase = AnimationCurve.EaseInOut(0, 0, 1, 1); // Custom curve if needed
+    [SerializeField] AudioSource gameAudioSource;
     public void UpdateBallsAndOvers(int ballsBowled)
     {
         int overs = ballsBowled / 6;
@@ -52,12 +62,14 @@ public class ScoreManager : MonoBehaviour
         }
     }
     bool targetReached = false;
+    private Vector3 batterOriginalPosition;
+    private Tween currentBatterTween;
     public void UpdateScore(int runs)
     {
-        if(runs > 0)
+        if (runs > 0)
             currentRuns += runs;
         currentRunsText.text = currentRuns.ToString();
-        totalRunsNeededText.text = "/ "+TargetScore.ToString();
+        totalRunsNeededText.text = "/ " + TargetScore.ToString();
         remainingWicketsText.text = wickets.ToString();
         scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
         if (currentRuns >= TargetScore && !targetReached)
@@ -106,6 +118,7 @@ public class ScoreManager : MonoBehaviour
 
     public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
+        // Animate the batter image
         StartCoroutine(PlayCardSequence(battingStrategy, cardObject, cardSprite));
     }
 
@@ -113,39 +126,46 @@ public class ScoreManager : MonoBehaviour
     {
         // Pause timer during animation
         Timer.Instance.PauseTimer();
-        
+        AnimateBatterSwing();
+        gameAudioSource.Play();
         // Calculate outcome
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
-        
-        
-        
+
+
+
         // Play animation sequence
         if (CardPlayAnimationController.Instance != null)
         {
             yield return CardPlayAnimationController.Instance.PlayCardSequence(
                 cardObject, cardSprite, battingStrategy, outcome);
+            // Update score immediately (but don't show yet)
+            UpdateScore((int)outcome);
+            CardsPoolManager.Instance.DestroyCurrentBallCard();
+            //Processing pause
+            yield return new WaitForSeconds(.5f);
         }
         else
         {
+            UpdateScore((int)outcome);
+            CardsPoolManager.Instance.DestroyCurrentBallCard();
             // Fallback if no animation controller
             yield return new WaitForSeconds(1f);
         }
 
-        // Update score immediately (but don't show yet)
-        UpdateScore((int)outcome);
 
-        CardsPoolManager.Instance.DestroyCurrentBallCard();
+
+        //End current turn
+        CardsPoolManager.Instance.EndTurn((int)outcome != -3);
 
         yield return new WaitForSeconds(3f);
-        // Resume timer
-        Timer.Instance.ResumeTimer();
-        
-        // End turn
-        CardsPoolManager.Instance.EndTurn((int)outcome != -3);
+        // End turn timer
+        Timer.Instance.EndTurnTimer();
+        // We will start new turn here
+        CardsPoolManager.Instance.StartTurn((int)outcome != -3);
     }
 
     [SerializeField] TextMeshProUGUI outcomeText;
@@ -168,6 +188,37 @@ public class ScoreManager : MonoBehaviour
         seq.AppendInterval(0.5f);
         seq.Append(outcomeText.DOFade(0f, 0.4f));
     }
+
+    void AnimateBatterSwing()
+    {
+        if (BatterImage == null) return;
+
+        // Kill any existing animation on the batter
+        if (currentBatterTween != null && currentBatterTween.IsActive())
+        {
+            currentBatterTween.Kill();
+            BatterImage.rectTransform.anchoredPosition = batterOriginalPosition;
+        }
+
+        // Create a sequence for the swing animation
+        Sequence swingSequence = DOTween.Sequence();
+
+        // Option 1: Simple horizontal movement
+        swingSequence.Append(BatterImage.rectTransform.DOAnchorPosX(batterOriginalPosition.x + swingDistance, swingDuration)
+            .SetEase(Ease.OutQuad)); // Fast swing out
+
+        swingSequence.Append(BatterImage.rectTransform.DOAnchorPosX(batterOriginalPosition.x, returnDuration)
+            .SetEase(Ease.InOutSine)); // Slower return
+
+        currentBatterTween = swingSequence;
+
+        // Optional: Add callback when animation completes
+        swingSequence.OnComplete(() =>
+        {
+            Debug.Log("Batter swing animation completed");
+        });
+    }
+
     void OnRedrawButtonClicked()
     {
         CardsPoolManager.Instance.RedrawHand();
@@ -177,21 +228,21 @@ public class ScoreManager : MonoBehaviour
     void UpdateRedrawButton()
     {
         if (redrawButton == null) return;
-        
+
         bool canRedraw = CardsPoolManager.Instance.CanRedraw();
         redrawButton.interactable = canRedraw;
-        
+
         // Update button text if available
         if (redrawButtonText != null)
         {
             int remaining = CardsPoolManager.Instance.GetRedrawsRemaining();
             redrawButtonText.text = $"Redraw ({remaining})";
-            
+
             // Optional: Change color based on availability
             redrawButtonText.color = canRedraw ? Color.white : Color.gray;
         }
     }
-    
+
     void Start()
     {
         totalWicketsText.text = "/ " + wickets.ToString();
@@ -201,6 +252,10 @@ public class ScoreManager : MonoBehaviour
         {
             redrawButton.onClick.AddListener(OnRedrawButtonClicked);
             UpdateRedrawButton();
+        }
+        if (BatterImage != null)
+        {
+            batterOriginalPosition = BatterImage.rectTransform.anchoredPosition;
         }
     }
 }

@@ -16,22 +16,6 @@ public class AttackCardData
         EnergyCost = (int)GetBattingIntensityFromExcelName(battingStrategy);
         cardSprite = TryGetSprite(battingStrategy.ToString().ToLower());
     }
-    TrueBattingStrategy11 GetTrueBattingStrategyFromExcelName(BattingStrategy battingStrategy)
-    {
-        string result = battingStrategy.ToString().ToLower();
-
-        // Remove intensity suffixes first
-        result = result
-            .Replace("push", "")
-            .Replace("normal", "")
-            .Replace("aggressive", "")
-            .Replace("lofted", "");
-        if (Enum.TryParse(result, out TrueBattingStrategy11 trueBattingStrategy))
-            return trueBattingStrategy;
-
-        Debug.LogWarning($"Could not parse '{result}' to TrueBattingStrategy11");
-        return TrueBattingStrategy11.Leave; // Default value
-    }
     BattingIntensity GetBattingIntensityFromExcelName(BattingStrategy battingStrategy)
     {
         string result = battingStrategy.ToString().ToLower();

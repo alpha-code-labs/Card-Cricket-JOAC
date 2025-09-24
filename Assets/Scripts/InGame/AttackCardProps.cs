@@ -22,6 +22,9 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
     // Reference to the arc manager
     private SimpleHandArcManager arcManager;
 
+    [SerializeField] Image BatterImage;
+
+
     void Start()
     {
         string title = GetTitle();

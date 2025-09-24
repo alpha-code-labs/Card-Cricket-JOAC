@@ -45,32 +45,33 @@ public class CardsPoolManager : MonoBehaviour
         // EnergyManager.Instance.RefreshEnergyText();
     }
     [ContextMenu("Start Turn")]
-    void StartTurn(bool incrementBalls = true)
+    public void StartTurn(bool incrementBalls = true)
     {
         if (CurrntTurn >= ScoreManager.Instance.MaxBalls || ScoreManager.Instance.wickets < 1)
         {
             //Game ended 
-            
             return;    
         }
-
-        Timer.Instance.StartTurnTimer();
         if (incrementBalls)
             ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
         if (ballerCard != null)
             Destroy(ballerCard);
         ballerCard = InstantiateBallerCard(CurrentBallThrow);
         BallThrowText.text = CurrentBallThrow.ToString();
+
+        // This is where we should start animating in the cards
         for (int i = 0; i < maxHandSize; i++)
         {
             DrawCard();
         }
+
+        Timer.Instance.StartTurnTimer();
         OnTurnStarted?.Invoke();
     }
     [ContextMenu("End Turn")]
     public void EndTurn(bool incrementBalls = true)
     {
-        Timer.Instance.EndTurnTimer();
+        // Timer.Instance.EndTurnTimer();
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
         foreach (var card in HandCards)
         {
@@ -82,7 +83,7 @@ public class CardsPoolManager : MonoBehaviour
         HandCards.Clear();
         // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
-        StartTurn(incrementBalls); // Start the next turn
+        //StartTurn(incrementBalls); // Start the next turn
     }
     [ContextMenu("Draw Card")]
     void DrawCard()

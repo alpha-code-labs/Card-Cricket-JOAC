@@ -51,15 +51,19 @@ public class Timer : MonoBehaviour
 
     public void EndTurnTimer()
     {
-        StopAllCoroutines();
+        isPaused = false;
+        if (currentTimerCoroutine != null)
+        {
+            StopCoroutine(currentTimerCoroutine);
+            currentTimerCoroutine = null;
+        }
         timerText.text = "" + maxTimeToChooseStrategy.ToString() + "s";
     }
 
     IEnumerator TimerCoroutine(int duration)
     {
         float timeLeft = duration;
-        pausedTimeRemaining = timeLeft;
-        
+
         while (timeLeft > 0)
         {
             pausedTimeRemaining = timeLeft;
@@ -67,8 +71,12 @@ public class Timer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timeLeft -= 1f;
         }
-        
+
+        currentTimerCoroutine = null;
+
         timerText.text = "Time's Up!";
         CardsPoolManager.Instance.EndTurn(true);
+        yield return new WaitForSeconds(3f);
+        CardsPoolManager.Instance.StartTurn(true);
     }
 }
