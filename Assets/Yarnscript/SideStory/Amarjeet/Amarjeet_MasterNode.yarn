@@ -1,10 +1,18 @@
 ﻿title: Amarjeet
 ---
 <<if $Amarjeet_Day==0>>//This is for testing purpose only, remove later
-    <<jump Amarjeet_Day1>>  
+    <<jump Amarjeet_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Amarjeet_Day==1>>
     <<jump Amarjeet_Day1>>
-    <<elseif $Amarjeet_Day==2>>
+<<elseif $Amarjeet_Day==2>>
     <<jump Amarjeet_Day2>>
+<<elseif $Amarjeet_Day==3>>
+    <<jump Amarjeet_Day3>>
+<<elseif $Amarjeet_Day==4>>
+    <<jump Amarjeet_Day4>>
+<<elseif $Amarjeet_Day==5>>
+    <<jump Amarjeet_Day5>>
+<<elseif $Amarjeet_Day==6>>
+    <<jump Amarjeet_Day6>>
 <<endif>>
 ===
