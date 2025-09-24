@@ -16,3 +16,428 @@
     <<jump Amarjeet_Day6>>
 <<endif>>
 ===
+title: Amarjeet_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple
+After a particularly frustrating cricket practice where his shots lacked consistency and his focus kept wandering, Raju chooses to visit the small neighborhood temple where Amarjeet, the elderly priest, has always offered quiet wisdom.
+
+The evening shadows lengthen across the temple courtyard as the familiar scent of incense mingles with the distant sounds of the neighborhood settling into dusk. Raju's footsteps slow as he approaches the sacred space, his cricket bat feeling heavy in his hand, weighed down not by its physical presence but by the day's accumulated frustrations and questions that seem to have no clear answers.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Ah, young one. You come running with dust on your face and a bat in your hand, but I can see something troubling you. Your cricket practice didn't go as planned today, did it?
+
+<<SetCharacterExpression "Raju" "Surprised">>
+// Raju feels surprised by the priest's perceptiveness. He had hoped his frustration wasn't so obvious, but Amarjeet's years of observing people seem to make him particularly skilled at reading the emotions of young visitors to his temple.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Baba, I don't understand why some days I can hit every ball perfectly, and other days I can't connect with anything. I practice the same way, but the results keep changing. Am I doing something wrong?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tell me, beta, what do you think discipline means? Most young people think they understand this word, but few grasp its deeper significance.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: To... follow rules? To practice regularly? I try to do both of those things with my cricket.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Rules and practice, yes - those are the surface of discipline. But deeper than that, true discipline is focus. It is the ability to keep your mind steady regardless of external circumstances.
+
+Amarjeet: See this diya, child? The wind pushes against it, trying to extinguish the flame, yet the light survives because it has found steadiness. So too must your mind be if you want your cricket skills to rise above inconsistency.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So when my shots are inconsistent, it's not because I'm practicing wrong - it's because my mind isn't steady like the flame?
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Exactly, beta. Your hands know the technique, your body understands the movements, but your mind wanders. True discipline means keeping your attention only on this moment, this shot, this breath.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: I think I understand what you mean, Baba. But achieving that kind of focus... it's not easy, is it?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Nothing worth achieving is easy, child. If you truly wish to learn this deeper discipline, return tomorrow evening. We will continue this conversation.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Thank you, Baba. I will come back. I want to learn this kind of focus.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju walks home from the temple carrying both his cricket bat and new perspective on the relationship between mental discipline and physical performance, he understands that Amarjeet has offered him something more valuable than cricket technique - insight into the mental foundations that support all achievement. His voluntary visit has introduced him to concepts of focus and steadiness that could transform not just his game but his entire approach to pursuing goals.
+
+<<set $Amarjeet_Day = 2>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple, Day 2
+True to his promise, Raju returns to the temple the following evening, determined to learn more about the mental discipline that Amarjeet described.
+
+The temple courtyard glows softly in the evening light as Amarjeet tends to the oil lamps with the same steady devotion that characterizes all his actions. His movements reflect decades of disciplined practice, each gesture purposeful and unhurried. When he sees Raju approaching with obvious eagerness to continue their previous conversation, his expression shows the pleased surprise of a teacher whose student has demonstrated genuine commitment to learning.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: So, you came back, beta. Few boys your age keep promises, especially when the teaching involves hard work rather than easy answers.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+// Raju feels both pride in having kept his commitment and nervous anticipation about whether he has understood and applied yesterday's lessons correctly. The priest's acknowledgment of his return gives him confidence to share his experiences and ask the questions that have been building throughout the day.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, I've been thinking about what you said about mental steadiness. I tried to focus only on each individual ball during today's practice. It felt... different. Better, but also more difficult than I expected.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: You've discovered something important - that discipline transforms the quality of both success and failure. When your mind is steady, even errors become teachers rather than sources of discouragement.
+
+Amarjeet: But tell me this - was it easy to maintain that focus throughout your entire practice session? Did your mind want to wander to other thoughts?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: No, Baba, it wasn't easy at all. My mind kept wanting to think about other things. Keeping attention on just the current moment felt like... like holding water in cupped hands.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: A perfect analogy, beta. Mental discipline is indeed like holding water - it requires constant, gentle attention. The skill is in finding the right amount of focused care.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So how do I get better at this holding, Baba? How do I make my focus stronger and more consistent?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Come back tomorrow if you wish to learn more about applying this discipline in different areas of your life.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju walks home from the temple carrying both practical techniques for developing focus and growing recognition that Amarjeet's teachings extend far beyond cricket, he feels the satisfaction of a student who has engaged seriously with challenging material. His voluntary return has deepened the priest's investment in his education and opened the door to more advanced teachings about mental discipline and its applications.
+
+<<set $Amarjeet_Day = 3>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Scene Setup - Evening at the temple, Day 3
+Encouraged by yesterday's practical guidance and the noticeable improvements in his cricket focus, Raju chooses to continue learning from Amarjeet, hoping to understand how the principles of mental discipline can help him handle not just individual shots but the longer-term challenges of developing his skills and managing setbacks that inevitably occur in serious training.
+
+The temple atmosphere carries its usual sense of peaceful contemplation as Amarjeet completes his evening duties, his actions reflecting the steady rhythm of someone who has found deep satisfaction in consistent spiritual practice. When he sees Raju approaching with what appears to be specific questions rather than general seeking, his expression shows the warm interest of a mentor whose student has been actively applying previous teachings.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: You return faithfully, beta. Today I offer you three paths to deepen your understanding. How do you wish to approach the challenge of mastering your mind?
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju feels grateful for the priest's perceptiveness. Indeed, his growing understanding of moment-to-moment focus has raised larger questions about how to maintain discipline over weeks and months of practice, especially when progress feels slow or when setbacks occur.
+
+-> Raju: I want to learn through prayer and spiritual practice, Baba. Teach me the sacred way.
+    <<jump Amarjeet_Day3a>>
+-> Raju: I need practical exercises to strengthen my mind, Baba. Show me how to train like a warrior.
+    <<jump Amarjeet_Day3b>>
+-> Raju: Help me understand the science behind focus, Baba. I want to know why these techniques work.
+    <<jump Amarjeet_Day3c>>
+
+
+===
+title: Amarjeet_Day3a
+tags:
+position: -308,129
+---
+<<set $Amarjeet_Path = "a">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Ah, you choose the path of devotion. Come, beta. True focus begins with surrendering the ego that creates distraction.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Sit with me in meditation. We will practice focusing on the divine breath. When your mind wanders to cricket or worry, gently return it to the sacred rhythm within.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Baba, during the meditation, I felt... different. Like my thoughts became quiet water instead of rushing river.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: This is the gift of spiritual discipline, child. When we connect to something greater than our small worries, the mind naturally finds steadiness.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tomorrow, we will learn how service to others creates the selflessness needed for perfect focus.
+
+As Raju leaves the temple after choosing the path of devotion, he carries with him a sense of inner quiet that he has never experienced before. The meditation session has revealed glimpses of a deeper peace that exists beneath the surface turbulence of daily worries and ambitions, opening his heart to the possibility that spiritual practice might be the key to the mental steadiness he seeks.
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day3b
+tags:
+position: -55,122
+---
+<<set $Amarjeet_Path = "b">>
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Good, beta. You choose the path of strength. Mental discipline requires the same rigor as physical training.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Hold this position - arms extended, eyes focused on the flame - for five minutes without moving. When your mind screams to quit, that is when real training begins.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, my arms are burning, but I can feel my concentration getting sharper. The discomfort is teaching me something.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Exactly! Comfort breeds weakness. Only by pushing through mental resistance do we build unshakeable focus.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tomorrow, we train your mind to handle pressure. Real warriors perform best when stakes are highest.
+
+As Raju leaves the temple after choosing the warrior's path, his arms still trembling slightly from the sustained effort, he feels a fierce pride in having pushed through the mental barriers that normally cause him to quit when training becomes uncomfortable. The physical challenge has awakened something primal and determined within him, revealing that mental toughness can be forged through deliberate confrontation with discomfort.
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day3c
+tags:
+position: 184,122
+---
+<<set $Amarjeet_Path = "c">>
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Excellent question, beta. You choose the path of understanding. Let me explain how the mind creates both focus and distraction.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: The mind has two modes - focused attention and scattered thinking. Like a muscle, whichever mode you exercise more becomes stronger.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So when I practice focusing on one thing, I'm literally strengthening that mental ability? Like physical training but for the brain?
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Precisely! And when you understand the mechanism, you can design better training methods for your specific needs.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Tomorrow, we will study how emotions affect concentration, and learn to work with your mind's natural patterns.
+
+As Raju leaves the temple after choosing the path of understanding, his mind buzzes with the satisfaction of someone who has gained intellectual clarity about processes he previously experienced only intuitively. The scientific approach has awakened his natural curiosity and analytical thinking, revealing that knowledge of mental mechanisms can transform mindfulness practice from mysterious ritual into precise psychological engineering.
+<<set $Amarjeet_Day = 4>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day4
+---
+<<if $Amarjeet_Path=="a">>
+    <<jump Amarjeet_Day4a>>
+<<elseif $Amarjeet_Path=="b">>
+    <<jump Amarjeet_Day4b>>
+<<elseif $Amarjeet_Path=="c">>
+    <<jump Amarjeet_Day4c>>
+<<endif>>
+===
+
+title: Amarjeet_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 4 - Path A: Service to Others
+On the fourth day, Raju arrives to find Amarjeet preparing food for the poor.
+
+The temple courtyard buzzes with quiet activity as several volunteers help Amarjeet organize simple meals for the neighborhood's most needy residents. The priest's movements demonstrate the same focused attention he brings to prayer, but now directed toward acts of compassionate service. When he sees Raju arriving, his smile suggests this practical application of spiritual principles has been carefully planned as the next step in the young man's education.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Today you will serve others, beta. When the mind focuses on giving rather than getting, it naturally becomes still.
+
+// Service activity takes place here
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Baba, while serving food, I noticed my mind wasn't thinking about my cricket problems at all. I felt... peaceful.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Service teaches the ego to step aside. When 'I want' becomes 'How can I help?', focus appears naturally.
+
+As Raju walks home after a day spent in service to others, he marvels at how completely his usual self-centered concerns had disappeared while he was focused on meeting the needs of hungry neighbors. The experience has revealed a different dimension of mental discipline - one that arises not from forcing the mind to concentrate, but from allowing the heart to expand beyond the boundaries of personal desire.
+
+<<set $Amarjeet_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Amarjeet_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 4 - Path B: Training Under Distractions
+On the fourth day, Amarjeet has set up various distractions - loud sounds, people walking by, bright lights.
+
+The temple courtyard has been transformed into a controlled chaos of sensory challenges as Amarjeet orchestrates a deliberate assault on Raju's concentration. The priest moves with military precision, creating exactly the kinds of disruptions that would normally scatter a young person's attention, while his eyes carefully monitor Raju's responses to gauge the effectiveness of each distraction technique.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Practice your focus exercises while I create chaos around you. Champions must perform under any conditions.
+
+// Distraction training takes place here
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, the distractions actually helped! Fighting against them made my concentration feel like steel.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: A warrior's mind becomes stronger through battle, not rest. You are learning to make adversity your ally.
+
+As Raju walks home after surviving the gauntlet of intentional distractions, he carries himself with the confident bearing of someone who has discovered an inner fortress that external chaos cannot breach. The warrior training has revealed that mental strength grows not by avoiding challenges but by meeting them head-on with disciplined determination, transforming every obstacle into an opportunity for greater resilience.
+
+<<set $Amarjeet_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Amarjeet_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 4 - Path C: Understanding Mind-Body Connection
+On the fourth day, Amarjeet explains the relationship between breathing, heart rate, and mental clarity.
+
+The temple becomes a laboratory of self-observation as Amarjeet guides Raju through experiments in physiological awareness, teaching him to notice the precise connections between breath patterns, emotional states, and cognitive performance. The priest's approach combines ancient wisdom with methodical observation, demonstrating that spiritual practices become more powerful when practitioners understand exactly how and why they produce their beneficial effects.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Notice how shallow breathing creates anxiety and scattered thoughts, while deep breathing naturally calms and focuses the mind.
+
+// Breathing exercises and observation take place here
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, understanding the connection between body and mind makes the techniques feel more powerful. I know exactly what I'm doing and why.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Knowledge transforms practice from blind following into intelligent cultivation. You become your own teacher.
+
+As Raju walks home after understanding the scientific foundations of mind-body integration, he feels the empowerment that comes from replacing superstition with genuine comprehension. His analytical approach has revealed that mental training follows natural laws that can be studied, predicted, and optimized, transforming him from a passive recipient of teachings into an active investigator of his own psychological development.
+
+<<set $Amarjeet_Day = 5>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day5
+---
+<<if $Amarjeet_Path=="a">>
+    <<jump Amarjeet_Day5a>>
+<<elseif $Amarjeet_Path=="b">>
+    <<jump Amarjeet_Day5b>>
+<<elseif $Amarjeet_Path=="c">>
+    <<jump Amarjeet_Day5c>>
+<<endif>>
+===
+
+title: Amarjeet_Day5a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 5 - Path A: Advanced Breathing and Sacred Chants
+On the fifth day, Amarjeet teaches Raju advanced breathing techniques combined with sacred chants.
+
+The temple fills with the rhythmic sound of ancient chants as Amarjeet guides Raju through breathing practices that have been refined over centuries of spiritual tradition. The priest's voice carries the authority of someone who has personally verified the power of these techniques, while his patient instruction reveals his understanding that true mastery requires gradual cultivation rather than forced achievement.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Breath is the bridge between body and soul, beta. Master the breath, and you master the wandering mind.
+
+// Advanced breathing and chanting practice takes place here
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, after the breathing practice, when I picked up my cricket bat, it felt like an extension of my body. Every shot was effortless.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: This is what happens when the spiritual and physical unite through disciplined practice.
+
+As Raju departs the temple after experiencing the profound integration of breath, spirit, and physical skill, he understands that the path of devotion has led him to a place where cricket becomes not just a game but a form of moving meditation. His chosen spiritual approach has revealed that the highest levels of athletic performance emerge naturally when the practitioner aligns with deeper sources of power and peace.
+
+<<set $Amarjeet_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Amarjeet_Day5b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 5 - Path B: Visualization and Mental Rehearsal Under Pressure
+On the fifth day, Amarjeet teaches Raju visualization techniques for mental rehearsal under pressure.
+
+The temple atmosphere crackles with focused intensity as Amarjeet guides Raju through mental exercises designed to simulate the highest-pressure situations he might ever face. The priest's voice carries the authority of someone who understands that true warriors win battles in their minds before they ever step onto the field, while his careful attention to detail reveals the precision required for effective visualization training.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: See yourself succeeding under maximum pressure. Mental rehearsal creates warrior's confidence that no situation can shake.
+
+// Visualization and pressure training takes place here
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, I practiced imagining the biggest match of my life, and now regular practice feels easy. My mind feels unbreakable.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: This is the warrior's gift - turning every challenge into strength, every pressure into opportunity.
+
+As Raju departs the temple after mastering the warrior's path to mental discipline, he moves with the quiet confidence of someone who has forged an unshakeable inner core through deliberate confrontation with difficulty. His chosen approach has revealed that mental toughness is not a natural gift but a skill that can be systematically developed through progressive challenges that stretch the mind's capacity to maintain focus under pressure.
+
+<<set $Amarjeet_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Amarjeet_Day5c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 5 - Path C: Scientific Self-Observation and Mental Pattern Analysis
+On the fifth day, Amarjeet teaches Raju to observe his own thought patterns and mental habits with scientific precision.
+
+The temple atmosphere takes on the quality of a research environment as Amarjeet introduces Raju to techniques for systematic self-observation, teaching him to study his own mental processes with the same objectivity a scientist might bring to examining natural phenomena. The priest's guidance reveals that self-knowledge can be developed through careful methodology rather than vague introspection.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Study your mind like a scientist, beta. Notice what triggers distraction, what creates focus, what patterns repeat.
+
+// Scientific self-observation and pattern analysis takes place here
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, once I understood my mental patterns, I could predict and prevent my concentration from breaking. It's like having a map of my own mind.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: This is wisdom - not just knowing what to do, but understanding deeply why it works and how to adapt it.
+
+As Raju departs the temple after mastering the scientific approach to mental discipline, he carries himself with the confidence of someone who has developed genuine expertise in the workings of his own mind. His chosen path of understanding has transformed him from a confused student into a knowledgeable practitioner capable of diagnosing his own mental challenges and designing specific solutions based on proven principles.
+
+<<set $Amarjeet_Day = 6>>
+<<EndEvent true>>
+===
+title: Amarjeet_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite ShivTemple>>
+
+// Day 6 - Final Day - All Paths Converge
+On the final day, Raju arrives to find Amarjeet in deep contemplation, ready to offer his ultimate blessing and wisdom.
+
+The temple radiates an atmosphere of completion and transformation as Amarjeet prepares to offer his final teachings to a student who has demonstrated remarkable dedication and growth. The priest's bearing reflects both the satisfaction of a teacher whose guidance has been successfully received and the gravity of someone preparing to send a young person forth with tools that will shape his entire future.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: Beta, through your chosen path, you have discovered what all true seekers find - that discipline creates inner strength that transcends any single goal.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Baba, your teachings have changed something fundamental inside me. I feel steady in a way I never did before.
+
+<<SetCharacterExpression "Amarjeet" "Serious">>
+Amarjeet: The techniques you learned are tools, child. But the real gift is the inner strength that will carry you through any challenge life presents.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Remember - the flame we cultivated together will light your way far beyond these narrow lanes, perhaps even into greatness that inspires others.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, Baba. You've given me something more valuable than cricket skills - you've shown me who I can become.
+
+<<SetCharacterExpression "Amarjeet" "Smiling">>
+Amarjeet: Use these gifts wisely, beta, and share them generously. The world needs those who carry inner light.
+
+As Raju walks away from the temple for the final time in this series of teachings, he carries within him not just techniques for mental discipline but a transformed understanding of his own potential and purpose. The accumulated wisdom from his chosen path has created an inner foundation of strength and clarity that will serve him in every future challenge, whether on the cricket field or in the larger arena of life itself.
+
+<<set $Amarjeet_Complete = true>>
+<<EndEvent true>>
+===
