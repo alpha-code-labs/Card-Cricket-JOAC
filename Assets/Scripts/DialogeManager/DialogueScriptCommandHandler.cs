@@ -317,7 +317,23 @@ public enum CharacterType
     Aryan,
     Imtiaz,
     Vivek,
-    Amarjeet
+    Amarjeet,
+    Bed,
+    Amit,
+    Sumit,
+    Pinky,
+    RamCharan,
+    Priya,
+    Naresh,
+    CoachSharma,
+    SunitaMam,
+    CricketDada,
+    Suresh,
+    AgarwalUncle,
+    Fatima,
+    MochiUncle,
+    MunnaBhai,
+    Vikram
 }
 
 public enum EmotionType
