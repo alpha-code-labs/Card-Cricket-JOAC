@@ -27,16 +27,19 @@ public class NewDayManager : MonoBehaviour
     public void BeginNewDaySequence()
     {
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
-        if (currentEventIndex >= currentDateRecord.events.Count)
-        {
-            EndDay();
-        }
-        StartCoroutine(StartEventWithTransition(currentDateRecord.events[currentEventIndex]));
+        StartCoroutine(StartEventWithTransition());
     }
 
-    IEnumerator StartEventWithTransition(EventRecord events)
+    IEnumerator StartEventWithTransition()
     {
         string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
+        if (currentEventIndex >= currentDateRecord.events.Count)
+        {
+            yield return DisplayTextThenFade(prettyDate + "\n Day End");
+            EndDay();
+            yield break;
+        }
+        EventRecord events = currentDateRecord.events[currentEventIndex];
         if (currentEventIndex == 0)
         {
             SetFilmGrain(true);
@@ -59,7 +62,8 @@ public class NewDayManager : MonoBehaviour
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
-                yield return DisplayTextThenFade("Free Time");
+                string timeOfDay = isEvening ? "Evening" : "Day";
+                yield return DisplayTextThenFade($"Free Time\n{timeOfDay}");
                 TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
             case TypeOfEvent.Speical:
@@ -67,7 +71,7 @@ public class NewDayManager : MonoBehaviour
                 //Load Special Event
                 break;
             case TypeOfEvent.SkipDayOrEvening:
-                yield return DisplayTextThenFade("Evening");
+                yield return DisplayTextThenFade("");
                 if (isEvening)
                     EndDay();
                 isEvening = true;
