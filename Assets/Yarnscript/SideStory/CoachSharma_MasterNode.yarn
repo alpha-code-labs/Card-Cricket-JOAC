@@ -1,0 +1,436 @@
+title: Start
+---
+<<if $CoachSharma_Day == 1>>
+    <<jump CoachSharmaDay1>>
+<<elseif $CoachSharma_Day == 2>>
+    <<jump CoachSharmaDay2>>
+<<elseif $CoachSharma_Day == 3>>
+    <<jump CoachSharmaDay3>>
+<<elseif $CoachSharma_Day == 4>>
+    <<jump CoachSharmaDay4>>
+<<elseif $CoachSharma_Day == 5>>
+    <<jump CoachSharmaDay5>>
+<<elseif $CoachSharma_Day == 6>>
+    <<jump CoachSharmaDay6>>
+<<else>>
+    <<jump CoachSharmaDay1>>
+<<endif>>
+===
+
+title: CoachSharmaDay1
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+After hearing about the prestigious sports academy from neighborhood boys, Raju chooses to walk the long distance to the facility, hoping to catch a glimpse of professional cricket training. He knows he doesn't belong there and can't afford the fees, but his hunger to learn proper techniques drives him to seek out the best coaching available.
+
+<<wait 2>>
+
+The imposing gates of the sports academy loom before Raju as he approaches the pristine facility, its manicured grounds and professional equipment representing everything he aspires to but cannot access. The contrast between this world of privilege and his own humble circumstances weighs heavily on his shoulders, yet his determination to witness real cricket training propels him forward despite knowing he risks rejection and humiliation for simply being present in a space not meant for someone of his background.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaAngry">>
+Coach Sharma: Hey! You there, boy! Who let you into this academy? These grounds are private property, not a playground for stray kids from the slums!
+
+<<character "Raju" with "RajuSad">>
+Raju: Sir, I'm sorry for disturbing practice. I only wanted to watch and maybe learn something. I've been practicing cricket with my brother, but I know I need proper coaching to really improve.
+
+<<character "Coach Sharma" with "CoachSharmaAngry">>
+Coach Sharma: Learn? Ha! You think watching from the sidelines will magically make you a cricketer? Boy, cricket isn't a game you learn by osmosis. You need fees - substantial fees. You need proper equipment. You need years of disciplined training under professional guidance.
+
+<<character "Coach Sharma" with "CoachSharmaAngry">>
+Coach Sharma: These boys pay fifteen thousand rupees per month for coaching. They've been training for years. They have everything cricket requires - resources, commitment, family support. You have none of that. Go back to your galli cricket with tennis balls and wooden sticks. That's your level.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Maybe I don't have money or fancy equipment now, sir. But one day I'll prove to you that I can play cricket properly. One day you'll see that talent and determination matter more than fees and family wealth.
+
+<<character "Coach Sharma" with "CoachSharmaAngry">>
+Coach Sharma: Dreams are cheap, boy. Anyone can dream of playing cricket. But discipline is costly - in time, money, sacrifice, and commitment. Until you understand that difference, you're wasting both my time and yours.
+
+<<wait 2>>
+
+As Raju walks away from the academy with Coach Sharma's harsh words echoing in his mind, he feels the familiar sting of rejection based on economic circumstances rather than ability or potential. Yet beneath the hurt lies a burning determination to prove that true commitment cannot be measured in rupees, and that someday he will return to demonstrate that passion and persistence can overcome the barriers that wealth erects around opportunity.
+
+<<set $CoachSharma_Day = 2>>
+===
+
+title: CoachSharmaDay2
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+Despite yesterday's harsh dismissal and public humiliation, Raju chooses to return to the prestigious sports academy, drawn by an unshakeable conviction that professional coaching represents his best chance to truly excel at cricket.
+
+<<wait 2>>
+
+The morning sun casts long shadows across the academy grounds as Raju approaches for the second time, his resolve strengthened rather than weakened by yesterday's confrontation with Coach Sharma. The pristine facility represents both the pinnacle of cricket training and the embodiment of social barriers he faces, yet his hunger for genuine improvement compels him to return despite the certainty of facing renewed hostility and dismissal from someone who judges worth by wallet rather than will.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaAngry">>
+Coach Sharma: You again? Didn't I make myself clear yesterday? Why do you persist in wasting your time here? This academy is for serious students with serious commitments, not for curiosity seekers who don't belong.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Because I want to learn, sir. I understand that I can't afford to train here, and I know I don't have the proper equipment or background. But even if I'm not allowed to play, I can still listen. I can still observe. Discipline means showing up consistently, doesn't it?
+
+<<character "Coach Sharma" with "CoachSharmaQuizzical">>
+Coach Sharma: Discipline? That's a big word for someone your age. Most of my own paying trainees - children whose families invest thousands of rupees monthly - don't even understand what real discipline means.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: These boys have every advantage - proper equipment, dedicated practice time, nutritional support, family backing. Yet half of them complain about early morning sessions, make excuses about difficult drills, give up when progress becomes challenging.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Then they don't really understand what they have, sir. Discipline means doing the hard work especially when no one believes in you, when you have no guarantees, when every door seems closed. It means showing up because improvement matters more than comfort.
+
+<<character "Coach Sharma" with "CoachSharmaQuizzical">>
+Coach Sharma: Hmm. And you believe you possess this kind of discipline? You think you understand what serious cricket training requires?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: How do you plan to prove this discipline to me, boy? Words are easy when there's no real test behind them.
+
+-> I'll prove my discipline through quiet consistency, sir. Actions over words. Just give me a chance to show you through steady commitment.
+    <<set $CoachSharma_Path = "consistency">>
+    <<jump CoachSharmaDay2Consistency>>
+-> I'll show you the fire in my heart for cricket, sir. My passion will prove my commitment better than any words could.
+    <<set $CoachSharma_Path = "passion">>
+    <<jump CoachSharmaDay2Passion>>
+-> Let me understand exactly what you need, sir. I'll approach this systematically and prove my dedication through careful planning.
+    <<set $CoachSharma_Path = "strategic">>
+    <<jump CoachSharmaDay2Strategic>>
+===
+
+title: CoachSharmaDay2Consistency
+---
+<<character "Raju" with "RajuSerious">>
+Raju: I'll prove my discipline through quiet consistency, sir. Actions over words. Just give me a chance to show you through steady commitment.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Consistency? That's easy to claim but hard to maintain. Most boys your age are full of enthusiasm for a week, then find excuses when reality sets in.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Then let me show you that I'm different, sir. I'll do whatever tasks you set, however small, with complete dedication.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Very well. Come back tomorrow morning. Early - before my regular sessions begin. We'll see if your quiet consistency extends to unglamorous preparation work.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Thank you, sir. I won't disappoint you.
+
+<<wait 2>>
+
+As Raju departs the academy with his first real opportunity earned through persistent return rather than payment or privilege, he understands that tomorrow will mark the beginning of a different kind of test - one that measures character through unglamorous labor rather than flashy skill demonstration. His choice of the steady, consistent path reflects a mature understanding that respect must be built through reliable action rather than dramatic gestures.
+
+<<set $CoachSharma_Day = 3>>
+===
+
+title: CoachSharmaDay2Passion
+---
+<<character "Raju" with "RajuExcited">>
+Raju: I'll show you the fire in my heart for cricket, sir. My passion will prove my commitment better than any words could.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Passion? Every boy claims passion when they first discover cricket. But passion without discipline is just noise and wasted energy.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Then let me show you passion backed by real commitment, sir. I'll work harder than anyone else because cricket means everything to me.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Emotional fire burns bright but often burns out quickly. Come back tomorrow and we'll see if your intensity survives real work.
+
+<<character "Raju" with "RajuExcited">>
+Raju: I'll be here, sir. My fire won't fade - it only grows stronger with challenge.
+
+<<wait 2>>
+
+As Raju leaves the academy with his passionate commitment accepted as a challenge by Coach Sharma, he feels the intensity of someone who has staked everything on proving that emotional fire can be transformed into sustainable dedication. His choice of the passionate path reflects his belief that genuine love for cricket can overcome any obstacle, though tomorrow will test whether his intensity can survive the grinding reality of unglamorous preparation work.
+
+<<set $CoachSharma_Day = 3>>
+===
+
+title: CoachSharmaDay2Strategic
+---
+<<character "Raju" with "RajuQuizzical">>
+Raju: Let me understand exactly what you need, sir. I'll approach this systematically and prove my dedication through careful planning.
+
+<<character "Coach Sharma" with "CoachSharmaQuizzical">>
+Coach Sharma: Systematic? Most boys your age rely on impulse and emotion. You think strategic thinking will substitute for raw commitment?
+
+<<character "Raju" with "RajuSerious">>
+Raju: I think understanding what's required is the first step to meeting those requirements, sir. Let me learn your standards and exceed them consistently.
+
+<<character "Coach Sharma" with "CoachSharmaQuizzical">>
+Coach Sharma: Interesting approach. Come back tomorrow and we'll see if your methodical planning survives the reality of actual work.
+
+<<character "Raju" with "RajuSerious">>
+Raju: I'll be ready, sir. Planning without execution is worthless, but execution without planning is inefficient.
+
+<<wait 2>>
+
+As Raju leaves the academy with his strategic approach accepted as a legitimate test by Coach Sharma, he understands that tomorrow will reveal whether his methodical thinking can translate into effective action under real-world conditions. His choice of the analytical path reflects a belief that intelligent preparation can maximize the impact of limited opportunities, though the coming challenge will test whether his systematic approach can handle the unpredictable demands of practical work.
+
+<<set $CoachSharma_Day = 3>>
+===
+
+title: CoachSharmaDay3
+---
+<<if $CoachSharma_Path == "consistency">>
+    <<jump CoachSharmaDay3Consistency>>
+<<elseif $CoachSharma_Path == "passion">>
+    <<jump CoachSharmaDay3Passion>>
+<<elseif $CoachSharma_Path == "strategic">>
+    <<jump CoachSharmaDay3Strategic>>
+<<else>>
+    <<jump CoachSharmaDay3Consistency>>
+<<endif>>
+===
+
+title: CoachSharmaDay3Consistency
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+True to his promise, Raju arrives at the academy before dawn, determined to prove his discipline through patient, consistent effort.
+
+<<wait 2>>
+
+The academy grounds lie quiet and empty in the pre-dawn darkness as Raju arrives to begin his test of consistency, the silence broken only by the distant sounds of the awakening city. His punctual arrival demonstrates the depth of his commitment to proving himself through reliable action rather than empty promises, while the early hour symbolizes his willingness to sacrifice comfort and convenience for the chance to earn legitimate recognition through demonstrated character.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: You came. Good. Here's your test - set up all this equipment quietly and thoroughly. Show me that your consistency isn't just morning enthusiasm.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Yes, sir. I'll handle everything with care.
+
+<<wait 2>>
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: Most boys would rush this work to impress me. You're taking your time, doing it properly. That shows real discipline.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Quality matters more than speed, sir. I want to earn your respect through reliability, not flashiness.
+
+<<wait 2>>
+
+As Raju completes his first morning of unglamorous preparation work with the careful attention to detail that reflects genuine respect for the opportunity, he begins to understand that his chosen path of quiet consistency is already distinguishing him from the typical responses Coach Sharma expects from young people seeking cricket training. His methodical approach to simple tasks reveals a maturity that transcends age and economic background.
+
+<<set $CoachSharma_Day = 4>>
+===
+
+title: CoachSharmaDay3Passion
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+Raju arrives at dawn with intense energy, determined to channel his passionate commitment into demonstrable action.
+
+<<wait 2>>
+
+The academy grounds seem to vibrate with Raju's barely contained enthusiasm as he arrives in the early morning, his passionate commitment to cricket burning bright despite the mundane nature of the tasks awaiting him. His energetic approach to proving himself reflects a belief that emotional intensity can be channeled into sustained effort, though the coming hours will test whether his fire can illuminate the path through routine labor without burning out from its own intensity.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Channel all that fire into this equipment setup. Show me that your passion translates to sustained effort, not just emotional displays.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Every piece of equipment I move is bringing me closer to real cricket, sir. That's what drives me.
+
+<<wait 2>>
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: Your intensity is remarkable. You're working like someone whose life depends on it. That kind of passion might actually survive the long journey ahead.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Because it does depend on it, sir. Cricket isn't just what I want to do - it's who I am.
+
+<<wait 2>>
+
+As Raju completes his first morning of passionate labor with the same intensity he brings to actual cricket practice, he demonstrates that his emotional fire can indeed fuel sustained effort rather than simply burning bright for brief moments. His ability to maintain enthusiasm for unglamorous work reveals that his love for cricket runs deeper than surface excitement, encompassing every aspect of the sport including its most mundane requirements.
+
+<<set $CoachSharma_Day = 4>>
+===
+
+title: CoachSharmaDay3Strategic
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+Raju arrives early with a mental plan for how to approach every task efficiently and thoroughly.
+
+<<wait 2>>
+
+The academy grounds await Raju's systematic approach as he arrives with a carefully considered plan for maximizing efficiency while maintaining quality in his preparation work. His methodical mindset reflects a mature understanding that success often depends on intelligent application of effort rather than simply working harder, though the morning ahead will test whether his theoretical planning can adapt to the practical realities of physical labor and time constraints.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Show me this systematic approach. Organize everything according to your strategic thinking.
+
+<<character "Raju" with "RajuSerious">>
+Raju: First the heavy equipment, then the detailed setup, finishing with quality inspection. Each step builds on the previous one.
+
+<<wait 2>>
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: You're not just working hard - you're working smart. That combination of planning and execution is exactly what separates good cricketers from great ones.
+
+<<character "Raju" with "RajuSerious">>
+Raju: Understanding the system makes the work more meaningful, sir. Every task becomes part of the larger goal.
+
+<<wait 2>>
+
+As Raju completes his first morning of systematic preparation work with the same analytical precision he applies to understanding cricket technique, he demonstrates that strategic thinking can indeed enhance rather than replace passionate commitment. His ability to find meaning and efficiency in routine tasks reveals a level of intellectual maturity that transforms simple labor into purposeful preparation for larger goals.
+
+<<set $CoachSharma_Day = 4>>
+===
+
+title: CoachSharmaDay4
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+After proving his dedication through consistent morning work, Raju hopes for the chance to demonstrate his actual cricket ability.
+
+<<wait 2>>
+
+The academy nets beckon tantalizingly as Raju completes another morning of preparation work, his hands eager to grip a proper cricket bat after days of proving his character through unglamorous labor. Coach Sharma's presence carries a different energy today, suggesting that the period of testing commitment through routine tasks may be giving way to evaluation of actual cricket potential, though Raju understands that earning this opportunity required first demonstrating the foundation of reliability and dedication.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Alright, boy. You've proven you can work without complaint and show up consistently. Now comes the real test. Show me what you can actually do with a cricket bat.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Really, sir? You'll actually let me bat in the professional nets?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Don't get ahead of yourself, boy. This isn't a training session - it's purely assessment. I'm going to bowl ten deliveries at you, and we'll see what you can do with proper equipment under controlled conditions.
+
+<<wait 2>>
+
+The first delivery reveals raw talent struggling with technical flaws but producing moments of brilliance that no amount of coaching could create artificially.
+
+<<character "Coach Sharma" with "CoachSharmaExcited">>
+Coach Sharma: Interesting. Again.
+
+<<wait 2>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Raw talent, definitely. Natural timing that can't be taught. But your technique is absolutely terrible - no proper footwork, grip is completely wrong, your stance leaves you vulnerable to specific types of delivery.
+
+<<character "Raju" with "RajuExcited">>
+Raju: But I did hit several boundaries, sir! And I read your bowling better than I expected!
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Boundaries mean nothing without consistency, boy. What matters is whether you can build a foundation of reliable technique on top of whatever natural ability you possess.
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: But... there is something there. Something authentic. You have natural timing, hand-eye coordination, and the kind of cricket instincts that can't be purchased or trained into someone.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Can you teach me proper technique, sir? Can you help me build on whatever natural ability I have?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Teaching at this level costs serious money, boy. Money for equipment, facility time, individual instruction, structured progression. Money that I know you and your family don't have.
+
+<<wait 2>>
+
+As Raju absorbs the reality that his demonstrated talent and proven character still cannot overcome the economic barriers that separate him from professional training, he feels the familiar weight of a system that measures potential in rupees rather than ability. Yet his brief taste of proper cricket assessment has revealed both the extent of his natural gifts and the magnitude of what proper coaching might achieve, creating a burning awareness of possibilities that remain tantalizingly out of reach.
+
+<<set $CoachSharma_Day = 5>>
+===
+
+title: CoachSharmaDay5
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+After yesterday's successful demonstration of his natural cricket ability, Raju returns hoping that Coach Sharma's recognition might translate into actual coaching opportunity.
+
+<<wait 2>>
+
+The academy grounds carry a different energy today as Raju approaches with the knowledge that he has crossed a crucial threshold from unwanted intruder to recognized talent, though the gap between recognition and opportunity remains as wide as the economic chasm that separates his circumstances from those of paying students. Coach Sharma's acknowledgment of his natural ability has planted seeds of possibility that now await the uncertain ground of practical reality to determine whether they can grow into genuine opportunity.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: You're back again, I see. Yesterday's assessment confirmed what I suspected - you have genuine natural ability that can't be taught. But talent without proper development is like raw diamond without cutting - valuable but unrealized.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Sir, does that mean you might be willing to teach me? Even though I can't afford the regular academy fees?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: I've been thinking about exactly that question since yesterday's session. About what you said regarding talent and determination mattering more than fees and family wealth. It's a compelling argument, but coaching requires more than good intentions.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: I'll make you a deal - one that tests whether your commitment extends beyond verbal promises into actual sacrifice. Come here every morning for the next month, 5 AM sharp. Do all the setup work - equipment management, net arrangement, ground maintenance, facility preparation.
+
+<<character "Raju" with "RajuQuizzical">>
+Raju: That's it? Just work? I thought you might want me to demonstrate more batting or bowling techniques.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Just work? Boy, most of my paying students can't handle that schedule consistently. Cricket excellence isn't built only during practice sessions. It's built through daily commitment to every aspect of the sport.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Then you'll consider providing actual coaching?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: If you can stick to that schedule for an entire month, if you can prove that your commitment runs deeper than convenient enthusiasm, then maybe I'll spend some time correcting your technique and teaching you strategic elements.
+
+<<character "Raju" with "RajuExcited">>
+Raju: I'll be here, sir. Every single morning at 5 AM. You won't have to wait for me or wonder if I'm coming.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: We'll see, boy. Promises are easy to make when excitement is high and reality hasn't set in. But if you can maintain this commitment... then you might prove worthy of serious coaching investment.
+
+<<wait 2>>
+
+As Raju departs the academy with a concrete path toward earning legitimate coaching opportunity, he understands that the month ahead will test not just his commitment but his ability to maintain motivation through the grinding routine of unglamorous preparation work. The deal with Coach Sharma represents more than a chance for cricket training - it is an opportunity to prove that character and dedication can overcome the systemic barriers that separate talent from opportunity.
+
+<<set $CoachSharma_Day = 6>>
+===
+
+title: CoachSharmaDay6
+---
+<<scene "Sports Academy" with "Angry Background Music 1">>
+
+After three weeks of consistent 5 AM arrivals and dedicated facility preparation work, Raju approaches Coach Sharma hoping to understand whether his sustained commitment has earned progress toward the coaching opportunity.
+
+<<wait 2>>
+
+The academy grounds have become as familiar as his own neighborhood to Raju after three weeks of pre-dawn arrivals, his consistent presence transforming him from an unwelcome intruder into an integral part of the facility's morning routine. Coach Sharma's recognition of his sustained effort carries the weight of someone who has witnessed dedication that exceeds even that of paying students, setting the stage for a conversation that could determine whether weeks of character demonstration will translate into the coaching opportunity he has earned through reliability rather than payment.
+
+<<wait 3>>
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: Three weeks now. Every single morning at 5 AM sharp, without fail, without complaint, without excuses. Even my academy students don't demonstrate this level of consistency.
+
+<<character "Raju" with "RajuSerious">>
+Raju: I told you I was serious, sir. I wanted to prove that my dedication runs deeper than convenient enthusiasm. Every morning for twenty-one days, I've chosen cricket preparation over sleep, commitment over comfort.
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Serious, yes. That much is undeniable. You've demonstrated work ethic that exceeds most of my paying students and character that can't be purchased with monthly fees. But now comes the real question - are you ready for what comes next?
+
+<<character "Raju" with "RajuExcited">>
+Raju: What do you mean, sir? What comes next?
+
+<<character "Coach Sharma" with "CoachSharmaExcited">>
+Coach Sharma: There's a junior cricket tournament scheduled for next month. If you can organize a team from your neighborhood, I might consider providing unofficial coaching support. Not formal academy training, but guidance that could help you compete effectively.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Really, sir? You'd actually coach me and my friends? Despite everything about fees and barriers you mentioned before?
+
+<<character "Coach Sharma" with "CoachSharmaSerious">>
+Coach Sharma: Don't get ahead of yourself, boy. This would be unofficial, after regular academy hours, without guarantees. But yes... your three weeks of consistent character demonstration have earned you a chance I've never offered to any non-paying student.
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: You've proven that dedication isn't limited to those who can afford premium training. If your neighborhood friends demonstrate even half your work ethic, you might surprise everyone in that tournament.
+
+<<character "Raju" with "RajuExcited">>
+Raju: Sir, I promise we won't disappoint you. This opportunity means everything to us - not just for cricket, but for proving that talent and hard work can compete with privilege and resources.
+
+<<character "Coach Sharma" with "CoachSharmaSmiling">>
+Coach Sharma: Remember this moment, boy. You've earned recognition not through family connections or fee payments, but through character demonstration that impressed a coach who thought he'd seen everything. Don't waste this opportunity.
+
+<<wait 2>>
+
+As Raju walks away from the academy carrying the promise of unofficial coaching and tournament opportunity, he understands that his three weeks of unwavering commitment have achieved something unprecedented - earning respect and opportunity through character rather than currency. The weight of representing not just his own dreams but the potential of every talented young person denied opportunity by economic circumstances settles on his shoulders, transforming personal achievement into a chance to challenge the fundamental assumptions about who deserves access to excellence.
+
+<<set $CoachSharma_Complete = true>>
+===

@@ -1,7 +1,7 @@
 ﻿title: Amarjeet
 ---
 <<if $Amarjeet_Day==0>>//This is for testing purpose only, remove later
-    <<jump Amarjeet_Day3>>  //This is for testing purpose only, remove later
+    <<jump Amarjeet_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Amarjeet_Day==1>>
     <<jump Amarjeet_Day1>>
 <<elseif $Amarjeet_Day==2>>

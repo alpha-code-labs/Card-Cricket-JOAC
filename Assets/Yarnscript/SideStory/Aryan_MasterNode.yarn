@@ -1,7 +1,7 @@
 title: Aryan
 ---
 <<if $Aryan_Day==0>>//This is for testing purpose only, remove later
-    <<jump Aryan_Day3>>  //This is for testing purpose only, remove later
+    <<jump Aryan_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Aryan_Day==1>>
     <<jump Aryan_Day1>>
 <<elseif $Aryan_Day==2>>
