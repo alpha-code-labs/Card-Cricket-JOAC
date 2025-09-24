@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9142964122988722605}
   m_Layer: 5
-  m_Name: Pitch Conditions
+  m_Name: Baller Type
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 2768141544652443016}
   - component: {fileID: 2300462331195927514}
   m_Layer: 5
-  m_Name: Pitch Condition Text
+  m_Name: Baller Type Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hostile
+  m_text: Slower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 8365959475129783594}
   - component: {fileID: 3689262469638844250}
   m_Layer: 5
-  m_Name: Pitch Conditions Title
+  m_Name: Baller Type Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pitch Conditions
+  m_text: Type of Baller
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1861,7 +1861,7 @@ GameObject:
   - component: {fileID: 8988503911832887334}
   - component: {fileID: 3191242734839578746}
   m_Layer: 5
-  m_Name: Type of Baller
+  m_Name: Pitch Condition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1914,7 +1914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slower
+  m_text: Hostile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2181,8 +2181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5e804347f9f6c4692628589f814afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeOfBallerText: {fileID: 3191242734839578746}
-  PitchConditionText: {fileID: 2300462331195927514}
+  TypeOfBallerText: {fileID: 2300462331195927514}
+  PitchConditionText: {fileID: 3191242734839578746}
   BallerSideText: {fileID: 3513908087479072828}
   TypeOfBallText: {fileID: 7597398598219717621}
   LengthOfBallText: {fileID: 7505224053530211503}

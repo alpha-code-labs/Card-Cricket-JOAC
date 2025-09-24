@@ -1,0 +1,23 @@
+﻿title: Start
+---
+
+Ramu: All right captain, this is your batting arena. Lets get you well versed with this. Its going to be your lifeline on this journey.
+
+<<showBallingCard>>
+Ramu: This will indicate the ball coming in your direction. It forms as the base for you to make your decisions.
+Ramu: Also notice the text "Friendly" writtend at the top of the card.
+Ramu: This will indicate the batting conditions for the task. It can be either hostile or friendly. You have to keep this variable in mind while selecting your shots. Remember in hostile conditions, the quality of the shot has to be more precise. In friendly conditions, the selection might be more forgiving. 
+<<clearHighlights>>
+<<showScorePanel>>
+Ramu: This is the current score and the target you have to achieve in the task. Always watch it like a hawk. Your outcomes will drive your score closer to target.
+<<clearHighlights>>
+<<showBBallsPanel>>
+Ramu: This indicates the number of balls still remaining to achieve the target. It will decrease for every ball you face unless the ball is a Wide ball or No ball.
+<<clearHighlights>>
+<<showWicketsPanel>>
+Ramu: This indicates how much wickets you have lost and the total number of wickets you have.
+<<clearHighlights>>
+<<moveDialogue top>>
+<<showShotsPanel>>
+Ramu: This is your shot panel. Based on the ball conditions and the batting conditions and the situation of the game, make a careful choice on the kind of shot you want to play. This is your bread and butter.
+===

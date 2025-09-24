@@ -32,8 +32,8 @@ public class BallerCardProps : MonoBehaviour
                   $"Length: {ballThrow.ballLength}");
 
         // Assign the correct properties
-        if (TypeOfBallerText != null)
-            TypeOfBallerText.text = ballThrow.bowlerType.ToString();
+        if (PitchConditionText.text != null)
+            PitchConditionText.text = ballThrow.pitchCondition.ToString();
         else
             Debug.LogWarning("TypeOfBallerText is not assigned!");
 
@@ -57,8 +57,8 @@ public class BallerCardProps : MonoBehaviour
         else
             Debug.LogWarning("BallerSideText is not assigned!");
 
-        if (PitchConditionText != null)
-            PitchConditionText.text = ballThrow.pitchCondition.ToString();
+        if (TypeOfBallerText.text != null)
+            TypeOfBallerText.text = ballThrow.bowlerType.ToString();
         else
             Debug.LogWarning("PitchConditionText is not assigned!");
 

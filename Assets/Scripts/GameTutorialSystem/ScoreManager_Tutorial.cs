@@ -7,9 +7,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager_Tutorial : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static ScoreManager_Tutorial Instance;
 
     //load rewards stats to update these hardcoded for now
     public int maxTimeToChooseStrategy = 5; // seconds
@@ -24,15 +24,25 @@ public class ScoreManager : MonoBehaviour
     public int TargetScore = 40; // The target score to reach
     public int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
     public int wickets = 3; // Wickets before game over
+    [Header("Current score And Target")]
+    [SerializeField] GameObject currentScoreAndTarget_parent;
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI currentRunsText;
     [SerializeField] TextMeshProUGUI totalRunsNeededText;
+
+    [Header("Remaing Balls")]
+    [SerializeField] GameObject RemainingBalls_parent;
     [SerializeField] TextMeshProUGUI remainingBallsText;
+
+    [Header("Remaining Wickets And Total Wickets")]
+    [SerializeField] GameObject remaingWicketsAndTotalWickets_parent;
     [SerializeField] TextMeshProUGUI remainingWicketsText;
     [SerializeField] TextMeshProUGUI totalWicketsText;
+    [Header("Others")]
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     [SerializeField] Button redrawButton; // Assign in Inspector
     [SerializeField] TextMeshProUGUI redrawButtonText;
+    
 
     [Header("Batter Animation")]
     [SerializeField] Image BatterImage;
@@ -41,6 +51,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] float returnDuration = 0.3f; // Slower return duration
     [SerializeField] AnimationCurve swingEase = AnimationCurve.EaseInOut(0, 0, 1, 1); // Custom curve if needed
     [SerializeField] AudioSource gameAudioSource;
+
     public void UpdateBallsAndOvers(int ballsBowled)
     {
         int overs = ballsBowled / 6;
@@ -99,22 +110,6 @@ public class ScoreManager : MonoBehaviour
             // Logic to handle game over, e.g., showing a game over screen
         }
     }
-    // public void PlayExcelBattingStrategy(BattingStrategy battingStrategy)
-    // {
-    //     // TimingManager.Instance.StartTimingMeter(battingStrategy);
-
-    //     // Temporary outcome for testing
-    //     // OutCome outcome = OutCome.Out;
-    //     // OutCome outcome = outComeCalculator.CalculateOutcome(battingStrategy, new BallThrow() { ballType = BallType.Straight, bowlerSide = Side.RightHanded, bowlerType = TypeOfBowler.Fast, ballLength = BallLength.GoodLength, ballLine = BallLine.OffStump }, BattingTiming.Perfect);
-    //     BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
-    //     PitchCondition pitchCondition = currentBallThrow.pitchCondition;
-    //     Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
-    //     OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
-
-    //     UpdateScore((int)outcome);
-    //     AnimateOnScreenText(battingStrategy, outcome);
-    //     CardsPoolManager.Instance.EndTurn((int)outcome != -3); // End turn and increment balls only if not out
-    // }
 
     public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
@@ -168,27 +163,6 @@ public class ScoreManager : MonoBehaviour
         CardsPoolManager.Instance.StartTurn((int)outcome != -3);
     }
 
-    [SerializeField] TextMeshProUGUI outcomeText;
-    void AnimateOnScreenText(BattingStrategy battingStrategy, OutCome outcome)
-    {
-        outcomeText.text = $"Played card: {battingStrategy},\n Outcome: {outcome} ";
-        outcomeText.color = Color.white;
-        // Kill any ongoing tweens to prevent overlap
-        outcomeText.DOKill(true);
-        outcomeText.rectTransform.DOKill(true);
-
-        // Ensure starting state
-        var c = outcomeText.color; c.a = 0f; outcomeText.color = c;
-        outcomeText.rectTransform.localScale = Vector3.one;
-
-        // Punch animation: quick fade-in + punch scale, then fade-out
-        Sequence seq = DOTween.Sequence();
-        seq.Append(outcomeText.DOFade(1f, 1f));
-        seq.Join(outcomeText.rectTransform.DOPunchScale(new Vector3(0.25f, 0.25f, 0f), 0.5f, 8, 0.8f));
-        seq.AppendInterval(0.5f);
-        seq.Append(outcomeText.DOFade(0f, 0.4f));
-    }
-
     void AnimateBatterSwing()
     {
         if (BatterImage == null) return;
@@ -218,7 +192,6 @@ public class ScoreManager : MonoBehaviour
             Debug.Log("Batter swing animation completed");
         });
     }
-
     void OnRedrawButtonClicked()
     {
         CardsPoolManager.Instance.RedrawHand();
@@ -243,11 +216,36 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public void ShowScorePanel()
+    {
+        currentScoreAndTarget_parent.SetActive(true);
+        UpdateScore(0);
+        UIHighlightManager.Instance.HighlightObject(currentScoreAndTarget_parent);
+    }
+
+    public void ShowBallsPanel()
+    {
+        RemainingBalls_parent.SetActive(true);
+        UpdateBallsAndOvers(0);
+        UIHighlightManager.Instance.HighlightObject(RemainingBalls_parent);  
+    }
+
+    public void ShowWicketsPanel()
+    {
+        remaingWicketsAndTotalWickets_parent.SetActive(true);
+        UIHighlightManager.Instance.HighlightObject(remaingWicketsAndTotalWickets_parent);
+    }
+
     void Start()
     {
-        totalWicketsText.text = "/ " + wickets.ToString();
-        UpdateScore(0); // Initialize score display
-        UpdateBallsAndOvers(0); // Initialize balls and overs display
+        
+        // totalWicketsText.text = "/ " + wickets.ToString();
+        // UpdateScore(0); // Initialize score display
+        // UpdateBallsAndOvers(0); // Initialize balls and overs display
+        //Disable everything
+        currentScoreAndTarget_parent.SetActive(false);
+        remaingWicketsAndTotalWickets_parent.SetActive(false);
+        RemainingBalls_parent.SetActive(false);
         if (redrawButton != null)
         {
             redrawButton.onClick.AddListener(OnRedrawButtonClicked);
