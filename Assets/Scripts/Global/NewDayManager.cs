@@ -93,7 +93,11 @@ public class NewDayManager : MonoBehaviour
     IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 2f, float fadeDuration = 1f)
     {
         dateText.text = textToDisplay;
-        dateText.alpha = 1f;
+        if (dateText.alpha != 1)
+        {
+            yield return new WaitForSeconds(displayDuration);
+            yield return dateText.DOFade(1f, fadeDuration).WaitForCompletion();
+        }
         yield return new WaitForSeconds(displayDuration);
         yield return dateText.DOFade(0f, fadeDuration).WaitForCompletion();
     }
