@@ -48,7 +48,7 @@ public class NewDayManager : MonoBehaviour
             dateText.text = "";
         }
 
-        Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
+        // Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
 
         switch (events.eventType)
         {

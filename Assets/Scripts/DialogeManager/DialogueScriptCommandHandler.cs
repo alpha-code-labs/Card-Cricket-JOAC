@@ -223,7 +223,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     {
         //Instance.StartCoroutine(Instance.FadeToBlackSequence());
         NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
     }
 
     // AUDIO COMMANDS

@@ -23,7 +23,7 @@ public class BasicBlackFadeTransition : MonoBehaviour
         IntroTransition();
         void IntroTransition()
         {
-            Debug.Log("Intro Transition");
+            // Debug.Log("Intro Transition");
             image.DOFade(1, 1.5f).OnComplete(() =>
             {
                 OnIntroComplete?.Invoke();
@@ -32,7 +32,7 @@ public class BasicBlackFadeTransition : MonoBehaviour
     }
     void OutroTransition()
     {
-        Debug.Log("Outro Transition");
+        // Debug.Log("Outro Transition");
         image.color = new Color(0, 0, 0, 1);
 
         image.DOFade(0, 1.5f).SetDelay(0.5f).OnComplete(() =>
