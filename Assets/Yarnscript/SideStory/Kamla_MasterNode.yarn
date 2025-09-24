@@ -49,7 +49,7 @@ Raju: I understand, Ma. I'll help you. And I'll be respectful, no matter how the
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Remember, beta, when we're in their world, we're respectful and quiet. But we never bow our heads in shame. We work with dignity because our work has value.
 
-<<SetBGSprite HighRiseCondos>>
+<<SetBGSprite WellingtonEstate>>
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Who's this? Another servant boy? I hope he's more careful than the last one who broke my mother's vase.
