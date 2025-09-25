@@ -428,5 +428,5 @@ Shiv Prasad: Remember, beta - this test is just the beginning. Every day from no
 As Raju prepares to leave for school carrying both his mathematics preparation and his father's conditional support, he understands that the test ahead represents more than academic evaluation - it embodies the culmination of a week-long demonstration that passion and responsibility can indeed coexist when approached with sufficient discipline and maturity. The promise of cricket support that awaits successful performance creates both motivation and pressure, while the ongoing requirement to maintain balance ensures that this test marks the beginning rather than the end of his journey to prove that dreams and duty can work together.
 
 <<set $ShivPrasadPrasad_Complete = true>>
-<<EndEvent true>>
+<<ShowReardImage "Humility">>
 ===

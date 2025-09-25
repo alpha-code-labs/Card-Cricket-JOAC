@@ -401,5 +401,5 @@ MochiUncle: Then we both benefit perfectly - you gain traditional craft knowledg
 As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of cultural preservation, Raju and Mochi Uncle understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and cultural gaps to create partnerships that strengthen both individuals and the traditional knowledge systems they work together to preserve and honor.
 
 <<set $MochiUncle_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Humility>>
 ===

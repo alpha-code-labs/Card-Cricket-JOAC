@@ -401,5 +401,5 @@ Fatima: Then we both benefit - you gain practical business experience that will 
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the larger community, Raju and Fatima understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and circumstantial differences to create partnerships that strengthen both individuals and the communities they serve.
 
 <<set $Fatima_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Resourcefulness>>
 ===

@@ -401,5 +401,5 @@ Vikram: Then we both benefit perfectly - you gain traditional hospitality knowle
 As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of preserving traditional food service skills, Raju and Vikram understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and social gaps to create partnerships that strengthen both individuals and the traditional hospitality knowledge systems they work together to preserve and honor.
 
 <<set $Vikram_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Courage>>
 ===

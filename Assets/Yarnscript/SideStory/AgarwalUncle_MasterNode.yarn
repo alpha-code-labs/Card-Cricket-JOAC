@@ -409,5 +409,5 @@ AgarwalUncle: Then we both benefit perfectly - you gain practical business exper
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the broader community, Raju and Agarwal Uncle understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and experiential differences to create partnerships that strengthen both individuals and the local economic ecosystem they serve together.
 
 <<set $AgarwalUncle_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Resourcefulness>>
 ===

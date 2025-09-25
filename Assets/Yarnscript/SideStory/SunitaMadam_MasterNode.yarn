@@ -375,5 +375,5 @@ SunitaMadam: Thank me by succeeding. Show everyone that merit can triumph over c
 As Raju prepares to leave Wellington Estate carrying not just educational support but comprehensive advocacy for his future success, he understands that Sunita Madam's transformation from prejudiced gatekeeper to passionate advocate represents more than personal growth - it embodies the possibility that systemic barriers can be overcome through persistent demonstration of merit and character. Her commitment to providing practical support for the scholarship examination validates his belief that education can serve as a bridge between circumstances and aspirations, while her challenge to become someone who opens doors for others transforms his personal success into a broader mission of social change.
 
 <<set $SunitaMadam_Complete = true>>
-<<EndEvent true>>
+<<ShowReardImage "Resourcefulness">>
 ===

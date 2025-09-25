@@ -401,5 +401,5 @@ Amit: Then we both benefit perfectly - you gain experience in community organiza
 As their conversation concludes with plans for ongoing partnership in organizing neighborhood cricket activities, Amit and Raju understand that they have created something more valuable than temporary problem-solving - they have demonstrated how systematic thinking, collaborative effort, and persistent dedication can transform obstacles into opportunities while building friendships and community connections that extend far beyond the original challenge they worked together to overcome.
 
 <<set $Amit_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Resourcefulness>>
 ===

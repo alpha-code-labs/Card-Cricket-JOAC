@@ -439,5 +439,6 @@ Amarjeet: Use these gifts wisely, beta, and share them generously. The world nee
 As Raju walks away from the temple for the final time in this series of teachings, he carries within him not just techniques for mental discipline but a transformed understanding of his own potential and purpose. The accumulated wisdom from his chosen path has created an inner foundation of strength and clarity that will serve him in every future challenge, whether on the cricket field or in the larger arena of life itself.
 
 <<set $Amarjeet_Complete = true>>
-<<EndEvent true>>
+// <<EndEvent true>>
+<<ShowReardImage "Foresight">>
 ===
