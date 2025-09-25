@@ -115,7 +115,7 @@ public class RewardsSequenceManager : MonoBehaviour
         hideSeq.Join(instance.Bar.DOFade(0, 0.5f));
         hideSeq.Join(instance.BarFillImage.DOFade(0, 0.5f));
         hideSeq.Join(instance.RankUpText.DOFade(0, 0.5f));
-        hideSeq.SetDelay(2f).OnComplete(() =>
+        hideSeq.SetDelay(.1f).OnComplete(() =>
         {
             instance.ResetSequence();
         });
