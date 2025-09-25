@@ -11,11 +11,17 @@ public class RewardsSequenceManager : MonoBehaviour
     public static RewardsSequenceManager instance;
     void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
         instance = this;
     }
     void Start()
     {
         ProcessSprites();
+        ResetSequence();
     }
     [SerializeField] GameObject RewardPanel;//Contains all the below elements
     [SerializeField] Image RewardImage;
@@ -26,11 +32,6 @@ public class RewardsSequenceManager : MonoBehaviour
     Dictionary<Reward, Sprite> rewardSpriteDict;
     void ProcessSprites()
     {
-        RewardPanel.SetActive(false);
-        RewardImage.gameObject.SetActive(false);
-        Bar.color = new Color(1, 1, 1, 0);
-        BarFillImage.color = new Color(1, 1, 1, 0);
-        RankUpText.gameObject.SetActive(false);
         rewardSpriteDict = new Dictionary<Reward, Sprite>();
         foreach (var sprite in sprites)
         {
@@ -57,9 +58,12 @@ public class RewardsSequenceManager : MonoBehaviour
             instance.RewardPanel.SetActive(true);
             instance.RewardImage.sprite = sprite;
             instance.RewardImage.transform.localScale = Vector3.zero;
+            instance.RewardImage.transform.rotation = Quaternion.identity;
             instance.RewardImage.color = new Color(1, 1, 1, 0);
             instance.BarFillImage.fillAmount = 0;
             instance.RewardImage.gameObject.SetActive(true);
+            Vector3 originalPos = instance.RewardImage.transform.localPosition;
+            instance.RewardImage.transform.localPosition = originalPos + new Vector3(0, 300, 0);
 
             int currantStat = 0;
             switch (reward)
@@ -80,8 +84,11 @@ public class RewardsSequenceManager : MonoBehaviour
             float targetFill = ((int)currantStat + 1) * 0.2f;
 
             Sequence seq = DOTween.Sequence();
-            seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
-            seq.Join(instance.RewardImage.DOFade(1, 0.5f));
+            seq.Append(instance.RewardImage.transform.DOLocalMove(originalPos, 0.6f).SetEase(Ease.OutBounce));
+            seq.Join(instance.RewardImage.transform.DOScale(Vector3.one * 1.2f, 0.6f).SetEase(Ease.OutBack));
+            seq.Join(instance.RewardImage.transform.DORotate(new Vector3(0, 0, 720), 0.6f, RotateMode.FastBeyond360).SetEase(Ease.OutQuad));
+            seq.Join(instance.RewardImage.DOFade(1, 0.6f));
+            seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBounce));
             seq.Append(instance.Bar.DOFade(1, 0.5f));
             seq.Join(instance.BarFillImage.DOFade(1, 0.5f));
             seq.Append(instance.BarFillImage.DOFillAmount(targetFill, 2f).SetEase(Ease.OutQuad));
@@ -117,6 +124,7 @@ public class RewardsSequenceManager : MonoBehaviour
     void ResetSequence()
     {
         instance.RewardImage.transform.localScale = Vector3.zero;
+        instance.RewardImage.transform.rotation = Quaternion.identity;
         instance.RewardImage.color = new Color(1, 1, 1, 0);
         instance.Bar.color = new Color(1, 1, 1, 0);
         instance.BarFillImage.color = new Color(1, 1, 1, 0);
