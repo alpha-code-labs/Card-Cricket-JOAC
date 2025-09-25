@@ -120,11 +120,11 @@ public class ScoreManager_Tutorial : MonoBehaviour
     private IEnumerator PlayCardSequence(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
         // Pause timer during animation
-        Timer.Instance.PauseTimer();
+        Timer_Tutorial.Instance.PauseTimer();
         AnimateBatterSwing();
         gameAudioSource.Play();
         // Calculate outcome
-        BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
+        BallThrow currentBallThrow = CardsPoolManager_Tutorial.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
@@ -139,14 +139,14 @@ public class ScoreManager_Tutorial : MonoBehaviour
                 cardObject, cardSprite, battingStrategy, outcome);
             // Update score immediately (but don't show yet)
             UpdateScore((int)outcome);
-            CardsPoolManager.Instance.DestroyCurrentBallCard();
+            CardsPoolManager_Tutorial.Instance.DestroyCurrentBallCard();
             //Processing pause
             yield return new WaitForSeconds(.5f);
         }
         else
         {
             UpdateScore((int)outcome);
-            CardsPoolManager.Instance.DestroyCurrentBallCard();
+            CardsPoolManager_Tutorial.Instance.DestroyCurrentBallCard();
             // Fallback if no animation controller
             yield return new WaitForSeconds(1f);
         }
@@ -154,13 +154,13 @@ public class ScoreManager_Tutorial : MonoBehaviour
 
 
         //End current turn
-        CardsPoolManager.Instance.EndTurn((int)outcome != -3);
+        CardsPoolManager_Tutorial.Instance.EndTurn((int)outcome != -3);
 
         yield return new WaitForSeconds(3f);
         // End turn timer
-        Timer.Instance.EndTurnTimer();
+        Timer_Tutorial.Instance.EndTurnTimer();
         // We will start new turn here
-        CardsPoolManager.Instance.StartTurn((int)outcome != -3);
+        CardsPoolManager_Tutorial.Instance.StartTurn((int)outcome != -3);
     }
 
     void AnimateBatterSwing()
@@ -194,7 +194,7 @@ public class ScoreManager_Tutorial : MonoBehaviour
     }
     void OnRedrawButtonClicked()
     {
-        CardsPoolManager.Instance.RedrawHand();
+        CardsPoolManager_Tutorial.Instance.RedrawHand();
         UpdateRedrawButton();
     }
 
@@ -202,13 +202,13 @@ public class ScoreManager_Tutorial : MonoBehaviour
     {
         if (redrawButton == null) return;
 
-        bool canRedraw = CardsPoolManager.Instance.CanRedraw();
+        bool canRedraw = CardsPoolManager_Tutorial.Instance.CanRedraw();
         redrawButton.interactable = canRedraw;
 
         // Update button text if available
         if (redrawButtonText != null)
         {
-            int remaining = CardsPoolManager.Instance.GetRedrawsRemaining();
+            int remaining = CardsPoolManager_Tutorial.Instance.GetRedrawsRemaining();
             redrawButtonText.text = $"Redraw ({remaining})";
 
             // Optional: Change color based on availability
@@ -234,6 +234,12 @@ public class ScoreManager_Tutorial : MonoBehaviour
     {
         remaingWicketsAndTotalWickets_parent.SetActive(true);
         UIHighlightManager.Instance.HighlightObject(remaingWicketsAndTotalWickets_parent);
+    }
+
+    public void ShowFlipButton()
+    {
+        redrawButton.gameObject.SetActive(true);
+        UIHighlightManager.Instance.HighlightObject(redrawButton.gameObject);
     }
 
     void Start()

@@ -10,9 +10,17 @@ public class BallThrow
     public BallType ballType;
     public BallLine ballLine;
     public BallLength ballLength;
-
     public PitchCondition pitchCondition;
-
+    public BallThrow() { }
+    public BallThrow(TypeOfBowler _ballerType, Side _side, BallType _ballType, BallLine _ballLine, BallLength _ballLength, PitchCondition _pitchCondition)
+    {
+        bowlerType = _ballerType;
+        bowlerSide = _side;
+        ballType = _ballType;
+        ballLine = _ballLine;
+        ballLength = _ballLength;
+        pitchCondition = _pitchCondition;
+    }
     override public string ToString()
     {
         return $"Type of Bowler: {bowlerType}\nBowler Side: {bowlerSide}\nBall Type: {ballType}\nBall Line: {ballLine} \nBall Length: {ballLength}";

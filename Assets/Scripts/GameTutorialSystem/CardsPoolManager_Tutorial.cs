@@ -8,9 +8,9 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     [SerializeField] List<AttackCardData> Deck;
     [Header("Piles")]
 
-    [SerializeField] List<AttackCardProps> DrawPile;
-    [SerializeField] List<AttackCardProps> DiscardPile;
-    [SerializeField] List<AttackCardProps> HandCards;
+    [SerializeField] List<AttackCardProps_Tutorial> DrawPile;
+    [SerializeField] List<AttackCardProps_Tutorial> DiscardPile;
+    [SerializeField] List<AttackCardProps_Tutorial> HandCards;
     [Header("Game State Vars")]
     public int CurrntTurn = 0; // Current turn number
     public List<BallThrow> BallThrows; // List to hold BallThrow instances
@@ -47,14 +47,14 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void showFirstBallingCard()
     {
-        BallThrow firstBallThrow = new BallThrow();
-        firstBallThrow.bowlerType = TypeOfBowler.Fast;
-        firstBallThrow.bowlerSide = Side.RightArm;
-        firstBallThrow.ballType = BallType.Straight;
-        firstBallThrow.ballLine = BallLine.OffStump;
-        firstBallThrow.ballLength = BallLength.FullLength;
-        firstBallThrow.pitchCondition = PitchCondition.Friendly;
-
+        BallThrow firstBallThrow = new BallThrow(
+                        TypeOfBowler.Fast,
+                        Side.RightArm,
+                        BallType.Straight,
+                        BallLine.OffStump,
+                        BallLength.FullLength,
+                        PitchCondition.Friendly
+                    );
         ballerCard = InstantiateBallerCard(firstBallThrow);
         UIHighlightManager.Instance.HighlightObject(ballerCard);
     }
@@ -65,28 +65,63 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         InstantiateCards();
     }
 
+    public void BallFirstBall()
+    {
+        InitTextDeck(PitchCondition.Friendly, 1);
+        InstantiateCards();
+        StartTurn();
+    }
+
+    public void BallSecondBall()
+    {
+        InitTextDeck(PitchCondition.Friendly, 2);
+        InstantiateCards();
+        StartTurn();
+    }
+
+    public void BallThirdBall()
+    {
+        InitTextDeck(PitchCondition.Friendly, 3);
+        InstantiateCards();
+        StartTurn();
+    }
+
+
+    public void HighlightShotPanel()
+    {
+        UIHighlightManager.Instance.HighlightObject(hand.gameObject);
+    }
+
     [ContextMenu("Start Turn")]
     public void StartTurn(bool incrementBalls = true)
     {
-        if (CurrntTurn >= ScoreManager.Instance.MaxBalls || ScoreManager.Instance.wickets < 1)
+        DestroyHandCards();
+        if (CurrntTurn >= ScoreManager_Tutorial.Instance.MaxBalls || ScoreManager_Tutorial.Instance.wickets < 1)
         {
             //Game ended 
-            return;    
+            return;
         }
         if (incrementBalls)
-            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+            ScoreManager_Tutorial.Instance.UpdateBallsAndOvers(CurrntTurn);
         if (ballerCard != null)
             Destroy(ballerCard);
-        ballerCard = InstantiateBallerCard(CurrentBallThrow);
-        BallThrowText.text = CurrentBallThrow.ToString();
 
+        if (CurrentBallThrow != null)
+            ballerCard = InstantiateBallerCard(CurrentBallThrow);
+        else
+        {
+            Debug.LogError("Current Ball throw is null");
+        }
+        //BallThrowText.text = CurrentBallThrow.ToString();
+
+        HandCards.Clear();
         // This is where we should start animating in the cards
         for (int i = 0; i < maxHandSize; i++)
         {
             DrawCard();
         }
 
-        Timer.Instance.StartTurnTimer();
+        Timer_Tutorial.Instance.StartTurnTimer();
         OnTurnStarted?.Invoke();
     }
     [ContextMenu("End Turn")]
@@ -111,10 +146,10 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     {
         if (DrawPile.Count <= 0)
         {
-            DrawPile = new List<AttackCardProps>(DiscardPile);
+            DrawPile = new List<AttackCardProps_Tutorial>(DiscardPile);
             DiscardPile.Clear();
         }
-        AttackCardProps card = DrawPile[0];
+        AttackCardProps_Tutorial card = DrawPile[0];
         DrawPile.RemoveAt(0);
         HandCards.Add(card);
         card.gameObject.SetActive(true); // Activate the card when drawn 
@@ -163,7 +198,7 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         DrawPile.Clear();
         foreach (var cardData in Deck)
         {
-            AttackCardProps card = Instantiate(cardPrefab, hand).GetComponent<AttackCardProps>();
+            AttackCardProps_Tutorial card = Instantiate(cardPrefab, hand).GetComponent<AttackCardProps_Tutorial>();
             card.cardData = cardData; // Set the card data
             DrawPile.Add(card);
             card.gameObject.SetActive(true); // Deactivate the card initially
@@ -186,42 +221,147 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         return ballerCard;
     }
 
+    void DestroyHandCards()
+    {
+        foreach (AttackCardProps_Tutorial card in HandCards)
+        {
+            Destroy(card.gameObject);
+        }
+    }
     
 
     [ContextMenu("Init Text Deck")]
-    void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
+void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int tutorialBallNumber = 0)
+{
+    Deck.Clear();
+
+        // Instead of always looping through all strategies,
+        // pick batting strategies based on tutorialBallNumber
+        switch (tutorialBallNumber)
+        {
+            case 0: // Ball 1 batting strategy set
+                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_0)))
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            case 1: // Ball 2 batting strategy set
+                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_1)))
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            case 2: // Ball 3 batting strategy set
+                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_2)))
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            case 3: // fallback for any other tutorialBallNumber
+                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_3)))
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            default:
+                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_0)))
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+}
+
+    // RandomizeDeck();
+    BallThrows.Clear();
+
+    // default bowler values
+    TypeOfBowler bowlerType = TypeOfBowler.Fast;
+    Side bowlerSide = Side.RightArm;
+
+    // create balls based on tutorialBallNumber
+    for (int i = 0; i < ScoreManager_Tutorial.Instance.MaxBalls; i++)
     {
-        Deck.Clear();
-        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_1)))
-        {
-            Deck.Add(new AttackCardData(strategy));
-        }
-        RandomizeDeck();
-        BallThrows.Clear();
+        BallThrow ballToAdd;
 
-        //Over - Fast Bowler Right Arm (6 balls)
-        // Initialize bowler variables outside the loop
-        TypeOfBowler bowlerType = TypeOfBowler.Fast;
-        Side bowlerSide = Side.RightArm;
-        
-        for (int i = 0; i < ScoreManager_Tutorial.Instance.MaxBalls; i++)
+        switch (tutorialBallNumber)
         {
-            // Randomize bowler type and side every 6 balls (start of each over)
-            if (i % 6 == 0)
-            {
-                bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
-                bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
-            }
-            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
+            case 1: // Ball 1
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.RightArm,
+                    BallType.Straight,
+                    BallLine.MiddleStump,
+                    BallLength.FullLength,
+                    pitchCondition
+                );
+                break;
+
+            case 2: // Ball 2
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.RightArm,
+                    BallType.Straight,
+                    BallLine.OutsideOff,
+                    BallLength.Short,
+                    pitchCondition
+                );
+                break;
+
+            case 3: // Ball 3
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.LeftArm,
+                    BallType.OutSwinger,
+                    BallLine.OffStump,
+                    BallLength.GoodLength,
+                    pitchCondition
+                );
+                break;
+
+            default:
+                ballToAdd = ExcelDataSOManager.Instance.outComeCalculator
+                    .GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+                break;
         }
+
+        BallThrows.Add(ballToAdd);
     }
+}
 
-    public enum BattingStarategyForTutorial_1
+    public enum BattingStarategyForTutorial_0
     {
         CutShotPush,
         StraightDriveNormal,
         OnDriveAggressive,
         PullShotLofted,
+    }
+
+    public enum BattingStarategyForTutorial_3
+    {
+        Leave,
+        CutShotAggressive,
+        SweepNormal,
+        SweepAggressive,
+    }
+
+    public enum BattingStarategyForTutorial_2
+    {
+        Leave,
+        StraightDrivePush,
+        CoverDriveNormal,
+        SquareDriveAggressive,
+    }
+
+    public enum BattingStarategyForTutorial_1
+    {
+        Leave,
+        StraightDriveAggressive,
+        CutShotPush,
+        SweepNormal,
     }
 
     /// <summary>

@@ -35,6 +35,18 @@ public class UIHighlightManager : MonoBehaviour
     private Vector3 originalScale;
     private Tweener pulseTween;
     
+    [System.Serializable]
+    public class HighlightData
+    {
+        public GameObject target;           // The UI element being highlighted
+        public GameObject overlay;          // The semi-transparent overlay behind it
+        public Transform originalParent;    // Original parent in hierarchy
+        public int originalSiblingIndex;    // Original sibling order
+        public Vector3 originalScale;       // Original scale
+        public Tweener pulseTween;          // DOTween instance for the pulsing animation
+    }
+    private Dictionary<GameObject, HighlightData> highlights = new Dictionary<GameObject, HighlightData>();
+
     private static UIHighlightManager instance;
     public static UIHighlightManager Instance
     {
@@ -51,34 +63,50 @@ public class UIHighlightManager : MonoBehaviour
         instance = this;
     }
     
-    public void HighlightObject(GameObject targetObject, bool allowClickToDismiss = true)
+public void HighlightObject(GameObject targetObject, bool allowClickToDismiss = true)
+{
+    if (targetObject == null)
     {
-        if (targetObject == null)
-        {
-            Debug.LogWarning("Cannot highlight null object!");
-            return;
-        }
-        
-        // Clear any existing highlight
-        ClearHighlight();
-        
-        currentHighlightedObject = targetObject;
-        
-        // Store original values
-        originalParent = targetObject.transform.parent;
-        originalSiblingIndex = targetObject.transform.GetSiblingIndex();
-        originalScale = targetObject.transform.localScale;
-        
-        // Create overlay BEFORE moving the target
-        CreateOverlay(allowClickToDismiss);
-        
-        // Move target object to be AFTER the overlay in hierarchy
-        targetObject.transform.SetAsLastSibling();
-        
-        // Start pulse animation
-        StartPulseAnimation(targetObject);
+        Debug.LogWarning("Cannot highlight null object!");
+        return;
     }
-    
+
+    // 👉 Check if this object is already highlighted
+    if (highlights.ContainsKey(targetObject))
+    {
+        // Already highlighted: do nothing and leave the existing highlight intact
+        return;
+    }
+
+    // Prepare new highlight entry
+    HighlightData data = new HighlightData
+    {
+        target = targetObject,
+        originalParent = targetObject.transform.parent,
+        originalSiblingIndex = targetObject.transform.GetSiblingIndex(),
+        originalScale = targetObject.transform.localScale
+    };
+
+    // Create overlay for this specific object
+    // data.overlay = CreateOverlay(data, allowClickToDismiss);
+
+    // Move target above overlay so it stays visible
+    targetObject.transform.SetAsLastSibling();
+
+    // Start pulse animation
+    data.pulseTween = StartPulseAnimation(targetObject, data.originalScale);
+
+    // Store in dictionary so it can be cleared individually later
+    highlights[targetObject] = data;
+}
+
+    private Tweener StartPulseAnimation(GameObject targetObject, Vector3 originalScale)
+    {
+        return targetObject.transform
+            .DOScale(originalScale * settings.pulseScale, settings.pulseDuration)
+            .SetEase(settings.pulseEase)
+            .SetLoops(-1, LoopType.Yoyo);
+    }
     void CreateOverlay(bool allowClickToDismiss)
     {
         // Create overlay in the same parent as the target object
@@ -136,33 +164,44 @@ public class UIHighlightManager : MonoBehaviour
     
     public void ClearHighlight()
     {
-        // Kill animation
-        if (pulseTween != null)
+        List<GameObject> keys = new List<GameObject>(highlights.Keys);
+        foreach (GameObject obj in keys)
         {
-            pulseTween.Kill();
-            pulseTween = null;
+            ClearHighlightFromObj(obj);
         }
-        
-        // Reset object position and scale
-        if (currentHighlightedObject != null)
-        {
-            currentHighlightedObject.transform.SetSiblingIndex(originalSiblingIndex);
-            currentHighlightedObject.transform.DOScale(originalScale, 0.2f);
-        }
-        
-        // Fade out and destroy overlay
-        if (currentOverlay != null)
-        {
-            Image overlayImage = currentOverlay.GetComponent<Image>();
-            overlayImage.DOFade(0, settings.fadeInDuration * 0.5f)
-                .OnComplete(() => {
-                    if (currentOverlay != null)
-                        Destroy(currentOverlay);
-                });
-        }
-        
-        currentHighlightedObject = null;
     }
+
+    public void ClearHighlightFromObj(GameObject targetObject)
+    {
+        if (!highlights.ContainsKey(targetObject))
+            return;
+
+        HighlightData data = highlights[targetObject];
+
+        // Kill animation
+        if (data.pulseTween != null)
+        {
+            data.pulseTween.Kill();
+        }
+
+        // Reset transform
+        if (data.target != null)
+        {
+            data.target.transform.SetSiblingIndex(data.originalSiblingIndex);
+            data.target.transform.DOScale(data.originalScale, 0.2f);
+        }
+
+        // Fade out and destroy overlay
+        if (data.overlay != null)
+        {
+            Image overlayImage = data.overlay.GetComponent<Image>();
+            overlayImage.DOFade(0, settings.fadeInDuration * 0.5f)
+                .OnComplete(() => Destroy(data.overlay));
+        }
+
+        highlights.Remove(targetObject);
+    }
+
     
     void OnDestroy()
     {
