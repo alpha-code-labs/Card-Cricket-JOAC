@@ -53,7 +53,6 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
         }
     }
     [YarnCommand("ShowRewardImage")]
-    [ContextMenu("ShowRewardImage")]
     public static void ShowRewardImage(string rewardType)
     {
         Reward reward;
@@ -64,19 +63,22 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
             instance.RewardImage.sprite = sprite;
             instance.RewardImage.color = new Color(1, 1, 1, 0);
             instance.RewardImage.gameObject.SetActive(true);
-            instance.RewardImage.DOFade(1, 0.5f).OnComplete(() =>
-            {
-                instance.RewardImage.DOFade(0, 0.5f).SetDelay(2f).OnComplete(() =>
-                {
-                    instance.RewardImage.gameObject.SetActive(false);
-                });
-            });
+            instance.RewardImage.DOFade(1, 0.5f);
         }
         else
         {
             Debug.LogWarning($"Sprite with name {rewardType} not found in Resources/Sprites/Rewards/");
         }
     }
+    [YarnCommand("HideRewardImage")]
+    public static void HideRewardImage()
+    {
+        instance.RewardImage.DOFade(0, 0.5f).SetDelay(2f).OnComplete(() =>
+                {
+                    instance.RewardImage.gameObject.SetActive(false);
+                });
+    }
+
 }
 enum Reward
 {
