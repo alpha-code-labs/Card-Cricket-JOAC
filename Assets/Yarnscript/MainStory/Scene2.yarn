@@ -9,52 +9,52 @@ position: 0,0
 
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Captain. Good—you came. Our lane doesn't have a coach, so you get me. Today, before we step out, I'm telling you the spine of batting in this world. No secrets, just honesty.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Ok.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: There are five things you'll carry every time you pick up the bat. Not heavy, but important. 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: One—Eyes. See before you decide. Greed makes you blind; focus makes you early. 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Two—Feet. Quiet feet, quick mind. Don't rush like a bus late for the depot. Settle first. 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Three—Hands. Gentle guide, not angry hammer. Let the bat speak, you just hold the mic. 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Four—Timing. Poor people like us can't waste anything—not food, not movement, not moments. Wait for your moment. 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Five—Temper. Runs come and go; manners stay. Miss once, breathe. Miss twice, breathe longer.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Eyes, feet, hands, timing, tempe... five.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Now three rules of our lane. Rule A: Respect the bat—face up when it rests, head up when you walk. Rule B: Respect the bowler—even when you learn their tricks. Rule C: Respect yourself—no throwing, no sulking, no excuses.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: What about winning?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Winning is a side-effect of good habits. We practice habits. The rest follows.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Picture the dust, the chalk line, the noise. Keep your promises: see, set, guide, wait, and stay calm. When things shake, remember who you're playing for.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: For us.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: For us. Alright—captain, … sleeves up. Words end here.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Ready? Step out with a steady heart.
 
 <<HideAllCharacters>>
