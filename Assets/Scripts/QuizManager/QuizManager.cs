@@ -363,7 +363,7 @@ public class QuizManager : MonoBehaviour
 
         // Step 1: Show loading text
         if (loadingText != null)
-            loadingText.text = "Calculating Score...";
+            loadingText.text = "Calculating Percentage...";
 
         // Step 2: Animate progress bar
         if (progressBar != null)
