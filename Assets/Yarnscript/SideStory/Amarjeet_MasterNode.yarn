@@ -440,5 +440,5 @@ As Raju walks away from the temple for the final time in this series of teaching
 
 <<set $Amarjeet_Complete = true>>
 // <<EndEvent true>>
-<<ShowReardImage "Foresight">>
+<<ShowRewardImage "Foresight">>
 ===

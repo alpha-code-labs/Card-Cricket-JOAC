@@ -477,5 +477,5 @@ Kamla: Beta, you already have made me proud. Every morning when you chose to hel
 As Raju settles into sleep carrying his mother's unconditional promise of support and belief in his cricket dreams, he understands that he has received something more precious than any material advantage - the absolute faith of someone who knows his character intimately and believes in his potential to achieve greatness while remaining true to his values. Kamla's commitment represents not just support for his athletic goals but validation of his worth as a person capable of transforming dreams into reality through dedication and integrity.
 
 <<set $Kamla_Complete = true>>
-<<ShowReardImage "Humility">>
-===
+<<ShowRewardImage "Humility">>
+=== 

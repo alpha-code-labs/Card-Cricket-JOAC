@@ -263,6 +263,6 @@ Cricket Dada: And you taught me that wisdom flows both ways, beta. Sometimes the
 As Raju prepares to leave the hospital for the final time in this chapter of his relationship with Cricket Dada, he carries with him the profound satisfaction of witnessing a family reunited through courage, wisdom, and the practical application of values learned through cricket. The transformation of a lonely old man into a surrounded patriarch represents more than personal success - it demonstrates how genuine concern for others and thoughtful advice can create positive change that extends far beyond the original relationship, teaching him that meaningful impact often comes through quiet acts of caring rather than grand gestures.
 
 <<set $Cricket_Dada_Complete = true>>
-<<GiveReward "Humility">>
-<<ShowReardImage "Humility">>
+
+<<ShowRewardImage "Humility">>
 ===

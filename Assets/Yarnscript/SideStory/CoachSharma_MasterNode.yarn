@@ -400,5 +400,5 @@ CoachSharma: Remember this moment, boy. You've earned recognition not through fa
 As Raju walks away from the academy carrying the promise of unofficial coaching and tournament opportunity, he understands that his three weeks of unwavering commitment have achieved something unprecedented - earning respect and opportunity through character rather than currency. The weight of representing not just his own dreams but the potential of every talented young person denied opportunity by economic circumstances settles on his shoulders, transforming personal achievement into a chance to challenge the fundamental assumptions about who deserves access to excellence.
 
 <<set $CoachSharma_Complete = true>>
-<<ShowReardImage "Humility">>
+<<ShowRewardImage "Humility">>
 ===
