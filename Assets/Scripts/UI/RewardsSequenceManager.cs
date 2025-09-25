@@ -29,6 +29,7 @@ public class RewardsSequenceManager : MonoBehaviour
         RewardPanel.SetActive(false);
         RewardImage.gameObject.SetActive(false);
         Bar.color = new Color(1, 1, 1, 0);
+        BarFillImage.color = new Color(1, 1, 1, 0);
         RankUpText.gameObject.SetActive(false);
         rewardSpriteDict = new Dictionary<Reward, Sprite>();
         foreach (var sprite in sprites)
@@ -82,6 +83,7 @@ public class RewardsSequenceManager : MonoBehaviour
             seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
             seq.Join(instance.RewardImage.DOFade(1, 0.5f));
             seq.Append(instance.Bar.DOFade(1, 0.5f));
+            seq.Join(instance.BarFillImage.DOFade(1, 0.5f));
             seq.Append(instance.BarFillImage.DOFillAmount(targetFill, 2f).SetEase(Ease.OutQuad));
             seq.AppendCallback(() =>
             {
@@ -90,6 +92,7 @@ public class RewardsSequenceManager : MonoBehaviour
                 instance.RankUpText.gameObject.SetActive(true);
             });
             seq.Append(instance.RankUpText.DOFade(1, 0.5f));
+            seq.SetId("ShowRewardSequence");
         }
         else
         {
@@ -99,20 +102,28 @@ public class RewardsSequenceManager : MonoBehaviour
     [YarnCommand("HideRewardImage")]
     public static void HideRewardImage()
     {
+        DOTween.Kill("ShowRewardSequence", true);
         Sequence hideSeq = DOTween.Sequence();
         hideSeq.Append(instance.RewardImage.DOFade(0, 0.5f));
         hideSeq.Join(instance.Bar.DOFade(0, 0.5f));
+        hideSeq.Join(instance.BarFillImage.DOFade(0, 0.5f));
         hideSeq.Join(instance.RankUpText.DOFade(0, 0.5f));
         hideSeq.SetDelay(2f).OnComplete(() =>
         {
-            instance.RewardImage.transform.localScale = Vector3.zero;
-            instance.RewardImage.color = new Color(1, 1, 1, 0);
-            instance.Bar.color = new Color(1, 1, 1, 0);
-            instance.BarFillImage.fillAmount = 0;
-            instance.RankUpText.color = new Color(1, 1, 1, 0);
-            instance.RewardImage.gameObject.SetActive(false);
-            instance.RankUpText.gameObject.SetActive(false);
-            instance.RewardPanel.SetActive(false);
+            instance.ResetSequence();
         });
+        hideSeq.SetId("HideRewardSequence").OnKill(() => instance.ResetSequence());
+    }
+    void ResetSequence()
+    {
+        instance.RewardImage.transform.localScale = Vector3.zero;
+        instance.RewardImage.color = new Color(1, 1, 1, 0);
+        instance.Bar.color = new Color(1, 1, 1, 0);
+        instance.BarFillImage.color = new Color(1, 1, 1, 0);
+        instance.BarFillImage.fillAmount = 0;
+        instance.RankUpText.color = new Color(1, 1, 1, 0);
+        instance.RewardImage.gameObject.SetActive(false);
+        instance.RankUpText.gameObject.SetActive(false);
+        instance.RewardPanel.SetActive(false);
     }
 }
