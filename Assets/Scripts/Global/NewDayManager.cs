@@ -26,6 +26,7 @@ public class NewDayManager : MonoBehaviour
     }
     public void BeginNewDaySequence()
     {
+        Debug.Log("Beginning New Day Sequence");
         currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
         StartCoroutine(StartEventWithTransition());
     }
@@ -53,13 +54,13 @@ public class NewDayManager : MonoBehaviour
             dateText.text = "";
         }
 
-        // Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
+        Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
 
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
-                // if (currentEventIndex != 0)
-                //     yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
+                if (currentEventIndex != 0)
+                    yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
@@ -74,7 +75,6 @@ public class NewDayManager : MonoBehaviour
                 //Load Special Event
                 break;
             case TypeOfEvent.SkipDayOrEvening:
-                yield return DisplayTextThenFade("");
                 if (isEvening)
                     EndDay();
                 isEvening = true;
