@@ -108,41 +108,73 @@ public class NewDayManager : MonoBehaviour
     {
         // Calculate the total number of days between dates
         int totalDays = (endDate - startDate).Days;
-        float animationDuration = 2f; // Total duration for the animation
-        float timePerDay = animationDuration / Math.Max(totalDays, 1);
-        
+
         // Start with the previous date
         DateTime currentAnimatedDate = startDate;
         string currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
         dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
-        
+
         // Make sure the text is visible
         if (dateText.alpha != 1f)
         {
             yield return dateText.DOFade(1f, 0.3f).WaitForCompletion();
         }
-        
-        // Wait a moment to show the starting date
-        yield return new WaitForSeconds(0.5f);
-        
-        // Animate through each day
+
+        // Hold at the starting date for 1 second
+        yield return new WaitForSeconds(1f);
+
+        // Animate through each day with variable speed
         for (int i = 0; i < totalDays; i++)
         {
             currentAnimatedDate = startDate.AddDays(i + 1);
             currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
-            
-            // Create a smooth transition effect
-            yield return dateText.DOFade(0.7f, timePerDay * 0.3f).WaitForCompletion();
-            dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
-            yield return dateText.DOFade(1f, timePerDay * 0.3f).WaitForCompletion();
-            
-            // Wait for the remaining time for this day
-            if (timePerDay > 0.6f)
+
+            // Calculate speed based on position in the sequence using exponential acceleration
+            float timeForThisDay;
+
+            if (totalDays <= 2)
             {
-                yield return new WaitForSeconds(timePerDay - 0.6f);
+                // For short sequences, use moderate speed
+                timeForThisDay = 0.3f;
+            }
+            else
+            {
+                // Use exponential curve for dramatic acceleration/deceleration
+                // Map i to a range from 0 to 1
+                float normalizedPosition = (float)i / (totalDays - 1); // 0 to 1
+
+                // Create exponential curve that goes from slow -> instant -> slow
+                // Using distance from center (0.5) to create symmetrical exponential decay
+                float distanceFromCenter = Mathf.Abs(normalizedPosition - 0.5f) * 2f; // 0 to 1 (0 at center, 1 at edges)
+
+                // Exponential function: e^(4x) where x goes from 0 (center) to 1 (edges)
+                // This creates dramatic exponential acceleration towards the center
+                float exponentialValue = Mathf.Exp(4f * distanceFromCenter);
+
+                // Map exponential value to time range [0, 0.6]
+                // At center: distanceFromCenter = 0, exp(0) = 1, timeForThisDay ≈ 0
+                // At edges: distanceFromCenter = 1, exp(4) ≈ 54.6, timeForThisDay = 0.6
+                float maxTime = 0.6f;  // Slow at edges
+                timeForThisDay = (exponentialValue - 1f) / (Mathf.Exp(5f) - 1f) * maxTime;
+
+                // Clamp to ensure we don't go negative and have a tiny minimum
+                timeForThisDay = Mathf.Max(timeForThisDay, 0.001f);
+            }
+
+            // Create a smooth transition effect with variable timing
+            float fadeTime = timeForThisDay * 0.3f;
+            yield return dateText.DOFade(0.7f, fadeTime).WaitForCompletion();
+            dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
+            yield return dateText.DOFade(1f, fadeTime).WaitForCompletion();
+
+            // Wait for the remaining time for this day
+            float remainingTime = timeForThisDay - (fadeTime * 2);
+            if (remainingTime > 0)
+            {
+                yield return new WaitForSeconds(remainingTime);
             }
         }
-        
+
         // Final format showing "from -> to" 
         yield return new WaitForSeconds(0.5f);
         yield return dateText.DOFade(0.5f, 0.3f).WaitForCompletion();
@@ -150,8 +182,8 @@ public class NewDayManager : MonoBehaviour
         string endDateString = endDate.ToString("yyyy/MM/dd");
         dateText.text = PrettyStrings.GetPrettyDateString(startDateString) + "\n to \n" + PrettyStrings.GetPrettyDateString(endDateString);
         yield return dateText.DOFade(1f, 0.5f).WaitForCompletion();
-        
-        // Hold the final result for a moment
+
+        // Hold the final result for 1 second
         yield return new WaitForSeconds(1f);
     }
     VideoPlayer videoPlayer;
