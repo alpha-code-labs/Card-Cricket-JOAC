@@ -3610,6 +3610,10 @@ PrefabInstance:
       value: Upgrade your resourcefulness by exploring the map to increase the number
         of shots in your shot panel
       objectReference: {fileID: 0}
+    - target: {fileID: 4988134806942914502, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
+      propertyPath: currencyType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6028890212820785526, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5898,6 +5902,10 @@ PrefabInstance:
       value: Upgrade your foresight by exploring the map to increase your time available
         for every shot
       objectReference: {fileID: 0}
+    - target: {fileID: 4988134806942914502, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
+      propertyPath: currencyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6028890212820785526, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7291,6 +7299,10 @@ PrefabInstance:
     - target: {fileID: 4988134806942914502, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
       propertyPath: tooltipText
       value: Upgrade your humility by exploring the map to increasee your lives.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988134806942914502, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
+      propertyPath: currencyType
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6028890212820785526, guid: f426d5f234597bc40aa04e86fe2b756c, type: 3}
       propertyPath: m_Pivot.x
