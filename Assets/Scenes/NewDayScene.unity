@@ -317,13 +317,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37c0e9e2127b754ea4b2c7dd3b05f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RewardPanel: {fileID: 811321997}
   RewardImage: {fileID: 2114368062}
+  Bar: {fileID: 610791334}
   BarFillImage: {fileID: 1643593794}
   sprites:
   - {fileID: 21300000, guid: b6f64e1e2aa2a654aa342b58c22bf8b6, type: 3}
   - {fileID: 21300000, guid: 03900f05090bb7c4a80da6287f40c20f, type: 3}
   - {fileID: 21300000, guid: 62ff70791944d3543b56f55e44fcd100, type: 3}
   - {fileID: 21300000, guid: a13abf4f548a63843b27a58ecdf0b7f1, type: 3}
+  RankUpText: {fileID: 2075037821}
 --- !u!1001 &1095728289
 PrefabInstance:
   m_ObjectHideFlags: 0
