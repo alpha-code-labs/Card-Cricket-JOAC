@@ -10,13 +10,13 @@ position: 0,0
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite "KohliwadaGroundground">>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: This is it captain. We are chasing. We need to get to 125 in 10 overs. Our bowlers have been battered and bruised. We need to return the favor Are you up for it?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I am all in. Completely focussed. Ready to roar.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

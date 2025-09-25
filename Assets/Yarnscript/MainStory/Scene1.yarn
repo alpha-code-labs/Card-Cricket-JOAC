@@ -183,7 +183,7 @@ Ramu: I had my turn.
 Raju: Bhai… when I hold it, my hands shake.
 
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: That's because you can feel its history. Listen to it. It will tell you: "Keep your head still. Play late. Don't swing like a ceiling fan."
 
 <<SetCharacterExpression "Ramu" "Neutral">>
