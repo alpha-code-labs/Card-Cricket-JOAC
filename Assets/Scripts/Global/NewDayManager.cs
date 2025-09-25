@@ -45,7 +45,7 @@ public class NewDayManager : MonoBehaviour
             SetFilmGrain(true);
             DateTime previousDate = CalanderSystem.instance.GetPreviousDateTime(GameManager.instance.currentSaveData.currentDate);
             DateTime currentDate = DateTime.Parse(GameManager.instance.currentSaveData.currentDate);
-            yield return StartCoroutine(AnimateDateProgression(previousDate, currentDate));
+            yield return AnimateDateProgression(previousDate, currentDate);
         }
         else
         {
@@ -58,7 +58,8 @@ public class NewDayManager : MonoBehaviour
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
-                yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
+                // if (currentEventIndex != 0)
+                //     yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
@@ -176,15 +177,8 @@ public class NewDayManager : MonoBehaviour
         }
 
         // Final format showing "from -> to" 
-        yield return new WaitForSeconds(0.5f);
-        yield return dateText.DOFade(0.5f, 0.3f).WaitForCompletion();
-        string startDateString = startDate.ToString("yyyy/MM/dd");
-        string endDateString = endDate.ToString("yyyy/MM/dd");
-        dateText.text = PrettyStrings.GetPrettyDateString(startDateString) + "\n to \n" + PrettyStrings.GetPrettyDateString(endDateString);
-        yield return dateText.DOFade(1f, 0.5f).WaitForCompletion();
-
-        // Hold the final result for 1 second
         yield return new WaitForSeconds(1f);
+        yield return dateText.DOFade(0.5f, 1f).WaitForCompletion();
     }
     VideoPlayer videoPlayer;
     void SetFilmGrain(bool enable)
