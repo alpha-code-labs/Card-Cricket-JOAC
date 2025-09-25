@@ -1,24 +1,24 @@
-﻿title: ShivPrasadPrasad
+﻿title: ShivPrasad
 ---
-<<if $ShivPrasadPrasad_Day==0>>//This is for testing purpose only, remove later
-    <<jump ShivPrasadPrasad_Day1>>  //This is for testing purpose only, remove later
-<<elseif $ShivPrasadPrasad_Day==1>>
-    <<jump ShivPrasadPrasad_Day1>>
-<<elseif $ShivPrasadPrasad_Day==2>>
-    <<jump ShivPrasadPrasad_Day2>>
-<<elseif $ShivPrasadPrasad_Day==3>>
-    <<jump ShivPrasadPrasad_Day3>>
-<<elseif $ShivPrasadPrasad_Day==4>>
-    <<jump ShivPrasadPrasad_Day4>>
-<<elseif $ShivPrasadPrasad_Day==5>>
-    <<jump ShivPrasadPrasad_Day5>>
-<<elseif $ShivPrasadPrasad_Day==6>>
-    <<jump ShivPrasadPrasad_Day6>>
-<<elseif $ShivPrasadPrasad_Day==7>>
-    <<jump ShivPrasadPrasad_Day7>>
+<<if $ShivPrasad_Day==0>>//This is for testing purpose only, remove later
+    <<jump ShivPrasad_Day1>>  //This is for testing purpose only, remove later
+<<elseif $ShivPrasad_Day==1>>
+    <<jump ShivPrasad_Day1>>
+<<elseif $ShivPrasad_Day==2>>
+    <<jump ShivPrasad_Day2>>
+<<elseif $ShivPrasad_Day==3>>
+    <<jump ShivPrasad_Day3>>
+<<elseif $ShivPrasad_Day==4>>
+    <<jump ShivPrasad_Day4>>
+<<elseif $ShivPrasad_Day==5>>
+    <<jump ShivPrasad_Day5>>
+<<elseif $ShivPrasad_Day==6>>
+    <<jump ShivPrasad_Day6>>
+<<elseif $ShivPrasad_Day==7>>
+    <<jump ShivPrasad_Day7>>
 <<endif>>
 ===
-title: ShivPrasadPrasad_Day1
+title: ShivPrasad_Day1
 tags: 
 position: -7,-175
 ---
@@ -58,10 +58,10 @@ Shiv Prasad: I'm not asking you to give up joy, beta. I'm asking you to be reali
 // Scene Conclusion
 As the evening settles around their small home with ShivPrasad's practical wisdom hanging heavy in the air, Raju understands that the conversation has laid bare the fundamental tension between dreams and security that defines so many families in their circumstances. His father's words carry the weight of lived experience and genuine concern, yet they also feel like barriers erected around the very thing that makes Raju feel most alive and hopeful about his future.
 
-<<set $ShivPrasadPrasad_Day = 2>>
+<<set $ShivPrasad_Day = 2>>
 <<EndEvent true>>
 ===
-title: ShivPrasadPrasad_Day2
+title: ShivPrasad_Day2
 tags: 
 position: -75,-229
 ---
@@ -104,10 +104,10 @@ Shiv Prasad: ...If you're serious about this balance, if you truly believe you c
 // Scene Conclusion
 As the second day's conversation concludes with ShivPrasad's challenge hanging in the air like a bridge between doubt and possibility, Raju recognizes that his father has offered him something precious and terrifying - a genuine opportunity to prove that passion and responsibility can coexist. The weight of expectation settles on his young shoulders, transforming the theoretical possibility of pursuing cricket into a concrete test that will require every ounce of discipline, wisdom, and maturity he can summon.
 
-<<set $ShivPrasadPrasad_Day = 3>>
+<<set $ShivPrasad_Day = 3>>
 <<EndEvent true>>
 ===
-title: ShivPrasadPrasad_Day3
+title: ShivPrasad_Day3
 tags: 
 position: -75,-229
 ---
@@ -154,18 +154,18 @@ Raju: I understand, Baba. And I won't let you down. Seven days from now, you'll 
 Raju: How should I approach these seven days, Baba? What's the best way to prove I can handle both responsibilities?
 
 -> Raju: I'll prove myself by focusing completely on studies, Baba. Let me show you academics can be my priority. I'll reduce my cricket time dramatically and put everything into mathematics.
-    <<jump ShivPrasadPrasad_Day3a>>
+    <<jump ShivPrasad_Day3a>>
 -> Raju: I'll show you cricket discipline actually helps my studies, Baba. Watch me use both together. Let me prove they support each other instead of competing.
-    <<jump ShivPrasadPrasad_Day3b>>
+    <<jump ShivPrasad_Day3b>>
 -> Raju: I'll prove that my cricket passion gives me the energy to excel at everything, Baba. Watch how my love for the game motivates all my efforts.
-    <<jump ShivPrasadPrasad_Day3c>>
+    <<jump ShivPrasad_Day3c>>
 
 ===
-title: ShivPrasadPrasad_Day3a
+title: ShivPrasad_Day3a
 tags:
 position: -308,129
 ---
-<<set $ShivPrasadPrasad_Path = "a">>
+<<set $ShivPrasad_Path = "a">>
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'll prove myself by focusing completely on studies, Baba. Let me show you academics can be my priority. I'll reduce my cricket time dramatically and put everything into mathematics.
 
@@ -181,14 +181,14 @@ Shiv Prasad: Your willingness to sacrifice shows maturity, beta. But remember - 
 // Scene Conclusion
 As Raju commits to demonstrating his priorities through dramatic reduction in cricket time, both father and son understand that this sacrifice represents more than academic preparation - it embodies a test of character that will reveal whether his love for cricket stems from genuine passion or mere avoidance of more difficult responsibilities. The choice to prioritize studies completely reflects a maturity that impresses ShivPrasad while creating internal tension for Raju about temporarily abandoning the activity that brings him the most joy.
 
-<<set $ShivPrasadPrasad_Day = 4>>
+<<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
 ===
-title: ShivPrasadPrasad_Day3b
+title: ShivPrasad_Day3b
 tags:
 position: -55,122
 ---
-<<set $ShivPrasadPrasad_Path = "b">>
+<<set $ShivPrasad_Path = "b">>
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll show you cricket discipline actually helps my studies, Baba. Watch me use both together. Let me prove they support each other instead of competing.
 
@@ -204,14 +204,14 @@ Shiv Prasad: Interesting theory. But theories and practice are different things.
 // Scene Conclusion
 As Raju articulates his theory about the transferable benefits of cricket discipline to academic study, both father and son enter uncharted territory where sports and education might complement rather than compete with each other. The challenge of proving this integration requires Raju to become conscious of his learning processes in ways that most children never attempt, transforming his approach to both cricket and mathematics into a sophisticated experiment in personal development.
 
-<<set $ShivPrasadPrasad_Day = 4>>
+<<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
 ===
-title: ShivPrasadPrasad_Day3c
+title: ShivPrasad_Day3c
 tags:
 position: 184,122
 ---
-<<set $ShivPrasadPrasad_Path = "c">>
+<<set $ShivPrasad_Path = "c">>
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll prove that my cricket passion gives me the energy to excel at everything, Baba. Watch how my love for the game motivates all my efforts.
 
@@ -227,21 +227,21 @@ Shiv Prasad: Confidence is meaningless without results, beta. Show me this crick
 // Scene Conclusion
 As Raju attempts to harness his cricket passion as fuel for academic excellence, he enters a delicate balancing act where maintaining enthusiasm for sports must somehow enhance rather than distract from mathematical study. The challenge of proving that confidence transfers between domains requires him to become more conscious of his emotional and mental states, transforming the test preparation into an experiment in motivation and self-awareness that could validate or disprove his theory about passion's power.
 
-<<set $ShivPrasadPrasad_Day = 4>>
+<<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
 ===
-title: ShivPrasadPrasad_Day4
+title: ShivPrasad_Day4
 ---
-<<if $ShivPrasadPrasad_Path=="a">>
-    <<jump ShivPrasadPrasad_Day4a>>
-<<elseif $ShivPrasadPrasad_Path=="b">>
-    <<jump ShivPrasadPrasad_Day4b>>
-<<elseif $ShivPrasadPrasad_Path=="c">>
-    <<jump ShivPrasadPrasad_Day4c>>
+<<if $ShivPrasad_Path=="a">>
+    <<jump ShivPrasad_Day4a>>
+<<elseif $ShivPrasad_Path=="b">>
+    <<jump ShivPrasad_Day4b>>
+<<elseif $ShivPrasad_Path=="c">>
+    <<jump ShivPrasad_Day4c>>
 <<endif>>
 ===
 
-title: ShivPrasadPrasad_Day4a
+title: ShivPrasad_Day4a
 tags:
 ---
 <<PlayBackgroundMusic "Light">>
@@ -252,10 +252,10 @@ Raju commits to intensive academic focus, dramatically reducing cricket time to 
 
 The transformation in their home's daily rhythm becomes apparent as Raju's cricket bat remains untouched while textbooks and notebooks spread across every available surface, his commitment to academic excellence creating an atmosphere of intense concentration that both impresses and concerns his father. The sacrifice of cricket time represents more than strategic test preparation - it demonstrates a level of self-discipline that suggests genuine readiness to handle the competing demands of dreams and duty.
 
-<<jump ShivPrasadPrasad_Day5>>
+<<jump ShivPrasad_Day5>>
 ===
 
-title: ShivPrasadPrasad_Day4b
+title: ShivPrasad_Day4b
 tags:
 ---
 <<PlayBackgroundMusic "Light">>
@@ -266,10 +266,10 @@ Raju demonstrates systematic integration of cricket-learned discipline with acad
 
 The methodical approach that Raju brings to his mathematics preparation reflects the same systematic thinking he applies to cricket technique improvement, creating a fascinating demonstration of how athletic discipline can indeed enhance academic performance when consciously applied. His study sessions take on the structure and intensity of cricket practice, with clear goals, measurable progress, and the kind of focused attention that transforms routine homework into purposeful skill development.
 
-<<jump ShivPrasadPrasad_Day5>>
+<<jump ShivPrasad_Day5>>
 ===
 
-title: ShivPrasadPrasad_Day4c
+title: ShivPrasad_Day4c
 tags:
 ---
 <<PlayBackgroundMusic "Light">>
@@ -280,15 +280,15 @@ Raju maintains his cricket passion while channeling that energy and confidence i
 
 The high energy that Raju brings to both cricket practice and mathematics study creates an atmosphere of intense activity in their home, though the sustainability of this approach remains questionable as the days progress. His belief that cricket success can fuel academic achievement faces the practical test of whether enthusiasm can substitute for the methodical, sometimes tedious work that mathematical mastery requires, while his father observes with growing concern about the wisdom of maintaining such intensity across multiple demanding activities.
 
-<<jump ShivPrasadPrasad_Day5>>
+<<jump ShivPrasad_Day5>>
 ===
 
-title: ShivPrasadPrasad_Day5
+title: ShivPrasad_Day5
 ---
 <<PlayBackgroundMusic "Light">>
 <<SetBGSprite HutInterior>>
 
-<<if $ShivPrasadPrasad_Path=="a">>
+<<if $ShivPrasad_Path=="a">>
     // Path A continuation
     <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: I see you've been studying for hours every day, beta. Your discipline is remarkable. But tell me - do you miss cricket? Are you struggling without it?
@@ -298,7 +298,7 @@ title: ShivPrasadPrasad_Day5
 
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: Your sacrifice shows real character, beta. Perhaps you're more mature than I gave you credit for.
-<<elseif $ShivPrasadPrasad_Path=="b">>
+<<elseif $ShivPrasad_Path=="b">>
     // Path B continuation
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: I have to admit, beta - your study methods have become much more organized. This systematic approach... you really learned this from cricket practice?
@@ -308,7 +308,7 @@ title: ShivPrasadPrasad_Day5
 
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized, beta. You're showing me something I hadn't considered.
-<<elseif $ShivPrasadPrasad_Path=="c">>
+<<elseif $ShivPrasad_Path=="c">>
     // Path C continuation
     <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: You seem energized by your cricket practice, beta. But I need to see this energy actually helping your mathematics, not just making you feel good.
@@ -320,11 +320,11 @@ title: ShivPrasadPrasad_Day5
     Shiv Prasad: Your energy is certainly high, beta. But energy without proper direction can be wasteful. Show me directed results.
 <<endif>>
 
-<<set $ShivPrasadPrasad_Day = 6>>
+<<set $ShivPrasad_Day = 6>>
 <<EndEvent true>>
 ===
 
-title: ShivPrasadPrasad_Day6
+title: ShivPrasad_Day6
 tags:
 ---
 <<PlayBackgroundMusic "Light">>
@@ -368,11 +368,11 @@ Raju: I will, Baba. These three days have been hard because I'm still learning h
 // Scene Conclusion
 As the sixth day concludes with both father and son acknowledging the complexity of balancing passion and responsibility, the conversation has evolved from simple opposition to nuanced understanding of the real challenges involved in pursuing multiple demanding goals simultaneously. Raju's exhaustion has revealed the practical limitations of his ambitious approach, while his determination to continue despite difficulty has demonstrated a level of commitment that earns his father's growing respect, setting the stage for the final test that will determine whether dreams and duty can indeed coexist.
 
-<<set $ShivPrasadPrasad_Day = 7>>
+<<set $ShivPrasad_Day = 7>>
 <<EndEvent true>>
 ===
 
-title: ShivPrasadPrasad_Day7
+title: ShivPrasad_Day7
 tags:
 ---
 <<PlayBackgroundMusic "Light">>
@@ -427,6 +427,6 @@ Shiv Prasad: Remember, beta - this test is just the beginning. Every day from no
 // Scene Conclusion
 As Raju prepares to leave for school carrying both his mathematics preparation and his father's conditional support, he understands that the test ahead represents more than academic evaluation - it embodies the culmination of a week-long demonstration that passion and responsibility can indeed coexist when approached with sufficient discipline and maturity. The promise of cricket support that awaits successful performance creates both motivation and pressure, while the ongoing requirement to maintain balance ensures that this test marks the beginning rather than the end of his journey to prove that dreams and duty can work together.
 
-<<set $ShivPrasadPrasad_Complete = true>>
-<<ShowRewardImage "Humility">>
+<<set $ShivPrasad_Complete = true>>
+<<jump Humility>>
 ===

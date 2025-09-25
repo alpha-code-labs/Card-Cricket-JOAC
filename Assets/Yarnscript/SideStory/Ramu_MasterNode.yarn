@@ -1,7 +1,7 @@
 ﻿title: Ramu
 ---
 <<if $Ramu_Day==0>>
-    <<jump Ramu_Day1>>
+    <<jump Ramu_Day6>>
 <<elseif $Ramu_Day==1>>
     <<jump Ramu_Day1>>
 <<elseif $Ramu_Day==2>>
@@ -557,5 +557,7 @@ Ramu: Now go show them what my little champion can do. And remember - no matter 
 As the eighth morning concludes with Ramu's commitment to tournament registration and the presentation of a handcrafted bat that represents both practical support and emotional investment in his brother's dreams, both participants understand that they have successfully completed a transformation from skeptical evaluation to wholehearted partnership in pursuing cricket excellence. The combination of proven dedication, community recognition, and family support has created conditions that justify taking the next step from private practice to public competition, while the custom equipment symbolizes the kind of personal investment that turns individual dreams into shared family projects worthy of significant sacrifice and support.
 
 <<set $Ramu_Complete = true>>
-<<ShowRewardImage "Courage">>
+<<jump Courage>>
+
+
 ===

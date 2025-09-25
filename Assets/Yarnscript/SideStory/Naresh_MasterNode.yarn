@@ -438,5 +438,5 @@ Naresh: Go on then, scholar. Show me if all that watching and note-taking transl
 As Raju steps into the professional cricket facility that has been the object of his dreams and observations for seven days, he carries both the weight of extraordinary opportunity and the responsibility of protecting the trust that Naresh has placed in him at great personal risk. The moment represents the culmination of persistence, analytical thinking, and respectful behavior transforming institutional barriers into genuine access, while the limited time available creates pressure to absorb maximum learning from this unprecedented chance to experience cricket at the level he aspires to reach.
 
 <<set $Naresh_Complete = true>>
-<<ShowRewardImage "Courage">>
+<<jump Courage>>
 ===

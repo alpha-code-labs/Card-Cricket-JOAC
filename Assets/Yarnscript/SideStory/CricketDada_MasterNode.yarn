@@ -264,5 +264,5 @@ As Raju prepares to leave the hospital for the final time in this chapter of his
 
 <<set $Cricket_Dada_Complete = true>>
 
-<<ShowRewardImage "Humility">>
+<<jump Humility>>
 ===
