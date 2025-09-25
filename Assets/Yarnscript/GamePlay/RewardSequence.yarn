@@ -9,6 +9,7 @@ Extra Wickets gained You can now lose an additional wicket before facing elimina
 title: Courage
 ---
 <<ShowRewardImage "Courage">>
+
 Flip ability gained You can now redraw your hand once per turn, giving you a second chance when strategy demands it.
 <<HideRewardImage>>
 <<EndEvent true>>
