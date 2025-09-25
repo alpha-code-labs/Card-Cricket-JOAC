@@ -4631,7 +4631,7 @@ MonoBehaviour:
   percentageText: {fileID: 1099740697}
   congratulationsText: {fileID: 0}
   nextButton: {fileID: 451456523}
-  excitingMusic: {fileID: 0}
+  excitingMusic: {fileID: 8300000, guid: 397e14ce7a2851f43964cde198121e47, type: 3}
   confettiPrefab: {fileID: 456128447834972240, guid: 80ea5e2a2ae04544e9f3c6e7ae74d5da, type: 3}
   confettiParent: {fileID: 1788699053}
   backgroundMusicSource: {fileID: 2022267551}

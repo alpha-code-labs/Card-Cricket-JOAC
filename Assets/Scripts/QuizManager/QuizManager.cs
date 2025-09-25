@@ -341,6 +341,7 @@ public class QuizManager : MonoBehaviour
         // Start exciting music
         if (excitingMusic != null && backgroundMusicSource != null)
         {
+            backgroundMusicSource.loop = false;
             backgroundMusicSource.clip = excitingMusic;
             backgroundMusicSource.Play();
         }
