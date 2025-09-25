@@ -277,6 +277,5 @@ Suresh: Exactly, champ. Your victories will carry forward everything valuable fr
 As Raju departs the auto stand carrying both practical guidance for his cricket development and the promise of ongoing support from someone who understands the challenges he faces, he recognizes that Suresh's mentorship represents more than individual assistance - it embodies the power of community support to help young people overcome systemic barriers to opportunity. The relationship has transformed both participants, giving Suresh's abandoned cricket dreams new purpose while providing Raju with wisdom and advocacy that could prove crucial to achieving the success that circumstances prevented his mentor from reaching.
 
 <<set $Suresh_Complete = true>>
-<<GiveReward "Foresight">>
-<<EndEvent true>>
+<<jump Foresight>>
 ===

@@ -487,5 +487,5 @@ Pinky: And your questions forced me to understand concepts at a deeper level whi
 As their final meeting concludes with both students having achieved remarkable success that validates their strategic partnership while securing family support for their individual dreams, Raju and Pinky understand that they have accomplished something more significant than academic improvement - they have demonstrated that collaboration enhances rather than diminishes individual excellence while creating supportive relationships that help talented young people overcome systemic barriers to opportunity. Their friendship has transformed both participants while providing a model for how shared struggle can generate mutual success rather than zero-sum competition.
 
 <<set $Pinky_Complete = true>>
-<<EndEvent true>>
+<<jump Foresight>>
 ===

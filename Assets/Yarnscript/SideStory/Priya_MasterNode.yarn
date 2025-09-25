@@ -401,5 +401,5 @@ Priya: Then we both benefit perfectly - you continue developing your teaching an
 As their conversation concludes with plans for ongoing academic partnership that extends beyond immediate exam preparation, Priya and Raju understand that they have created something more valuable than temporary study assistance - they have demonstrated how collaborative learning can transform individual struggle into shared success while building friendships and academic confidence that will serve them well throughout their educational journey and beyond.
 
 <<set $Priya_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Resourcefulness>>
 ===

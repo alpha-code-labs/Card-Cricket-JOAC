@@ -285,5 +285,5 @@ RamCharan: Remember, boy - this collection represents my own dreams transformed 
 As Raju leaves the library carrying both the revelation of Ram Charan's hidden cricket passion and access to professional cricket materials that will enhance his understanding of the sport, he understands that he has discovered something far more valuable than either academic resources or athletic guidance alone - he has found a mentor who embodies the successful integration of intellectual discipline and passionate pursuit. The librarian's trust and the treasure trove of cricket knowledge represent a bridge between his dual interests that he never imagined possible.
 
 <<set $RamCharan_Complete = true>>
-<<EndEvent true>>
+<<jump Foresight>>
 ===

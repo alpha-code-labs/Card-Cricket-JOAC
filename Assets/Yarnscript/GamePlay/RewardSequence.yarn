@@ -1,0 +1,32 @@
+﻿title: Humility
+---
+<<ShowRewardImage "Humility">>
+Extra Wickets gained You can now lose an additional wicket before facing elimination.
+<<HideRewardImage>>
+<<EndEvent true>>
+===
+
+title: Courage
+---
+<<ShowRewardImage "Courage">>
+
+Flip ability gained You can now redraw your hand once per turn, giving you a second chance when strategy demands it.
+<<HideRewardImage>>
+<<EndEvent true>>
+===
+
+title: Resourcefulness
+---
+<<ShowRewardImage "Resourcefulness">>
+Hand Size increased You now draw an additional card each turn, giving you more strategic options to work with.
+<<HideRewardImage>>
+<<EndEvent true>>
+===
+
+title: Foresight
+---
+<<ShowRewardImage "Foresight">>
+Decision Time increased You now have more time to consider your moves, allowing for deeper strategic thinking.
+<<HideRewardImage>>
+<<EndEvent true>>
+===

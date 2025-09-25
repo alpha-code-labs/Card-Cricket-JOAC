@@ -323,5 +323,5 @@ Sumit: Then we both benefit perfectly - you continue developing your mental agil
 As their conversation concludes with plans for ongoing intellectual competition that strengthens rather than strains their friendship, Sumit and Raju understand that they have discovered something valuable about the nature of healthy competition, mental development, and mutual encouragement. Their systematic approach to intellectual challenge has created a model for how competitive activities can enhance personal growth while building rather than threatening meaningful relationships.
 
 <<set $Sumit_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Courage>>
 ===

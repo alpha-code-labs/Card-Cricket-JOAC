@@ -390,5 +390,5 @@ Raju: I'm looking forward to it.
 As Raju leaves the complex for what may be the final time in this particular chapter of his life, he carries with him the satisfaction of having challenged and changed entrenched assumptions about class, worth, and capability without resorting to bitterness or revenge. His victory over Aryan represents more than personal triumph - it stands as proof that dignity, skill, and character cannot be purchased, inherited, or taken away by those who mistake privilege for superiority.
 
 <<set $Aryan_Complete = true>>
-<<EndEvent true>>
+<<jump Courage>>
 ===

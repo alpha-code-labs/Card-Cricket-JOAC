@@ -401,5 +401,5 @@ MunnaBhai: Then we both benefit perfectly - you gain mechanical knowledge that w
 As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of preserving skilled mechanical trades, Raju and Munna Bhai understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and social gaps to create partnerships that strengthen both individuals and the skilled trade knowledge systems they work together to preserve and honor.
 
 <<set $MunnaBhai_Complete = true>>
-<<EndEvent true>>
+<<ShowRewardImage Foresight>>
 ===

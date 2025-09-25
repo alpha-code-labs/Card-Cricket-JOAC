@@ -1,0 +1,129 @@
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+using Yarn.Unity;
+
+public class RewardsSequenceManager : MonoBehaviour
+{
+    public static RewardsSequenceManager instance;
+    void Awake()
+    {
+        instance = this;
+    }
+    void Start()
+    {
+        ProcessSprites();
+    }
+    [SerializeField] GameObject RewardPanel;//Contains all the below elements
+    [SerializeField] Image RewardImage;
+    [SerializeField] Image Bar;
+    [SerializeField] Image BarFillImage;//0,0.2,0.4,0.6,0.8,1
+    [SerializeField] List<Sprite> sprites;
+    [SerializeField] TextMeshProUGUI RankUpText;
+    Dictionary<Reward, Sprite> rewardSpriteDict;
+    void ProcessSprites()
+    {
+        RewardPanel.SetActive(false);
+        RewardImage.gameObject.SetActive(false);
+        Bar.color = new Color(1, 1, 1, 0);
+        BarFillImage.color = new Color(1, 1, 1, 0);
+        RankUpText.gameObject.SetActive(false);
+        rewardSpriteDict = new Dictionary<Reward, Sprite>();
+        foreach (var sprite in sprites)
+        {
+            Reward reward;
+            string spriteName = sprite.name.Split('-')[0]; // Remove '-' and everything after
+            if (System.Enum.TryParse<Reward>(spriteName, out reward))
+            {
+                rewardSpriteDict[reward] = sprite;
+            }
+            else
+            {
+                Debug.LogWarning($"Sprite with name {sprite.name} does not match any Reward enum value.");
+            }
+        }
+    }
+    [YarnCommand("ShowRewardImage")]
+    public static void ShowRewardImage(string rewardType)
+    {
+        Reward reward;
+        System.Enum.TryParse<Reward>(rewardType, out reward);
+        Sprite sprite = instance.rewardSpriteDict[reward];
+        if (sprite != null)
+        {
+            instance.RewardPanel.SetActive(true);
+            instance.RewardImage.sprite = sprite;
+            instance.RewardImage.transform.localScale = Vector3.zero;
+            instance.RewardImage.color = new Color(1, 1, 1, 0);
+            instance.BarFillImage.fillAmount = 0;
+            instance.RewardImage.gameObject.SetActive(true);
+
+            int currantStat = 0;
+            switch (reward)
+            {
+                case Reward.Courage:
+                    currantStat = GameManager.instance.currentSaveData.courage;
+                    break;
+                case Reward.Foresight:
+                    currantStat = GameManager.instance.currentSaveData.foresight;
+                    break;
+                case Reward.Humility:
+                    currantStat = GameManager.instance.currentSaveData.humility;
+                    break;
+                case Reward.Resourcefulness:
+                    currantStat = GameManager.instance.currentSaveData.resourcefulness;
+                    break;
+            }
+            float targetFill = ((int)currantStat + 1) * 0.2f;
+
+            Sequence seq = DOTween.Sequence();
+            seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
+            seq.Join(instance.RewardImage.DOFade(1, 0.5f));
+            seq.Append(instance.Bar.DOFade(1, 0.5f));
+            seq.Join(instance.BarFillImage.DOFade(1, 0.5f));
+            seq.Append(instance.BarFillImage.DOFillAmount(targetFill, 2f).SetEase(Ease.OutQuad));
+            seq.AppendCallback(() =>
+            {
+                instance.RankUpText.text = "Rank Up!";
+                instance.RankUpText.color = new Color(1, 1, 1, 0);
+                instance.RankUpText.gameObject.SetActive(true);
+            });
+            seq.Append(instance.RankUpText.DOFade(1, 0.5f));
+            seq.SetId("ShowRewardSequence");
+        }
+        else
+        {
+            Debug.LogWarning($"Sprite with name {rewardType} not found in Resources/Sprites/Rewards/");
+        }
+    }
+    [YarnCommand("HideRewardImage")]
+    public static void HideRewardImage()
+    {
+        DOTween.Kill("ShowRewardSequence", true);
+        Sequence hideSeq = DOTween.Sequence();
+        hideSeq.Append(instance.RewardImage.DOFade(0, 0.5f));
+        hideSeq.Join(instance.Bar.DOFade(0, 0.5f));
+        hideSeq.Join(instance.BarFillImage.DOFade(0, 0.5f));
+        hideSeq.Join(instance.RankUpText.DOFade(0, 0.5f));
+        hideSeq.SetDelay(2f).OnComplete(() =>
+        {
+            instance.ResetSequence();
+        });
+        hideSeq.SetId("HideRewardSequence").OnKill(() => instance.ResetSequence());
+    }
+    void ResetSequence()
+    {
+        instance.RewardImage.transform.localScale = Vector3.zero;
+        instance.RewardImage.color = new Color(1, 1, 1, 0);
+        instance.Bar.color = new Color(1, 1, 1, 0);
+        instance.BarFillImage.color = new Color(1, 1, 1, 0);
+        instance.BarFillImage.fillAmount = 0;
+        instance.RankUpText.color = new Color(1, 1, 1, 0);
+        instance.RewardImage.gameObject.SetActive(false);
+        instance.RankUpText.gameObject.SetActive(false);
+        instance.RewardPanel.SetActive(false);
+    }
+}

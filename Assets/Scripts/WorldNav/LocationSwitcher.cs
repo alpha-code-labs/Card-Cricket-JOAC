@@ -75,7 +75,7 @@ public class LocationSwitcher : MonoBehaviour
 #if UNITY_EDITOR
             UnityEditor.EditorGUIUtility.PingObject(SwitchToThisLocation);
 #endif
-            Debug.Log($"Switched to location: {location}");
+            // Debug.Log($"Switched to location: {location}");
             AreaSwitched?.Invoke();
         }
     }
