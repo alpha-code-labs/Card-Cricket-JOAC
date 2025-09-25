@@ -1,10 +1,6 @@
 ﻿title: Humility
 ---
 <<ShowRewardImage "Humility">>
-Humility → Extra Wickets "Through your journey, you've learned that true strength comes not from never falling, but from how gracefully you rise each time."
-
-Your experiences have taught you the quiet art of endurance. You've discovered that admitting mistakes doesn't make you weaker—it makes you wiser. You can now withstand more dismissals before being truly out.
-
 Extra Wickets gained You can now lose an additional wicket before facing elimination.
 <<HideRewardImage>>
 <<EndEvent true>>
@@ -13,10 +9,6 @@ Extra Wickets gained You can now lose an additional wicket before facing elimina
 title: Courage
 ---
 <<ShowRewardImage "Courage">>
-Courage → Flip "Your path showed you that sometimes the bravest thing you can do is let go of what feels safe and trust in the unknown."
-
-You've learned to embrace uncertainty as opportunity rather than threat. When the cards you're dealt don't feel right, you now have the boldness to discard them and seek a better path forward.
-
 Flip ability gained You can now redraw your hand once per turn, giving you a second chance when strategy demands it.
 <<HideRewardImage>>
 <<EndEvent true>>
@@ -25,10 +17,6 @@ Flip ability gained You can now redraw your hand once per turn, giving you a sec
 title: Resourcefulness
 ---
 <<ShowRewardImage "Resourcefulness">>
-Resourcefulness → Shots "Your story taught you to see possibilities where others see limitations. Every challenge became a puzzle with multiple solutions."
-
-Your expanded perspective has sharpened your ability to spot opportunities that were always there—you just needed to know how to look. Your tactical options have grown as your understanding deepened.
-
 Hand Size increased You now draw an additional card each turn, giving you more strategic options to work with.
 <<HideRewardImage>>
 <<EndEvent true>>
@@ -37,11 +25,6 @@ Hand Size increased You now draw an additional card each turn, giving you more s
 title: Foresight
 ---
 <<ShowRewardImage "Foresight">>
-
-Foresight → Time "Time spent understanding life's struggles gave you clarity about what truly matters—and the wisdom to act before it's too late."
-
-You've developed an inner calm that cuts through chaos. Where others panic under pressure, you've learned to pause, breathe, and see the path forward with crystal clarity.
-
 Decision Time increased You now have more time to consider your moves, allowing for deeper strategic thinking.
 <<HideRewardImage>>
 <<EndEvent true>>

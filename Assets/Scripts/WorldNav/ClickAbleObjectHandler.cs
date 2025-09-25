@@ -13,7 +13,7 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
     private void OnMouseDown()
     {
         if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
-        Debug.Log("Clicked on " + gameObject.name);
+        // Debug.Log("Clicked on " + gameObject.name);
         if (!PanAndZoomManager.isSwiping)
         {
             OnClick();
