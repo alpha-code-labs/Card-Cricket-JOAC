@@ -71,6 +71,13 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        var evnet = NewDayManager.currentDateRecord.events[NewDayManager.currentEventIndex];
+        if (evnet.eventName == "scene_133")
+        {
+            //Show Result
+            ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
+            return;
+        }
         InitializeQuiz();
     }
 
@@ -304,7 +311,7 @@ public class QuizManager : MonoBehaviour
         Debug.Log("================");
 
         // Show winning panel
-        ShowWinningPanel(percentage);
+        // ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
     }
 
     float CalculateWinningPercentage(int correctAnswers)
