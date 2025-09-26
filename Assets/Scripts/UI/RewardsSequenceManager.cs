@@ -48,10 +48,33 @@ public class RewardsSequenceManager : MonoBehaviour
         }
     }
     [YarnCommand("ShowRewardImage")]
-    public static void ShowRewardImage(string rewardType)
+    public static void ShowRewardImage(string rewardType)//this gives and shows rewards
     {
+        //Parsing
         Reward reward;
         System.Enum.TryParse<Reward>(rewardType, out reward);
+
+        int currantStat = 0;
+        switch (reward)
+        {
+            case Reward.Courage:
+                GameManager.instance.currentSaveData.courage = Mathf.Min(GameManager.instance.currentSaveData.courage + 1, 5);
+                currantStat = GameManager.instance.currentSaveData.courage;
+                break;
+            case Reward.Foresight:
+                GameManager.instance.currentSaveData.foresight = Mathf.Min(GameManager.instance.currentSaveData.foresight + 1, 5);
+                currantStat = GameManager.instance.currentSaveData.foresight;
+                break;
+            case Reward.Humility:
+                GameManager.instance.currentSaveData.humility = Mathf.Min(GameManager.instance.currentSaveData.humility + 1, 5);
+                currantStat = GameManager.instance.currentSaveData.humility;
+                break;
+            case Reward.Resourcefulness:
+                GameManager.instance.currentSaveData.resourcefulness = Mathf.Min(GameManager.instance.currentSaveData.resourcefulness + 1, 5);
+                currantStat = GameManager.instance.currentSaveData.resourcefulness;
+                break;
+        }
+        //Animations
         Sprite sprite = instance.rewardSpriteDict[reward];
         if (sprite != null)
         {
@@ -65,23 +88,8 @@ public class RewardsSequenceManager : MonoBehaviour
             Vector3 originalPos = instance.RewardImage.transform.localPosition;
             instance.RewardImage.transform.localPosition = originalPos + new Vector3(0, 300, 0);
 
-            int currantStat = 0;
-            switch (reward)
-            {
-                case Reward.Courage:
-                    currantStat = GameManager.instance.currentSaveData.courage;
-                    break;
-                case Reward.Foresight:
-                    currantStat = GameManager.instance.currentSaveData.foresight;
-                    break;
-                case Reward.Humility:
-                    currantStat = GameManager.instance.currentSaveData.humility;
-                    break;
-                case Reward.Resourcefulness:
-                    currantStat = GameManager.instance.currentSaveData.resourcefulness;
-                    break;
-            }
-            float targetFill = ((int)currantStat + 1) * 0.2f;
+
+            float targetFill = ((int)currantStat) * 0.2f;
 
             Sequence seq = DOTween.Sequence();
             seq.Append(instance.RewardImage.transform.DOLocalMove(originalPos, 0.6f).SetEase(Ease.OutBounce));
