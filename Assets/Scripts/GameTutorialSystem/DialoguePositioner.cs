@@ -5,6 +5,7 @@ using Yarn.Unity;
 
 public class DialoguePositioner : MonoBehaviour
 {
+    public float offsetMaxY_original, offsetMinY_original;
     public RectTransform dialogueBox; // assign the Dialogue UI panel here
     //currently don't see any use case.. might be needed to update character expressions
     private Image characterImage;
@@ -19,6 +20,8 @@ public class DialoguePositioner : MonoBehaviour
     void Start()
     {
         characterImageContainer.SetActive(false);
+        offsetMaxY_original = dialogueBox.offsetMax.y;
+        offsetMinY_original = dialogueBox.offsetMin.y;
     }
 
     public void SetPosition(Vector2 pixelPosition)
@@ -28,13 +31,38 @@ public class DialoguePositioner : MonoBehaviour
         dialogueBox.anchoredPosition = pixelPosition;
     }
 
+    public void SetPositionToUnhideCard()
+    {
+        Debug.Log("changing dialoguebox right values");
+        dialogueBox.offsetMax = new Vector2(-520, dialogueBox.offsetMax.y);
+        dialogueBox.offsetMin = new Vector2(200, dialogueBox.offsetMin.y);
+    }
+
+    public void ResetToOriginalPresets()
+    {
+        dialogueBox.offsetMax = new Vector2(-200, offsetMaxY_original);
+        dialogueBox.offsetMin = new Vector2(200, offsetMinY_original);
+    }
+
+    public void ShiftCharacterImageToUnhideCard()
+    {
+        Debug.Log("chaning character image postion");
+        if (characterImageContainer == null) return;
+        characterImageContainer.SetActive(true);
+        // Force it to stay active
+        StartCoroutine(KeepActiveForFrames());
+
+        RectTransform containerRect = characterImageContainer.GetComponent<RectTransform>();
+        containerRect.anchoredPosition = new Vector2(338.3f, containerRect.anchoredPosition.y);
+        containerRect.sizeDelta = new Vector2(containerRect.sizeDelta.x, containerRect.sizeDelta.y);
+    }
     public void ShowCharacterImage(Vector2 pos, float width, float height)
     {
         if (characterImageContainer == null) return;
         characterImageContainer.SetActive(true);
         // Force it to stay active
         StartCoroutine(KeepActiveForFrames());
-        
+
         RectTransform containerRect = characterImageContainer.GetComponent<RectTransform>();
         containerRect.anchoredPosition = pos;
         containerRect.sizeDelta = new Vector2(width, height);

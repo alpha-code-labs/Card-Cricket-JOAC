@@ -6,6 +6,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class ScoreManager_Tutorial : MonoBehaviour
 {
@@ -51,6 +52,11 @@ public class ScoreManager_Tutorial : MonoBehaviour
     [SerializeField] float returnDuration = 0.3f; // Slower return duration
     [SerializeField] AnimationCurve swingEase = AnimationCurve.EaseInOut(0, 0, 1, 1); // Custom curve if needed
     [SerializeField] AudioSource gameAudioSource;
+    [SerializeField] TextMeshProUGUI outText;
+
+    [Header("Yarn Spinner References")]
+    [SerializeField] private DialogueRunner dialogueRunner;
+    [SerializeField] private InMemoryVariableStorage variableStorage;
 
     public void UpdateBallsAndOvers(int ballsBowled)
     {
@@ -113,8 +119,18 @@ public class ScoreManager_Tutorial : MonoBehaviour
 
     public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
+        if (CardsPoolManager_Tutorial.Instance.currentTutorialBall == "None" || CardsPoolManager_Tutorial.Instance.currentTutorialBall == "fourth") return;
         // Animate the batter image
         StartCoroutine(PlayCardSequence(battingStrategy, cardObject, cardSprite));
+    }
+
+    public void showOutText()
+    {
+        outText.gameObject.SetActive(true);
+    }
+    public void hideOutText()
+    {
+        outText.gameObject.SetActive(false);
     }
 
     private IEnumerator PlayCardSequence(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
@@ -156,11 +172,38 @@ public class ScoreManager_Tutorial : MonoBehaviour
         //End current turn
         CardsPoolManager_Tutorial.Instance.EndTurn((int)outcome != -3);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(.7f);
+        variableStorage.SetValue("$selection", battingStrategy.ToString());
+        Debug.Log("setting variable selection of yarn variable storage to " + battingStrategy);
+        dialogueRunner.Stop();
+        switch (CardsPoolManager_Tutorial.Instance.currentTutorialBall)
+        {
+            case "first":
+                {
+                    Debug.Log("starting firstBall node dialgoues");
+                    dialogueRunner.StartDialogue("FirstBall");
+                    break;
+                }
+
+            case "second":
+                {
+                    Debug.Log("starting secondBall node dialgoues");
+                    dialogueRunner.StartDialogue("SecondBall");
+                    break;
+                }
+
+            case "third":
+                {
+                    Debug.Log("starting thirdBall node dialgoues");
+                    dialogueRunner.StartDialogue("ThirdBall");
+                    break;
+                }
+        }
+        CardsPoolManager_Tutorial.Instance.currentTutorialBall = "None";
         // End turn timer
         Timer_Tutorial.Instance.EndTurnTimer();
         // We will start new turn here
-        CardsPoolManager_Tutorial.Instance.StartTurn((int)outcome != -3);
+        //CardsPoolManager_Tutorial.Instance.StartTurn((int)outcome != -3);
     }
 
     void AnimateBatterSwing()
@@ -238,17 +281,23 @@ public class ScoreManager_Tutorial : MonoBehaviour
 
     public void ShowFlipButton()
     {
+        Debug.Log("can player redraw" + CardsPoolManager_Tutorial.Instance.CanRedraw());
         redrawButton.gameObject.SetActive(true);
         UIHighlightManager.Instance.HighlightObject(redrawButton.gameObject);
     }
 
     void Start()
     {
-        
         // totalWicketsText.text = "/ " + wickets.ToString();
         // UpdateScore(0); // Initialize score display
         // UpdateBallsAndOvers(0); // Initialize balls and overs display
         //Disable everything
+         // Get references if not assigned
+        if (dialogueRunner == null)
+            dialogueRunner = FindObjectOfType<DialogueRunner>();
+        
+        if (variableStorage == null)
+            variableStorage = dialogueRunner.GetComponent<InMemoryVariableStorage>();
         currentScoreAndTarget_parent.SetActive(false);
         remaingWicketsAndTotalWickets_parent.SetActive(false);
         RemainingBalls_parent.SetActive(false);

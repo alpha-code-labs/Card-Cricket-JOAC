@@ -17,6 +17,21 @@ public class DialogueCommands : MonoBehaviour
         DialoguePositioner.Instance.SetPosition(pos);
     }
 
+    [YarnCommand("unhideBallerCard")]
+    public static void UnhideBallerCard()
+    {
+        Debug.Log("Unhiding baller card");
+        DialoguePositioner.Instance.SetPositionToUnhideCard();
+        DialoguePositioner.Instance.ShiftCharacterImageToUnhideCard();
+    }
+
+    [YarnCommand("resetToOriginalPresets")]
+    public static void ResetToOriginalPresets()
+    {
+        Debug.Log("Unhiding baller card");
+        DialoguePositioner.Instance.ResetToOriginalPresets();
+    }
+
     [YarnCommand("showCharacterImage")]
     public static void ShowCharacterImage(string relativePos)
     {
@@ -57,43 +72,43 @@ public class DialogueCommands : MonoBehaviour
     }
 
     [YarnCommand("showScorePanel")]
-    public static void showScorePanel()
+    public static void ShowScorePanel()
     {
         ScoreManager_Tutorial.Instance.ShowScorePanel();
     }
 
     [YarnCommand("showBBallsPanel")]
-    public static void showBBallsPanel()
+    public static void ShowBBallsPanel()
     {
         ScoreManager_Tutorial.Instance.ShowBallsPanel();
     }
 
     [YarnCommand("showWicketsPanel")]
-    public static void showWicketsPanel()
+    public static void ShowWicketsPanel()
     {
         ScoreManager_Tutorial.Instance.ShowWicketsPanel();
     }
 
     [YarnCommand("showShotsPanel")]
-    public static void showShotsPanel()
+    public static void ShowShotsPanel()
     {
         CardsPoolManager_Tutorial.Instance.showShotPanel();
     }
 
     [YarnCommand("showTimingPanel")]
-    public static void showTimingPanel()
+    public static void ShowTimingPanel()
     {
         Timer_Tutorial.Instance.ShowTimingPanel();
     }
 
     [YarnCommand("showFlipButton")]
-    public static void showFlipButton()
+    public static void ShowFlipButton()
     {
         ScoreManager_Tutorial.Instance.ShowFlipButton();
     }
 
     [YarnCommand("highlightShotPanel")]
-    public static void highlightShotPanel()
+    public static void HighlightShotPanel()
     {
         CardsPoolManager_Tutorial.Instance.HighlightShotPanel();
     }
@@ -101,8 +116,31 @@ public class DialogueCommands : MonoBehaviour
 
     ///Balls 
     [YarnCommand("ballFirstBall")]
-    public static void ballFirstBall()
+    public static void BallFirstBall()
     {
         CardsPoolManager_Tutorial.Instance.BallFirstBall();
+    }
+
+    [YarnCommand("ballSecondBall")]
+    public static void BallSecondBall()
+    {
+        CardsPoolManager_Tutorial.Instance.BallSecondBall();
+    }
+    [YarnCommand("ballThirdBall")]
+    public static void BallThirdBall()
+    {
+        CardsPoolManager_Tutorial.Instance.BallThirdBall();
+    }
+    [YarnCommand("ballFourthBall")]
+    public static void BallFourthBall()
+    {
+        CardsPoolManager_Tutorial.Instance.BallFourthBall();
+    }
+
+    [YarnCommand("startNextScene")]
+    public static void StartNextScene()
+    {
+        Debug.Log("Tutorial complete starting next scene");
+        //implement...
     }
 }

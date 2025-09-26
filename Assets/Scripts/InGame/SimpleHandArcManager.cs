@@ -355,7 +355,6 @@ public class SimpleHandArcManager : MonoBehaviour
         // Interpolate Y offset based on position
         // Edge cards get full hoverYOffset, center cards get centerHoverYOffset
        float dynamicOffset = Mathf.Lerp(hoverYOffset, centerHoverYOffset, distanceFromCenter) + minHoverYOffset;
-        Debug.Log($"Card {card.index}: distanceFromCenter = {Mathf.Abs((float)card.index / (cardInfos.Count - 1) - 0.5f) * 2f}, offset = {dynamicOffset}");
         return dynamicOffset;
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using Yarn.Unity;
 
 public class CardsPoolManager_Tutorial : MonoBehaviour
 {
@@ -30,20 +32,22 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     public GameObject cardPrefab; // Assign in inspector
 
     private GameObject ballerCard;
+    public string currentTutorialBall = "None";
+
+    [Header("Yarn Spinner References")]
+    [SerializeField] private DialogueRunner dialogueRunner;
+    [SerializeField] private InMemoryVariableStorage variableStorage;
 
     public GameObject ballerCardPrefab;
     void Awake()
     {
+         if (dialogueRunner == null)
+            dialogueRunner = FindObjectOfType<DialogueRunner>();
+        
+        if (variableStorage == null)
+            variableStorage = dialogueRunner.GetComponent<InMemoryVariableStorage>();
         Instance = this;
     }
-
-    // void Start()
-    // {
-    //     InitTextDeck();// Initialize the deck with random cards for batiing and bowling disable to keep deck in scene
-    //     InstantiateCards();
-    //     StartTurn();
-    //     // EnergyManager.Instance.RefreshEnergyText();
-    // }
 
     public void showFirstBallingCard()
     {
@@ -61,12 +65,15 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void showShotPanel()
     {
+        currentTutorialBall = "None";
         InitTextDeck();
         InstantiateCards();
     }
 
     public void BallFirstBall()
     {
+        currentTutorialBall = "first";
+        DestroyAllPiles();
         InitTextDeck(PitchCondition.Friendly, 1);
         InstantiateCards();
         StartTurn();
@@ -74,6 +81,8 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void BallSecondBall()
     {
+        currentTutorialBall = "second";
+        DestroyAllPiles();
         InitTextDeck(PitchCondition.Friendly, 2);
         InstantiateCards();
         StartTurn();
@@ -81,9 +90,20 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void BallThirdBall()
     {
+        currentTutorialBall = "third";
+        DestroyAllPiles();
         InitTextDeck(PitchCondition.Friendly, 3);
         InstantiateCards();
         StartTurn();
+    }
+
+    public void BallFourthBall()
+    {
+        currentTutorialBall = "fourth";
+        DestroyAllPiles();
+        InitTextDeck(PitchCondition.Friendly, 4);
+        InstantiateCardsWithoutActivation();
+        StartTurnWithoutTimer();
     }
 
 
@@ -95,7 +115,6 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     [ContextMenu("Start Turn")]
     public void StartTurn(bool incrementBalls = true)
     {
-        DestroyHandCards();
         if (CurrntTurn >= ScoreManager_Tutorial.Instance.MaxBalls || ScoreManager_Tutorial.Instance.wickets < 1)
         {
             //Game ended 
@@ -124,6 +143,41 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         Timer_Tutorial.Instance.StartTurnTimer();
         OnTurnStarted?.Invoke();
     }
+
+    public void StartTurnWithoutTimer(bool incrementBalls = true)
+    {
+        //check if player can redraw
+        Debug.Log("can player redraw cards" + CanRedraw());
+
+        if (CurrntTurn >= ScoreManager_Tutorial.Instance.MaxBalls || ScoreManager_Tutorial.Instance.wickets < 1)
+        {
+            //Game ended 
+            return;
+        }
+        if (incrementBalls)
+            ScoreManager_Tutorial.Instance.UpdateBallsAndOvers(CurrntTurn);
+        if (ballerCard != null)
+            Destroy(ballerCard);
+
+        if (CurrentBallThrow != null)
+            ballerCard = InstantiateBallerCard(CurrentBallThrow);
+        else
+        {
+            Debug.LogError("Current Ball throw is null");
+        }
+        //BallThrowText.text = CurrentBallThrow.ToString();
+
+        HandCards.Clear();
+        // This is where we should start animating in the cards
+        for (int i = 0; i < maxHandSize; i++)
+        {
+            DrawCard();
+        }
+
+        // Timer_Tutorial.Instance.StartTurnTimer();
+        OnTurnStarted?.Invoke();
+    }
+
     [ContextMenu("End Turn")]
     public void EndTurn(bool incrementBalls = true)
     {
@@ -160,18 +214,21 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void RedrawHand()
     {
+        if (currentTutorialBall != "fourth") return;
+        currentTutorialBall = "None";
+        variableStorage.SetValue("$flipButtonClicked", true);
         if (redraws >= maxRedraws)
         {
             Debug.LogWarning($"Cannot redraw: Maximum redraws ({maxRedraws}) already used!");
             return;
         }
-        
+
         if (HandCards.Count == 0)
         {
             Debug.LogWarning("No cards in hand to redraw!");
             return;
         }
-        
+
         // Move current hand cards to discard pile
         foreach (var card in HandCards)
         {
@@ -179,18 +236,19 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
             card.gameObject.SetActive(false);
         }
         HandCards.Clear();
-        
+
         // Draw new cards
         for (int i = 0; i < maxHandSize; i++)
         {
             DrawCard();
         }
-        
+
         redraws++;
         Debug.Log($"Hand redrawn! Redraws used: {redraws}/{maxRedraws}");
-        
+
         // Optional: Trigger an event for UI updates
         OnHandRedrawn?.Invoke(redraws, maxRedraws);
+        dialogueRunner.StartDialogue("FlipCardSelection");
     }
 
     void InstantiateCards()
@@ -204,13 +262,25 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
             card.gameObject.SetActive(true); // Deactivate the card initially
         }
     }
+    
+    void InstantiateCardsWithoutActivation()
+    {
+        DrawPile.Clear();
+        foreach (var cardData in Deck)
+        {
+            AttackCardProps_Tutorial card = Instantiate(cardPrefab, hand).GetComponent<AttackCardProps_Tutorial>();
+            card.cardData = cardData; // Set the card data
+            DrawPile.Add(card);
+            card.gameObject.SetActive(false); // Deactivate the card initially
+        }
+    }
 
 
     public void DestroyCurrentBallCard()
     {
         if (ballerCard != null)
             ballerCard.SetActive(false);
-            Destroy(ballerCard);
+        Destroy(ballerCard);
     }
 
     GameObject InstantiateBallerCard(BallThrow ballThrow)
@@ -221,11 +291,34 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         return ballerCard;
     }
 
-    void DestroyHandCards()
+
+    void DestroyAllPiles()
     {
-        foreach (AttackCardProps_Tutorial card in HandCards)
+        // if(DrawPile.Count > 0)
+        // foreach (AttackCardProps_Tutorial card in DrawPile)
+        // {
+        //     if(card.gameObject != null)
+        //         Destroy(card.gameObject);
+        // }
+
+        // if(DiscardPile.Count > 0)
+        // foreach (AttackCardProps_Tutorial card in DiscardPile)
+        // {
+        //     if(card.gameObject != null)
+        //         Destroy(card.gameObject);
+        // }
+
+        // if(HandCards.Count > 0)
+        // foreach (AttackCardProps_Tutorial card in HandCards)
+        // {
+        //     if(card.gameObject != null)
+        //         Destroy(card.gameObject);
+        // }
+
+        for (int i = hand.childCount - 1; i >= 0; i--)
         {
-            Destroy(card.gameObject);
+            GameObject child = hand.GetChild(i).gameObject;
+            Destroy(child);
         }
     }
     
@@ -233,46 +326,95 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     [ContextMenu("Init Text Deck")]
 void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int tutorialBallNumber = 0)
 {
-    Deck.Clear();
+        Deck.Clear();
 
         // Instead of always looping through all strategies,
         // pick batting strategies based on tutorialBallNumber
         switch (tutorialBallNumber)
         {
             case 0: // Ball 1 batting strategy set
-                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_0)))
+                    // Create a list of the specific strategies you want for tutorial 0
+                BattingStrategy[] tutorial0Strategies = new BattingStrategy[]
                 {
+                BattingStrategy.CutShotPush,
+                BattingStrategy.StraightDriveNormal,
+                BattingStrategy.OnDriveAggressive,
+                BattingStrategy.PullShotLofted
+                };
+
+                foreach (BattingStrategy strategy in tutorial0Strategies)
+                {
+                    Debug.Log("Added strategy " + strategy + " from 0");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
 
             case 1: // Ball 2 batting strategy set
-                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_1)))
+                BattingStrategy[] tutorial1Strategies = new BattingStrategy[]
                 {
+                BattingStrategy.Leave,
+                BattingStrategy.StraightDriveLofted,
+                BattingStrategy.CutShotPush,
+                BattingStrategy.SweepNormal
+                };
+
+                foreach (BattingStrategy strategy in tutorial1Strategies)
+                {
+                    Debug.Log("Added strategy " + strategy + " from 1");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
 
             case 2: // Ball 3 batting strategy set
-                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_2)))
+                BattingStrategy[] tutorial2Strategies = new BattingStrategy[]
                 {
+                BattingStrategy.CutShotPush,
+                BattingStrategy.CutShotAggressive,
+                BattingStrategy.CutShotNormal,
+                BattingStrategy.CutShotLofted
+                };
+
+                foreach (BattingStrategy strategy in tutorial2Strategies)
+                {
+                    Debug.Log("Added strategy " + strategy + " from 2");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
 
             case 3: // fallback for any other tutorialBallNumber
-                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_3)))
+                BattingStrategy[] tutorial3Strategies = new BattingStrategy[]
                 {
+                BattingStrategy.Leave,
+                BattingStrategy.StraightDrivePush,
+                BattingStrategy.CoverDriveNormal,
+                BattingStrategy.SquareDriveAggressive
+                };
+                foreach (BattingStrategy strategy in tutorial3Strategies)
+                {
+                    Debug.Log("Added strategy " + strategy + " from 3");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
-
-            default:
-                foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStarategyForTutorial_0)))
+            
+            case 4: // fallback for any other tutorialBallNumber
+                BattingStrategy[] tutorial4Strategies = new BattingStrategy[]
                 {
+                BattingStrategy.Leave,
+                BattingStrategy.SweepNormal,
+                BattingStrategy.CutShotAggressive,
+                BattingStrategy.SweepNormal,
+                BattingStrategy.StraightDrivePush,
+                BattingStrategy.StraightDriveNormal,
+                BattingStrategy.OnDriveAggressive,
+                BattingStrategy.SquareDriveAggressive
+                };
+                foreach (BattingStrategy strategy in tutorial4Strategies)
+                {
+                    Debug.Log("Added strategy " + strategy + " from 4");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
+            
 }
 
     // RandomizeDeck();
@@ -322,6 +464,17 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                 );
                 break;
 
+            case 4: // Ball 3
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.LeftArm,
+                    BallType.InSwinger,
+                    BallLine.OffStump,
+                    BallLength.FullLength,
+                    pitchCondition
+                );
+                break;
+
             default:
                 ballToAdd = ExcelDataSOManager.Instance.outComeCalculator
                     .GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
@@ -331,38 +484,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
         BallThrows.Add(ballToAdd);
     }
 }
-
-    public enum BattingStarategyForTutorial_0
-    {
-        CutShotPush,
-        StraightDriveNormal,
-        OnDriveAggressive,
-        PullShotLofted,
-    }
-
-    public enum BattingStarategyForTutorial_3
-    {
-        Leave,
-        CutShotAggressive,
-        SweepNormal,
-        SweepAggressive,
-    }
-
-    public enum BattingStarategyForTutorial_2
-    {
-        Leave,
-        StraightDrivePush,
-        CoverDriveNormal,
-        SquareDriveAggressive,
-    }
-
-    public enum BattingStarategyForTutorial_1
-    {
-        Leave,
-        StraightDriveAggressive,
-        CutShotPush,
-        SweepNormal,
-    }
 
     /// <summary>
     /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
@@ -382,7 +503,8 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
 
      public bool CanRedraw()
     {
-        return redraws < maxRedraws && HandCards.Count > 0;
+        Debug.Log("MaxRedraws: " + maxRedraws + " HandCards Count: " + HandCards.Count);
+        return redraws < maxRedraws;
     }
 
     public int GetRedrawsRemaining()

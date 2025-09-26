@@ -65,7 +65,6 @@ public class AttackCardProps_Tutorial : MonoBehaviour, IPointerClickHandler, IPo
     // Add IPointerEnterHandler implementation
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log($"Hover Enter on: {gameObject.name}");
 
         if (arcManager != null)
         {
@@ -76,7 +75,6 @@ public class AttackCardProps_Tutorial : MonoBehaviour, IPointerClickHandler, IPo
     // Add IPointerExitHandler implementation
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log($"Hover Exit on: {gameObject.name}");
 
         if (arcManager != null)
         {

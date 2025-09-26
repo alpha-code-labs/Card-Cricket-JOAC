@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Yarn.Unity;
 
 public class Timer_Tutorial : MonoBehaviour
 {
@@ -12,9 +13,17 @@ public class Timer_Tutorial : MonoBehaviour
     private bool isPaused = false;
     private float pausedTimeRemaining = 0;
     private Coroutine currentTimerCoroutine;
+    [Header("Yarn Spinner References")]
+    [SerializeField] private DialogueRunner dialogueRunner;
+    [SerializeField] private InMemoryVariableStorage variableStorage;
 
     void Awake()
     {
+        if (dialogueRunner == null)
+            dialogueRunner = FindObjectOfType<DialogueRunner>();
+        
+        if (variableStorage == null)
+            variableStorage = dialogueRunner.GetComponent<InMemoryVariableStorage>();
         Instance = this;
     }
 
@@ -83,8 +92,37 @@ public class Timer_Tutorial : MonoBehaviour
         currentTimerCoroutine = null;
 
         timerText.text = "Time's Up!";
-        CardsPoolManager.Instance.EndTurn(true);
+        CardsPoolManager_Tutorial.Instance.EndTurn(true);
+        ScoreManager_Tutorial.Instance.showOutText();
         yield return new WaitForSeconds(3f);
-        CardsPoolManager.Instance.StartTurn(true);
+        ScoreManager_Tutorial.Instance.hideOutText();
+        variableStorage.SetValue("$selection", "None");
+        switch (CardsPoolManager_Tutorial.Instance.currentTutorialBall)
+        {
+            case "first":
+                {
+                    dialogueRunner.StartDialogue("FirstBall");
+                    break;
+                }
+
+            case "second":
+                {
+                    dialogueRunner.StartDialogue("SecondBall");
+                    break;
+                }
+
+            case "third":
+                {
+                    dialogueRunner.StartDialogue("ThirdBall");
+                    break;
+                }
+                
+            case "fourth":
+                {
+                    dialogueRunner.StartDialogue("ThirdBall");
+                    break;
+                }
+        }
+        //CardsPoolManager_Tutorial.Instance.StartTurn(true);
     }
 }
