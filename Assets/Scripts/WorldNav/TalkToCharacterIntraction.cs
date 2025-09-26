@@ -9,6 +9,13 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     {
         WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, " + GetIntractionMessage(), "No, don't talk", OnConfirmed);
     }
+    public override void CheckAvaliability()
+    {
+        bool isCompleted = false;
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.VariableStorage.TryGetValue("$" + character.ToString() + "_Complete", out isCompleted);
+        Debug.Log(character.ToString() + " is completed: " + isCompleted);
+        SetAvaliabilityIndicator(!isCompleted);
+    }
     void OnConfirmed()
     {
         DialogueScriptCommandHandler.currentNode = character.ToString();
@@ -41,5 +48,6 @@ public enum Characters
     Fatima = 17,
     MochiUncle = 18,
     MunnaBhai = 19,
-    Vikram = 20
+    Vikram = 20,
+    Raju = 21
 }

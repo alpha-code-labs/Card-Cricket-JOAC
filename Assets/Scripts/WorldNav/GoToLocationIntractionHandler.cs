@@ -11,6 +11,10 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     {
         WorldIntractionDialougeManager.instance.StartConfirmationDialogue(GetYesChoice(), "No, stay here", OnConfirmed);
     }
+    public override void CheckAvaliability()
+    {
+        return; // Always available
+    }
     string GetYesChoice()
     {
         string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
