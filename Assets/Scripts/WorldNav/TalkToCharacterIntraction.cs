@@ -49,5 +49,8 @@ public enum Characters
     MochiUncle = 18,
     MunnaBhai = 19,
     Vikram = 20,
-    Raju = 21
+    Raju = 21,
+    CoachDev = 22,
+    Imtiaz = 23,
+    Vivek = 24
 }
