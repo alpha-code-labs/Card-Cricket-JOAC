@@ -464,7 +464,7 @@ public class QuizManager : MonoBehaviour
     public void OnNextButtonPressed134()
     {
         Debug.Log("Next button pressed - Transitioning to next Day Wise sequence");
-      
+        NewDayManager.EndEvent();
     }
     void ShowRetryPanel()
     {
@@ -627,7 +627,7 @@ public class QuizManager : MonoBehaviour
         }
     }
 
- 
+
 
     void TestWinningScenario()
     {
