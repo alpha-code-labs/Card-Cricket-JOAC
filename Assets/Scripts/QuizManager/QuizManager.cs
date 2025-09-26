@@ -301,7 +301,7 @@ public class QuizManager : MonoBehaviour
 
         // Calculate winning percentage
         float percentage = CalculateWinningPercentage(correctAnswersCount);
-
+        NewDayManager.EndEvent();
         // Save to PlayerPrefs
         PlayerPrefs.SetFloat("QuizPercentage", percentage);
         PlayerPrefs.Save();
@@ -472,6 +472,7 @@ public class QuizManager : MonoBehaviour
     {
         Debug.Log("Next button pressed - Transitioning to next Day Wise sequence");
         NewDayManager.EndEvent();
+        
     }
     void ShowRetryPanel()
     {
