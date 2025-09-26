@@ -1,7 +1,10 @@
 ﻿title: Ramu
 ---
-<<if $Ramu_Day==0>>
-    <<jump Ramu_Day6>>
+<<declare $Ramu_Complete = false as bool>>
+<<declare $Ramu_Path = "" as string>>
+<<declare $Ramu_Day = 1 as number>>//change to 0 to start the story from the jump node below
+<<if $Ramu_Day==0>>//for testing
+    <<jump Ramu_Day6>>//for testing
 <<elseif $Ramu_Day==1>>
     <<jump Ramu_Day1>>
 <<elseif $Ramu_Day==2>>
@@ -173,7 +176,6 @@ Ramu: But yes, little brother. When you play - when you really play, not just sw
 
 // Scene Conclusion
 As their rooftop conversation reveals the emotional complexity behind Ramu's seemingly harsh approach to his brother's cricket development, both participants gain deeper understanding of how fear and hope can coexist in the pursuit of unlikely dreams. Ramu's admission of secret pride and belief, carefully guarded behind practical concerns about their family's limitations, provides Raju with validation that his efforts are recognized even when not explicitly praised, while the honest exchange strengthens their bond as brothers united in facing the challenges that separate talent from opportunity.
-
 -> Raju: I understand your fears, bhaiya. Let me prove my dedication slowly and show you cricket can be safe.
     <<jump Ramu_Day3a>>
 -> Raju: I'll prove my commitment is unbreakable, bhaiya. Nothing will stop me from showing you this dream is real.
