@@ -52,5 +52,8 @@ public enum Characters
     Raju = 21,
     CoachDev = 22,
     Imtiaz = 23,
-    Vivek = 24
+    Vivek = 24,
+    MrsSharma = 25,
+    Jaspreet = 26,
+    Sunil = 27
 }
