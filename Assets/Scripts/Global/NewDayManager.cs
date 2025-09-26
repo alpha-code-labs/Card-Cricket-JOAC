@@ -205,6 +205,7 @@ public class NewDayManager : MonoBehaviour
         isEvening = false;
         GameManager.instance.currentSaveData.currentDate = CalanderSystem.instance.GetNextDate(GameManager.instance.currentSaveData.currentDate);
         SaveSystem.SaveDataToFile();
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.SaveStateToPersistentStorage("yarnSaveData.json");
         TransitionScreenManager.instance.LoadScene("NewDayScene");
     }
 
