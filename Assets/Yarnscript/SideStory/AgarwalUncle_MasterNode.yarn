@@ -1,6 +1,9 @@
 title: AgarwalUncle
 position: -416,-71
 ---
+<<declare $AgarwalUncle_Complete = false as bool>>
+<<declare $AgarwalUncle_Path = "" as string>>
+<<declare $AgarwalUncle_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $AgarwalUncle_Day==0>>
     <<jump AgarwalUncle_Day1>>
 <<elseif $AgarwalUncle_Day==1>>

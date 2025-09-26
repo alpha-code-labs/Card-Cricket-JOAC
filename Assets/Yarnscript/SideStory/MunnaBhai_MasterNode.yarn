@@ -1,5 +1,8 @@
 title: MunnaBhai
 ---
+<<declare $MunnaBhai_Complete = false as bool>>
+<<declare $MunnaBhai_Path = "" as string>>
+<<declare $MunnaBhai_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $MunnaBhai_Day==0>>
     <<jump MunnaBhai_Day1>>
 <<elseif $MunnaBhai_Day==1>>

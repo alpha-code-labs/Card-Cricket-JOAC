@@ -1,5 +1,8 @@
 title: Aryan
 ---
+<<declare $Aryan_Complete = false as bool>>
+<<declare $Aryan_Path = "" as string>>
+<<declare $Aryan_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Aryan_Day==0>>//This is for testing purpose only, remove later
     <<jump Aryan_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Aryan_Day==1>>

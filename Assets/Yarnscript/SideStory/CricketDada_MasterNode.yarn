@@ -1,5 +1,8 @@
-title: Cricket_Dada
+title: CricketDada
 ---
+<<declare $Cricket_Dada_Complete = false as bool>>
+<<declare $Cricket_Dada_Path = "" as string>>
+<<declare $Cricket_Dada_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Cricket_Dada_Day==0>>
     <<jump Cricket_Dada_Day1>>
 <<elseif $Cricket_Dada_Day==1>>

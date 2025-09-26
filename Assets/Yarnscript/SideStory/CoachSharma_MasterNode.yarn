@@ -1,5 +1,8 @@
 title: CoachSharma
 ---
+<<declare $CoachSharma_Complete = false as bool>>
+<<declare $CoachSharma_Path = "" as string>>
+<<declare $CoachSharma_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $CoachSharma_Day==0>>//This is for testing purpose only, remove later
     <<jump CoachSharma_Day1>>  //This is for testing purpose only, remove later
 <<elseif $CoachSharma_Day==1>>

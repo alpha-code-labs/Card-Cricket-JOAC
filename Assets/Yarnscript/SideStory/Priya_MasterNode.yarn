@@ -1,5 +1,8 @@
 title: Priya
 ---
+<<declare $Priya_Complete = false as bool>>
+<<declare $Priya_Path = "" as string>>
+<<declare $Priya_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Priya_Day==0>>
     <<jump Priya_Day1>>
 <<elseif $Priya_Day==1>>

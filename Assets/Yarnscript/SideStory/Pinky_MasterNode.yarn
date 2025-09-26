@@ -1,5 +1,8 @@
 ﻿title: Pinky
 ---
+<<declare $Pinky_Complete = false as bool>>
+<<declare $Pinky_Path = "" as string>>
+<<declare $Pinky_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Pinky_Day==0>>
     <<jump Pinky_Day1>>
 <<elseif $Pinky_Day==1>>

@@ -1,5 +1,8 @@
 title: Kamla
 ---
+<<declare $Kamla_Complete = false as bool>>
+<<declare $Kamla_Path = "" as string>>
+<<declare $Kamla_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Kamla_Day==0>>//This is for testing purpose only, remove later
     <<jump Kamla_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Kamla_Day==1>>

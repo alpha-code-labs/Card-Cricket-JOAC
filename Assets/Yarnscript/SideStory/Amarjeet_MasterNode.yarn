@@ -1,5 +1,8 @@
 ﻿title: Amarjeet
 ---
+<<declare $Amarjeet_Complete = false as bool>>
+<<declare $Amarjeet_Path = "" as string>>
+<<declare $Amarjeet_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Amarjeet_Day==0>>//This is for testing purpose only, remove later
     <<jump Amarjeet_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Amarjeet_Day==1>>

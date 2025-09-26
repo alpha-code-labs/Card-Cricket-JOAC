@@ -1,5 +1,8 @@
 title: Fatima
 ---
+<<declare $Fatima_Complete = false as bool>>
+<<declare $Fatima_Path = "" as string>>
+<<declare $Fatima_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Fatima_Day==0>>
     <<jump Fatima_Day1>>
 <<elseif $Fatima_Day==1>>

@@ -1,5 +1,8 @@
 title: RamCharan
 ---
+<<declare $RamCharan_Complete = false as bool>>
+<<declare $RamCharan_Path = "" as string>>
+<<declare $RamCharan_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $RamCharan_Day==0>>//This is for testing purpose only, remove later
     <<jump RamCharan_Day1>>  //This is for testing purpose only, remove later
 <<elseif $RamCharan_Day==1>>
