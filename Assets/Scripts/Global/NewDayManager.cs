@@ -74,6 +74,10 @@ public class NewDayManager : MonoBehaviour
                 yield return DisplayTextThenFade("");
                 //Load Special Event
                 break;
+            case TypeOfEvent.QuizGamePlay:
+                yield return DisplayTextThenFade("");
+                TransitionScreenManager.instance.LoadScene(SceneNames.QuizGamePlay);
+                break;
             case TypeOfEvent.SkipDayOrEvening:
                 if (isEvening)
                     EndDay();

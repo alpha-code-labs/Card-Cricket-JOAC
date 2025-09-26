@@ -31,5 +31,6 @@ public enum TypeOfEvent
     FreeTime,
     Speical,
     SkipDayOrEvening,
-    GamePlay
+    GamePlay,
+    QuizGamePlay
 }

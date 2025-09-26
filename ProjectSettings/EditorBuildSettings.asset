@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutsceneScene.unity
     guid: 8998c80868449574ea79808e95e6340e
+  - enabled: 1
+    path: Assets/Scenes/QuizGamePlay.unity
+    guid: 2edecb363d82c9c4f9be5e56440cb8bf
   m_configObjects: {}

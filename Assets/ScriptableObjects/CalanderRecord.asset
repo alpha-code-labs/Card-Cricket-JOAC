@@ -504,7 +504,7 @@ MonoBehaviour:
       eventType: 0
     - eventName: Quiz Gameplay 11
       eventDescription: Gameplay System
-      eventType: 4
+      eventType: 5
     - eventName: scene_131
       eventDescription: 
       eventType: 0

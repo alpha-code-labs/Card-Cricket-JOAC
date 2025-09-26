@@ -96,7 +96,8 @@ public enum SceneNames
     CardGameScene,
     NewDayScene,
     WorldNav,
-    CutsceneScene
+    CutsceneScene,
+    QuizGamePlay
 }
 public enum TransitionTypes
 {
