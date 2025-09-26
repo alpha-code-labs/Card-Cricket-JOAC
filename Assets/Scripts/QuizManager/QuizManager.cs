@@ -400,7 +400,7 @@ public class QuizManager : MonoBehaviour
         if (percentageText != null)
         {
             percentageText.gameObject.SetActive(true);
-            percentageText.text = $"Your Score: {targetPercentage:F0}%";
+            percentageText.text = $"Your Percentage: {targetPercentage:F0}%";
         }
 
         yield return new WaitForSeconds(1f);
