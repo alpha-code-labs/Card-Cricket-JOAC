@@ -30,7 +30,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     // Dictionary for sprite name to index mapping
     private Dictionary<string, int> spriteNameToIndex;
-    private CharacterType currentActiveCharacter = CharacterType.Ramu; // Track active character
+    private Characters currentActiveCharacter = Characters.Ramu; // Track active character
     private bool isCharacterOnLeft = true; // Track which side current character is on
 
     void Awake()
@@ -98,7 +98,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [YarnCommand("SetCharacterExpression")]
     public static void SetCharacterExpression(string characterName, string emotion)
     {
-        if (!System.Enum.TryParse<CharacterType>(characterName, true, out CharacterType character))
+        if (!System.Enum.TryParse<Characters>(characterName, true, out Characters character))
         {
             Debug.LogError($"Unknown character name: {characterName}");
             return;
@@ -108,7 +108,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     }
 
     // Internal method that does the actual work
-    private static void SetCharacterExpressionInternal(CharacterType character, string emotion)
+    private static void SetCharacterExpressionInternal(Characters character, string emotion)
     {
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
@@ -304,36 +304,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
         musicAudioSource.volume = 0f;
     }
-}
-
-// ENUMS
-public enum CharacterType
-{
-    Ramu,
-    Raju,
-    Kamla,
-    ShivPrasad,
-    CoachDev,
-    Aryan,
-    Imtiaz,
-    Vivek,
-    Amarjeet,
-    Bed,
-    Amit,
-    Sumit,
-    Pinky,
-    RamCharan,
-    Priya,
-    Naresh,
-    CoachSharma,
-    SunitaMam,
-    CricketDada,
-    Suresh,
-    AgarwalUncle,
-    Fatima,
-    MochiUncle,
-    MunnaBhai,
-    Vikram
 }
 
 public enum EmotionType
