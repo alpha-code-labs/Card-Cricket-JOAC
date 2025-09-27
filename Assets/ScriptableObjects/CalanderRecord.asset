@@ -454,9 +454,6 @@ MonoBehaviour:
       eventType: 4
   - date: 1990/04/12
     events:
-    - eventName: scene_117
-      eventDescription: 
-      eventType: 0
     - eventName: Skip
       eventDescription: 
       eventType: 3
@@ -464,37 +461,6 @@ MonoBehaviour:
       eventDescription: 'Semifinal batting '
       eventType: 0
     - eventName: Card Gameplay 8
-      eventDescription: Gameplay System
-      eventType: 4
-  - date: 1990/04/13
-    events:
-    - eventName: scene_121
-      eventDescription: 
-      eventType: 0
-    - eventName: Skip
-      eventDescription: 
-      eventType: 3
-    - eventName: scene_122
-      eventDescription: Chasing 125 over 10 balls
-      eventType: 0
-    - eventName: scene_123
-      eventDescription: luck has maxed
-      eventType: 0
-    - eventName: Card Gameplay 9
-      eventDescription: Gameplay System
-      eventType: 4
-    - eventName: scene_126
-      eventDescription: Dont hold the grudge
-      eventType: 0
-    - eventName: scene_127
-      eventDescription: First paper
-      eventType: 0
-  - date: 1990/04/14
-    events:
-    - eventName: scene_128
-      eventDescription: revision
-      eventType: 0
-    - eventName: Quiz Gameplay 10
       eventDescription: Gameplay System
       eventType: 4
   - date: 1990/04/15
@@ -506,7 +472,7 @@ MonoBehaviour:
       eventDescription: Gameplay System
       eventType: 5
     - eventName: scene_131
-      eventDescription: 
+      eventDescription: I tried my best.
       eventType: 0
   - date: 1990/04/30
     events:

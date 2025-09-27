@@ -24,7 +24,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Angry">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Sports Academy
@@ -32,25 +32,25 @@ After hearing about the prestigious sports academy from neighborhood boys, Raju 
 
 The imposing gates of the sports academy loom before Raju as he approaches the pristine facility, its manicured grounds and professional equipment representing everything he aspires to but cannot access. The contrast between this world of privilege and his own humble circumstances weighs heavily on his shoulders, yet his determination to witness real cricket training propels him forward despite knowing he risks rejection and humiliation for simply being present in a space not meant for someone of his background.
 
-<<SetCharacterExpression "CoachSharma" "Angry">>
+<<SetCharacterExpression "CoachSharma" Angry>>
 CoachSharma: Hey! You there, boy! Who let you into this academy? These grounds are private property, not a playground for stray kids from the slums!
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: Sir, I'm sorry for disturbing practice. I only wanted to watch and maybe learn something. I've been practicing cricket with my brother, but I know I need proper coaching to really improve.
 
-<<SetCharacterExpression "CoachSharma" "Angry">>
+<<SetCharacterExpression "CoachSharma" Angry>>
 CoachSharma: Learn? Ha! You think watching from the sidelines will magically make you a cricketer? Boy, cricket isn't a game you learn by osmosis. You need fees - substantial fees. You need proper equipment. You need years of disciplined training under professional guidance.
 
-<<SetCharacterExpression "CoachSharma" "Angry">>
+<<SetCharacterExpression "CoachSharma" Angry>>
 CoachSharma: These boys pay fifteen thousand rupees per month for coaching. They've been training for years. They have everything cricket requires - resources, commitment, family support. You have none of that. Go back to your galli cricket with tennis balls and wooden sticks. That's your level.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Maybe I don't have money or fancy equipment now, sir. But one day I'll prove to you that I can play cricket properly. One day you'll see that talent and determination matter more than fees and family wealth.
 
-<<SetCharacterExpression "CoachSharma" "Angry">>
+<<SetCharacterExpression "CoachSharma" Angry>>
 CoachSharma: Dreams are cheap, boy. Anyone can dream of playing cricket. But discipline is costly - in time, money, sacrifice, and commitment. Until you understand that difference, you're wasting both my time and yours.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju walks away from the academy with Coach Sharma's harsh words echoing in his mind, he feels the familiar sting of rejection based on economic circumstances rather than ability or potential. Yet beneath the hurt lies a burning determination to prove that true commitment cannot be measured in rupees, and that someday he will return to demonstrate that passion and persistence can overcome the barriers that wealth erects around opportunity.
@@ -62,7 +62,7 @@ title: CoachSharma_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Angry">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Sports Academy, Day 2
@@ -70,7 +70,7 @@ Despite yesterday's harsh dismissal and public humiliation, Raju chooses to retu
 
 The morning sun casts long shadows across the academy grounds as Raju approaches for the second time, his resolve strengthened rather than weakened by yesterday's confrontation with Coach Sharma. The pristine facility represents both the pinnacle of cricket training and the embodiment of social barriers he faces, yet his hunger for genuine improvement compels him to return despite the certainty of facing renewed hostility and dismissal from someone who judges worth by wallet rather than will.
 
-<<SetCharacterExpression "CoachSharma" "Angry">>
+<<SetCharacterExpression "CoachSharma" Angry>>
 CoachSharma: You again? Didn't I make myself clear yesterday? Why do you persist in wasting your time here? This academy is for serious students with serious commitments, not for curiosity seekers who don't belong.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -182,7 +182,7 @@ title: CoachSharma_Day3
 title: CoachSharma_Day3a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 3 - Path A: Quiet Consistency
@@ -211,7 +211,7 @@ As Raju completes his first morning of unglamorous preparation work with the car
 title: CoachSharma_Day3b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 3 - Path B: Passionate Fire
@@ -240,7 +240,7 @@ As Raju completes his first morning of passionate labor with the same intensity 
 title: CoachSharma_Day3c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 3 - Path C: Systematic Planning
@@ -268,7 +268,7 @@ As Raju completes his first morning of systematic preparation work with the same
 title: CoachSharma_Day4
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 4 - The Real Test
@@ -316,7 +316,7 @@ As Raju absorbs the reality that his demonstrated talent and proven character st
 title: CoachSharma_Day5
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 5 - The Unexpected Offer
@@ -362,7 +362,7 @@ As Raju departs the academy with a concrete path toward earning legitimate coach
 title: CoachSharma_Day6
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 6 - Final Day - Recognition

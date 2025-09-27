@@ -26,7 +26,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 1 Morning
@@ -54,13 +54,13 @@ Kamla: Remember, beta, when we're in their world, we're respectful and quiet. Bu
 
 <<SetBGSprite WellingtonEstate>>
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Who's this? Another servant boy? I hope he's more careful than the last one who broke my mother's vase.
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: I'm not a servant. I'm just helping my mother. There's nothing wrong with helping family.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Helping? Is that what poor people call working for money? Don't break anything, slum boy. Everything here costs more than your family makes in a month.
 
 <<SetCharacterExpression "Kamla" "Serious">>
@@ -82,7 +82,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 2 Evening
@@ -131,7 +131,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 3 Morning
@@ -239,7 +239,7 @@ title: Kamla_Day4
 title: Kamla_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path A: Complete Family Dedication
@@ -256,7 +256,7 @@ Kamla: Your devotion these days has shown me something beautiful, beta. Now let 
 title: Kamla_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path B: Balanced Approach
@@ -273,7 +273,7 @@ Kamla: Your balanced approach has impressed me, beta. Now let me show you the re
 title: Kamla_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path C: Cricket with Character
@@ -290,7 +290,7 @@ Kamla: Your serious approach to cricket has caught my attention, beta. Let me sh
 title: Kamla_Revelation
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 
 // Day 4 - The Mehta Household Visit
 After three days of voluntarily helping his mother and demonstrating growing maturity, Raju accompanies Kamla to the wealthy Mehta household, witnessing the stark contrast between their poverty and others' abundance.
@@ -335,7 +335,7 @@ As Raju and Kamla walk home from the Mehta household with new understanding of b
 title: Kamla_Day5
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite LocalMarket>>
 
 // Day 5 - The Cricket Ball Purchase
@@ -391,7 +391,7 @@ As Raju and Kamla walk home from the market with the precious cricket ball repre
 title: Kamla_Day6
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Day 6 - The Results
@@ -436,7 +436,7 @@ As the conversation about cricket success transitions into deeper affirmations o
 title: Kamla_Day7
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_1>>
 <<SetBGSprite HutInterior>>
 
 // Day 7 - The Promise
@@ -474,7 +474,7 @@ Raju: I promise I won't let you down, Ma. I'll make our whole family proud - not
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Beta, you already have made me proud. Every morning when you chose to help before cricket, every moment when you showed that dreams and responsibility can work together - you've already given me more pride than any trophy could.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju settles into sleep carrying his mother's unconditional promise of support and belief in his cricket dreams, he understands that he has received something more precious than any material advantage - the absolute faith of someone who knows his character intimately and believes in his potential to achieve greatness while remaining true to his values. Kamla's commitment represents not just support for his athletic goals but validation of his worth as a person capable of transforming dreams into reality through dedication and integrity.

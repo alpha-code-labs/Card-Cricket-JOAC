@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -94.173}
-  m_SizeDelta: {x: 187.0944, y: 253.65}
+  m_AnchoredPosition: {x: 40, y: -76.52453}
+  m_SizeDelta: {x: 235.1949, y: 317.2372}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &240849774
 MonoBehaviour:
@@ -226,7 +226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.803
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -496,8 +496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -90}
-  m_SizeDelta: {x: 187.09436, y: 253.65}
+  m_AnchoredPosition: {x: -54, y: -67.36447}
+  m_SizeDelta: {x: 223.8772, y: 298.9211}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &421241803
 MonoBehaviour:
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9559748, g: 0.9559748, b: 0.9559748, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1036,11 +1036,14 @@ MonoBehaviour:
   musicAudioSource: {fileID: 260015506}
   backgroundMusicClips:
   - {fileID: 8300000, guid: 12ce2aca1d71eb641be039dd89d151da, type: 3}
-  - {fileID: 8300000, guid: c9efe8b92ca72944c81c6e8669dba019, type: 3}
-  - {fileID: 8300000, guid: c9efe8b92ca72944c81c6e8669dba019, type: 3}
-  - {fileID: 8300000, guid: c9efe8b92ca72944c81c6e8669dba019, type: 3}
-  - {fileID: 8300000, guid: c9efe8b92ca72944c81c6e8669dba019, type: 3}
-  - {fileID: 8300000, guid: c9efe8b92ca72944c81c6e8669dba019, type: 3}
+  - {fileID: 8300000, guid: 7f13803a3e7d37443a5e3016c38aed60, type: 3}
+  - {fileID: 8300000, guid: 5387a62702ca81841ac820d1d9d4e4fa, type: 3}
+  - {fileID: 8300000, guid: 20bd262673471fb4cb4886e288f117e4, type: 3}
+  - {fileID: 8300000, guid: 38f99c2772b04f349b845c1b5b490b3d, type: 3}
+  - {fileID: 8300000, guid: 20affde3f80a6494783b8fdbcfc46370, type: 3}
+  - {fileID: 8300000, guid: 8c268468219474a47b947e21c55da275, type: 3}
+  - {fileID: 8300000, guid: 3544179ca6ee775499b8f14c22c460ca, type: 3}
+  - {fileID: 8300000, guid: ffcd824a1ebe0c04b8f02733f826618a, type: 3}
   musicFadeDuration: 1
 --- !u!1 &1998626979
 GameObject:

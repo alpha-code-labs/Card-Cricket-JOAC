@@ -5,6 +5,7 @@ using Yarn.Unity;
 using UnityEngine.UI;
 using System.Collections;
 using DG.Tweening;
+using System;
 
 public class DialogueScriptCommandHandler : MonoBehaviour
 {
@@ -27,16 +28,21 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] List<AudioClip> backgroundMusicClips;
     [SerializeField] float musicFadeDuration = 1f;
-
+     
     // Dictionary for sprite name to index mapping
     private Dictionary<string, int> spriteNameToIndex;
+
+    private Dictionary<String,AudioClip> musicDictionary;
     private Characters currentActiveCharacter = Characters.Ramu; // Track active character
     private bool isCharacterOnLeft = true; // Track which side current character is on
+
+
 
     void Awake()
     {
         Instance = this;
         InitializeSpriteMapping();
+        InitializeMusicDictionary();
     }
 
     void Start()
@@ -87,6 +93,36 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
+private void InitializeMusicDictionary()
+{
+    musicDictionary = new Dictionary<string, AudioClip>();
+
+    // Map each AudioClip by its actual name, not by index or enum value
+    for (int i = 0; i < backgroundMusicClips.Count; i++)
+    {
+        if (backgroundMusicClips[i] != null)
+        {
+            AudioClip clip = backgroundMusicClips[i];
+            string clipName = clip.name; // Get the actual name of the AudioClip
+            
+            // Add the clip with its exact name
+            musicDictionary[clipName] = clip;
+            
+            // Also add normalized version for flexibility
+            string normalizedName = NormalizeName(clipName);
+            if (normalizedName != clipName)
+            {
+                musicDictionary[normalizedName] = clip;
+            }
+            
+            // Debug to verify mapping
+            Debug.Log($"Mapped AudioClip '{clipName}' (at index {i}) to dictionary");
+        }
+    }
+    
+    Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
+}
+    
     // Helper method to normalize sprite names for lookup
     private static string NormalizeName(string name)
     {
@@ -227,20 +263,26 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     }
 
     // AUDIO COMMANDS
-    [YarnCommand("PlayBackgroundMusic")]
-    public static void PlayBackgroundMusic(string musicName)
+ [YarnCommand("PlayBackgroundMusic")]
+public static void PlayBackgroundMusic(string musicName)
+{
+    // Try to find music in dictionary
+    if (Instance.musicDictionary.ContainsKey(musicName))
     {
-        if (System.Enum.TryParse<MusicType>(musicName, true, out MusicType musicType))
-        {
-            int index = (int)musicType;
-            Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(index));
-        }
-        else
-        {
-            Debug.LogError($"Music '{musicName}' not found!");
-        }
+        AudioClip musicClip = Instance.musicDictionary[musicName];
+        Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
     }
-
+    // Try normalized name
+    else if (Instance.musicDictionary.ContainsKey(NormalizeName(musicName)))
+    {
+        AudioClip musicClip = Instance.musicDictionary[NormalizeName(musicName)];
+        Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
+    }
+    else
+    {
+        Debug.LogError($"Music '{musicName}' not found in dictionary!");
+    }
+}
     [YarnCommand("StopBackgroundMusic")]
     public static void StopBackgroundMusic()
     {
@@ -248,27 +290,38 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     }
 
     // AUDIO COROUTINES
-    private IEnumerator PlayBackgroundMusicCoroutine(int index)
+private IEnumerator PlayBackgroundMusicCoroutine(AudioClip musicClip)
+{
+    if (musicClip != null)
     {
-        if (index >= 0 && index < backgroundMusicClips.Count)
+        // Only fade out if different music is playing
+        if (musicAudioSource.isPlaying && musicAudioSource.clip != musicClip)
         {
-            if (musicAudioSource.isPlaying)
-            {
-                yield return StartCoroutine(FadeOutMusic());
-            }
+            yield return StartCoroutine(FadeOutMusic());
+        }
+        
+        // If same music is already playing, don't restart
+        if (musicAudioSource.clip == musicClip && musicAudioSource.isPlaying)
+        {
+            yield break;
+        }
 
-            musicAudioSource.clip = backgroundMusicClips[index];
-            musicAudioSource.loop = true;
+        musicAudioSource.clip = musicClip;
+        musicAudioSource.loop = true; // This ensures seamless looping
+        
+        // Only fade in if we're not already playing
+        if (!musicAudioSource.isPlaying)
+        {
             musicAudioSource.volume = 0f;
             musicAudioSource.Play();
-
             yield return StartCoroutine(FadeInMusic());
         }
-        else
-        {
-            Debug.LogError($"Music index {index} out of range!");
-        }
     }
+    else
+    {
+        Debug.LogError("Music clip is null!");
+    }
+}
 
     private IEnumerator StopBackgroundMusicCoroutine()
     {
@@ -327,9 +380,17 @@ public enum EmotionType
 public enum MusicType
 {
     Heartbeat = 0,
-    Exciting = 1,
-    Disappointing = 2,
-    Light = 3,
-    Emotional = 4,
-    Angry = 5
+    Exciting_1 = 1,
+    Disappointing_1 = 2,
+    Light_1 = 3,
+    Emotional_1 = 4,
+    Angry_1 = 5,
+
+    Spiritual_1 = 6,
+
+    Light_3 = 7,
+    
+    Emotional_2 = 8,
+    
+    
 }

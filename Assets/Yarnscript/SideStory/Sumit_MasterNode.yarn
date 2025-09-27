@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 1 at Koliwada Ground
@@ -68,7 +68,7 @@ title: Sumit_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 2
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 3 - Choice Day
@@ -224,7 +224,7 @@ As the friends commit to a rapid-fire approach that emphasizes quick thinking an
 
 title: Sumit_Day4
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Implementation Day (All paths converge here)
@@ -256,7 +256,7 @@ As the competitive phase begins with both participants bringing their full menta
 
 title: Sumit_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 5 - Continuing Competition
@@ -288,7 +288,7 @@ As the second day of intellectual competition unfolds with increased complexity 
 
 title: Sumit_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 6 - Final Reflection
@@ -320,7 +320,7 @@ Raju: That sounds wonderful! I'd love to keep challenging my mind this way while
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Then we both benefit perfectly - you continue developing your mental agility and competitive skills while I gain a reliable partner for intellectual challenges, and together we prove that competition can bring people closer instead of driving them apart.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with plans for ongoing intellectual competition that strengthens rather than strains their friendship, Sumit and Raju understand that they have discovered something valuable about the nature of healthy competition, mental development, and mutual encouragement. Their systematic approach to intellectual challenge has created a model for how competitive activities can enhance personal growth while building rather than threatening meaningful relationships.

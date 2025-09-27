@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 1 at the library
@@ -33,7 +33,7 @@ Instead of heading straight home after school, Raju chooses to go to the public 
 
 The hushed atmosphere of the public school library provides a welcome refuge from the chaos and noise of Raju's crowded home environment, its rows of books and study tables creating an academic sanctuary where focused learning becomes possible. The late afternoon light filters through dusty windows as scattered students work quietly at individual tables, while the familiar smell of aging paper and wood polish reinforces the serious educational purpose that has drawn him here to wrestle with mathematical concepts that seem to resist his understanding.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" Angry>>
 Pinky: You're making too much noise with that chair. Some people are trying to concentrate here.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -42,7 +42,7 @@ Raju: Sorry about that. Are those medical books? We're only in 8th grade.
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Some of us can't afford to wait until later to start preparing. Medical entrance exams require years of preparation, not months.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" Angry>>
 Pinky: You're approaching that completely wrong. The quadratic formula isn't meant to be guessed at - there's a systematic method.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -57,7 +57,7 @@ Raju: That makes so much more sense. How did you learn to explain things so clea
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: When you're studying alone most of the time, you learn to be your own teacher. You have to understand things well enough to explain them to yourself.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju packs his books and prepares to leave the library with Pinky's clear mathematical explanation still resonating in his mind, he realizes that he has encountered something rare - a peer who combines academic excellence with the ability to teach complex concepts in understandable terms. The brief interaction has transformed his frustration with quadratic equations into genuine comprehension, while revealing that behind Pinky's serious demeanor lies both exceptional intelligence and a dedication to learning that surpasses anything he has observed among his classmates.
@@ -70,7 +70,7 @@ title: Pinky_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 2 at the library
@@ -117,7 +117,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 3 at the library
@@ -171,6 +171,8 @@ title: Pinky_Day3a
 tags:
 position: -308,129
 ---
+
+
 <<set $Pinky_Path = "a">>
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Let's focus completely on academics, Pinky. Excellence in exams is our best weapon against family pressure. If we both achieve outstanding scores, our families will have to respect our capabilities.
@@ -271,7 +273,7 @@ title: Pinky_Day4
 title: Pinky_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path A: Academic Excellence Focus
@@ -313,7 +315,7 @@ As the pre-exam pressure tests their partnership's resilience and reveals both s
 title: Pinky_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path B: Emotional Support Focus
@@ -355,7 +357,7 @@ As their emotional support system proves its value under the intense pressure of
 title: Pinky_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path C: Collaborative Partnership Focus
@@ -396,7 +398,7 @@ As their collaborative partnership proves its effectiveness under examination pr
 
 title: Pinky_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 5 - Final preparation session
@@ -440,7 +442,7 @@ As their final preparation session concludes with both students having demonstra
 
 title: Pinky_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 6 - Results and conclusion
@@ -484,7 +486,7 @@ Raju: Your systematic teaching methods didn't just improve my grades - they show
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And your questions forced me to understand concepts at a deeper level while showing me that knowledge becomes more meaningful when it's used to help others achieve their goals.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their final meeting concludes with both students having achieved remarkable success that validates their strategic partnership while securing family support for their individual dreams, Raju and Pinky understand that they have accomplished something more significant than academic improvement - they have demonstrated that collaboration enhances rather than diminishes individual excellence while creating supportive relationships that help talented young people overcome systemic barriers to opportunity. Their friendship has transformed both participants while providing a model for how shared struggle can generate mutual success rather than zero-sum competition.

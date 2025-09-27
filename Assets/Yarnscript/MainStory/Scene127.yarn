@@ -4,7 +4,7 @@ colorID: 0
 position: 0,0
 ---
 
-<<PlayBackgroundMusic "exciting">>
+<<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "Ramu" "Excited">>

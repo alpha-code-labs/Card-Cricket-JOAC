@@ -27,7 +27,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Sports academy visit
@@ -35,13 +35,13 @@ Drawn by curiosity about professional cricket facilities, Raju chooses to walk p
 
 The imposing walls of the sports academy loom before Raju as he approaches the facility that represents everything he dreams of achieving in cricket, its professional-grade nets and manicured grounds standing in stark contrast to the makeshift playing areas of his neighborhood. The sound of leather on willow echoes from within the complex, creating an almost magnetic pull that draws him closer despite his awareness that he has no legitimate reason to be here. Naresh, the academy's groundskeeper, watches from his position near the entrance with the wary eye of someone responsible for maintaining security and protecting expensive equipment.
 
-<<SetCharacterExpression "Naresh" "Angry">>
+<<SetCharacterExpression "Naresh" Angry>>
 Naresh: Oi! You there, boy! What are you doing lurking around here? This is not a public playground for slum kids. Go play your street cricket in your own galli where you belong.
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: I just wanted to watch for a moment, bhaiya. I won't disturb anyone or touch anything. I've never seen proper cricket nets before, and I'm trying to learn how real cricket is played.
 
-<<SetCharacterExpression "Naresh" "Angry">>
+<<SetCharacterExpression "Naresh" Angry>>
 Naresh: Watch? Listen, boy, I have strict rules to follow here. If Coach Sharma or any of the academy officials see me letting unauthorized people onto the grounds, I'll lose this job faster than you can say 'cricket.' This is my livelihood, not a charity for curious children.
 
 <<SetCharacterExpression "Naresh" "Serious">>
@@ -50,7 +50,7 @@ Naresh: These facilities cost more money than your entire neighborhood sees in a
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I understand, bhaiya. I don't want to cause you problems. But one day, I'll play here too. Not as someone sneaking around, but as someone who belongs.
 
-<<SetCharacterExpression "Naresh" "Angry">>
+<<SetCharacterExpression "Naresh" Angry>>
 Naresh: Hmph. Big dreams for such a small boy. But dreams don't pay academy fees or buy proper equipment. Reality is harder than fantasy, child.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -67,7 +67,7 @@ title: Naresh_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 2
@@ -75,7 +75,7 @@ Despite yesterday's clear dismissal, Raju chooses to return to the academy at th
 
 The afternoon sun casts long shadows across the academy grounds as Raju returns for his second attempt to observe professional cricket training, his positioning at a careful distance from the entrance demonstrating both respect for yesterday's boundaries and persistence in pursuing his educational goals. Naresh notices the young man's return with a mixture of irritation and grudging recognition that this particular observer shows more restraint and genuine interest than the typical troublemakers who occasionally attempt to access the facilities, though his responsibility for security still requires vigilance against any unauthorized presence.
 
-<<SetCharacterExpression "Naresh" "Angry">>
+<<SetCharacterExpression "Naresh" Angry>>
 Naresh: You again? I thought I made myself clear yesterday. Don't you boys have anything better to do than hang around places where you don't belong?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -111,7 +111,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 3
@@ -258,7 +258,7 @@ title: Naresh_Day4
 title: Naresh_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 4 - Path A: Advanced Cricket Analysis
@@ -273,7 +273,7 @@ As Raju demonstrates advanced cricket analysis that rivals professional-level un
 title: Naresh_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 4 - Path B: Earning Trust Through Service
@@ -288,7 +288,7 @@ As Raju demonstrates his understanding of responsibility and reverence for crick
 title: Naresh_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Day 4 - Path C: Sharing Cricket Dreams
@@ -304,7 +304,7 @@ title: Naresh_Day5
 tags:
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 5
@@ -350,7 +350,7 @@ title: Naresh_Day6
 tags:
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 6
@@ -402,7 +402,7 @@ title: Naresh_Day7
 tags:
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)

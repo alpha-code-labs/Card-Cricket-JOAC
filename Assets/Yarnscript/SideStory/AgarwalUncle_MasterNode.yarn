@@ -26,7 +26,7 @@ tags:
 position: -94,-392
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Scene Setup - Day 1 at the general store during evening rush
@@ -70,7 +70,7 @@ tags:
 position: 423,-115
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Scene Setup - Day 2 during morning restocking
@@ -117,7 +117,7 @@ tags:
 position: -98,99
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Scene Setup - Day 3 during afternoon inventory period
@@ -240,7 +240,7 @@ title: AgarwalUncle_Day4a
 tags:
 position: 685,-46
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Day 4 - Path A: Inventory Management Focus
@@ -274,7 +274,7 @@ title: AgarwalUncle_Day4b
 tags:
 position: 375,142
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Day 4 - Path B: Customer Service Focus
@@ -308,7 +308,7 @@ title: AgarwalUncle_Day4c
 tags:
 position: 374,-300
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Day 4 - Path C: Business Efficiency Focus
@@ -341,7 +341,7 @@ As the pre-evening preparation intensifies with Raju taking on his designated re
 title: AgarwalUncle_Day5
 position: 20,-238
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Day 5 - Building on success
@@ -374,7 +374,7 @@ As the second day of collaboration unfolds with expanded responsibilities and hi
 title: AgarwalUncle_Day6
 position: 767,58
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
 
 // Day 6 - Final conversation and job offer
@@ -406,7 +406,7 @@ Raju: That's wonderfully generous, uncle! But more than the payment, I value wha
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: Then we both benefit perfectly - you gain practical business experience that will serve you well in any future endeavor, and I gain a reliable partner who understands that customer satisfaction and community trust are the foundation of sustainable retail success.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the broader community, Raju and Agarwal Uncle understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and experiential differences to create partnerships that strengthen both individuals and the local economic ecosystem they serve together.

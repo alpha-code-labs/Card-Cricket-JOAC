@@ -24,7 +24,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Scene Setup - High-rise complex
@@ -32,19 +32,19 @@ Despite knowing the discomfort it brings, Raju chooses to accompany his mother t
 
 The gleaming marble floors and pristine glass surfaces of the high-rise complex seem to mock Raju's simple clothes and worn sandals as he follows his mother through corridors that smell of expensive cleaning products and privilege. The weight of social hierarchy presses down on him with each step, while the familiar sting of being judged by appearance alone begins to build in his chest, preparing him for confrontations he knows are inevitable in this gilded environment.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Oh, look who's back. The servant boy returns. What's the matter, slum boy - did you lose your way to the garbage dump again?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: I'm not your servant. I'm not anybody's servant. I'm here to help my mother, that's all.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Help? Oh, that's rich! That's what poor kids call working for free, isn't it? Your mother cleans our toilets, and you carry her bags. Very inspiring.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: I bet you think you're special because you can kick a ball around in the dirt with the other slum kids. But that's not real cricket, you know. You probably can't even hold a bat properly.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: I can play cricket. Better than you think. Better than you, probably.
 
 <<SetCharacterExpression "Aryan" "Excited">>
@@ -53,7 +53,7 @@ Aryan: Better than me? Ha! That's the funniest thing I've heard all week. You wi
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Tell you what, slum boy. If you're so confident, if you really think you can play - come back tomorrow. Bring whatever pathetic excuse for cricket equipment you have. We'll see just how good you really are.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju walks away from the confrontation with Aryan's mocking laughter echoing in his ears, his hands clench into fists while a fire of determination burns away the initial sting of humiliation. The wealthy boy's challenge has awakened something fierce and prideful within him - a recognition that tomorrow's encounter will be about much more than cricket, representing a clash between two different worlds and their competing definitions of worth and capability.
@@ -65,7 +65,7 @@ title: Aryan_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Scene Setup - High-rise complex, Day 2
@@ -79,7 +79,7 @@ Aryan: Well, well. The slum boy returns. And look what I have here - genuine Eng
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: It's a beautiful bat, but it's still just a piece of willow wood. The bat doesn't hit the boundaries - the batsman does. Equipment doesn't make you play better, practice and heart do.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: That's exactly what losers say to make themselves feel better about having inferior equipment! When you have proper coaching, professional equipment, and dedicated practice facilities, natural talent becomes irrelevant.
 
 Aryan: You think you can play cricket with your makeshift bats and tennis balls? That's not real cricket - that's just poor kids playing in the dirt and pretending it matters.
@@ -96,7 +96,7 @@ Aryan: Tomorrow afternoon, right here in this courtyard. A proper cricket challe
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll be here. And when it's over, you'll understand that respect isn't something money can buy - it's something you earn through skill and character.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju departs the complex with tomorrow's challenge officially accepted, he feels the weight of what he has committed himself to - not just a game of cricket but a public test of everything he believes about talent, effort, and the value of a person regardless of their economic circumstances. The anticipation mixes with anxiety as he realizes that failure tomorrow would validate every cruel assumption about his background and capabilities.
@@ -109,7 +109,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Scene Setup - High-rise complex, Day 3
@@ -148,13 +148,13 @@ position: -308,129
 <<set $Aryan_Path = "a">>
 <<SetCharacterExpression "Raju" "Serious">>
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: How noble! The slum boy takes the high road. How boring. I expected more fire from someone so confident.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Fire without control burns everything, including the person who starts it. I prefer focused determination.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Your calm act won't help you when you're facing real cricket tomorrow. My friends expect entertainment, not philosophy lessons.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -169,18 +169,18 @@ tags:
 position: -55,122
 ---
 <<set $Aryan_Path = "b">>
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: Now THIS is more like it! The slum boy shows his true colors - angry, desperate, emotional. Perfect!
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: You think being rich makes you tough? You've never had to fight for anything in your life!
 
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: And you've never had anything worth fighting for until now! This is going to be so satisfying to watch.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: We'll see who's more satisfied when this is over. Your money can't buy you heart or skill.
 
 As Raju storms away from the confrontation with anger burning in his chest and Aryan's taunts echoing in his ears, he feels the dangerous energy of someone who has been pushed beyond his breaking point and is now channeling raw emotion into fierce determination. The verbal battle has escalated the stakes of tomorrow's match from a simple cricket challenge into a personal war where pride, dignity, and fundamental beliefs about justice and worth will be tested under the most intense pressure he has ever faced.
@@ -224,7 +224,7 @@ title: Aryan_Day4
 title: Aryan_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Day 4 - Path A: Maintaining Composure
@@ -232,13 +232,13 @@ On the fourth day, Raju maintains his composed approach, focusing on preparation
 
 The tension in the complex has reached a palpable intensity as residents and visitors alike seem aware that tomorrow will bring the culmination of days of building conflict between two very different worlds. Raju moves through the environment with the calm focus of someone who has found peace with his decision to let his abilities speak louder than his words, while around him swirls the excited chatter of those who view tomorrow's match as pure entertainment rather than a meaningful test of character and skill.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Still playing the dignified act, slum boy? Wait until the pressure hits tomorrow. Let's see how calm you stay then.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Pressure is just another condition to adapt to. Like playing in rain or wind - you adjust and continue.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: You're either very wise or very stupid. Tomorrow will show which one.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -253,7 +253,7 @@ As Raju walks away from his final pre-match encounter with Aryan, he carries wit
 title: Aryan_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Day 4 - Path B: Escalating Hostility
@@ -261,16 +261,16 @@ On the fourth day, the tension between them has escalated into open hostility, w
 
 The atmosphere in the complex crackles with hostile energy as both boys have abandoned any pretense of civility, their mutual antagonism having transformed what began as class-based prejudice into something more personal and volatile. The approaching cricket match has become secondary to the psychological warfare between them, with each interaction raising the emotional stakes and promising that tomorrow's confrontation will be decided as much by who can handle pressure as by who can play cricket.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Ready for war, slum boy? Because that's what tomorrow is - a war between your kind and mine.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: Bring your war. I've been fighting my whole life while you've been playing with expensive toys.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Those expensive toys are going to destroy your pathetic dreams tomorrow!
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: My dreams are stronger than your toys. You'll see.
 
 As Raju leaves the complex with anger coursing through his veins and tomorrow's battle looming like a storm on the horizon, he understands that the cricket match has become something far more significant than either boy initially intended - a collision between two worldviews, two definitions of strength, and two competing claims about what truly matters in determining a person's worth and potential. The intensity of their mutual hostility has raised the stakes to a level where tomorrow's outcome will resonate far beyond the boundaries of any game.
@@ -282,7 +282,7 @@ As Raju leaves the complex with anger coursing through his veins and tomorrow's 
 title: Aryan_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Day 4 - Path C: Continued Strategic Observation
@@ -290,13 +290,13 @@ On the fourth day, Raju continues his careful observation, studying Aryan's play
 
 The complex has become Raju's laboratory as he continues his methodical analysis of Aryan's cricket abilities, watching with the focused attention of someone who understands that knowledge can compensate for material disadvantages. His analytical approach contrasts sharply with Aryan's reliance on superior equipment and training, setting up tomorrow's match as a test between raw preparation and studied intelligence, between privilege and strategic thinking.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: Stop staring at me like that! You're trying to get in my head, but it won't work.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm not trying to get in your head. I'm trying to understand your game. Knowledge is the best equipment I can have.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: All the studying in the world won't help you when you face superior skill and equipment!
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -310,7 +310,7 @@ As Raju walks away from his final analytical session, he carries with him a comp
 title: Aryan_Day5
 ---
 
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Day 5 - The Challenge Match
@@ -329,7 +329,7 @@ Aryan: Watch carefully, everyone. This is what happens when street pretenders fa
 <<SetCharacterExpression "Jaspreet" "Excited">>
 Jaspreet: Ooooooh! Did you see that shot?! That went straight to the boundary!
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" Angry>>
 Aryan: That was just a lucky shot! Anyone can get lucky once! Try again - let's see if you can do it twice!
 
 // The second delivery produces another clean strike that sends the ball soaring over the heads of shocked spectators.
@@ -355,7 +355,7 @@ As the crowd disperses in stunned silence, their preconceptions shattered by Raj
 ===
 title: Aryan_Day6
 ---
-<<PlayBackgroundMusic "Angry Background Music 1">>
+<<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
 // Day 6 - Final Day - Resolution

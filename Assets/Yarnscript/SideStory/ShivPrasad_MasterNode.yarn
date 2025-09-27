@@ -26,7 +26,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 1 Evening
@@ -34,13 +34,13 @@ The evening air carries the sounds of children playing in the lanes, but Raju ch
 
 The modest interior of their family home feels charged with anticipation as Raju waits for his father's return from another long day at the factory, his cricket bat resting beside him as both a symbol of his passion and a potential source of conflict. The familiar sounds of ShivPrasad's footsteps approaching along the narrow lane create a mixture of excitement and anxiety in Raju's chest, as he prepares to share his cricket progress with the one family member whose approval could legitimize his dreams or crush them entirely.
 
-<<SetCharacterExpression "ShivPrasad" "Angry">>
+<<SetCharacterExpression "ShivPrasad" Angry>>
 Shiv Prasad: Raju, where were you this afternoon? Your mother mentioned you were at the ground again instead of with your books.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I was practicing cricket, Baba. Just for a little while. Ramu bhaiya has been teaching me proper technique, and I'm getting much better!
 
-<<SetCharacterExpression "ShivPrasad" "Angry">>
+<<SetCharacterExpression "ShivPrasad" Angry>>
 Shiv Prasad: Cricket technique? And what about your mathematics technique? Your school test is next week. Will these cricket shots help you solve equations? Will proper bowling form write your examinations?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -69,7 +69,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 2 Evening
@@ -77,16 +77,16 @@ Despite yesterday's difficult conversation, Raju chooses to stay home this eveni
 
 The small courtyard becomes Raju's stage for a delicate performance as he deliberately positions himself where his father will see him practicing cricket technique, his movements reflecting both genuine dedication to improvement and a calculated attempt to demonstrate the seriousness of his commitment. The worn bat in his hands represents more than sporting equipment - it embodies his determination to prove that cricket deserves consideration as more than mere childhood play, while his decision to wait for his father shows a maturity that understands confrontation must sometimes be courted rather than avoided.
 
-<<SetCharacterExpression "ShivPrasad" "Angry">>
+<<SetCharacterExpression "ShivPrasad" Angry>>
 Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest? I thought we discussed this yesterday.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I do rest, Baba. But when I hold this bat, when I practice, when I play... I don't feel tired. I feel alive. I feel like I could be someone special, someone who makes you proud.
 
-<<SetCharacterExpression "ShivPrasad" "Angry">>
+<<SetCharacterExpression "ShivPrasad" Angry>>
 Shiv Prasad: Alive? Special? Beta, these are dangerous words! Dreams like these have destroyed families. I've watched fathers waste their savings on their sons' cricket fantasies only to end up in debt and despair.
 
-<<SetCharacterExpression "ShivPrasad" "Angry">>
+<<SetCharacterExpression "ShivPrasad" Angry>>
 Shiv Prasad: Food puts life in your body, not cricket! Steady work makes you special in the eyes of society, not games! The only pride I need is seeing you graduate, get a good job, and never worry about your next meal!
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 3 Evening
@@ -247,7 +247,7 @@ title: ShivPrasad_Day4
 title: ShivPrasad_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path A: Complete Academic Focus
@@ -261,7 +261,7 @@ The transformation in their home's daily rhythm becomes apparent as Raju's crick
 title: ShivPrasad_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path B: Integrated Discipline
@@ -275,7 +275,7 @@ The methodical approach that Raju brings to his mathematics preparation reflects
 title: ShivPrasad_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path C: Passion-Driven Energy
@@ -288,7 +288,7 @@ The high energy that Raju brings to both cricket practice and mathematics study 
 
 title: ShivPrasad_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 <<if $ShivPrasad_Path=="a">>
@@ -330,7 +330,7 @@ title: ShivPrasad_Day5
 title: ShivPrasad_Day6
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 6 - The Challenge of Exhaustion
@@ -350,7 +350,7 @@ Shiv Prasad: Handling it and doing it well are different things, beta. I've been
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: These calculation mistakes... you know how to do these problems. But you're making careless errors because you're rushing, because your mind is tired. Is this really the path you want to continue?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" Angry>>
 Raju: So you want me to choose? Between the thing that makes me feel alive and what you think is practical? Why can't I have both? Why does loving cricket automatically mean I can't be good at studies?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -378,7 +378,7 @@ As the sixth day concludes with both father and son acknowledging the complexity
 title: ShivPrasad_Day7
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 7 - The Final Conversation
@@ -425,7 +425,7 @@ Raju: Thank you, Baba. For giving me this chance, for watching me grow this week
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Remember, beta - this test is just the beginning. Every day from now on, you must prove this balance. Every day, you must show that cricket makes you better at everything else in life.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju prepares to leave for school carrying both his mathematics preparation and his father's conditional support, he understands that the test ahead represents more than academic evaluation - it embodies the culmination of a week-long demonstration that passion and responsibility can indeed coexist when approached with sufficient discipline and maturity. The promise of cricket support that awaits successful performance creates both motivation and pressure, while the ongoing requirement to maintain balance ensures that this test marks the beginning rather than the end of his journey to prove that dreams and duty can work together.

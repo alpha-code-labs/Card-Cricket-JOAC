@@ -21,7 +21,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_2 >>
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Hospital visit
@@ -61,7 +61,7 @@ title: CricketDada_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_2 >>
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Day 2
@@ -108,7 +108,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_2 >>
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Day 3
@@ -230,7 +230,7 @@ title: CricketDada_Day4
 tags:
 ---
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_2 >>
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Day 4

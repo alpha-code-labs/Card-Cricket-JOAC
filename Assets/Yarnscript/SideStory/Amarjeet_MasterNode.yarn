@@ -24,7 +24,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Scene Setup - Evening at the temple
@@ -67,7 +67,7 @@ Amarjeet: Nothing worth achieving is easy, child. If you truly wish to learn thi
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Thank you, Baba. I will come back. I want to learn this kind of focus.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Spiritual_1 >>
 
 // Scene Conclusion
 As Raju walks home from the temple carrying both his cricket bat and new perspective on the relationship between mental discipline and physical performance, he understands that Amarjeet has offered him something more valuable than cricket technique - insight into the mental foundations that support all achievement. His voluntary visit has introduced him to concepts of focus and steadiness that could transform not just his game but his entire approach to pursuing goals.
@@ -79,7 +79,7 @@ title: Amarjeet_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Scene Setup - Evening at the temple, Day 2
@@ -113,7 +113,7 @@ Raju: So how do I get better at this holding, Baba? How do I make my focus stron
 <<SetCharacterExpression "Amarjeet" "Serious">>
 Amarjeet: Come back tomorrow if you wish to learn more about applying this discipline in different areas of your life.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As Raju walks home from the temple carrying both practical techniques for developing focus and growing recognition that Amarjeet's teachings extend far beyond cricket, he feels the satisfaction of a student who has engaged seriously with challenging material. His voluntary return has deepened the priest's investment in his education and opened the door to more advanced teachings about mental discipline and its applications.
@@ -126,7 +126,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Scene Setup - Evening at the temple, Day 3
@@ -237,7 +237,7 @@ title: Amarjeet_Day4
 title: Amarjeet_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 4 - Path A: Service to Others
@@ -265,7 +265,7 @@ As Raju walks home after a day spent in service to others, he marvels at how com
 title: Amarjeet_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 4 - Path B: Training Under Distractions
@@ -293,7 +293,7 @@ As Raju walks home after surviving the gauntlet of intentional distractions, he 
 title: Amarjeet_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 4 - Path C: Understanding Mind-Body Connection
@@ -331,7 +331,7 @@ title: Amarjeet_Day5
 title: Amarjeet_Day5a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 5 - Path A: Advanced Breathing and Sacred Chants
@@ -359,7 +359,7 @@ As Raju departs the temple after experiencing the profound integration of breath
 title: Amarjeet_Day5b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 5 - Path B: Visualization and Mental Rehearsal Under Pressure
@@ -387,7 +387,7 @@ As Raju departs the temple after mastering the warrior's path to mental discipli
 title: Amarjeet_Day5c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 5 - Path C: Scientific Self-Observation and Mental Pattern Analysis
@@ -413,7 +413,7 @@ As Raju departs the temple after mastering the scientific approach to mental dis
 ===
 title: Amarjeet_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
 // Day 6 - Final Day - All Paths Converge

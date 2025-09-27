@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 1 at Koliwada Ground
@@ -68,7 +68,7 @@ title: Amit_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 2 returning with new ideas
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 3 implementing strategy
@@ -236,7 +236,7 @@ title: Amit_Day4
 title: Amit_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path A: Systematic Searching Implementation
@@ -269,7 +269,7 @@ As the boys prepare to implement their chosen strategy with enthusiasm tempered 
 title: Amit_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path B: Community Outreach Implementation
@@ -302,7 +302,7 @@ As the boys prepare to implement their chosen strategy with enthusiasm tempered 
 title: Amit_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path C: Creative Improvisation Implementation
@@ -334,7 +334,7 @@ As the boys prepare to implement their chosen strategy with enthusiasm tempered 
 
 title: Amit_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 5 - Building on progress
@@ -366,7 +366,7 @@ As the second day of sustained effort unfolds with expanded goals and higher exp
 
 title: Amit_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 // Day 6 - Success and partnership
@@ -398,7 +398,7 @@ Raju: That's wonderfully generous, Amit! But more than the recognition, I value 
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Then we both benefit perfectly - you gain experience in community organization that will serve you well in any future project, and I gain a reliable partner who understands that successful activities require planning, persistence, and teamwork rather than just hoping everything works out.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with plans for ongoing partnership in organizing neighborhood cricket activities, Amit and Raju understand that they have created something more valuable than temporary problem-solving - they have demonstrated how systematic thinking, collaborative effort, and persistent dedication can transform obstacles into opportunities while building friendships and community connections that extend far beyond the original challenge they worked together to overcome.
