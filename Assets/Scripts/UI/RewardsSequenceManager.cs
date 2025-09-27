@@ -55,7 +55,8 @@ public class RewardsSequenceManager : MonoBehaviour
     {
         if (RewardImage.sprite == null) return;
 
-        Vector3 rewardPos = RewardImage.transform.position;
+        Vector3 rewardPos = new Vector3(RewardImage.transform.position.x + 300, RewardImage.transform.position.y, 0);
+        // Debug.Log($"Reward Position: {rewardPos}");
 
         for (int i = 0; i < particleCount; i++)
         {
@@ -70,7 +71,7 @@ public class RewardsSequenceManager : MonoBehaviour
 
             // Set initial position behind the reward image
             RectTransform particleRect = particleObj.GetComponent<RectTransform>();
-            particleRect.position = RewardImage.transform.position;
+            particleRect.position = rewardPos;
             particleRect.sizeDelta = new Vector2(30, 30); // Small particle size
 
             // Move particle to back (lower sibling index)
