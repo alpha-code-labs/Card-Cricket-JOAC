@@ -102,15 +102,20 @@ title: FirstBall
     Ramu: That’s brilliant. Excellent choice.
 
 <<elseif $selection == "CutShotPush">>
+    <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: No Captain. You can’t play a cut shot to a full length delivery. Its not a natural shot. Watch the ball card more closely.
 
 <<elseif $selection == "Leave">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: No Captain. You cant leave a ball fully pitched and heading to your stumps. Watch the ball card more closely.
 
 <<elseif $selection == "SweepNormal">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: No Captain. Playing sweep shots to fast bowlers won't work. Sweep shot is always reserved for spinners. Watch the ball card more closely.
 
@@ -118,6 +123,8 @@ title: FirstBall
     There is not selection to choose from
 <<endif>>
 
+<<resetToOriginalPresets>>
+<<moveDialogue top>>
 <<showCharacterImage center>>
 Ramu: Good try, lets play a few more balls to get better.
 <<hideCharacterImage>>
@@ -129,23 +136,34 @@ title: SecondBall
 ---
 
 <<if $selection == "None">>
+    <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu:  Looks like you got confused again. Let's try again.
 <<elseif $selection == "CutShotPush">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: It.s a safe choice. Good when you want to keep the scorecard ticking. All batting shots with Push will result in 1 run, if it's the right choice
 <<elseif $selection == "CutShotNormal">>
+   <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It’s a safe choice. Good when you want to keep the scorecard ticking. All batting shots with Normal will result in 2 runs, if it's the right choice
 <<elseif $selection == "CutShotAggressive">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It’s an aggressive choice. Good when you want to make quick runs. All batting shots with Aggressive will result in 4 runs, if it's the right choice.
 <<elseif $selection == "CutShotLofted">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It’s an aggressive choice. Good when you want to make quick runs. All batting shots with Lofted will result in 6 runs, if it's the right choice.
 <<endif>>
 
+<<resetToOriginalPresets>>
+<<moveDialogue top>>
 <<showCharacterImage center>>
 Ramu: Good try, lets play one more ball.
 <<hideCharacterImage>>
@@ -156,25 +174,35 @@ title: ThirdBall
 ---
 
 <<if $selection == "None">>
+    <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu:  Looks like you got confused.
 <<elseif $selection == "StraightDrivePush">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It's a safe choice. For a good length ball its tough to get many runs. You made a good choice.
 <<elseif $selection == "CoverDriveNormal">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It’s a risky shot though. In hostile conditions might get you out. Dont forget the length is a good length ball
 <<elseif $selection == "SquareDriveAggressive">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. It’s an aggressive choice. Good when you want to make quick runs. All batting shots with Aggressive will result in 4 runs, if it's the right choice.
 <<elseif $selection == "Leave">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
     <<showCharacterImage center>>
     Ramu: Good choice. The ball will travel safely to the keeper. For a good length ball if you are unsure it is always best to leave unless it’s going to crash into your stumps
 <<endif>>
 
-<<showCharacterImage center>>
+<<resetToOriginalPresets>>
 <<moveDialogue top>>
+<<showCharacterImage center>>
 Ramu: Good try, lets play the flip card once and then get to work.
 <<ballFourthBall>>
 <<unhideBallerCard>>
