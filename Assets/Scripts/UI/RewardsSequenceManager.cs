@@ -47,6 +47,11 @@ public class RewardsSequenceManager : MonoBehaviour
             }
         }
     }
+    [ContextMenu("TestShowReward")]
+    public void TestShowReward()
+    {
+        ShowRewardImage("Courage");
+    }
     [YarnCommand("ShowRewardImage")]
     public static void ShowRewardImage(string rewardType)//this gives and shows rewards
     {
