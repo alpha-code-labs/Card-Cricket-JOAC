@@ -43,9 +43,10 @@ public class ScoreManager_Tutorial : MonoBehaviour
     [SerializeField] TextMeshProUGUI ballsAndOversText; // Text to display balls and overs
     [SerializeField] Button redrawButton; // Assign in Inspector
     [SerializeField] TextMeshProUGUI redrawButtonText;
-    
+
 
     [Header("Batter Animation")]
+    [SerializeField] GameObject batterImageGameObject;
     [SerializeField] Image BatterImage;
     [SerializeField] float swingDistance = 100f; // How far to move right
     [SerializeField] float swingDuration = 0.15f; // Fast swing duration
@@ -133,6 +134,15 @@ public class ScoreManager_Tutorial : MonoBehaviour
         outText.gameObject.SetActive(false);
     }
 
+    public void ShowBatsman()
+    {
+        batterImageGameObject.SetActive(true);
+    }
+
+    public void HideBatsman()
+    {
+        batterImageGameObject.SetActive(false);
+    }
     private IEnumerator PlayCardSequence(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
         // Pause timer during animation
@@ -288,10 +298,6 @@ public class ScoreManager_Tutorial : MonoBehaviour
 
     void Start()
     {
-        // totalWicketsText.text = "/ " + wickets.ToString();
-        // UpdateScore(0); // Initialize score display
-        // UpdateBallsAndOvers(0); // Initialize balls and overs display
-        //Disable everything
          // Get references if not assigned
         if (dialogueRunner == null)
             dialogueRunner = FindObjectOfType<DialogueRunner>();
@@ -301,6 +307,7 @@ public class ScoreManager_Tutorial : MonoBehaviour
         currentScoreAndTarget_parent.SetActive(false);
         remaingWicketsAndTotalWickets_parent.SetActive(false);
         RemainingBalls_parent.SetActive(false);
+        totalWicketsText.text = "/ " + wickets;
         if (redrawButton != null)
         {
             redrawButton.onClick.AddListener(OnRedrawButtonClicked);

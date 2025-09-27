@@ -83,12 +83,14 @@ Ramu: You can upgrade your time in seconds, the number of lives you have, the nu
 <<unhideBallerCard>>
 Ramu: The first ball is coming up. Get ready to brace yourself. 
 <<hideCharacterImage>>
+<<showBatsman>>
 <<ballFirstBall>>
 ===
 
 
 title: FirstBall
 ---
+<<hideBatsman>>
 <<if $selection == "None">>
     <<moveDialogue top>>
     <<showCharacterImage center>>
@@ -128,13 +130,14 @@ title: FirstBall
 <<showCharacterImage center>>
 Ramu: Good try, lets play a few more balls to get better.
 <<hideCharacterImage>>
+<<showBatsman>>
 <<ballSecondBall>>
 ===
 
 
 title: SecondBall
 ---
-
+<<hideBatsman>>
 <<if $selection == "None">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
@@ -167,12 +170,13 @@ title: SecondBall
 <<showCharacterImage center>>
 Ramu: Good try, lets play one more ball.
 <<hideCharacterImage>>
+<<showBatsman>>
 <<ballThirdBall>>
 ===
 
 title: ThirdBall
 ---
-
+<<hideBatsman>>
 <<if $selection == "None">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>

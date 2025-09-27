@@ -146,9 +146,6 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     public void StartTurnWithoutTimer(bool incrementBalls = true)
     {
-        //check if player can redraw
-        Debug.Log("can player redraw cards" + CanRedraw());
-
         if (CurrntTurn >= ScoreManager_Tutorial.Instance.MaxBalls || ScoreManager_Tutorial.Instance.wickets < 1)
         {
             //Game ended 
@@ -344,7 +341,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
 
                 foreach (BattingStrategy strategy in tutorial0Strategies)
                 {
-                    Debug.Log("Added strategy " + strategy + " from 0");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
@@ -360,7 +356,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
 
                 foreach (BattingStrategy strategy in tutorial1Strategies)
                 {
-                    Debug.Log("Added strategy " + strategy + " from 1");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
@@ -376,7 +371,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
 
                 foreach (BattingStrategy strategy in tutorial2Strategies)
                 {
-                    Debug.Log("Added strategy " + strategy + " from 2");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
@@ -391,7 +385,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                 };
                 foreach (BattingStrategy strategy in tutorial3Strategies)
                 {
-                    Debug.Log("Added strategy " + strategy + " from 3");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
@@ -410,7 +403,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                 };
                 foreach (BattingStrategy strategy in tutorial4Strategies)
                 {
-                    Debug.Log("Added strategy " + strategy + " from 4");
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
@@ -503,7 +495,6 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
 
      public bool CanRedraw()
     {
-        Debug.Log("MaxRedraws: " + maxRedraws + " HandCards Count: " + HandCards.Count);
         return redraws < maxRedraws;
     }
 

@@ -18,13 +18,9 @@ public class AttackCardProps_Tutorial : MonoBehaviour, IPointerClickHandler, IPo
 
     [Header("Sprite Reffs")]
     [SerializeField] List<Sprite> sprites;
-
     // Reference to the arc manager
     private SimpleHandArcManager arcManager;
-
     [SerializeField] Image BatterImage;
-
-
     void Start()
     {
         string title = GetTitle();

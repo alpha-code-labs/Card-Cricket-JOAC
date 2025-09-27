@@ -143,4 +143,17 @@ public class DialogueCommands : MonoBehaviour
         Debug.Log("Tutorial complete starting next scene");
         //implement...
     }
+
+    [YarnCommand("showBatsman")]
+    public static void ShowBatsman()
+    {
+        ScoreManager_Tutorial.Instance.ShowBatsman();
+    }
+
+    [YarnCommand("hideBatsman")]
+    public static void HideBatsman()
+    {
+        ScoreManager_Tutorial.Instance.HideBatsman();
+    }
+
 }
