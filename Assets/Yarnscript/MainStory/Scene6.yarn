@@ -4,15 +4,15 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's the quarterfinals captain. We are batting first. You are at number 8. The last 2 overs remain. Get as many runs as you can. The more the better for us. The opposition have some very good batsmen. Every run is vital. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: I am scared.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Face your fear. Let's go.
 
 <<HideAllCharacters>>

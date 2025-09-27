@@ -14,7 +14,7 @@ public static class SaveSystem
     {
         return Path.Combine(Application.persistentDataPath, SaveFileName);
     }
-    [MenuItem("Tools/Save System/Open Save Folder")]//This is prorably create compile time erros in build
+    [MenuItem("Tools/Open Save Folder")]//This is prorably create compile time erros in build
     public static void OpenSaveFolder()
     {
         string savePath = GetSavePath();
@@ -33,11 +33,11 @@ public static class SaveSystem
     private static void OpenInFileExplorer(string path)
     {
 #if UNITY_EDITOR_WIN
-        Process.Start("explorer.exe", $"/select,\"{path}\"");
+        Process.Start("explorer.exe", $"\"{path}\"");
 #elif UNITY_EDITOR_OSX
-            Process.Start("open", $"-R \"{path}\"");
+        Process.Start("open", $"\"{path}\"");
 #elif UNITY_EDITOR_LINUX
-            Process.Start("xdg-open", $"\"{Path.GetDirectoryName(path)}\"");
+        Process.Start("xdg-open", $"\"{path}\"");
 #endif
     }
 

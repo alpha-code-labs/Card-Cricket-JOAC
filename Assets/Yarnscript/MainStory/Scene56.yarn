@@ -4,11 +4,11 @@ colorID: 0
 position: 0,0
 ---
 
-<<ShowDateScreen "March 16th 1990 - Evening">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Captain. You beauty. You did exactly what was required. The team salutes you.

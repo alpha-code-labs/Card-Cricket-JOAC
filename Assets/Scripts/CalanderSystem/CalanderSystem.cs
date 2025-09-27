@@ -44,4 +44,21 @@ public class CalanderSystem : MonoBehaviour
         Debug.Log($"Next date is {nextDateString}");
         return nextDateString;
     }
+    public DateTime GetPreviousDateTime(string currentDate)
+    {
+        int indexOfCurrentDate = calanderRecord.dates.FindIndex(d => d.date == currentDate);
+        if (indexOfCurrentDate > 0)
+        {
+            indexOfCurrentDate--;
+            DateRecord previousDateRecord = calanderRecord.dates[indexOfCurrentDate];
+            DateTime previousDateTime = DateTime.Parse(previousDateRecord.date);
+            Debug.Log($"Previous date is {previousDateTime}");
+            return previousDateTime;
+        }
+        else
+        {
+            Debug.LogError("No previous date available for: " + currentDate);
+            return DateTime.Parse(currentDate);
+        }
+    }
 }

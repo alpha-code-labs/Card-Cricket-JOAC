@@ -1,0 +1,284 @@
+title: Suresh
+---
+<<declare $Suresh_Complete = false as bool>>
+<<declare $Suresh_Path = "" as string>>
+<<declare $Suresh_Day = 1 as number>>//change to 0 to start the story from the jump node below
+<<if $Suresh_Day==0>>
+    <<jump Suresh_Day1>>
+<<elseif $Suresh_Day==1>>
+    <<jump Suresh_Day1>>
+<<elseif $Suresh_Day==2>>
+    <<jump Suresh_Day2>>
+<<elseif $Suresh_Day==3>>
+    <<jump Suresh_Day3>>
+<<elseif $Suresh_Day==4>>
+    <<jump Suresh_Day4>>
+<<endif>>
+===
+
+title: Suresh_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite AutoStand>>
+
+// Scene Setup - Auto stand encounter
+While walking through the bustling auto stand near his neighborhood, Raju chooses to stop and talk with Suresh, the friendly auto driver who always seems to notice his cricket equipment and offer encouraging words. Today, something in Suresh's expression suggests there might be deeper stories behind his casual interest in cricket.
+
+The familiar chaos of the auto stand surrounds Raju as he approaches Suresh's bright yellow three-wheeler, the air thick with diesel fumes and the constant honking of traffic, yet somehow this particular corner feels like a refuge where genuine conversation can occur amidst the urban noise. Suresh's weathered hands rest on the steering wheel with the easy confidence of someone who has navigated these streets for years, while his eyes carry a mixture of warmth and something deeper - perhaps recognition of ambition that reminds him of his own younger self.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Arre, little champ! Always running around with that bat in your hands, haan? Even when you're not practicing, you carry it like it's part of your body. That's real dedication I see there.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes, bhaiya! I want to play cricket one day, for real. Not just in the lanes with tennis balls, but proper cricket with leather balls, in stadiums, maybe even for India someday. Do you think that sounds crazy?
+
+<<SetCharacterExpression "Suresh" "Sad">>
+Suresh: Crazy? No, beta. Not crazy at all. I... I wanted exactly the same thing once. Played for my school team, even got selected for district-level camps. The coaches said I had natural timing, wristwork that reminded them of Mohammad Azharuddin.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Really, bhaiya? You were a serious cricketer? You actually played at district level? That's amazing! But then... why are you driving an auto now instead of playing cricket?
+
+<<SetCharacterExpression "Suresh" "Sad">>
+Suresh: Dreams cost money, beta. More money than families like ours usually have. When I was your age, my cricket was improving every month. Coaches were talking about state-level selections, maybe even further opportunities. But then my father got sick - really sick. Hospital bills, medicines, no income while he couldn't work.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Someone had to step up and support the family. Cricket doesn't feed hungry stomachs or pay medical bills. Auto driving does. So I chose responsibility over dreams, and I've never regretted that choice - but I've never forgotten what I gave up either.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm sorry about your father, bhaiya. But I'll find a way to make cricket work. I'll find scholarships, sponsors, something. I won't let money stop me from playing.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Good, beta. Hold on to that fire - it's precious and rare. Just remember something important: fire can warm you and give you energy, but it can also burn you if you're not careful about how you handle it. Dreams are powerful, but they need to be balanced with practical wisdom.
+
+// Scene Conclusion
+As Raju walks away from the auto stand carrying both Suresh's story of abandoned cricket dreams and his warning about balancing passion with practicality, he understands that he has encountered something rare - an adult who shares his love for cricket while also possessing hard-won wisdom about its challenges. The revelation that Suresh once stood where he stands now, with similar dreams and talent, creates both inspiration and sobering awareness of the obstacles that can derail even promising cricket careers.
+
+<<set $Suresh_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Suresh_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite AutoStand>>
+
+// Scene Setup - Day 2
+After spending a night thinking about Suresh's story of abandoned cricket dreams, Raju chooses to return to the auto stand, determined to prove that his commitment runs deeper than childhood fantasy.
+
+The morning bustle of the auto stand provides a familiar backdrop as Raju approaches Suresh's vehicle for the second day, his overnight reflection on the auto driver's cricket history having strengthened rather than weakened his resolve to pursue his own athletic dreams. The harsh realities that Suresh shared about dreams deferred by family responsibilities have forced Raju to examine his own motivations and consider whether his cricket ambitions represent genuine calling or merely youthful fantasy, while his return to continue the conversation demonstrates a maturity that recognizes learning from others' experiences.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Back again, champ? I thought after yesterday's reality check, you might decide to focus on safer pursuits. Didn't get scared off by my lecture about the harsh world of professional cricket?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: No, bhaiya. I spent all night thinking about your story, and it made me realize something important. You didn't fail at cricket - you chose family responsibility over personal dreams. That shows character, not weakness.
+
+<<SetCharacterExpression "Suresh" "Quizzical">>
+Suresh: Smarter how? What exactly did you learn from my experience that makes you think you can succeed where I couldn't?
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: How will you approach this differently? What specific response will you take to the realities I've shared with you?
+
+-> Raju: Your story teaches me I need to be smarter about cricket, bhaiya. Help me understand the practical challenges so I can plan better. I want to learn from your experience to avoid the same obstacles.
+    <<jump Suresh_Day2a>>
+-> Raju: Your story makes me more determined, bhaiya. I'll find a way to succeed where others couldn't. I refuse to let circumstances defeat my dreams like they've defeated so many others.
+    <<jump Suresh_Day2b>>
+-> Raju: Your sacrifice shows true character, bhaiya. I want to honor your cricket dreams by achieving mine. Let me carry forward what you started, make your experience meaningful by succeeding where circumstances stopped you.
+    <<jump Suresh_Day2c>>
+
+===
+
+title: Suresh_Day2a
+tags:
+position: -308,129
+---
+<<set $Suresh_Path = "a">>
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Now that's mature thinking, beta. Most boys hear my story and either get discouraged or make unrealistic promises. You're talking about learning from experience and strategic planning.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: You had to choose between cricket and family needs. But maybe I can find ways to pursue cricket that support my family instead of competing with their needs. Scholarships, paid coaching opportunities, finding mentors who can help with both.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: That's exactly the kind of thinking that separates dreamers from achievers, champ. You're approaching this like a long-term project, not just daily practice sessions.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Your experience has educated me, bhaiya. I understand now that talent alone isn't enough. I need to be smart, persistent, and realistic about building support systems.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Dreams are heavy - only those with strong shoulders and smart strategies can carry them all the way to success. I'm beginning to think you have both, beta.
+
+<<jump Suresh_Day2_Continue>>
+===
+
+title: Suresh_Day2b
+tags:
+position: -55,122
+---
+<<set $Suresh_Path = "b">>
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Determination without strategy often leads to heartbreak, beta. What makes you think pure willpower can overcome the obstacles that stopped me and countless others?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Because I have something that maybe others didn't - absolute refusal to give up. I'll work harder, practice longer, find opportunities others missed. My passion will carry me through any challenge.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Passion is powerful, champ, but the world doesn't always reward the most passionate person. Sometimes it rewards the most strategic one. How will you channel that fire effectively?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Then I'll be both passionate and strategic, bhaiya. I'll use my determination to fuel smart planning. My fire won't burn me - it'll light my way to success.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Your spirit is remarkable, beta. Most people lose that fire when they hear reality checks. Maybe that kind of determination really can overcome obstacles others couldn't handle.
+
+<<jump Suresh_Day2_Continue>>
+===
+
+title: Suresh_Day2c
+tags:
+position: 184,122
+---
+<<set $Suresh_Path = "c">>
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: That's... that's a beautiful way to think about it, beta. You see my story not as failure but as part of a larger journey that continues through you.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Exactly, bhaiya. Your cricket dreams don't have to die - they can live through my success. I want to achieve what you couldn't, not just for myself but to honor your sacrifice and talent.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: No one has ever said anything like that to me before, champ. The idea that my cricket experience could contribute to someone else's success... that gives it new meaning.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Your knowledge, your experience, even your sacrifice - they're all part of my cricket journey now, bhaiya. I'll carry your dreams forward along with my own.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: You've transformed my story from one of lost dreams into one of continuing legacy, beta. That kind of thinking shows wisdom far beyond your years.
+
+<<jump Suresh_Day2_Continue>>
+===
+
+title: Suresh_Day2_Continue
+tags:
+---
+
+// Scene Conclusion
+As Raju demonstrates his strategic thinking about cricket development rather than simply expressing passionate determination, Suresh recognizes a level of maturity and practical wisdom that was perhaps missing from his own younger approach to pursuing athletic dreams. The conversation has evolved from cautionary tale to collaborative planning, with the auto driver's hard-won experience providing valuable insights for navigating the challenges that derailed his own cricket aspirations.
+
+<<set $Suresh_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Suresh_Day3
+tags:
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite AutoStand>>
+
+// Scene Setup - Day 3
+Building on yesterday's demonstration of strategic thinking, Raju chooses to seek Suresh's practical advice about navigating the specific challenges that young cricketers from poor backgrounds face when trying to access quality training.
+
+The auto stand has become an unexpected classroom as Raju returns for his third consecutive day to continue learning from Suresh's hard-won wisdom about cricket realities, their developing mentor-student relationship transforming a chance encounter into systematic education about pursuing athletic dreams from disadvantaged circumstances. The noisy urban environment fades into background as both participants focus on translating theoretical understanding into practical strategies that could make the difference between success and failure in Raju's cricket journey.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: You're becoming a regular visitor, champ. I can see you've got something specific on your mind today - not just general cricket talk, but particular challenges you're trying to figure out.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Bhaiya, I've been thinking about what you said about being smart and strategic. I want to ask your advice about specific things - like how to find good coaching without expensive fees, or how to get noticed by selectors when you're from our area.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Now you're asking the right questions, beta. Let me share some practical wisdom I learned during my playing days - both what worked and what I wish I had understood better.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: First lesson - networking matters as much as talent. In cricket, who you know can be as important as how well you play. But for boys like us, networking doesn't mean family connections. It means building relationships with coaches, former players, even other serious young cricketers.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: How do I build those relationships, bhaiya? What's the best way to approach coaches or former players?
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Respect, consistency, and genuine interest in learning. Don't just ask for coaching - ask if you can help with equipment, ground maintenance, anything that shows you're serious about the game beyond just playing. People remember boys who contribute, not just those who demand attention.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: And what about getting noticed for selection opportunities?
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Tournaments, beta. Local tournaments, school competitions, any organized cricket where performance gets recorded and observed. But here's the key - don't just play to win, play to learn. Scouts and selectors watch how players handle pressure, interact with teammates, respond to setbacks.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So it's not just about scoring runs or taking wickets, but about showing character and cricket intelligence?
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Exactly! And here's something I wish someone had told me - document your progress. Keep records of your performances, get photographs at tournaments, collect testimonials from coaches. When opportunities arise, you need to be able to demonstrate your development quickly and professionally.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This is incredibly helpful, bhaiya. You're teaching me things I never would have thought about on my own.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: That's because I learned these lessons the hard way, through missed opportunities and incomplete preparation. If sharing my experience helps you avoid those mistakes, then my cricket journey serves a purpose even though it didn't reach the destination I originally planned.
+
+// Scene Conclusion
+As Raju absorbs Suresh's practical advice about networking, tournament participation, and professional documentation of cricket development, he understands that his mentor is providing insider knowledge that could take years to discover independently through trial and error. The systematic approach to cricket advancement that Suresh outlines transforms what seemed like overwhelming challenges into manageable steps, while the auto driver's willingness to share hard-won wisdom demonstrates how personal disappointment can be transformed into valuable guidance for the next generation.
+
+<<set $Suresh_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Suresh_Day4
+tags:
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite AutoStand>>
+
+// Scene Setup - Day 4
+With three days of accumulated wisdom from Suresh about cricket realities, strategic thinking, and practical approaches, Raju chooses to visit the auto driver once more to express his gratitude and understand how their mentor-student relationship might continue.
+
+The auto stand has transformed from a casual meeting place into the site of a meaningful mentorship as Raju approaches for what feels like a culminating conversation about his cricket future and Suresh's ongoing role in supporting those dreams. The four days of accumulated wisdom and growing mutual respect have created a relationship that transcends their age and circumstantial differences, while the practical guidance Suresh has provided has fundamentally altered Raju's understanding of how to pursue cricket success from their shared background of economic disadvantage.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: My regular visitor returns! I can see something different in your posture today, champ - not just eagerness to learn, but confidence that comes from having absorbed lessons and being ready to apply them.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Bhaiya, I wanted to thank you properly for everything you've taught me over these past few days. You've changed how I think about cricket - not just as something I love to play, but as a long-term project that requires intelligence, strategy, and character development.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: You absorbed the lessons well, beta. More importantly, you took difficult truths about obstacles and transformed them into practical strategies rather than excuses. That shows the kind of character that separates achievers from dreamers.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Your experience has been like a guidebook for avoiding mistakes and building support systems. I feel much more prepared now to face the challenges ahead.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: And I want you to know, champ, that my investment in your success doesn't end with advice and encouragement. When the day comes that you need practical support - transportation to tournaments, help reaching coaching facilities, even references for scholarship applications - you call me.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: You would really do that, bhaiya? Provide practical help beyond just guidance?
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: Absolutely. Listen, maybe I couldn't complete my own cricket journey, but helping you succeed with yours... that would give my experience meaning and purpose beyond just cautionary tales.
+
+<<SetCharacterExpression "Suresh" "Serious">>
+Suresh: When you need to reach that academy for trials, or get to a tournament on time, or have someone vouch for your character to coaches - I'm your ally in this fight. A young cricketer should never miss opportunities because of bus fare or lack of adult support.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Bhaiya, you're not just helping me pursue cricket - you're showing me what it means to support others' dreams even when your own didn't work out. That's incredible generosity.
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: You know what, beta? Through our conversations, I've realized something important. My cricket story didn't end in failure - it just took a different path than I originally planned. Now it continues through helping the next generation navigate challenges more successfully than I did.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So in a way, when I succeed at cricket, it's also a success for your cricket dreams?
+
+<<SetCharacterExpression "Suresh" "Smiling">>
+Suresh: Exactly, champ. Your victories will carry forward everything valuable from my experience while avoiding the mistakes and limitations that stopped me. That makes us partners in this journey, not just teacher and student.
+
+// Scene Conclusion
+As Raju departs the auto stand carrying both practical guidance for his cricket development and the promise of ongoing support from someone who understands the challenges he faces, he recognizes that Suresh's mentorship represents more than individual assistance - it embodies the power of community support to help young people overcome systemic barriers to opportunity. The relationship has transformed both participants, giving Suresh's abandoned cricket dreams new purpose while providing Raju with wisdom and advocacy that could prove crucial to achieving the success that circumstances prevented his mentor from reaching.
+
+<<set $Suresh_Complete = true>>
+<<jump Foresight>>
+===

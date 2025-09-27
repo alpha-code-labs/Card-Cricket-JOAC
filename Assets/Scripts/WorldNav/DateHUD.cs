@@ -14,6 +14,6 @@ public class DateHUD : MonoBehaviour
             dateText.text = "Null Date";
             return;
         }
-        dateText.text = NewDayManager.currentDateRecord.date + "\n" + (NewDayManager.isEvening ? " (Evening)" : " (Day)");
+        dateText.text = NewDayManager.currentDateRecord.date + "\n" + (NewDayManager.isEvening ? " Evening" : " Day");
     }
 }

@@ -9,38 +9,51 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     {
         WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, " + GetIntractionMessage(), "No, don't talk", OnConfirmed);
     }
+    public override void CheckAvaliability()
+    {
+        bool isCompleted = false;
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.VariableStorage.TryGetValue("$" + character.ToString() + "_Complete", out isCompleted);
+        Debug.Log(character.ToString() + " is completed: " + isCompleted);
+        SetAvaliabilityIndicator(!isCompleted);
+    }
     void OnConfirmed()
     {
-        NewDayManager.isEvening = true;
-        NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+        DialogueScriptCommandHandler.currentNode = character.ToString();
+        TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
     }
     string GetIntractionMessage()
     {
-        return "Talk to " + character.ToString();
+        return "Talk to " + PrettyStrings.GetPrettyEnumString(character.ToString());
     }
 }
 public enum Characters
 {
-    Ramu,
-    Kamla,
-    ShivPrasad,
-    Bed,
-    Amit,
-    Sumit,
-    Pinky,
-    RamCharan,
-    Priya,
-    Naresh,
-    CoachSharma,
-    SunitaMam,
-    Aryan,
-    CricketDada,
-    Amarjeet,
-    Suresh,
-    AgarwalUncle,
-    Fatima,
-    MochiUncle,
-    MunnaBhai,
-    Vikram
+    Ramu = 0,
+    Kamla = 1,
+    ShivPrasad = 2,
+    Bed = 3,
+    Amit = 4,
+    Sumit = 5,
+    Pinky = 6,
+    RamCharan = 7,
+    Priya = 8,
+    Naresh = 9,
+    CoachSharma = 10,
+    SunitaMam = 11,
+    Aryan = 12,
+    CricketDada = 13,
+    Amarjeet = 14,
+    Suresh = 15,
+    AgarwalUncle = 16,
+    Fatima = 17,
+    MochiUncle = 18,
+    MunnaBhai = 19,
+    Vikram = 20,
+    Raju = 21,
+    CoachDev = 22,
+    Imtiaz = 23,
+    Vivek = 24,
+    MrsSharma = 25,
+    Jaspreet = 26,
+    Sunil = 27
 }

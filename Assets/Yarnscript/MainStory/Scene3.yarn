@@ -4,7 +4,7 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: We are all set. Hope you are ready too. Make good choices. Keep your focus and I am sure you will kill it.

@@ -11,19 +11,20 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     {
         WorldIntractionDialougeManager.instance.StartConfirmationDialogue(GetYesChoice(), "No, stay here", OnConfirmed);
     }
+    public override void CheckAvaliability()
+    {
+        return; // Always available
+    }
     string GetYesChoice()
     {
-        string locationName = AddSpacesToEnum(location.ToString());
+        string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
         return "Yes, go to " + locationName;
     }
     void OnConfirmed()
     {
         LocationSwitcher.instance.SwitchLocation(location);
     }
-    public static string AddSpacesToEnum(string enumName)
-    {
-        return Regex.Replace(enumName, "([a-z])([A-Z])", "$1 $2");
-    }
+
 
 }
 public enum Locations

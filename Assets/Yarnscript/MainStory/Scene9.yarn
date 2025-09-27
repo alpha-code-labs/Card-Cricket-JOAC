@@ -4,9 +4,9 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Captain. Well played. Good effort.
 
 <<SetCharacterExpression "Raju" "Sad">>

@@ -1,0 +1,435 @@
+﻿title: ShivPrasad
+---
+<<declare $ShivPrasad_Complete = false as bool>>
+<<declare $ShivPrasad_Path = "" as string>>
+<<declare $ShivPrasad_Day = 1 as number>>//change to 0 to start the story from the jump node below
+<<if $ShivPrasad_Day==0>>//This is for testing purpose only, remove later
+    <<jump ShivPrasad_Day1>>  //This is for testing purpose only, remove later
+<<elseif $ShivPrasad_Day==1>>
+    <<jump ShivPrasad_Day1>>
+<<elseif $ShivPrasad_Day==2>>
+    <<jump ShivPrasad_Day2>>
+<<elseif $ShivPrasad_Day==3>>
+    <<jump ShivPrasad_Day3>>
+<<elseif $ShivPrasad_Day==4>>
+    <<jump ShivPrasad_Day4>>
+<<elseif $ShivPrasad_Day==5>>
+    <<jump ShivPrasad_Day5>>
+<<elseif $ShivPrasad_Day==6>>
+    <<jump ShivPrasad_Day6>>
+<<elseif $ShivPrasad_Day==7>>
+    <<jump ShivPrasad_Day7>>
+<<endif>>
+===
+title: ShivPrasad_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Scene Setup - Day 1 Evening
+The evening air carries the sounds of children playing in the lanes, but Raju chooses to return home instead of joining them. He knows his father will be back from work soon, and he wants to tell his father about his cricket progress, hoping for understanding and support.
+
+The modest interior of their family home feels charged with anticipation as Raju waits for his father's return from another long day at the factory, his cricket bat resting beside him as both a symbol of his passion and a potential source of conflict. The familiar sounds of ShivPrasad's footsteps approaching along the narrow lane create a mixture of excitement and anxiety in Raju's chest, as he prepares to share his cricket progress with the one family member whose approval could legitimize his dreams or crush them entirely.
+
+<<SetCharacterExpression "ShivPrasad" "Angry">>
+Shiv Prasad: Raju, where were you this afternoon? Your mother mentioned you were at the ground again instead of with your books.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I was practicing cricket, Baba. Just for a little while. Ramu bhaiya has been teaching me proper technique, and I'm getting much better!
+
+<<SetCharacterExpression "ShivPrasad" "Angry">>
+Shiv Prasad: Cricket technique? And what about your mathematics technique? Your school test is next week. Will these cricket shots help you solve equations? Will proper bowling form write your examinations?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: But Baba, I am good at cricket. Really good. Even the older boys say so. Maybe... maybe this could be something more than just playing.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Talent? Beta, I've seen talented boys before. Talented at cricket, talented at singing, talented at painting. Do you know where most of them are now? Working in the same factories as me, or worse, unemployed and dependent on their families.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: This is what happens when talent doesn't pay the bills. Education does. A government job does. Skills that employers value do. Cricket is a beautiful game, but it's also a gamble we cannot afford to lose.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: So I should just... give up something I love? Something I might be good at?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: I'm not asking you to give up joy, beta. I'm asking you to be realistic about priorities. Study first. Secure your future first. Then, if there's time and energy left, play your cricket. But never let it become more important than your education.
+
+// Scene Conclusion
+As the evening settles around their small home with ShivPrasad's practical wisdom hanging heavy in the air, Raju understands that the conversation has laid bare the fundamental tension between dreams and security that defines so many families in their circumstances. His father's words carry the weight of lived experience and genuine concern, yet they also feel like barriers erected around the very thing that makes Raju feel most alive and hopeful about his future.
+
+<<set $ShivPrasad_Day = 2>>
+<<EndEvent true>>
+===
+title: ShivPrasad_Day2
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Scene Setup - Day 2 Evening
+Despite yesterday's difficult conversation, Raju chooses to stay home this evening instead of avoiding his father. He sits in their small courtyard, practicing his cricket grip with an old bat, waiting for ShivPrasad to return from work.
+
+The small courtyard becomes Raju's stage for a delicate performance as he deliberately positions himself where his father will see him practicing cricket technique, his movements reflecting both genuine dedication to improvement and a calculated attempt to demonstrate the seriousness of his commitment. The worn bat in his hands represents more than sporting equipment - it embodies his determination to prove that cricket deserves consideration as more than mere childhood play, while his decision to wait for his father shows a maturity that understands confrontation must sometimes be courted rather than avoided.
+
+<<SetCharacterExpression "ShivPrasad" "Angry">>
+Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest? I thought we discussed this yesterday.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I do rest, Baba. But when I hold this bat, when I practice, when I play... I don't feel tired. I feel alive. I feel like I could be someone special, someone who makes you proud.
+
+<<SetCharacterExpression "ShivPrasad" "Angry">>
+Shiv Prasad: Alive? Special? Beta, these are dangerous words! Dreams like these have destroyed families. I've watched fathers waste their savings on their sons' cricket fantasies only to end up in debt and despair.
+
+<<SetCharacterExpression "ShivPrasad" "Angry">>
+Shiv Prasad: Food puts life in your body, not cricket! Steady work makes you special in the eyes of society, not games! The only pride I need is seeing you graduate, get a good job, and never worry about your next meal!
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Then let me work hard at cricket, Baba. The same way you work hard at the factory. Give me one chance to prove that I can do both - studies and cricket. Let me show you that dreams can coexist with responsibility.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: Words are easy to speak, beta. Promises are easy to make when your belly is full and your future seems far away.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: But proving balance between dreams and duty? That's harder than any factory shift I've ever worked. That requires a maturity most adults don't possess. Can an eight-year-old boy really carry such weight?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I don't know if I can, Baba. But I want to try. I want to try so badly that it hurts when I think about giving up without even attempting it.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: ...If you're serious about this balance, if you truly believe you can handle both, then show me. Don't tell me - show me. Prove that your cricket makes you a better student, not a worse one.
+
+// Scene Conclusion
+As the second day's conversation concludes with ShivPrasad's challenge hanging in the air like a bridge between doubt and possibility, Raju recognizes that his father has offered him something precious and terrifying - a genuine opportunity to prove that passion and responsibility can coexist. The weight of expectation settles on his young shoulders, transforming the theoretical possibility of pursuing cricket into a concrete test that will require every ounce of discipline, wisdom, and maturity he can summon.
+
+<<set $ShivPrasad_Day = 3>>
+<<EndEvent true>>
+===
+title: ShivPrasad_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Scene Setup - Day 3 Evening
+After two days of increasingly intense conversations about his cricket passion, Raju chooses to approach his father directly after dinner, sensing that yesterday's discussion opened a small door of possibility.
+
+The quiet intimacy of their evening meal creates the perfect atmosphere for what Raju senses will be a pivotal conversation, his father's thoughtful demeanor suggesting that yesterday's challenge about proving balance has been weighing on ShivPrasad's mind as much as his own. The flickering oil lamp casts dancing shadows on the walls as father and son prepare to negotiate the terms of a test that could determine not just Raju's cricket future but the fundamental relationship between dreams and duty within their family.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Raju, come sit with me. For two days you've been telling me you can handle both cricket and studies. But words and promises are easy to make when there's no real test involved.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I meant everything I said, Baba. I really can do both. Just give me a chance to prove it.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: That's exactly what I'm going to do. Your mathematics test is scheduled for next week - seven days from today. I want you to score well on that exam. Not just pass, but score well.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Seven days? Baba, I... I haven't been studying as much as I should. Math is hard for me. What if seven days isn't enough time?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Then you'll learn something important about managing your priorities. If cricket practice has left you unprepared for your studies, then you've already answered the question about whether you can balance both.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Here's my offer, beta. Score well on that mathematics test - I mean really well, better than you've ever done before - and I'll not only support your cricket, I'll help you find ways to pursue it properly.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: And if I don't do well? What if I study as hard as I can but still struggle?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Then we'll know that you're not ready for the kind of balance you're promising. Excellence in anything requires sacrifice, beta. If you can't sacrifice some cricket time to excel at your studies, then you don't understand what real commitment means.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: This isn't a game, Raju. If you fail this test, if you show me that cricket is more important to you than your education, then we end this conversation permanently. No more negotiations, no more chances to prove yourself.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand, Baba. And I won't let you down. Seven days from now, you'll see that I can be serious about both my dreams and my responsibilities.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: How should I approach these seven days, Baba? What's the best way to prove I can handle both responsibilities?
+
+-> Raju: I'll prove myself by focusing completely on studies, Baba. Let me show you academics can be my priority. I'll reduce my cricket time dramatically and put everything into mathematics.
+    <<jump ShivPrasad_Day3a>>
+-> Raju: I'll show you cricket discipline actually helps my studies, Baba. Watch me use both together. Let me prove they support each other instead of competing.
+    <<jump ShivPrasad_Day3b>>
+-> Raju: I'll prove that my cricket passion gives me the energy to excel at everything, Baba. Watch how my love for the game motivates all my efforts.
+    <<jump ShivPrasad_Day3c>>
+
+===
+title: ShivPrasad_Day3a
+tags:
+position: -308,129
+---
+<<set $ShivPrasad_Path = "a">>
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'll prove myself by focusing completely on studies, Baba. Let me show you academics can be my priority. I'll reduce my cricket time dramatically and put everything into mathematics.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: That's a significant sacrifice, beta. But be careful - I want to see genuine understanding, not just desperate cramming. Show me disciplined studying, not panic.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand, Baba. I'll create a proper study schedule and stick to it religiously. Cricket can wait - my education comes first, just like you've always said.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: Your willingness to sacrifice shows maturity, beta. But remember - this isn't about giving up cricket forever, it's about proving you understand priorities.
+
+// Scene Conclusion
+As Raju commits to demonstrating his priorities through dramatic reduction in cricket time, both father and son understand that this sacrifice represents more than academic preparation - it embodies a test of character that will reveal whether his love for cricket stems from genuine passion or mere avoidance of more difficult responsibilities. The choice to prioritize studies completely reflects a maturity that impresses ShivPrasad while creating internal tension for Raju about temporarily abandoning the activity that brings him the most joy.
+
+<<set $ShivPrasad_Day = 4>>
+<<EndEvent true>>
+===
+title: ShivPrasad_Day3b
+tags:
+position: -55,122
+---
+<<set $ShivPrasad_Path = "b">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll show you cricket discipline actually helps my studies, Baba. Watch me use both together. Let me prove they support each other instead of competing.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: You think cricket and studies can actually work together? That's a bold claim, beta. Show me exactly how this supposed synergy works.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket taught me about consistent daily practice, breaking complex skills into manageable parts, and staying focused under pressure. I'll apply these same principles to mathematics.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: Interesting theory. But theories and practice are different things. Show me these cricket principles actually improving your academic performance.
+
+// Scene Conclusion
+As Raju articulates his theory about the transferable benefits of cricket discipline to academic study, both father and son enter uncharted territory where sports and education might complement rather than compete with each other. The challenge of proving this integration requires Raju to become conscious of his learning processes in ways that most children never attempt, transforming his approach to both cricket and mathematics into a sophisticated experiment in personal development.
+
+<<set $ShivPrasad_Day = 4>>
+<<EndEvent true>>
+===
+title: ShivPrasad_Day3c
+tags:
+position: 184,122
+---
+<<set $ShivPrasad_Path = "c">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll prove that my cricket passion gives me the energy to excel at everything, Baba. Watch how my love for the game motivates all my efforts.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: Passion without focus leads nowhere, beta. How will maintaining your cricket intensity help you master mathematics? Explain this connection.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket makes me feel capable of achieving anything, Baba. When I succeed at cricket, I believe I can succeed at studies too. The confidence transfers.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Confidence is meaningless without results, beta. Show me this cricket confidence actually translating into academic improvement, not just good feelings.
+
+// Scene Conclusion
+As Raju attempts to harness his cricket passion as fuel for academic excellence, he enters a delicate balancing act where maintaining enthusiasm for sports must somehow enhance rather than distract from mathematical study. The challenge of proving that confidence transfers between domains requires him to become more conscious of his emotional and mental states, transforming the test preparation into an experiment in motivation and self-awareness that could validate or disprove his theory about passion's power.
+
+<<set $ShivPrasad_Day = 4>>
+<<EndEvent true>>
+===
+title: ShivPrasad_Day4
+---
+<<if $ShivPrasad_Path=="a">>
+    <<jump ShivPrasad_Day4a>>
+<<elseif $ShivPrasad_Path=="b">>
+    <<jump ShivPrasad_Day4b>>
+<<elseif $ShivPrasad_Path=="c">>
+    <<jump ShivPrasad_Day4c>>
+<<endif>>
+===
+
+title: ShivPrasad_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Day 4 - Path A: Complete Academic Focus
+Raju commits to intensive academic focus, dramatically reducing cricket time to prove his dedication to studies above all else.
+
+The transformation in their home's daily rhythm becomes apparent as Raju's cricket bat remains untouched while textbooks and notebooks spread across every available surface, his commitment to academic excellence creating an atmosphere of intense concentration that both impresses and concerns his father. The sacrifice of cricket time represents more than strategic test preparation - it demonstrates a level of self-discipline that suggests genuine readiness to handle the competing demands of dreams and duty.
+
+<<jump ShivPrasad_Day5>>
+===
+
+title: ShivPrasad_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Day 4 - Path B: Integrated Discipline
+Raju demonstrates systematic integration of cricket-learned discipline with academic study, showing how sports skills enhance learning.
+
+The methodical approach that Raju brings to his mathematics preparation reflects the same systematic thinking he applies to cricket technique improvement, creating a fascinating demonstration of how athletic discipline can indeed enhance academic performance when consciously applied. His study sessions take on the structure and intensity of cricket practice, with clear goals, measurable progress, and the kind of focused attention that transforms routine homework into purposeful skill development.
+
+<<jump ShivPrasad_Day5>>
+===
+
+title: ShivPrasad_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Day 4 - Path C: Passion-Driven Energy
+Raju maintains his cricket passion while channeling that energy and confidence into intensive academic preparation.
+
+The high energy that Raju brings to both cricket practice and mathematics study creates an atmosphere of intense activity in their home, though the sustainability of this approach remains questionable as the days progress. His belief that cricket success can fuel academic achievement faces the practical test of whether enthusiasm can substitute for the methodical, sometimes tedious work that mathematical mastery requires, while his father observes with growing concern about the wisdom of maintaining such intensity across multiple demanding activities.
+
+<<jump ShivPrasad_Day5>>
+===
+
+title: ShivPrasad_Day5
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+<<if $ShivPrasad_Path=="a">>
+    // Path A continuation
+    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    Shiv Prasad: I see you've been studying for hours every day, beta. Your discipline is remarkable. But tell me - do you miss cricket? Are you struggling without it?
+
+    <<SetCharacterExpression "Raju" "Serious">>
+    Raju: I miss it terribly, Baba. But this sacrifice helps me understand how much both cricket and studies mean to me. I want to earn the right to have both.
+
+    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    Shiv Prasad: Your sacrifice shows real character, beta. Perhaps you're more mature than I gave you credit for.
+<<elseif $ShivPrasad_Path=="b">>
+    // Path B continuation
+    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    Shiv Prasad: I have to admit, beta - your study methods have become much more organized. This systematic approach... you really learned this from cricket practice?
+
+    <<SetCharacterExpression "Raju" "Excited">>
+    Raju: Yes, Baba! Cricket taught me that improvement comes from consistent effort and breaking down complex skills. Same principle works for mathematics equations.
+
+    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized, beta. You're showing me something I hadn't considered.
+<<elseif $ShivPrasad_Path=="c">>
+    // Path C continuation
+    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    Shiv Prasad: You seem energized by your cricket practice, beta. But I need to see this energy actually helping your mathematics, not just making you feel good.
+
+    <<SetCharacterExpression "Raju" "Excited">>
+    Raju: It is helping, Baba! After good cricket practice, I study with more focus and determination. My passion for cricket fuels my passion for everything else.
+
+    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    Shiv Prasad: Your energy is certainly high, beta. But energy without proper direction can be wasteful. Show me directed results.
+<<endif>>
+
+<<set $ShivPrasad_Day = 6>>
+<<EndEvent true>>
+===
+
+title: ShivPrasad_Day6
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Day 6 - The Challenge of Exhaustion
+Three days have passed since accepting his father's challenge, and Raju chooses to come home early from cricket practice to focus on studying. But as he sits with his mathematics books spread before him, exhaustion weighs heavily on his shoulders.
+
+The accumulated stress of trying to excel at both cricket and academics simultaneously begins to show its toll as Raju struggles with fatigue that threatens to undermine his performance in both areas, his ambitious attempt to prove that passion and responsibility can coexist revealing the practical limitations that even the most determined young person faces. The mathematics problems that should be within his capability seem more difficult through tired eyes, while his cricket techniques suffer from the mental exhaustion of intensive studying, creating doubt about whether his chosen approach can actually succeed.
+
+<<SetCharacterExpression "ShivPrasad" "Sad">>
+Shiv Prasad: Beta, you look exhausted. When did you last sleep properly? You've been studying until late every night and still waking up early for cricket practice.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm fine, Baba. Just trying to fit everything in like I promised. Cricket in the morning, school during the day, extra studying at night. I can handle it.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Handling it and doing it well are different things, beta. I've been watching you these past three days. You're trying so hard to prove you can do everything that you might end up doing nothing well.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: These calculation mistakes... you know how to do these problems. But you're making careless errors because you're rushing, because your mind is tired. Is this really the path you want to continue?
+
+<<SetCharacterExpression "Raju" "Angry">>
+Raju: So you want me to choose? Between the thing that makes me feel alive and what you think is practical? Why can't I have both? Why does loving cricket automatically mean I can't be good at studies?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: I don't want you to choose between love and practicality, beta. I want you to choose wisely. I want you to understand that loving something isn't enough if you can't also master the discipline to excel at it alongside your other responsibilities.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Love doesn't pay for school fees or medical bills. Love doesn't guarantee success. But love combined with discipline, with the wisdom to balance priorities, with the maturity to excel at multiple things - that's different. That's valuable.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: But what if I really can be good at both, Baba? What if I just need more time to figure out the right balance? What if giving up cricket means giving up a part of myself that makes everything else worth doing?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Then you have three more days to prove it. Not with words, not with promises, but with results. Show me that your cricket discipline actually helps you study better. Show me that your passion gives you energy instead of draining it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I will, Baba. These three days have been hard because I'm still learning how to balance everything. But I won't give up. I can't give up.
+
+// Scene Conclusion
+As the sixth day concludes with both father and son acknowledging the complexity of balancing passion and responsibility, the conversation has evolved from simple opposition to nuanced understanding of the real challenges involved in pursuing multiple demanding goals simultaneously. Raju's exhaustion has revealed the practical limitations of his ambitious approach, while his determination to continue despite difficulty has demonstrated a level of commitment that earns his father's growing respect, setting the stage for the final test that will determine whether dreams and duty can indeed coexist.
+
+<<set $ShivPrasad_Day = 7>>
+<<EndEvent true>>
+===
+
+title: ShivPrasad_Day7
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite HutInterior>>
+
+// Day 7 - The Final Conversation
+On the morning of the crucial mathematics test, Raju chooses to wake up earlier than necessary, seeking a quiet moment with his father before the day that will determine his cricket future.
+
+The pre-dawn quiet of their home creates a sacred space for what both father and son understand will be their final conversation before the test that could determine not just Raju's cricket future but the fundamental relationship between dreams and responsibility within their family. The accumulated tension of six days of preparation hangs in the air, while the early morning light filtering through their small window seems to illuminate both the promise and the uncertainty of what lies ahead.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Beta, today is your test day. After all this preparation, all this effort to prove you can balance both passions... are you ready?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I think so, Baba. I've studied harder than I've ever studied in my life. I've applied everything cricket taught me about practice, discipline, and staying calm under pressure. If I'm not ready now, I'll never be.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: I've been watching you these past six days, beta. The discipline you've shown, the way you've organized your time, the leadership you demonstrated in the neighborhood, the balance you've managed between cricket and studies... I'm genuinely impressed.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: When this week started, I saw cricket as a threat to your education, to your future security. But watching you apply cricket discipline to your studies, seeing you use cricket leadership skills to help our community, witnessing you grow more mature and focused... I've learned something important.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: What have you learned, Baba?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: That maybe the problem isn't cricket itself. Maybe the problem is doing anything - cricket, studies, work - without discipline, without balance, without understanding that excellence in one area should make you better at everything else, not worse.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So you'll support my cricket? You'll let me continue playing and practicing?
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: I'll make you a deal, beta. Pass this test with marks that show real understanding - not just memorization, but genuine mathematical comprehension - and I'll not only support your cricket, I'll help you find proper coaching and opportunities.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: But understand this clearly - this support comes with conditions. The moment your studies suffer, the moment cricket becomes more important than your education, the moment you show me that you can't truly balance both... we end the cricket conversation permanently.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand, Baba. And I promise you - my studies will never suffer. Cricket will make me a better student, not a worse one. Everything I've learned this week proves that.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: Then go to school today and show your teacher - show yourself - show me - that passion and responsibility can work together. Prove that a cricket-loving boy can also be an excellent student.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, Baba. For giving me this chance, for watching me grow this week, for believing that maybe dreams and duty don't have to be enemies.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Remember, beta - this test is just the beginning. Every day from now on, you must prove this balance. Every day, you must show that cricket makes you better at everything else in life.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju prepares to leave for school carrying both his mathematics preparation and his father's conditional support, he understands that the test ahead represents more than academic evaluation - it embodies the culmination of a week-long demonstration that passion and responsibility can indeed coexist when approached with sufficient discipline and maturity. The promise of cricket support that awaits successful performance creates both motivation and pressure, while the ongoing requirement to maintain balance ensures that this test marks the beginning rather than the end of his journey to prove that dreams and duty can work together.
+
+<<set $ShivPrasad_Complete = true>>
+<<jump Humility>>
+===

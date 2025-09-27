@@ -3,14 +3,13 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<PlayBackgroundMusic "heartbeat">>
-<<ShowDateScreen "April 13th 1990 - Evening">>
-<<wait 5>>
+
+
 
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite "KohliwadaGroundground">>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: This is it captain. We are chasing. We need to get to 185 in 15 overs. Our bowlers have been crushed. Team spirit is low. Nobody is giving us a chance. We need to go all guns blazing. You ready?
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -19,7 +18,7 @@ Raju: Its now or never. Completely focussed. Ready to roar.
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Focus my boy. Play the ball on its merit. Dont go swinging.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Lets go champion.
 
 <<SetCharacterExpression "Raju" "Serious">>

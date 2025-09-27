@@ -1,0 +1,382 @@
+﻿title: SunitaMadam
+---
+<<declare $SunitaMadam_Complete = false as bool>>
+<<declare $SunitaMadam_Path = "" as string>>
+<<declare $SunitaMadam_Day = 1 as number>>//change to 0 to start the story from the jump node below
+<<if $SunitaMadam_Day==0>>//This is for testing purpose only, remove later
+    <<jump SunitaMadam_Day1>>  //This is for testing purpose only, remove later
+<<elseif $SunitaMadam_Day==1>>
+    <<jump SunitaMadam_Day1>>
+<<elseif $SunitaMadam_Day==2>>
+    <<jump SunitaMadam_Day2>>
+<<elseif $SunitaMadam_Day==3>>
+    <<jump SunitaMadam_Day3>>
+<<elseif $SunitaMadam_Day==4>>
+    <<jump SunitaMadam_Day4>>
+<<elseif $SunitaMadam_Day==5>>
+    <<jump SunitaMadam_Day5>>
+<<elseif $SunitaMadam_Day==6>>
+    <<jump SunitaMadam_Day6>>
+<<endif>>
+===
+title: SunitaMadam_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+// Scene Setup - Day 1 at Wellington Estate School
+After hearing older boys in the neighborhood talk about the prestigious school in the High-Rises, Raju chooses to walk the long distance to see what opportunities exist beyond his slum environment. He knows he doesn't belong there and can't afford the fees, but his curiosity about quality education drives him to explore.
+
+The imposing gates of the prestigious Wellington Estate school rise before Raju like monuments to a world of privilege and opportunity that seems impossibly distant from his daily reality, yet the gleaming buildings and manicured grounds behind those barriers represent everything he dreams education might offer to someone willing to work for it. His worn clothes and dusty sandals mark him immediately as an outsider in this environment of wealth and social status, while his determined approach despite obvious class barriers reflects a hunger for knowledge that transcends economic circumstances.
+
+<<SetCharacterExpression "SunitaMadam" "Angry">>
+SunitaMadam: You there, boy. What are you doing loitering near this gate? This is private property, not a place for wandering street children to waste time staring at what they cannot have.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Ma'am, I wasn't loitering. I was just... looking. This school is so big and beautiful. I've never seen anything like it before. Do you really learn everything here?
+
+<<SetCharacterExpression "SunitaMadam" "Angry">>
+SunitaMadam: Learn? This is not for wandering eyes seeking cheap entertainment, boy. Students here are from families who value education, discipline, and meaningful contribution to society. Not idle curiosity from children who should be focused on... more appropriate pursuits.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I study too, Ma'am. Every day after school. And I play cricket, but I know education is important. I read books from our local library whenever I can.
+
+<<SetCharacterExpression "SunitaMadam" "Angry">>
+SunitaMadam: Cricket? Hmph. Slum boys always think games and sports will magically lift them up from their circumstances. Let me tell you something, child - it is education, real education with proper guidance and family investment, that matters. Not fantasies about playing games for a living.
+
+<<SetCharacterExpression "SunitaMadam" "Angry">>
+SunitaMadam: This school costs more per month than your family probably earns in six months. These children have tutors, proper books, family support, and futures planned from birth. You have none of that. Stop wasting time on impossible dreams and focus on realistic goals suited to your... situation.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Yes, Ma'am. I understand. I'm sorry for disturbing you.
+
+// Scene Conclusion
+As Raju walks away from the prestigious school with Sunita Madam's harsh words echoing in his mind, he carries both the sting of class-based rejection and a strengthened resolve to prove that intellectual curiosity and educational ambition cannot be contained by economic circumstances. The encounter has crystallized his understanding of the barriers that separate him from quality education while simultaneously fueling his determination to find ways around or through those obstacles, transforming humiliation into motivation.
+
+<<set $SunitaMadam_Day = 2>>
+<<EndEvent true>>
+===
+title: SunitaMadam_Day2
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+// Scene Setup - Day 2 return to Wellington Estate
+Despite yesterday's harsh dismissal and public humiliation, Raju chooses to return to the prestigious school, driven by an unshakeable belief that education represents his best chance to improve his circumstances.
+
+The morning sun illuminates the Wellington Estate school grounds as Raju approaches for the second time, his persistent return demonstrating a level of determination that few adults would show in the face of such discouragement. Yesterday's confrontation with Sunita Madam has taught him to expect hostility, yet his belief in the transformative power of education compels him to risk further humiliation in pursuit of any opportunity to access the knowledge and guidance that could change his life's trajectory.
+
+<<SetCharacterExpression "SunitaMadam" "Angry">>
+SunitaMadam: You again? Didn't I make myself perfectly clear yesterday? Why do you persist in wasting your time here? This academy is for serious students with serious family commitments, not for curiosity seekers who refuse to accept their place in society.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Ma'am, I didn't come to loiter or waste time. I came because I want to learn. I was wondering... do you have any books I could read? Even old ones that the school doesn't need anymore?
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: Books? You can even read properly? Most children from your... background struggle with basic literacy, let alone advanced literature.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes, Ma'am. I can read. 'Where the mind is without fear and the head is held high, where knowledge is free, where the world has not been broken up into fragments by narrow domestic walls...' That's from Rabindranath Tagore's 'Where the Mind is Without Fear.'
+
+<<SetCharacterExpression "SunitaMadam" "Excited">>
+SunitaMadam: ...You know Tagore? You can recite his poetry from memory? How is that possible?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Our local librarian, Sharma Uncle, lets me read whatever I want when I finish my homework. He says books are the only things that don't care if you're rich or poor - they teach anyone willing to learn.
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: And what else do you read, besides Tagore?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Stories, history, sometimes mathematics books. Cricket makes me dream about possibilities, Ma'am, but books... books make me think about how to turn dreams into plans. They show me that people have overcome worse circumstances than mine.
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: ...Interesting. Very interesting. Most children from your background wouldn't bother with literature or philosophy. They usually focus on immediate survival rather than intellectual development.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Your library visits and poetry knowledge suggest something I didn't expect to find. Perhaps I was... hasty in my initial judgment yesterday.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Does that mean you might help me learn, Ma'am? Even if I can't afford to study here?
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: We'll see, boy. We'll see if this intellectual curiosity is genuine or just a performance designed to impress adults.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: How do you plan to prove this intellectual curiosity is genuine? What approach will you take to demonstrate real commitment to learning?
+
+// Scene Conclusion
+As Raju walks away from the second encounter with his intellectual abilities acknowledged for the first time by someone from the privileged educational world, he understands that yesterday's humiliation has transformed into today's opportunity through the simple act of demonstrating knowledge rather than merely claiming it. Sunita Madam's shift from dismissive hostility to cautious interest represents a crucial breakthrough that validates his belief that merit can transcend social prejudice when properly demonstrated.
+
+<<set $SunitaMadam_Day = 3>>
+<<EndEvent true>>
+===
+title: SunitaMadam_Day3
+---
+-> Raju: I want to prove my academic abilities through serious study, Ma'am. Test my knowledge in any subject. Give me the hardest questions you have - literature, mathematics, science, history.
+    <<jump SunitaMadam_Day3a>>
+-> Raju: Let me prove my character through respectful service, Ma'am. I want to earn your trust gradually. Perhaps I could help with school tasks, show my dedication through actions rather than words.
+    <<jump SunitaMadam_Day3b>>
+-> Raju: I'll prove that determination can overcome any barrier, Ma'am. Watch me work harder than anyone. Give me the most challenging assignments - I'll complete them all and ask for more.
+    <<jump SunitaMadam_Day3c>>
+
+===
+title: SunitaMadam_Day3a
+tags:
+position: -308,129
+---
+<<set $SunitaMadam_Path = "a">>
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to prove my academic abilities through serious study, Ma'am. Test my knowledge in any subject. Give me the hardest questions you have - literature, mathematics, science, history.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Bold words. Most children your age avoid difficult subjects. You're asking me to evaluate you at the same level I would test my privileged students?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes, Ma'am. I may not have expensive tutors, but I have curiosity and determination. I want to prove that intellectual ability isn't limited by economic circumstances.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Very well. Let's start with literary analysis. Explain the social commentary in Premchand's stories. Show me you understand literature beyond surface level.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Premchand shows how poverty shapes moral choices, Ma'am. His characters aren't evil - they're trapped by circumstances. Like in 'Kafan' - the father and son represent how social conditions can corrupt basic human dignity.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Sophisticated analysis. You understand subtext and social criticism. This level of comprehension typically requires formal instruction.
+
+// Scene Conclusion
+As Raju demonstrates academic capabilities that exceed Sunita Madam's expectations through sophisticated literary analysis and critical thinking, both teacher and student recognize that something significant has shifted in their relationship - from dismissive prejudice to genuine academic engagement. His choice to prove himself through intellectual rigor rather than emotional appeals has validated his belief that merit can overcome social barriers when properly demonstrated and fairly evaluated.
+
+<<set $SunitaMadam_Day = 4>>
+<<EndEvent true>>
+===
+title: SunitaMadam_Day3b
+tags:
+position: -55,122
+---
+<<set $SunitaMadam_Path = "b">>
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Let me prove my character through respectful service, Ma'am. I want to earn your trust gradually. Perhaps I could help with school tasks, show my dedication through actions rather than words.
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: Service? You're offering to work without payment to prove your worthiness? That's... unusual for someone your age.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: My mother taught me that respect is earned through consistent good behavior, Ma'am. I want to show you the same dignity and reliability she shows in her work.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Your mother sounds like a wise woman. What kind of service are you offering? And why do you think this would change my opinion?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I could help organize books, clean classroom spaces, assist with small tasks. I want to show that I understand the value of this educational environment and would treat it with proper respect.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Your respectful attitude and willingness to serve without immediate reward shows maturity beyond your years. Perhaps there's more character here than I initially recognized.
+
+// Scene Conclusion
+As Raju demonstrates his commitment through offers of humble service rather than demanding recognition based on potential alone, Sunita Madam begins to see qualities that transcend social class - reliability, respect, and genuine appreciation for educational opportunity. His approach reflects lessons learned from his mother about earning respect through consistent character, transforming what could have been seen as servility into evidence of mature understanding about how relationships and trust develop over time.
+
+<<set $SunitaMadam_Day = 4>>
+<<EndEvent true>>
+===
+title: SunitaMadam_Day3c
+tags:
+position: 184,122
+---
+<<set $SunitaMadam_Path = "c">>
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll prove that determination can overcome any barrier, Ma'am. Watch me work harder than anyone. Give me the most challenging assignments - I'll complete them all and ask for more.
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: Determination without direction often leads to wasted effort, boy. What makes you think pure willpower can substitute for proper resources and guidance?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Because I've already overcome obstacles others said were impossible, Ma'am. I've taught myself to read advanced books, balanced cricket with studies, earned respect from adults who initially dismissed me.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Give me specific examples. How exactly have you overcome these obstacles? What concrete achievements demonstrate this determination?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I memorized poetry from library books, learned cricket techniques through observation and practice, convinced my father to support my dreams by proving academic responsibility. Every success came from refusing to accept limitations.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Your persistence is remarkable. Most children give up when faced with significant challenges. This level of determination might indeed overcome many barriers.
+
+// Scene Conclusion
+As Raju articulates his track record of overcoming obstacles through sheer determination and systematic effort, Sunita Madam begins to understand that his confidence stems not from naive optimism but from demonstrated ability to achieve goals that seemed impossible. His examples of previous successes in diverse areas - academic, athletic, and familial - provide concrete evidence that his claims about overcoming barriers through persistence reflect genuine capability rather than empty boasting.
+
+<<set $SunitaMadam_Day = 4>>
+<<EndEvent true>>
+===
+title: SunitaMadam_Day4
+tags: 
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+// Day 4 - Building Recognition
+Encouraged by yesterday's more positive response, Raju chooses to return to the school once again, hoping that his consistent demonstration of intellectual curiosity and respectful behavior might further soften Sunita Madam's initial prejudice.
+
+The familiar grounds of Wellington Estate school welcome Raju's fourth consecutive visit as he approaches with growing confidence that yesterday's breakthrough has established a foundation for genuine educational mentorship, his persistence having transformed initial hostility into cautious respect. Sunita Madam's evolving perception of his capabilities has created an opportunity that seemed impossible just days ago, while his continued respectful approach demonstrates understanding that maintaining this relationship requires ongoing proof of worthiness rather than presumption of acceptance.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Persistent boy. I honestly thought you would give up after our previous conversations. Most children your age lose interest when adults don't immediately embrace their dreams.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I can't give up, Ma'am. Not on learning, not on cricket, not on proving that I can be more than people expect from someone like me. Giving up would mean accepting that my circumstances define my possibilities.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: And what exactly do you hope to prove through these daily visits? That determination alone can overcome structural barriers? That good intentions substitute for proper resources and guidance?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to prove that talent and character matter more than family wealth, Ma'am. Look, I've been writing down questions about subjects I want to understand better - mathematics, history, literature, even science.
+
+<<SetCharacterExpression "SunitaMadam" "Excited">>
+SunitaMadam: These are thoughtful questions. Sophisticated questions. 'How do economic systems affect educational opportunities?' 'What role does literature play in social change?' Most of my paying students don't demonstrate this level of intellectual curiosity.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: So... you think I might have potential, Ma'am? Even though I'm from the slum?
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Perhaps I was too harsh in my initial judgments. It's easy to judge a child by his clothes and circumstances rather than by what's visible in his eyes and actions. But I see real determination there, genuine intellectual hunger.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: You know, boy, I've taught thousands of children over the years. Some had every advantage money could provide but lacked curiosity. Others, like you, had nothing but possessed something money can't purchase - authentic passion for learning.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Then you'll help me learn, Ma'am? You'll give me a chance to prove that I can succeed despite my background?
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: I'm beginning to think that talent and character might indeed be more important than I initially believed. If you continue demonstrating this level of commitment and intellectual curiosity, we might find ways to support your educational development.
+
+// Scene Conclusion
+As the fourth day concludes with Sunita Madam's explicit acknowledgment of Raju's potential and her tentative commitment to supporting his educational development, both teacher and student understand that they have crossed a threshold from skeptical evaluation to genuine mentorship possibility. The transformation from initial prejudice to recognition of merit demonstrates that persistent demonstration of character and ability can indeed overcome social barriers, while the promise of continued support validates Raju's belief that education can serve as a bridge between circumstances and aspirations.
+
+<<set $SunitaMadam_Day = 5>>
+<<EndEvent true>>
+===
+
+title: SunitaMadam_Day5
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+// Day 5 - Concrete Support
+Building on yesterday's positive interaction and Sunita Madam's growing recognition of his potential, Raju chooses to approach her with a specific request that will test whether her words about supporting his educational development translate into concrete action.
+
+The Wellington Estate school grounds seem different today as Raju approaches for what he senses will be a pivotal conversation about transforming tentative support into concrete educational opportunity, his growing confidence tempered by awareness that requesting specific assistance will test the depth of Sunita Madam's newfound respect for his abilities. The relationship that began with hostile dismissal has evolved through demonstrated merit into genuine possibility, though the challenge now lies in converting philosophical support into practical guidance that could genuinely change his educational trajectory.
+
+<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+SunitaMadam: You have something particular on your mind today, don't you? I can see it in your posture - this isn't just another casual visit hoping for encouragement.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Ma'am, I've been thinking about what you said yesterday about finding ways to support my educational development. I was wondering... would you be willing to recommend some specific books I should read? Maybe guide my learning even though I can't afford to study here?
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: You're asking me to become your informal tutor? To provide the kind of guidance I typically reserve for paying students whose families contribute significantly to this institution?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I know it's a lot to ask, Ma'am. But I'm willing to work harder than any paying student. I'll read whatever you recommend, practice whatever exercises you suggest, and prove that your investment in me isn't wasted.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Commitment is easy to promise, boy. But educational guidance requires consistent effort over months and years. It means accepting criticism, working through difficult material, and persisting when progress feels slow.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: My reputation has been built on producing successful students from privileged backgrounds. Taking responsibility for guiding someone like you represents both professional risk and personal commitment that extends far beyond casual encouragement.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand the risk you'd be taking, Ma'am. But I also believe that helping me succeed would prove something important - that education can transcend social barriers when real talent meets proper guidance.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: You argue your case well. Very well. Perhaps that's exactly the kind of thinking that suggests you might be worth the investment after all.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Here's a reading list to start with - literature, mathematics, history. Study these books thoroughly and come back next week prepared to discuss what you've learned. If you can demonstrate real comprehension and intellectual growth, we'll continue.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, Ma'am. I won't let you down. I'll study harder than any student you've ever had.
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: We'll see, boy. Actions matter more than promises in education. Prove to me that my growing faith in your potential isn't misplaced.
+
+// Scene Conclusion
+As Raju walks away from Wellington Estate carrying both a concrete reading list and the weight of Sunita Madam's conditional trust, he understands that the relationship has transformed from skeptical evaluation into genuine educational mentorship with real expectations and responsibilities. The books she has recommended represent more than academic materials - they embody an investment in his potential that he must validate through sustained effort and demonstrated growth, while her willingness to take professional risk on his behalf creates both opportunity and obligation.
+
+<<set $SunitaMadam_Day = 6>>
+<<EndEvent true>>
+===
+
+title: SunitaMadam_Day6
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite WellingtonEstate>>
+
+// Day 6 - Full Advocacy
+With their mentor-student relationship now firmly established, Raju chooses to seek Sunita Madam's guidance on a crucial decision about his future educational path, knowing that her respect and support have opened new possibilities.
+
+The Wellington Estate school has become a place of genuine belonging for Raju as he approaches for what feels like a culminating conversation about his educational future, Sunita Madam's mentorship having opened doors that seemed permanently closed just a week ago. The transformation of their relationship from hostile dismissal to active advocacy represents more than personal growth - it validates his fundamental belief that merit can transcend social barriers when given proper recognition and support, while setting the stage for opportunities that could fundamentally alter his life's trajectory.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: You have something important to discuss today, don't you? I've learned to recognize that focused expression when you're wrestling with significant decisions about your future.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Ma'am, I've been thinking about everything you've taught me and all the possibilities that education might open up. But I need your advice about something important - how do I bridge the gap between where I am now and where I want to be?
+
+<<SetCharacterExpression "SunitaMadam" "Serious">>
+SunitaMadam: Explain what you're considering. What specific opportunities or challenges are you facing?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: There's going to be a scholarship examination next month for students who want to attend better schools. I think I'm prepared academically thanks to your guidance, but I'm worried about the social aspects - fitting in with wealthy students, having proper clothes and supplies.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Ah, now I understand. You're not just asking for academic advice - you're asking me to help you navigate the social barriers that separate intellectual ability from educational access.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Boy, let me tell you something important. You've already proven that character and intelligence transcend social background. The scholarship examination will test your knowledge and abilities - areas where you've demonstrated exceptional competence.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: What kind of preparation, Ma'am? How do I convince evaluators that I belong in their educational environment?
+
+<<SetCharacterExpression "SunitaMadam" "Excited">>
+SunitaMadam: You convince them the same way you convinced me - through consistent demonstration of intellectual curiosity, respectful behavior, and genuine commitment to learning. But more importantly, I'll be writing a letter of recommendation that details your exceptional academic progress and personal character.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: You'd really do that for me? Write an official recommendation?
+
+<<SetCharacterExpression "SunitaMadam" "Excited">>
+SunitaMadam: More than that. I'm going to personally ensure you have proper materials for the examination, appropriate clothing for the interview, and preparation for any social situations you might encounter. You've earned not just my academic support, but my advocacy.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: You see, boy, helping you succeed doesn't just validate your potential - it validates something I've always believed about education but sometimes forgotten in practice: that intellectual ability exists everywhere, but opportunity does not. You've reminded me why I became a teacher in the first place.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Ma'am, I don't know how to thank you properly. You've changed everything for me.
+
+<<SetCharacterExpression "SunitaMadam" "Smiling">>
+SunitaMadam: Thank me by succeeding. Show everyone that merit can triumph over circumstance when given proper support. Become the kind of student and eventually the kind of person who opens doors for others facing similar barriers.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As Raju prepares to leave Wellington Estate carrying not just educational support but comprehensive advocacy for his future success, he understands that Sunita Madam's transformation from prejudiced gatekeeper to passionate advocate represents more than personal growth - it embodies the possibility that systemic barriers can be overcome through persistent demonstration of merit and character. Her commitment to providing practical support for the scholarship examination validates his belief that education can serve as a bridge between circumstances and aspirations, while her challenge to become someone who opens doors for others transforms his personal success into a broader mission of social change.
+
+<<set $SunitaMadam_Complete = true>>
+<<jump Resourcefulness>>
+===

@@ -3,70 +3,70 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ShowDateScreen "March 1st 1990 - Morning">>
+ 
 <<wait 5>>
 
-<<PlayBackgroundMusic "heartbeat">>
+ 
 <<SetBGSprite hutInterior>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: See this line? That's our lane. But from today the world opens wider—no boundaries, just people and their stories. Think of it like a book without page numbers. You can choose which chapter to read first.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Free world?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Free world. Not free of effort—free of order. You'll walk, listen, help, and learn. And when you come back, your cricket will be carrying something new inside it.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What things?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Four coins you'll earn and keep: courage, humility, resourcefulness, foresight. Spend them on the ground without going broke.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: I am Confused.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Courage. You don't shout to grow it; you stand next to fear and breathe till it gets bored. In the free world, you'll meet folk who test your knees—maybe a drummer who asks you to beat a rhythm in front of a crowd, or a watchman who needs you to speak up for someone smaller. You'll do the honest hard thing even if your voice shakes. That becomes courage in your hands later.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: So courage is… practice for my heartbeat?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Exactly. Loud heart, steady hands.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Humility. It's not "I am small." It's "I am learning." A sweeper might ask you to carry a bucket without being seen; a temple helper might ask you to queue even when you're in a hurry. You'll thank people who don't get thanked. Then, when a call goes against you someday, your feet won't argue. That steadiness—that's humility working.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Learning without noise.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Resourcefulness. Things break. Plans break faster. A cycle-wala may need a hand to patch a tube with nothing but heat and patience; a radio man might ask you to tune a stubborn dial by ear. You'll find answers where shops are closed. Later, when gear is rough or a day is crooked, you'll still find a way to make work happen.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Make something from almost nothing.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Foresight. Seeing before seeing. A newspaper wall—dates, fixtures, rain notices. A librarian who keeps tomorrow's posters under today's. You'll learn to read patterns, not moments. Then, when the field is noisy, you'll know which future to step toward.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Like choosing a lane in a crowded bazaar.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Here's the rule of the free world: no teacher, only clues. I won't hold your hand; I'll hold the lighthouse. You talk, help, trade time, make amends when you fail, try again. Each thread you pull will knot itself to one of these coins. When they're bright enough, your batting will feel… quieter and sharper at the same time.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Do I have to finish in one go?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Walk where your feet want, return when your heart is full, go out again when your mind is curious. Multi-paths, same boy. Just remember—face up when it rests, head up when you walk. The free world watches how you carry yourself more than what you carry.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: And if I choose wrong?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Then you learn why and choose better next. The only wrong path is the one that makes you smaller on the inside.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -75,16 +75,16 @@ Raju: Courage… humility… resourcefulness… foresight.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Where do I start?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Start where your breath steadies. Listen for a problem you can make lighter. Pay with time, not with pride.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: All of this will help you in your batting Raju. All of this will get you what you want when you bat. You will find out soon enough. Go for it.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Then I'm going. Walk like work.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Walk like work. And return like a bigger boy, not a louder one.
 
 <<HideAllCharacters>>

@@ -3,19 +3,19 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ShowDateScreen "March 15th 1990 - Evening">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's the Quarterfinals captain. We are batting first.. You are opening. 10 overs. Anything below 90 runs is a problem with the opposition having some very good batsmen. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I am all in. Completely focussed. Ready to roar.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

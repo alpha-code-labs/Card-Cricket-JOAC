@@ -4,8 +4,8 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "exciting">>
-<<ShowDateScreen "31st January 1989">>
-<<wait 5>>
+ 
+ 
 
 <<SetBGSprite hutInterior>>
 

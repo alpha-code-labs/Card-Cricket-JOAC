@@ -4,6 +4,7 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.UI;
 using System.Collections;
+using DG.Tweening;
 
 public class DialogueScriptCommandHandler : MonoBehaviour
 {
@@ -21,17 +22,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     [Header("Dialogue Settings")]
     public static string currentNode;
-    [SerializeField] DialogueRunner dialogueRunner;
-
-
-
-    [Header("Date Display")]
-    [SerializeField] GameObject dateDisplayCanvas;
-    [SerializeField] TextMeshProUGUI dateText;
-    [SerializeField] float fadeDuration = 1f;
-
-    [Header("Fade Settings")]
-    [SerializeField] GameObject fadePanel;
 
     [Header("Audio Settings")]
     [SerializeField] AudioSource musicAudioSource;
@@ -40,7 +30,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     // Dictionary for sprite name to index mapping
     private Dictionary<string, int> spriteNameToIndex;
-    private CharacterType currentActiveCharacter = CharacterType.Ramu; // Track active character
+    private Characters currentActiveCharacter = Characters.Ramu; // Track active character
     private bool isCharacterOnLeft = true; // Track which side current character is on
 
     void Awake()
@@ -51,17 +41,24 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     void Start()
     {
+        if (currentNode == null)//This should only happen if we directly load the scene for testing
+        {
+            currentNode = "scene_1";//Default Starting Node
+            Debug.LogWarning("Testing?: currentNode was null, defaulting to 'scene_1'");
+        }
+
         Debug.Log($"Starting Dialogue at node: {currentNode}");
-        dialogueRunner.StartDialogue(currentNode);
+        HideAllCharacters();
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            if (dialogueRunner != null)
+            if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
             {
-                dialogueRunner.StartDialogue(currentNode);
+                YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
             }
             else
             {
@@ -101,7 +98,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [YarnCommand("SetCharacterExpression")]
     public static void SetCharacterExpression(string characterName, string emotion)
     {
-        if (!System.Enum.TryParse<CharacterType>(characterName, true, out CharacterType character))
+        if (!System.Enum.TryParse<Characters>(characterName, true, out Characters character))
         {
             Debug.LogError($"Unknown character name: {characterName}");
             return;
@@ -111,7 +108,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     }
 
     // Internal method that does the actual work
-    private static void SetCharacterExpressionInternal(CharacterType character, string emotion)
+    private static void SetCharacterExpressionInternal(Characters character, string emotion)
     {
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
@@ -220,76 +217,13 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         Instance.rightCharacterImage.gameObject.SetActive(false);
     }
 
-    // DATE DISPLAY
-    [YarnCommand("ShowDateScreen")]
-    public static void ShowDateScreen(string dateString)
-    {
-        Instance.StartCoroutine(Instance.DisplayDateSequence(dateString));
-    }
-
-    private IEnumerator DisplayDateSequence(string dateString)
-    {
-        dateDisplayCanvas.SetActive(true);
-        dateText.text = dateString;
-
-        CanvasGroup canvasGroup = dateDisplayCanvas.GetComponent<CanvasGroup>();
-        if (canvasGroup == null) canvasGroup = dateDisplayCanvas.AddComponent<CanvasGroup>();
-
-        canvasGroup.alpha = 0f;
-
-        // Fade in
-        float elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            canvasGroup.alpha = elapsed / fadeDuration;
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-        canvasGroup.alpha = 1f;
-
-        yield return new WaitForSeconds(3f);
-
-        // Fade out
-        elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            canvasGroup.alpha = 1f - (elapsed / fadeDuration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        dateDisplayCanvas.SetActive(false);
-    }
-
     // FADE EFFECTS
     [YarnCommand("FadeToBlack")]
     public static void FadeToBlack()
     {
         //Instance.StartCoroutine(Instance.FadeToBlackSequence());
         NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
-    }
-
-    private IEnumerator FadeToBlackSequence()
-    {
-        if (fadePanel != null)
-        {
-            CanvasGroup canvasGroup = fadePanel.GetComponent<CanvasGroup>();
-            if (canvasGroup == null)
-                canvasGroup = fadePanel.AddComponent<CanvasGroup>();
-
-            fadePanel.SetActive(true);
-            canvasGroup.alpha = 0f;
-
-            float elapsed = 0f;
-            while (elapsed < fadeDuration)
-            {
-                canvasGroup.alpha = elapsed / fadeDuration;
-                elapsed += Time.deltaTime;
-                yield return null;
-            }
-            canvasGroup.alpha = 1f;
-        }
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
     }
 
     // AUDIO COMMANDS
@@ -370,19 +304,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
         musicAudioSource.volume = 0f;
     }
-}
-
-// ENUMS
-public enum CharacterType
-{
-    Ramu,
-    Raju,
-    Kamla,
-    ShivPrasad,
-    CoachDev,
-    Aryan,
-    Imtiaz,
-    Vivek
 }
 
 public enum EmotionType

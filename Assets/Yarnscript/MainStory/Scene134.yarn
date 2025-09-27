@@ -76,7 +76,7 @@ Ramu: Choices. No half-yes.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: And the studies?
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: We lock it in writing. You drop below eighty-five in any term, we reduce sessions until it's fixed. Training is a ladder, not a tunnel.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>

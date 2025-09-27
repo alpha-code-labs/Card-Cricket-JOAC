@@ -3,19 +3,19 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<ShowDateScreen "February 2nd 1989">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's the Finals captain. We are batting second. You are at number 8. The last 2 overs remain. We have to get 15 runs to win the tournament. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I am all in. Completely focussed. Ready to roar.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

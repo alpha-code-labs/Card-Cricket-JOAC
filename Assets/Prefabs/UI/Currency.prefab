@@ -288,6 +288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba4da139c0f04940ae835839917bb0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currencyText: {fileID: 2278054707872167362}
+  currencyType: 0
+  tooltipText: 
 --- !u!222 &2326245877270876124
 CanvasRenderer:
   m_ObjectHideFlags: 0

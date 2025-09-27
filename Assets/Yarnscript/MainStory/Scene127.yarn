@@ -58,7 +58,7 @@ Ramu: Before we start—one minute for what your hands did well today. Say it on
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I… waited. I didn't try to win everything in one breath.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Remember that same waiting here. Sums are also bowls of hot milk—sip, don't gulp.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -97,7 +97,7 @@ Raju: Baba, Maa… if I get the ninety, then—
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: No "then" tonight. The only prize we discuss is a clean page and a calm head. The rest is a door we will knock on when the ink dries.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: He's ready. I vouch for his hours, not just his highlights.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -109,7 +109,7 @@ Kamla: And if he brings eighty-nine?
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: We shake his hand for trying and we keep him here longer. The world is not kind; let the rules be clear at home.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Last instruction for tonight, captain: when you close this notebook, you also close the stadium inside your head. Lock it. Key under the pillow. Tomorrow evening, you can visit it again.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>

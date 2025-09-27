@@ -4,9 +4,9 @@ colorID: 0
 position: 0,0
 ---
 <<PlayBackgroundMusic "disappointing">>
-<<SetBGSprite KohliwadaGroundground>>
+<<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Captain. Could have been a better performance. Play as per the situation. You should have played a few more aggressive shots to get more runs.
 
 <<SetCharacterExpression "Raju" "Sad">>

@@ -1,0 +1,408 @@
+title: Vikram
+---
+<<declare $Vikram_Complete = false as bool>>
+<<declare $Vikram_Path = "" as string>>
+<<declare $Vikram_Day = 1 as number>>//change to 0 to start the story from the jump node below
+<<if $Vikram_Day==0>>
+    <<jump Vikram_Day1>>
+<<elseif $Vikram_Day==1>>
+    <<jump Vikram_Day1>>
+<<elseif $Vikram_Day==2>>
+    <<jump Vikram_Day2>>
+<<elseif $Vikram_Day==3>>
+    <<jump Vikram_Day3>>
+<<elseif $Vikram_Day==4>>
+    <<jump Vikram_Day4>>
+<<elseif $Vikram_Day==5>>
+    <<jump Vikram_Day5>>
+<<elseif $Vikram_Day==6>>
+    <<jump Vikram_Day6>>
+<<endif>>
+===
+
+title: Vikram_Day1
+tags: 
+position: -7,-175
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Scene Setup - Day 1 at the tea stall during evening rush
+After noticing the long queue of customers waiting for fresh tea outside Vikram's small stall and hearing his mother mention how hard small vendors work, Raju chooses to visit during the busy evening period to see if the hardworking tea seller might need assistance.
+
+The aromatic clouds of cardamom and ginger fill the air around Vikram's modest tea stall as Raju approaches the workspace where the skilled vendor prepares fresh chai for a steady stream of neighborhood customers seeking their daily dose of comfort and community. Vikram moves between boiling milk, measuring spices, and serving steaming cups with practiced efficiency, but the sweat on his brow and the growing line of impatient customers suggest that even his years of experience are being tested by today's unexpectedly heavy demand for his carefully crafted beverages.
+
+<<SetCharacterExpression "Vikram" "Sad">>
+Vikram: Beta, terrible timing and perfect timing all at once! Everyone wants fresh tea at the same moment, and I'm just one person trying to brew, serve, and manage money all simultaneously. Look at this queue - it's going to take forever to serve everyone properly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Vikram uncle, you look completely overwhelmed! Is there anything I can do to help? I have some free time and I'd love to learn about tea preparation and small business operations.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Help? Beta, running a tea stall isn't child's play. Every cup must taste perfect, customers expect fast service, and one mistake with ingredients or money can ruin my reputation. This business feeds my family - it can't afford errors.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand it's serious work, uncle. But I'm careful and I learn quickly. Maybe I could start with something simple, just to help reduce your stress during busy periods?
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Simple? Child, there's nothing simple about creating perfect tea! Every blend requires precise spice ratios, milk must be heated to exact temperature, and customers have specific preferences developed over years. One bad cup and they never return.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's exactly why I want to help, uncle! You've built such loyal customers who depend on your quality tea. Surely there's some small way I could assist without affecting your standards?
+
+<<SetCharacterExpression "Vikram" "Quizzical">>
+Vikram: You really want to learn about tea preparation? Even knowing how demanding customers can be when their chai isn't perfect, how precise ingredient measurement must be, how exhausting these long days become?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm not afraid of demanding work or critical customers, uncle. My father always says that small businesses are the heart of any community, and I want to understand what that really means.
+
+// Scene Conclusion
+As Raju exits the bustling tea stall with the sounds of ongoing beverage preparation and customer conversations filling his ears, he carries both deep appreciation for the complexity of tea-making operations and strengthened determination to prove that his offer represents genuine commitment to learning rather than casual curiosity. The intricate balance of recipe precision, customer service, and business management that Vikram demonstrates has revealed the sophisticated expertise that successful tea vendors require, while the seller's initial skepticism about his capabilities has only intensified his resolve to demonstrate reliability and business understanding.
+
+<<set $Vikram_Day = 2>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day2
+tags: 
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Scene Setup - Day 2 during morning preparation
+Despite yesterday's introduction to the demanding world of tea vending, Raju chooses to return during the morning preparation period, hoping to observe how Vikram organizes his ingredients and prepares for the day's service.
+
+The tea stall emanates methodical preparation in the early morning as Raju arrives to find Vikram systematically arranging spices, checking milk quality, and organizing his workspace with the precision of someone who understands that preparation and ingredient quality determine the success of every cup served throughout the day. The peaceful atmosphere contrasts sharply with yesterday's customer rush, revealing the careful planning and systematic approach that enables skilled tea vendors to maintain consistent quality despite working with traditional methods and time-tested recipes.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Back again, beta? I thought yesterday's reality check about the complexity of tea preparation might have discouraged you from pursuing food service. Most young people lose interest when they discover that real quality takes years to develop.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Actually, uncle, watching you work yesterday made me more fascinated, not less. I've never seen anyone use such simple ingredients to create beverages that bring people so much satisfaction and comfort.
+
+<<SetCharacterExpression "Vikram" "Sad">>
+Vikram: Fascinated? Beta, society doesn't value tea vendors the way they should. People need our service daily but don't respect the skill involved. They want cheap, fast chai instead of quality preparation that takes time and expertise.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: How did you learn such precise tea-making techniques? Did someone teach you, or did you develop these recipes through experience?
+
+<<SetCharacterExpression "Vikram" "Sad">>
+Vikram: My father ran a tea stall before me, and I started learning the family recipes at age twelve. Twenty-five years I've been perfecting these blends, learning customer preferences, and building relationships. But young people today want modern jobs - they think food service is beneath them.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: That must be disappointing, uncle. Seeing such valuable knowledge and customer relationships being undervalued by people who don't understand the skill required.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: They don't understand that every cup of tea represents hospitality, comfort, and community connection. When people start their day with my chai, I'm contributing to their energy and mood. When they gather here to chat, I'm providing social space that brings neighbors together.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's exactly why I want to learn, uncle! Tea preparation creates immediate comfort and social connection for people's daily lives. I don't want to miss the chance to understand such meaningful work.
+
+<<SetCharacterExpression "Vikram" "Quizzical">>
+Vikram: You keep expressing interest in learning, but tea service means different levels of responsibility and skill. What exactly do you think you could contribute to established tea preparation?
+
+// Scene Conclusion
+As their second conversation concludes with Vikram's direct question about the nature of his potential contribution to professional tea service, Raju recognizes that his persistent interest in learning has moved beyond polite dismissal into serious consideration, creating both opportunity and responsibility to articulate a clear vision for how his dedication could genuinely benefit the established tea operation. The revelation of the vendor's disappointment about society's undervaluation of food service has transformed his motivation from simple curiosity into genuine respect for someone whose work creates daily comfort and community connection.
+
+<<set $Vikram_Day = 3>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day3
+tags: 
+position: -75,-229
+---
+
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Scene Setup - Day 3 during mid-morning preparation period
+With Vikram's question about his potential contribution to tea service weighing on his mind, Raju chooses to return during the mid-morning preparation period, ready to demonstrate rather than simply describe how he might assist in tea preparation and customer service.
+
+The tea stall hums with the gentle sounds of traditional beverage preparation as Raju arrives during the period when Vikram balances ingredient preparation with careful attention to recipe precision that ensures customer satisfaction, creating the perfect environment for observing how skilled food service integrates culinary knowledge, customer relations, and business operations. Today carries special significance from previous visits because yesterday's honest conversation about societal attitudes toward food service has established an atmosphere of mutual evaluation - the tea vendor assessing his genuine commitment while he prepares to prove that his interest stems from deep respect rather than superficial fascination.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Well beta, you've been expressing interest in tea preparation for three days now. Today I'm preparing complex spice blends that could give you real understanding of what quality tea service requires. But first, tell me - how do you think you could best contribute to this craft?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I've been observing and thinking, uncle. There are several ways I could help, but I want to focus on what would be most meaningful for learning essential tea-making skills.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Show me you understand tea service beyond just wanting to help. What specific approach would you take to contribute effectively?
+
+-> Raju: I want to learn recipe preparation, uncle. Teach me about spice combinations, milk heating techniques, and timing so I can understand the foundation of quality tea making.
+    <<jump Vikram_Day3a>>
+-> Raju: Let me focus on customer service, uncle. I can interact with customers, take orders efficiently, and help them appreciate the quality of traditional tea preparation.
+    <<jump Vikram_Day3b>>
+-> Raju: I want to help optimize your service operations, uncle. Let me observe your workflow and suggest ways to serve more customers efficiently without compromising tea quality.
+    <<jump Vikram_Day3c>>
+
+===
+
+title: Vikram_Day3a
+tags:
+position: -308,129
+---
+<<set $Vikram_Path = "a">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to learn recipe preparation, uncle. Teach me about spice combinations, milk heating techniques, and timing so I can understand the foundation of quality tea making.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Recipe preparation? Beta, these formulas have been refined through generations. One wrong measurement can ruin entire batches, and customers can taste even small variations. Tea making requires perfect consistency and years of practice.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand the responsibility, uncle. But I'm precise and patient. I want to learn the traditional methods correctly from the beginning, even if it takes months to master basic techniques.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Very well. But you start with ingredient preparation and measurement only. No actual brewing until you prove you understand the discipline that quality tea preparation requires.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you for sharing your knowledge, uncle! I'll be the most careful and respectful student you've ever had for traditional tea techniques.
+
+// Scene Conclusion
+As Raju begins his introduction to traditional tea preparation techniques under Vikram's careful instruction, both understand that his choice to focus on recipe mastery represents a commitment to understanding the technical foundation of quality beverage service rather than seeking immediate involvement in customer interaction. The decision to start with ingredient preparation reflects both his respect for the complexity of traditional methods and the tea vendor's willingness to invest in teaching someone who demonstrates genuine reverence for time-tested recipes and patient skill development.
+
+<<set $Vikram_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day3b
+tags:
+position: -55,122
+---
+<<set $Vikram_Path = "b">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Let me focus on customer service, uncle. I can interact with customers, take orders efficiently, and help them appreciate the quality of traditional tea preparation.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Customer service? Beta, dealing with customers means understanding individual preferences, managing rush periods when everyone wants service immediately, and representing twenty-five years of reputation. If you disappoint customers, they blame my entire operation.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand the responsibility, uncle. But I can help customers understand why quality tea takes proper time and appreciate traditional preparation methods. I want them to value skilled work the way I do.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Customer education could help people value traditional food service more. Very well - you can help with basic customer interaction, but all tea preparation and quality decisions go through me directly.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I won't disappoint you, uncle! Every customer will leave understanding why traditional tea preparation creates better, more satisfying results than rushed alternatives.
+
+// Scene Conclusion
+As Raju prepares to take on customer service responsibilities that will put him in direct contact with people whose daily tea experience could determine their mood and energy, both recognize that his choice represents a desire to bridge the gap between traditional preparation methods and customer understanding. The decision to trust him with customer education reflects growing confidence in his genuine appreciation for quality tea service and his ability to communicate the superiority of careful preparation over rushed convenience.
+
+<<set $Vikram_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day3c
+tags:
+position: 184,122
+---
+<<set $Vikram_Path = "c">>
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to help optimize your service operations, uncle. Let me observe your workflow and suggest ways to serve more customers efficiently without compromising tea quality.
+
+<<SetCharacterExpression "Vikram" "Quizzical">>
+Vikram: Service optimization? Beta, I've been running this tea stall for twenty-five years. You think a young boy can identify improvements that I haven't already considered?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Not improvements to your expertise, uncle - opportunities to apply fresh perspective! Sometimes new eyes can spot workflow possibilities that experience might overlook while maintaining quality standards.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Interesting approach. Very well - observe and record what you can, but remember that any suggestions must preserve tea quality and be practical for a small food service business.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll approach this systematically, uncle! Every observation will honor the complexity of your craft while identifying ways to help more customers without compromising traditional quality standards.
+
+// Scene Conclusion
+As Raju embarks on his systematic analysis of tea service operations with the goal of identifying efficiency opportunities that preserve quality standards, both participants understand that his choice represents an unusual approach that combines deep respect for established culinary expertise with confidence in his ability to contribute strategic insights. The decision to focus on workflow optimization rather than direct food preparation reflects his belief that intellectual contribution might prove as valuable as physical assistance, while Vikram's willingness to consider outside perspectives demonstrates openness to innovation despite his years of established practices.
+
+<<set $Vikram_Day = 4>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day4
+---
+<<if $Vikram_Path=="a">>
+    <<jump Vikram_Day4a>>
+<<elseif $Vikram_Path=="b">>
+    <<jump Vikram_Day4b>>
+<<elseif $Vikram_Path=="c">>
+    <<jump Vikram_Day4c>>
+<<endif>>
+===
+
+title: Vikram_Day4a
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Day 4 - Path A: Recipe Preparation Focus
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities under real customer pressure.
+
+The tea stall welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex preparation deadlines. Vikram's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional tea service or remains a well-intentioned but impractical interest, while his own understanding of food service will deepen through hands-on experience that tests respect against the practical realities of quality beverage preparation.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Ready for your first real day of tea service work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of quality preparation and customer satisfaction.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, uncle! I've been thinking about this opportunity all night and I'm eager to prove that my respect for tea preparation can translate into meaningful contribution.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: We'll see how you handle the precision required when working with traditional recipes and customers who expect perfect results every time. Food service tests both your technical skills and your consistency under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, uncle. But I believe that learning tea preparation will teach me valuable lessons about precision, hospitality, and the importance of food service in community life.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for traditional tea preparation. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Vikram maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established tea service practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when beverage reputation and customer satisfaction depend on flawless execution of time-tested preparation methods.
+
+<<set $Vikram_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day4b
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Day 4 - Path B: Customer Service Focus
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities under real customer pressure.
+
+The tea stall welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex preparation deadlines. Vikram's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional tea service or remains a well-intentioned but impractical interest, while his own understanding of food service will deepen through hands-on experience that tests respect against the practical realities of quality beverage preparation.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Ready for your first real day of tea service work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of quality preparation and customer satisfaction.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, uncle! I've been thinking about this opportunity all night and I'm eager to prove that my respect for tea preparation can translate into meaningful contribution.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: We'll see how you handle the precision required when working with traditional recipes and customers who expect perfect results every time. Food service tests both your technical skills and your consistency under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, uncle. But I believe that learning tea preparation will teach me valuable lessons about precision, hospitality, and the importance of food service in community life.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for traditional tea preparation. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Vikram maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established tea service practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when beverage reputation and customer satisfaction depend on flawless execution of time-tested preparation methods.
+
+<<set $Vikram_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day4c
+tags:
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Day 4 - Path C: Service Optimization Focus
+After yesterday's selection of his specific contribution area, Raju chooses to arrive at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities under real customer pressure.
+
+The tea stall welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice, the morning calm providing ideal conditions for beginning his chosen role without the pressure of active customer service or complex preparation deadlines. Vikram's evaluation of his performance today will determine whether his assistance becomes a meaningful contribution to professional tea service or remains a well-intentioned but impractical interest, while his own understanding of food service will deepen through hands-on experience that tests respect against the practical realities of quality beverage preparation.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Ready for your first real day of tea service work, beta? Today you'll discover whether your enthusiasm can handle the actual demands of quality preparation and customer satisfaction.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm completely ready, uncle! I've been thinking about this opportunity all night and I'm eager to prove that my respect for tea preparation can translate into meaningful contribution.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: We'll see how you handle the precision required when working with traditional recipes and customers who expect perfect results every time. Food service tests both your technical skills and your consistency under pressure.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I understand, uncle. But I believe that learning tea preparation will teach me valuable lessons about precision, hospitality, and the importance of food service in community life.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Your attitude shows promise, beta. Now let's see if your performance matches your reverence for traditional tea preparation. Real skill development begins now.
+
+// Scene Conclusion
+As the morning work session intensifies with Raju taking on his designated responsibilities while Vikram maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference with established tea service practices. The hands-on work creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and respect when beverage reputation and customer satisfaction depend on flawless execution of time-tested preparation methods.
+
+<<set $Vikram_Day = 5>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day5
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Day 5 - Building on success
+After successfully completing his first full day of tea service work, Raju chooses to return for a second day, eager to build on yesterday's experience and continue proving his value to professional beverage preparation operations.
+
+The familiar sights and sounds of the tea stall greet Raju as he returns with growing confidence in his ability to contribute meaningfully to professional food service, yesterday's successful navigation of preparation pressure having validated both his capabilities and Vikram's decision to trust him with real responsibilities. The second day carries different energy as both participants move beyond experimental assistance into the beginning of genuine skill transfer partnership, with accumulated experience providing foundation for more sophisticated collaboration and deeper mutual understanding of what quality tea service requires.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: You returned, beta! Yesterday was quite impressive - you showed more respect for traditional preparation methods than I expected. Are you prepared to deepen your understanding today?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Absolutely, uncle! Yesterday taught me so much about tea preparation precision and the responsibility that comes with food service. I feel like I understand your craft much more deeply now.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Excellent! Today I want to see if you can handle more complex preparation challenges. Yesterday was basic introduction - today we test whether you can truly contribute to professional tea service.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'm ready for whatever challenge you have, uncle. Working here has shown me how much skill and knowledge traditional food preparation contains.
+
+<<SetCharacterExpression "Vikram" "Serious">>
+Vikram: Then let's see if you can maintain yesterday's quality while handling increased responsibility. Professional food service must deliver excellence consistently, regardless of pressure or complexity.
+
+// Scene Conclusion
+As the second day of collaboration unfolds with expanded responsibilities and higher expectations, both Raju and Vikram recognize that they are moving beyond the experimental phase into a potentially meaningful relationship that could benefit both his education and the preservation of traditional food service skills. The progression from basic introduction to more complex challenges reflects growing mutual trust and competence, while the continued emphasis on quality reinforces the understanding that personal success must always serve the larger goal of maintaining traditional standards and customer satisfaction.
+
+<<set $Vikram_Day = 6>>
+<<EndEvent true>>
+===
+
+title: Vikram_Day6
+---
+<<PlayBackgroundMusic "Light">>
+<<SetBGSprite TeaStall>>
+
+// Day 6 - Final conversation and apprenticeship offer
+With two successful days of tea service work behind him, Raju chooses to approach Vikram about making their collaboration more formal and discussing what this experience has taught him about food service, community connection, and the value of traditional hospitality.
+
+The tea stall atmosphere reflects the comfortable working relationship that has developed between Raju and Vikram over their days of collaboration, with established respect and mutual understanding replacing the initial uncertainty and evaluation that characterized their early interactions. Today's conversation carries weight beyond immediate food service concerns as both participants prepare to discuss the broader implications of their successful partnership and what it might mean for Raju's ongoing education about hospitality, community service, and the vital role that food vendors play in maintaining social connections that bring neighborhoods together.
+
+<<SetCharacterExpression "Vikram" "Excited">>
+Vikram: Beta, I must admit - when you first expressed interest in tea preparation, I assumed it was typical modern curiosity that would fade when you encountered real work. But these past few days have revealed something remarkable about your respect for traditional food service and quality preparation.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, uncle! Working here has been incredibly meaningful. I've learned so much about traditional techniques, but also about hospitality, precision, and the importance of food service in creating community connections.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: You've demonstrated that appreciation for food service isn't determined by family background - it's determined by character and genuine respect for traditional hospitality. Your help has not only made my work more manageable, but it's given me hope that these skills will maintain their value.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This experience has taught me that tea preparation embodies the same principles as any form of excellence - dedication, attention to detail, and genuine care for creating experiences that bring comfort and connection to people's daily lives. Whether someone is mastering food service or pursuing cricket, success requires the same fundamental respect for quality and patient skill development.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Exactly, beta! And you've shown that young people can contribute meaningfully to preserving traditional food service when they approach hospitality work with genuine reverence and willingness to learn proper methods.
+
+<<SetCharacterExpression "Vikram" "Excited">>
+Vikram: I want to offer you ongoing tea preparation training - regular sessions where you can continue learning traditional techniques while helping me with service work. You've earned the right to be considered a legitimate apprentice in hospitality, not just an interested observer.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: That's incredibly generous, uncle! But more than the training, I value what I've learned about the importance of food service and the dignity that comes from providing hospitality that connects people and creates community gathering spaces.
+
+<<SetCharacterExpression "Vikram" "Smiling">>
+Vikram: Then we both benefit perfectly - you gain traditional hospitality knowledge that will serve you well in any future endeavor, and I gain confidence that these skills will continue to receive the respect and appreciation they deserve from the next generation.
+
+<<PlayBackgroundMusic "Emotional">>
+
+// Scene Conclusion
+As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of preserving traditional food service skills, Raju and Vikram understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and social gaps to create partnerships that strengthen both individuals and the traditional hospitality knowledge systems they work together to preserve and honor.
+
+<<set $Vikram_Complete = true>>
+<<ShowRewardImage Courage>>
+===

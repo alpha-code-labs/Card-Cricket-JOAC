@@ -1,0 +1,370 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63148e337e41e2438b3e005e3669eb8, type: 3}
+  m_Name: QuizData
+  m_EditorClassIdentifier: 
+  totalQuestions: 50
+  maxWrongAnswers: 5
+  questions:
+  - questionText: What is the pH value of pure water?
+    options:
+    - 6
+    - 7
+    - 8
+    - 9
+    correctAnswerIndex: 1
+  - questionText: Which gas is produced when zinc reacts with hydrochloric acid?
+    options:
+    - Oxygen
+    - Hydrogen
+    - Carbon dioxide
+    - Nitrogen
+    correctAnswerIndex: 1
+  - questionText: What is the basic unit of heredity?
+    options:
+    - Chromosome
+    - Gene
+    - DNA
+    - RNA
+    correctAnswerIndex: 1
+  - questionText: Which lens is used to correct myopia?
+    options:
+    - Convex lens
+    - Concave lens
+    - Cylindrical lens
+    - Bifocal lens
+    correctAnswerIndex: 1
+  - questionText: What is the chemical formula of methane?
+    options:
+    - CH3
+    - CH4
+    - C2H4
+    - C2H6
+    correctAnswerIndex: 1
+  - questionText: Which part of the brain controls balance and posture?
+    options:
+    - Cerebrum
+    - Cerebellum
+    - Medulla
+    - Pons
+    correctAnswerIndex: 1
+  - questionText: What is the SI unit of electric current?
+    options:
+    - Volt
+    - Ampere
+    - Ohm
+    - Watt
+    correctAnswerIndex: 1
+  - questionText: Which hormone regulates blood sugar levels?
+    options:
+    - Thyroxine
+    - Insulin
+    - Adrenaline
+    - Growth hormone
+    correctAnswerIndex: 1
+  - questionText: What is the atomic number of carbon?
+    options:
+    - 4
+    - 6
+    - 8
+    - 12
+    correctAnswerIndex: 1
+  - questionText: Which type of reproduction involves two parents?
+    options:
+    - Asexual
+    - Sexual
+    - Vegetative
+    - Fragmentation
+    correctAnswerIndex: 1
+  - questionText: What is the speed of light in vacuum?
+    options:
+    - "3\xD710\u2078 m/s"
+    - "3\xD710\u2079 m/s"
+    - "3\xD710\u2077 m/s"
+    - "3\xD710\xB9\u2070 m/s"
+    correctAnswerIndex: 0
+  - questionText: Which acid is present in vinegar?
+    options:
+    - Citric acid
+    - Acetic acid
+    - Lactic acid
+    - Formic acid
+    correctAnswerIndex: 1
+  - questionText: What is the main function of stomata?
+    options:
+    - Photosynthesis
+    - Gas exchange
+    - Water storage
+    - Support
+    correctAnswerIndex: 1
+  - questionText: Which mirror is used in vehicle headlights?
+    options:
+    - Plane mirror
+    - Concave mirror
+    - Convex mirror
+    - Cylindrical mirror
+    correctAnswerIndex: 1
+  - questionText: What is the valency of oxygen?
+    options:
+    - 1
+    - 2
+    - 3
+    - 4
+    correctAnswerIndex: 1
+  - questionText: Which blood vessel carries oxygenated blood from lungs to heart?
+    options:
+    - Pulmonary artery
+    - Pulmonary vein
+    - Aorta
+    - Vena cava
+    correctAnswerIndex: 1
+  - questionText: What is the power of a lens with focal length 50 cm?
+    options:
+    - 1 D
+    - 2 D
+    - 0.5 D
+    - 5 D
+    correctAnswerIndex: 2
+  - questionText: Which element is essential for combustion?
+    options:
+    - Nitrogen
+    - Oxygen
+    - Carbon dioxide
+    - Hydrogen
+    correctAnswerIndex: 1
+  - questionText: What is the process by which plants lose water?
+    options:
+    - Respiration
+    - Transpiration
+    - Photosynthesis
+    - Absorption
+    correctAnswerIndex: 1
+  - questionText: Which particle has no charge?
+    options:
+    - Proton
+    - Neutron
+    - Electron
+    - Ion
+    correctAnswerIndex: 1
+  - questionText: "What is the value of sin 90\xB0?"
+    options:
+    - 0
+    - 1
+    - 1/2
+    - "\u221A3/2"
+    correctAnswerIndex: 1
+  - questionText: If the discriminant of a quadratic equation is zero, the roots
+      are
+    options:
+    - Real and different
+    - Real and equal
+    - Imaginary
+    - Irrational
+    correctAnswerIndex: 1
+  - questionText: What is the formula for the area of a circle?
+    options:
+    - "\u03C0r"
+    - "\u03C0r\xB2"
+    - "2\u03C0r"
+    - "\u03C0d"
+    correctAnswerIndex: 1
+  - questionText: The sum of first n natural numbers is
+    options:
+    - n(n+1)
+    - n(n+1)/2
+    - n(n-1)/2
+    - "n\xB2"
+    correctAnswerIndex: 1
+  - questionText: "What is the value of tan 45\xB0?"
+    options:
+    - 0
+    - 1
+    - 1/2
+    - "\u221A3"
+    correctAnswerIndex: 1
+  - questionText: In an AP, if a = 5 and d = 3, what is the 10th term?
+    options:
+    - 32
+    - 35
+    - 38
+    - 41
+    correctAnswerIndex: 0
+  - questionText: What is the probability of getting a head in a coin toss?
+    options:
+    - 1/4
+    - 1/2
+    - 1
+    - 3/4
+    correctAnswerIndex: 1
+  - questionText: The volume of a sphere with radius r is
+    options:
+    - "\u03C0r\xB3"
+    - "4\u03C0r\xB3/3"
+    - "2\u03C0r\xB3"
+    - "\u03C0r\xB2"
+    correctAnswerIndex: 1
+  - questionText: "If log\u2081\u2080 2 = 0.3010, then log\u2081\u2080 20 = ?"
+    options:
+    - 1.3010
+    - 3.3010
+    - 0.6020
+    - 2.3010
+    correctAnswerIndex: 0
+  - questionText: The median of 3, 5, 7, 9, 11 is
+    options:
+    - 5
+    - 7
+    - 8
+    - 9
+    correctAnswerIndex: 1
+  - questionText: What is the HCF of 12 and 18?
+    options:
+    - 3
+    - 6
+    - 9
+    - 12
+    correctAnswerIndex: 1
+  - questionText: The distance between points (2,3) and (5,7) is
+    options:
+    - 3
+    - 4
+    - 5
+    - 6
+    correctAnswerIndex: 2
+  - questionText: If 2x + 3 = 11, then x = ?
+    options:
+    - 3
+    - 4
+    - 5
+    - 6
+    correctAnswerIndex: 1
+  - questionText: The surface area of a cube with side 'a' is
+    options:
+    - "4a\xB2"
+    - "6a\xB2"
+    - "8a\xB2"
+    - "12a\xB2"
+    correctAnswerIndex: 1
+  - questionText: "What is cos 60\xB0?"
+    options:
+    - 1/2
+    - "\u221A3/2"
+    - 1
+    - 0
+    correctAnswerIndex: 0
+  - questionText: What is the plural of 'child'?
+    options:
+    - Childs
+    - Children
+    - Childes
+    - Childern
+    correctAnswerIndex: 1
+  - questionText: Which is the correct past tense of 'go'?
+    options:
+    - Goed
+    - Gone
+    - Went
+    - Going
+    correctAnswerIndex: 2
+  - questionText: What type of noun is 'happiness'?
+    options:
+    - Proper noun
+    - Abstract noun
+    - Collective noun
+    - Material noun
+    correctAnswerIndex: 1
+  - questionText: Choose the correct synonym for 'brave'
+    options:
+    - Coward
+    - Courageous
+    - Afraid
+    - Timid
+    correctAnswerIndex: 1
+  - questionText: What is the superlative form of 'good'?
+    options:
+    - Gooder
+    - Goodest
+    - Better
+    - Best
+    correctAnswerIndex: 3
+  - questionText: Which article is used before vowel sounds?
+    options:
+    - A
+    - An
+    - The
+    - None
+    correctAnswerIndex: 1
+  - questionText: What is the opposite of 'expand'?
+    options:
+    - Enlarge
+    - Contract
+    - Increase
+    - Grow
+    correctAnswerIndex: 1
+  - questionText: Choose the correct spelling
+    options:
+    - Recieve
+    - Receive
+    - Receve
+    - Receeve
+    correctAnswerIndex: 1
+  - questionText: What is a group of words with a subject and predicate called?
+    options:
+    - Phrase
+    - Clause
+    - Word
+    - Sentence
+    correctAnswerIndex: 3
+  - questionText: Which punctuation mark is used to show possession?
+    options:
+    - Comma
+    - Apostrophe
+    - Colon
+    - Semicolon
+    correctAnswerIndex: 1
+  - questionText: What is the past participle of 'write'?
+    options:
+    - Wrote
+    - Written
+    - Writing
+    - Writes
+    correctAnswerIndex: 1
+  - questionText: Choose the correct preposition He is afraid ___ dogs
+    options:
+    - from
+    - of
+    - with
+    - by
+    correctAnswerIndex: 1
+  - questionText: What type of sentence is What a beautiful day!
+    options:
+    - Declarative
+    - Interrogative
+    - Imperative
+    - Exclamatory
+    correctAnswerIndex: 3
+  - questionText: Which word is an adverb in She sings beautifully?
+    options:
+    - She
+    - sings
+    - beautifully
+    - None
+    correctAnswerIndex: 2
+  - questionText: What is the comparative form of 'far'?
+    options:
+    - Farer
+    - More far
+    - Further
+    - Most far
+    correctAnswerIndex: 2
+  backgroundMusic: {fileID: 8300000, guid: 38f99c2772b04f349b845c1b5b490b3d, type: 3}
+  backgroundImage: {fileID: 21300000, guid: 502e4fc7df9b0a1409ad3e0d9dff2dc2, type: 3}

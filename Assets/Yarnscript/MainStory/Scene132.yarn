@@ -4,8 +4,8 @@ colorID: 0
 position: 0,0
 ---
 
-<<ShowDateScreen "April 30th 1990 - Morning">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite "HutInterior">>
@@ -49,7 +49,7 @@ Raju: In… hold… out.
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 ShivPrasad: Anchor won't change the tide. But it keeps the boat from lying.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: True. Listen, captain. Whatever the paper says, you walk the same—straight, without running or drooping. If it's good, we thank it and go home. If it's not, we learn where the holes are and we fill them. No big face, no small face.
 
 <<SetCharacterExpression "Raju" "Serious">>

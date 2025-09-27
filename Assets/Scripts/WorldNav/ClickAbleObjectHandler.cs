@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,20 @@ using UnityEngine.Events;
 public abstract class ClickAbleObjectHandler : MonoBehaviour
 {
     public GameObject availabilityIndicatorPrefab;
+    Collider2D Collider2D;
+    protected void Awake()
+    {
+        Collider2D = GetComponent<Collider2D>();
+    }
     protected void Start()
     {
+        // Collider2D = GetComponent<Collider2D>();
         RefreshCollider();
     }
     private void OnMouseDown()
     {
         if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
-        Debug.Log("Clicked on " + gameObject.name);
+        // Debug.Log("Clicked on " + gameObject.name);
         if (!PanAndZoomManager.isSwiping)
         {
             OnClick();
@@ -30,15 +37,21 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
         availabilityIndicatorPrefab.transform.localScale = Vector3.one * 1f;
     }
     public abstract void OnClick();
+
     protected void RefreshCollider()
     {
-        Collider2D Collider2D = GetComponent<Collider2D>();
         Collider2D.enabled = false;
         Collider2D.enabled = true;
+        CheckAvaliability();
     }
-    protected void CheckAvailability()
+    public abstract void CheckAvaliability();
+    protected void SetAvaliabilityIndicator(bool isActive)
     {
-        // if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
+        if (availabilityIndicatorPrefab != null)
+        {
+            availabilityIndicatorPrefab.SetActive(isActive);
+            Collider2D.enabled = isActive;
+        }
     }
     protected void OnEnable()
     {

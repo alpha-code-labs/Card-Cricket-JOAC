@@ -4,19 +4,19 @@ colorID: 0
 position: 0,0
 ---
 
-<<ShowDateScreen "April 15th 1990 - Morning">>
-<<wait 5>>
+ 
+ 
 
 <<PlayBackgroundMusic "exciting">>
 <<SetBGSprite "HutInterior">>
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Time to go. You're nervous?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Not really. I prepared well. Honestly i have given it everything.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and a steady brain. I will take you to school.
 
 <<SetCharacterExpression "Raju" "Serious">>
