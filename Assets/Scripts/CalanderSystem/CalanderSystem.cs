@@ -58,7 +58,7 @@ public class CalanderSystem : MonoBehaviour
         else
         {
             Debug.LogError("No previous date available for: " + currentDate);
-            return DateTime.MinValue;
+            return DateTime.Parse(currentDate);
         }
     }
 }
