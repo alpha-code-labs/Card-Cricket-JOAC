@@ -29,6 +29,9 @@ public class RewardsSequenceManager : MonoBehaviour
     [SerializeField] Image BarFillImage;//0,0.2,0.4,0.6,0.8,1
     [SerializeField] List<Sprite> sprites;
     [SerializeField] TextMeshProUGUI RankUpText;
+    [SerializeField] int particleCount = 8;
+    [SerializeField] float particleSpeed = 200f;
+    [SerializeField] float particleFadeDuration = 1f;
     Dictionary<Reward, Sprite> rewardSpriteDict;
     void ProcessSprites()
     {
@@ -45,6 +48,53 @@ public class RewardsSequenceManager : MonoBehaviour
             {
                 Debug.LogWarning($"Sprite with name {sprite.name} does not match any Reward enum value.");
             }
+        }
+    }
+
+    void CreateParticleExplosion()
+    {
+        if (RewardImage.sprite == null) return;
+
+        Vector3 rewardPos = RewardImage.transform.position;
+
+        for (int i = 0; i < particleCount; i++)
+        {
+            // Create particle GameObject
+            GameObject particleObj = new GameObject("Particle");
+            particleObj.transform.SetParent(RewardPanel.transform, false);
+
+            // Add Image component and set sprite
+            Image particleImage = particleObj.AddComponent<Image>();
+            particleImage.sprite = RewardImage.sprite;
+            particleImage.color = Color.white;
+
+            // Set initial position behind the reward image
+            RectTransform particleRect = particleObj.GetComponent<RectTransform>();
+            particleRect.position = RewardImage.transform.position;
+            particleRect.sizeDelta = new Vector2(30, 30); // Small particle size
+
+            // Move particle to back (lower sibling index)
+            particleRect.SetSiblingIndex(0);
+
+            // Calculate random direction
+            float angle = (360f / particleCount) * i + Random.Range(-30f, 30f);
+            Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+            Vector3 targetPos = rewardPos + direction * particleSpeed;
+
+            // Animate particle
+            Sequence particleSeq = DOTween.Sequence();
+
+            // Move outward
+            particleSeq.Append(particleRect.DOMove(targetPos, 0.5f).SetEase(Ease.OutQuad));
+
+            // Fade out
+            particleSeq.Join(particleImage.DOFade(0, particleFadeDuration).SetDelay(0.2f));
+
+            // Scale down slightly during fade
+            particleSeq.Join(particleRect.DOScale(0.5f, particleFadeDuration).SetDelay(0.2f));
+
+            // Destroy after animation
+            particleSeq.OnComplete(() => Destroy(particleObj));
         }
     }
     [ContextMenu("TestShowReward")]
@@ -102,6 +152,7 @@ public class RewardsSequenceManager : MonoBehaviour
             seq.Join(instance.RewardImage.transform.DORotate(new Vector3(0, 0, 720), 0.6f, RotateMode.FastBeyond360).SetEase(Ease.OutQuad));
             seq.Join(instance.RewardImage.DOFade(1, 0.6f));
             seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBounce));
+            seq.AppendCallback(() => instance.CreateParticleExplosion());
             seq.Append(instance.Bar.DOFade(1, 0.5f));
             seq.Join(instance.BarFillImage.DOFade(1, 0.5f));
             seq.Append(instance.BarFillImage.DOFillAmount(targetFill, 2f).SetEase(Ease.OutQuad));
