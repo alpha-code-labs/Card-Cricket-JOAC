@@ -186,7 +186,7 @@ public class SimpleHandArcManager : MonoBehaviour
             info.baseRotation = Quaternion.Euler(0, 0, -angle * 0.5f);
             info.targetRotation = info.baseRotation;
             info.targetScale = Vector3.one * normalScale;
-            info.baseSortingOrder = i * 2;
+            info.baseSortingOrder = i * 2 + 3;
 
             info.canvas.sortingOrder = info.baseSortingOrder;
 

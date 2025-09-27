@@ -1,5 +1,6 @@
 ﻿title: Start
 ---
+<<disableRaycasterOnMainDialogueSystem>>
 <<declare $selection = "None">>
 <<declare $flipButtonClicked = false>>
 <<declare $showFlipButton = false>>
@@ -212,6 +213,7 @@ Ramu: Good try, lets play the flip card once and then get to work.
 <<unhideBallerCard>>
 <<showFlipButton>>
 Ramu: As you can see none of the available shots are ideal for the ball being thrown. Time to play the flip card. Press the flip button.
+<<hideCharacterImage>>
 ===
 
 title: FlipCardSelection

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizGamePlay.unity
     guid: 2edecb363d82c9c4f9be5e56440cb8bf
+  - enabled: 1
+    path: Assets/Scenes/CardGameTutorialScene.unity
+    guid: c33bfcc6260781e49b9652ab11f17b0d
   m_configObjects: {}

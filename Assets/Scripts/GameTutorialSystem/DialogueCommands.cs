@@ -1,8 +1,96 @@
 using UnityEngine;
 using Yarn.Unity;
+using UnityEngine.UI;
+using System.Linq;
+using UnityEngine.Rendering;
 
 public class DialogueCommands : MonoBehaviour
 {
+
+
+    private static GraphicRaycaster persistentDialogueRaycaster;
+     public void DisablePersistentDialogueRaycaster()
+    {
+        // Get all GameObjects named "Dialogue System"
+        GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
+            .Where(go => go.name == "Dialogue System")
+            .ToArray();
+            
+        foreach (GameObject dialogueSystem in dialogueSystems)
+        {
+            // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
+            if (dialogueSystem.scene != UnityEngine.SceneManagement.SceneManager.GetActiveScene())
+            {
+                // Get and disable its GraphicRaycaster
+                GraphicRaycaster raycaster = dialogueSystem.GetComponentInChildren<GraphicRaycaster>();
+                if (raycaster != null)
+                {
+                    raycaster.enabled = false;
+                    persistentDialogueRaycaster = raycaster; // Store reference for re-enabling
+                    Debug.Log($"Disabled DontDestroyOnLoad Dialogue System raycaster from scene: {dialogueSystem.scene.name}");
+                }
+                break;
+            }
+        }
+    }
+
+     public void EnablePersistentDialogueRaycaster()
+    {
+        // If we have a stored reference, use it (faster)
+        if (persistentDialogueRaycaster != null)
+        {
+            persistentDialogueRaycaster.enabled = true;
+            Debug.Log("Re-enabled DontDestroyOnLoad Dialogue System raycaster (from reference)");
+            return;
+        }
+        
+        // Otherwise, find it again
+        GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
+            .Where(go => go.name == "Dialogue System")
+            .ToArray();
+            
+        foreach (GameObject dialogueSystem in dialogueSystems)
+        {
+            // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
+            if (dialogueSystem.scene != UnityEngine.SceneManagement.SceneManager.GetActiveScene())
+            {
+                // Get and enable its GraphicRaycaster
+                GraphicRaycaster raycaster = dialogueSystem.GetComponentInChildren<GraphicRaycaster>();
+                if (raycaster != null)
+                {
+                    raycaster.enabled = true;
+                    persistentDialogueRaycaster = raycaster; // Store reference for future use
+                    Debug.Log($"Re-enabled DontDestroyOnLoad Dialogue System raycaster from scene: {dialogueSystem.scene.name}");
+                }
+                break;
+            }
+        }
+    }
+
+    [YarnCommand("disableRaycasterOnMainDialogueSystem")]
+    public static void disableRaycasterOnMainDialogueSystem()
+    {
+         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
+            .Where(go => go.name == "Dialogue System")
+            .ToArray();
+            
+        foreach (GameObject dialogueSystem in dialogueSystems)
+        {
+            // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
+            if (dialogueSystem.scene != UnityEngine.SceneManagement.SceneManager.GetActiveScene())
+            {
+                // Get and disable its GraphicRaycaster
+                GraphicRaycaster raycaster = dialogueSystem.GetComponentInChildren<GraphicRaycaster>();
+                if (raycaster != null)
+                {
+                    raycaster.enabled = false;
+                    persistentDialogueRaycaster = raycaster; // Store reference for re-enabling
+                    Debug.Log($"Disabled DontDestroyOnLoad Dialogue System raycaster from scene: {dialogueSystem.scene.name}");
+                }
+                break;
+            }
+        }
+    }
 
     [YarnCommand("moveDialogue")]
     public static void MoveDialogue(string anchor)
@@ -141,7 +229,37 @@ public class DialogueCommands : MonoBehaviour
     public static void StartNextScene()
     {
         Debug.Log("Tutorial complete starting next scene");
+        //enable raycaster on main dialogue system
+        if (persistentDialogueRaycaster != null)
+        {
+            persistentDialogueRaycaster.enabled = true;
+            Debug.Log("Re-enabled DontDestroyOnLoad Dialogue System raycaster (from reference)");
+        }
+        
+        // Otherwise, find it again
+        GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
+            .Where(go => go.name == "Dialogue System")
+            .ToArray();
+            
+        foreach (GameObject dialogueSystem in dialogueSystems)
+        {
+            // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
+            if (dialogueSystem.scene != UnityEngine.SceneManagement.SceneManager.GetActiveScene())
+            {
+                // Get and enable its GraphicRaycaster
+                GraphicRaycaster raycaster = dialogueSystem.GetComponentInChildren<GraphicRaycaster>();
+                if (raycaster != null)
+                {
+                    raycaster.enabled = true;
+                    persistentDialogueRaycaster = raycaster; // Store reference for future use
+                    Debug.Log($"Re-enabled DontDestroyOnLoad Dialogue System raycaster from scene: {dialogueSystem.scene.name}");
+                }
+                break;
+            }
+        }
         //implement...
+        Debug.Log("calling end event");
+        NewDayManager.EndEvent();
     }
 
     [YarnCommand("showBatsman")]

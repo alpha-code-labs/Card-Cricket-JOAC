@@ -15,8 +15,10 @@ public class CardsPoolManager : MonoBehaviour
     public int CurrntTurn = 0; // Current turn number
     public List<BallThrow> BallThrows; // List to hold BallThrow instances
     [Header("Difficulty Settings")]
-    [SerializeField] public int maxHandSize = 5;
-    public int maxRedraws = 1; // Maximum redraws per game
+    [SerializeField] public int baseMaxHandSize = 4;
+    private int maxHandSize;
+    public int baseMaxRedraws = 1;
+    private int maxRedraws; // Maximum redraws per game
     private int redraws = 0; // Track number of redraws used
     private bool cardsInteractable = true;
 
@@ -34,6 +36,8 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
+        maxHandSize = baseMaxHandSize + GameManager.instance.currentSaveData.resourcefulness;
+        maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
         Instance = this;
     }
 

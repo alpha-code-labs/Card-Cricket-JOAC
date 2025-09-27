@@ -31,7 +31,7 @@ MonoBehaviour:
       eventType: 3
     - eventName: Tutorial Scene
       eventDescription: Pre-Tutorial Cutscene
-      eventType: 2
+      eventType: 6
     - eventName: scene_3
       eventDescription: Post-Tutorial Cutscene
       eventType: 0

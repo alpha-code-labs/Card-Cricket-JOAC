@@ -74,6 +74,10 @@ public class NewDayManager : MonoBehaviour
                 yield return DisplayTextThenFade("");
                 //Load Special Event
                 break;
+            case TypeOfEvent.CardGamePlayTutorial:
+                yield return DisplayTextThenFade("");
+                TransitionScreenManager.instance.LoadScene(SceneNames.CardGameTutorialScene);
+                break;
             case TypeOfEvent.QuizGamePlay:
                 yield return DisplayTextThenFade("");
                 TransitionScreenManager.instance.LoadScene(SceneNames.QuizGamePlay);
@@ -88,7 +92,7 @@ public class NewDayManager : MonoBehaviour
                 break;
             case TypeOfEvent.GamePlay:
                 yield return DisplayTextThenFade("");
-                ScoreManager.Instance.SetTargetFromEventName(events.eventName);
+                //ScoreManager.Instance.SetTargetFromEventName(events.eventName);
                 TransitionScreenManager.instance.LoadScene(SceneNames.CardGameScene);
                 //Load GamePlay                
                 break;

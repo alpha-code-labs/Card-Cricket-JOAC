@@ -8,13 +8,16 @@ public class Timer : MonoBehaviour
 
 
     public static Timer Instance;
-    public int maxTimeToChooseStrategy = 5; // seconds
+    public int baseTimeToChooseStrategy = 15; 
+    private int maxTimeToChooseStrategy = 5; // seconds
     private bool isPaused = false;
     private float pausedTimeRemaining = 0;
     private Coroutine currentTimerCoroutine;
 
     void Awake()
     {
+        //courange, foresight, humility, resourcefullness
+        maxTimeToChooseStrategy = baseTimeToChooseStrategy + GameManager.instance.currentSaveData.foresight;
         Instance = this;
     }
 

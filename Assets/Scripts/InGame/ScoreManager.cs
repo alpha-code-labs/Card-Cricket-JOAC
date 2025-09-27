@@ -11,19 +11,17 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
 
-    //load rewards stats to update these hardcoded for now
-    public int maxTimeToChooseStrategy = 5; // seconds
-    public int maxEnergy = 24;
-
     void Awake()
     {
+
         Instance = this;
     }
 
     int currentRuns = 0; // Current runs scored
     public int TargetScore = 40; // The target score to reach
     public int MaxBalls = 24; // Maximum balls in the game (e.g., 6 overs)
-    public int wickets = 3; // Wickets before game over
+    public int baseWickets = 2;
+    private int wickets; // Wickets before game over
     [SerializeField] TextMeshProUGUI scoreText; // Text to display the score
     [SerializeField] TextMeshProUGUI currentRunsText;
     [SerializeField] TextMeshProUGUI totalRunsNeededText;
@@ -41,6 +39,12 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] float returnDuration = 0.3f; // Slower return duration
     [SerializeField] AnimationCurve swingEase = AnimationCurve.EaseInOut(0, 0, 1, 1); // Custom curve if needed
     [SerializeField] AudioSource gameAudioSource;
+
+
+    public int getCurrentWickets()
+    {
+        return wickets;
+    }
     public void UpdateBallsAndOvers(int ballsBowled)
     {
         int overs = ballsBowled / 6;
@@ -245,6 +249,7 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+        wickets = baseWickets + GameManager.instance.currentSaveData.humility;
         totalWicketsText.text = "/ " + wickets.ToString();
         UpdateScore(0); // Initialize score display
         UpdateBallsAndOvers(0); // Initialize balls and overs display
