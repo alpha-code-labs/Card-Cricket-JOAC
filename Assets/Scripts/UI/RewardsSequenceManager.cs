@@ -30,7 +30,7 @@ public class RewardsSequenceManager : MonoBehaviour
     [SerializeField] List<Sprite> sprites;
     [SerializeField] TextMeshProUGUI RankUpText;
     [SerializeField] int particleCount = 8;
-    [SerializeField] float particleSpeed = 200f;
+    [SerializeField] float particleSpeed = 300f;
     [SerializeField] float particleFadeDuration = 1f;
     Dictionary<Reward, Sprite> rewardSpriteDict;
     void ProcessSprites()
@@ -72,7 +72,7 @@ public class RewardsSequenceManager : MonoBehaviour
             // Set initial position behind the reward image
             RectTransform particleRect = particleObj.GetComponent<RectTransform>();
             particleRect.position = rewardPos;
-            particleRect.sizeDelta = new Vector2(30, 30); // Small particle size
+            particleRect.sizeDelta = new Vector2(60, 60); // Larger particle size (doubled from 30x30)
 
             // Move particle to back (lower sibling index)
             particleRect.SetSiblingIndex(0);
@@ -92,7 +92,7 @@ public class RewardsSequenceManager : MonoBehaviour
             particleSeq.Join(particleImage.DOFade(0, particleFadeDuration).SetDelay(0.2f));
 
             // Scale down slightly during fade
-            particleSeq.Join(particleRect.DOScale(0.5f, particleFadeDuration).SetDelay(0.2f));
+            particleSeq.Join(particleRect.DOScale(0.3f, particleFadeDuration).SetDelay(0.2f));
 
             // Destroy after animation
             particleSeq.OnComplete(() => Destroy(particleObj));
