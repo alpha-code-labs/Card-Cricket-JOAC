@@ -15,7 +15,7 @@ public class SaveData
     {
         currentDate = "1988/07/18";//B-Day Scene 
 #if UNITY_EDITOR
-        // currentDate = "1989/01/31";// Multi Scene Day  
+        currentDate = "1989/01/31";// Multi Scene Day  
         // currentDate = "1990/03/02";//First FreeTime
         // currentDate = "1990/04/15";//Last Quiz Scene
 #endif
