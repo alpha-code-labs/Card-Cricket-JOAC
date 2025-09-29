@@ -1039,8 +1039,8 @@ MonoBehaviour:
     ballLine: 1
     ballLength: 2
     pitchCondition: 0
-  maxHandSize: 8
-  maxRedraws: 1
+  baseMaxHandSize: 4
+  baseMaxRedraws: 1
   hand: {fileID: 1392834893}
   ballerCardTransform: {fileID: 826276919}
   BallThrowText: {fileID: 1821664796}
@@ -1541,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: startNode
-      value: Start
+      value: Start_Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 8309902628685535410, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: yarnProject

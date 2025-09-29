@@ -41,8 +41,20 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
-         if (dialogueRunner == null)
-            dialogueRunner = FindObjectOfType<DialogueRunner>();
+          if (dialogueRunner == null)
+            {
+                DialogueRunner[] runners = FindObjectsOfType<DialogueRunner>();
+            
+                foreach (var runner in runners) 
+                {
+                    // Check if this is the scene runner (not the global one)
+                    if (runner.gameObject.scene == this.gameObject.scene) 
+                    {
+                        dialogueRunner = runner;
+                        break;
+                    }
+                }
+            }
         
         if (variableStorage == null)
             variableStorage = dialogueRunner.GetComponent<InMemoryVariableStorage>();

@@ -12,6 +12,7 @@ public class ScoreManager_Tutorial : MonoBehaviour
 {
     public static ScoreManager_Tutorial Instance;
 
+
     //load rewards stats to update these hardcoded for now
     public int maxTimeToChooseStrategy = 5; // seconds
     public int maxEnergy = 24;
@@ -186,6 +187,8 @@ public class ScoreManager_Tutorial : MonoBehaviour
         variableStorage.SetValue("$selection", battingStrategy.ToString());
         Debug.Log("setting variable selection of yarn variable storage to " + battingStrategy);
         dialogueRunner.Stop();
+        string availableNodes = string.Join(", ", dialogueRunner.Dialogue.NodeNames);
+        Debug.Log($"Available nodes in build: {availableNodes}");
         switch (CardsPoolManager_Tutorial.Instance.currentTutorialBall)
         {
             case "first":
@@ -298,9 +301,21 @@ public class ScoreManager_Tutorial : MonoBehaviour
 
     void Start()
     {
-         // Get references if not assigned
+        // Get references if not assigned
         if (dialogueRunner == null)
-            dialogueRunner = FindObjectOfType<DialogueRunner>();
+        {
+            DialogueRunner[] runners = FindObjectsOfType<DialogueRunner>();
+        
+            foreach (var runner in runners) 
+            {
+                // Check if this is the scene runner (not the global one)
+                if (runner.gameObject.scene == this.gameObject.scene) 
+                {
+                    dialogueRunner = runner;
+                    break;
+                }
+            }
+        }
         
         if (variableStorage == null)
             variableStorage = dialogueRunner.GetComponent<InMemoryVariableStorage>();

@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CardGameScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7f789ceea390b8a4b8922a0878ba7318
+  - enabled: 1
+    path: Assets/Scenes/CardGameTutorialScene.unity
+    guid: c33bfcc6260781e49b9652ab11f17b0d
+  - enabled: 1
+    path: Assets/Scenes/CardGameScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/NewDayScene.unity
     guid: f473182b4fa61c94e847c39bfa00e653
@@ -23,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizGamePlay.unity
     guid: 2edecb363d82c9c4f9be5e56440cb8bf
-  - enabled: 1
-    path: Assets/Scenes/CardGameTutorialScene.unity
-    guid: c33bfcc6260781e49b9652ab11f17b0d
   m_configObjects: {}
