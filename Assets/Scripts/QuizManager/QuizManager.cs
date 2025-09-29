@@ -76,6 +76,12 @@ public class QuizManager : MonoBehaviour
         var evnet = NewDayManager.currentDateRecord.events[NewDayManager.currentEventIndex];
         if (evnet.eventName == "scene_133")
         {
+            if (quizData.backgroundMusic != null && backgroundMusicSource != null)
+        {
+            backgroundMusicSource.clip = quizData.backgroundMusic;
+            backgroundMusicSource.loop = true;
+            backgroundMusicSource.Play();
+        }
            ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
            //Show Result
            return;
