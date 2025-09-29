@@ -52,6 +52,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 1
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplaye scene switcher
+      eventType: 0
   - date: 1989/02/01
     events:
     - eventName: Skip
@@ -77,6 +80,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 3
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: post gameplay scene decider
+      eventType: 0
     - eventName: scene_19
       eventDescription: Brother becomes advocate
       eventType: 0
@@ -209,6 +215,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 4
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplay scene switcher
+      eventType: 0
   - date: 1990/03/16
     events:
     - eventName: scene_53
@@ -223,6 +232,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 5
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplay scene switcher
+      eventType: 0
   - date: 1990/03/17
     events:
     - eventName: scene_57
@@ -237,6 +249,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 6
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: acedemy trial matunga
+      eventType: 0
     - eventName: scene_61
       eventDescription: Man of the series
       eventType: 0
@@ -455,6 +470,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 7
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplay scene switceher
+      eventType: 0
   - date: 1990/04/12
     events:
     - eventName: scene_117
@@ -469,6 +487,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 8
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplay scene switcher
+      eventType: 0
   - date: 1990/04/13
     events:
     - eventName: scene_121
@@ -486,6 +507,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 9
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post gameplay scene switcher
+      eventType: 0
     - eventName: scene_126
       eventDescription: Dont hold the grudge
       eventType: 0
