@@ -63,6 +63,9 @@ MonoBehaviour:
     - eventName: Card Gameplay 2
       eventDescription: Gameplay System
       eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Gameplay System
+      eventType: 0
   - date: 1989/02/02
     events:
     - eventName: Skip

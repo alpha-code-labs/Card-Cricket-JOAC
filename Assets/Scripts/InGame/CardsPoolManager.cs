@@ -36,8 +36,17 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
-        maxHandSize = baseMaxHandSize + GameManager.instance.currentSaveData.resourcefulness;
-        maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
+        DateRecord dateRecord = NewDayManager.currentDateRecord;
+        if (GameManager.instance != null)
+        {
+            maxHandSize = baseMaxHandSize + GameManager.instance.currentSaveData.resourcefulness;
+            maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
+        }
+        else
+        {
+            maxHandSize = baseMaxHandSize;
+        } 
+        
         Instance = this;
     }
 
@@ -49,29 +58,53 @@ public class CardsPoolManager : MonoBehaviour
         // EnergyManager.Instance.RefreshEnergyText();
     }
     [ContextMenu("Start Turn")]
-    public void StartTurn(bool incrementBalls = true)
+public void StartTurn(bool incrementBalls = true)
+{
+    // Check if game is already over
+    bool isBattingFirst = ScoreManager.Instance.TargetScore == 0;
+    int currentScore = ScoreManager.Instance.currentRuns; // You'll need to make currentRuns public or add a getter
+    
+    // Check various game over conditions
+    if (CurrntTurn >= ScoreManager.Instance.MaxBalls)
     {
-        if (CurrntTurn >= ScoreManager.Instance.MaxBalls || ScoreManager.Instance.wickets < 1)
-        {
-            //Game ended 
-            return;    
-        }
-        if (incrementBalls)
-            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
-        if (ballerCard != null)
-            Destroy(ballerCard);
-        ballerCard = InstantiateBallerCard(CurrentBallThrow);
-        BallThrowText.text = CurrentBallThrow.ToString();
-
-        // This is where we should start animating in the cards
-        for (int i = 0; i < maxHandSize; i++)
-        {
-            DrawCard();
-        }
-
-        Timer.Instance.StartTurnTimer();
-        OnTurnStarted?.Invoke();
+        Debug.Log("Game Over - All balls used");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
     }
+    
+    if (ScoreManager.Instance.getCurrentWickets() < 1)
+    {
+        Debug.Log("Game Over - All wickets lost");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
+    }
+    
+    // Check if target achieved (when chasing)
+    if (!isBattingFirst && currentScore >= ScoreManager.Instance.TargetScore)
+    {
+        Debug.Log("Game Over - Target achieved!");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
+    }
+    
+    if (incrementBalls)
+        ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        
+    if (ballerCard != null)
+        Destroy(ballerCard);
+        
+    ballerCard = InstantiateBallerCard(CurrentBallThrow);
+    BallThrowText.text = CurrentBallThrow.ToString();
+    
+    // Draw cards for new turn
+    for (int i = 0; i < maxHandSize; i++)
+    {
+        DrawCard();
+    }
+    
+    Timer.Instance.StartTurnTimer();
+    OnTurnStarted?.Invoke();
+}
     [ContextMenu("End Turn")]
     public void EndTurn(bool incrementBalls = true)
     {

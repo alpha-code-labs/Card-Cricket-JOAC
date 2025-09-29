@@ -17,7 +17,9 @@ public class Timer : MonoBehaviour
     void Awake()
     {
         //courange, foresight, humility, resourcefullness
-        maxTimeToChooseStrategy = baseTimeToChooseStrategy + GameManager.instance.currentSaveData.foresight;
+        if (GameManager.instance != null)
+            maxTimeToChooseStrategy = baseTimeToChooseStrategy + GameManager.instance.currentSaveData.foresight;
+        else maxTimeToChooseStrategy = baseTimeToChooseStrategy;
         Instance = this;
     }
 

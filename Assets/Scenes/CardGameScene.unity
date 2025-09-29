@@ -550,6 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86049936}
   - component: {fileID: 86049935}
+  - component: {fileID: 86049937}
   m_Layer: 0
   m_Name: CardsPoolManager
   m_TagString: Untagged
@@ -647,8 +648,8 @@ MonoBehaviour:
     ballLine: 1
     ballLength: 2
     pitchCondition: 0
-  maxHandSize: 8
-  maxRedraws: 1
+  baseMaxHandSize: 4
+  baseMaxRedraws: 1
   hand: {fileID: 1101043969}
   ballerCardTransform: {fileID: 1398403219}
   BallThrowText: {fileID: 873582954}
@@ -670,6 +671,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86049937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86049934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5254b8feb49f2c2438cf1cad31514d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &141167304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,11 +1086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c82e92f6f7758438e57b202a6c3946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimeToChooseStrategy: 30
-  maxEnergy: 24
+  currentRuns: 0
   TargetScore: 40
   MaxBalls: 24
-  wickets: 3
+  baseWickets: 2
   scoreText: {fileID: 44926448}
   currentRunsText: {fileID: 1552231045}
   totalRunsNeededText: {fileID: 1121265624}
@@ -1116,6 +1128,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   gameAudioSource: {fileID: 326133377}
+  gameOverPanel: {fileID: 0}
+  gameOverText: {fileID: 0}
   outcomeText: {fileID: 44926448}
 --- !u!114 &326133376
 MonoBehaviour:
@@ -3379,7 +3393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565db69c61d6955479200a190040055f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTimeToChooseStrategy: 20
+  baseTimeToChooseStrategy: 15
   timerText: {fileID: 450186785}
 --- !u!4 &1230803577
 Transform:
