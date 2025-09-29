@@ -44,7 +44,7 @@ public class CardPlayAnimationController : MonoBehaviour
         yield return StartCoroutine(ShowShotName(strategy));
 
         // Phase 3: Outcome display (0.5s)
-        yield return StartCoroutine(ShowOutcome(outcome));
+        yield return StartCoroutine(ShowOutcome(outcome, strategy == BattingStrategy.Leave));
 
         // Phase 4: Stats emphasis (0.5s)
         yield return StartCoroutine(AnimateStatsUpdate());
@@ -124,14 +124,18 @@ public class CardPlayAnimationController : MonoBehaviour
         yield return new WaitForSeconds(shotTextDuration);
     }
 
-    private IEnumerator ShowOutcome(OutCome outcome)
+    private IEnumerator ShowOutcome(OutCome outcome, bool playerUsedLeaveStrategy=false)
     {
+        Debug.Log("outcome for animation - " + outcome);
         int runs = (int)outcome;
 
         if (runs > 0)
         {
             // Flying number animation
-            yield return StartCoroutine(AnimateFlyingNumber(runs));
+
+            if (playerUsedLeaveStrategy) // Show Wide Animation
+                yield return StartCoroutine(ShowOutcomeText("WIDE BALL", Color.yellow));
+             yield return StartCoroutine(AnimateFlyingNumber(runs));
         }
         else if (runs == -1) // Out
         {
