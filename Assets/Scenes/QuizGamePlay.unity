@@ -4625,6 +4625,7 @@ MonoBehaviour:
   characterImage: {fileID: 1613215043}
   dialogText: {fileID: 1375578136}
   retryButton: {fileID: 294905053}
+  lightmusic: {fileID: 8300000, guid: 38f99c2772b04f349b845c1b5b490b3d, type: 3}
   winningPanel: {fileID: 671289882}
   progressBar: {fileID: 2086543924}
   loadingText: {fileID: 633469733}

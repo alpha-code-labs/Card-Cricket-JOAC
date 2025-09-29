@@ -26,6 +26,7 @@ public class QuizManager : MonoBehaviour
     public Image characterImage;
     public TextMeshProUGUI dialogText;
     public Button retryButton;
+    public AudioClip lightmusic;
 
     [Header("Winning Panel UI")]
     public GameObject winningPanel;
@@ -74,9 +75,9 @@ public class QuizManager : MonoBehaviour
         var evnet = NewDayManager.currentDateRecord.events[NewDayManager.currentEventIndex];
         if (evnet.eventName == "scene_133")
         {
-            //Show Result
-            ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
-            return;
+           //Show Result
+           ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
+           return;
         }
         InitializeQuiz();
     }
@@ -295,9 +296,9 @@ public class QuizManager : MonoBehaviour
     void EndQuiz()
     {
         // User completed all 50 questions without 5 wrong answers = WIN
-        Debug.Log("=== QUIZ WON! ===");
-        Debug.Log($"Correct Answers: {correctAnswersCount}/50");
-        Debug.Log($"Wrong Answers: {wrongAnswersCount}/5");
+        //Debug.Log("=== QUIZ WON! ===");
+        //Debug.Log($"Correct Answers: {correctAnswersCount}/50");
+        //Debug.Log($"Wrong Answers: {wrongAnswersCount}/5");
 
         // Calculate winning percentage
         float percentage = CalculateWinningPercentage(correctAnswersCount);
@@ -306,9 +307,9 @@ public class QuizManager : MonoBehaviour
         PlayerPrefs.SetFloat("QuizPercentage", percentage);
         PlayerPrefs.Save();
 
-        Debug.Log($"Percentage Saved: {percentage}%");
-        Debug.Log($"Saved to PlayerPrefs with key: 'QuizPercentage'");
-        Debug.Log("================");
+        //Debug.Log($"Percentage Saved: {percentage}%");
+        //Debug.Log($"Saved to PlayerPrefs with key: 'QuizPercentage'");
+        //Debug.Log("================");
 
         // Show winning panel
         // ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
@@ -491,6 +492,13 @@ public class QuizManager : MonoBehaviour
             retryButton.gameObject.SetActive(false); // Hide initially
         }
 
+        if(lightmusic != null && backgroundMusicSource != null)
+        {
+            backgroundMusicSource.clip = lightmusic;
+            backgroundMusicSource.Play();
+            backgroundMusicSource.loop = true;
+        }
+
         // Make sure top right panel is visible
         if (topRightPanel != null)
             topRightPanel.SetActive(true);
@@ -550,31 +558,40 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void OnRetryPressed()
+public void OnRetryPressed()
+{
+    if (!dialogComplete) return;
+
+    // Hide retry panel
+    if (retryPanel != null)
+        retryPanel.SetActive(false);
+
+    // Restore original background music
+    if (quizData.backgroundMusic != null && backgroundMusicSource != null)
     {
-        if (!dialogComplete) return;
-
-        // Hide retry panel
-        if (retryPanel != null)
-            retryPanel.SetActive(false);
-
-        // Reset game state
-        currentQuestionIndex = 0;
-        wrongAnswersCount = 0;
-        correctAnswersCount = 0;
-        isTyping = false;
-        dialogComplete = false;
-
-        // Reset cross images to normal
-        for (int i = 0; i < crossImages.Length; i++)
-        {
-            crossImages[i].color = Color.white;
-        }
-
-        // Restart quiz
-        SetQuizUIActive(true);
-        StartQuiz();
+        backgroundMusicSource.Stop(); // Stop current music
+        backgroundMusicSource.clip = quizData.backgroundMusic;
+        backgroundMusicSource.loop = true;
+        backgroundMusicSource.Play();
     }
+
+    // Reset game state
+    currentQuestionIndex = 0;
+    wrongAnswersCount = 0;
+    correctAnswersCount = 0;
+    isTyping = false;
+    dialogComplete = false;
+
+    // Reset cross images to normal
+    for (int i = 0; i < crossImages.Length; i++)
+    {
+        crossImages[i].color = Color.white;
+    }
+
+    // Restart quiz
+    SetQuizUIActive(true);
+    StartQuiz();
+}
 
     void SetQuizUIActive(bool active)
     {

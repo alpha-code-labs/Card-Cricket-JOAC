@@ -41,8 +41,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        InitializeSpriteMapping();
         InitializeMusicDictionary();
+        InitializeSpriteMapping();
     }
 
     void Start()
@@ -294,33 +294,30 @@ private IEnumerator PlayBackgroundMusicCoroutine(AudioClip musicClip)
 {
     if (musicClip != null)
     {
-        // Only fade out if different music is playing
-        if (musicAudioSource.isPlaying && musicAudioSource.clip != musicClip)
-        {
-            yield return StartCoroutine(FadeOutMusic());
-        }
-        
-        // If same music is already playing, don't restart
+        // If same music is already playing, exit immediately
         if (musicAudioSource.clip == musicClip && musicAudioSource.isPlaying)
         {
-            yield break;
+            yield break; // Exit immediately
+        }
+
+        // Handle music switching
+        if (musicAudioSource.isPlaying && musicAudioSource.clip != musicClip)
+        {
+            // Don't yield - start fade-out independently
+            StartCoroutine(FadeOutMusic());
         }
 
         musicAudioSource.clip = musicClip;
-        musicAudioSource.loop = true; // This ensures seamless looping
+        musicAudioSource.loop = true;
+        musicAudioSource.volume = 0f;
+        musicAudioSource.Play();
         
-        // Only fade in if we're not already playing
-        if (!musicAudioSource.isPlaying)
-        {
-            musicAudioSource.volume = 0f;
-            musicAudioSource.Play();
-            yield return StartCoroutine(FadeInMusic());
-        }
+        // Don't yield - start fade-in independently
+        StartCoroutine(FadeInMusic());
     }
-    else
-    {
-        Debug.LogError("Music clip is null!");
-    }
+    
+    // Coroutine ends immediately
+    yield break;
 }
 
     private IEnumerator StopBackgroundMusicCoroutine()
