@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 1 at the library
@@ -68,7 +68,7 @@ title: Priya_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 2 during lunch break
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 3 ready to begin partnership
@@ -236,7 +236,7 @@ title: Priya_Day4
 title: Priya_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path A: Intensive Review Implementation
@@ -269,7 +269,7 @@ As the first implementation session begins with both students bringing enthusias
 title: Priya_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path B: Conceptual Understanding Implementation
@@ -302,7 +302,7 @@ As the first implementation session begins with both students bringing enthusias
 title: Priya_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 4 - Path C: Mutual Teaching Implementation
@@ -334,7 +334,7 @@ As the first implementation session begins with both students bringing enthusias
 
 title: Priya_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 5 - Building on success
@@ -366,7 +366,7 @@ As the second day of collaboration unfolds with expanded challenges and growing 
 
 title: Priya_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 6 - Final conversation and ongoing partnership
@@ -398,7 +398,7 @@ Raju: That sounds wonderful! I'd love to continue working together while helping
 <<SetCharacterExpression "Priya" "Smiling">>
 Priya: Then we both benefit perfectly - you continue developing your teaching and communication skills while I gain confidence in my academic abilities, and together we can show other students that collaboration enhances rather than threatens individual achievement.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with plans for ongoing academic partnership that extends beyond immediate exam preparation, Priya and Raju understand that they have created something more valuable than temporary study assistance - they have demonstrated how collaborative learning can transform individual struggle into shared success while building friendships and academic confidence that will serve them well throughout their educational journey and beyond.

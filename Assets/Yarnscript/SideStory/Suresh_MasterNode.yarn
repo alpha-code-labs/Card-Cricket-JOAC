@@ -21,7 +21,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Auto stand encounter
@@ -64,7 +64,7 @@ title: Suresh_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 2
@@ -177,7 +177,7 @@ title: Suresh_Day3
 tags:
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 3
@@ -232,7 +232,7 @@ title: Suresh_Day4
 tags:
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 4

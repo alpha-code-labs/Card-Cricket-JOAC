@@ -98,7 +98,8 @@ public enum SceneNames
     NewDayScene,
     WorldNav,
     CutsceneScene,
-    QuizGamePlay
+    QuizGamePlay,
+    MainMenu
 }
 public enum TransitionTypes
 {

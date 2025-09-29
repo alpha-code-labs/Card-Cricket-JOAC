@@ -4,7 +4,7 @@ colorID: 0
 position: 0,0
 ---
  
-<<wait 5>>
+<<PlayBackgroundMusic Exciting_1>>
 
  
 <<SetBGSprite hutInterior>>

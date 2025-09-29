@@ -1,0 +1,39 @@
+title: scene_60
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. We did it. You did it. You are a star. Maa's medicines, Baba's knee towel, new soles for your shoes—
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thanks bhai.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Humble and grounded. That's my boy.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: I want to go home bhai. Can we leave? All this attention is making me nervous.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: When you play like that, people will clap. Acknowledge them. Don't be nervous.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: I want to hide behind you. All these piercing eyes.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I am aware. Those are eyes of appreciation. Eyes that are marveling at your talent. I am here with you. Hold my hand.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Thanks bhai.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

@@ -1,0 +1,33 @@
+title: scene_120
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. Damn! That was tough. The ball was snaking around. Thank you.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Very tough. Especially their opening bowler who was making the ball talk. I barely stuck it out. Wish I could have gotten more.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That's my boy. That's what we need. Grit, determination and application. Hats off.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Big day tomorrow. Lets go home and rest. This is it. The finals tomorrow.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Yes. We are there. Lets go.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes sir.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

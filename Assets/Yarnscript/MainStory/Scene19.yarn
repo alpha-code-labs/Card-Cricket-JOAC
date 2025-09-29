@@ -4,6 +4,8 @@ colorID: 0
 position: 0,0
 ---
  
+
+ <<PlayBackgroundMusic "Emotional_1">>
 <<SetBGSprite hutInterior>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>

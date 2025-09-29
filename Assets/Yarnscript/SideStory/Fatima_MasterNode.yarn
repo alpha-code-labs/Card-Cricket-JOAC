@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Scene Setup - Day 1 at the dhaba during lunch rush
@@ -68,7 +68,7 @@ title: Fatima_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Scene Setup - Day 2 during morning preparation
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Scene Setup - Day 3 during pre-lunch preparation
@@ -236,7 +236,7 @@ title: Fatima_Day4
 title: Fatima_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path A: Learning Cooking Skills
@@ -269,7 +269,7 @@ As the pre-lunch preparation intensifies with Raju taking on his designated resp
 title: Fatima_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path B: Customer Service Focus
@@ -302,7 +302,7 @@ As the pre-lunch preparation intensifies with Raju taking on his designated resp
 title: Fatima_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path C: Organization and Efficiency Focus
@@ -334,7 +334,7 @@ As the pre-lunch preparation intensifies with Raju taking on his designated resp
 
 title: Fatima_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Day 5 - Building on success
@@ -366,7 +366,7 @@ As the second day of collaboration unfolds with expanded responsibilities and hi
 
 title: Fatima_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
 // Day 6 - Final conversation and job offer
@@ -398,7 +398,7 @@ Raju: That's incredibly generous, aunty! But more than the money, I value what I
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Then we both benefit - you gain practical business experience that will serve you well in any future career, and I gain a reliable partner who understands that customer satisfaction is the foundation of sustainable success.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the larger community, Raju and Fatima understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and circumstantial differences to create partnerships that strengthen both individuals and the communities they serve.
