@@ -5,7 +5,7 @@ position: 0,0
 ---
 
 <<PlayBackgroundMusic Exciting_1>>
-<<SetBGSprite "KohliwadaGroundground">>
+<<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: Ramu, right?
