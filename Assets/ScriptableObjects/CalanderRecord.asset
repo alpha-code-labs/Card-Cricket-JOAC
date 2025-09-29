@@ -522,3 +522,6 @@ MonoBehaviour:
     - eventName: scene_135
       eventDescription: 'Uncle dev take the wheel inside the net '
       eventType: 0
+    - eventName: Scene135_01_Ch1End
+      eventDescription: Post Chapter 1 Ch2 comming Soon
+      eventType: 0

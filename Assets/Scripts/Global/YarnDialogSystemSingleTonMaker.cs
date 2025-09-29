@@ -31,6 +31,11 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     {
         instance.dialogueRunner.GetComponentInChildren<LinePresenter>().autoAdvance = isAuto;
     }
+    [YarnCommand("GoToMainMenu")]
+    public static void GoToMainMenu()
+    {
+        TransitionScreenManager.instance.LoadScene(SceneNames.MainMenu);
+    }
 
 }
 enum Reward
