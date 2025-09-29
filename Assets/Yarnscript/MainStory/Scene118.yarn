@@ -8,7 +8,7 @@ position: 0,0
  
 
 <<PlayBackgroundMusic Exciting_1>>
-<<SetBGSprite "KohliwadaGroundground">>
+<<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's the Semifinals today captain. We are batting first. You are opening. Conditions are hostile. We need to have a steady start. You need to get 30 runs in the first 5 overs. A steady start is essential. Hang in there. Watch the swing and the seam.

@@ -5,7 +5,7 @@ position: 0,0
 ---
 
 <<PlayBackgroundMusic light_1>>
-<<SetBGSprite "KohliwadaGroundground">>
+<<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Well played.

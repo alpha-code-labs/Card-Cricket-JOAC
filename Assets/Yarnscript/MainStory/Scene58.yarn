@@ -8,7 +8,7 @@ position: 0,0
  
 
 <<PlayBackgroundMusic Exciting_1>>
-<<SetBGSprite "KohliwadaGroundground">>
+<<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: This is it captain. We are chasing. We need to get to 125 in 10 overs. Our bowlers have been battered and bruised. We need to return the favor Are you up for it?

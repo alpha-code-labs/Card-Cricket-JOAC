@@ -7,7 +7,7 @@ position: 0,0
 
 
 <<PlayBackgroundMusic Exciting_1>>
-<<SetBGSprite "KohliwadaGroundground">>
+<<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: This is it captain. We are chasing. We need to get to 185 in 15 overs. Our bowlers have been crushed. Team spirit is low. Nobody is giving us a chance. We need to go all guns blazing. You ready?
