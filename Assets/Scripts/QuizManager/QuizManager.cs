@@ -26,6 +26,7 @@ public class QuizManager : MonoBehaviour
     public Image characterImage;
     public TextMeshProUGUI dialogText;
     public Button retryButton;
+    public AudioClip lightmusic;
 
     [Header("Winning Panel UI")]
     public GameObject winningPanel;
@@ -40,6 +41,7 @@ public class QuizManager : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource backgroundMusicSource;
+    public AudioSource soundEffectSource;
 
     [Header("Background")]
     public Image backgroundImage;
@@ -74,9 +76,15 @@ public class QuizManager : MonoBehaviour
         var evnet = NewDayManager.currentDateRecord.events[NewDayManager.currentEventIndex];
         if (evnet.eventName == "scene_133")
         {
-            //Show Result
-            ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
-            return;
+            if (quizData.backgroundMusic != null && backgroundMusicSource != null)
+        {
+            backgroundMusicSource.clip = quizData.backgroundMusic;
+            backgroundMusicSource.loop = true;
+            backgroundMusicSource.Play();
+        }
+           ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
+           //Show Result
+           return;
         }
         InitializeQuiz();
     }
@@ -295,9 +303,9 @@ public class QuizManager : MonoBehaviour
     void EndQuiz()
     {
         // User completed all 50 questions without 5 wrong answers = WIN
-        Debug.Log("=== QUIZ WON! ===");
-        Debug.Log($"Correct Answers: {correctAnswersCount}/50");
-        Debug.Log($"Wrong Answers: {wrongAnswersCount}/5");
+        //Debug.Log("=== QUIZ WON! ===");
+        //Debug.Log($"Correct Answers: {correctAnswersCount}/50");
+        //Debug.Log($"Wrong Answers: {wrongAnswersCount}/5");
 
         // Calculate winning percentage
         float percentage = CalculateWinningPercentage(correctAnswersCount);
@@ -306,9 +314,9 @@ public class QuizManager : MonoBehaviour
         PlayerPrefs.SetFloat("QuizPercentage", percentage);
         PlayerPrefs.Save();
 
-        Debug.Log($"Percentage Saved: {percentage}%");
-        Debug.Log($"Saved to PlayerPrefs with key: 'QuizPercentage'");
-        Debug.Log("================");
+        //Debug.Log($"Percentage Saved: {percentage}%");
+        //Debug.Log($"Saved to PlayerPrefs with key: 'QuizPercentage'");
+        //Debug.Log("================");
 
         // Show winning panel
         // ShowWinningPanel(PlayerPrefs.GetFloat("QuizPercentage", 0f));
@@ -346,11 +354,11 @@ public class QuizManager : MonoBehaviour
             winningPanel.SetActive(true);
 
         // Start exciting music
-        if (excitingMusic != null && backgroundMusicSource != null)
+        if (excitingMusic != null && soundEffectSource != null)
         {
-            backgroundMusicSource.loop = false;
-            backgroundMusicSource.clip = excitingMusic;
-            backgroundMusicSource.Play();
+            soundEffectSource.loop = false;
+            soundEffectSource.clip = excitingMusic;
+            soundEffectSource.Play();
         }
 
         // Hide final elements initially
@@ -365,88 +373,88 @@ public class QuizManager : MonoBehaviour
         StartCoroutine(WinningSequence(finalPercentage));
     }
 
-    IEnumerator WinningSequence(float targetPercentage)
+ IEnumerator WinningSequence(float targetPercentage)
+{
+    Debug.Log("Starting winning sequence...");
+
+    // Step 1: Show loading text
+    if (loadingText != null)
+        loadingText.text = "Calculating Percentage...";
+
+    // Step 2: Animate progress bar to 100% (always full, regardless of actual percentage)
+    if (progressBar != null)
     {
-        Debug.Log("Starting winning sequence...");
+        progressBar.value = 0f;
+        float currentValue = 0f;
+        float animationTarget = 100f; // Always animate to 100%
 
-        // Step 1: Show loading text
-        if (loadingText != null)
-            loadingText.text = "Calculating Percentage...";
-
-        // Step 2: Animate progress bar
-        if (progressBar != null)
+        while (currentValue < animationTarget)
         {
-            progressBar.value = 0f;
-            float currentValue = 0f;
+            currentValue += Time.deltaTime * 50f; // Animation speed (increased for smoother fill)
+            progressBar.value = currentValue / 100f; // Slider expects 0-1
 
-            while (currentValue < targetPercentage)
-            {
-                currentValue += Time.deltaTime * 25f; // Animation speed
-                progressBar.value = currentValue / 100f; // Slider expects 0-1
-
-                if (loadingText != null)
-                    loadingText.text = $"Loading... {Mathf.RoundToInt(currentValue)}%";
-
-                yield return null;
-            }
-
-            // Final values
-            progressBar.value = targetPercentage / 100f;
             if (loadingText != null)
-                loadingText.text = $"Complete! {targetPercentage:F0}%";
+                loadingText.text = $"Loading... {Mathf.RoundToInt(currentValue)}%";
+
+            yield return null;
         }
 
-        yield return new WaitForSeconds(1f);
-
-        // Step 3: Hide loading, show percentage
+        // Ensure it reaches exactly 100%
+        progressBar.value = 1f;
         if (loadingText != null)
-            loadingText.gameObject.SetActive(false);
-        if (progressBar != null)
-            progressBar.gameObject.SetActive(false);
-
-        if (percentageText != null)
-        {
-            percentageText.gameObject.SetActive(true);
-            percentageText.text = $"Your Percentage: {targetPercentage:F0}%";
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        // Step 4: Show congratulations with confetti
-        if (congratulationsText != null)
-        {
-            congratulationsText.gameObject.SetActive(true);
-            congratulationsText.text = "Congratulations!";
-        }
-
-        // Trigger UI confetti effect
-        if (confettiPrefab != null && confettiParent != null)
-        {
-            StartCoroutine(SpawnUIConfetti());
-        }
-        else
-        {
-            Debug.Log("Confetti prefab or parent not assigned!");
-        }
-
-        yield return new WaitForSeconds(2f);
-
-        // Step 5: Show Next button after celebration
-        if (nextButton != null)
-        {
-            nextButton.gameObject.SetActive(true);
-
-            // Setup next button click
-            nextButton.onClick.RemoveAllListeners();
-            nextButton.onClick.AddListener(OnNextButtonPressed134);
-
-            // Animate next button appearance
-            StartCoroutine(AnimateNextButtonAppear());
-        }
-
-        Debug.Log("Winning sequence complete - Next button ready");
-        // TODO: Transition to next Day Wise sequence
+            loadingText.text = "Loading... 100%";
     }
+
+    yield return new WaitForSeconds(1f);
+
+    // Step 3: Hide loading, show actual percentage
+    if (loadingText != null)
+        loadingText.gameObject.SetActive(false);
+    if (progressBar != null)
+        progressBar.gameObject.SetActive(false);
+
+    if (percentageText != null)
+    {
+        percentageText.gameObject.SetActive(true);
+        percentageText.text = $"Your Percentage: {targetPercentage:F0}%"; // Show ACTUAL percentage
+    }
+
+    yield return new WaitForSeconds(1f);
+
+    // Step 4: Show congratulations with confetti
+    if (congratulationsText != null)
+    {
+        congratulationsText.gameObject.SetActive(true);
+        congratulationsText.text = "Congratulations!";
+    }
+
+    // Trigger UI confetti effect
+    if (confettiPrefab != null && confettiParent != null)
+    {
+        StartCoroutine(SpawnUIConfetti());
+    }
+    else
+    {
+        Debug.Log("Confetti prefab or parent not assigned!");
+    }
+
+    yield return new WaitForSeconds(2f);
+
+    // Step 5: Show Next button after celebration
+    if (nextButton != null)
+    {
+        nextButton.gameObject.SetActive(true);
+
+        // Setup next button click
+        nextButton.onClick.RemoveAllListeners();
+        nextButton.onClick.AddListener(OnNextButtonPressed134);
+
+        // Animate next button appearance
+        StartCoroutine(AnimateNextButtonAppear());
+    }
+
+    Debug.Log("Winning sequence complete - Next button ready");
+}
     IEnumerator AnimateNextButtonAppear()
     {
         if (nextButton != null)
@@ -489,6 +497,13 @@ public class QuizManager : MonoBehaviour
             retryButton.onClick.RemoveAllListeners();
             retryButton.onClick.AddListener(OnRetryPressed);
             retryButton.gameObject.SetActive(false); // Hide initially
+        }
+
+        if(lightmusic != null && backgroundMusicSource != null)
+        {
+            backgroundMusicSource.clip = lightmusic;
+            backgroundMusicSource.Play();
+            backgroundMusicSource.loop = true;
         }
 
         // Make sure top right panel is visible
@@ -550,31 +565,40 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void OnRetryPressed()
+public void OnRetryPressed()
+{
+    if (!dialogComplete) return;
+
+    // Hide retry panel
+    if (retryPanel != null)
+        retryPanel.SetActive(false);
+
+    // Restore original background music
+    if (quizData.backgroundMusic != null && backgroundMusicSource != null)
     {
-        if (!dialogComplete) return;
-
-        // Hide retry panel
-        if (retryPanel != null)
-            retryPanel.SetActive(false);
-
-        // Reset game state
-        currentQuestionIndex = 0;
-        wrongAnswersCount = 0;
-        correctAnswersCount = 0;
-        isTyping = false;
-        dialogComplete = false;
-
-        // Reset cross images to normal
-        for (int i = 0; i < crossImages.Length; i++)
-        {
-            crossImages[i].color = Color.white;
-        }
-
-        // Restart quiz
-        SetQuizUIActive(true);
-        StartQuiz();
+        backgroundMusicSource.Stop(); // Stop current music
+        backgroundMusicSource.clip = quizData.backgroundMusic;
+        backgroundMusicSource.loop = true;
+        backgroundMusicSource.Play();
     }
+
+    // Reset game state
+    currentQuestionIndex = 0;
+    wrongAnswersCount = 0;
+    correctAnswersCount = 0;
+    isTyping = false;
+    dialogComplete = false;
+
+    // Reset cross images to normal
+    for (int i = 0; i < crossImages.Length; i++)
+    {
+        crossImages[i].color = Color.white;
+    }
+
+    // Restart quiz
+    SetQuizUIActive(true);
+    StartQuiz();
+}
 
     void SetQuizUIActive(bool active)
     {
