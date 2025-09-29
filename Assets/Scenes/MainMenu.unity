@@ -665,7 +665,7 @@ MonoBehaviour:
     volume: 1
   - name: Heart Beat
     type: 3
-    clip: {fileID: 8300000, guid: 1c80e370bb9558743a44bae37120b80f, type: 3}
+    clip: {fileID: 8300000, guid: f786ed94c5905f6458f01475d8391c7f, type: 3}
     volume: 1
 --- !u!82 &1061682965
 AudioSource:
