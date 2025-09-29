@@ -153,7 +153,11 @@ public class RewardsSequenceManager : MonoBehaviour
             seq.Join(instance.RewardImage.transform.DORotate(new Vector3(0, 0, 720), 0.6f, RotateMode.FastBeyond360).SetEase(Ease.OutQuad));
             seq.Join(instance.RewardImage.DOFade(1, 0.6f));
             seq.Append(instance.RewardImage.transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBounce));
-            seq.AppendCallback(() => instance.CreateParticleExplosion());
+            seq.AppendCallback(() =>
+            {
+                AudioSFXManager.instance.PlayOneShotSFX(SFXType.Quiz_Winning);
+                instance.CreateParticleExplosion();
+            });
             seq.Append(instance.Bar.DOFade(1, 0.5f));
             seq.Join(instance.BarFillImage.DOFade(1, 0.5f));
             seq.Append(instance.BarFillImage.DOFillAmount(targetFill, 2f).SetEase(Ease.OutQuad));

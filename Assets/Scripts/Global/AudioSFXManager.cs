@@ -52,4 +52,5 @@ public enum SFXType
 {
     ButtonClick,
     ProjectorClick,
+    Quiz_Winning,
 }

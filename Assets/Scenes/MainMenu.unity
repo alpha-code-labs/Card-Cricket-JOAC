@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 1061682965}
   - component: {fileID: 1061682964}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AudioSFXManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,7 +655,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   oneShotSFXDatas:
-  - name: Projecter Click
+  - name: Quiz_Winning
+    type: 2
+    clip: {fileID: 8300000, guid: 397e14ce7a2851f43964cde198121e47, type: 3}
+    volume: 1
+  - name: ProjectorClick
     type: 1
     clip: {fileID: 8300000, guid: eb620183276d31a448b388bc70fff491, type: 3}
     volume: 1
