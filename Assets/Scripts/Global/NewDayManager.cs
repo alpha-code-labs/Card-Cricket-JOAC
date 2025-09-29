@@ -128,45 +128,19 @@ public class NewDayManager : MonoBehaviour
         // Hold at the starting date for 1 second
         yield return new WaitForSeconds(1f);
 
-        // Animate through each day with variable speed
+        // Start with 1 second delay and reduce by 20% each iteration
+        float currentDelay = 1f;
+
+        // Animate through each day with progressively faster speed
         for (int i = 0; i < totalDays; i++)
         {
             currentAnimatedDate = startDate.AddDays(i + 1);
             currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
 
-            // Calculate speed based on position in the sequence using exponential acceleration
-            float timeForThisDay;
+            // Use current delay, minimum 0.05 seconds
+            float timeForThisDay = Mathf.Max(currentDelay, 0.05f);
 
-            if (totalDays <= 2)
-            {
-                // For short sequences, use moderate speed
-                timeForThisDay = 0.3f;
-            }
-            else
-            {
-                // Use exponential curve for dramatic acceleration/deceleration
-                // Map i to a range from 0 to 1
-                float normalizedPosition = (float)i / (totalDays - 1); // 0 to 1
-
-                // Create exponential curve that goes from slow -> instant -> slow
-                // Using distance from center (0.5) to create symmetrical exponential decay
-                float distanceFromCenter = Mathf.Abs(normalizedPosition - 0.5f) * 2f; // 0 to 1 (0 at center, 1 at edges)
-
-                // Exponential function: e^(4x) where x goes from 0 (center) to 1 (edges)
-                // This creates dramatic exponential acceleration towards the center
-                float exponentialValue = Mathf.Exp(4f * distanceFromCenter);
-
-                // Map exponential value to time range [0, 0.6]
-                // At center: distanceFromCenter = 0, exp(0) = 1, timeForThisDay ≈ 0
-                // At edges: distanceFromCenter = 1, exp(4) ≈ 54.6, timeForThisDay = 0.6
-                float maxTime = 0.6f;  // Slow at edges
-                timeForThisDay = (exponentialValue - 1f) / (Mathf.Exp(5f) - 1f) * maxTime;
-
-                // Clamp to ensure we don't go negative and have a tiny minimum
-                timeForThisDay = Mathf.Max(timeForThisDay, 0.001f);
-            }
-
-            // Create a smooth transition effect with variable timing
+            // Create a smooth transition effect
             float fadeTime = timeForThisDay * 0.3f;
             yield return dateText.DOFade(0.7f, fadeTime).WaitForCompletion();
             dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
@@ -179,6 +153,9 @@ public class NewDayManager : MonoBehaviour
             {
                 yield return new WaitForSeconds(remainingTime);
             }
+
+            // Reduce delay by 20% for next iteration (multiply by 0.8)
+            currentDelay *= 0.8f;
         }
 
         // Final format showing "from -> to" 
