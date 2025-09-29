@@ -39,7 +39,7 @@ public enum Characters
     Priya = 8,
     Naresh = 9,
     CoachSharma = 10,
-    SunitaMam = 11,
+    SunitaMadam = 11,
     Aryan = 12,
     CricketDada = 13,
     Amarjeet = 14,
