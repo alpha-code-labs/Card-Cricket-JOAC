@@ -657,7 +657,7 @@ MonoBehaviour:
   oneShotSFXDatas:
   - name: Projecter Click
     type: 1
-    clip: {fileID: 8300000, guid: 07269fac7f7f0bf4b8cf7ae01a0ab4fb, type: 3}
+    clip: {fileID: 8300000, guid: eb620183276d31a448b388bc70fff491, type: 3}
     volume: 1
 --- !u!82 &1061682965
 AudioSource:
