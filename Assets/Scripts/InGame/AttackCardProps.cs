@@ -5,86 +5,113 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+
 [Serializable]
-public class AttackCardProps : MonoBehaviour, IPointerClickHandler
+public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public AttackCardData cardData;
-    //
+
     [SerializeField] TextMeshProUGUI titleText;
     [SerializeField] TextMeshProUGUI energyCostText;
     [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField] Image cardImage;
+
     [Header("Sprite Reffs")]
     [SerializeField] List<Sprite> sprites;
-    // Start is called before the first frame update
+
+    // Reference to the arc manager
+    private SimpleHandArcManager arcManager;
+
+    [SerializeField] Image BatterImage;
+
+
     void Start()
     {
         string title = GetTitle();
         titleText.text = title;
         UpdateDescription();
+
+        // Find the arc manager in parent
+        arcManager = GetComponentInParent<SimpleHandArcManager>();
     }
+
     [ContextMenu("Update Description")]
     void UpdateDescription()
     {
         descriptionText.text = "";
-        energyCostText.text = "";
+        energyCostText.text = cardData.EnergyCost.ToString();
     }
+
     string GetTitle()
     {
-        string title = cardData.battingStrategy.ToString().Replace("Shot", " Shot").Replace("Drive", " Drive").Replace("Glance", " Glance").Replace("Defense", " Defense");
-        int index = (int)cardData.battingStrategy;
-        cardImage.sprite = sprites[index];
+        string title = cardData.excelBattinStrategy.ToString()
+            .Replace("Shot", " Shot")
+            .Replace("Drive", " Drive")
+            .Replace("Glance", " Glance")
+            .Replace("Defense", " Defense");
+
+        Sprite selectedSprite = cardData.cardSprite;
+        if (selectedSprite != null)
+            cardImage.sprite = selectedSprite;
+
         return title;
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         OnClick();
     }
-    void OnClick()
+
+    // Add IPointerEnterHandler implementation
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        ScoreManager.Instance.PlayCard(cardData.battingStrategy);
+        if (arcManager != null)
+        {
+            arcManager.OnCardHoverEnterDirect(gameObject);
+        }
     }
 
+    // Add IPointerExitHandler implementation
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (arcManager != null)
+        {
+            arcManager.OnCardHoverExitDirect(gameObject);
+        }
+    }
+
+    void OnClick()
+    {
+        if (CardPlayAnimationController.Instance != null && CardPlayAnimationController.Instance.IsAnimating)
+            return;
+
+        // if (EnergyManager.Instance.GetEnergy() < cardData.EnergyCost)
+        // {
+        //     Debug.LogWarning("Not enough energy to play this card.");
+        //     return;
+        // }
+        CardsPoolManager.Instance.SetCardsInteractable(false);
+        // Deduct energy
+        // EnergyManager.Instance.HandelEnergyChange(cardData.EnergyCost);
+        
+        // Get sprite and pass card object
+        Sprite sprite = GetCardSprite();
+        // CardsPoolManager.Instance.DestroyCurrentBallCard();
+        ScoreManager.Instance.PlayExcelBattingStrategy(cardData.excelBattinStrategy, gameObject, sprite);
+    }
+
+    public Sprite GetCardSprite()
+    {
+        return cardImage != null ? cardImage.sprite : null;
+    }
     void OnEnable()
     {
         CardsPoolManager.OnTurnStarted += UpdateDescription;
     }
+
     void OnDisable()
     {
         CardsPoolManager.OnTurnStarted -= UpdateDescription;
     }
-
-}
-[Serializable]
-public class AttackCardData
-{
-    [SerializeField] internal BattingStrategy battingStrategy;
-    [SerializeField] internal int EnergyCost = 3;
-}
-
-public enum BattingStrategy
-{
-    BackfootDefence,
-    CoverDrive,
-    Cut,
-    ForwardDefence,
-    // LegDrive,
-    LegGlance,
-    Leave,
-    OnDrive,
-    Pull,
-    SquareDrive,
-    StraightDrive,
-    Sweep
-}
-
-public enum OutCome
-{
-    NoRunWideBall = -2,
-    Out = -1,
-    NoRun = 0,
-    OneRuns = 1,
-    TwoRuns = 2,
-    FourRuns = 4,
-    SixRuns = 6
+    
 }

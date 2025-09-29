@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class CardsPoolManager : MonoBehaviour
 {
@@ -17,49 +15,112 @@ public class CardsPoolManager : MonoBehaviour
     public int CurrntTurn = 0; // Current turn number
     public List<BallThrow> BallThrows; // List to hold BallThrow instances
     [Header("Difficulty Settings")]
-    [SerializeField] int maxHandSize = 5;
+    [SerializeField] public int baseMaxHandSize = 4;
+    private int maxHandSize;
+    public int baseMaxRedraws = 1;
+    private int maxRedraws; // Maximum redraws per game
+    private int redraws = 0; // Track number of redraws used
+    private bool cardsInteractable = true;
+
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
+    [SerializeField] Transform ballerCardTransform;
     [SerializeField] TextMeshProUGUI BallThrowText; // Text to display current BallThrow
     public static CardsPoolManager Instance;
     public static event System.Action OnTurnStarted;
+    public static event System.Action<int, int> OnHandRedrawn; // Event to notify when hand is redrawn
     public GameObject cardPrefab; // Assign in inspector
+
+    public GameObject ballerCard;
+
+    public GameObject ballerCardPrefab;
     void Awake()
     {
+        DateRecord dateRecord = NewDayManager.currentDateRecord;
+        if (GameManager.instance != null)
+        {
+            maxHandSize = baseMaxHandSize + GameManager.instance.currentSaveData.resourcefulness;
+            maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
+        }
+        else
+        {
+            maxHandSize = baseMaxHandSize;
+        } 
+        
         Instance = this;
     }
 
     void Start()
     {
-        // InitTextDeck();
+        InitTextDeck();// Initialize the deck with random cards for batiing and bowling disable to keep deck in scene
         InstantiateCards();
         StartTurn();
         // EnergyManager.Instance.RefreshEnergyText();
     }
     [ContextMenu("Start Turn")]
-    void StartTurn()
+public void StartTurn(bool incrementBalls = true)
+{
+    // Check if game is already over
+    bool isBattingFirst = ScoreManager.Instance.TargetScore == 0;
+    int currentScore = ScoreManager.Instance.currentRuns; // You'll need to make currentRuns public or add a getter
+    
+    // Check various game over conditions
+    if (CurrntTurn >= ScoreManager.Instance.MaxBalls)
     {
-        ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
-        BallThrowText.text = CurrentBallThrow.ToString();
-        for (int i = 0; i < maxHandSize; i++)
-        {
-            DrawCard();
-        }
-        OnTurnStarted?.Invoke();
+        Debug.Log("Game Over - All balls used");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
     }
-    [ContextMenu("End Turn")]
-    public void EndTurn()
+    
+    if (ScoreManager.Instance.getCurrentWickets() < 1)
     {
+        Debug.Log("Game Over - All wickets lost");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
+    }
+    
+    // Check if target achieved (when chasing)
+    if (!isBattingFirst && currentScore >= ScoreManager.Instance.TargetScore)
+    {
+        Debug.Log("Game Over - Target achieved!");
+        ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
+        return;
+    }
+    
+    if (incrementBalls)
+        ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        
+    if (ballerCard != null)
+        Destroy(ballerCard);
+        
+    ballerCard = InstantiateBallerCard(CurrentBallThrow);
+    BallThrowText.text = CurrentBallThrow.ToString();
+    
+    // Draw cards for new turn
+    for (int i = 0; i < maxHandSize; i++)
+    {
+        DrawCard();
+    }
+    
+    Timer.Instance.StartTurnTimer();
+    OnTurnStarted?.Invoke();
+}
+    [ContextMenu("End Turn")]
+    public void EndTurn(bool incrementBalls = true)
+    {
+        // Timer.Instance.EndTurnTimer();
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
         foreach (var card in HandCards)
         {
             DiscardPile.Add(card);
             card.gameObject.SetActive(false); // Optionally deactivate the card
         }
+        
+        SetCardsInteractable(true);
         HandCards.Clear();
-        // EnergyManager.Instance.IncreaseEnergy(1); // Increment energy at the end of the turn
+        // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
-        StartTurn(); // Start the next turn
+        //StartTurn(incrementBalls); // Start the next turn
     }
     [ContextMenu("Draw Card")]
     void DrawCard()
@@ -73,7 +134,46 @@ public class CardsPoolManager : MonoBehaviour
         DrawPile.RemoveAt(0);
         HandCards.Add(card);
         card.gameObject.SetActive(true); // Activate the card when drawn 
+        SimpleHandArcManager arcManager = hand.GetComponent<SimpleHandArcManager>();
+            if (arcManager != null)
+                arcManager.RefreshCardArrangement();
     }
+
+    public void RedrawHand()
+    {
+        if (redraws >= maxRedraws)
+        {
+            Debug.LogWarning($"Cannot redraw: Maximum redraws ({maxRedraws}) already used!");
+            return;
+        }
+        
+        if (HandCards.Count == 0)
+        {
+            Debug.LogWarning("No cards in hand to redraw!");
+            return;
+        }
+        
+        // Move current hand cards to discard pile
+        foreach (var card in HandCards)
+        {
+            DiscardPile.Add(card);
+            card.gameObject.SetActive(false);
+        }
+        HandCards.Clear();
+        
+        // Draw new cards
+        for (int i = 0; i < maxHandSize; i++)
+        {
+            DrawCard();
+        }
+        
+        redraws++;
+        Debug.Log($"Hand redrawn! Redraws used: {redraws}/{maxRedraws}");
+        
+        // Optional: Trigger an event for UI updates
+        OnHandRedrawn?.Invoke(redraws, maxRedraws);
+    }
+
     void InstantiateCards()
     {
         DrawPile.Clear();
@@ -86,50 +186,108 @@ public class CardsPoolManager : MonoBehaviour
         }
     }
 
+
+    public void DestroyCurrentBallCard()
+    {
+        if (ballerCard != null)
+            ballerCard.SetActive(false);
+            Destroy(ballerCard);
+    }
+
+    GameObject InstantiateBallerCard(BallThrow ballThrow)
+    {
+        GameObject ballerCard = Instantiate(ballerCardPrefab, ballerCardTransform);
+        BallerCardProps cardProps = ballerCard.GetComponent<BallerCardProps>();
+        cardProps.assignBallerProps(ballThrow);
+        return ballerCard;
+    }
+
+    
+
     [ContextMenu("Init Text Deck")]
-    void InitTextDeck()
+    void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
     {
         Deck.Clear();
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.BackfootDefense, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.CutShot, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.PullShot, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.ForwardDefense, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.SquareDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.CoverDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.StraightDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.LegDrive, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.LegGlance, EnergyCost = 3 });
-        // Deck.Add(new AttackCardData { battingStrategy = BattingStrategy.Block, EnergyCost = 3 });
-
+        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
+        {
+            Deck.Add(new AttackCardData(strategy));
+        }
+        RandomizeDeck();
         BallThrows.Clear();
 
-        // // 1st Over - Fast Bowler (6 balls)
-        // // Ball 1: Fast, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.Fast));
-        // // Ball 2: In Swing, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.InSwing));
-        // // Ball 3: Fast, Leg Line, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.Leg, BallType.Fast));
-        // // Ball 4: Out Swing, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.OutSwing));
-        // // Ball 5: Fast, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.Fast));
-        // // Ball 6: In Swing, At the Stumps, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.AtTheStumps, BallType.InSwing));
+        //Over - Fast Bowler Right Arm (6 balls)
+        // Initialize bowler variables outside the loop
+        TypeOfBowler bowlerType = TypeOfBowler.Fast;
+        Side bowlerSide = Side.RightArm;
+        
+        for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
+        {
+            // Randomize bowler type and side every 6 balls (start of each over)
+            if (i % 6 == 0)
+            {
+                bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
+                bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+            }
+            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
+        }
+    }
 
-        // // 2nd Over - Spin Bowler (6 balls)
-        // // Ball 1: Off Spin, Off Line, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.OffLine, BallType.OffSpin));
-        // // Ball 2: Leg Spin, At the Stumps, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.AtTheStumps, BallType.LegSpin));
-        // // Ball 3: Off Spin, Leg Line, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.Leg, BallType.OffSpin));
-        // // Ball 4: Leg Spin, Off Line, Good Length
-        // BallThrows.Add(new BallThrow(BallLength.GoodLength, BallLine.OffLine, BallType.LegSpin));
-        // // Ball 5: Off Spin, At the Stumps, Full Length
-        // BallThrows.Add(new BallThrow(BallLength.FullLength, BallLine.AtTheStumps, BallType.OffSpin));
-        // // Ball 6: Leg Spin, At the Stumps, Short
-        // BallThrows.Add(new BallThrow(BallLength.Short, BallLine.AtTheStumps, BallType.LegSpin));
+    /// <summary>
+    /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
+    /// </summary>
+    [ContextMenu("Randomize Deck")]
+    void RandomizeDeck()
+    {
+        for (int i = Deck.Count - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            AttackCardData temp = Deck[i];
+            Deck[i] = Deck[randomIndex];
+            Deck[randomIndex] = temp;
+        }
+        Debug.Log("Deck has been randomized!");
+    }
+
+     public bool CanRedraw()
+    {
+        return redraws < maxRedraws && HandCards.Count > 0;
+    }
+
+    public int GetRedrawsRemaining()
+    {
+        return Mathf.Max(0, maxRedraws - redraws);
+    }
+
+    public void ResetRedraws()
+    {
+        redraws = 0;
+    }
+
+    public void SetCardsInteractable(bool interactable)
+    {
+        cardsInteractable = interactable;
+        
+        // Disable/enable all card interactions
+        foreach (var card in HandCards)
+        {
+            if (card != null && card.gameObject != null)
+            {
+                var canvasGroup = card.GetComponent<CanvasGroup>();
+                if (canvasGroup == null)
+                    canvasGroup = card.gameObject.AddComponent<CanvasGroup>();
+                
+                canvasGroup.interactable = interactable;
+                canvasGroup.blocksRaycasts = interactable;
+                
+                // Optional: visual feedback
+                canvasGroup.alpha = interactable ? 1f : 1f;
+            }
+        }
+    }
+
+    public bool AreCardsInteractable()
+    {
+        return cardsInteractable;
     }
 
     public BallThrow CurrentBallThrow

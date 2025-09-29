@@ -14,7 +14,8 @@ public static class SaveSystem
     {
         return Path.Combine(Application.persistentDataPath, SaveFileName);
     }
-    [MenuItem("Tools/Open Save Folder")]//This is prorably create compile time erros in build
+#if UNITY_EDITOR
+    [MenuItem("Tools/Open Save Folder")]//This is prorably create compile time erros in build (it indeed did so wrappted it for editor only execution)
     public static void OpenSaveFolder()
     {
         string savePath = GetSavePath();
@@ -30,6 +31,7 @@ public static class SaveSystem
         OpenInFileExplorer(folderPath);
 
     }
+#endif
     private static void OpenInFileExplorer(string path)
     {
 #if UNITY_EDITOR_WIN

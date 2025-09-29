@@ -32,5 +32,6 @@ public enum TypeOfEvent
     Speical,
     SkipDayOrEvening,
     GamePlay,
-    QuizGamePlay
+    QuizGamePlay,
+    CardGamePlayTutorial
 }

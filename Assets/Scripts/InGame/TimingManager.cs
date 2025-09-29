@@ -15,7 +15,7 @@ public class TimingManager : MonoBehaviour
     [ContextMenu("Test Outcome Calculation")]
     void Test()
     {
-        OutCome outcome = outcomeCalculator.CalculateOutcome(testStrategy, testBall, testTiming);
+        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(testStrategy, testBall, testTiming);
         Debug.Log($"Test Outcome: {outcome}");
     }
     Image bg;
@@ -87,18 +87,9 @@ public class TimingManager : MonoBehaviour
         BattingTiming timing = GetTiming();
         SendOutcome(timing);
     }
-
-    [SerializeField] TextMeshProUGUI outcomeText;
-    [SerializeField] OutComeCalculator outcomeCalculator;
-    [ContextMenu("Rebuild Lookup Dictionary")]
-    public void RebuldLookupDictionary()
+    void SendOutcome(BattingTiming timing)//Need to Seperate this functionaliy
     {
-        outcomeCalculator.LoadFromExcel();
-        outcomeCalculator.BuildLookupDictionary();
-    }
-    void SendOutcome(BattingTiming timing)
-    {
-        OutCome outcome = outcomeCalculator.CalculateOutcome(battingStrategy, CardsPoolManager.Instance.CurrentBallThrow, timing);
+        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(battingStrategy, CardsPoolManager.Instance.CurrentBallThrow, timing);
 
         // Assuming outcome.Runs is the number of runs scored
         int runsScored = (int)outcome;
@@ -111,22 +102,7 @@ public class TimingManager : MonoBehaviour
 
         // Logic to handle the outcome, e.g., updating the game state
         Debug.Log($"Played card: {battingStrategy}, Runs Scored: {runsScored}, Timing: {timing}, Outcome: {outcome} Against Ball: \n{CardsPoolManager.Instance.CurrentBallThrow}");
-        outcomeText.text = $"Played card: {battingStrategy},\n Timing: {timing},\n Outcome: {outcome},\n Runs Scored: {runsScored} ";
-        outcomeText.color = Color.white;
-        // Kill any ongoing tweens to prevent overlap
-        outcomeText.DOKill(true);
-        outcomeText.rectTransform.DOKill(true);
-
-        // Ensure starting state
-        var c = outcomeText.color; c.a = 0f; outcomeText.color = c;
-        outcomeText.rectTransform.localScale = Vector3.one;
-
-        // Punch animation: quick fade-in + punch scale, then fade-out
-        Sequence seq = DOTween.Sequence();
-        seq.Append(outcomeText.DOFade(1f, 1f));
-        seq.Join(outcomeText.rectTransform.DOPunchScale(new Vector3(0.25f, 0.25f, 0f), 0.5f, 8, 0.8f));
-        seq.AppendInterval(0.5f);
-        seq.Append(outcomeText.DOFade(0f, 0.4f));
+        
 
         //
         CardsPoolManager.Instance.EndTurn(); // End turn after playing the card
