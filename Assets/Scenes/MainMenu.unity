@@ -663,6 +663,10 @@ MonoBehaviour:
     type: 1
     clip: {fileID: 8300000, guid: eb620183276d31a448b388bc70fff491, type: 3}
     volume: 1
+  - name: Heart Beat
+    type: 3
+    clip: {fileID: 8300000, guid: 1c80e370bb9558743a44bae37120b80f, type: 3}
+    volume: 1
 --- !u!82 &1061682965
 AudioSource:
   m_ObjectHideFlags: 0
