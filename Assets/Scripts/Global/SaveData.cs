@@ -20,6 +20,8 @@ public class SaveData
         // currentDate = "1990/03/02";//First FreeTime
         // currentDate = "1990/04/15";//Last Quiz Scene
         // currentDate = "1990/04/30";// Last day of Chapter 1
+        currentDate = "1990/03/15";// Cricket Gameplay 4
+
 #endif
         humility = 0;
         courage = 0;

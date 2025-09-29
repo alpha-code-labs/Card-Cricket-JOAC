@@ -185,6 +185,13 @@ public class NewDayManager : MonoBehaviour
         currentEventIndex++;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
+    [YarnCommand("RetryEvent")]
+    public static void RetryEvent(string eventName)//only works for current day
+    {
+        int resetToIndex = currentDateRecord.events.FindIndex(e => e.eventName == eventName);
+        currentEventIndex = resetToIndex;
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+    }
     public void EndDay()
     {
         currentEventIndex = 0;

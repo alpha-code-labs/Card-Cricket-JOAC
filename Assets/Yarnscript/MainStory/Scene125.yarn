@@ -1,0 +1,54 @@
+title: scene_125
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. We did it. You did it. You are a star. Maa's medicines, Baba's knee towel, new soles for your shoes. A small step into the void of greatness.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I tried my best.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Humble and grounded. That's my boy.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I am deeply obliged that you came to watch me play sir.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: I wouldn't have missed it for the world.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: The real test is in 24 hours sir. 90% or his dream evaporates into thin air.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Let him enjoy today. Let him relax.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: No sir. I got to rush him to study. Time is vital. Need to prepare for my weak spots.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: That's my boy. Never misses a beat.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: He has been trained well.
+
+<<SetCharacterExpression "CoachDev" "Smiling">>
+CoachDev: Of course. This is all you Ramu. Raju is lucky to have a mentor like you.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Yes sir. I am lucky beyond words to have bhaiyya in my life.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: All right captain. Stop making me emotional. We head home and dig into the books.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===
