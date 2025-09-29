@@ -462,7 +462,7 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                     TypeOfBowler.Fast,
                     Side.LeftArm,
                     BallType.OutSwinger,
-                    BallLine.OffStump,
+                    BallLine.OutsideOff,
                     BallLength.GoodLength,
                     pitchCondition
                 );
