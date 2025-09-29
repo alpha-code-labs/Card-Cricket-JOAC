@@ -170,6 +170,7 @@ public class NewDayManager : MonoBehaviour
             float fadeTime = timeForThisDay * 0.3f;
             yield return dateText.DOFade(0.7f, fadeTime).WaitForCompletion();
             dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
+            AudioSFXManager.instance.PlayOneShotSFX(SFXType.ProjectorClick);
             yield return dateText.DOFade(1f, fadeTime).WaitForCompletion();
 
             // Wait for the remaining time for this day
