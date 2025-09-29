@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 0,0
 ---
-<<PlayBackgroundMusic "disappointing">>
+<<PlayBackgroundMusic  Disappointing_1">>
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>

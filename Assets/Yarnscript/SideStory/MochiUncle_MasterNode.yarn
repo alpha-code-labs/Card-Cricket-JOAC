@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Scene Setup - Day 1 at the cobbler shop
@@ -68,7 +68,7 @@ title: MochiUncle_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Scene Setup - Day 2 during morning work period
@@ -115,7 +115,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Scene Setup - Day 3 during mid-morning repair period
@@ -236,7 +236,7 @@ title: MochiUncle_Day4
 title: MochiUncle_Day4a
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Day 4 - Path A: Learning Fundamental Techniques
@@ -269,7 +269,7 @@ As the morning work session intensifies with Raju taking on his designated respo
 title: MochiUncle_Day4b
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Day 4 - Path B: Customer Service and Education
@@ -302,7 +302,7 @@ As the morning work session intensifies with Raju taking on his designated respo
 title: MochiUncle_Day4c
 tags:
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Day 4 - Path C: Documentation and Knowledge Preservation
@@ -334,7 +334,7 @@ As the morning work session intensifies with Raju taking on his designated respo
 
 title: MochiUncle_Day5
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Day 5 - Building on success
@@ -366,7 +366,7 @@ As the second day of collaboration unfolds with expanded responsibilities and hi
 
 title: MochiUncle_Day6
 ---
-<<PlayBackgroundMusic "Light">>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
 // Day 6 - Final conversation and apprenticeship offer
@@ -398,7 +398,7 @@ Raju: That's incredibly generous, uncle! But more than the training, I value wha
 <<SetCharacterExpression "MochiUncle" "Smiling">>
 MochiUncle: Then we both benefit perfectly - you gain traditional craft knowledge that will serve you well in any future endeavor, and I gain hope that these skills will survive into the next generation through someone who truly understands their value and cultural importance.
 
-<<PlayBackgroundMusic "Emotional">>
+<<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
 As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of cultural preservation, Raju and Mochi Uncle understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and cultural gaps to create partnerships that strengthen both individuals and the traditional knowledge systems they work together to preserve and honor.

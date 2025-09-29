@@ -7,7 +7,7 @@ position: 0,0
  
  
 
-<<PlayBackgroundMusic "light">>
+<<PlayBackgroundMusic light_1>>
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "Ramu" "Neutral">>

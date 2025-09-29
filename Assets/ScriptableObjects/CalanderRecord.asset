@@ -475,9 +475,6 @@ MonoBehaviour:
       eventType: 0
   - date: 1990/04/12
     events:
-    - eventName: scene_117
-      eventDescription: 
-      eventType: 0
     - eventName: Skip
       eventDescription: 
       eventType: 3
@@ -533,7 +530,7 @@ MonoBehaviour:
       eventDescription: Gameplay System
       eventType: 5
     - eventName: scene_131
-      eventDescription: 
+      eventDescription: I tried my best.
       eventType: 0
   - date: 1990/04/30
     events:
