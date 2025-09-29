@@ -72,7 +72,7 @@ title: Gameplay3Result
 title: Gameplay4Result
 ---
 // Gameplay 4: Batting first with 60 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 90>>
+<<if $finalScore < 90>>
     <<jump scene_51>>
 <<else>>
     <<jump scene_52>>
@@ -82,7 +82,7 @@ title: Gameplay4Result
 title: Gameplay5Result
 ---
 // Gameplay 5: Batting first with 60 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 110>>
+<<if $finalScore < 110>>
     <<jump scene_55>>
 <<else>>
     <<jump scene_56>>
@@ -92,7 +92,7 @@ title: Gameplay5Result
 title: Gameplay6Result
 ---
 // Gameplay 6: Chasing 120 runs in 60 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 120>>
+<<if $finalScore < 120>>
     <<jump scene_59>>
 <<else>>
     <<jump scene_60>>
@@ -102,7 +102,7 @@ title: Gameplay6Result
 title: Gameplay7Result
 ---
 // Gameplay 7: Batting first with 90 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 150>>
+<<if $finalScore < 150>>
     <<jump scene_115>>
 <<else>>
     <<jump scene_116>>
@@ -112,7 +112,7 @@ title: Gameplay7Result
 title: Gameplay8Result
 ---
 // Gameplay 8: Chasing 30 runs in 30 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 30>>
+<<if $finalScore < 30>>
     <<jump scene_119>>
 <<else>>
     <<jump scene_120>>
@@ -122,7 +122,7 @@ title: Gameplay8Result
 title: Gameplay9Result
 ---
 // Gameplay 9: Chasing 185 runs in 90 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 185>>
+<<if $finalScore < 185>>
     <<jump scene_124>>
 <<else>>
     <<jump scene_125>>
