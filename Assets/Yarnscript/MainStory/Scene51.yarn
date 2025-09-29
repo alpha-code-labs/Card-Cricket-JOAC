@@ -1,0 +1,15 @@
+﻿title: scene_51
+---
+<<HideAllCharacters>>
+<<wait 1>>
+<<PlayBackgroundMusic Light_3>>
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression "Ramu" Angry>>
+Ramu: This is non negotiable Captain. Try Again.
+-> Try Again
+    <<RetryEvent "Card Gameplay 4">>
+<<HideAllCharacters>>
+<<wait 1>>
+
+
+===
