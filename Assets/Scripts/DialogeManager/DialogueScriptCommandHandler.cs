@@ -371,7 +371,9 @@ public enum EmotionType
     Angry,
     Happy,
     Surprised,
-    Confused
+    Confused,
+    ExcitedWithBat,
+    
 }
 
 public enum MusicType
@@ -386,8 +388,10 @@ public enum MusicType
     Spiritual_1 = 6,
 
     Light_3 = 7,
-    
+
     Emotional_2 = 8,
-    
-    
+
+
 }
+
+
