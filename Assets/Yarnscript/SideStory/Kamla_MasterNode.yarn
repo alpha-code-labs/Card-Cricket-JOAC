@@ -26,7 +26,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 1 Morning
@@ -82,7 +82,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 2 Evening
@@ -131,7 +131,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 3 Morning
@@ -239,7 +239,7 @@ title: Kamla_Day4
 title: Kamla_Day4a
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path A: Complete Family Dedication
@@ -256,7 +256,7 @@ Kamla: Your devotion these days has shown me something beautiful, beta. Now let 
 title: Kamla_Day4b
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path B: Balanced Approach
@@ -273,7 +273,7 @@ Kamla: Your balanced approach has impressed me, beta. Now let me show you the re
 title: Kamla_Day4c
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path C: Cricket with Character
@@ -290,7 +290,7 @@ Kamla: Your serious approach to cricket has caught my attention, beta. Let me sh
 title: Kamla_Revelation
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 
 // Day 4 - The Mehta Household Visit
 After three days of voluntarily helping his mother and demonstrating growing maturity, Raju accompanies Kamla to the wealthy Mehta household, witnessing the stark contrast between their poverty and others' abundance.
@@ -335,7 +335,7 @@ As Raju and Kamla walk home from the Mehta household with new understanding of b
 title: Kamla_Day5
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite LocalMarket>>
 
 // Day 5 - The Cricket Ball Purchase
@@ -391,7 +391,7 @@ As Raju and Kamla walk home from the market with the precious cricket ball repre
 title: Kamla_Day6
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 6 - The Results
@@ -436,7 +436,7 @@ As the conversation about cricket success transitions into deeper affirmations o
 title: Kamla_Day7
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 7 - The Promise

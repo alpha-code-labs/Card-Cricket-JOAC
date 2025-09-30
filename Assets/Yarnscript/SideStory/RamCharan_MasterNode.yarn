@@ -18,7 +18,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 1 at the library
@@ -61,7 +61,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Scene Setup - Day 2 at the library
@@ -190,7 +190,7 @@ title: RamCharan_Day3
 title: RamCharan_Day3a
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 3 - Path A: Academic Challenge
@@ -210,7 +210,7 @@ Raju: I'm ready to learn whatever you want to teach me, sir.
 title: RamCharan_Day3b
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 3 - Path B: Balance and Integration
@@ -230,7 +230,7 @@ Raju: I'm ready to learn, sir. Please show me what you mean.
 title: RamCharan_Day3c
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
 // Day 3 - Path C: Service and Humility
