@@ -58,7 +58,7 @@ Raju: So I should just... give up something I love? Something I might be good at
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: I'm not asking you to give up joy, beta. I'm asking you to be realistic about priorities. Study first. Secure your future first. Then, if there's time and energy left, play your cricket. But never let it become more important than your education.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the evening settles around their small home with ShivPrasad's practical wisdom hanging heavy in the air, Raju understands that the conversation has laid bare the fundamental tension between dreams and security that defines so many families in their circumstances. His father's words carry the weight of lived experience and genuine concern, yet they also feel like barriers erected around the very thing that makes Raju feel most alive and hopeful about his future.
 
 <<set $ShivPrasad_Day = 2>>
@@ -104,7 +104,7 @@ Raju: I don't know if I can, Baba. But I want to try. I want to try so badly tha
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: ...If you're serious about this balance, if you truly believe you can handle both, then show me. Don't tell me - show me. Prove that your cricket makes you a better student, not a worse one.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the second day's conversation concludes with ShivPrasad's challenge hanging in the air like a bridge between doubt and possibility, Raju recognizes that his father has offered him something precious and terrifying - a genuine opportunity to prove that passion and responsibility can coexist. The weight of expectation settles on his young shoulders, transforming the theoretical possibility of pursuing cricket into a concrete test that will require every ounce of discipline, wisdom, and maturity he can summon.
 
 <<set $ShivPrasad_Day = 3>>
@@ -181,7 +181,7 @@ Raju: I understand, Baba. I'll create a proper study schedule and stick to it re
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: Your willingness to sacrifice shows maturity, beta. But remember - this isn't about giving up cricket forever, it's about proving you understand priorities.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju commits to demonstrating his priorities through dramatic reduction in cricket time, both father and son understand that this sacrifice represents more than academic preparation - it embodies a test of character that will reveal whether his love for cricket stems from genuine passion or mere avoidance of more difficult responsibilities. The choice to prioritize studies completely reflects a maturity that impresses ShivPrasad while creating internal tension for Raju about temporarily abandoning the activity that brings him the most joy.
 
 <<set $ShivPrasad_Day = 4>>
@@ -204,7 +204,7 @@ Raju: Cricket taught me about consistent daily practice, breaking complex skills
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: Interesting theory. But theories and practice are different things. Show me these cricket principles actually improving your academic performance.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju articulates his theory about the transferable benefits of cricket discipline to academic study, both father and son enter uncharted territory where sports and education might complement rather than compete with each other. The challenge of proving this integration requires Raju to become conscious of his learning processes in ways that most children never attempt, transforming his approach to both cricket and mathematics into a sophisticated experiment in personal development.
 
 <<set $ShivPrasad_Day = 4>>
@@ -227,7 +227,7 @@ Raju: Cricket makes me feel capable of achieving anything, Baba. When I succeed 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Confidence is meaningless without results, beta. Show me this cricket confidence actually translating into academic improvement, not just good feelings.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju attempts to harness his cricket passion as fuel for academic excellence, he enters a delicate balancing act where maintaining enthusiasm for sports must somehow enhance rather than distract from mathematical study. The challenge of proving that confidence transfers between domains requires him to become more conscious of his emotional and mental states, transforming the test preparation into an experiment in motivation and self-awareness that could validate or disprove his theory about passion's power.
 
 <<set $ShivPrasad_Day = 4>>
@@ -368,7 +368,7 @@ Shiv Prasad: Then you have three more days to prove it. Not with words, not with
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I will, Baba. These three days have been hard because I'm still learning how to balance everything. But I won't give up. I can't give up.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the sixth day concludes with both father and son acknowledging the complexity of balancing passion and responsibility, the conversation has evolved from simple opposition to nuanced understanding of the real challenges involved in pursuing multiple demanding goals simultaneously. Raju's exhaustion has revealed the practical limitations of his ambitious approach, while his determination to continue despite difficulty has demonstrated a level of commitment that earns his father's growing respect, setting the stage for the final test that will determine whether dreams and duty can indeed coexist.
 
 <<set $ShivPrasad_Day = 7>>
@@ -425,9 +425,9 @@ Raju: Thank you, Baba. For giving me this chance, for watching me grow this week
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Remember, beta - this test is just the beginning. Every day from now on, you must prove this balance. Every day, you must show that cricket makes you better at everything else in life.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideCharacter>>
 As Raju prepares to leave for school carrying both his mathematics preparation and his father's conditional support, he understands that the test ahead represents more than academic evaluation - it embodies the culmination of a week-long demonstration that passion and responsibility can indeed coexist when approached with sufficient discipline and maturity. The promise of cricket support that awaits successful performance creates both motivation and pressure, while the ongoing requirement to maintain balance ensures that this test marks the beginning rather than the end of his journey to prove that dreams and duty can work together.
 
 <<set $ShivPrasad_Complete = true>>

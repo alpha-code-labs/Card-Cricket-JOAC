@@ -57,6 +57,8 @@ Amit: True! Sometimes balls roll into drains or get stuck in unusual places, and
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly! Or maybe someone has extra equipment at home but doesn't realize we need it. We should check with more people and explore areas around the ground more thoroughly.
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As Raju prepares to leave Koliwada Ground with a clear mission to help solve Amit's equipment shortage, he carries both determination to find practical solutions and growing understanding that organizing successful community activities requires resourcefulness, persistence, and creative problem-solving. The challenge of locating cricket equipment has transformed from simple disappointment into an opportunity to demonstrate that obstacles can be overcome through systematic effort and collaborative thinking, while Amit's frustration provides motivation to prove that neighborhood cricket doesn't have to be derailed by temporary equipment shortages.
 
@@ -102,7 +104,7 @@ Amit: You're absolutely right about improvisation. Our parents' generation playe
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: How should we organize this search to maximize our chances of success? What's the best strategy for covering all these different possibilities?
-
+<<HideCharacter>>
 // Scene Conclusion
 As their second day's planning session concludes with expanded strategies and renewed optimism about solving the equipment shortage, both boys understand that yesterday's initial disappointment has evolved into a more sophisticated understanding of resource management and creative problem-solving. The conversation has transformed from simple frustration into strategic thinking that could serve them well in many future situations requiring persistence, creativity, and collaborative effort to overcome obstacles that initially seem insurmountable.
 
@@ -161,6 +163,8 @@ Amit: I love this organized approach! We can make a list of all possible locatio
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Systematic searching will teach us both patience and thoroughness while solving our immediate problem. Let's start with the areas closest to the ground and work outward.
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys commit to a systematic searching strategy that emphasizes organization and thoroughness over random luck, both understand that this approach will test their patience and persistence while potentially teaching valuable lessons about methodical problem-solving. The decision to focus on comprehensive exploration reflects their growing maturity in approaching challenges with strategic thinking rather than hoping for quick fixes, while the collaborative nature of their search reinforces their friendship through shared effort toward common goals.
 
@@ -188,6 +192,9 @@ Amit: I love the community project angle! When people understand that we're tryi
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Community outreach will teach us both communication skills and show us how neighbors can work together to solve common problems. Let's start with the families closest to the ground.
 
+
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys commit to a community outreach strategy that emphasizes communication and collaborative problem-solving, both understand that this approach will test their social skills and persistence while potentially teaching valuable lessons about how neighborhoods can work together to support youth activities. The decision to focus on building community connections reflects their growing understanding that many problems can be solved through effective communication and shared commitment to common goals, while the collaborative nature of their outreach strengthens their appreciation for community support and mutual assistance.
 
@@ -215,6 +222,8 @@ Amit: I love this innovative thinking! Sometimes the most creative solutions com
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Creative improvisation will teach us both resourcefulness and innovation while solving our immediate problem. Let's start by cataloging what materials we have available and what we could create.
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys commit to a creative improvisation strategy that emphasizes resourcefulness and innovation over waiting for perfect conditions, both understand that this approach will test their creativity and problem-solving skills while potentially teaching valuable lessons about making the best of available resources. The decision to focus on inventive solutions reflects their growing maturity in recognizing that enjoyment and learning can occur even without ideal circumstances, while the collaborative nature of their innovation strengthens their friendship through shared creative problem-solving and mutual adaptation to challenging conditions.
 
@@ -259,6 +268,8 @@ Raju: That's part of what makes this interesting! Even if our first approach doe
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Your attitude is perfect, yaar! Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding of potential challenges, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles or whether some problems require different approaches. The collaboration combines their individual strengths while testing their ability to work together effectively under pressure, with the success or failure of their mission serving as valuable education about persistence, adaptability, and the importance of not giving up when initial strategies encounter unexpected difficulties.
 
@@ -292,6 +303,8 @@ Raju: That's part of what makes this interesting! Even if our first approach doe
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Your attitude is perfect, yaar! Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding of potential challenges, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles or whether some problems require different approaches. The collaboration combines their individual strengths while testing their ability to work together effectively under pressure, with the success or failure of their mission serving as valuable education about persistence, adaptability, and the importance of not giving up when initial strategies encounter unexpected difficulties.
 
@@ -325,6 +338,9 @@ Raju: That's part of what makes this interesting! Even if our first approach doe
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Your attitude is perfect, yaar! Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
+
+
+<<HideCharacter>>
 // Scene Conclusion
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding of potential challenges, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles or whether some problems require different approaches. The collaboration combines their individual strengths while testing their ability to work together effectively under pressure, with the success or failure of their mission serving as valuable education about persistence, adaptability, and the importance of not giving up when initial strategies encounter unexpected difficulties.
 
@@ -357,6 +373,8 @@ Raju: I'm ready for whatever we need to finish, Amit. This experience has shown 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Perfect attitude! Let's see if we can both perform even better today by applying what we learned about our thinking styles from yesterday's competition.
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As the second day of sustained effort unfolds with expanded goals and higher expectations, both boys recognize that they are approaching the culmination of their collaborative problem-solving journey, with yesterday's progress providing foundation for potentially achieving their original goal of organizing neighborhood cricket. The progression from problem identification to systematic solution implementation reflects their growing competence in project management and teamwork, while the anticipation of finally enjoying organized cricket adds excitement and urgency to their continued efforts.
 
@@ -400,6 +418,8 @@ Amit: Then we both benefit perfectly - you gain experience in community organiza
 
 <<PlayBackgroundMusic Emotional_1 >>
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As their conversation concludes with plans for ongoing partnership in organizing neighborhood cricket activities, Amit and Raju understand that they have created something more valuable than temporary problem-solving - they have demonstrated how systematic thinking, collaborative effort, and persistent dedication can transform obstacles into opportunities while building friendships and community connections that extend far beyond the original challenge they worked together to overcome.
 

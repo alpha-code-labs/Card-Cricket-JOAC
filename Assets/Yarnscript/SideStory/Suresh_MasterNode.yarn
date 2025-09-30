@@ -53,7 +53,7 @@ Raju: I'm sorry about your father, bhaiya. But I'll find a way to make cricket w
 <<SetCharacterExpression "Suresh" "Serious">>
 Suresh: Good, beta. Hold on to that fire - it's precious and rare. Just remember something important: fire can warm you and give you energy, but it can also burn you if you're not careful about how you handle it. Dreams are powerful, but they need to be balanced with practical wisdom.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju walks away from the auto stand carrying both Suresh's story of abandoned cricket dreams and his warning about balancing passion with practicality, he understands that he has encountered something rare - an adult who shares his love for cricket while also possessing hard-won wisdom about its challenges. The revelation that Suresh once stood where he stands now, with similar dreams and talent, creates both inspiration and sobering awareness of the obstacles that can derail even promising cricket careers.
 
 <<set $Suresh_Day = 2>>
@@ -166,7 +166,7 @@ title: Suresh_Day2_Continue
 tags:
 ---
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju demonstrates his strategic thinking about cricket development rather than simply expressing passionate determination, Suresh recognizes a level of maturity and practical wisdom that was perhaps missing from his own younger approach to pursuing athletic dreams. The conversation has evolved from cautionary tale to collaborative planning, with the auto driver's hard-won experience providing valuable insights for navigating the challenges that derailed his own cricket aspirations.
 
 <<set $Suresh_Day = 3>>
@@ -221,7 +221,7 @@ Raju: This is incredibly helpful, bhaiya. You're teaching me things I never woul
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: That's because I learned these lessons the hard way, through missed opportunities and incomplete preparation. If sharing my experience helps you avoid those mistakes, then my cricket journey serves a purpose even though it didn't reach the destination I originally planned.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju absorbs Suresh's practical advice about networking, tournament participation, and professional documentation of cricket development, he understands that his mentor is providing insider knowledge that could take years to discover independently through trial and error. The systematic approach to cricket advancement that Suresh outlines transforms what seemed like overwhelming challenges into manageable steps, while the auto driver's willingness to share hard-won wisdom demonstrates how personal disappointment can be transformed into valuable guidance for the next generation.
 
 <<set $Suresh_Day = 4>>
@@ -276,7 +276,7 @@ Raju: So in a way, when I succeed at cricket, it's also a success for your crick
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: Exactly, champ. Your victories will carry forward everything valuable from my experience while avoiding the mistakes and limitations that stopped me. That makes us partners in this journey, not just teacher and student.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju departs the auto stand carrying both practical guidance for his cricket development and the promise of ongoing support from someone who understands the challenges he faces, he recognizes that Suresh's mentorship represents more than individual assistance - it embodies the power of community support to help young people overcome systemic barriers to opportunity. The relationship has transformed both participants, giving Suresh's abandoned cricket dreams new purpose while providing Raju with wisdom and advocacy that could prove crucial to achieving the success that circumstances prevented his mentor from reaching.
 
 <<set $Suresh_Complete = true>>

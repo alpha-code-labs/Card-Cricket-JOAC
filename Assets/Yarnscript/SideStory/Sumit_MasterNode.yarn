@@ -57,7 +57,7 @@ Sumit: But here's the thing - I want this to be a real challenge, not just casua
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That sounds perfect! Intellectual competition that's both challenging and educational. When do you want to organize this mental challenge?
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju leaves their initial planning conversation with anticipation building for tomorrow's intellectual challenge, he carries both excitement about testing his mental abilities against a peer and appreciation for Sumit's desire to engage in activities that stimulate rather than merely entertain. The prospect of organized intellectual competition has transformed a routine afternoon into the beginning of something that could teach both participants valuable lessons about their cognitive strengths, competitive spirit, and the satisfaction that comes from exercising their minds in systematic and challenging ways.
 
 <<set $Sumit_Day = 2>>
@@ -103,7 +103,7 @@ Raju: I agree completely. The whole point is to push our mental limits and see w
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: How should we structure this competition to maximize the intellectual challenge while keeping it fun and fair for both participants?
 
-// Scene Conclusion
+<<HideCharacter>>
 As their second planning conversation concludes with both friends having established comprehensive criteria for their intellectual competition, both participants understand that they have moved beyond casual entertainment into serious mental exercise that could provide valuable insights about their cognitive abilities and competitive approaches. The systematic thinking they've applied to designing fair challenges reflects their growing maturity in approaching competition as educational opportunity rather than simple rivalry.
 
 <<set $Sumit_Day = 3>>
@@ -161,7 +161,7 @@ Sumit: I love this approach because it's educational as well as competitive. We'
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Comprehensive mental agility testing will give us both valuable insights into our cognitive strengths while providing really engaging intellectual competition.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the friends commit to a comprehensive mental agility approach that emphasizes testing multiple types of intelligence, both understand that this strategy will provide the most educational and fair competition while challenging them to demonstrate versatility rather than just specialized knowledge. Their systematic approach to intellectual challenge reflects growing maturity in competitive activities.
 
 <<set $Sumit_Day = 4>>
@@ -188,7 +188,7 @@ Sumit: I love how creative challenges would test our imagination and flexibility
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Creative problem-solving will challenge us both to demonstrate innovative thinking while discovering new approaches to mental challenges.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the friends commit to a creative problem-solving approach that emphasizes innovative thinking over conventional knowledge, both understand that this strategy will test their mental flexibility and imagination while potentially revealing cognitive capabilities that traditional academic work might not demonstrate. Their focus on creativity reflects appreciation for non-traditional forms of intelligence.
 
 <<set $Sumit_Day = 4>>
@@ -215,7 +215,7 @@ Sumit: I love how time pressure would eliminate second-guessing and force us to 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect! Rapid-fire mental challenges will test our ability to think quickly and accurately while maintaining composure under competitive pressure.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the friends commit to a rapid-fire approach that emphasizes quick thinking and mental reflexes, both understand that this strategy will test their ability to perform under pressure while potentially revealing how they handle stress and time constraints in competitive situations. Their focus on speed reflects appreciation for mental agility and quick processing skills.
 
 <<set $Sumit_Day = 4>>
@@ -247,7 +247,7 @@ Raju: Agreed! Win or lose, I want to perform at my mental peak and discover thin
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Then let's begin our intellectual battle! May the best mind win, and may we both become smarter through this challenge!
 
-// Scene Conclusion
+<<HideCharacter>>
 As the competitive phase begins with both participants bringing their full mental focus to the challenges they've designed, the friendly rivalry tests not only their cognitive abilities but also their capacity to maintain good sportsmanship while striving for intellectual victory. The competition provides immediate feedback about their mental strengths while strengthening their friendship through shared challenge and mutual respect.
 
 <<set $Sumit_Day = 5>>
@@ -279,7 +279,7 @@ Raju: I'm ready for more advanced challenges! Yesterday gave me confidence that 
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Perfect attitude! Let's see if we can both perform even better today by applying what we learned about our thinking styles from yesterday's competition.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the second day of intellectual competition unfolds with increased complexity and growing confidence from both participants, their friendly rivalry continues to provide educational value while strengthening their appreciation for mental challenges and competitive activities that enhance rather than diminish their friendship. The progression reflects their growing comfort with intellectual competition as a form of mutual improvement.
 
 <<set $Sumit_Day = 6>>
@@ -320,9 +320,9 @@ Raju: That sounds wonderful! I'd love to keep challenging my mind this way while
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Then we both benefit perfectly - you continue developing your mental agility and competitive skills while I gain a reliable partner for intellectual challenges, and together we prove that competition can bring people closer instead of driving them apart.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideCharacter>>
 As their conversation concludes with plans for ongoing intellectual competition that strengthens rather than strains their friendship, Sumit and Raju understand that they have discovered something valuable about the nature of healthy competition, mental development, and mutual encouragement. Their systematic approach to intellectual challenge has created a model for how competitive activities can enhance personal growth while building rather than threatening meaningful relationships.
 
 <<set $Sumit_Complete = true>>

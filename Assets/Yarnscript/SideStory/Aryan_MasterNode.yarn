@@ -53,8 +53,10 @@ Aryan: Better than me? Ha! That's the funniest thing I've heard all week. You wi
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Tell you what, slum boy. If you're so confident, if you really think you can play - come back tomorrow. Bring whatever pathetic excuse for cricket equipment you have. We'll see just how good you really are.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
+
+
+<<HideCharacter>>
 // Scene Conclusion
 As Raju walks away from the confrontation with Aryan's mocking laughter echoing in his ears, his hands clench into fists while a fire of determination burns away the initial sting of humiliation. The wealthy boy's challenge has awakened something fierce and prideful within him - a recognition that tomorrow's encounter will be about much more than cricket, representing a clash between two different worlds and their competing definitions of worth and capability.
 
@@ -96,8 +98,8 @@ Aryan: Tomorrow afternoon, right here in this courtyard. A proper cricket challe
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll be here. And when it's over, you'll understand that respect isn't something money can buy - it's something you earn through skill and character.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
+<<HideCharacter>>
 // Scene Conclusion
 As Raju departs the complex with tomorrow's challenge officially accepted, he feels the weight of what he has committed himself to - not just a game of cricket but a public test of everything he believes about talent, effort, and the value of a person regardless of their economic circumstances. The anticipation mixes with anxiety as he realizes that failure tomorrow would validate every cruel assumption about his background and capabilities.
 
@@ -160,6 +162,8 @@ Aryan: Your calm act won't help you when you're facing real cricket tomorrow. My
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Then they'll see real cricket. That should be entertainment enough.
 
+
+<<HideCharacter>>
 As Raju leaves the complex maintaining his composed demeanor despite the mounting pressure and taunts, he feels the inner strength that comes from refusing to be drawn into petty verbal battles that would only validate his critics' expectations. His choice to remain dignified in the face of provocation reflects a maturity that contrasts sharply with Aryan's need to perform for his audience, setting the stage for tomorrow's confrontation to be decided by skill rather than bluster.
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
@@ -183,6 +187,8 @@ Aryan: And you've never had anything worth fighting for until now! This is going
 <<SetCharacterExpression "Raju" Angry>>
 Raju: We'll see who's more satisfied when this is over. Your money can't buy you heart or skill.
 
+
+<<HideCharacter>>
 As Raju storms away from the confrontation with anger burning in his chest and Aryan's taunts echoing in his ears, he feels the dangerous energy of someone who has been pushed beyond his breaking point and is now channeling raw emotion into fierce determination. The verbal battle has escalated the stakes of tomorrow's match from a simple cricket challenge into a personal war where pride, dignity, and fundamental beliefs about justice and worth will be tested under the most intense pressure he has ever faced.
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
@@ -205,7 +211,7 @@ Aryan: Patterns? What do you mean, patterns?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Every player has habits, preferences, weaknesses. Even well-trained ones. Especially well-trained ones.
-
+<<HideCharacter>>
 As Raju departs the complex after his careful observation session, his mind processes the valuable intelligence he has gathered about Aryan's playing style, technical strengths, and behavioral tendencies under pressure. His strategic approach to tomorrow's challenge reflects a mature understanding that victory often belongs not to the most naturally gifted or best-equipped competitor, but to the one who combines preparation with intelligence, turning careful study into tactical advantage.
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
@@ -244,6 +250,8 @@ Aryan: You're either very wise or very stupid. Tomorrow will show which one.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Tomorrow will show what we've both learned about cricket. That's all that matters.
 
+
+<<HideCharacter>>
 As Raju walks away from his final pre-match encounter with Aryan, he carries with him the quiet confidence of someone who has discovered that inner peace can be more powerful than external bravado. His refusal to be baited into anger or defensiveness has revealed a strength of character that transcends the superficial markers of social status, preparing him mentally for tomorrow's challenge with the clarity that comes from knowing his worth is not determined by others' opinions.
 
 <<set $Aryan_Day = 5>>
@@ -273,6 +281,8 @@ Aryan: Those expensive toys are going to destroy your pathetic dreams tomorrow!
 <<SetCharacterExpression "Raju" Angry>>
 Raju: My dreams are stronger than your toys. You'll see.
 
+
+<<HideCharacter>>
 As Raju leaves the complex with anger coursing through his veins and tomorrow's battle looming like a storm on the horizon, he understands that the cricket match has become something far more significant than either boy initially intended - a collision between two worldviews, two definitions of strength, and two competing claims about what truly matters in determining a person's worth and potential. The intensity of their mutual hostility has raised the stakes to a level where tomorrow's outcome will resonate far beyond the boundaries of any game.
 
 <<set $Aryan_Day = 5>>
@@ -302,6 +312,8 @@ Aryan: All the studying in the world won't help you when you face superior skill
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: We'll see. Sometimes understanding your opponent is better than having better gear.
 
+
+<<HideCharacter>>
 As Raju walks away from his final analytical session, he carries with him a comprehensive understanding of Aryan's strengths, weaknesses, and psychological triggers that few opponents would have taken the time to develop. His strategic preparation represents a different kind of courage - the bravery to face superior resources with superior preparation, transforming tomorrow's challenge from a test of natural ability into a battle between different philosophies of competition and success.
 
 <<set $Aryan_Day = 5>>
@@ -348,6 +360,8 @@ Aryan: ...Not bad, slum boy. Not bad at all. But don't think this changes anythi
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I told you cricket isn't about equipment or social class. It's about dedication, practice, and love for the game.
 
+
+<<HideCharacter>>
 As the crowd disperses in stunned silence, their preconceptions shattered by Raju's unexpected display of genuine cricket mastery, the young man from the slums stands quietly in the center of the courtyard, his simple equipment now vindicated by performance that transcended all material disadvantages. The moment represents more than athletic victory - it is a fundamental challenge to the assumptions that wealth and social status determine worth and capability.
 
 <<set $Aryan_Day = 6>>
@@ -390,6 +404,8 @@ Aryan: ...You're not bad, slum boy. Not bad at all. But next time will be differ
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm looking forward to it.
 
+
+<<HideCharacter>>
 As Raju leaves the complex for what may be the final time in this particular chapter of his life, he carries with him the satisfaction of having challenged and changed entrenched assumptions about class, worth, and capability without resorting to bitterness or revenge. His victory over Aryan represents more than personal triumph - it stands as proof that dignity, skill, and character cannot be purchased, inherited, or taken away by those who mistake privilege for superiority.
 
 <<set $Aryan_Complete = true>>

@@ -50,6 +50,7 @@ Raju: Don't your family members visit to listen to matches with you?
 <<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: Family... well, cricket is enough company for an old man. These young cricketers today, they play with such fire, such determination. Like you, beta - I can see the cricket passion in your eyes.
 
+<<HideCharacter>>
 // Scene Conclusion
 As Raju leaves the hospital with Cricket Dada's stories of legendary matches echoing in his mind, he carries both the excitement of discovering a living library of cricket history and a subtle sadness about the elderly man's apparent isolation. The encounter has opened a window into the rich heritage of Indian cricket while also revealing the loneliness that can accompany old age, creating a complex mixture of inspiration and concern that will draw him back to continue their conversation.
 
@@ -95,7 +96,7 @@ Raju: That's exactly what I feel when I play! Like cricket is teaching me how to
 
 <<SetCharacterExpression "CricketDada" "Quizzical">>
 Cricket Dada: Tell me about your cricket dreams, beta. What drives your passion for this beautiful game?
-
+<<HideCharacter>>
 // Scene Conclusion
 As Raju walks home from the hospital with his notebook filled with cricket wisdom and historical anecdotes, he understands that he has discovered more than just entertaining stories - he has found a mentor who sees cricket as a metaphor for life's greatest challenges and triumphs. Cricket Dada's passionate philosophy about the sport has deepened his own understanding of why cricket captivates him so completely, while the older man's interest in his personal dreams has created a meaningful connection that transcends their age difference.
 
@@ -219,6 +220,8 @@ Cricket Dada: Beta, you might be right. All these years, I thought they abandone
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: The cricket heroes you told me about - they never gave up when things looked impossible. Maybe it's time to be brave like them?
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As Raju leaves the hospital carrying the weight of Cricket Dada's family revelation and the hope that his advice might help bridge fifteen years of separation, he understands that their conversation has transformed from cricket history lessons into something far more meaningful - a chance to apply the courage and determination celebrated in sports to the more complex challenges of family relationships. The elderly man's pain has become his own concern, while his suggestion about reaching out represents the practical application of cricket wisdom to real-life problems.
 
@@ -262,6 +265,8 @@ Raju: Cricket Dada taught me that cricket and life follow the same rules. Every 
 <<SetCharacterExpression "CricketDada" "Smiling">>
 Cricket Dada: And you taught me that wisdom flows both ways, beta. Sometimes the teacher learns the most important lesson from the student.
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As Raju prepares to leave the hospital for the final time in this chapter of his relationship with Cricket Dada, he carries with him the profound satisfaction of witnessing a family reunited through courage, wisdom, and the practical application of values learned through cricket. The transformation of a lonely old man into a surrounded patriarch represents more than personal success - it demonstrates how genuine concern for others and thoughtful advice can create positive change that extends far beyond the original relationship, teaching him that meaningful impact often comes through quiet acts of caring rather than grand gestures.
 
