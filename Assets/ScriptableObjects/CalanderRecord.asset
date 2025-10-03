@@ -490,7 +490,7 @@ MonoBehaviour:
   - date: 1990/04/13
     events:
     - eventName: scene_121
-      eventDescription: 
+      eventDescription: Map System
       eventType: 1
     - eventName: Skip
       eventDescription: 
