@@ -30,6 +30,15 @@ Ramu: This is your shot panel. Based on the ball conditions and the batting cond
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
+Ramu: There are 4 variations for each shot available to you. Push, Normal, Aggressive and Lofted. Each type of shot has its own risk and reward. 
+Ramu: A "Push" is a defensive shot resulting in 1 run.
+Ramu: A "Normal" shot will result in 2 runs.
+Ramu: An "Aggressive" shot will result in 4 runs.
+Ramu: A "Lofted" shot will result in 6 runs.
+
+<<moveDialogue top>>
+<<showCharacterImage center>>
+<<unhideBallerCard>>
 Ramu: The outcome of your decision will appear in the center, captain. Whatever choice you have made will have an outcome here. Watch it closely.
 
 <<moveDialogue top>>
