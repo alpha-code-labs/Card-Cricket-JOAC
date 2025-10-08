@@ -1088,8 +1088,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentRuns: 0
   TargetScore: 15
-  MaxBalls: 6
-  baseWickets: 6
+  MaxBalls: 12
+  baseWickets: 2
   scoreText: {fileID: 44926448}
   currentRunsText: {fileID: 1552231045}
   totalRunsNeededText: {fileID: 1121265624}
