@@ -2337,7 +2337,7 @@ MonoBehaviour:
   MinZoom: 2
   navigationType: 1
   edgePanSpeed: 5
-  edgePanBorder: 50
+  edgePanBorder: 250
   boxCollider2D: {fileID: 385119250}
 --- !u!114 &804547048
 MonoBehaviour:
