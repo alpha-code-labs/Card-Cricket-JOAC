@@ -708,7 +708,6 @@ MonoBehaviour:
   shotTextDuration: 0.2
   outcomeDisplayDuration: 0.5
   statsUpdateDuration: 0.5
-  processingPause: 0.5
 --- !u!114 &164009111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3197,7 +3196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdc47367aafcf64491bd69f8d32d502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arcRadius: 1700
+  arcRadius: 2650
   arcAngle: 10
   maxArcAngle: 60
   arcCenterOffset: {x: 0, y: 0, z: 0}
