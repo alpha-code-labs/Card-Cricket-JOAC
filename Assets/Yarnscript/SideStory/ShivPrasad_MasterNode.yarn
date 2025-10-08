@@ -34,7 +34,7 @@ The evening air carries the sounds of children playing in the lanes, but Raju ch
 
 The modest interior of their family home feels charged with anticipation as Raju waits for his father's return from another long day at the factory, his cricket bat resting beside him as both a symbol of his passion and a potential source of conflict. The familiar sounds of ShivPrasad's footsteps approaching along the narrow lane create a mixture of excitement and anxiety in Raju's chest, as he prepares to share his cricket progress with the one family member whose approval could legitimize his dreams or crush them entirely.
 
-<<SetCharacterExpression "ShivPrasad" Angry>>
+<<SetCharacterExpression "ShivPrasad" "Angry" >>
 Shiv Prasad: Raju, where were you this afternoon? Your mother mentioned you were at the ground again instead of with your books.
 
 <<SetCharacterExpression "Raju" "Excited">>
