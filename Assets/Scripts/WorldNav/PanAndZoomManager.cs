@@ -62,7 +62,7 @@ public class PanAndZoomManager : MonoBehaviour
 #endif
 
         HandleTouchInput();  // Works on touchscreen devices
-        
+
         // Handle edge panning if that navigation type is selected
         if (navigationType == NavigationType.EdgePan)
         {

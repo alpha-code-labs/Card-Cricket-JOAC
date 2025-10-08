@@ -2335,6 +2335,9 @@ MonoBehaviour:
   swipeSensitivity: 1
   pinchSensitivity: 1
   MinZoom: 2
+  navigationType: 1
+  edgePanSpeed: 5
+  edgePanBorder: 50
   boxCollider2D: {fileID: 385119250}
 --- !u!114 &804547048
 MonoBehaviour:
