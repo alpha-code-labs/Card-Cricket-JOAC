@@ -26,6 +26,11 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
             OnClick();
         }
     }
+    public abstract void OnHoveringTip();
+    public void OnStopHoveringTip()
+    {
+        CurrencyToolTip.instance.ShowToolTip("");
+    }
     // Hover Effect
     private void OnMouseEnter()
     {
@@ -35,6 +40,7 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
     private void OnMouseExit()
     {
         availabilityIndicatorPrefab.transform.localScale = Vector3.one * 1f;
+        OnStopHoveringTip();
     }
     public abstract void OnClick();
 

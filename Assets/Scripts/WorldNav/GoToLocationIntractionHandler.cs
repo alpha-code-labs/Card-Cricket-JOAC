@@ -25,6 +25,10 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
         LocationSwitcher.instance.SwitchLocation(location);
     }
 
+    public override void OnHoveringTip()
+    {
+        CurrencyToolTip.instance.ShowToolTip("Go to " + PrettyStrings.GetPrettyEnumString(location.ToString()));
+    }
 
 }
 public enum Locations

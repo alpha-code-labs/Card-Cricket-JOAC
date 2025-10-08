@@ -25,6 +25,10 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     {
         return "Talk to " + PrettyStrings.GetPrettyEnumString(character.ToString());
     }
+    public override void OnHoveringTip()
+    {
+        CurrencyToolTip.instance.ShowToolTip(GetIntractionMessage());
+    }
 }
 public enum Characters
 {
