@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Timer : MonoBehaviour
 {
@@ -116,7 +117,7 @@ public class Timer : MonoBehaviour
             }
             
             // Show "GO!" or "PLAY!"
-            countdownText.text = "PLAY!";
+            countdownText.text = "Go!";
             yield return AnimateCountdownNumber();
             
             countdownPanel.SetActive(false);
@@ -292,7 +293,7 @@ public class Timer : MonoBehaviour
         }
         if (ScoreManager.Instance.getCurrentWickets() > 0)
         {
-            CardsPoolManager.Instance.EndTurn(true);
+            CardsPoolManager.Instance.EndTurn(ScoreManager.Instance.MaxBalls, true);
             yield return new WaitForSeconds(1f);
             CardsPoolManager.Instance.StartTurn(true);
         }

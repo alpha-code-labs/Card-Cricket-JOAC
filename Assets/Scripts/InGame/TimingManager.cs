@@ -105,7 +105,7 @@ public class TimingManager : MonoBehaviour
         
 
         //
-        CardsPoolManager.Instance.EndTurn(); // End turn after playing the card
+        // CardsPoolManager.Instance.EndTurn(); // End turn after playing the card
     }
 
     void Update()

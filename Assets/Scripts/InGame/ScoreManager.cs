@@ -264,7 +264,7 @@ public class ScoreManager : MonoBehaviour
         // Check if game should continue
         if (!gameEnded)
         {
-            CardsPoolManager.Instance.EndTurn((int)outcome != -3);
+            CardsPoolManager.Instance.EndTurn(MaxBalls, (int)outcome != -3);
             yield return new WaitForSeconds(3f);
             Timer.Instance.EndTurnTimer();
             

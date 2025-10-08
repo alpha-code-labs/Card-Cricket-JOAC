@@ -3197,7 +3197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arcRadius: 2650
-  arcAngle: 10
+  arcAngle: 9
   maxArcAngle: 60
   arcCenterOffset: {x: 0, y: 0, z: 0}
   hoverScale: 1.2
