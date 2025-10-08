@@ -5,6 +5,9 @@ public class PanAndZoomManager : MonoBehaviour
     [SerializeField] private float swipeSensitivity = 1f; // Adjust camera movement speed
     [SerializeField] private float pinchSensitivity = 1f; // Adjust zoom speed
     [SerializeField] private float MinZoom = 2f;
+    [SerializeField] private NavigationType navigationType = NavigationType.DragPan;
+    [SerializeField] private float edgePanSpeed = 5f; // Speed for edge panning
+    [SerializeField] private float edgePanBorder = 50f; // Pixel distance from edge to trigger panning
     private float MaxZoom = 21f;
     private BoxCollider2D cameraBoundsCollider; // Assigned byy InitCamera
     private float minX, maxX, minY, maxY;
@@ -59,42 +62,35 @@ public class PanAndZoomManager : MonoBehaviour
 #endif
 
         HandleTouchInput();  // Works on touchscreen devices
+        
+        // Handle edge panning if that navigation type is selected
+        if (navigationType == NavigationType.EdgePan)
+        {
+            HandleEdgePanning();
+        }
     }
 
     void HandleMouseInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Only handle drag panning if navigation type is DragPan
+        if (navigationType == NavigationType.DragPan)
         {
-            startTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            lastTouchPosition = startTouchPosition;
-            isSwiping = true;
-            //
-            // {
-            //     // Convert mouse position to world coordinates
-            //     Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            //     // Cast a ray in 2D
-            //     RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-
-            //     if (hit.collider != null)
-            //     {
-            //         Debug.Log($"Hit: {hit.collider.name} on layer {hit.collider.gameObject.layer}");
-            //     }
-            //     else
-            //     {
-            //         Debug.Log("No 2D collider hit");
-            //     }
-            // }
-        }
-        else if (Input.GetMouseButton(0) && isSwiping) // Move while dragging
-        {
-            Vector2 swipeVector = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - startTouchPosition;
-            Camera.main.transform.position -= swipeSensitivity * new Vector3(swipeVector.x, swipeVector.y, 0);
-            lastTouchPosition = Input.mousePosition;
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            isSwiping = false;
+            if (Input.GetMouseButtonDown(0))
+            {
+                startTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                lastTouchPosition = startTouchPosition;
+                isSwiping = true;
+            }
+            else if (Input.GetMouseButton(0) && isSwiping) // Move while dragging
+            {
+                Vector2 swipeVector = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - startTouchPosition;
+                Camera.main.transform.position -= swipeSensitivity * new Vector3(swipeVector.x, swipeVector.y, 0);
+                lastTouchPosition = Input.mousePosition;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                isSwiping = false;
+            }
         }
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");// Zoom using mouse scroll wheel
@@ -113,23 +109,27 @@ public class PanAndZoomManager : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            switch (touch.phase)
+            // Only handle drag panning if navigation type is DragPan
+            if (navigationType == NavigationType.DragPan)
             {
-                case TouchPhase.Began:
-                    startTouchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-                    lastTouchPosition = startTouchPosition;
-                    isSwiping = true;
-                    break;
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        startTouchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                        lastTouchPosition = startTouchPosition;
+                        isSwiping = true;
+                        break;
 
-                case TouchPhase.Moved: // Move the camera while swiping
-                    Vector2 swipeVector = (Vector2)Camera.main.ScreenToWorldPoint(touch.position) - startTouchPosition;
-                    Camera.main.transform.position -= swipeSensitivity * new Vector3(swipeVector.x, swipeVector.y, 0);
-                    lastTouchPosition = touch.position;
-                    break;
+                    case TouchPhase.Moved: // Move the camera while swiping
+                        Vector2 swipeVector = (Vector2)Camera.main.ScreenToWorldPoint(touch.position) - startTouchPosition;
+                        Camera.main.transform.position -= swipeSensitivity * new Vector3(swipeVector.x, swipeVector.y, 0);
+                        lastTouchPosition = touch.position;
+                        break;
 
-                case TouchPhase.Ended:
-                    isSwiping = false;
-                    break;
+                    case TouchPhase.Ended:
+                        isSwiping = false;
+                        break;
+                }
             }
         }
         else if (Input.touchCount == 2) // Two-finger pinch gesture
@@ -159,6 +159,38 @@ public class PanAndZoomManager : MonoBehaviour
         }
     }
 
+    void HandleEdgePanning()
+    {
+        Vector3 moveDirection = Vector3.zero;
+        Vector2 mousePosition = Input.mousePosition;
+
+        // Check if mouse is near screen edges
+        if (mousePosition.x <= edgePanBorder)
+        {
+            moveDirection.x = -1; // Move left
+        }
+        else if (mousePosition.x >= Screen.width - edgePanBorder)
+        {
+            moveDirection.x = 1; // Move right
+        }
+
+        if (mousePosition.y <= edgePanBorder)
+        {
+            moveDirection.y = -1; // Move down
+        }
+        else if (mousePosition.y >= Screen.height - edgePanBorder)
+        {
+            moveDirection.y = 1; // Move up
+        }
+
+        // Apply movement if there's any direction
+        if (moveDirection != Vector3.zero)
+        {
+            Vector3 worldMovement = moveDirection * edgePanSpeed * Time.deltaTime;
+            Camera.main.transform.position += worldMovement;
+        }
+    }
+
     void LateUpdate()// Clamp the camera's position inside the BoxCollider2D bounds
     {
         Vector3 clampedPosition = Camera.main.transform.position;
@@ -166,4 +198,10 @@ public class PanAndZoomManager : MonoBehaviour
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
         Camera.main.transform.position = clampedPosition;
     }
+}
+
+public enum NavigationType
+{
+    DragPan,
+    EdgePan
 }
