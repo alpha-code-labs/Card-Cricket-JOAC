@@ -12,7 +12,6 @@ public class AttackCardData
     [SerializeField] internal int EnergyCost = 3;
     public AttackCardData(BattingStrategy battingStrategy)
     {
-        Debug.Log("Getting data for strategy " + battingStrategy);
         this.excelBattinStrategy = battingStrategy;
         EnergyCost = (int)GetBattingIntensityFromExcelName(battingStrategy);
         cardSprite = TryGetSprite(battingStrategy.ToString().ToLower());

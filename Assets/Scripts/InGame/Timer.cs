@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
+using System;
 
 public class Timer : MonoBehaviour
 {
@@ -42,8 +43,8 @@ public class Timer : MonoBehaviour
         timerText.text = maxTimeToChooseStrategy.ToString() + "s";
         
         // Hide countdown and over info panels initially
-        if (countdownPanel != null)
-            countdownPanel.SetActive(false);
+        // if (countdownPanel != null)
+        //     countdownPanel.SetActive(false);
         if (overInfoPanel != null)
             overInfoPanel.SetActive(false);
     }
@@ -83,7 +84,7 @@ public class Timer : MonoBehaviour
     {
         // Disable card interactions during countdown
         CardsPoolManager.Instance.SetCardsInteractable(false);
-        
+
         // Check if it's the first ball of an over
         int currentBall = CardsPoolManager.Instance.CurrntTurn;
         bool isFirstBallOfOver = (currentBall % 6 == 0);
@@ -94,91 +95,25 @@ public class Timer : MonoBehaviour
             int overNumber = (currentBall / 6) + 1;
             overInfoText.text = $"OVER {overNumber}";
             overInfoPanel.SetActive(true);
-            
+
             // Animate over info (optional)
             yield return AnimateOverInfo();
-            
-            yield return new WaitForSeconds(1.5f);
+
+            yield return new WaitForSeconds(.3f);
             overInfoPanel.SetActive(false);
         }
-        
-        // Show countdown panel
-        if (countdownPanel != null && countdownText != null)
-        {
-            countdownPanel.SetActive(true);
-            
-            // Countdown from 3 to 1
-            for (int i = 3; i >= 1; i--)
-            {
-                countdownText.text = i.ToString();
-                
-                // Animate countdown number
-                yield return AnimateCountdownNumber();
-            }
-            
-            // Show "GO!" or "PLAY!"
-            countdownText.text = "Go!";
-            yield return AnimateCountdownNumber();
-            
-            countdownPanel.SetActive(false);
-        }
-        else
-        {
-            // Fallback if UI elements are not set
-            Debug.LogWarning("Countdown UI elements not configured. Starting timer directly.");
-        }
-        
+
         // Re-enable card interactions
         CardsPoolManager.Instance.SetCardsInteractable(true);
-        
+
         // Start the main timer
         isPaused = false;
         pausedTimeRemaining = maxTimeToChooseStrategy;
         currentTimerCoroutine = StartCoroutine(TimerCoroutine(maxTimeToChooseStrategy));
-        
+
         countdownCoroutine = null;
     }
     
-    private IEnumerator AnimateCountdownNumber()
-    {
-        if (countdownText == null) yield break;
-        
-        float elapsed = 0;
-        Vector3 originalScale = Vector3.one;
-        
-        while (elapsed < countdownDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / countdownDuration;
-            
-            // Apply scale animation
-            float scale = countdownScaleCurve.Evaluate(t);
-            countdownText.transform.localScale = originalScale * scale;
-            
-            // Fade out near the end
-            if (t > 0.7f)
-            {
-                Color color = countdownText.color;
-                color.a = 1f - ((t - 0.7f) / 0.3f);
-                countdownText.color = color;
-            }
-            else
-            {
-                Color color = countdownText.color;
-                color.a = 1f;
-                countdownText.color = color;
-            }
-            
-            yield return null;
-        }
-        
-        // Reset for next number
-        countdownText.transform.localScale = originalScale;
-        Color finalColor = countdownText.color;
-        finalColor.a = 1f;
-        countdownText.color = finalColor;
-    }
-
     private IEnumerator AnimateOverInfo()
     {
         if (overInfoText == null) yield break;
@@ -198,9 +133,7 @@ public class Timer : MonoBehaviour
 
             yield return null;
         }
-
         overInfoText.transform.localScale = originalScale;
-        yield return new WaitForSeconds(1f);
     }
     
     public void ResetTimerForRedraw()
