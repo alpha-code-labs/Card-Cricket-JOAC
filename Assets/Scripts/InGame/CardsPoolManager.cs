@@ -45,6 +45,7 @@ public class CardsPoolManager : MonoBehaviour
         else
         {
             maxHandSize = baseMaxHandSize;
+            maxRedraws = baseMaxRedraws;
         } 
         
         Instance = this;
@@ -139,40 +140,48 @@ public void StartTurn(bool incrementBalls = true)
                 arcManager.RefreshCardArrangement();
     }
 
-    public void RedrawHand()
+// Add this updated RedrawHand method to your CardsPoolManager script:
+
+public void RedrawHand()
+{
+    if (redraws >= maxRedraws)
     {
-        if (redraws >= maxRedraws)
-        {
-            Debug.LogWarning($"Cannot redraw: Maximum redraws ({maxRedraws}) already used!");
-            return;
-        }
-        
-        if (HandCards.Count == 0)
-        {
-            Debug.LogWarning("No cards in hand to redraw!");
-            return;
-        }
-        
-        // Move current hand cards to discard pile
-        foreach (var card in HandCards)
-        {
-            DiscardPile.Add(card);
-            card.gameObject.SetActive(false);
-        }
-        HandCards.Clear();
-        
-        // Draw new cards
-        for (int i = 0; i < maxHandSize; i++)
-        {
-            DrawCard();
-        }
-        
-        redraws++;
-        Debug.Log($"Hand redrawn! Redraws used: {redraws}/{maxRedraws}");
-        
-        // Optional: Trigger an event for UI updates
-        OnHandRedrawn?.Invoke(redraws, maxRedraws);
+        Debug.LogWarning($"Cannot redraw: Maximum redraws ({maxRedraws}) already used!");
+        return;
     }
+    
+    if (HandCards.Count == 0)
+    {
+        Debug.LogWarning("No cards in hand to redraw!");
+        return;
+    }
+    
+    // Move current hand cards to discard pile
+    foreach (var card in HandCards)
+    {
+        DiscardPile.Add(card);
+        card.gameObject.SetActive(false);
+    }
+    HandCards.Clear();
+    
+    // Draw new cards
+    for (int i = 0; i < maxHandSize; i++)
+    {
+        DrawCard();
+    }
+    
+    redraws++;
+    Debug.Log($"Hand redrawn! Redraws used: {redraws}/{maxRedraws}");
+    
+    // Reset the timer when redrawing
+    if (Timer.Instance != null)
+    {
+        Timer.Instance.ResetTimerForRedraw();
+    }
+    
+    // Trigger an event for UI updates
+    OnHandRedrawn?.Invoke(redraws, maxRedraws);
+}
 
     void InstantiateCards()
     {
