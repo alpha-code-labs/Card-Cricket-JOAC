@@ -342,6 +342,7 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
 
     public bool CanRedraw()
     {
+        Debug.Log($"Redraws used: {redraws}, Max redraws: {maxRedraws}, Cards in hand: {HandCards.Count}");
         return redraws < maxRedraws && HandCards.Count > 0;
     }
 

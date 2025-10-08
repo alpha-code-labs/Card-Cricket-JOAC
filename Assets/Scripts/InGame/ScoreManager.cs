@@ -326,6 +326,7 @@ public class ScoreManager : MonoBehaviour
         if (redrawButton == null) return;
         
         bool canRedraw = CardsPoolManager.Instance.CanRedraw();
+        Debug.Log($"Redraw Button - Can Redraw: {canRedraw}");
         redrawButton.interactable = canRedraw;
         
         if (redrawButtonText != null)
@@ -352,11 +353,11 @@ public class ScoreManager : MonoBehaviour
         
         UpdateScore(0);
         UpdateBallsAndOvers(0);
-        
+
         if (redrawButton != null)
         {
             redrawButton.onClick.AddListener(OnRedrawButtonClicked);
-            UpdateRedrawButton();
+            StartCoroutine(UpdateRedrawButtonRoutine()); // Initial update after delay
         }
         
         if (BatterImage != null)
@@ -365,13 +366,19 @@ public class ScoreManager : MonoBehaviour
         }
     }
     
+    IEnumerator UpdateRedrawButtonRoutine()
+    {
+        yield return new WaitForSeconds(6f);
+        UpdateRedrawButton();
+    }
+    
     // Keep existing utility methods unchanged
     public void disableRaycasterOnMainDialogueSystem()
     {
         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
             .Where(go => go.name == "Dialogue System")
             .ToArray();
-            
+
         foreach (GameObject dialogueSystem in dialogueSystems)
         {
             if (dialogueSystem.scene != UnityEngine.SceneManagement.SceneManager.GetActiveScene())

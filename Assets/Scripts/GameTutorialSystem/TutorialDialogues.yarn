@@ -18,7 +18,7 @@ Ramu: This will indicate the batting conditions for the task. It can be either h
 
 <<showScorePanel>>
 <<showCharacterImage top>>
-Ramu: This is the current score and the target you have to achieve in the task. Always watch it like a hawk. Your outcomes will drive your score closer to target.
+Ramu: Look at the top left corner. This is the current score and the target you have to achieve in the task. Always watch it like a hawk. Your outcomes will drive your score closer to target.
 <<clearHighlights>>
 
 <<moveDialogue top>>
@@ -46,7 +46,7 @@ Ramu: The outcome of your decision will appear in the center, captain. Whatever 
 <<clearHighlights>>
 <<showTimingPanel>>
 <<unhideBallerCard>>
-Ramu: This is the amount of starting time you get in this task for shot selection. It's a countdown timer. If time runs out you will get out. Be quick and decisive.
+Ramu: Look at the top. This is the amount of starting time you get in this task for shot selection. It's a countdown timer. If time runs out you will get out. Be quick and decisive.
 <<clearHighlights>>
 
 <<moveDialogue top>>
@@ -61,7 +61,7 @@ Ramu: Look in the top-right corner, this indicates how much wickets you have los
 <<showCharacterImage center>>
 <<showBBallsPanel>>
 <<unhideBallerCard>>
-Ramu: This indicates the number of balls still remaining to achieve the target. It will decrease for every ball you face unless the ball is a Wide ball or No ball.
+Ramu: Again Look on the top right, next to wickets. This indicates the number of balls still remaining to achieve the target. It will decrease for every ball you face unless the ball is a Wide ball or No ball.
 <<hideCharacterImage>>
 <<clearHighlights>>
 
@@ -69,7 +69,7 @@ Ramu: This indicates the number of balls still remaining to achieve the target. 
 <<showCharacterImage center>>
 <<showFlipButton>>
 <<unhideBallerCard>>
-Ramu: This is a special privilege you will get in the game, Once clicked it will redraw from all available shots and a new set of cards will appear. Notice the 3 tries next to it. It means in a task you have only limited number of chances to use this button. Keep that in mind.
+Ramu: Look at the "Redraw" button at the bottom left. This is a special privilege you will get in the game, Once clicked it will redraw from all available shots and a new set of cards will appear. Notice the 3 tries next to it. It means in a task you have only limited number of chances to use this button. Keep that in mind.
 <<hideCharacterImage>>
 <<clearHighlights>>
 
