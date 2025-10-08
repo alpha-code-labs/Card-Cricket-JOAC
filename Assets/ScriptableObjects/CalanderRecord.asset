@@ -223,9 +223,6 @@ MonoBehaviour:
     - eventName: scene_53
       eventDescription: 
       eventType: 1
-    - eventName: Skip
-      eventDescription: 
-      eventType: 3
     - eventName: scene_54
       eventDescription: Semifinals today captain
       eventType: 0
@@ -239,9 +236,6 @@ MonoBehaviour:
     events:
     - eventName: scene_57
       eventDescription: Map System
-      eventType: 1
-    - eventName: Skip
-      eventDescription: 
       eventType: 1
     - eventName: scene_58
       eventDescription: We are chasing
@@ -490,11 +484,8 @@ MonoBehaviour:
   - date: 1990/04/13
     events:
     - eventName: scene_121
-      eventDescription: 
+      eventDescription: Map System
       eventType: 1
-    - eventName: Skip
-      eventDescription: 
-      eventType: 3
     - eventName: scene_122
       eventDescription: Chasing 185 over 10 balls
       eventType: 0

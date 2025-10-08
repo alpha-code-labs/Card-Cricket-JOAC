@@ -52,6 +52,8 @@ CoachSharma: Dreams are cheap, boy. Anyone can dream of playing cricket. But dis
 
 <<PlayBackgroundMusic Emotional_1 >>
 
+
+<<HideCharacter>>
 // Scene Conclusion
 As Raju walks away from the academy with Coach Sharma's harsh words echoing in his mind, he feels the familiar sting of rejection based on economic circumstances rather than ability or potential. Yet beneath the hurt lies a burning determination to prove that true commitment cannot be measured in rupees, and that someday he will return to demonstrate that passion and persistence can overcome the barriers that wealth erects around opportunity.
 
@@ -118,6 +120,8 @@ CoachSharma: Very well. Come back tomorrow morning. Early - before my regular se
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Thank you, sir. I won't disappoint you.
 
+
+<<HideCharacter>>
 As Raju departs the academy with his first real opportunity earned through persistent return rather than payment or privilege, he understands that tomorrow will mark the beginning of a different kind of test - one that measures character through unglamorous labor rather than flashy skill demonstration. His choice of the steady, consistent path reflects a mature understanding that respect must be built through reliable action rather than dramatic gestures.
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
@@ -141,6 +145,7 @@ CoachSharma: Emotional fire burns bright but often burns out quickly. Come back 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll be here, sir. My fire won't fade - it only grows stronger with challenge.
 
+<<HideCharacter>>
 As Raju leaves the academy with his passionate commitment accepted as a challenge by Coach Sharma, he feels the intensity of someone who has staked everything on proving that emotional fire can be transformed into sustainable dedication. His choice of the passionate path reflects his belief that genuine love for cricket can overcome any obstacle, though tomorrow will test whether his intensity can survive the grinding reality of unglamorous preparation work.
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
@@ -164,6 +169,8 @@ CoachSharma: Interesting approach. Come back tomorrow and we'll see if your meth
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'll be ready, sir. Planning without execution is worthless, but execution without planning is inefficient.
 
+
+<<HideCharacter>>
 As Raju leaves the academy with his strategic approach accepted as a legitimate test by Coach Sharma, he understands that tomorrow will reveal whether his methodical thinking can translate into effective action under real-world conditions. His choice of the analytical path reflects a belief that intelligent preparation can maximize the impact of limited opportunities, though the coming challenge will test whether his systematic approach can handle the unpredictable demands of practical work.
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
@@ -202,6 +209,8 @@ CoachSharma: Most boys would rush this work to impress me. You're taking your ti
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Quality matters more than speed, sir. I want to earn your respect through reliability, not flashiness.
 
+
+<<HideCharacter>>
 As Raju completes his first morning of unglamorous preparation work with the careful attention to detail that reflects genuine respect for the opportunity, he begins to understand that his chosen path of quiet consistency is already distinguishing him from the typical responses Coach Sharma expects from young people seeking cricket training. His methodical approach to simple tasks reveals a maturity that transcends age and economic background.
 
 <<set $CoachSharma_Day = 4>>
@@ -230,7 +239,7 @@ CoachSharma: Your intensity is remarkable. You're working like someone whose lif
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Because it does depend on it, sir. Cricket isn't just what I want to do - it's who I am.
-
+<<HideCharacter>>
 As Raju completes his first morning of passionate labor with the same intensity he brings to actual cricket practice, he demonstrates that his emotional fire can indeed fuel sustained effort rather than simply burning bright for brief moments. His ability to maintain enthusiasm for unglamorous work reveals that his love for cricket runs deeper than surface excitement, encompassing every aspect of the sport including its most mundane requirements.
 
 <<set $CoachSharma_Day = 4>>
@@ -260,6 +269,8 @@ CoachSharma: You're not just working hard - you're working smart. That combinati
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Understanding the system makes the work more meaningful, sir. Every task becomes part of the larger goal.
 
+
+<<HideCharacter>>
 As Raju completes his first morning of systematic preparation work with the same analytical precision he applies to understanding cricket technique, he demonstrates that strategic thinking can indeed enhance rather than replace passionate commitment. His ability to find meaning and efficiency in routine tasks reveals a level of intellectual maturity that transforms simple labor into purposeful preparation for larger goals.
 
 <<set $CoachSharma_Day = 4>>
@@ -308,6 +319,8 @@ Raju: Can you teach me proper technique, sir? Can you help me build on whatever 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: Teaching at this level costs serious money, boy. Money for equipment, facility time, individual instruction, structured progression. Money that I know you and your family don't have.
 
+
+<<HideCharacter>>
 As Raju absorbs the reality that his demonstrated talent and proven character still cannot overcome the economic barriers that separate him from professional training, he feels the familiar weight of a system that measures potential in rupees rather than ability. Yet his brief taste of proper cricket assessment has revealed both the extent of his natural gifts and the magnitude of what proper coaching might achieve, creating a burning awareness of possibilities that remain tantalizingly out of reach.
 
 <<set $CoachSharma_Day = 5>>
@@ -354,6 +367,7 @@ Raju: I'll be here, sir. Every single morning at 5 AM. You won't have to wait fo
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: We'll see, boy. Promises are easy to make when excitement is high and reality hasn't set in. But if you can maintain this commitment... then you might prove worthy of serious coaching investment.
 
+<<HideCharacter>>
 As Raju departs the academy with a concrete path toward earning legitimate coaching opportunity, he understands that the month ahead will test not just his commitment but his ability to maintain motivation through the grinding routine of unglamorous preparation work. The deal with Coach Sharma represents more than a chance for cricket training - it is an opportunity to prove that character and dedication can overcome the systemic barriers that separate talent from opportunity.
 
 <<set $CoachSharma_Day = 6>>
@@ -400,6 +414,8 @@ Raju: Sir, I promise we won't disappoint you. This opportunity means everything 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 CoachSharma: Remember this moment, boy. You've earned recognition not through family connections or fee payments, but through character demonstration that impressed a coach who thought he'd seen everything. Don't waste this opportunity.
 
+
+<<HideCharacter>>
 As Raju walks away from the academy carrying the promise of unofficial coaching and tournament opportunity, he understands that his three weeks of unwavering commitment have achieved something unprecedented - earning respect and opportunity through character rather than currency. The weight of representing not just his own dreams but the potential of every talented young person denied opportunity by economic circumstances settles on his shoulders, transforming personal achievement into a chance to challenge the fundamental assumptions about who deserves access to excellence.
 
 <<set $CoachSharma_Complete = true>>

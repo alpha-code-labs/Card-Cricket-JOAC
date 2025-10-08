@@ -28,10 +28,11 @@ position: -94,-392
 
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
-
+<<HideCharacter>>
 // Scene Setup - Day 1 at the general store during evening rush
 After overhearing his mother discuss the struggles of local shopkeepers facing competition from larger stores, Raju chooses to visit Agarwal Uncle's general store during the busy evening hours to see if the hardworking merchant might need assistance.
 
+<<HideCharacter>>
 The cramped interior of Agarwal Uncle's general store buzzes with evening activity as customers squeeze between narrow aisles lined floor-to-ceiling with everything from cooking oil to school supplies, while the shopkeeper himself moves constantly between weighing grains, calculating prices, and managing the steady stream of neighborhood residents who depend on his store for daily necessities. The controlled chaos of inventory management and customer service creates an atmosphere of barely contained stress, with Agarwal Uncle's furrowed brow suggesting that even his decades of experience are being tested by today's particularly demanding rush.
 
 <<SetCharacterExpression "AgarwalUncle" "Sad">>
@@ -58,7 +59,10 @@ AgarwalUncle: You really want to learn about shopkeeping? Even knowing how deman
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm not afraid of hard work or demanding customers, uncle. My father always says that honest business is the backbone of any community, and I want to understand what that really means.
 
+
+
 // Scene Conclusion
+<<HideCharacter>>
 As Raju exits the crowded general store with the sounds of ongoing commerce and customer negotiations filling his ears, he carries both deep appreciation for the complexity of retail operations and strengthened determination to prove that his offer represents genuine commitment to learning rather than casual curiosity. The intricate balance of inventory management, customer service, and financial precision has revealed the sophisticated multitasking that successful shopkeeping requires, while Agarwal Uncle's initial skepticism about his capabilities has only intensified his resolve to demonstrate reliability and business acumen.
 
 <<set $AgarwalUncle_Day = 2>>
@@ -72,10 +76,11 @@ position: 423,-115
 
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
-
+<<HideCharacter>>
 // Scene Setup - Day 2 during morning restocking
 Despite yesterday's introduction to the demanding world of retail commerce, Raju chooses to return during the morning restocking period, hoping to observe how Agarwal Uncle organizes inventory and prepares for the day's business.
 
+<<HideCharacter>>
 The general store emanates methodical efficiency in the early morning as Raju arrives to find Agarwal Uncle systematically checking deliveries, updating price lists, and arranging products with the precision of someone who understands that organization prevents chaos during peak shopping hours. The peaceful atmosphere contrasts dramatically with yesterday's customer rush, revealing the careful planning and systematic preparation that enables successful retail service when demand intensifies throughout the day.
 
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
@@ -105,7 +110,9 @@ Raju: That's incredible, uncle. You built all this expertise through dedication 
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
 AgarwalUncle: You keep expressing interest in helping, but retail assistance means different responsibilities. What exactly do you think you could contribute to established business operations?
 
+
 // Scene Conclusion
+<<HideCharacter>>
 As their second conversation concludes with Agarwal Uncle's direct inquiry about the nature of his potential contribution, Raju recognizes that his persistent offers of assistance have progressed beyond polite dismissal into serious evaluation, creating both opportunity and obligation to articulate a clear vision for how his involvement could genuinely benefit the established retail operation. The revelation of the shopkeeper's personal journey from inexperienced inheritance to business mastery has transformed his motivation from simple helpfulness into genuine respect for someone who built expertise through necessity and dedication.
 
 <<set $AgarwalUncle_Day = 3>>
@@ -164,6 +171,7 @@ AgarwalUncle: Very well. But you start with basic counting and organizing only. 
 Raju: Thank you for trusting me, uncle! I'll be the most careful and systematic assistant you've ever had for inventory work.
 
 // Scene Conclusion
+<<HideCharacter>>
 As Raju begins his introduction to retail inventory management under Agarwal Uncle's careful supervision, both understand that his choice to focus on organizational systems represents a commitment to understanding the foundational structure of successful business operations rather than seeking more visible customer-facing roles. The decision to start with basic counting and organization reflects both his respect for the complexity of inventory control and the shopkeeper's willingness to invest in teaching someone who demonstrates genuine interest in mastering systematic business practices.
 
 <<set $AgarwalUncle_Day = 4>>
@@ -191,6 +199,7 @@ AgarwalUncle: Customer relations determine whether a small business survives or 
 Raju: I won't disappoint you, uncle! Every customer will receive honest, respectful service that reflects the high standards you've maintained for twenty years.
 
 // Scene Conclusion
+<<HideCharacter>>
 As Raju prepares to take on customer service responsibilities that will put him in direct contact with the people whose loyalty determines Agarwal Uncle's business success, both recognize that his choice represents a desire to understand the human relationship aspect of retail operations while accepting significant responsibility for maintaining the trust and reputation built over decades. The decision to entrust him with customer interactions reflects growing confidence in his maturity and genuine commitment to upholding the store's established standards of service.
 
 <<set $AgarwalUncle_Day = 4>>
@@ -218,6 +227,7 @@ AgarwalUncle: Interesting approach. Very well - observe everything, take notes, 
 Raju: I'll approach this systematically, uncle! Every observation will be based on careful study and practical benefit to your established business.
 
 // Scene Conclusion
+<<HideCharacter>>
 As Raju embarks on his systematic analysis of retail operations with the goal of identifying efficiency opportunities, both participants understand that his choice represents an unusual approach that combines respect for Agarwal Uncle's decades of experience with confidence in his ability to contribute strategic insights. The decision to focus on operational efficiency rather than direct labor reflects his belief that intellectual contribution might prove as valuable as physical assistance, while the shopkeeper's willingness to consider outside perspectives demonstrates openness to innovation despite his years of established practices.
 
 <<set $AgarwalUncle_Day = 4>>
@@ -264,6 +274,7 @@ Raju: I understand, uncle. But I believe that helping your business succeed will
 AgarwalUncle: Your attitude is promising, beta. Now let's see if your performance matches your commitment. The evening rush starts in two hours.
 
 // Scene Conclusion
+<<HideCharacter>>
 As the pre-evening preparation intensifies with Raju taking on his designated responsibilities while Agarwal Uncle maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching evening rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain accuracy and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $AgarwalUncle_Day = 5>>
@@ -298,6 +309,7 @@ Raju: I understand, uncle. But I believe that helping your business succeed will
 AgarwalUncle: Your attitude is promising, beta. Now let's see if your performance matches your commitment. The evening rush starts in two hours.
 
 // Scene Conclusion
+<<HideCharacter>>
 As the pre-evening preparation intensifies with Raju taking on his designated responsibilities while Agarwal Uncle maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching evening rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain accuracy and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $AgarwalUncle_Day = 5>>
@@ -332,6 +344,7 @@ Raju: I understand, uncle. But I believe that helping your business succeed will
 AgarwalUncle: Your attitude is promising, beta. Now let's see if your performance matches your commitment. The evening rush starts in two hours.
 
 // Scene Conclusion
+<<HideCharacter>>
 As the pre-evening preparation intensifies with Raju taking on his designated responsibilities while Agarwal Uncle maintains his supervisory role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching evening rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain accuracy and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $AgarwalUncle_Day = 5>>
@@ -365,6 +378,7 @@ Raju: I'm ready for whatever challenge you have, uncle. Working here has shown m
 AgarwalUncle: Then let's see if you can maintain yesterday's quality while handling increased responsibility. Our customers depend on us to deliver excellence consistently.
 
 // Scene Conclusion
+<<HideCharacter>>
 As the second day of collaboration unfolds with expanded responsibilities and higher expectations, both Raju and Agarwal Uncle recognize that they are moving beyond the experimental phase into a potentially sustainable working relationship that could benefit both his education and the store's operations. The progression from basic assistance to more complex tasks reflects growing mutual trust and competence, while the continued emphasis on customer satisfaction reinforces the understanding that personal success must always serve the larger goal of business excellence and community service.
 
 <<set $AgarwalUncle_Day = 6>>
@@ -409,6 +423,7 @@ AgarwalUncle: Then we both benefit perfectly - you gain practical business exper
 <<PlayBackgroundMusic Emotional_1 >>
 
 // Scene Conclusion
+<<HideCharacter>>
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the broader community, Raju and Agarwal Uncle understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and experiential differences to create partnerships that strengthen both individuals and the local economic ecosystem they serve together.
 
 <<set $AgarwalUncle_Complete = true>>

@@ -59,7 +59,7 @@ Pinky: When you're studying alone most of the time, you learn to be your own tea
 
 <<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju packs his books and prepares to leave the library with Pinky's clear mathematical explanation still resonating in his mind, he realizes that he has encountered something rare - a peer who combines academic excellence with the ability to teach complex concepts in understandable terms. The brief interaction has transformed his frustration with quadratic equations into genuine comprehension, while revealing that behind Pinky's serious demeanor lies both exceptional intelligence and a dedication to learning that surpasses anything he has observed among his classmates.
 
 <<set $Pinky_Day = 2>>
@@ -105,7 +105,7 @@ Raju: You really love learning, don't you? Not just for tests, but because knowl
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Knowledge is power. When you understand how things work, you can fix them. Whether it's mathematical equations or human bodies, the principles are similar - careful observation, logical analysis, systematic solutions.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their second tutoring session concludes with Raju's growing mastery of mathematical problem-solving and Pinky's evident joy in sharing knowledge despite her underlying emotional concerns, both students begin to recognize that their academic collaboration serves purposes beyond mere homework completion. The partnership has revealed intellectual compatibility and mutual respect that transcends their different backgrounds and goals, while hinting at deeper personal struggles that each faces in pursuing their educational dreams against family expectations and social pressures.
 
 <<set $Pinky_Day = 3>>
@@ -155,7 +155,7 @@ Pinky: Your father wants you to focus only on studies, my parents want me to aba
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: How should we approach this challenge? What's the best way to prove that our dreams and academic success can work together?
 
-// Scene Conclusion
+<<HideCharacter>>
 As both students confront the reality that their individual dreams face similar family opposition despite completely different goals - athletics versus medicine, parental over-protection versus premature marriage expectations - they discover a profound bond based on shared struggle against circumstances that would limit their potential. The revelation of Pinky's impending engagement transforms their academic partnership into something deeper, creating mutual understanding between two young people whose families' well-intentioned concerns threaten to derail carefully cultivated ambitions and exceptional abilities.
 
 -> Raju: Let's focus completely on academics, Pinky. Excellence in exams is our best weapon against family pressure.
@@ -192,7 +192,7 @@ Raju: Your systematic methods are working perfectly. I'm understanding concepts 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: When we achieve top scores through systematic preparation, neither your father nor my parents can dismiss our capabilities. Excellence speaks louder than family expectations.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their collaborative approach to academic preparation takes shape through Pinky's systematic study schedules and Raju's enthusiastic adoption of organized learning methods, both students discover that their partnership generates better results than either could achieve individually. The strategic focus on measurable academic excellence creates concrete goals that serve both their different needs while building confidence that outstanding exam performance might indeed provide the evidence needed to convince skeptical families that their dreams deserve support rather than opposition.
 
 <<set $Pinky_Day = 4>>
@@ -222,7 +222,7 @@ Raju: Every time you explain a concept to me, you prove that you have the mind o
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: You're right. My abilities are real, my preparation is solid, and my dreams deserve to be pursued. With your support, I feel strong enough to fight for my future.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their emotional support for each other's dreams strengthens both students' resolve to resist family pressure and pursue their individual goals, the library becomes more than a study space - it transforms into a sanctuary where mutual encouragement provides the psychological foundation needed to maintain hope despite external opposition. Raju's recognition of Pinky's natural teaching abilities and her acknowledgment of his genuine support create a partnership based on emotional understanding rather than just academic collaboration, building confidence that transcends their individual circumstances.
 
 <<set $Pinky_Day = 4>>
@@ -252,7 +252,7 @@ Raju: This partnership approach is perfect. I understand mathematics better beca
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Our collaboration proves that individual dreams don't have to compete with each other. When smart people work together strategically, everyone benefits. This is exactly how we'll overcome family limitations.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their collaborative study approach evolves into a sophisticated partnership that enhances both students' academic performance through mutual support and strategic cooperation, Raju and Pinky discover that working together produces better results than either could achieve alone. The symbiotic relationship between teaching and learning creates a model for how individual excellence can be strengthened rather than diminished by helping others succeed, while their combined success provides concrete evidence that cooperation rather than competition offers the most effective path toward overcoming the barriers that separate talent from opportunity.
 
 <<set $Pinky_Day = 4>>
@@ -305,7 +305,7 @@ Raju: Look - I got this right without help. Your teaching methods are working, e
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And explaining concepts to you helps me organize my own knowledge more clearly. Our partnership is actually making both of us stronger, not dividing our attention.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the pre-exam pressure tests their partnership's resilience and reveals both students' capacity to support each other through high-stakes stress, their collaboration demonstrates that mutual assistance enhances rather than compromises individual performance even under the most demanding circumstances. The application of systematic thinking to stress management and the integration of cricket coaching wisdom with academic preparation show how cross-disciplinary insights strengthen their approach, while their continued success despite mounting pressure validates the partnership's effectiveness as they approach the critical exams that will determine their futures.
 
 <<set $Pinky_Day = 5>>
@@ -347,7 +347,7 @@ Raju: Look at how much I've improved through your teaching. That's concrete proo
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: You're right. My skills have tangible results, my preparation is thorough, and my dreams are worth fighting for. With your support, I feel ready to face whatever comes.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their emotional support system proves its value under the intense pressure of approaching exams, both students discover that encouragement and belief create resilience that pure academic preparation alone cannot provide. Their partnership demonstrates how mutual support transforms individual struggle into shared strength, while their continued progress despite mounting stress validates the importance of emotional foundation in achieving academic excellence under high-stakes conditions.
 
 <<set $Pinky_Day = 5>>
@@ -389,7 +389,7 @@ Raju: Our partnership is proving that cooperation creates better results than co
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: This collaborative approach is working beautifully. We're demonstrating that mutual support enhances individual achievement rather than compromising it.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their collaborative partnership proves its effectiveness under examination pressure, both students discover that strategic cooperation creates resilience and enhanced performance that neither could achieve through isolated effort. Their systematic approach to mutual support demonstrates how properly structured collaboration strengthens both participants while providing concrete evidence that their partnership model offers superior results compared to traditional competitive academic environments.
 
 <<set $Pinky_Day = 5>>
@@ -433,7 +433,7 @@ Raju: We've both proven that this week. Your strategic study methods have improv
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Win or lose tomorrow, this partnership has been the most rewarding academic experience of my school career. You've helped me understand that knowledge becomes more powerful when it's shared.
 
-// Scene Conclusion
+<<HideCharacter>>
 As their final preparation session concludes with both students having demonstrated remarkable academic progress while maintaining their individual goals, Raju and Pinky understand that tomorrow's exams represent more than academic evaluation - they embody tests of whether passion and responsibility can truly coexist when supported by strategic thinking and mutual collaboration. The partnership has transformed both participants while creating a model for how students can support each other's dreams rather than competing for limited recognition or resources.
 
 <<set $Pinky_Day = 6>>
@@ -486,9 +486,9 @@ Raju: Your systematic teaching methods didn't just improve my grades - they show
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And your questions forced me to understand concepts at a deeper level while showing me that knowledge becomes more meaningful when it's used to help others achieve their goals.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideCharacter>>
 As their final meeting concludes with both students having achieved remarkable success that validates their strategic partnership while securing family support for their individual dreams, Raju and Pinky understand that they have accomplished something more significant than academic improvement - they have demonstrated that collaboration enhances rather than diminishes individual excellence while creating supportive relationships that help talented young people overcome systemic barriers to opportunity. Their friendship has transformed both participants while providing a model for how shared struggle can generate mutual success rather than zero-sum competition.
 
 <<set $Pinky_Complete = true>>

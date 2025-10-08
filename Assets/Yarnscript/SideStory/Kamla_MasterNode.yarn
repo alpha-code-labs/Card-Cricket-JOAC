@@ -26,7 +26,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 1 Morning
@@ -71,7 +71,9 @@ Kamla: Young master, my son is here to learn about different kinds of work. He'l
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Ignore words like that, beta. People who talk down to others usually do it because they're insecure about their own worth. Our struggles have taught us things that boy will never understand.
 
-// Scene Conclusion
+
+
+<<HideAllCharacters>> 
 As Raju and his mother walk home from the high-rise complex with the day's wages earned through dignity and hard work, he carries not just the weight of their meager earnings but a deeper understanding of the social forces that judge people by their economic circumstances rather than their character. Kamla's quiet strength in the face of casual cruelty has taught him something valuable about maintaining self-respect in a world that often offers little respect in return.
 
 <<set $Kamla_Day = 2>>
@@ -82,7 +84,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 2 Evening
@@ -120,7 +122,7 @@ Kamla: I'll support your dreams, Raju. Quietly, because your father needs time t
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you, Ma. I promise I won't let you down. I'll make our family proud.
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju prepares for sleep with his mother's words of support and belief echoing in his heart, he understands that he has received something more valuable than any expensive equipment or coaching - the unwavering faith of someone who knows his character intimately and believes in his potential despite all external obstacles. Her promise of quiet but constant support provides a foundation of confidence that will sustain him through future challenges and rejections.
 
 <<set $Kamla_Day = 3>>
@@ -131,7 +133,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Scene Setup - Day 3 Morning
@@ -173,7 +175,7 @@ Raju: Every morning I want to help you first, Ma. Let me show you that I underst
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Your willingness to sacrifice for family shows me the kind of man you're becoming, beta. This devotion will serve you well in all your dreams.
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju demonstrates his complete commitment to family priorities over personal desires, Kamla observes with growing pride that her son's character development reflects values that will serve him well in any pursuit he chooses to follow. His willingness to sacrifice immediate gratification for family responsibility reveals a maturity that transforms her view of his cricket dreams from childish fantasy into potentially achievable goals built on solid moral foundation.
 
 <<set $Kamla_Day = 4>>
@@ -196,7 +198,7 @@ Raju: See Ma? I can handle family needs and still have energy for cricket. They 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: You're showing me something important - that dreams can make you more responsible, not less. This balance gives me confidence in your choices.
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju successfully demonstrates that his cricket passion enhances rather than diminishes his family commitment, Kamla begins to see that his approach to balancing competing priorities reflects genuine maturity rather than mere compliance. His ability to find energy for both responsibilities and dreams suggests a level of character development that transforms her understanding of what his cricket ambitions might realistically achieve.
 
 <<set $Kamla_Day = 4>>
@@ -219,7 +221,7 @@ Raju: Every successful athlete I've heard about started by being reliable at hom
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Your determination is remarkable, beta. You're approaching dreams like a man, not a child. This seriousness makes me want to understand your cricket better.
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju articulates his cricket dreams with the maturity of someone who understands that success requires character as much as talent, Kamla finds herself taking his ambitions more seriously than she ever expected. His sophisticated understanding of the relationship between personal responsibility and athletic achievement suggests that his cricket goals might be grounded in realistic planning rather than wishful thinking.
 
 <<set $Kamla_Day = 4>>
@@ -239,7 +241,7 @@ title: Kamla_Day4
 title: Kamla_Day4a
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path A: Complete Family Dedication
@@ -256,7 +258,7 @@ Kamla: Your devotion these days has shown me something beautiful, beta. Now let 
 title: Kamla_Day4b
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path B: Balanced Approach
@@ -273,7 +275,7 @@ Kamla: Your balanced approach has impressed me, beta. Now let me show you the re
 title: Kamla_Day4c
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 4 - Path C: Cricket with Character
@@ -290,7 +292,7 @@ Kamla: Your serious approach to cricket has caught my attention, beta. Let me sh
 title: Kamla_Revelation
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 
 // Day 4 - The Mehta Household Visit
 After three days of voluntarily helping his mother and demonstrating growing maturity, Raju accompanies Kamla to the wealthy Mehta household, witnessing the stark contrast between their poverty and others' abundance.
@@ -325,7 +327,7 @@ Kamla: Then prove it. Show me that your cricket makes you more responsible, not 
 
 <<SetBGSprite HutInterior>>
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju and Kamla walk home from the Mehta household with new understanding of both the challenges they face and the possibilities that determined effort might create, the conversation has transformed from cautious skepticism about cricket dreams into conditional support based on demonstrated character. The exposure to extreme wealth has clarified the stakes involved while Raju's consistent responsibility has earned him the chance to prove that athletic ambition and family duty can indeed strengthen each other.
 
 <<set $Kamla_Day = 5>>
@@ -335,7 +337,7 @@ As Raju and Kamla walk home from the Mehta household with new understanding of b
 title: Kamla_Day5
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite LocalMarket>>
 
 // Day 5 - The Cricket Ball Purchase
@@ -381,7 +383,7 @@ Kamla: You already make me proud, beta. Every day when you help with chores with
 
 <<SetBGSprite HutInterior>>
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As Raju and Kamla walk home from the market with the precious cricket ball representing far more than sporting equipment - it embodies a mother's faith, sacrifice, and investment in her son's dreams despite their desperate circumstances. The weight of her trust and the magnitude of her sacrifice settle into Raju's consciousness, transforming the leather ball into a sacred object that carries the responsibility to honor both her belief and the family resources invested in his potential.
 
 <<set $Kamla_Day = 6>>
@@ -391,7 +393,7 @@ As Raju and Kamla walk home from the market with the precious cricket ball repre
 title: Kamla_Day6
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 6 - The Results
@@ -426,7 +428,7 @@ Raju: So you really believe in my cricket dreams now? You think they could becom
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: I believe in you, beta. I believe in your character, your work ethic, your dreams, and your ability to make them reality while staying true to who you are. Cricket is just one way that might happen.
 
-// Scene Conclusion
+<<HideAllCharacters>> 
 As the conversation about cricket success transitions into deeper affirmations of Raju's inherent worth and potential, both mother and son understand that something fundamental has shifted in their relationship - from cautious support to wholehearted belief in possibilities that once seemed impossibly distant. The investment in the cricket ball has already paid dividends in confidence and performance, validating Kamla's decision to sacrifice immediate needs for long-term potential.
 
 <<set $Kamla_Day = 7>>
@@ -436,7 +438,7 @@ As the conversation about cricket success transitions into deeper affirmations o
 title: Kamla_Day7
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
 // Day 7 - The Promise
@@ -474,9 +476,9 @@ Raju: I promise I won't let you down, Ma. I'll make our whole family proud - not
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Beta, you already have made me proud. Every morning when you chose to help before cricket, every moment when you showed that dreams and responsibility can work together - you've already given me more pride than any trophy could.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideAllCharacters>> 
 As Raju settles into sleep carrying his mother's unconditional promise of support and belief in his cricket dreams, he understands that he has received something more precious than any material advantage - the absolute faith of someone who knows his character intimately and believes in his potential to achieve greatness while remaining true to his values. Kamla's commitment represents not just support for his athletic goals but validation of his worth as a person capable of transforming dreams into reality through dedication and integrity.
 
 <<set $Kamla_Complete = true>>

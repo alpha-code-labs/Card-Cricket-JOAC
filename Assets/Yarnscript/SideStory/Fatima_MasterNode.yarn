@@ -57,7 +57,7 @@ Fatima: You really want to help? Even knowing how hot and chaotic it gets here? 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm not afraid of hard work, aunty. My mother taught me that honest labor is something to be proud of, not to run away from.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju leaves the dhaba with the sounds and smells of busy restaurant service still filling his senses, he carries both admiration for Fatima's skill under pressure and determination to prove that his offer of help represents genuine commitment rather than casual curiosity. The complexity of managing food preparation, customer service, and business operations simultaneously has opened his eyes to the sophisticated multitasking that successful restaurant ownership requires, while Fatima's initial skepticism about his capabilities has only strengthened his resolve to demonstrate reliability and usefulness.
 
 <<set $Fatima_Day = 2>>
@@ -103,7 +103,7 @@ Raju: That's exactly why I want to help, aunty. Even small assistance could give
 <<SetCharacterExpression "Fatima" "Quizzical">>
 Fatima: You keep saying you want to help, but help means different things to different people. What exactly do you think you could contribute to a business like this?
 
-// Scene Conclusion
+<<HideCharacter>>
 As their second conversation concludes with Fatima's direct question about the nature of his potential contribution, Raju understands that his persistent offers of assistance have moved beyond polite rejection into serious consideration, creating both opportunity and responsibility to articulate a clear vision for how his involvement could genuinely benefit her struggling business. The revelation of her personal challenges and family responsibilities has transformed his motivation from casual helpfulness into genuine commitment to supporting someone whose success or failure affects multiple dependents.
 
 <<set $Fatima_Day = 3>>
@@ -161,7 +161,7 @@ Fatima: Very well. But you start with vegetable preparation only. No cooking nea
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you for the chance, aunty! I'll be the most careful and attentive assistant you've ever had.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju begins his introduction to restaurant food preparation under Fatima's watchful guidance, both understand that his choice to focus on cooking skills represents a commitment to understanding the technical foundation of her business rather than seeking easier supportive roles. The decision to start with basic vegetable preparation reflects both his respect for the complexity of professional cooking and Fatima's willingness to invest in teaching someone who demonstrates genuine interest in mastering the craft rather than simply helping with immediate tasks.
 
 <<set $Fatima_Day = 4>>
@@ -188,7 +188,7 @@ Fatima: Customer relations can make or break a small business. Very well - you c
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I won't let you down, aunty! Every customer will leave here feeling valued and satisfied with their experience.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju prepares to take on customer service responsibilities that will put him in direct contact with the people whose satisfaction determines Fatima's business success, both recognize that his choice represents a desire to understand the human side of restaurant operations while taking on the significant responsibility of representing her establishment's values and quality standards. The decision to trust him with customer interactions reflects Fatima's growing confidence in his maturity and genuine commitment to her business's welfare.
 
 <<set $Fatima_Day = 4>>
@@ -215,7 +215,7 @@ Fatima: Interesting approach. Very well - observe everything, take notes, and we
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll approach this scientifically, aunty! Every suggestion will be based on careful observation and practical benefit to your business.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju embarks on his systematic analysis of dhaba operations with the goal of identifying efficiency improvements, both participants understand that his choice represents an unusual approach that combines respect for Fatima's experience with confidence in his ability to contribute strategic insights. The decision to focus on workflow optimization rather than direct labor reflects his belief that intellectual contribution might prove as valuable as physical assistance, while Fatima's willingness to consider outside perspectives demonstrates openness to innovation despite her years of established practices.
 
 <<set $Fatima_Day = 4>>
@@ -259,7 +259,7 @@ Raju: I understand, aunty. But I believe that helping you succeed will teach me 
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises. The lunch rush starts in one hour.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the pre-lunch preparation intensifies with Raju taking on his designated responsibilities while Fatima maintains her oversight role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching lunch rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -292,7 +292,7 @@ Raju: I understand, aunty. But I believe that helping you succeed will teach me 
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises. The lunch rush starts in one hour.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the pre-lunch preparation intensifies with Raju taking on his designated responsibilities while Fatima maintains her oversight role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching lunch rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -325,7 +325,7 @@ Raju: I understand, aunty. But I believe that helping you succeed will teach me 
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises. The lunch rush starts in one hour.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the pre-lunch preparation intensifies with Raju taking on his designated responsibilities while Fatima maintains her oversight role, both understand that the next few hours will provide definitive evidence of whether his assistance represents genuine value or well-meaning interference. The approaching lunch rush creates mounting pressure that will test not only his technical abilities but also his capacity to maintain quality and composure when customer satisfaction and business reputation depend on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -357,7 +357,7 @@ Raju: I'm ready for whatever challenge you have, aunty. Working here has shown m
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Then let's see if you can maintain yesterday's quality while handling increased responsibility. The customers are counting on us to deliver excellence every single time.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the second day of collaboration unfolds with expanded responsibilities and higher expectations, both Raju and Fatima recognize that they are moving beyond the experimental phase into a potentially sustainable working relationship that could benefit both his education and her business operations. The progression from basic assistance to more complex tasks reflects growing mutual trust and competence, while the continued emphasis on customer satisfaction reinforces the understanding that personal success must always serve the larger goal of business excellence.
 
 <<set $Fatima_Day = 6>>
@@ -398,9 +398,9 @@ Raju: That's incredibly generous, aunty! But more than the money, I value what I
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Then we both benefit - you gain practical business experience that will serve you well in any future career, and I gain a reliable partner who understands that customer satisfaction is the foundation of sustainable success.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideCharacter>>
 As their conversation concludes with the formalization of a working relationship that benefits both participants while serving the larger community, Raju and Fatima understand that they have created something more valuable than temporary assistance - they have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and circumstantial differences to create partnerships that strengthen both individuals and the communities they serve.
 
 <<set $Fatima_Complete = true>>
