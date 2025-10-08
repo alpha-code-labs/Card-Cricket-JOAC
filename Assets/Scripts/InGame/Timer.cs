@@ -274,9 +274,30 @@ public class Timer : MonoBehaviour
         currentTimerCoroutine = null;
         timerText.color = Color.red;
         timerText.text = "Time's Up!";
-        
-        CardsPoolManager.Instance.EndTurn(true);
-        yield return new WaitForSeconds(3f);
-        CardsPoolManager.Instance.StartTurn(true);
+        yield return new WaitForSeconds(1f);
+        timerText.text = "";
+       if (ScoreManager.Instance != null)
+        {
+            Debug.Log("Time's up! Losing a wicket.");
+            ScoreManager.Instance.LooseWicket();
+
+            // Show timeout message (optional)
+            if (overInfoPanel != null && overInfoText != null)
+            {
+                overInfoText.text = "TIMEOUT - WICKET LOST!";
+                overInfoPanel.SetActive(true);
+                yield return new WaitForSeconds(2f);
+                overInfoPanel.SetActive(false);
+            }
+        }
+        if (ScoreManager.Instance.getCurrentWickets() > 0)
+        {
+            CardsPoolManager.Instance.EndTurn(true);
+            yield return new WaitForSeconds(1f);
+            CardsPoolManager.Instance.StartTurn(true);
+        }
+        // CardsPoolManager.Instance.EndTurn(true);
+        // yield return new WaitForSeconds(3f);
+        // CardsPoolManager.Instance.StartTurn(true);
     }
 }
