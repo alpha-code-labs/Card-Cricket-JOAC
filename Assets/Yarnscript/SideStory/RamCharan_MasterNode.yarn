@@ -18,12 +18,15 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
+
 // Scene Setup - Day 1 at the library
+<<HideCharacter>>
 Seeking a quiet place to read and study away from the noise and distractions of his crowded home, Raju chooses to visit the school library, hoping to find both educational resources and peaceful atmosphere for improving his academic performance.
 
+<<HideCharacter>>
 The hushed atmosphere of the school library envelops Raju as he steps through its doors, the smell of aging paper and quiet learning creating a sanctuary of knowledge that contrasts sharply with the chaos and constant noise of his overcrowded home. Tall shelves lined with books stretch toward the ceiling like guardians of wisdom, while the soft filtering of afternoon light through dusty windows creates an almost sacred quality that makes him understand why some people dedicate their lives to the pursuit of learning and the preservation of knowledge.
 
 <<SetCharacterExpression "RamCharan" Angry>>
@@ -50,7 +53,9 @@ Raju: I understand, sir. I'm sorry for disturbing you.
 <<SetCharacterExpression "RamCharan" Angry>>
 RamCharan: Understanding and action are different things, boy. Prove your seriousness through behavior, not words. This library doesn't need another sports-obsessed student who treats education as secondary to entertainment.
 
+
 // Scene Conclusion
+<<HideCharacter>>
 As Raju exits the library with Ram Charan's harsh words ringing in his ears, he feels the familiar sting of having his dreams dismissed as childish fantasies by an adult who sees only the conflict between academic achievement and athletic pursuits. The librarian's passionate defense of learning resonates with something deep within him, even as the rejection wounds his pride and forces him to confront the uncomfortable question of whether pursuing cricket truly represents an escape from serious responsibilities or a legitimate path toward a meaningful future.
 
 <<set $RamCharan_Day = 2>>
@@ -61,12 +66,15 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
+
 // Scene Setup - Day 2 at the library
+<<HideCharacter>>
 Despite yesterday's harsh rejection and public humiliation, Raju chooses to return to the library, determined to prove that his interest in learning is genuine and persistent.
 
+<<HideCharacter>>
 The library's familiar quiet embraces Raju as he returns for the second day, his determination to prove his intellectual seriousness strengthened rather than weakened by yesterday's confrontation with Ram Charan. The rows of books seem less intimidating today and more like allies in his quest to demonstrate that academic curiosity and athletic passion can coexist within the same person, though he knows that earning the librarian's respect will require more than simple persistence - it will demand genuine engagement with learning for its own sake.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
@@ -118,7 +126,9 @@ RamCharan: Very well. Come back tomorrow. If your intellectual curiosity is genu
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you, sir. I won't disappoint you.
 
+
 // Scene Conclusion
+<<HideCharacter>>
 As Raju leaves the library with Ram Charan's challenge accepted and the promise of advanced academic materials awaiting him tomorrow, he feels the exhilaration of someone who has chosen to prove himself through intellectual rigor rather than defensive arguments. His decision to embrace the most demanding path available reflects a growing understanding that true confidence comes not from avoiding difficult tests but from meeting them head-on with the same determination he brings to mastering cricket techniques.
 
 <<set $RamCharan_Day = 3>>
@@ -144,7 +154,9 @@ RamCharan: Mature thinking for someone your age. Come back tomorrow. If you're s
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll be here, sir. Thank you for considering my perspective.
 
+
 // Scene Conclusion
+<<HideCharacter>>
 As Raju departs the library with Ram Charan's intrigued acknowledgment of his mature approach to balancing competing interests, he feels the satisfaction of someone whose thoughtful perspective has earned respect rather than dismissal. His choice to seek integration rather than choosing sides reflects a wisdom beyond his years and sets the stage for tomorrow's revelation about how intellectual discipline and passionate pursuits might actually enhance rather than compete with each other.
 
 <<set $RamCharan_Day = 3>>
@@ -170,7 +182,9 @@ RamCharan: Interesting approach. Come back tomorrow. If your willingness to serv
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Thank you for the opportunity, sir. I won't let you down.
 
+
 // Scene Conclusion
+<<HideCharacter>>
 As Raju leaves the library with the opportunity to earn his place through humble service rather than grand gestures or defensive arguments, he understands that his willingness to work without immediate recognition has impressed Ram Charan in ways that academic prowess alone might not have achieved. His choice of the service path reflects a maturity that recognizes respect must be earned through consistent action rather than claimed through words or credentials.
 
 <<set $RamCharan_Day = 3>>
@@ -190,12 +204,15 @@ title: RamCharan_Day3
 title: RamCharan_Day3a
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
+
 // Day 3 - Path A: Academic Challenge
+<<HideCharacter>>
 Raju returns determined to prove his intellectual capacity through rigorous academic engagement with challenging materials.
 
+<<HideCharacter>>
 The library welcomes Raju for his third consecutive day as he arrives prepared to engage with whatever intellectual challenges Ram Charan has prepared for him, his mind focused and eager despite the uncertainty of what advanced materials await. His consistent return demonstrates a level of academic commitment that goes beyond proving a point to the librarian - it reflects a genuine hunger for knowledge that parallels his passion for cricket, suggesting that his earlier claims about balancing both pursuits might contain more substance than even he initially realized.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -210,12 +227,15 @@ Raju: I'm ready to learn whatever you want to teach me, sir.
 title: RamCharan_Day3b
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
+
 // Day 3 - Path B: Balance and Integration
+<<HideCharacter>>
 Raju returns hoping to learn how to authentically balance his dual interests in cricket and academics.
 
+<<HideCharacter>>
 The library atmosphere carries an air of anticipation as Raju arrives for his third day, eager to understand how Ram Charan's promised revelation about integration might transform his understanding of the relationship between academic achievement and athletic passion. His balanced approach to earning the librarian's respect has opened doors to insights that might resolve the apparent conflict between intellectual development and cricket dreams that has troubled him since yesterday's initial confrontation.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -230,12 +250,15 @@ Raju: I'm ready to learn, sir. Please show me what you mean.
 title: RamCharan_Day3c
 tags:
 ---
-<<PlayBackgroundMusic Light_1>>
+<<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
+
 // Day 3 - Path C: Service and Humility
+<<HideCharacter>>
 Raju returns ready to demonstrate his commitment through humble service and careful attention to library work.
 
+<<HideCharacter>>
 The library awaits Raju's service-oriented approach as he arrives prepared to demonstrate his respect for knowledge through careful attention to the practical needs of maintaining and organizing educational resources. His willingness to earn his place through humble labor rather than demanding recognition based on potential or promises reflects a level of character development that has clearly impressed Ram Charan and opened possibilities for deeper trust and revelation.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -282,9 +305,11 @@ Raju: Thank you, sir! This is better than anything I could have hoped for. I pro
 <<SetCharacterExpression "RamCharan" "Smiling">>
 RamCharan: Remember, boy - this collection represents my own dreams transformed into support for the next generation. Use this knowledge wisely, respect these materials completely, and perhaps you'll go further than either of us dreamed possible.
 
-<<PlayBackgroundMusic Emotional_1 >>
+
+
 
 // Scene Conclusion
+<<HideCharacter>>
 As Raju leaves the library carrying both the revelation of Ram Charan's hidden cricket passion and access to professional cricket materials that will enhance his understanding of the sport, he understands that he has discovered something far more valuable than either academic resources or athletic guidance alone - he has found a mentor who embodies the successful integration of intellectual discipline and passionate pursuit. The librarian's trust and the treasure trove of cricket knowledge represent a bridge between his dual interests that he never imagined possible.
 
 <<set $RamCharan_Complete = true>>

@@ -56,7 +56,7 @@ Naresh: Hmph. Big dreams for such a small boy. But dreams don't pay academy fees
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Maybe. But without dreams, there's no reason to work toward reality.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju walks away from the academy grounds with Naresh's dismissive words ringing in his ears, he carries both the disappointment of being turned away and an unexpected determination that stems from glimpsing what professional cricket training actually looks like. The brief encounter has reinforced his understanding of the barriers that separate him from quality cricket education while simultaneously strengthening his resolve to find a way to overcome those obstacles, transforming rejection into motivation for proving that belonging can be earned through dedication rather than inherited through circumstance.
 
 <<set $Naresh_Day = 2>>
@@ -99,7 +99,7 @@ Naresh: ...Crazy kid. Standing out here in the heat just to watch cricket practi
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I would never damage anything, bhaiya. This place is too precious. Even watching from outside teaches me more about cricket than I could learn anywhere else.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the second day's interaction concludes with Naresh showing the first signs of softening toward Raju's persistent presence, both groundskeeper and aspiring cricketer begin to recognize that something unusual is developing - a grudging respect based on demonstrated seriousness rather than typical childhood mischief. Raju's analytical approach to observing cricket practice has distinguished him from other unauthorized visitors, while his respectful distance and genuine reverence for the facilities suggest a level of maturity that challenges Naresh's initial assumptions about slum children and their motivations.
 
 <<set $Naresh_Day = 3>>
@@ -237,7 +237,7 @@ title: Naresh_Day3_Continue
 tags:
 ---
 
-// Scene Conclusion
+<<HideCharacter>>
 As Naresh examines Raju's detailed cricket observations and recognizes the sophisticated analytical thinking that has produced this self-made textbook, the relationship between groundskeeper and young observer undergoes a fundamental transformation from suspicious monitoring to genuine mentorship consideration. The notebook has provided concrete evidence that validates Raju's claims about serious cricket study, while Naresh's professional experience allows him to appreciate the quality of analysis that few paying students achieve, creating the foundation for a deeper educational relationship.
 
 <<set $Naresh_Day = 4>>
@@ -339,7 +339,7 @@ Raju: You played cricket seriously, bhaiya?
 <<SetCharacterExpression "Naresh" "Smiling">>
 Naresh: District level, before life got complicated. I understand exactly what you're feeling - that hunger to improve, to understand every detail of the game. It's rare to find someone who studies cricket the way you do.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Naresh reveals his own cricket background and the circumstances that redirected his athletic ambitions into facility maintenance, both mentor and student discover a profound connection based on shared passion for cricket excellence and similar dreams deferred by economic realities. The revelation transforms their relationship from observer and authority figure into kindred spirits separated by circumstances rather than fundamental differences, while Naresh's experience provides both technical knowledge and emotional understanding of what Raju faces in pursuing cricket from disadvantaged circumstances.
 
 <<set $Naresh_Day = 6>>
@@ -391,7 +391,7 @@ Raju: That would be incredible, bhaiya! I'd learn more from your experience than
 <<SetCharacterExpression "Naresh" "Serious">>
 Naresh: Then let's start with the basics. Tomorrow, if you want to continue this cricket education, I'll show you some things that no amount of watching can teach. But remember - this stays between us.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Naresh commits to providing informal cricket instruction that transcends the institutional boundaries that have excluded Raju from formal training, both mentor and student understand that they are embarking on something that could be professionally risky for the groundskeeper while representing unprecedented opportunity for the aspiring cricketer. The promise of hands-on cricket education based on playing experience rather than theoretical knowledge creates anticipation for tomorrow's session while establishing trust that must remain carefully protected from official scrutiny.
 
 <<set $Naresh_Day = 7>>
@@ -437,7 +437,7 @@ Raju: Thank you, bhaiya. I'll never forget this kindness. And I swear on my cric
 <<SetCharacterExpression "Naresh" "Smiling">>
 Naresh: Go on then, scholar. Show me if all that watching and note-taking translated into real cricket understanding. You have thirty minutes to experience what professional cricket feels like.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju steps into the professional cricket facility that has been the object of his dreams and observations for seven days, he carries both the weight of extraordinary opportunity and the responsibility of protecting the trust that Naresh has placed in him at great personal risk. The moment represents the culmination of persistence, analytical thinking, and respectful behavior transforming institutional barriers into genuine access, while the limited time available creates pressure to absorb maximum learning from this unprecedented chance to experience cricket at the level he aspires to reach.
 
 <<set $Naresh_Complete = true>>

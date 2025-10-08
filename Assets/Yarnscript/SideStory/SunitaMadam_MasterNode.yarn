@@ -53,7 +53,7 @@ SunitaMadam: This school costs more per month than your family probably earns in
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: Yes, Ma'am. I understand. I'm sorry for disturbing you.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju walks away from the prestigious school with Sunita Madam's harsh words echoing in his mind, he carries both the sting of class-based rejection and a strengthened resolve to prove that intellectual curiosity and educational ambition cannot be contained by economic circumstances. The encounter has crystallized his understanding of the barriers that separate him from quality education while simultaneously fueling his determination to find ways around or through those obstacles, transforming humiliation into motivation.
 
 <<set $SunitaMadam_Day = 2>>
@@ -111,7 +111,7 @@ SunitaMadam: We'll see, boy. We'll see if this intellectual curiosity is genuine
 <<SetCharacterExpression "SunitaMadam" "Serious">>
 SunitaMadam: How do you plan to prove this intellectual curiosity is genuine? What approach will you take to demonstrate real commitment to learning?
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju walks away from the second encounter with his intellectual abilities acknowledged for the first time by someone from the privileged educational world, he understands that yesterday's humiliation has transformed into today's opportunity through the simple act of demonstrating knowledge rather than merely claiming it. Sunita Madam's shift from dismissive hostility to cautious interest represents a crucial breakthrough that validates his belief that merit can transcend social prejudice when properly demonstrated.
 
 <<set $SunitaMadam_Day = 3>>
@@ -153,7 +153,7 @@ Raju: Premchand shows how poverty shapes moral choices, Ma'am. His characters ar
 <<SetCharacterExpression "SunitaMadam" "Smiling">>
 SunitaMadam: Sophisticated analysis. You understand subtext and social criticism. This level of comprehension typically requires formal instruction.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju demonstrates academic capabilities that exceed Sunita Madam's expectations through sophisticated literary analysis and critical thinking, both teacher and student recognize that something significant has shifted in their relationship - from dismissive prejudice to genuine academic engagement. His choice to prove himself through intellectual rigor rather than emotional appeals has validated his belief that merit can overcome social barriers when properly demonstrated and fairly evaluated.
 
 <<set $SunitaMadam_Day = 4>>
@@ -185,7 +185,7 @@ Raju: I could help organize books, clean classroom spaces, assist with small tas
 <<SetCharacterExpression "SunitaMadam" "Smiling">>
 SunitaMadam: Your respectful attitude and willingness to serve without immediate reward shows maturity beyond your years. Perhaps there's more character here than I initially recognized.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju demonstrates his commitment through offers of humble service rather than demanding recognition based on potential alone, Sunita Madam begins to see qualities that transcend social class - reliability, respect, and genuine appreciation for educational opportunity. His approach reflects lessons learned from his mother about earning respect through consistent character, transforming what could have been seen as servility into evidence of mature understanding about how relationships and trust develop over time.
 
 <<set $SunitaMadam_Day = 4>>
@@ -217,7 +217,7 @@ Raju: I memorized poetry from library books, learned cricket techniques through 
 <<SetCharacterExpression "SunitaMadam" "Smiling">>
 SunitaMadam: Your persistence is remarkable. Most children give up when faced with significant challenges. This level of determination might indeed overcome many barriers.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju articulates his track record of overcoming obstacles through sheer determination and systematic effort, Sunita Madam begins to understand that his confidence stems not from naive optimism but from demonstrated ability to achieve goals that seemed impossible. His examples of previous successes in diverse areas - academic, athletic, and familial - provide concrete evidence that his claims about overcoming barriers through persistence reflect genuine capability rather than empty boasting.
 
 <<set $SunitaMadam_Day = 4>>
@@ -264,7 +264,7 @@ Raju: Then you'll help me learn, Ma'am? You'll give me a chance to prove that I 
 <<SetCharacterExpression "SunitaMadam" "Smiling">>
 SunitaMadam: I'm beginning to think that talent and character might indeed be more important than I initially believed. If you continue demonstrating this level of commitment and intellectual curiosity, we might find ways to support your educational development.
 
-// Scene Conclusion
+<<HideCharacter>>
 As the fourth day concludes with Sunita Madam's explicit acknowledgment of Raju's potential and her tentative commitment to supporting his educational development, both teacher and student understand that they have crossed a threshold from skeptical evaluation to genuine mentorship possibility. The transformation from initial prejudice to recognition of merit demonstrates that persistent demonstration of character and ability can indeed overcome social barriers, while the promise of continued support validates Raju's belief that education can serve as a bridge between circumstances and aspirations.
 
 <<set $SunitaMadam_Day = 5>>
@@ -315,7 +315,7 @@ Raju: Thank you, Ma'am. I won't let you down. I'll study harder than any student
 <<SetCharacterExpression "SunitaMadam" "Serious">>
 SunitaMadam: We'll see, boy. Actions matter more than promises in education. Prove to me that my growing faith in your potential isn't misplaced.
 
-// Scene Conclusion
+<<HideCharacter>>
 As Raju walks away from Wellington Estate carrying both a concrete reading list and the weight of Sunita Madam's conditional trust, he understands that the relationship has transformed from skeptical evaluation into genuine educational mentorship with real expectations and responsibilities. The books she has recommended represent more than academic materials - they embody an investment in his potential that he must validate through sustained effort and demonstrated growth, while her willingness to take professional risk on his behalf creates both opportunity and obligation.
 
 <<set $SunitaMadam_Day = 6>>
@@ -372,9 +372,9 @@ Raju: Ma'am, I don't know how to thank you properly. You've changed everything f
 <<SetCharacterExpression "SunitaMadam" "Smiling">>
 SunitaMadam: Thank me by succeeding. Show everyone that merit can triumph over circumstance when given proper support. Become the kind of student and eventually the kind of person who opens doors for others facing similar barriers.
 
-<<PlayBackgroundMusic Emotional_1 >>
 
-// Scene Conclusion
+
+<<HideCharacter>>
 As Raju prepares to leave Wellington Estate carrying not just educational support but comprehensive advocacy for his future success, he understands that Sunita Madam's transformation from prejudiced gatekeeper to passionate advocate represents more than personal growth - it embodies the possibility that systemic barriers can be overcome through persistent demonstration of merit and character. Her commitment to providing practical support for the scholarship examination validates his belief that education can serve as a bridge between circumstances and aspirations, while her challenge to become someone who opens doors for others transforms his personal success into a broader mission of social change.
 
 <<set $SunitaMadam_Complete = true>>

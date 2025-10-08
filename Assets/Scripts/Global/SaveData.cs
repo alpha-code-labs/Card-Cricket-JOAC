@@ -13,7 +13,7 @@ public class SaveData
     // Constructor with default values
     public SaveData()
     {
-        currentDate = "1988/07/18";//B-Day Scene 
+        // currentDate = "1988/07/18";//B-Day Scene 
 #if UNITY_EDITOR
         // currentDate = "1988/07/23";// Tutorial Scene
         // currentDate = "1989/01/31";// Multi Scene Day  

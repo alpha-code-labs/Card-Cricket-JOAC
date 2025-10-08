@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Card-Cricket-JOAC.sln"
+    "dotnet.defaultSolution": "Card-Cricket-JOAC.sln",
+    "dotnet.preferCSharpExtension": true
 }
