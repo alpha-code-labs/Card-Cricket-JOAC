@@ -107,7 +107,7 @@ public void StartTurn(bool incrementBalls = true)
     OnTurnStarted?.Invoke();
 }
     [ContextMenu("End Turn")]
-    public void EndTurn(bool incrementBalls = true)
+    public void EndTurn(int maxBallsToBall, bool incrementBalls = true)
     {
         // Timer.Instance.EndTurnTimer();
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
@@ -116,11 +116,13 @@ public void StartTurn(bool incrementBalls = true)
             DiscardPile.Add(card);
             card.gameObject.SetActive(false); // Optionally deactivate the card
         }
-        
+
         SetCardsInteractable(true);
         HandCards.Clear();
         // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
+        if(CurrntTurn >= maxBallsToBall)
+            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
         //StartTurn(incrementBalls); // Start the next turn
     }
     [ContextMenu("Draw Card")]

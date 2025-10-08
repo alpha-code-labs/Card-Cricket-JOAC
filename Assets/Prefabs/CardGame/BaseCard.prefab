@@ -510,10 +510,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.4
-  m_fontSizeBase: 36
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 6
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -669,6 +669,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: adb4d371a27b4ae48878da86f2adeeac, type: 3}
   - {fileID: 21300000, guid: 0e2da9c7292bc1843ba99149a5a0caed, type: 3}
   - {fileID: 21300000, guid: 9d7f21da42ef8fa4288adee6e4b6bbbd, type: 3}
+  BatterImage: {fileID: 0}
 --- !u!1 &9174045462286016537
 GameObject:
   m_ObjectHideFlags: 0

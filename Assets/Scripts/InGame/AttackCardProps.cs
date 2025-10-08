@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -42,6 +43,34 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
         energyCostText.text = cardData.EnergyCost.ToString();
     }
 
+   private string CamelCaseToTitleCase(string camelCase)
+{
+    if (string.IsNullOrEmpty(camelCase))
+        return camelCase;
+
+    // First, handle any existing spaces by splitting the string
+    string[] words = camelCase.Split(' ');
+    
+    for (int i = 0; i < words.Length; i++)
+    {
+        // For each word, insert spaces before capital letters (except the first one)
+        words[i] = Regex.Replace(words[i], "([a-z])([A-Z])", "$1 $2");
+        
+        // Also handle cases where there are consecutive capitals followed by lowercase
+        // e.g., "XMLParser" -> "XML Parser"
+        words[i] = Regex.Replace(words[i], "([A-Z]+)([A-Z][a-z])", "$1 $2");
+        
+        // Capitalize the first letter of each word
+        if (words[i].Length > 0)
+        {
+            words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
+        }
+    }
+    
+    // Join all words back together with spaces
+    return string.Join(" ", words);
+}
+
     string GetTitle()
     {
         string title = cardData.excelBattinStrategy.ToString()
@@ -54,7 +83,7 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
         if (selectedSprite != null)
             cardImage.sprite = selectedSprite;
 
-        return title;
+        return CamelCaseToTitleCase(title);
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -113,5 +142,5 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
     {
         CardsPoolManager.OnTurnStarted -= UpdateDescription;
     }
-    
+
 }
