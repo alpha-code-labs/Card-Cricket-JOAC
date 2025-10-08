@@ -38,6 +38,7 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject cardPrefab; // Assign in inspector
 
     public GameObject ballerCard;
+    public GameplayConfig gameplayConfig;
 
     public GameObject ballerCardPrefab;
     void Awake()
@@ -59,17 +60,20 @@ public class CardsPoolManager : MonoBehaviour
 
     void Start()
     {
+        gameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         StartCoroutine(WaitAndStartTurn());
     }
 
     IEnumerator WaitAndStartTurn()
     {
         yield return StartCoroutine(InitialCountdown());
-        InitTextDeck();// Initialize the deck with random cards for batiing and bowling disable to keep deck in scene
+        if(gameplayConfig != null)
+            InitTextDeck(gameplayConfig.pitchCondition); // Initialize the deck with random cards for batting and bowling disable to keep deck in scene
+        else InitTextDeck(PitchCondition.Friendly);
         InstantiateCards();
         StartTurn();
     }
-    
+
     [ContextMenu("Start Turn")]
     public void StartTurn(bool incrementBalls = true)
     {
@@ -228,32 +232,97 @@ public class CardsPoolManager : MonoBehaviour
 
 
     [ContextMenu("Init Text Deck")]
-    void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
+    // void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
+    // {
+    //     Deck.Clear();
+    //     foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
+    //     {
+    //         Deck.Add(new AttackCardData(strategy));
+    //     }
+    //     RandomizeDeck();
+    //     BallThrows.Clear();
+
+    //     //Over - Fast Bowler Right Arm (6 balls)
+    //     // Initialize bowler variables outside the loop
+    //     TypeOfBowler bowlerType = TypeOfBowler.Fast;
+    //     Side bowlerSide = Side.RightArm;
+
+    //     for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
+    //     {
+    //         // Randomize bowler type and side every 6 balls (start of each over)
+    //         if (i % 6 == 0)
+    //         {
+    //             bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
+    //             bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+    //         }
+    //         BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
+    //     }
+    // }
+
+    [ContextMenu("Init Text Deck")]
+void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
+{
+    Deck.Clear();
+    foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
     {
-        Deck.Clear();
-        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
-        {
-            Deck.Add(new AttackCardData(strategy));
-        }
-        RandomizeDeck();
-        BallThrows.Clear();
-
-        //Over - Fast Bowler Right Arm (6 balls)
-        // Initialize bowler variables outside the loop
-        TypeOfBowler bowlerType = TypeOfBowler.Fast;
-        Side bowlerSide = Side.RightArm;
-
-        for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
-        {
-            // Randomize bowler type and side every 6 balls (start of each over)
-            if (i % 6 == 0)
-            {
-                bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
-                bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
-            }
-            BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
-        }
+        Deck.Add(new AttackCardData(strategy));
     }
+    RandomizeDeck();
+    BallThrows.Clear();
+
+    // Initialize bowler variables outside the loop (will be randomized each over)
+    TypeOfBowler bowlerType = TypeOfBowler.Fast;
+    Side bowlerSide = Side.RightArm;
+    
+    for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
+    {
+        // Randomize bowler type and side every 6 balls (start of each over)
+        if (i % 6 == 0)
+        {
+            bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
+            bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+        }
+        
+        BallThrow ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+        
+        // Check if this ball is a yorker
+        if (ballThrow.ballLength == BallLength.Yorker)
+        {
+            // Check if we already have a yorker in this over
+            int startOfCurrentOver = (i / 6) * 6;
+            bool yorkerExistsInOver = false;
+            
+            for (int j = startOfCurrentOver; j < i && j < BallThrows.Count; j++)
+            {
+                if (BallThrows[j].ballLength == BallLength.Yorker)
+                {
+                   yorkerExistsInOver = true;
+                    break; 
+                }
+            }
+            
+            // If yorker already exists in this over, generate a new non-yorker ball
+            if (yorkerExistsInOver)
+            {
+                int attempts = 0;
+                do
+                {
+                    ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+                    attempts++;
+                    
+                    // Safety check to avoid infinite loop
+                    if (attempts > 50)
+                    {
+                        Debug.LogWarning($"Could not generate non-yorker after 50 attempts at ball {i + 1}, using current ball");
+                        break;
+                    }
+                } while (ballThrow.ballLength == BallLength.Yorker);
+            }
+        }
+        
+        BallThrows.Add(ballThrow);
+    }
+}
 
     /// <summary>
     /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
