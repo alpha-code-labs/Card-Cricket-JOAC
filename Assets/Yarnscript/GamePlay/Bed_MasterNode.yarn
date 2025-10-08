@@ -1,5 +1,9 @@
 ﻿title: Bed
 ---
+<<SetBGSprite black>>
+<<start_snoring>>
+<<wait 3>>
+<<start_snoring>>
 You Went To Sleep
 <<EndEvent true>>
 ===

@@ -327,6 +327,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 62ff70791944d3543b56f55e44fcd100, type: 3}
   - {fileID: 21300000, guid: a13abf4f548a63843b27a58ecdf0b7f1, type: 3}
   RankUpText: {fileID: 2075037821}
+  particleCount: 8
+  particleSpeed: 300
+  particleFadeDuration: 1
 --- !u!1001 &1095728289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,6 +484,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 0
       addedObject: {fileID: 811321998}
+    - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1840577079}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: -1
@@ -919,6 +925,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766830296}
   m_CullTransparentMesh: 1
+--- !u!1 &1840577078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1840577079}
+  - component: {fileID: 1840577080}
+  m_Layer: 5
+  m_Name: BedZZZ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1840577079
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840577078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1095728292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1840577080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840577078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c910688b505f214183db283ec2ebc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zSprite: {fileID: 21300000, guid: fb798c535f80aae4a94ae04abcd0a8b9, type: 3}
+  spawnPoint: {fileID: 1840577079}
+  spawnInterval: 1.5
+  maxZSprites: 5
+  animationDuration: 3
+  moveDistance: 200
+  scaleMultiplier: 1.5
+  moveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isSnoring: 0
+  snoringDelay: 2
 --- !u!1 &1893778455
 GameObject:
   m_ObjectHideFlags: 0

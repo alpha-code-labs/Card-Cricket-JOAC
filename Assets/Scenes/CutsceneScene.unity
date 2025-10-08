@@ -1036,6 +1036,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c9c9cb617a2dbb946bd5b4f992c1a802, type: 3}
   - {fileID: 21300000, guid: 57d398d3c499b544e989b2defd8a0e22, type: 3}
   - {fileID: 21300000, guid: 6363763ed7f6db245b6e0dd9b22e517e, type: 3}
+  - {fileID: 21300000, guid: aa316783613547f45b2104c2978c13eb, type: 3}
   leftCharacterImage: {fileID: 240849774}
   rightCharacterImage: {fileID: 421241803}
   currentBGSprite: {fileID: 1157624751}

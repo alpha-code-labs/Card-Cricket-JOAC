@@ -13,11 +13,11 @@ public class SaveData
     // Constructor with default values
     public SaveData()
     {
-        // currentDate = "1988/07/18";//B-Day Scene 
+        currentDate = "1988/07/18";//B-Day Scene . This is Game Start Date Do not Modify this ever
 #if UNITY_EDITOR
         // currentDate = "1988/07/23";// Tutorial Scene
         // currentDate = "1989/01/31";// Multi Scene Day  
-        // currentDate = "1990/03/02";//First FreeTime
+        currentDate = "1990/03/02";//First FreeTime
         // currentDate = "1990/04/15";//Last Quiz Scene
         // currentDate = "1990/04/30";// Last day of Chapter 1
         // currentDate = "1990/03/15";// Cricket Gameplay 4
