@@ -19,14 +19,11 @@ public class Timer : MonoBehaviour
     
     [Header("UI References")]
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] GameObject countdownPanel; // Panel to show countdown
-    [SerializeField] TextMeshProUGUI countdownText; // Text for 3, 2, 1 countdown
     [SerializeField] GameObject overInfoPanel; // Panel to show over info
     [SerializeField] TextMeshProUGUI overInfoText; // Text for over information
     
     [Header("Countdown Settings")]
     [SerializeField] float countdownDuration = 1f; // Duration each number shows
-    [SerializeField] AnimationCurve countdownScaleCurve = AnimationCurve.EaseInOut(0, 1, 1, 1.5f);
     
     void Awake()
     {
@@ -42,9 +39,7 @@ public class Timer : MonoBehaviour
     {
         timerText.text = maxTimeToChooseStrategy.ToString() + "s";
         
-        // Hide countdown and over info panels initially
-        // if (countdownPanel != null)
-        //     countdownPanel.SetActive(false);
+        // Hide over info panel initially
         if (overInfoPanel != null)
             overInfoPanel.SetActive(false);
     }
@@ -173,8 +168,6 @@ public class Timer : MonoBehaviour
         }
         
         // Hide countdown panel if visible
-        if (countdownPanel != null)
-            countdownPanel.SetActive(false);
         if (overInfoPanel != null)
             overInfoPanel.SetActive(false);
             
