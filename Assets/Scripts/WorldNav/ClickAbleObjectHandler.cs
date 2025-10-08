@@ -36,6 +36,7 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
     {
         if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning()) return;
         availabilityIndicatorPrefab.transform.localScale = Vector3.one * 1.2f;
+        OnHoveringTip();
     }
     private void OnMouseExit()
     {
