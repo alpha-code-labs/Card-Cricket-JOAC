@@ -217,7 +217,7 @@ title: ThirdBall
 <<resetToOriginalPresets>>
 <<moveDialogue top>>
 <<showCharacterImage center>>
-Ramu: Good try, lets try the "Rdraw" button once and then get to work.
+Ramu: Good try, lets try the "Redraw" button once and then get to work.
 <<ballFourthBall>>
 <<unhideBallerCard>>
 <<showFlipButton>>

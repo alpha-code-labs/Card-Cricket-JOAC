@@ -9,14 +9,16 @@ public class GameplayConfig
     public int balls;
     public int targetScore; // 0 means batting first
     public bool isBattingFirst;
-    
-    public GameplayConfig(int number, string dateStr, int ballCount, int target = 0)
+    public PitchCondition pitchCondition;
+
+    public GameplayConfig(int number, string dateStr, int ballCount, int target = 0, PitchCondition pitchCondition = PitchCondition.Friendly)
     {
         gameplayNumber = number;
         date = dateStr;
         balls = ballCount;
         targetScore = target;
         isBattingFirst = (target == 0);
+        this.pitchCondition = pitchCondition;
     }
 }
 
@@ -43,15 +45,15 @@ public class GameplayConfiguration : MonoBehaviour
     {
         gameplayConfigs = new Dictionary<string, GameplayConfig>
         {
-            {"1989/01/31", new GameplayConfig(1, "1989/01/31", 12, 0)}, // Batting first
-            {"1989/02/01", new GameplayConfig(2, "1989/02/01", 24, 0)}, // Batting first
-            {"1989/02/02", new GameplayConfig(3, "1989/02/02", 12, 15)}, // Chase 15 runs
-            {"1990/03/15", new GameplayConfig(4, "1990/03/15", 60, 0)}, // Batting first
-            {"1990/03/16", new GameplayConfig(5, "1990/03/16", 60, 0)}, // Batting first
-            {"1990/03/17", new GameplayConfig(6, "1990/03/17", 60, 120)}, // Chase 120 runs
-            {"1990/04/11", new GameplayConfig(7, "1990/04/11", 90, 0)}, // Batting first
-            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 30, 30)}, // Chase 30 runs
-            {"1990/04/13", new GameplayConfig(9, "1990/04/13", 90, 185)} // Chase 185 runs
+            {"1989/01/31", new GameplayConfig(1, "1989/01/31", 12, 0, PitchCondition.Friendly)}, // Batting first
+            {"1989/02/01", new GameplayConfig(2, "1989/02/01", 24, 0, PitchCondition.Friendly)}, // Batting first
+            {"1989/02/02", new GameplayConfig(3, "1989/02/02", 12, 15, PitchCondition.Friendly)}, // Chase 15 runs
+            {"1990/03/15", new GameplayConfig(4, "1990/03/15", 60, 0, PitchCondition.Friendly)}, // Batting first
+            {"1990/03/16", new GameplayConfig(5, "1990/03/16", 60, 0, PitchCondition.Friendly)}, // Batting first
+            {"1990/03/17", new GameplayConfig(6, "1990/03/17", 60, 120, PitchCondition.Friendly)}, // Chase 120 runs
+            {"1990/04/11", new GameplayConfig(7, "1990/04/11", 90, 0, PitchCondition.Friendly)}, // Batting first
+            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 30, 30, PitchCondition.Friendly)}, // Chase 30 runs
+            {"1990/04/13", new GameplayConfig(9, "1990/04/13", 90, 185, PitchCondition.Hostile)} // Chase 185 runs
         };
     }
     
