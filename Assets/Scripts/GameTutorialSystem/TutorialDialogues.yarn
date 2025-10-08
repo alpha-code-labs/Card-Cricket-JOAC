@@ -30,7 +30,7 @@ Ramu: This is your shot panel. Based on the ball conditions and the batting cond
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
-Ramu: The outcome of your decision will appear in the cetner, captain. Whatever choice you have made will have an outcome here. Watch it closely.
+Ramu: The outcome of your decision will appear in the center, captain. Whatever choice you have made will have an outcome here. Watch it closely.
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
@@ -60,7 +60,7 @@ Ramu: This indicates the number of balls still remaining to achieve the target. 
 <<showCharacterImage center>>
 <<showFlipButton>>
 <<unhideBallerCard>>
-Ramu: This is a special privilege you will get in the game, Once clicked it will flip all your shots and a new set of cards will appear. Notice the 3 tries next to it. It means in a task you have only limited number of chances to play this card.Keep that in mind.
+Ramu: This is a special privilege you will get in the game, Once clicked it will redraw from all available shots and a new set of cards will appear. Notice the 3 tries next to it. It means in a task you have only limited number of chances to use this button. Keep that in mind.
 <<hideCharacterImage>>
 <<clearHighlights>>
 
@@ -208,11 +208,11 @@ title: ThirdBall
 <<resetToOriginalPresets>>
 <<moveDialogue top>>
 <<showCharacterImage center>>
-Ramu: Good try, lets play the flip card once and then get to work.
+Ramu: Good try, lets try the "Rdraw" button once and then get to work.
 <<ballFourthBall>>
 <<unhideBallerCard>>
 <<showFlipButton>>
-Ramu: As you can see none of the available shots are ideal for the ball being thrown. Time to play the flip card. Press the flip button.
+Ramu: As you can see none of the available shots are ideal for the ball being thrown. Time to use the "Redraw" button. Press the "Redraw" button.
 <<hideCharacterImage>>
 ===
 
@@ -223,7 +223,7 @@ title: FlipCardSelection
     <<moveDialogue top>>
     <<showCharacterImage center>>
     <<unhideBallerCard>>
-    Ramu: The shots changed and now you can make a judgement call. Notice how your tries decreased as soon as you hit the Flip button. You can use it as many times as you want in the gameplay, as long as you have the tries available to play the card. If you cannot flip it and then it's out, then it's just luck of the draw captain. 
+    Ramu: The shots changed and now you can make a judgement call. Notice how your tries decreased as soon as you hit the "Redraw" button. You can use it as many times as you want in the gameplay, as long as you have the tries available to press it. If you cannot Redraw the cards then it's just luck of the draw captain. 
     Ramu: We are all set. You are ready to go out in the world and become the best batsman in the world. Can't wait to see you going. We have the next superstar from our country right here
     <<hideCharacterImage>>
 <<endif>>
