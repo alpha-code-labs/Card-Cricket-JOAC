@@ -23,6 +23,8 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     }
     string GetIntractionMessage()
     {
+        if (character == Characters.Bed)
+            return "Go to sleep";
         return "Talk to " + PrettyStrings.GetPrettyEnumString(character.ToString());
     }
     public override void OnHoveringTip()
