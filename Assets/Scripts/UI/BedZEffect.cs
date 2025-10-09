@@ -44,12 +44,9 @@ public class BedZEffect : MonoBehaviour
     [YarnCommand("start_snoring")]
     public static void StartSnoring()
     {
-        if (instance == null) return;
-        if (!instance.isSnoring && instance.zSprite != null)
-        {
-            instance.isSnoring = true;
-            instance.snoringCoroutine = instance.StartCoroutine(instance.SnoringLoop());
-        }
+        instance.isSnoring = true;
+        instance.snoringCoroutine = instance.StartCoroutine(instance.SnoringLoop());
+
     }
 
     [YarnCommand("stop_snoring")]
