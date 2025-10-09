@@ -23,7 +23,6 @@ public class BedZEffect : MonoBehaviour
 
     [Header("Snoring Pattern")]
     [SerializeField] private bool isSnoring = false;
-    [SerializeField] private float snoringDelay = 2f;
 
     private List<GameObject> activeZSprites = new List<GameObject>();
     private Coroutine snoringCoroutine;
@@ -78,7 +77,6 @@ public class BedZEffect : MonoBehaviour
 
     private IEnumerator SnoringLoop()
     {
-        yield return new WaitForSeconds(snoringDelay);
 
         while (isSnoring)
         {
