@@ -7,7 +7,7 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     public Characters character;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, " + GetIntractionMessage(), "No, don't talk", OnConfirmed);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, " + GetIntractionMessage(), "No", OnConfirmed);
     }
     public override void CheckAvaliability()
     {
