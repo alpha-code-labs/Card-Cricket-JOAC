@@ -62,12 +62,13 @@ public class BedZEffect : MonoBehaviour
             instance.StopCoroutine(instance.snoringCoroutine);
             instance.snoringCoroutine = null;
         }
-
+        DOTween.Kill("ZID");
         // Clean up existing Z sprites
         foreach (GameObject zObj in instance.activeZSprites)
         {
             if (zObj != null)
             {
+
                 zObj.transform.DOKill();
                 Object.Destroy(zObj);
             }
@@ -112,7 +113,7 @@ public class BedZEffect : MonoBehaviour
         Vector2 endPosition = (Vector2)spawnPoint.localPosition + Vector2.up * moveDistance + Vector2.right * randomDrift;
 
         // Create animation sequence
-        Sequence zSequence = DOTween.Sequence();
+        Sequence zSequence = DOTween.Sequence().SetId("ZID");
 
         // Fade in and scale up
         zSequence.Append(zImage.DOFade(1f, 0.3f));
