@@ -13,7 +13,7 @@ public class TalkToCharacterIntractionHandler : ClickAbleObjectHandler
     {
         bool isCompleted = false;
         YarnDialogSystemSingleTonMaker.instance.dialogueRunner.VariableStorage.TryGetValue("$" + character.ToString() + "_Complete", out isCompleted);
-        Debug.Log(character.ToString() + " is completed: " + isCompleted);
+        // Debug.Log(character.ToString() + " is completed: " + isCompleted);
         SetAvaliabilityIndicator(!isCompleted);
     }
     void OnConfirmed()

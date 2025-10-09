@@ -109,6 +109,10 @@ public class BedZEffect : MonoBehaviour
         // Add to active list
         activeZSprites.Add(zObject);
 
+        // Calculate positions with random drift from the start
+        float randomDrift = Random.Range(-50f, 50f);
+        Vector2 endPosition = (Vector2)spawnPoint.localPosition + Vector2.up * moveDistance + Vector2.right * randomDrift;
+
         // Create animation sequence
         Sequence zSequence = DOTween.Sequence();
 
@@ -116,14 +120,12 @@ public class BedZEffect : MonoBehaviour
         zSequence.Append(zImage.DOFade(1f, 0.3f));
         zSequence.Join(rectTransform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack));
 
-        // Move up and scale
-        Vector2 endPosition = (Vector2)spawnPoint.localPosition + Vector2.up * moveDistance;
-        zSequence.Append(rectTransform.DOAnchorPos(endPosition, animationDuration)
-            .SetEase(moveCurve));
+        // Move up with drift and scale - all happening simultaneously during the main duration
+        zSequence.Append(rectTransform.DOAnchorPos(endPosition, animationDuration).SetEase(moveCurve));
         zSequence.Join(rectTransform.DOScale(Vector3.one * scaleMultiplier, animationDuration));
 
-        // Fade out
-        zSequence.Append(zImage.DOFade(0f, 0.5f));
+        // Start fading out before the movement completes for a smoother effect
+        zSequence.Insert(animationDuration * 0.7f + 0.3f, zImage.DOFade(0f, animationDuration * 0.3f + 0.2f));
 
         // Clean up when animation completes
         zSequence.OnComplete(() =>
@@ -132,12 +134,6 @@ public class BedZEffect : MonoBehaviour
             if (zObject != null)
                 Destroy(zObject);
         });
-
-        // Add some random horizontal drift for more natural movement
-        float randomDrift = Random.Range(-50f, 50f);
-        Vector2 driftPosition = endPosition + Vector2.right * randomDrift;
-        zSequence.Insert(0.3f, rectTransform.DOAnchorPos(driftPosition, animationDuration * 0.7f)
-            .SetEase(Ease.InOutSine));
     }
 
     void OnDestroy()
