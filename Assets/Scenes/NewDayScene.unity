@@ -973,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c910688b505f214183db283ec2ebc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zSprite: {fileID: 21300000, guid: fb798c535f80aae4a94ae04abcd0a8b9, type: 3}
+  zSprite: {fileID: 21300000, guid: d20a2107a4e06db42aee97ee1f8fb34f, type: 3}
   spawnPoint: {fileID: 1840577079}
   spawnInterval: 1.5
   maxZSprites: 5
