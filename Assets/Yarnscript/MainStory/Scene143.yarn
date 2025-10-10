@@ -1,0 +1,28 @@
+title: scene_143
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: First tournament win this month Captain. How does it feel?
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Like practice that counts. The bigger one is coming.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's the right mindset. Take the win learn from it move forward. Home for dinner?
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Yes. Maa will be happy we're early.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

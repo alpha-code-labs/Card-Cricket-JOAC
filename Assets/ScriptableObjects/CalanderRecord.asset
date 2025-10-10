@@ -123,25 +123,34 @@ MonoBehaviour:
       eventType: 1
   - date: 1990/03/05
     events:
+    - eventName: Skip
+      eventDescription: skip
+      eventType: 3
     - eventName: scene_29
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_30
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Time to go. You're nervous?
+      eventType: 0
+    - eventName: Card Gameplay 12
+      eventDescription: Card Gameplay 12
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/06
     events:
     - eventName: scene_31
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_32
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Just another evening match?
+      eventType: 0
+    - eventName: Card Gameplay 13
+      eventDescription: Card Gameplay 13
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/07
     events:
     - eventName: scene_33
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Finals evening
+      eventType: 0
     - eventName: scene_34
       eventDescription: Map System
       eventType: 1
@@ -341,15 +350,15 @@ MonoBehaviour:
   - date: 1990/03/28
     events:
     - eventName: scene_85
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: March has been full of cricket.
+      eventType: 0
     - eventName: scene_86
       eventDescription: Map System
       eventType: 1
   - date: 1990/03/29
     events:
     - eventName: scene_87
-      eventDescription: Map System
+      eventDescription: ' Made it to semifinals again.'
       eventType: 1
     - eventName: scene_88
       eventDescription: Map System
@@ -357,8 +366,8 @@ MonoBehaviour:
   - date: 1990/03/30
     events:
     - eventName: scene_89
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: 'Finals to close March. '
+      eventType: 0
     - eventName: scene_90
       eventDescription: Map System
       eventType: 1

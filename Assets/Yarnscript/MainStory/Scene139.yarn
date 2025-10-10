@@ -1,0 +1,26 @@
+title: scene_139
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Good batting Captain. Clean hitting.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: The practice is showing Bhai.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Tomorrow will be tougher. Rest well tonight.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

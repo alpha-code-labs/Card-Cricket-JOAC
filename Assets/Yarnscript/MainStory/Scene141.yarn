@@ -1,0 +1,25 @@
+title: scene_141
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Making 40 from 20 balls isn't easy. Well played.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Had to take some risks but they paid off.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Tomorrow's the finals. Small prize but good practice for bigger things.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===
