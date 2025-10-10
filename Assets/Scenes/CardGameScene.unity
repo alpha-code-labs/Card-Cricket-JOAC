@@ -682,6 +682,13 @@ MonoBehaviour:
   BallThrowText: {fileID: 873582954}
   cardPrefab: {fileID: 9059906081896085217, guid: ac3a4094ba1ed534fa3311b9fb08df3f, type: 3}
   ballerCard: {fileID: 0}
+  gameplayConfig:
+    date: 
+    gameplayNumber: 0
+    balls: 0
+    targetScore: 0
+    isBattingFirst: 0
+    pitchCondition: 0
   ballerCardPrefab: {fileID: 9059906081896085217, guid: 861cfae5cb02e3441aa843a7bc23bd9a, type: 3}
 --- !u!4 &86049936
 Transform:
@@ -1113,7 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c82e92f6f7758438e57b202a6c3946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRuns: 0
+  currentRuns: 40
   TargetScore: 15
   MaxBalls: 12
   baseWickets: 2
@@ -3422,35 +3429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseTimeToChooseStrategy: 15
   timerText: {fileID: 450186785}
-  countdownPanel: {fileID: 2110634244}
-  countdownText: {fileID: 1245590074}
   overInfoPanel: {fileID: 2028574694}
   overInfoText: {fileID: 1574690230}
   countdownDuration: 1
-  countdownScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &1230803577
 Transform:
   m_ObjectHideFlags: 0

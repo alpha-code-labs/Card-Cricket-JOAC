@@ -146,7 +146,7 @@ MonoBehaviour:
     - eventName: scene_31a
       eventDescription: Map System
       eventType: 1
-    - eventName: Scene 32
+    - eventName: scene_32
       eventDescription: Semifinals
       eventType: 0
     - eventName: Card Gameplay 13
@@ -163,7 +163,7 @@ MonoBehaviour:
     - eventName: scene_33a
       eventDescription: Map System
       eventType: 1
-    - eventName: Scene 34
+    - eventName: scene_34
       eventDescription: Finals captain
       eventType: 0
     - eventName: Card Gameplay 14
@@ -373,7 +373,7 @@ MonoBehaviour:
     - eventName: scene_85a
       eventDescription: Map System
       eventType: 1
-    - eventName: Scene 86
+    - eventName: scene_86
       eventDescription: School league tournament
       eventType: 0
     - eventName: Card Gameplay 15
