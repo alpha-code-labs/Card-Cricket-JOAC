@@ -1,0 +1,32 @@
+title: scene_88
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Heartbeat_1>>
+<<ShowDateCard "March 29th 1990 - Evening">>
+<<wait 5>>
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Big chase captain. 110 from 50 balls.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: That's more than two a ball. They think we can't do it.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: That tall boy from church lane is bowling. Remember he's fast but straight. Use the pace.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'll show them what dawn practice builds.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===
