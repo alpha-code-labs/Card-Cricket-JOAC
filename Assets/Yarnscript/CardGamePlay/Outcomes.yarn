@@ -26,6 +26,18 @@ title: PostGameplay
     <<jump Gameplay8Result>>
 <<elseif $gameplayNumber == 9>>
     <<jump Gameplay9Result>>
+<<elseif $gameplayNumber == 12>>
+    <<jump Gameplay12Result>>
+<<elseif $gameplayNumber == 13>>
+    <<jump Gameplay13Result>>
+<<elseif $gameplayNumber == 14>>
+    <<jump Gameplay14Result>>
+<<elseif $gameplayNumber == 15>>
+    <<jump Gameplay15Result>>
+<<elseif $gameplayNumber == 16>>
+    <<jump Gameplay16Result>>
+<<elseif $gameplayNumber == 17>>
+    <<jump Gameplay17Result>>
 <<else>>
     Error: Unknown gameplay number {$gameplayNumber}!
 <<endif>>
@@ -126,5 +138,65 @@ title: Gameplay9Result
     <<jump scene_124>>
 <<else>>
     <<jump scene_125>>
+<<endif>>
+===
+
+title: Gameplay12Result
+---
+// Gameplay 12: Batting first with 15 balls, target 25 runs
+<<if $finalScore < 25>>
+    <<jump scene_138>>
+<<else>>
+    <<jump scene_139>>
+<<endif>>
+===
+
+title: Gameplay13Result
+---
+// Gameplay 13: Chasing 40 runs in 20 balls
+<<if $finalScore < 40>>
+    <<jump scene_140>>
+<<else>>
+    <<jump scene_141>>
+<<endif>>
+===
+
+title: Gameplay14Result
+---
+// Gameplay 14: Chasing 35 runs in 15 balls
+<<if $finalScore < 35>>
+    <<jump scene_142>>
+<<else>>
+    <<jump scene_143>>
+<<endif>>
+===
+
+title: Gameplay15Result
+---
+// Gameplay 15: Batting first with 40 balls, target 80 runs
+<<if $finalScore < 80>>
+    <<jump scene_144>>
+<<else>>
+    <<jump scene_145>>
+<<endif>>
+===
+
+title: Gameplay16Result
+---
+// Gameplay 16: Chasing 110 runs in 50 balls
+<<if $finalScore < 110>>
+    <<jump scene_146>>
+<<else>>
+    <<jump scene_147>>
+<<endif>>
+===
+
+title: Gameplay17Result
+---
+// Gameplay 17: Chasing 100 runs in 40 balls
+<<if $finalScore < 100>>
+    <<jump scene_148>>
+<<else>>
+    <<jump scene_149>>
 <<endif>>
 ===
