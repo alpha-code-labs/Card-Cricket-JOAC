@@ -10,50 +10,56 @@ Ramu: All right captain, this is your batting arena. Lets get you well versed wi
 
 <<showBallingCard>>
 <<showCharacterImage top>>
-Ramu: This will indicate the ball coming in your direction. It forms as the base for you to make your decisions.
-Ramu: Also notice the text "Friendly" written at the top of the card.
-Ramu: This will indicate the batting conditions for the task. It can be either hostile or friendly. You have to keep this variable in mind while selecting your shots. Remember in hostile conditions, the quality of the shot has to be more precise. In friendly conditions, the selection might be more forgiving. 
+Ramu: This shows the incoming ball—it's the basis for your shot selection.
+Ramu: Note the "Friendly" label at the top—this indicates batting conditions.
+Ramu: Conditions can be Friendly or Hostile. Hostile requires more precise shots; Friendly is more forgiving. 
 
 <<clearHighlights>>
 
 <<showScorePanel>>
 <<showCharacterImage top>>
-Ramu: Look at the top left corner. This is the current score and the target you have to achieve in the task. Always watch it like a hawk. Your outcomes will drive your score closer to target.
+<<showArrow "score">>
+Ramu: Top left shows your current score and target. Watch it closely—your shots drive you toward the goal.
 <<clearHighlights>>
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
 <<showShotsPanel>>
-Ramu: This is your shot panel. Based on the ball conditions and the batting conditions and the situation of the game, make a careful choice on the kind of shot you want to play. This is your bread and butter.
+<<hideArrow>>
+Ramu: This is your shot panel. Choose your shot based on ball conditions, batting conditions, and game situation. This is your bread and butter.
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
-Ramu: There are 4 variations for each shot available to you. Push, Normal, Aggressive and Lofted. Each type of shot has its own risk and reward. 
-Ramu: A "Push" is a defensive shot resulting in 1 run.
-Ramu: A "Normal" shot will result in 2 runs.
-Ramu: An "Aggressive" shot will result in 4 runs.
-Ramu: A "Lofted" shot will result in 6 runs.
+Ramu: Each shot has 4 variations with different risk-reward levels:
+Ramu: • Push (defensive) = 1 run
+Ramu: • Normal = 2 runs  
+Ramu: • Aggressive = 4 runs
+Ramu: • Lofted = 6 runs
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
-Ramu: The outcome of your decision will appear in the center, captain. Whatever choice you have made will have an outcome here. Watch it closely.
+Ramu: The outcome of your shot appears in the center. Watch it closely, captain.
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<clearHighlights>>
 <<showTimingPanel>>
 <<unhideBallerCard>>
-Ramu: Look at the top. This is the amount of starting time you get in this task for shot selection. It's a countdown timer. If time runs out you will get out. Be quick and decisive.
+<<showArrow "timing">>
+Ramu: Top shows your shot selection timer. If it runs out, you're out. Be quick and decisive.
+<<hideArrow>>
 <<clearHighlights>>
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<showWicketsPanel>>
 <<unhideBallerCard>>
-Ramu: Look in the top-right corner, this indicates how much wickets you have lost and the total number of wickets you have.
+<<showArrow "wickets">>
+Ramu: Top-right shows wickets lost and total wickets available.
+<<hideArrow>>
 <<clearHighlights>>
 
 
@@ -61,7 +67,8 @@ Ramu: Look in the top-right corner, this indicates how much wickets you have los
 <<showCharacterImage center>>
 <<showBBallsPanel>>
 <<unhideBallerCard>>
-Ramu: Again Look on the top right, next to wickets. This indicates the number of balls still remaining to achieve the target. It will decrease for every ball you face unless the ball is a Wide ball or No ball.
+<<showArrow "remainingBalls">>
+Ramu: Top-right, next to wickets—shows balls remaining to reach the target. Decreases with each ball faced (except Wides and No balls).
 <<hideCharacterImage>>
 <<clearHighlights>>
 
@@ -69,7 +76,9 @@ Ramu: Again Look on the top right, next to wickets. This indicates the number of
 <<showCharacterImage center>>
 <<showFlipButton>>
 <<unhideBallerCard>>
-Ramu: Look at the "Redraw" button at the bottom left. This is a special privilege you will get in the game, Once clicked it will redraw from all available shots and a new set of cards will appear. Notice the 3 tries next to it. It means in a task you have only limited number of chances to use this button. Keep that in mind.
+<<showArrow "redrawButton">>
+Ramu: Bottom left: "Redraw" button refreshes your hand with new shot cards. Limited uses per task—use wisely.
+<<hideArrow>>
 <<hideCharacterImage>>
 <<clearHighlights>>
 
@@ -82,8 +91,9 @@ Ramu: Look at the "Redraw" button at the bottom left. This is a special privileg
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
-Ramu: These 4 aspects are variable in every task and will depend on what tasks you perform entering into a task. You will find all these details later. 
-Ramu: You can upgrade your time in seconds, the number of lives you have, the number of shots available to you and the number of times you can use the "Redraw" button. You will find out more later.
+Ramu: Ramu: These 4 aspects vary by task: time, lives, available shots, and Redraw uses. 
+Ramu: You can upgrade all of them—more on that later.
+<<hideArrow>>
 <<hideCharacterImage>>
 <<clearHighlights>>
 
@@ -92,6 +102,7 @@ Ramu: You can upgrade your time in seconds, the number of lives you have, the nu
 <<showCharacterImage center>>
 <<unhideBallerCard>>
 Ramu: The first ball is coming up. Brace yourself. 
+Ramu: And don't rush it—you've got 20 seconds to choose your shot.
 <<hideCharacterImage>>
 <<showBatsman>>
 <<ballFirstBall>>
@@ -232,8 +243,8 @@ title: FlipCardSelection
     <<moveDialogue top>>
     <<showCharacterImage center>>
     <<unhideBallerCard>>
-    Ramu: The shots changed and now you can make a judgement call. Notice how your tries decreased as soon as you hit the "Redraw" button. You can use it as many times as you want in the gameplay, as long as you have the tries available to press it. If you cannot Redraw the cards then it's just luck of the draw captain. 
-    Ramu: We are all set. You are ready to go out in the world and become the best batsman in the world. Can't wait to see you going. We have the next superstar from our country right here
+    Ramu: Your shots refreshed—notice your tries decreased. You can Redraw multiple times if you have tries left. No tries? You're stuck with what you've got, captain.
+    Ramu: We are all set. You are ready to go out in the world and become the best batsman in the world. Good luck captain.
     <<hideCharacterImage>>
 <<endif>>
 <<hideCharacterImage>>
