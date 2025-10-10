@@ -7,15 +7,14 @@ using UnityEngine.Rendering;
 public class DialogueCommands : MonoBehaviour
 {
 
-
     private static GraphicRaycaster persistentDialogueRaycaster;
-     public void DisablePersistentDialogueRaycaster()
+    public void DisablePersistentDialogueRaycaster()
     {
         // Get all GameObjects named "Dialogue System"
         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
             .Where(go => go.name == "Dialogue System")
             .ToArray();
-            
+
         foreach (GameObject dialogueSystem in dialogueSystems)
         {
             // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
@@ -34,7 +33,7 @@ public class DialogueCommands : MonoBehaviour
         }
     }
 
-     public void EnablePersistentDialogueRaycaster()
+    public void EnablePersistentDialogueRaycaster()
     {
         // If we have a stored reference, use it (faster)
         if (persistentDialogueRaycaster != null)
@@ -43,12 +42,12 @@ public class DialogueCommands : MonoBehaviour
             Debug.Log("Re-enabled DontDestroyOnLoad Dialogue System raycaster (from reference)");
             return;
         }
-        
+
         // Otherwise, find it again
         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
             .Where(go => go.name == "Dialogue System")
             .ToArray();
-            
+
         foreach (GameObject dialogueSystem in dialogueSystems)
         {
             // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
@@ -70,10 +69,10 @@ public class DialogueCommands : MonoBehaviour
     [YarnCommand("disableRaycasterOnMainDialogueSystem")]
     public static void disableRaycasterOnMainDialogueSystem()
     {
-         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
-            .Where(go => go.name == "Dialogue System")
-            .ToArray();
-            
+        GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
+           .Where(go => go.name == "Dialogue System")
+           .ToArray();
+
         foreach (GameObject dialogueSystem in dialogueSystems)
         {
             // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
@@ -235,12 +234,12 @@ public class DialogueCommands : MonoBehaviour
             persistentDialogueRaycaster.enabled = true;
             Debug.Log("Re-enabled DontDestroyOnLoad Dialogue System raycaster (from reference)");
         }
-        
+
         // Otherwise, find it again
         GameObject[] dialogueSystems = FindObjectsOfType<GameObject>()
             .Where(go => go.name == "Dialogue System")
             .ToArray();
-            
+
         foreach (GameObject dialogueSystem in dialogueSystems)
         {
             // Check if it's not in the current scene (meaning it's DontDestroyOnLoad)
@@ -274,4 +273,21 @@ public class DialogueCommands : MonoBehaviour
         ScoreManager_Tutorial.Instance.HideBatsman();
     }
 
+    [YarnCommand("showArrow")]
+    public static void ShowArrow(string arrowName)
+    {
+        TutorialArrowManager.Instance.ShowArrow(arrowName);
+    }
+
+    [YarnCommand("hideArrow")]
+    public static void HideArrow()
+    {
+        TutorialArrowManager.Instance.HideAllArrows();
+    }
+
+    [YarnCommand("ShowAllArrows")]
+    public static void ShowAllArrows()
+    {
+        TutorialArrowManager.Instance.ShowAllArrows();
+    }
 }
