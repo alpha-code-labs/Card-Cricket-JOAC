@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
     
     [Header("Countdown Settings")]
     [SerializeField] float countdownDuration = 1f; // Duration each number shows
+    public static Action onFirstOverAnimationComplete;
     
     void Awake()
     {
@@ -85,7 +86,7 @@ public class Timer : MonoBehaviour
         bool isFirstBallOfOver = (currentBall % 6 == 0);
         
         // Show over information if it's the first ball of an over
-        if (isFirstBallOfOver && overInfoPanel != null && overInfoText != null)
+        if (currentBall > 5 && isFirstBallOfOver && overInfoPanel != null && overInfoText != null)
         {
             int overNumber = (currentBall / 6) + 1;
             overInfoText.text = $"OVER {overNumber}";
@@ -93,8 +94,8 @@ public class Timer : MonoBehaviour
 
             // Animate over info (optional)
             yield return AnimateOverInfo();
-
-            yield return new WaitForSeconds(.3f);
+            if( onFirstOverAnimationComplete != null && currentBall < 6)
+            onFirstOverAnimationComplete?.Invoke();
             overInfoPanel.SetActive(false);
         }
 
@@ -114,7 +115,7 @@ public class Timer : MonoBehaviour
         if (overInfoText == null) yield break;
         yield return new WaitForSeconds(0f); // Initial delay
         // Simple scale animation for over info
-        float duration = 1.5f;
+        float duration = 1f;
         float elapsed = 0;
         Vector3 originalScale = Vector3.one;
 
@@ -123,7 +124,7 @@ public class Timer : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
 
-            float scale = Mathf.Lerp(0.8f, 1.1f, t);
+            float scale = Mathf.Lerp(0.7f, 1f, t);
             overInfoText.transform.localScale = originalScale * scale;
 
             yield return null;
@@ -226,5 +227,9 @@ public class Timer : MonoBehaviour
         // CardsPoolManager.Instance.EndTurn(true);
         // yield return new WaitForSeconds(3f);
         // CardsPoolManager.Instance.StartTurn(true);
+    }
+
+    internal class Instannce
+    {
     }
 }
