@@ -17,15 +17,15 @@ Narrator: But sometimes, one of them is different… and only an elder brother c
 // Tone note: "Excited" skews upbeat/cartoonish. For a heavy, cinematic beat, prefer restrained urgency.
 // Suggest: Determined/Protective urgency — tight jaw, firm eye contact, low but decisive delivery (no shout).
 Ramu: Raju! Grab the bat — you're in!
-<<SetCharacterExpression Raju Surprised>>
-// Tone note: Broad "Surprised" can read goofy. Aim for stunned/awed stillness.
-// Suggest: Quiet awe — slight inhale, eyes widen subtly, mouth barely parts; keep body still, sound internal.
+<<SetCharacterExpression Raju BattingPose>>
+// Tone note: "BattingPose" can read flashy/action-hero. Aim for stunned/awed stillness, not a victory pose.
+// Suggest: Quiet awe — slight inhale, eyes widen subtly, bat held loosely; minimal movement; keep the moment internal.
 Raju (monologue): That was the day… I got the chance to prove myself….
 //<<music flashback_pad xfade=1.0>>
 // 00:00:15,000 --> 00:00:18,000
 <<SetBGSprite KohliwadaGround>>
 //<<cut FLASHBACK_WARM_TONE>>
-<<SetCharacterExpression Raju Neutral>>
+<<SetCharacterExpression Raju Serious>>
 Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
 // 00:00:18,000 --> 00:00:22,000
 <<SetBGSprite KohliwadaGround>>
@@ -52,9 +52,9 @@ Ramu: Wait for your moment. Poor or rich — timing's everything.
 //<<lowerthird Lesson 5 – Temper>>
 <<SetCharacterExpression Ramu Neutral>>
 Ramu: Miss once, breathe. Miss twice… breathe longer.
-<<SetCharacterExpression Raju Happy>>
-// Tone note: "Happy" feels too bright here. The moment should feel grateful and grounded.
-// Suggest: Soft gratitude/nostalgia — small, fleeting smile; eyes glassy, voice low and steady.
+<<SetCharacterExpression Raju Smiling>>
+// Tone note: Broad "Smiling" can skew too bright. Keep it grateful and grounded.
+// Suggest: Soft gratitude/nostalgia — small, fleeting smile; eyes slightly glassy; voice low and steady.
 Raju: I still carry them all, Bhaiya.
 // 00:00:40,000 --> 00:00:44,080
 <<SetBGSprite KohliwadaGround>>
@@ -96,7 +96,7 @@ Raju: I'll get ninety… and I'll play.
 Coach Dev: There's a city tournament next month. Scouts will be watching.
 // 00:01:03,000 --> 00:01:08,000
 <<SetBGSprite KohliwadaGround>>
-<<SetCharacterExpression CoachDev Neutral>>
+<<SetCharacterExpression CoachDev Serious>>
 Coach Dev: Play well, and I'll be able to fight for waivers and concessions.
 // 00:01:08,000 --> 00:01:11,000
 <<SetBGSprite KohliwadaGround>>
@@ -118,7 +118,7 @@ RamCharan: Cricket won't feed you, boy. Books will.
 // 00:01:17,000 --> 00:01:20,000
 <<SetBGSprite HutInterior>>
 //<<cut MONTAGE_MOTHER_WORK>>
-<<SetCharacterExpression Kamla Worried>>
+<<SetCharacterExpression Kamla Serious>>
 Kamla: Raju, at least help me wash these plates before you run off!
 // 00:01:20,000 --> 00:01:23,500
 <<SetBGSprite HutInterior>>
