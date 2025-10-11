@@ -25,27 +25,27 @@ Raju (monologue): Bhaiya used to say… there are five things you carry every ti
 // 00:00:18,000 --> 00:00:22,000
 <<SetBGSprite SportsAcademy>>
 //<<lowerthird Lesson 1 – Eyes>>
-<<SetCharacterExpression CoachDev Serious>>
+<<SetCharacterExpression Ramu Serious>>
 Coach Dev (VO): See before you decide. Read the bowler, not the ball.
 // 00:00:22,000 --> 00:00:26,000
 <<SetBGSprite SportsAcademy>>
 //<<lowerthird Lesson 2 – Feet>>
-<<SetCharacterExpression CoachDev Serious>>
+<<SetCharacterExpression Ramu Serious>>
 Coach Dev (VO): Quiet feet. Quick mind. Settle first.
 // 00:00:26,000 --> 00:00:30,000
 <<SetBGSprite SportsAcademy>>
 //<<lowerthird Lesson 3 – Hands>>
-<<SetCharacterExpression CoachDev Neutral>>
+<<SetCharacterExpression Ramu Neutral>>
 Coach Dev (VO): Gentle hands. Let the bat talk.
 // 00:00:30,000 --> 00:00:35,000
 <<SetBGSprite SportsAcademy>>
 //<<lowerthird Lesson 4 – Timing>>
-<<SetCharacterExpression CoachDev Serious>>
+<<SetCharacterExpression Ramu Serious>>
 Coach Dev (VO): Wait for your moment. Poor or rich — timing's everything.
 // 00:00:35,000 --> 00:00:40,000
 <<SetBGSprite SportsAcademy>>
 //<<lowerthird Lesson 5 – Temper>>
-<<SetCharacterExpression CoachDev Neutral>>
+<<SetCharacterExpression Ramu Neutral>>
 Coach Dev (VO): Miss once, breathe. Miss twice… breathe longer.
 <<SetCharacterExpression Raju Happy>>
 Raju: I still carry them all, Bhaiya.
