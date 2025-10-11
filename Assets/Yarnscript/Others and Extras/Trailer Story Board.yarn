@@ -12,87 +12,109 @@ Narrator: Too small to bat. Too slow to field.
 Narrator: But sometimes, one of them is different… and only an elder brother can see it.
 
 // 00:00:08,000 --> 00:00:15,000
+<<SetCharacterExpression Ramu Excited>>
 Ramu: Raju! Grab the bat — you're in!
+<<SetCharacterExpression Raju Surprised>>
 Raju (monologue): That was the day… I got the chance to prove myself….
 //<<music flashback_pad xfade=1.0>>
 
 // 00:00:15,000 --> 00:00:18,000
 //<<cut FLASHBACK_WARM_TONE>>
+<<SetCharacterExpression Raju Neutral>>
 Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
 
 // 00:00:18,000 --> 00:00:22,000
 //<<lowerthird Lesson 1 – Eyes>>
+<<SetCharacterExpression CoachDev Serious>>
 Coach Dev (VO): See before you decide. Read the bowler, not the ball.
 
 // 00:00:22,000 --> 00:00:26,000
 //<<lowerthird Lesson 2 – Feet>>
+<<SetCharacterExpression CoachDev Serious>>
 Coach Dev (VO): Quiet feet. Quick mind. Settle first.
 
 // 00:00:26,000 --> 00:00:30,000
 //<<lowerthird Lesson 3 – Hands>>
+<<SetCharacterExpression CoachDev Neutral>>
 Coach Dev (VO): Gentle hands. Let the bat talk.
 
 // 00:00:30,000 --> 00:00:35,000
 //<<lowerthird Lesson 4 – Timing>>
+<<SetCharacterExpression CoachDev Serious>>
 Coach Dev (VO): Wait for your moment. Poor or rich — timing's everything.
 
 // 00:00:35,000 --> 00:00:40,000
 //<<lowerthird Lesson 5 – Temper>>
+<<SetCharacterExpression CoachDev Neutral>>
 Coach Dev (VO): Miss once, breathe. Miss twice… breathe longer.
+<<SetCharacterExpression Raju Happy>>
 Raju: I still carry them all, Bhaiya.
 
 // 00:00:40,000 --> 00:00:44,080
 //<<music build_light xfade=0.8>>
 //<<sfx bat_hit_clean>>
 //<<vfx ball_trail_slowmo>>
+<<SetCharacterExpression Raju ExcitedWithBat>>
 Raju (smiling): Six runs… I can really play.
 
 // 00:00:44,080 --> 00:00:48,000
 //<<music STOP fadeOut=0.3>>
 //<<sfx cut_silence>>
 //<<cut INT_HOUSE_LOWLIGHT>>
+<<SetCharacterExpression ShivPrasad Angry>>
 Father: Cricket? First get ninety percent.
 
 // 00:00:48,000 --> 00:00:52,000
+<<SetCharacterExpression Raju Worried>>
 Raju (monologue): Ninety percent… or no academy.
 
 // 00:00:52,000 --> 00:00:55,500
 //<<music bass_pickup tempo=92>>
 //<<cut STUDY_TABLE_NIGHT>>
+<<SetCharacterExpression Raju Serious>>
 Raju: If that's the price… I'll earn it.
 
 // 00:00:55,500 --> 00:00:59,000
+<<SetCharacterExpression Raju Serious>>
 Raju: I'll get ninety… and I'll play.
 
 // 00:00:59,000 --> 00:01:03,000
 //<<music rise_local tempo=98>>
 //<<cut GROUND_LOCAL_DAY>>
+<<SetCharacterExpression CoachDev Serious>>
 Coach Dev: There's a city tournament next month. Scouts will be watching.
 
 // 00:01:03,000 --> 00:01:08,000
+<<SetCharacterExpression CoachDev Neutral>>
 Coach Dev: Play well, and I'll be able to fight for waivers and concessions.
 
 // 00:01:08,000 --> 00:01:11,000
 //<<cut MONTAGE_MORNING_FIELD>>
+<<SetCharacterExpression Ramu Serious>>
 Ramu: Come on, swing straight, Raju! Don't rush the shot!
 
 // 00:01:11,000 --> 00:01:14,000
 //<<cut MONTAGE_AFTERNOON_STUDY>>
+<<SetCharacterExpression Pinky Angry>>
 Pinky: Focus here, idiot — this question comes every year!
 
 // 00:01:14,000 --> 00:01:17,000
 //<<cut MONTAGE_EVENING_LIBRARY>>
+<<SetCharacterExpression RamCharan Serious>>
 RamCharan: Cricket won't feed you, boy. Books will.
 
 // 00:01:17,000 --> 00:01:20,000
 //<<cut MONTAGE_MOTHER_WORK>>
+<<SetCharacterExpression Kamla Worried>>
 Kamla: Raju, at least help me wash these plates before you run off!
 
 // 00:01:20,000 --> 00:01:23,500
 //<<cut NIGHT_SINGLE_BULB>>
+<<SetCharacterExpression Raju Groggy>>
 Raju (monologue): Eyes burn… but I can't stop.
 
 // 00:01:23,500 --> 00:01:27,000
 //<<cut DAWN_DUSTY_SUNRISE>>
+<<SetCharacterExpression Raju Serious>>
 Raju (monologue): Every second counts.
 ===
