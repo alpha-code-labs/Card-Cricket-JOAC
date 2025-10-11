@@ -1,191 +1,98 @@
 ﻿title: Trailer_Story_Board
-tags:
-colorID: 0
-position: 0,0
 ---
- // 00:00:00,000 --> 00:00:04,000
+
+// 00:00:00,000 --> 00:00:04,000
 //<<music ambient_gully fadeIn=1>>
 //<<sfx bg_gully_loop vol=0.6>>
 //<<cut EXT_GULLY_DAY>>
-Narrator: In every gully match, there’s always one kid who waits.
-[[Trailer_Setup]]
-===
+Narrator: In every gully match, there's always one kid who waits.
 
-title: Trailer_Setup
-tags:
-colorID: 1
-position: 300,0
----
- // 00:00:04,000 --> 00:00:08,000
+// 00:00:04,000 --> 00:00:08,000
 Narrator: Too small to bat. Too slow to field.
 Narrator: But sometimes, one of them is different… and only an elder brother can see it.
-[[Callup]]
-===
 
-title: Callup
-tags:
-colorID: 2
-position: 600,0
----
- // 00:00:08,000 --> 00:00:15,000
-Ramu: Raju! Grab the bat — you’re in!
+// 00:00:08,000 --> 00:00:15,000
+Ramu: Raju! Grab the bat — you're in!
 Raju (monologue): That was the day… I got the chance to prove myself….
 //<<music flashback_pad xfade=1.0>>
-[[Flashback_Lesson_Intro]]
-===
 
-title: Flashback_Lesson_Intro
-tags:
-colorID: 3
-position: 900,0
----
- // 00:00:15,000 --> 00:00:18,000
+// 00:00:15,000 --> 00:00:18,000
 //<<cut FLASHBACK_WARM_TONE>>
 Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
-[[Lesson_1]]
-===
 
-title: Lesson_1
-tags: Lesson Eyes
-colorID: 4
-position: 1200,0
----
- // 00:00:18,000 --> 00:00:22,000
+// 00:00:18,000 --> 00:00:22,000
 //<<lowerthird Lesson 1 – Eyes>>
 Coach Dev (VO): See before you decide. Read the bowler, not the ball.
-[[Lesson_2]]
-===
 
-title: Lesson_2
-tags: Lesson Feet
-colorID: 5
-position: 1500,0
----
- // 00:00:22,000 --> 00:00:26,000
+// 00:00:22,000 --> 00:00:26,000
 //<<lowerthird Lesson 2 – Feet>>
 Coach Dev (VO): Quiet feet. Quick mind. Settle first.
-[[Lesson_3]]
-===
 
-title: Lesson_3
-tags: Lesson Hands
-colorID: 6
-position: 1800,0
----
- // 00:00:26,000 --> 00:00:30,000
+// 00:00:26,000 --> 00:00:30,000
 //<<lowerthird Lesson 3 – Hands>>
 Coach Dev (VO): Gentle hands. Let the bat talk.
-[[Lesson_4]]
-===
 
-title: Lesson_4
-tags: Lesson Timing
-colorID: 7
-position: 2100,0
----
- // 00:00:30,000 --> 00:00:35,000
+// 00:00:30,000 --> 00:00:35,000
 //<<lowerthird Lesson 4 – Timing>>
-Coach Dev (VO): Wait for your moment. Poor or rich — timing’s everything.
-[[Lesson_5]]
-===
+Coach Dev (VO): Wait for your moment. Poor or rich — timing's everything.
 
-title: Lesson_5
-tags: Lesson Temper
-colorID: 8
-position: 2400,0
----
- // 00:00:35,000 --> 00:00:40,000
+// 00:00:35,000 --> 00:00:40,000
 //<<lowerthird Lesson 5 – Temper>>
 Coach Dev (VO): Miss once, breathe. Miss twice… breathe longer.
 Raju: I still carry them all, Bhaiya.
-[[Sixer]]
-===
 
-title: Sixer
-tags:
-colorID: 9
-position: 2700,0
----
- // 00:00:40,000 --> 00:00:44,080
+// 00:00:40,000 --> 00:00:44,080
 //<<music build_light xfade=0.8>>
 //<<sfx bat_hit_clean>>
 //<<vfx ball_trail_slowmo>>
 Raju (smiling): Six runs… I can really play.
-[[Father_Cut]]
-===
 
-title: Father_Cut
-tags:
-colorID: 10
-position: 3000,0
----
- // 00:00:44,080 --> 00:00:48,000
+// 00:00:44,080 --> 00:00:48,000
 //<<music STOP fadeOut=0.3>>
 //<<sfx cut_silence>>
 //<<cut INT_HOUSE_LOWLIGHT>>
 Father: Cricket? First get ninety percent.
-[[Resolve_Study]]
-===
 
-title: Resolve_Study
-tags:
-colorID: 11
-position: 3300,0
----
- // 00:00:48,000 --> 00:00:52,000
+// 00:00:48,000 --> 00:00:52,000
 Raju (monologue): Ninety percent… or no academy.
- // 00:00:52,000 --> 00:00:55,500
+
+// 00:00:52,000 --> 00:00:55,500
 //<<music bass_pickup tempo=92>>
 //<<cut STUDY_TABLE_NIGHT>>
-Raju: If that’s the price… I’ll earn it.
- // 00:00:55,500 --> 00:00:59,000
-Raju: I’ll get ninety… and I’ll play.
-[[Coach_Setup]]
-===
+Raju: If that's the price… I'll earn it.
 
-title: Coach_Setup
-tags:
-colorID: 12
-position: 3600,0
----
- // 00:00:59,000 --> 00:01:03,000
+// 00:00:55,500 --> 00:00:59,000
+Raju: I'll get ninety… and I'll play.
+
+// 00:00:59,000 --> 00:01:03,000
 //<<music rise_local tempo=98>>
 //<<cut GROUND_LOCAL_DAY>>
-Coach Dev: There’s a city tournament next month. Scouts will be watching.
- // 00:01:03,000 --> 00:01:08,000
-Coach Dev: Play well, and I’ll be able to fight for waivers and concessions.
-[[Training_Montage]]
-===
+Coach Dev: There's a city tournament next month. Scouts will be watching.
 
-title: Training_Montage
-tags: montage
-colorID: 13
-position: 3900,0
----
- // 00:01:08,000 --> 00:01:11,000
+// 00:01:03,000 --> 00:01:08,000
+Coach Dev: Play well, and I'll be able to fight for waivers and concessions.
+
+// 00:01:08,000 --> 00:01:11,000
 //<<cut MONTAGE_MORNING_FIELD>>
-Ramu: Come on, swing straight, Raju! Don’t rush the shot!
- // 00:01:11,000 --> 00:01:14,000
+Ramu: Come on, swing straight, Raju! Don't rush the shot!
+
+// 00:01:11,000 --> 00:01:14,000
 //<<cut MONTAGE_AFTERNOON_STUDY>>
 Pinky: Focus here, idiot — this question comes every year!
- // 00:01:14,000 --> 00:01:17,000
+
+// 00:01:14,000 --> 00:01:17,000
 //<<cut MONTAGE_EVENING_LIBRARY>>
-RamCharan: Cricket won’t feed you, boy. Books will.
- // 00:01:17,000 --> 00:01:20,000
+RamCharan: Cricket won't feed you, boy. Books will.
+
+// 00:01:17,000 --> 00:01:20,000
 //<<cut MONTAGE_MOTHER_WORK>>
 Kamla: Raju, at least help me wash these plates before you run off!
-[[Grind_Monologues]]
-===
 
-title: Grind_Monologues
-tags:
-colorID: 14
-position: 4200,0
----
- // 00:01:20,000 --> 00:01:23,500
+// 00:01:20,000 --> 00:01:23,500
 //<<cut NIGHT_SINGLE_BULB>>
-Raju (monologue): Eyes burn… but I can’t stop.
- // 00:01:23,500 --> 00:01:27,000
+Raju (monologue): Eyes burn… but I can't stop.
+
+// 00:01:23,500 --> 00:01:27,000
 //<<cut DAWN_DUSTY_SUNRISE>>
 Raju (monologue): Every second counts.
 ===
