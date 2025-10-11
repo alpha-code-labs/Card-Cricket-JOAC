@@ -104,7 +104,7 @@ Coach Dev: Play well, and I'll be able to fight for waivers and concessions.
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Come on, swing straight, Raju! Don't rush the shot!
 // 00:01:11,000 --> 00:01:14,000
-<<SetBGSprite HutInterior>>
+<<SetBGSprite PublicSchool>>
 //<<cut MONTAGE_AFTERNOON_STUDY>>
 <<SetCharacterExpression Pinky Angry>>
 // Tone note: Full "Angry" could skew comedic with the line. Aim for brisk, tough-love focus.
