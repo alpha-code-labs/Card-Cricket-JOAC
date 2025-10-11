@@ -1,4 +1,5 @@
 ﻿title: Start_Tutorial
+position: -68,-14
 ---
 <<disableRaycasterOnMainDialogueSystem>>
 <<declare $selection = "None">>
@@ -15,13 +16,6 @@ Ramu: Note the "Friendly" label at the top—this indicates batting conditions.
 Ramu: Conditions can be Friendly or Hostile. Hostile requires more precise shots; Friendly is more forgiving. 
 
 <<clearHighlights>>
-
-<<showScorePanel>>
-<<showCharacterImage top>>
-<<showArrow "score">>
-Ramu: Top left shows your current score and target. Watch it closely—your shots drive you toward the goal.
-<<clearHighlights>>
-
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
@@ -45,71 +39,19 @@ Ramu: The outcome of your shot appears in the center. Watch it closely, captain.
 
 <<moveDialogue top>>
 <<showCharacterImage center>>
-<<clearHighlights>>
-<<showTimingPanel>>
 <<unhideBallerCard>>
-<<showArrow "timing">>
-Ramu: Top shows your shot selection timer. If it runs out, you're out. Be quick and decisive.
-<<hideArrow>>
-<<clearHighlights>>
-
-<<moveDialogue top>>
-<<showCharacterImage center>>
-<<showWicketsPanel>>
-<<unhideBallerCard>>
-<<showArrow "wickets">>
-Ramu: Top-right shows wickets lost and total wickets available.
-<<hideArrow>>
-<<clearHighlights>>
-
-
-<<moveDialogue top>>
-<<showCharacterImage center>>
-<<showBBallsPanel>>
-<<unhideBallerCard>>
-<<showArrow "remainingBalls">>
-Ramu: Top-right, next to wickets—shows balls remaining to reach the target. Decreases with each ball faced (except Wides and No balls).
-<<hideCharacterImage>>
-<<clearHighlights>>
-
-<<moveDialogue top>>
-<<showCharacterImage center>>
-<<showFlipButton>>
-<<unhideBallerCard>>
-<<showArrow "redrawButton">>
-Ramu: Bottom left: "Redraw" button refreshes your hand with new shot cards. Limited uses per task—use wisely.
-<<hideArrow>>
-<<hideCharacterImage>>
-<<clearHighlights>>
-
-
-
-<<showWicketsPanel>>
-<<showFlipButton>>
-<<showTimingPanel>>
-<<highlightShotPanel>>
-<<moveDialogue top>>
-<<showCharacterImage center>>
-<<unhideBallerCard>>
-Ramu: Ramu: These 4 aspects vary by task: time, lives, available shots, and Redraw uses. 
-Ramu: You can upgrade all of them—more on that later.
-<<hideArrow>>
-<<hideCharacterImage>>
-<<clearHighlights>>
-
-
-<<moveDialogue top>>
-<<showCharacterImage center>>
-<<unhideBallerCard>>
+Ramu: Lets get you started with a few practice balls.
 Ramu: The first ball is coming up. Brace yourself. 
-Ramu: And don't rush it—you've got 20 seconds to choose your shot.
+// Ramu: And don't rush it—you've got 20 seconds to choose your shot.
 <<hideCharacterImage>>
 <<showBatsman>>
+<<changeTimerTiming 60>>
 <<ballFirstBall>>
 ===
 
 
 title: FirstBall
+position: 65,-72
 ---
 <<hideBatsman>>
 <<if $selection == "None">>
@@ -157,6 +99,7 @@ Ramu: Good try, lets play a few more balls to get better.
 
 
 title: SecondBall
+position: 32,173
 ---
 <<hideBatsman>>
 <<if $selection == "None">>
@@ -196,6 +139,7 @@ Ramu: Good try, lets play one more ball.
 ===
 
 title: ThirdBall
+position: 44,-312
 ---
 <<hideBatsman>>
 <<if $selection == "None">>
@@ -225,18 +169,140 @@ title: ThirdBall
     Ramu: Good choice. The ball will travel safely to the keeper. For a good length ball if you are unsure it is always best to leave unless it’s going to crash into your stumps
 <<endif>>
 
+// some more practice balls to get used to timer and introduce
+<<moveDialogue top>>
+<<showCharacterImage center>>
+<<clearHighlights>>
+<<changeTimerTiming 20>>
+<<showTimingPanel>>
+<<unhideBallerCard>>
+<<showArrow "timing">>
+Ramu: Top shows your shot selection timer. If it runs out, you're out. Be quick and decisive.
+<<hideArrow>>
+<<clearHighlights>>
+Ramu: Let's practice a few more balls with the timer now. You have 20 seconds to choose your shot this time.
+<<hideCharacterImage>>
+<<showBatsman>>
+<<ballFifthBall>>
+===
+
+title: FifthBall
+---
+<<hideBatsman>>
+<<if $selection == "None">>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    <<resetToOriginalPresets>>
+    Ramu: Time ran out! Quick decisions are crucial in cricket.
+<<elseif $selection == "StraightDrivePush" || $selection == "OnDriveNormal">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Perfect! Yorkers need low shots to dig them out.
+<<elseif $selection == "OnDriveAggressive" || $selection == "StraightDriveLofted">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: No captain! You can't play aggressive shots to yorkers. That's Out
+<<elseif $selection == "Leave">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Dangerous! Never leave a yorker heading for the stumps.
+<<else>>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Yorkers are tricky—aim low next time.
+<<endif>>
+<<hideCharacterImage>>
+<<showBatsman>>
+<<changeTimerTiming 20>>
+<<ballSixthBall>>
+===
+
+title: SixthBall
+---
+<<hideBatsman>>
+<<if $selection == "None">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    <<unhideBallerCard>>
+    Ramu: Don't let the timer pressure you. Stay focused.
+<<elseif $selection == "SweepNormal" || $selection == "SweepAggressive">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Excellent! Sweep shots work perfectly against spinners.
+<<elseif $selection == "StraightDrivePush" || $selection == "CoverDriveNormal">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Good choice—playing straight is safe against spin.
+<<elseif $selection == "Leave">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Smart—the ball was safe to leave.
+<<else>>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Against spin, consider sweep shots or careful defense.
+<<endif>>
+<<hideCharacterImage>>
+<<showBatsman>>
+<<ballSeventhBall>>
+===
+
+title: SeventhBall
+---
+<<hideBatsman>>
+<<if $selection == "None">>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    <<resetToOriginalPresets>>
+    Ramu: Timer's getting tighter—adapt quickly!
+<<elseif $selection == "PullShotNormal">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Brilliant! Pull shot is perfect for short deliveries.
+<<elseif $selection == "CutShotNormal" || $selection == "CutShotLofted">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Good adaptation—cut shots work for short balls outside off.
+<<elseif $selection == "ForwardDefense">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Careful—forward defense is risky against bouncers. Duck or play back.
+<<elseif $selection == "Leave">>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Smart choice—sometimes leaving is the best option.
+<<else>>
+    <<resetToOriginalPresets>>
+    <<moveDialogue top>>
+    <<showCharacterImage center>>
+    Ramu: Short balls need horizontal bat shots or ducking.
+<<endif>>
 <<resetToOriginalPresets>>
 <<moveDialogue top>>
 <<showCharacterImage center>>
-Ramu: Good try, lets try the "Redraw" button once and then get to work.
+Ramu: Good practice with the timer. Now let's learn about the Redraw button.
 <<ballFourthBall>>
 <<unhideBallerCard>>
 <<showFlipButton>>
-Ramu: As you can see none of the available shots are ideal for the ball being thrown. Time to use the "Redraw" button. Press the "Redraw" button.
+Ramu: None of these shots are ideal. Time to Redraw—press the button.
 <<hideCharacterImage>>
 ===
 
 title: FlipCardSelection
+position: 29,267
 ---
 <<clearHighlights>>
 <<if $flipButtonClicked>>
@@ -244,9 +310,20 @@ title: FlipCardSelection
     <<showCharacterImage center>>
     <<unhideBallerCard>>
     Ramu: Your shots refreshed—notice your tries decreased. You can Redraw multiple times if you have tries left. No tries? You're stuck with what you've got, captain.
-    Ramu: We are all set. You are ready to go out in the world and become the best batsman in the world. Good luck captain.
     <<hideCharacterImage>>
 <<endif>>
+<<hideCharacterImage>>
+
+<<showBBallsPanel>>
+<<showWicketsPanel>>
+<<showScorePanel>>
+<<wait  3>>
+<<clearHighlights>>
+<<moveDialogue top>>
+<<showCharacterImage center>>
+<<unhideBallerCard>>
+Ramu: On the top you can see a bunch of stats, the runs you scored, the balls remaining and the wickets you have. All of these can be upgraded as you progress through your journey.
+Ramu: We are all set. Lets try a full task now.
 <<hideCharacterImage>>
 <<startNextScene>>
 ===
