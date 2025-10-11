@@ -4,9 +4,6 @@ colorID: 0
 position: 0,0
 ---
 
-<<PlayBackgroundMusic Heartbeat_1>>
-<<ShowDateCard "March 29th 1990 - Evening">>
-<<wait 5>>
 
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite kohliwadaGround>>

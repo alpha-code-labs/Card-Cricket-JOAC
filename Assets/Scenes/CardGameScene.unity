@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c82e92f6f7758438e57b202a6c3946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRuns: 40
+  currentRuns: 0
   TargetScore: 15
   MaxBalls: 12
   baseWickets: 2
