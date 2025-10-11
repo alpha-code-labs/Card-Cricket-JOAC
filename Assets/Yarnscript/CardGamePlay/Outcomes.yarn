@@ -46,7 +46,7 @@ title: PostGameplay
 title: Gameplay1Result
 ---
 // Gameplay 1: Batting first with 12 balls
-<<if $wicketsLost >= 2>>
+<<if $wicketsLost >= 2 && $finalScore == 0>>
     <<jump scene_7>>
 <<elseif $finalScore <= 11>>
     <<jump scene_8>>
@@ -60,7 +60,7 @@ title: Gameplay1Result
 title: Gameplay2Result
 ---
 // Gameplay 2: Batting first with 24 balls
-<<if $wicketsLost >= 2>>
+<<if $wicketsLost >= 2 && $finalScore == 0>>
     <<jump scene_12>>
 <<elseif $finalScore <= 23>>
     <<jump scene_13>>
