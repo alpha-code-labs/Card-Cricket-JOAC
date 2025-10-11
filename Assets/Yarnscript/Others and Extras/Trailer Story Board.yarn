@@ -1,5 +1,6 @@
 ﻿title: Trailer_Story_Board
 ---
+<<HideAllCharacters>>
 // 00:00:00,000 --> 00:00:04,000
 <<SetBGSprite KohliwadaGround>>
 //<<music ambient_gully fadeIn=1>>
@@ -27,30 +28,30 @@ Raju (monologue): That was the day… I got the chance to prove myself….
 <<SetCharacterExpression Raju Neutral>>
 Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
 // 00:00:18,000 --> 00:00:22,000
-<<SetBGSprite SportsAcademy>>
+<<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 1 – Eyes>>
 <<SetCharacterExpression Ramu Serious>>
-Coach Dev (VO): See before you decide. Read the bowler, not the ball.
+Ramu: See before you decide. Read the bowler, not the ball.
 // 00:00:22,000 --> 00:00:26,000
-<<SetBGSprite SportsAcademy>>
+<<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 2 – Feet>>
 <<SetCharacterExpression Ramu Serious>>
-Coach Dev (VO): Quiet feet. Quick mind. Settle first.
+Ramu: Quiet feet. Quick mind. Settle first.
 // 00:00:26,000 --> 00:00:30,000
-<<SetBGSprite SportsAcademy>>
+<<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 3 – Hands>>
 <<SetCharacterExpression Ramu Neutral>>
-Coach Dev (VO): Gentle hands. Let the bat talk.
+Ramu: Gentle hands. Let the bat talk.
 // 00:00:30,000 --> 00:00:35,000
-<<SetBGSprite SportsAcademy>>
+<<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 4 – Timing>>
 <<SetCharacterExpression Ramu Serious>>
-Coach Dev (VO): Wait for your moment. Poor or rich — timing's everything.
+Ramu: Wait for your moment. Poor or rich — timing's everything.
 // 00:00:35,000 --> 00:00:40,000
-<<SetBGSprite SportsAcademy>>
+<<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 5 – Temper>>
 <<SetCharacterExpression Ramu Neutral>>
-Coach Dev (VO): Miss once, breathe. Miss twice… breathe longer.
+Ramu: Miss once, breathe. Miss twice… breathe longer.
 <<SetCharacterExpression Raju Happy>>
 // Tone note: "Happy" feels too bright here. The moment should feel grateful and grounded.
 // Suggest: Soft gratitude/nostalgia — small, fleeting smile; eyes glassy, voice low and steady.

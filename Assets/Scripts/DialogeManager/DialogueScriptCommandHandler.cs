@@ -152,7 +152,7 @@ private void InitializeMusicDictionary()
 
         if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
         {
-            //Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
             return;
         }
 
