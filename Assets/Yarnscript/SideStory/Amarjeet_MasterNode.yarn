@@ -2,7 +2,7 @@
 ---
 <<declare $Amarjeet_Complete = false as bool>>
 <<declare $Amarjeet_Path = "" as string>>
-<<declare $Amarjeet_Day = 0 as number>>//change to 0 to start the story from the jump node below
+<<declare $Amarjeet_Day = 1 as number>>//change to 0 to start the story from the jump node below
 <<if $Amarjeet_Day==0>>//This is for testing purpose only, remove later
     <<jump Amarjeet_Day1>>  //This is for testing purpose only, remove later
 <<elseif $Amarjeet_Day==1>>
@@ -36,7 +36,7 @@ The evening shadows lengthen across the temple courtyard as the familiar scent o
 Amarjeet: Ah, young one. You come running with dust on your face and a bat in your hand, but I can see something troubling you. Your cricket practice didn't go as planned today, did it?
 
 <<SetCharacterExpression "Raju" "Surprised">>
-// Raju feels surprised by the priest's perceptiveness. He had hoped his frustration wasn't so obvious, but Amarjeet's years of observing people seem to make him particularly skilled at reading the emotions of young visitors to his temple.
+Raju feels surprised by the priest's perceptiveness. He had hoped his frustration wasn't so obvious, but Amarjeet's years of observing people seem to make him particularly skilled at reading the emotions of young visitors to his temple.
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: Baba, I don't understand why some days I can hit every ball perfectly, and other days I can't connect with anything. I practice the same way, but the results keep changing. Am I doing something wrong?
@@ -141,7 +141,7 @@ The temple atmosphere carries its usual sense of peaceful contemplation as Amarj
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: You return faithfully, beta. Today I offer you three paths to deepen your understanding. How do you wish to approach the challenge of mastering your mind?
 
-<<SetCharacterExpression "Amarjeet" "Serious">>
+// <<SetCharacterExpression "Amarjeet" "Serious">>
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju feels grateful for the priest's perceptiveness. Indeed, his growing understanding of moment-to-moment focus has raised larger questions about how to maintain discipline over weeks and months of practice, especially when progress feels slow or when setbacks occur.
