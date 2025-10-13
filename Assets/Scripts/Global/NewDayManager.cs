@@ -181,10 +181,10 @@ public class NewDayManager : MonoBehaviour
     [YarnCommand("EndEvent")]
     public static void EndEvent(bool FreeTimeConsumed = false)
     {
-        // if (FreeTimeConsumed)
-        //     isEvening = true;
-        // currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
+        if (FreeTimeConsumed)
+            isEvening = true;
+        currentEventIndex++;
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     [YarnCommand("RetryEvent")]
     public static void RetryEvent(string eventName)//only works for current day
