@@ -36,6 +36,11 @@ public class Timer_Tutorial : MonoBehaviour
         //timerText.text = maxTimeToChooseStrategy.ToString() + "s";
     }
 
+    public void updateMaxTimeToChooseStrategy(int newTime)
+    {
+        maxTimeToChooseStrategy = newTime;
+        timerText.text = maxTimeToChooseStrategy.ToString() + "s";
+    }
     public void ShowTimingPanel()
     {
         TimerParent.SetActive(true);
@@ -122,6 +127,15 @@ public class Timer_Tutorial : MonoBehaviour
                     dialogueRunner.StartDialogue("ThirdBall");
                     break;
                 }
+            case "fifth":
+                dialogueRunner.StartDialogue("FifthBall");
+                break;
+            case "sixth":
+                dialogueRunner.StartDialogue("SixthBall");
+                break;
+            case "seventh":
+                dialogueRunner.StartDialogue("SeventhBall");
+                break;
         }
         //CardsPoolManager_Tutorial.Instance.StartTurn(true);
     }

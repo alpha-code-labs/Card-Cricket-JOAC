@@ -8,7 +8,9 @@ title: PostGameplay
 <<declare $gameResult = "">> // "won", "lost_wickets", "lost_runs"
 
 // Check which gameplay based on gameplay number
-<<if $gameplayNumber == 1>>
+<<if $gameplayNumber == 0>>
+    <<jump Gameplay0Result>>
+<<elseif $gameplayNumber == 1>>
     <<jump Gameplay1Result>>
 <<elseif $gameplayNumber == 2>>
     <<jump Gameplay2Result>>
@@ -43,6 +45,13 @@ title: PostGameplay
 <<endif>>
 ===
 
+
+title: Gameplay0Result
+---
+// Gameplay 0: Tutorial batting first with 6 balls
+<<EndEvent>>
+===
+
 title: Gameplay1Result
 ---
 // Gameplay 1: Batting first with 12 balls
@@ -74,7 +83,7 @@ title: Gameplay2Result
 title: Gameplay3Result
 ---
 // Gameplay 3: Chasing 15 runs in 12 balls
-<<if $gameResult == "lost_wickets" || $finalScore < 15>>
+<<if $finalScore < 15>>
     <<jump scene_17>>
 <<else>>
     <<jump scene_18>>
