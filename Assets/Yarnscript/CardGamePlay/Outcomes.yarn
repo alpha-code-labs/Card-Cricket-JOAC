@@ -9,7 +9,7 @@ title: PostGameplay
 
 // Check which gameplay based on gameplay number
 <<if $gameplayNumber == 0>>
-    <<jump Gameplay0Result>>
+    <<jump scene_3>>
 <<elseif $gameplayNumber == 1>>
     <<jump Gameplay1Result>>
 <<elseif $gameplayNumber == 2>>

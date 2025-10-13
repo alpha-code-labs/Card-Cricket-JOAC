@@ -32,6 +32,12 @@ MonoBehaviour:
     - eventName: Tutorial Scene
       eventDescription: Pre-Tutorial Cutscene
       eventType: 6
+    - eventName: Tutorial Gameplay
+      eventDescription: Mini gameplay after tutorial
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post-Tutorial Cutscene
+      eventType: 0
     - eventName: scene_3
       eventDescription: Post-Tutorial Cutscene
       eventType: 0
