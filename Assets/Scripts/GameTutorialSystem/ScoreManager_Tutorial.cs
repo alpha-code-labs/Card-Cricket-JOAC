@@ -211,6 +211,15 @@ public class ScoreManager_Tutorial : MonoBehaviour
                     dialogueRunner.StartDialogue("ThirdBall");
                     break;
                 }
+            case "fifth":
+                dialogueRunner.StartDialogue("FifthBall");
+                break;
+            case "sixth":
+                dialogueRunner.StartDialogue("SixthBall");
+                break;
+            case "seventh":
+                dialogueRunner.StartDialogue("SeventhBall");
+                break;
         }
         CardsPoolManager_Tutorial.Instance.currentTutorialBall = "None";
         // End turn timer

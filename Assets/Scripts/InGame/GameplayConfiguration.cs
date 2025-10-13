@@ -45,6 +45,8 @@ public class GameplayConfiguration : MonoBehaviour
     {
         gameplayConfigs = new Dictionary<string, GameplayConfig>
         {
+            //Tutorial gameplay
+            { "1988/07/23", new GameplayConfig(0, "1988/07/23", 6, 0, PitchCondition.Friendly) }, // Tutorial gameplay
             // Original gameplays (1-9)
             {"1989/01/31", new GameplayConfig(1, "1989/01/31", 12, 0, PitchCondition.Friendly)}, // Batting first
             {"1989/02/01", new GameplayConfig(2, "1989/02/01", 24, 0, PitchCondition.Friendly)}, // Batting first

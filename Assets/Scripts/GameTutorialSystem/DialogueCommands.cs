@@ -223,7 +223,24 @@ public class DialogueCommands : MonoBehaviour
     {
         CardsPoolManager_Tutorial.Instance.BallFourthBall();
     }
+    [YarnCommand("ballFifthBall")]
+    public static void BallFifthBall()
+    {
+        Debug.Log("Fifth ball called from yarn");
+        CardsPoolManager_Tutorial.Instance.BallFifthBall();
+    }
 
+    [YarnCommand("ballSixthBall")]
+    public static void BallSixthBall()
+    {
+        CardsPoolManager_Tutorial.Instance.BallSixthBall();
+    }
+
+    [YarnCommand("ballSeventhBall")]
+    public static void BallSeventhBall()
+    {
+        CardsPoolManager_Tutorial.Instance.BallSeventhBall();
+    }
     [YarnCommand("startNextScene")]
     public static void StartNextScene()
     {
@@ -289,5 +306,11 @@ public class DialogueCommands : MonoBehaviour
     public static void ShowAllArrows()
     {
         TutorialArrowManager.Instance.ShowAllArrows();
+    }
+
+    [YarnCommand("changeTimerTiming")]
+    public static void ChangeTimerTiming(float newTime)
+    {
+        Timer_Tutorial.Instance.updateMaxTimeToChooseStrategy(Mathf.CeilToInt(newTime));
     }
 }
