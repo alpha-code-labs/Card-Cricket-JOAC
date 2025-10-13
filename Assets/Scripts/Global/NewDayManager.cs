@@ -60,8 +60,8 @@ public class NewDayManager : MonoBehaviour
         switch (events.eventType)
         {
             case TypeOfEvent.ForcedCutscene:
-                if (currentEventIndex != 0)
-                    yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
+                // if (currentEventIndex != 0)
+                //     yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
