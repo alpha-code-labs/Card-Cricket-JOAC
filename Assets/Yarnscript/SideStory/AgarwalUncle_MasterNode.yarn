@@ -36,103 +36,103 @@ After overhearing his mother discuss struggles of local shopkeepers, Raju visits
 
 The cramped interior buzzes with evening activity. Customers squeeze between narrow aisles as the shopkeeper moves constantly between tasks.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Tired">>
 AgarwalUncle: Arre beta, terrible timing and perfect timing all at once!
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: Half my customers want their monthly supplies.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Anxious">>
 AgarwalUncle: And the other half need immediate small items.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Pained">>
 AgarwalUncle: But I'm just one person trying to serve everyone at once.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: Uncle ji, you look completely overwhelmed!
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: The store is so busy today. Is there anything I can do to help you?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: Help? Beta, running a general store isn't like playing shop-shop with your friends.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Real money changes hands here. Customers expect exact change.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: And one mistake in calculations or inventory can cost me profit.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Anxious">>
 AgarwalUncle: Profit that feeds my family.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I understand it's serious business, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But I'm good with numbers and I'm very careful with money.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: Maybe I could start with something simple to reduce your workload?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Irritated">>
 AgarwalUncle: Simple? Child, there's nothing simple about retail!
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Every transaction requires checking inventory, calculating totals.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Tired">>
 AgarwalUncle: Handling cash, giving correct change.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: And maintaining customer relationships.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Anxious">>
 AgarwalUncle: One dissatisfied customer can damage reputation built over twenty years.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly why I want to help, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: You've built such a trusted business that serves our entire neighborhood.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Surely there's some way I could assist without causing problems?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Surprised">>
 AgarwalUncle: You really want to learn about shopkeeping?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: Even knowing how demanding customers can be?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: How precise money handling must be?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Tired">>
 AgarwalUncle: How exhausting these long days become?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm not afraid of hard work or demanding customers, uncle.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: My father always says that honest business is the backbone of any community.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And I want to understand what that really means.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
 AgarwalUncle: Your father is a wise man, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: But understanding and doing are very different things.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Then let me learn by doing, uncle. Give me a chance to prove myself.
 
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: Your persistence is admirable, I'll give you that.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Neutral">>
 AgarwalUncle: Come back tomorrow morning. We'll talk more when it's not so chaotic.
 
 <<HideCharacter>>
@@ -158,31 +158,31 @@ Despite yesterday's introduction to demanding retail, Raju returns during mornin
 
 The store emanates methodical efficiency. Agarwal Uncle systematically checks deliveries, updates price lists, and arranges products with precision.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Surprised">>
 AgarwalUncle: Back again, beta?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: I thought yesterday's madness might have scared you off.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
 AgarwalUncle: Most people don't see the hours of preparation behind every smooth transaction.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Actually, uncle, watching you yesterday made me more fascinated, not less.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: I've never seen anyone keep track of so many different items.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: So many prices and customer preferences while maintaining perfect accuracy.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Amused">>
 AgarwalUncle: Perfect accuracy? Ha! Beta, I make mistakes every day.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Embarrassed">>
 AgarwalUncle: Miscounting change, ordering wrong quantities, misreading customer needs.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Confident">>
 AgarwalUncle: The difference is I've learned to catch errors quickly.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
@@ -191,7 +191,7 @@ AgarwalUncle: And fix them before they become bigger problems.
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: How did you develop such detailed knowledge of inventory?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: And customer patterns? Did you study business?
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -203,49 +203,49 @@ AgarwalUncle: I inherited this store from my father twenty-two years ago.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: When I was barely older than you.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Crying">>
 AgarwalUncle: He died suddenly, leaving me with suppliers to pay.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: Customers to serve, and a family to support.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Disappointed">>
 AgarwalUncle: But no formal business training whatsoever.
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: That must have been terrifying, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sympathetic">>
 Raju: Taking on such huge responsibility so young, with no preparation or guidance.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Terrifying, yes. But also necessary.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: This store supported my mother, my younger sister's education.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Loving">>
 AgarwalUncle: And eventually my own wife and children.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Determined">>
 AgarwalUncle: When survival depends on success, you learn faster than any classroom could teach.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: That's incredible, uncle. You built all this expertise through dedication.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: Through necessity. No wonder you're so careful about every detail.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Understanding">>
 Raju: You understand how much depends on getting things right.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: You're beginning to understand, beta.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Retail isn't just about selling products. It's about serving community.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: Building trust. Maintaining relationships that span generations.
 
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
@@ -254,13 +254,13 @@ AgarwalUncle: You keep expressing interest in helping.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: But retail assistance means different responsibilities.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: What exactly do you think you could contribute to established business operations?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: I've been thinking about that, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And I'm ready to show you rather than just tell you.
 
 <<HideCharacter>>
@@ -286,22 +286,22 @@ The store hums with organizational activity. Today carries different significanc
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Well beta, you've been asking to help for three days now.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Curious">>
 AgarwalUncle: Today I'm busy enough to give you a proper evaluation.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: But first, tell me - how do you think you could best contribute to my store?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I've been observing and thinking, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: There are several areas where I could help.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But I want to focus on what would make the most meaningful difference.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: Show me you understand retail beyond just wanting to help.
 
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
@@ -325,61 +325,61 @@ position: -402,138
 
 <<set $AgarwalUncle_Path = "a">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Enthusiastic">>
 Raju: I want to master inventory management, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: Help me understand your system for tracking stock.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: For organizing products and knowing when to reorder supplies.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: Inventory management? Beta, this isn't organizing your school books.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Mistakes in inventory mean lost sales.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: Unhappy customers, and wasted money on products that don't sell.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I understand the responsibility, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But I'm systematic and detail-oriented.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: I want to learn how successful businesses maintain perfect organization.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Even with hundreds of different items.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Doubtful">>
 AgarwalUncle: You really think you can handle tracking inventory?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: Understanding how each item moves, when to restock?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, uncle! I'll study your system carefully.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: And I won't make any changes without your approval.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautious">>
 AgarwalUncle: Very well. But you start with basic counting and organizing only.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: No ordering decisions until you prove you understand.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: How inventory affects cash flow and customer satisfaction.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: Thank you for trusting me, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be the most careful and systematic assistant you've ever had.
 
 <<jump AgarwalUncle_Day3_Continue>>
@@ -392,61 +392,61 @@ position: -149,260
 
 <<set $AgarwalUncle_Path = "b">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Enthusiastic">>
 Raju: Let me focus on customer service, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: I can help serve customers, handle transactions.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: And ensure everyone leaves satisfied with their shopping experience.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: Customer service? Beta, handling customers means managing money.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Calculating complex orders.
 
-<<SetCharacterExpression "AgarwalUncle" "Sad">>
+<<SetCharacterExpression "AgarwalUncle" "Anxious">>
 AgarwalUncle: And representing twenty years of business reputation.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: If you make mistakes, customers lose trust in my entire operation.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I understand the responsibility, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sincere">>
 Raju: But I'm honest, careful with money.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And I want every customer to feel valued and respected in your store.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: You think you can handle angry customers?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: People who demand discounts or complain about prices?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Calm">>
 Raju: I'll treat every customer with respect, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Humble">>
 Raju: And if there's a problem I can't solve, I'll bring you immediately.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Grave">>
 AgarwalUncle: Customer relations determine whether a small business survives or fails.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautious">>
 AgarwalUncle: Very well - you can help with basic transactions.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: But any complex orders or problems come to me immediately.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Grateful">>
 Raju: I won't disappoint you, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Every customer will receive honest, respectful service.
 
 <<jump AgarwalUncle_Day3_Continue>>
@@ -459,61 +459,61 @@ position: 191,294
 
 <<set $AgarwalUncle_Path = "c">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Enthusiastic">>
 Raju: I want to help with business efficiency, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: Let me study your operations.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: And suggest ways to serve customers faster while maintaining quality.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Offended">>
 AgarwalUncle: Business efficiency? Beta, I've been running this store for twenty-two years.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Irritated">>
 AgarwalUncle: You think a young boy can identify improvements?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Skeptical">>
 AgarwalUncle: That I haven't already considered?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: Not improvements to your expertise, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Diplomatic">>
 Raju: Opportunities to apply fresh perspective!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: Sometimes new eyes can spot possibilities.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Humble">>
 Raju: That experience might overlook.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Intrigued">>
 AgarwalUncle: Fresh perspective, hmm?
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Contemplative">>
 AgarwalUncle: That's an interesting way to frame it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sincere">>
 Raju: I'll be respectful of everything you've built, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Hopeful">>
 Raju: But maybe I can notice small things that could save you time or effort.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautiously Optimistic">>
 AgarwalUncle: Interesting approach. Very well - observe everything, take notes.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Testing">>
 AgarwalUncle: And we'll discuss your observations.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: But remember, any suggestions must be practical and cost-effective.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll approach this systematically, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Every observation will be based on careful study.
 
 <<jump AgarwalUncle_Day3_Continue>>
@@ -523,25 +523,25 @@ title: AgarwalUncle_Day3_Continue
 tags:
 ---
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Impressed">>
 AgarwalUncle: You know, beta, your approach impresses me.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Reflective">>
 AgarwalUncle: Most young people want easy work with quick results.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: But you're asking for responsibility and learning opportunities.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Sincere">>
 Raju: Because I want to understand how real businesses work, uncle.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Not just earn pocket money or pass time.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Warm">>
 AgarwalUncle: Then let's begin tomorrow. Come early, before the rush.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: We'll start your real education in retail operations.
 
 <<HideCharacter>>
@@ -576,73 +576,73 @@ After yesterday's selection, Raju arrives early to begin implementing his chosen
 
 The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Testing">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: Today you'll discover whether your enthusiasm can handle actual demands.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Of serving customers and managing business operations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm completely ready, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: I've been thinking about this opportunity all night.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm eager to prove that my help can make a genuine difference.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautious">>
 AgarwalUncle: We'll see how you handle the pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: When customers want fast service and perfect accuracy simultaneously.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Retail work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: I understand, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Hopeful">>
 Raju: But I believe that helping your business succeed will teach me valuable lessons.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: About precision, customer relations, and the importance of small enterprises.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Approving">>
 AgarwalUncle: Your attitude is promising, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Expectant">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Businesslike">>
 AgarwalUncle: The evening rush starts in two hours.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Energized">>
 Raju: Then let's use these two hours to prepare perfectly!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: Good thinking. Come, let me show you the critical details.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Instructive">>
 AgarwalUncle: The ones that separate adequate service from excellent service.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: I'm ready to learn everything, uncle!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: Your enthusiasm is refreshing, beta. Let's put it to work.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Remember - accuracy first, then speed. Never the other way around.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Focused">>
 Raju: Accuracy first, then speed. Got it, uncle.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideCharacter>>
@@ -665,73 +665,73 @@ After yesterday's selection, Raju arrives early to begin implementing his chosen
 
 The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Testing">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: Today you'll discover whether your enthusiasm can handle actual demands.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Of serving customers and managing business operations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm completely ready, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: I've been thinking about this opportunity all night.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm eager to prove that my help can make a genuine difference.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautious">>
 AgarwalUncle: We'll see how you handle the pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: When customers want fast service and perfect accuracy simultaneously.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Retail work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: I understand, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Hopeful">>
 Raju: But I believe that helping your business succeed will teach me valuable lessons.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: About precision, customer relations, and the importance of small enterprises.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Approving">>
 AgarwalUncle: Your attitude is promising, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Expectant">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Businesslike">>
 AgarwalUncle: The evening rush starts in two hours.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Energized">>
 Raju: Then let's use these two hours to prepare perfectly!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: Good thinking. Come, let me show you the critical details.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Instructive">>
 AgarwalUncle: The ones that separate adequate service from excellent service.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: I'm ready to learn everything, uncle!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: Your enthusiasm is refreshing, beta. Let's put it to work.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Remember - accuracy first, then speed. Never the other way around.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Focused">>
 Raju: Accuracy first, then speed. Got it, uncle.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideCharacter>>
@@ -754,73 +754,73 @@ After yesterday's selection, Raju arrives early to begin implementing his chosen
 
 The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Testing">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: Today you'll discover whether your enthusiasm can handle actual demands.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Of serving customers and managing business operations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm completely ready, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: I've been thinking about this opportunity all night.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm eager to prove that my help can make a genuine difference.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Cautious">>
 AgarwalUncle: We'll see how you handle the pressure.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Stern">>
 AgarwalUncle: When customers want fast service and perfect accuracy simultaneously.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Retail work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: I understand, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Hopeful">>
 Raju: But I believe that helping your business succeed will teach me valuable lessons.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: About precision, customer relations, and the importance of small enterprises.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Approving">>
 AgarwalUncle: Your attitude is promising, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Expectant">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Businesslike">>
 AgarwalUncle: The evening rush starts in two hours.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Energized">>
 Raju: Then let's use these two hours to prepare perfectly!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: Good thinking. Come, let me show you the critical details.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Instructive">>
 AgarwalUncle: The ones that separate adequate service from excellent service.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Eager">>
 Raju: I'm ready to learn everything, uncle!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: Your enthusiasm is refreshing, beta. Let's put it to work.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Remember - accuracy first, then speed. Never the other way around.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Focused">>
 Raju: Accuracy first, then speed. Got it, uncle.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideCharacter>>
@@ -842,76 +842,76 @@ After successfully completing his first full day, Raju returns eager to build on
 
 The familiar store greets Raju with growing confidence. Yesterday's success has validated both his capabilities and Agarwal Uncle's trust.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: You returned, beta! Yesterday was quite impressive.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: You handled the pressure better than many experienced workers.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: Are you prepared to take on greater responsibility today?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Enthusiastic">>
 Raju: Definitely, uncle! Yesterday taught me so much.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Grateful">>
 Raju: About retail operations and customer service.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I feel like I understand your business much more deeply now.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: Excellent! Today I want to see if you can handle more complex challenges.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Reflective">>
 AgarwalUncle: Yesterday was basic assistance.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Expectant">>
 AgarwalUncle: Today we test whether you can truly contribute to business success.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm ready for whatever challenge you have, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Humble">>
 Raju: Working here has shown me how much skill successful retail requires.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Respectful">>
 Raju: And how much dedication.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Testing">>
 AgarwalUncle: Then let's see if you can maintain yesterday's quality.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Challenging">>
 AgarwalUncle: While handling increased responsibility.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Our customers depend on us to deliver excellence consistently.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Committed">>
 Raju: I won't let you or the customers down, uncle!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Trusting">>
 AgarwalUncle: I'm beginning to believe that, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Impressed">>
 AgarwalUncle: Your work yesterday exceeded my expectations significantly.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Touched">>
 Raju: That means so much coming from you, uncle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Sincere">>
 Raju: Your approval is worth more than any payment!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Thoughtful">>
 AgarwalUncle: Speaking of payment, we should discuss that soon.
 
-<<SetCharacterExpression "AgarwalUncle" "Serious">>
+<<SetCharacterExpression "AgarwalUncle" "Fair">>
 AgarwalUncle: Real work deserves fair compensation.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Content">>
 Raju: For now, learning is payment enough, uncle!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Warm">>
 AgarwalUncle: That attitude will take you far in life, beta.
 
 <<HideCharacter>>
@@ -933,115 +933,115 @@ With two successful days behind him, Raju approaches Agarwal Uncle about making 
 
 The store atmosphere reflects their comfortable working relationship. Today's conversation carries weight beyond immediate business concerns.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Reflective">>
 AgarwalUncle: Beta, I must confess something.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Honest">>
 AgarwalUncle: When you first offered to help, I assumed it was typical childhood curiosity.
 
-<<SetCharacterExpression "AgarwalUncle" "Quizzical">>
+<<SetCharacterExpression "AgarwalUncle" "Dismissive">>
 AgarwalUncle: That would fade quickly.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Impressed">>
 AgarwalUncle: But these past few days have revealed something remarkable.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: About your work ethic and business understanding.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Grateful">>
 Raju: Thank you, uncle! Working here has been incredibly educational.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Enthusiastic">>
 Raju: I've learned so much about retail operations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: But also about serving the community and building trust with customers.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Wise">>
 AgarwalUncle: You've demonstrated that capability isn't determined by age.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Philosophical">>
 AgarwalUncle: It's determined by attitude and commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Grateful">>
 AgarwalUncle: Your help has not only made my work more manageable.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Hopeful">>
 AgarwalUncle: But it's renewed my faith in the next generation.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Insightful">>
 Raju: This experience has taught me something important, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Mature">>
 Raju: That honest business requires the same qualities as any other form of excellence.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Wise">>
 Raju: Precision, dedication, and genuine care for the people you serve.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Understanding">>
 Raju: Whether someone is running a store or pursuing cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Success demands the same fundamental character traits.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Delighted">>
 AgarwalUncle: Exactly, beta! You understand perfectly!
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Pleased">>
 AgarwalUncle: And you've shown that young people can contribute meaningfully.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Optimistic">>
 AgarwalUncle: To their community's economic health.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: When they approach work with respect and genuine desire to help.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Generous">>
 AgarwalUncle: I want to offer you a permanent part-time position here.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Businesslike">>
 AgarwalUncle: After school hours, with fair compensation for your contributions.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Respectful">>
 AgarwalUncle: You've earned the right to be treated as a legitimate business partner.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Sincere">>
 AgarwalUncle: Not just a helpful volunteer.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: That's wonderfully generous, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Humble">>
 Raju: But more than the payment, I value what I've learned.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Appreciative">>
 Raju: About business operations and the crucial role neighborhood stores play.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Thoughtful">>
 Raju: In community life.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Content">>
 AgarwalUncle: Then we both benefit perfectly, beta.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Encouraging">>
 AgarwalUncle: You gain practical business experience.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Satisfied">>
 AgarwalUncle: That will serve you well in any future endeavor.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Grateful">>
 AgarwalUncle: And I gain a reliable partner who understands customer satisfaction.
 
-<<SetCharacterExpression "AgarwalUncle" "Smiling">>
+<<SetCharacterExpression "AgarwalUncle" "Wise">>
 AgarwalUncle: And community trust are the foundation of sustainable retail success.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Committed">>
 Raju: I accept your offer with gratitude, uncle!
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: This partnership means more to me than you know.
 
-<<SetCharacterExpression "AgarwalUncle" "Excited">>
+<<SetCharacterExpression "AgarwalUncle" "Loving">>
 AgarwalUncle: And to me as well, beta. Welcome to the business!
 
 <<PlayBackgroundMusic Emotional_1>>

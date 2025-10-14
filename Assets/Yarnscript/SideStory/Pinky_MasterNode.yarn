@@ -31,13 +31,13 @@ Instead of heading straight home after school, Raju goes to the public school li
 
 The hushed library provides refuge from the chaos of home. Rows of books and study tables create an academic sanctuary. Late afternoon light filters through dusty windows as scattered students work quietly.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" "Irritated">>
 Pinky: You're making too much noise with that chair.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Some people are trying to concentrate here.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Embarrassed">>
 Raju: Sorry about that.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -46,31 +46,31 @@ Raju: Are those medical books? We're only in 8th grade.
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Some of us can't afford to wait until later to start preparing.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Medical entrance exams require years of preparation, not months.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" "Disapproving">>
 Pinky: You're approaching that completely wrong.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" "Skeptical">>
 Pinky: The quadratic formula isn't meant to be guessed at.
 
-<<SetCharacterExpression "Pinky" "Angry">>
+<<SetCharacterExpression "Pinky" "Serious">>
 Pinky: There's a systematic method.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Could you show me?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: I've been stuck on this type of problem for weeks.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: I suppose five minutes won't hurt.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: But pay attention - I won't repeat myself.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: That makes so much more sense.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -79,7 +79,7 @@ Raju: How did you learn to explain things so clearly?
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: When you're studying alone most of the time, you learn to be your own teacher.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: You have to understand things well enough to explain them to yourself.
 
 <<PlayBackgroundMusic Emotional_1>>
@@ -102,40 +102,40 @@ Encouraged by yesterday's productive session, Raju returns to the library after 
 
 The library welcomes Raju's return. Pinky sits at her usual table surrounded by advanced medical texts. Today something in her posture suggests an emotional burden, creating an opportunity for deeper connection.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: Is everything alright?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: You seem upset about something.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Tired">>
 Pinky: I'm fine. Just tired from studying late last night.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Neutral">>
 Pinky: Did you complete the practice problems I suggested?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I did three of them correctly, but I'm still struggling with word problems.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confused">>
 Raju: The mathematical operations make sense now, but translating the language into equations is confusing.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Word problems are actually more about reading comprehension than pure mathematics.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: And logical thinking. Let me see what you're working on.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: The key is identifying what information you know, what you need to find.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: And what mathematical relationship connects them.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: It's like solving a puzzle where the pieces are numbers and operations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: I never thought about it as detective work before.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -144,28 +144,28 @@ Raju: You make it seem logical instead of mysterious.
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: That's exactly what it is - systematic investigation.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: In medical school, diagnosis follows the same pattern.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Identify symptoms, understand relationships, apply knowledge systematically.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: You really love learning, don't you?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Not just for tests, but because knowledge itself excites you.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Knowledge is power.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Serious">>
 Pinky: When you understand how things work, you can fix them.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Whether it's mathematical equations or human bodies, the principles are similar.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Careful observation, logical analysis, systematic solutions.
 
 <<HideCharacter>>
@@ -189,19 +189,19 @@ The afternoon sunlight illuminates the library as Raju arrives for his third con
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I brought these for you.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: I know you go through a lot of pencils with all your studying.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: You shouldn't have...
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: I can't accept gifts. My parents...
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: What's wrong?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Concerned">>
 Raju: You've helped me so much these past few days.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -210,58 +210,58 @@ Raju: Maybe I can help you with whatever you're facing.
 <<SetCharacterExpression "Pinky" "Sad">>
 Pinky: My father received a marriage proposal for me yesterday.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: From a family in the next village.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: They want the engagement ceremony right after our final exams.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Disappointed">>
 Pinky: I've been preparing for medical entrance exams for two years.
 
 <<SetCharacterExpression "Pinky" "Sad">>
 Pinky: I study by candlelight after everyone sleeps.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: I've memorized entire anatomy chapters, practiced thousands of chemistry equations.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Crying">>
 Pinky: But none of it matters if I'm married off at fourteen.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That's exactly how I feel about cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: My father sees it as a distraction from studies, something that threatens my future.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We're both fighting for dreams our families don't understand.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Astonished">>
 Pinky: Your cricket means as much to you as medicine means to me?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket makes me feel like I could be someone special.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Someone who makes a difference.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: When I'm playing, I'm not just another poor kid from the slums.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: I'm an athlete with potential.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Your father wants you to focus only on studies, my parents want me to abandon studies entirely.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: But we both need excellent exam scores.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: You to prove cricket won't harm your academics, me to prove education has enough value to delay marriage.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Quizzical">>
 Pinky: How should we approach this challenge?
 
 <<SetCharacterExpression "Pinky" "Serious">>
@@ -285,61 +285,61 @@ position: -308,129
 ---
 <<set $Pinky_Path = "a">>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's focus completely on academics, Pinky.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Excellence in exams is our best weapon against family pressure.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: If we both achieve outstanding scores, our families will have to respect our capabilities.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: You're absolutely right.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Pure academic achievement is undeniable proof.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Let me create detailed study schedules for both of us.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Systematic preparation that maximizes our exam performance.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: This is incredibly thorough, Pinky.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: You've broken down every subject into measurable daily goals.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: This level of organization could make the difference.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Between good scores and exceptional ones.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Academic excellence requires the same systematic approach as any other goal.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: We'll track our progress daily, identify weaknesses immediately.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: And adjust our methods based on results.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Your systematic methods are working perfectly.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: I'm understanding concepts instead of just memorizing procedures.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: This approach makes everything clearer.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: When we achieve top scores through systematic preparation, neither your father nor my parents can dismiss our capabilities.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Excellence speaks louder than family expectations.
 
 <<HideCharacter>>
@@ -355,58 +355,58 @@ position: -55,122
 ---
 <<set $Pinky_Path = "b">>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: I understand your struggle, Pinky.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me help you stay strong while we both pursue our dreams.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: We don't have to face family pressure alone.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We can support each other through this.
 
 <<SetCharacterExpression "Pinky" "Sad">>
 Pinky: Thank you for understanding.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: Sometimes I feel so isolated, like I'm the only one fighting against impossible expectations.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Relieved">>
 Pinky: Having someone who truly comprehends the struggle makes everything feel less overwhelming.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: When you doubt yourself, remember how brilliant you are.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: Your teaching has transformed my understanding of mathematics in just a few days.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: That kind of intelligence can overcome any obstacle.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Your encouragement helps more than you know.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: When family pressure makes me question whether I'm being unrealistic, your belief in my capabilities reminds me that my dreams have substance.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Every time you explain a concept to me, you prove that you have the mind of a natural teacher and healer.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: Don't let anyone convince you that such gifts should be wasted on early marriage.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: You're right.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: My abilities are real, my preparation is solid.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: And my dreams deserve to be pursued.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Proud">>
 Pinky: With your support, I feel strong enough to fight for my future.
 
 <<HideCharacter>>
@@ -425,55 +425,55 @@ position: 184,122
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: We're stronger together, Pinky.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's create a plan where we both succeed through mutual support.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Your teaching helps my grades, and maybe helping me reinforces your own knowledge.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: That's brilliant!
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Astonished">>
 Pinky: A true partnership where each person's success strengthens the other's goals.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Your questions force me to understand concepts more deeply, while my explanations improve your comprehension.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: We could create study schedules that benefit both of us.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: You get teaching practice that reinforces your medical preparation, I get personalized tutoring that improves my exam scores.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Yes!
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: And if we both achieve excellent results through our partnership, it proves that collaboration enhances individual achievement.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Rather than limiting it.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Our families will see that supporting each other makes us both stronger.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: This partnership approach is perfect.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: I understand mathematics better because of your teaching, and you understand concepts more deeply because of my questions.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: We're both becoming more successful.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Our collaboration proves that individual dreams don't have to compete with each other.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: When smart people work together strategically, everyone benefits.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: This is exactly how we'll overcome family limitations.
 
 <<HideCharacter>>
@@ -504,67 +504,67 @@ With midterm exams approaching rapidly, Raju continues his library study session
 
 The library atmosphere carries heightened intensity as exam pressure builds. Their test scores will determine whether their families support or abandon the dreams that have driven months and years of dedicated preparation. Accumulated stress creates visible tension in both participants.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: You look like you haven't slept.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Are you pushing yourself too hard?
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Tired">>
 Pinky: I can't afford to sleep normally.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: Every minute counts now.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: My engagement ceremony is scheduled for two weeks after exams.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Maybe we need to work smarter instead of just working harder.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: You taught me that systematic approach.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Shouldn't we apply it to managing our time and energy too?
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Astonished">>
 Pinky: You're right. I'm violating my own principles.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Strategic thinking includes resource management.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: And our minds are resources that need proper maintenance.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: When I'm stressed about cricket performance, Coach Ramu always tells me something important.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Focus on executing basics perfectly rather than trying to force extraordinary results.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Astonished">>
 Pinky: That's wise advice for exam preparation too.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Instead of cramming advanced concepts while exhausted, I should ensure mastery of fundamental principles.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: While maintaining mental clarity.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Look - I got this right without help.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Your teaching methods are working, even when we're both under pressure.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And explaining concepts to you helps me organize my own knowledge more clearly.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Our partnership is actually making both of us stronger, not dividing our attention.
 
 <<HideCharacter>>
@@ -584,64 +584,64 @@ With midterm exams approaching rapidly, Raju continues his library study session
 
 The library atmosphere carries heightened intensity as exam pressure builds. Their test scores will determine whether their families support or abandon the dreams that have driven months and years of dedicated preparation. Accumulated stress creates visible tension in both participants.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: You look like you haven't slept.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Are you pushing yourself too hard?
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Tired">>
 Pinky: I can't afford to sleep normally.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: Every minute counts now.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: My engagement ceremony is scheduled for two weeks after exams.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: Remember what we talked about yesterday?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: You don't have to carry this burden alone.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me help you find balance between intensive preparation and maintaining your strength.
 
 <<SetCharacterExpression "Pinky" "Sad">>
 Pinky: Sometimes I feel like I'm fighting a battle I can't win.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Disappointed">>
 Pinky: Even if I score perfectly, will my parents really change their minds about the engagement?
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Your intelligence and determination have already changed my mind about what's possible in mathematics.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That same power will change your parents' minds about your potential.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Relieved">>
 Pinky: Your faith in me gives me strength when my own confidence wavers.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: Having someone who believes in my dreams makes them feel more real and achievable.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Look at how much I've improved through your teaching.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: That's concrete proof that your abilities create real change in the world.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Your parents will see that evidence too.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: You're right.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: My skills have tangible results, my preparation is thorough, and my dreams are worth fighting for.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
@@ -664,61 +664,61 @@ With midterm exams approaching rapidly, Raju continues his library study session
 
 The library atmosphere carries heightened intensity as exam pressure builds. Their test scores will determine whether their families support or abandon the dreams that have driven months and years of dedicated preparation. Accumulated stress creates visible tension in both participants.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: You look like you haven't slept.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Are you pushing yourself too hard?
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Tired">>
 Pinky: I can't afford to sleep normally.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: Every minute counts now.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: My engagement ceremony is scheduled for two weeks after exams.
 
-<<SetCharacterExpression "Pinky" "Sad">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: This is exactly why our partnership approach is so important.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We can share the workload and support each other instead of trying to handle everything alone.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Astonished">>
 Pinky: You're absolutely right.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Embarrassed">>
 Pinky: I was falling back into isolated studying when we've proven that collaboration makes both of us more effective.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Let's divide our remaining preparation strategically.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I can help you review concepts by asking the kinds of questions that force clear thinking, while you help me tackle the advanced problems.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Perfect!
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Teaching you reinforces my own knowledge while your questions reveal any gaps in my understanding.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: We're making each other stronger through collaboration.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Our partnership is proving that cooperation creates better results than competition.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Both of our scores are improving because we're helping each other succeed.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: This collaborative approach is working beautifully.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Proud">>
 Pinky: We're demonstrating that mutual support enhances individual achievement rather than compromising it.
 
 <<HideCharacter>>
@@ -737,73 +737,73 @@ On the final day before major exams begin, Raju spends time with Pinky for what 
 
 The library takes on almost sacred significance as Raju and Pinky prepare for their final pre-exam study session. Both understand tomorrow will mark the culmination of their intensive collaboration and the beginning of tests that could determine whether their dreams survive family opposition.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Proud">>
 Pinky: Look at your improvement in mathematics.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Six days ago, you struggled with basic quadratic equations.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Now you're solving complex word problems independently.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: I can't believe how much clearer everything seems now.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Your teaching methods didn't just help me memorize.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: They helped me understand the underlying logic.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Teaching you has been invaluable for my own learning.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: When you asked why certain mathematical principles work the way they do.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Excited">>
 Pinky: It forced me to understand concepts at a deeper level than just memorizing procedures.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Are you ready for your entrance exam preparation to continue after our school exams?
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: I'm as prepared as I can be academically.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Worried">>
 Pinky: Whether I get the chance to continue depends on how convincingly these exam results demonstrate education's value.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: To my parents.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: These exams aren't really about the scores, are they?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: They're about proving we can balance our dreams with responsibility.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Exactly.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Your father needs to see that cricket excellence and academic excellence can coexist.
 
-<<SetCharacterExpression "Pinky" "Serious">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: My parents need to see that education creates opportunities worth delaying traditional expectations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We've both proven that this week.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Your strategic study methods have improved my grades while respecting my cricket commitments.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: My questions have strengthened your teaching abilities while you've maintained your top ranking.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Win or lose tomorrow, this partnership has been the most rewarding academic experience of my school career.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: You've helped me understand that knowledge becomes more powerful when it's shared.
 
 <<HideCharacter>>
@@ -822,94 +822,94 @@ Three days after completing their major exams, Raju meets Pinky at the library o
 
 The familiar library takes on special significance as Raju and Pinky meet to share the results that will determine whether their week of intensive collaboration has succeeded. The anticipation fills the air as both students prepare to learn whether their strategic approach has produced the concrete results needed to convince skeptical parents.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: How did you do?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I got my highest mathematics score ever - 78%!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: My father was so surprised he actually smiled.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: That's incredible progress!
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Proud">>
 Pinky: From struggling with basic equations to nearly 80% in just one week.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: You should be proud of that achievement.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: What about your results?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: And what's that official-looking letter?
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: I scored 94% overall - highest in our grade level.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Overjoyed">>
 Pinky: But more importantly, the medical preparation institute offered me a full scholarship.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Based on these scores. Free coaching, materials, and exam preparation for the next four years.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: That's amazing!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Does this change your parents' perspective on continuing your education?
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: My father said something I never expected to hear.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: 'Maybe our daughter's education is worth more than we realized.'
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: The scholarship offer made them understand that my academic achievement has real economic value.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: So the engagement is postponed?
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Overjoyed">>
 Pinky: Postponed indefinitely.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: They've agreed to let me complete medical school before considering marriage.
 
-<<SetCharacterExpression "Pinky" "Excited">>
+<<SetCharacterExpression "Pinky" "Relieved">>
 Pinky: The scholarship convinced them that education could improve our family's entire economic situation.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: A week ago, we were both struggling against family expectations.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Today, we've both earned the freedom to chase our dreams.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: But we also learned something more important than academic success.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Confident">>
 Pinky: We discovered that individual excellence becomes stronger when it's shared.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: With others who understand the struggle.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Your systematic teaching methods didn't just improve my grades.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: They showed me how to approach any challenge with strategic thinking and long-term planning.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And your questions forced me to understand concepts at a deeper level.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: While showing me that knowledge becomes more meaningful when it's used to help others.
 
-<<SetCharacterExpression "Pinky" "Smiling">>
+<<SetCharacterExpression "Pinky" "Proud">>
 Pinky: Achieve their goals.
 
 <<HideCharacter>>
