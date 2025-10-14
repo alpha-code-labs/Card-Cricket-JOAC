@@ -38,43 +38,43 @@ The imposing walls of the sports academy loom before Raju. The sound of leather 
 <<SetCharacterExpression "Naresh" Angry>>
 Naresh: Oi! You there, boy! What are you doing lurking around here?
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Irritated>>
 Naresh: This is not a public playground for slum kids. Go play your street cricket in your own galli where you belong.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: I just wanted to watch for a moment, bhaiya. I won't disturb anyone.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Sad>>
 Raju: I've never seen proper cricket nets before. I'm trying to learn how real cricket is played.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Watch? Listen, boy, I have strict rules to follow here.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Worried>>
 Naresh: If Coach Sharma sees me letting unauthorized people onto the grounds, I'll lose this job faster than you can say 'cricket.'
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: This is my livelihood, not a charity for curious children.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: These facilities cost more money than your entire neighborhood sees in a year.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: The insurance alone would bankrupt me if something gets damaged. Now move along before you get both of us in trouble.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I understand, bhaiya. I don't want to cause you problems.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: But one day, I'll play here too. Not as someone sneaking around, but as someone who belongs.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: Hmph. Big dreams for such a small boy.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: But dreams don't pay academy fees or buy proper equipment. Reality is harder than fantasy, child.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Maybe. But without dreams, there's no reason to work toward reality.
 
 <<HideCharacter>>
@@ -96,67 +96,67 @@ Despite yesterday's dismissal, Raju returns to the academy at the same time. He 
 
 The afternoon sun casts long shadows across the grounds. Naresh notices the young man's return with irritation and grudging recognition of his persistence.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Irritated>>
 Naresh: You again? I thought I made myself clear yesterday.
 
-<<SetCharacterExpression "Naresh" Angry>>
+<<SetCharacterExpression "Naresh" Annoyed>>
 Naresh: Don't you boys have anything better to do than hang around places where you don't belong?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I can't stop thinking about cricket, bhaiya. Every night I try to practice what I saw yesterday.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: But I know I'm missing things. I just want to learn, even if I can only watch from out here.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I won't cause any trouble or ask for anything. I promise.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: Hmph. I've worked here for ten years, watched hundreds of kids try to sneak in.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: Most fool around and break expensive equipment. But you... you just stand there with those big eyes.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: You're staring at every single ball like your life depends on it.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Because I want to remember everything!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: The way their feet move before each shot, how they hold the bat differently for different deliveries.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: The way they position their bodies to generate power. I try to copy it all later when I practice at home.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: You're analyzing technique just by watching?
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: Most of the paying students inside can't remember basic instruction from one session to the next.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: But you're studying cricket like it's... like it's science.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Cricket is science, isn't it? Every movement has a purpose, every technique solves a problem.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: The students inside have coaches explaining everything. But I have to figure it out by watching.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Maybe that makes me see things differently.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Crazy kid. Standing out here in the heat just to watch cricket practice.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: But maybe... maybe not completely useless. At least you're not throwing rocks at the equipment like the others.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I would never damage anything, bhaiya. This place is too precious.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Even watching from outside teaches me more about cricket than I could learn anywhere else.
 
 <<HideCharacter>>
@@ -179,82 +179,82 @@ For the third day, Raju returns bringing a small notebook. He wants to demonstra
 
 The notebook tucked under his arm represents evidence of his serious approach. Naresh's skepticism has begun to crack.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: Back again, I see. And what's that you're carrying?
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: Don't tell me you're planning to write complaints about being kept out.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: It's my cricket journal, bhaiya. I've been writing down everything I observe here.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: Different techniques, how the students hold their bats, what the coach corrects them for.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I study it every night and practice the movements at home.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: You're... taking notes? On cricket technique?
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: By watching from outside the fence?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Yesterday I saw a student struggling with his forward defensive shot.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: The coach showed him three times how to position his front foot, but I could see the real problem.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: He wasn't transferring his weight properly. I've been practicing that weight transfer myself to understand why it matters.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: And did you figure it out? Why the weight transfer matters?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Yes! Without proper weight transfer, you can't adjust quickly if the ball bounces differently.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: The front foot position creates the foundation, but the weight shift creates the flexibility to respond.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: It's like... like building a house that can bend without breaking.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: You learned that just from watching?
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Overjoyed>>
 Naresh: That's more cricket understanding than half my paying students develop after months of direct instruction.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: Show me this notebook. I want to see what you've been recording.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: These drawings... these notes... beta, you've created your own cricket textbook.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Overjoyed>>
 Naresh: Look at this analysis of different bowling grips and how they affect ball movement.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: Some of our advanced students couldn't explain this.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Cricket makes sense when you watch it carefully, bhaiya.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Every technique solves a specific problem. I may not have access to coaching, but I can still learn if I pay attention.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: You know what, boy? In ten years of maintaining these grounds, I've never seen anyone study cricket with this kind of scientific approach.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Most kids just want to hit big shots and look impressive.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: How do you plan to build on this foundation you've created?
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: What's your next step in this cricket education?
 <<AutoAdvance true>>
 Make a Choice
@@ -275,34 +275,34 @@ position: -308,129
 ---
 <<set $Naresh_Path = "a">>
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Astonished>>
 Naresh: Ball physics? Player psychology?
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: You're approaching cricket like a university course, beta. Most coaches don't teach these concepts until much later.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I've noticed that successful batsmen read the bowler's grip and wrist position before the ball is even released.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: It's like solving puzzles - every movement gives clues about what's coming next.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: Show me these observations about reading bowlers.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: If you've truly identified patterns that predict delivery types, that's professional-level cricket intelligence.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Watch how that student's shoulders drop slightly before his slower ball.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: And see how his grip changes for his googly? These are tells that batsmen can learn to recognize.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Overjoyed>>
 Naresh: Your analytical skills are remarkable, beta.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: You're identifying subtleties that take years of playing experience to recognize. This level of study deserves proper guidance.
 
 <<jump Naresh_Day3_Continue>>
@@ -314,40 +314,40 @@ position: -55,122
 ---
 <<set $Naresh_Path = "b">>
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: You want to work? Most kids your age try to avoid responsibility.
 
-<<SetCharacterExpression "Naresh" "Quizzical">>
+<<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: But you're volunteering for unpaid labor just to be around cricket?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: This academy is sacred to me, bhaiya.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: If I can help maintain the nets, organize equipment, clean the grounds - anything that keeps this place perfect for cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: I'd consider it an honor, not work.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Maintenance is serious responsibility, beta. These nets cost thousands of rupees.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Worried>>
 Naresh: The equipment must be handled with perfect care. Are you truly willing to be held accountable for such valuable items?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I understand the responsibility, bhaiya.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I'd treat every piece of equipment like my own dreams depend on it - because they do.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: You can trust me with anything cricket-related.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Your attitude shows maturity beyond your years, beta.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: Most paying students treat expensive equipment carelessly, but you speak of it with reverence. That kind of respect is rare and valuable.
 
 <<jump Naresh_Day3_Continue>>
@@ -359,37 +359,37 @@ position: 184,122
 ---
 <<set $Naresh_Path = "c">>
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Dreams are fragile things, beta.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: I've seen many young cricketers with big ambitions but little understanding of what it takes. What makes your dreams different?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Because cricket isn't just what I want to do, bhaiya - it's who I am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: When I watch the students practice, I don't just see techniques, I see my future self.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Every shot they play, every skill they develop, that's where I belong.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: I can hear it in your voice, beta. That hunger for excellence, that need to be part of something greater.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: I felt the same way once, before circumstances changed my path.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Then you understand why I can't give up, bhaiya.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: Help me find the path from watching cricket to playing cricket. Show me how dreams become reality.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Your passion reminds me why I fell in love with cricket in the first place, beta.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: That kind of dedication deserves guidance, not just encouragement.
 
 <<jump Naresh_Day3_Continue>>
@@ -468,58 +468,58 @@ Encouraged by yesterday's positive response, Raju approaches during equipment ma
 
 The quiet period of maintenance provides perfect opportunity for conversation. The accumulated trust over four days has created space for more substantive cricket education.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Ah, the cricket scholar returns. What observations have you added to that famous notebook of yours today?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I've been thinking about something I observed yesterday, bhaiya.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: When students practice their drives, they focus on power, but the most successful shots emphasize timing and placement.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: Is that because of the equipment quality, or is it a fundamental technique principle?
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: That's... that's actually a very sophisticated observation, beta.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: You're identifying the difference between amateur enthusiasm and professional competence. Power without control is just wild hitting.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: See, most people think cricket is about strength, but it's really about understanding physics.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: Angles, timing, momentum transfer. The expensive equipment here allows for precision that rough gear can't match.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: But the fundamental principle is the same.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: So proper technique could work with any equipment, but better equipment makes proper technique more effective?
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Overjoyed>>
 Naresh: Exactly! You understand cricket at a level that would make Coach Sharma proud.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: Most students here have every advantage but lack your analytical thinking.
 
-<<SetCharacterExpression "Naresh" "Sad">>
+<<SetCharacterExpression "Naresh" Sad>>
 Naresh: You know, boy, your dedication reminds me of why I fell in love with cricket in the first place.
 
-<<SetCharacterExpression "Naresh" "Sad">>
+<<SetCharacterExpression "Naresh" Disappointed>>
 Naresh: Before family responsibilities made professional training impossible, I used to dream of playing at higher levels.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: You played cricket seriously, bhaiya?
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: District level, before life got complicated.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: I understand exactly what you're feeling - that hunger to improve, to understand every detail of the game.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Loving>>
 Naresh: It's rare to find someone who studies cricket the way you do.
 
 <<HideCharacter>>
@@ -541,67 +541,67 @@ Building on yesterday's revelation, Raju visits during the quiet period, hoping 
 
 The academy grounds take on new significance. Naresh's district-level experience has established him as a credible source of both technical knowledge and practical wisdom.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: Back for more cricket analysis, scholar?
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Mischievous>>
 Naresh: I've been thinking about our conversation yesterday, about technique versus equipment. Want to see something interesting?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Always, bhaiya! What did you want to show me?
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: Watch this. I'm going to demonstrate something about grip and stance.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Confident>>
 Naresh: Most students here take months to understand this.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: See how I'm holding the bat? Not just with my hands, but with my entire body engaged.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: The grip determines everything else - balance, power transfer, shot selection.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Confident>>
 Naresh: Most people focus on the swing, but cricket really starts with the setup.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: Your stance looks different from what the students here use. More... compact? Balanced?
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: Exactly! These academy boys learn modern techniques, but fundamental principles remain the same.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Confident>>
 Naresh: Compact stance gives you more options, better balance against different deliveries.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: This is knowledge that comes from playing, not just coaching.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: I learned these adjustments through experience - what works under pressure, what fails when the game gets difficult.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: Could... could you teach me some of these fundamentals?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I know you can't let me use the facilities, but maybe just the knowledge?
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: You know, beta, knowledge wants to be shared.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Loving>>
 Naresh: And you appreciate cricket in a way that deserves respect.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: What if I helped you understand technique through observation and explanation? Not official coaching, just... cricket discussion.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Overjoyed>>
 Raju: That would be incredible, bhaiya! I'd learn more from your experience than from any expensive coaching.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Then let's start with the basics. Tomorrow, if you want to continue this cricket education, I'll show you some things.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Things that no amount of watching can teach. But remember - this stays between us.
 
 <<HideCharacter>>
@@ -623,55 +623,55 @@ With anticipation from yesterday's promise, Raju arrives as dusk settles, knowin
 
 The academy grounds take on a sacred quality as evening settles. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Mischievous>>
 Naresh: Psst! Over here, beta.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: The paying students are gone, Coach Sharma won't return until morning, and the administrative staff has left for the day.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: What is it, bhaiya? You seem... different today.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Five days of watching your dedication, your analytical approach, your genuine love for cricket...
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Anxious>>
 Naresh: I've decided to do something I've never done before. Something that could cost me my job if anyone finds out.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Excited>>
 Naresh: I'm going to let you inside. Just for a short while.
 
-<<SetCharacterExpression "Naresh" "Excited">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: You can experience what real cricket equipment feels like, maybe practice a few shots in the nets.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Worried>>
 Naresh: But absolutely no one can ever know about this.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Shocked>>
 Raju: Really? You're... you're going to let me practice with professional equipment?
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Serious>>
 Naresh: Don't make me regret this decision, boy.
 
-<<SetCharacterExpression "Naresh" "Serious">>
+<<SetCharacterExpression "Naresh" Anxious>>
 Naresh: You've earned this chance through your dedication and respect. I'm trusting you with access that could destroy everything I've worked for here.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: This ball has seen better days, but it still has lessons to teach.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: The weight, the feel, the way it moves through the air - these are things you can't learn from watching alone.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Overjoyed>>
 Raju: Thank you, bhaiya. I'll never forget this kindness.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: And I swear on my cricket dreams - no one will ever know I was here.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: Go on then, scholar. Show me if all that watching and note-taking translated into real cricket understanding.
 
-<<SetCharacterExpression "Naresh" "Smiling">>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: You have thirty minutes to experience what professional cricket feels like.
 
 <<HideCharacter>>

@@ -33,10 +33,10 @@ The evening air carries the sounds of children playing in the lanes. Raju choose
 
 The modest home feels charged with anticipation. Raju waits for his father's return, his cricket bat resting beside him. The familiar sounds of Shiv's footsteps create excitement and anxiety in equal measure.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Raju, where were you this afternoon?
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Your mother mentioned you were at the ground again instead of with your books.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -45,13 +45,13 @@ Raju: I was practicing cricket, Baba. Just for a little while.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Ramu bhaiya has been teaching me proper technique. I'm getting much better!
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Cricket technique? And what about your mathematics technique?
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Your school test is next week. Will these cricket shots help you solve equations?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But Baba, I am good at cricket. Really good.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -66,13 +66,13 @@ Shiv Prasad: Talented at cricket, talented at singing, talented at painting.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Do you know where most of them are now?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Where are they?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Working in the same factories as me, or worse.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Disappointed">>
 Shiv Prasad: Unemployed and dependent on their families.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -84,7 +84,7 @@ Shiv Prasad: A government job does. Skills that employers value do.
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: So I should just give up something I love?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Something I might be good at?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -120,10 +120,10 @@ Despite yesterday's difficult conversation, Raju stays home this evening. He sit
 
 Raju positions himself where his father will see him. His movements show dedication and a calculated attempt to prove his commitment. He waits for Shiv to return from work.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest?
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: I thought we discussed this yesterday.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -132,46 +132,46 @@ Raju: I do rest, Baba. But when I hold this bat...
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: When I practice, when I play... I don't feel tired.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I feel alive. Like I could be someone special.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Someone who makes you proud.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: Alive? Special? These are dangerous words!
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Dreams like these have destroyed families.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Angry">>
 Shiv Prasad: I've watched fathers waste their savings on cricket fantasies.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Disappointed">>
 Shiv Prasad: Only to end up in debt and despair.
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Food puts life in your body, not cricket!
 
-<<SetCharacterExpression "ShivPrasad" "Neutral">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Steady work makes you special in society, not games!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Then let me work hard at cricket, Baba.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: The same way you work hard at the factory.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Give me one chance to prove I can do both.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Studies and cricket. Let me show you they can coexist.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Words are easy to speak, beta.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Promises are easy when your belly is full.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -186,19 +186,19 @@ Shiv Prasad: That requires maturity most adults don't possess.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I don't know if I can, Baba. But I want to try.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to try so badly it hurts when I think about giving up.
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: If you're serious about this balance...
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: If you truly believe you can handle both, then show me.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Don't tell me - show me.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Prove your cricket makes you a better student.
 
 <<HideCharacter>>
@@ -228,10 +228,10 @@ Shiv Prasad: For two days you've told me you can handle both cricket and studies
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: But words and promises are easy when there's no real test.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I meant everything I said, Baba.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I really can do both. Just give me a chance to prove it.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -243,10 +243,10 @@ Shiv Prasad: Your mathematics test is in seven days.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: I want you to score well on that exam. Not just pass, but score well.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Seven days? Baba... I haven't been studying as much as I should.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: Math is hard for me. What if seven days isn't enough time?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -264,10 +264,10 @@ Shiv Prasad: I mean really well, better than you've ever done before.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: And I'll not only support your cricket, I'll help you pursue it properly.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: And if I don't do well?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: What if I study as hard as I can but still struggle?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -291,16 +291,16 @@ Shiv Prasad: We end this conversation permanently.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: No more negotiations, no more chances.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, Baba. I won't let you down.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Seven days from now, you'll see I can be serious about both.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: How should I approach these seven days, Baba?
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: What's the best way to prove I can handle both?
 
 <<AutoAdvance true>>
@@ -323,7 +323,7 @@ position: -308,129
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'll prove myself by focusing completely on studies, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me show you academics can be my priority.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -341,7 +341,7 @@ Shiv Prasad: Show me disciplined studying, not panic.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I understand, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll create a proper study schedule and stick to it religiously.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -372,40 +372,40 @@ position: -55,122
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll show you cricket discipline actually helps my studies, Baba.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Watch me use both together.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me prove they support each other instead of competing.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: You think cricket and studies can actually work together?
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: That's a bold claim, beta.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Show me exactly how this supposed synergy works.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Cricket taught me about consistent daily practice.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Breaking complex skills into manageable parts.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Staying focused under pressure.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll apply these same principles to mathematics.
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: Interesting theory.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: But theories and practice are different things.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Show me these cricket principles actually improving your performance.
 
 <<HideCharacter>>
@@ -424,25 +424,25 @@ position: 184,122
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'll prove my cricket passion gives me energy to excel at everything, Baba.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Watch how my love for the game motivates all my efforts.
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Passion without focus leads nowhere.
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: How will maintaining cricket intensity help you master mathematics?
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Explain this connection.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Cricket makes me feel capable of achieving anything, Baba.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: When I succeed at cricket, I believe I can succeed at studies too.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: The confidence transfers.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -523,32 +523,32 @@ title: ShivPrasad_Day5
     <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: I see you've been studying for hours every day, beta.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: Your discipline is remarkable.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Worried">>
     Shiv Prasad: But tell me - do you miss cricket? Are you struggling without it?
     
-    <<SetCharacterExpression "Raju" "Serious">>
+    <<SetCharacterExpression "Raju" "Sad">>
     Raju: I miss it terribly, Baba.
     
     <<SetCharacterExpression "Raju" "Serious">>
     Raju: But this sacrifice helps me understand how much both mean to me.
     
-    <<SetCharacterExpression "Raju" "Serious">>
+    <<SetCharacterExpression "Raju" "Determined">>
     Raju: I want to earn the right to have both.
     
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: Your sacrifice shows real character, beta.
     
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    <<SetCharacterExpression "ShivPrasad" "Proud">>
     Shiv Prasad: Perhaps you're more mature than I gave you credit for.
 
 <<elseif $ShivPrasad_Path=="b">>
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: I have to admit, beta - your study methods are much more organized.
     
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: This systematic approach... you really learned this from cricket?
     
     <<SetCharacterExpression "Raju" "Excited">>
@@ -557,29 +557,29 @@ title: ShivPrasad_Day5
     <<SetCharacterExpression "Raju" "Excited">>
     Raju: Cricket taught me improvement comes from consistent effort.
     
-    <<SetCharacterExpression "Raju" "Excited">>
+    <<SetCharacterExpression "Raju" "Confident">>
     Raju: Breaking down complex skills. Same principle works for math equations.
     
     <<SetCharacterExpression "ShivPrasad" "Smiling">>
     Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized.
     
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
+    <<SetCharacterExpression "ShivPrasad" "Proud">>
     Shiv Prasad: You're showing me something I hadn't considered.
 
 <<elseif $ShivPrasad_Path=="c">>
     <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: You seem energized by your cricket practice, beta.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Skeptical">>
     Shiv Prasad: But I need to see this energy actually helping your mathematics.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Serious">>
     Shiv Prasad: Not just making you feel good, beta.
     
     <<SetCharacterExpression "Raju" "Excited">>
     Raju: It is helping, Baba!
     
-    <<SetCharacterExpression "Raju" "Excited">>
+    <<SetCharacterExpression "Raju" "Confident">>
     Raju: After good cricket practice, I study with more focus.
     
     <<SetCharacterExpression "Raju" "Excited">>
@@ -588,10 +588,10 @@ title: ShivPrasad_Day5
     <<SetCharacterExpression "ShivPrasad" "Quizzical">>
     Shiv Prasad: Your energy is certainly high, beta.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Skeptical">>
     Shiv Prasad: But energy without proper direction can be wasteful.
     
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
+    <<SetCharacterExpression "ShivPrasad" "Serious">>
     Shiv Prasad: Show me directed results.
 <<endif>>
 
@@ -609,25 +609,25 @@ Three days have passed since accepting his father's challenge. Raju comes home e
 
 Accumulated stress of excelling at both begins showing its toll. Fatigue threatens to undermine performance in both areas. His ambitious attempt reveals practical limitations even the most determined young person faces.
 
-<<SetCharacterExpression "ShivPrasad" "Sad">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: Beta, you look exhausted.
 
-<<SetCharacterExpression "ShivPrasad" "Sad">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: When did you last sleep properly?
 
-<<SetCharacterExpression "ShivPrasad" "Sad">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: You've been studying until late and waking up early for cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: I'm fine, Baba.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Just trying to fit everything in like I promised.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: Cricket in the morning, school during the day, studying at night.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I can handle it.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -636,10 +636,10 @@ Shiv Prasad: Handling it and doing it well are different things.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: I've been watching you these past three days.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: You're trying so hard to prove you can do everything.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Worried">>
 Shiv Prasad: You might end up doing nothing well.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -657,10 +657,10 @@ Raju: So you want me to choose?
 <<SetCharacterExpression "Raju" "Angry">>
 Raju: Between what makes me feel alive and what you think is practical?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: Why can't I have both?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Why does loving cricket mean I can't be good at studies?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -693,10 +693,10 @@ Shiv Prasad: That's valuable.
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: But what if I really can be good at both, Baba?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: What if I just need more time to figure out the right balance?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: What if giving up cricket means giving up part of myself?
 
 <<SetCharacterExpression "Raju" "Sad">>
@@ -714,13 +714,13 @@ Shiv Prasad: Show me your cricket discipline actually helps you study better.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Show me your passion gives you energy instead of draining it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I will, Baba.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: These three days were hard because I'm still learning balance.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But I won't give up. I can't give up.
 
 <<HideCharacter>>
@@ -752,40 +752,40 @@ Shiv Prasad: Are you ready?
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I think so, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I've studied harder than I've ever studied in my life.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I've applied everything cricket taught me.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: About practice, discipline, staying calm under pressure.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: If I'm not ready now, I'll never be.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: I've been watching you these past six days, beta.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: The discipline you've shown, the way you've organized your time...
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: The balance you've managed between cricket and studies.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: I'm genuinely impressed.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: When this week started, I saw cricket as a threat to your education.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: To your future security.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: But watching you apply cricket discipline to your studies...
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Seeing you grow more mature and focused...
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
@@ -827,7 +827,7 @@ Shiv Prasad: Not just memorization, but genuine mathematical comprehension.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: And I'll not only support your cricket, I'll help you find proper coaching.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: And opportunities.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -848,10 +848,10 @@ Shiv Prasad: We end the cricket conversation permanently.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I understand, Baba. And I promise you - my studies will never suffer.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket will make me a better student, not worse.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Everything I've learned this week proves that.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
@@ -860,7 +860,7 @@ Shiv Prasad: Then go to school today and show your teacher.
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 Shiv Prasad: Show yourself. Show me.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: That passion and responsibility can work together.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
@@ -869,7 +869,7 @@ Shiv Prasad: Prove that a cricket-loving boy can also be an excellent student.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you, Baba.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: For giving me this chance, for watching me grow this week.
 
 <<SetCharacterExpression "Raju" "Excited">>

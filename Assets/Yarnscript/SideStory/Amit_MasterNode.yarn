@@ -33,22 +33,22 @@ After finishing morning practice with Ramu, Raju visits Koliwada Ground where hi
 
 The dusty expanse of Koliwada Ground stretches before Raju. Amit sits on a boundary stone with obvious frustration, his cricket bat beside him. His eyes scan the empty ground with disappointed expression, stranded between boredom and persistent hope.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Disappointed">>
 Amit: Raju yaar, I'm so frustrated! I've been waiting here for two hours.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Irritated">>
 Amit: I was hoping to organize a decent cricket match, but we don't have enough proper equipment for everyone who wants to play.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's really annoying, Amit! What exactly are we missing?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Maybe there's a way to solve this problem if we think creatively about it.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Worried">>
 Amit: We need at least two more cricket balls for a proper match.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Disappointed">>
 Amit: Plus some decent wickets that won't fall over every time someone bowls fast.
 
 <<SetCharacterExpression "Amit" "Sad">>
@@ -57,37 +57,37 @@ Amit: The boys are getting impatient and some have already left to find other ga
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: This is a real problem, but I'm sure cricket equipment must be available somewhere in our neighborhood.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We just need to be systematic about finding it instead of giving up.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Anxious">>
 Amit: You're always good at solving problems, Raju!
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Tired">>
 Amit: But I've already asked all the usual people and checked the obvious places.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Skeptical">>
 Amit: This might require more creative thinking than I can manage right now.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Then let's approach this systematically.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Cricket equipment doesn't just disappear - it gets stored, forgotten, or overlooked.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: If we search carefully and think about all the possible locations, we should find what we need.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Quizzical">>
 Amit: True! Sometimes balls roll into drains or get stuck in unusual places.
 
-<<SetCharacterExpression "Amit" "Sad">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: And people forget they put wickets away after previous matches. We might find equipment in places no one thinks to look.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly! Or maybe someone has extra equipment at home but doesn't realize we need it.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We should check with more people and explore areas around the ground more thoroughly.
 
 <<HideCharacter>>
@@ -112,10 +112,10 @@ The familiar setting welcomes Raju with renewed optimism. His overnight reflecti
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Back again, yaar? I was hoping you might have some new ideas about finding cricket equipment.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Anxious">>
 Amit: Yesterday's search didn't turn up much, but maybe we missed some obvious possibilities.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Actually, I spent last night thinking about this problem.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -124,46 +124,46 @@ Raju: I have several new strategies we could try. Sometimes the best solutions c
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: That's exactly what we need - fresh thinking!
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: I was getting so focused on the usual places that I probably missed creative alternatives. What new approaches did you come up with?
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Well, I was thinking about all the different ways cricket equipment might end up in unexpected places.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: And all the people who might have supplies they're not currently using.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: For example, maybe some families stored cricket gear after their children outgrew it.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Or equipment got left behind after tournaments and no one claimed it. We should expand our search beyond just active players.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Astonished">>
 Amit: That's brilliant thinking! I was only asking current cricket players.
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: But you're right - lots of people might have unused equipment sitting around.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Former players, families with older children, even shops that might have damaged items they can't sell.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly! And we should also consider making temporary equipment if we can't find enough ready-made supplies.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Sometimes creative improvisation works better than waiting for perfect conditions.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: You're absolutely right about improvisation.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: Our parents' generation played cricket with makeshift equipment all the time. We shouldn't let perfect be the enemy of good.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Serious">>
 Amit: How should we organize this search to maximize our chances of success?
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: What's the best strategy for covering all these different possibilities?
 
 <<HideCharacter>>
@@ -186,7 +186,7 @@ With yesterday's expanded strategies in mind, Raju meets Amit at Koliwada Ground
 
 The morning energy at Koliwada Ground reflects the boys' growing confidence that today's systematic approach will yield better results. Both bring focused determination and strategic thinking to what has evolved from simple equipment hunting into a comprehensive lesson.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: Ready to put our strategic plan into action, Raju?
 
 <<SetCharacterExpression "Amit" "Excited">>
@@ -195,13 +195,13 @@ Amit: I'm feeling much more optimistic about today's search now that we have sys
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Absolutely! Yesterday's planning session really helped clarify all the different possibilities we should explore.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Now we just need to decide which approach to focus on first.
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: You're right about focusing our efforts. We could try several different strategies.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Quizzical">>
 Amit: But which one do you think would be most effective for solving our equipment shortage?
 
 <<AutoAdvance true>>
@@ -226,25 +226,25 @@ position: -308,129
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Systematic searching makes sense! We should check storage areas, forgotten corners, and places where previous matches might have left behind equipment.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Organization is key to covering everything thoroughly.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Exactly! We'll divide the search area systematically and check each section carefully.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: Instead of randomly wandering around. This methodical approach should uncover equipment that casual searching missed.
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: I love this organized approach! We can make a list of all possible locations and check them off systematically.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: This way we won't waste time revisiting areas or missing important spots.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Perfect! Systematic searching will teach us both patience and thoroughness while solving our immediate problem.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's start with the areas closest to the ground and work outward.
 
 <<HideCharacter>>
@@ -260,28 +260,28 @@ position: -55,122
 ---
 <<set $Amit_Path = "b">>
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Astonished">>
 Amit: Community outreach is brilliant! So many people might have equipment sitting unused.
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Or know about cricket supplies that others have forgotten about. We just need to ask the right questions.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Exactly! Former players, families with grown children, even shopkeepers might have damaged equipment that's still usable.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We should approach this like a community project.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: I love the community project angle!
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: When people understand that we're trying to organize activities for all the neighborhood boys, they'll be more willing to help us find solutions.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Perfect! Community outreach will teach us both communication skills and show us how neighbors can work together.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Let's start with the families closest to the ground.
 
 <<HideCharacter>>
@@ -297,25 +297,25 @@ position: 184,122
 ---
 <<set $Amit_Path = "c">>
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Overjoyed">>
 Amit: Creative improvisation is a fantastic idea!
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Our parents' generation played cricket with makeshift equipment all the time. We shouldn't let the lack of perfect gear stop us from having fun.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Exactly! We can make wickets from available materials, use alternative balls if necessary.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Or modify our playing rules to work with whatever equipment we can assemble. Innovation over perfection!
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: I love this innovative thinking!
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Sometimes the most creative solutions come from working within limitations. We might even invent new games or playing styles in the process.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Perfect! Creative improvisation will teach us both resourcefulness and innovation while solving our immediate problem.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -350,13 +350,13 @@ After yesterday's selection of their specific strategy, Raju meets Amit early at
 
 The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Anxious">>
 Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -365,28 +365,28 @@ Raju: Yesterday's planning gave us a clear strategy, and now we get to test whet
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Skeptical">>
 Amit: Sometimes good plans face unexpected challenges when you try to implement them.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's part of what makes this interesting!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Even if our first approach doesn't work perfectly, we'll learn valuable lessons about problem-solving and adapting strategies when circumstances change.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: Your attitude is perfect, yaar!
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Right! We should document what we find and what doesn't work.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -395,16 +395,16 @@ Raju: Good thinking! And let's keep track of time too. We need to know how long 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: This is becoming a real project! I love how we're treating it professionally instead of casually.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: That's the difference between hoping and achieving, Amit. Professional approach gives professional results!
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Mischievous">>
 Amit: Okay then, project manager! Let's show this equipment shortage who's boss.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: I have a feeling our systematic approach is going to surprise us with how well it works.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
 <<HideCharacter>>
@@ -425,13 +425,13 @@ After yesterday's selection of their specific strategy, Raju meets Amit early at
 
 The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Anxious">>
 Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -440,28 +440,28 @@ Raju: Yesterday's planning gave us a clear strategy, and now we get to test whet
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Skeptical">>
 Amit: Sometimes good plans face unexpected challenges when you try to implement them.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's part of what makes this interesting!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Even if our first approach doesn't work perfectly, we'll learn valuable lessons about problem-solving and adapting strategies when circumstances change.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: Your attitude is perfect, yaar!
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Right! We should document what we find and what doesn't work.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -470,16 +470,16 @@ Raju: Good thinking! And let's keep track of time too. We need to know how long 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: This is becoming a real project! I love how we're treating it professionally instead of casually.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: That's the difference between hoping and achieving, Amit. Professional approach gives professional results!
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Mischievous">>
 Amit: Okay then, project manager! Let's show this equipment shortage who's boss.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: I have a feeling our systematic approach is going to surprise us with how well it works.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
 <<HideCharacter>>
@@ -500,13 +500,13 @@ After yesterday's selection of their specific strategy, Raju meets Amit early at
 
 The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Anxious">>
 Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -515,28 +515,28 @@ Raju: Yesterday's planning gave us a clear strategy, and now we get to test whet
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Skeptical">>
 Amit: Sometimes good plans face unexpected challenges when you try to implement them.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's part of what makes this interesting!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Even if our first approach doesn't work perfectly, we'll learn valuable lessons about problem-solving and adapting strategies when circumstances change.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: Your attitude is perfect, yaar!
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Right! We should document what we find and what doesn't work.
 
-<<SetCharacterExpression "Amit" "Serious">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -545,16 +545,16 @@ Raju: Good thinking! And let's keep track of time too. We need to know how long 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: This is becoming a real project! I love how we're treating it professionally instead of casually.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: That's the difference between hoping and achieving, Amit. Professional approach gives professional results!
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Mischievous">>
 Amit: Okay then, project manager! Let's show this equipment shortage who's boss.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: I have a feeling our systematic approach is going to surprise us with how well it works.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
 <<HideCharacter>>
@@ -577,43 +577,43 @@ The encouraging atmosphere at Koliwada Ground reflects the boys' growing confide
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: You're back, and I'm feeling much more optimistic! Yesterday's progress proved that our systematic approach actually works.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: Are you ready to build on what we accomplished?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Definitely! Yesterday taught me so much about the difference between hoping for solutions and working systematically to create them.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: I feel like we're really making progress now.
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Excellent! Today I want to see if we can complete our equipment collection.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: And maybe even organize that proper cricket match we've been planning. Yesterday was problem-solving - today could be celebration!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm ready for whatever we need to finish, Amit.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: This experience has shown me how persistence and teamwork can overcome obstacles that seem impossible when you face them alone.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: Then let's finish what we started!
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: With the progress we made yesterday, today we might actually get our neighborhood cricket match organized.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: You know what's amazing? We're not just solving one problem - we're learning skills we can use for any challenge.
 
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Exactly! Project management, teamwork, persistence... these lessons go way beyond finding cricket equipment.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: And we're proving that young people can solve real problems when we work together systematically.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Overjoyed">>
 Amit: The other boys are going to be so excited when we tell them we've actually solved this. They've been waiting all week!
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -642,34 +642,34 @@ With their equipment collection nearly complete and neighborhood cricket almost 
 
 The atmosphere at Koliwada Ground buzzes with anticipation as Raju and Amit prepare for what could be the culminating session of their week-long effort. Their accumulated success has transformed initial frustration into genuine confidence that systematic effort can overcome practical obstacles.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Relaxed">>
 Amit: Yaar, I have to admit - when this equipment crisis first started, I thought it was just bad luck.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: Bad luck that would ruin our cricket plans. But working with you this week has shown me something amazing about what's possible when you approach problems systematically.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Thank you, Amit! This experience has been incredibly educational for me too.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: I've learned so much about project management, but also about how friendship and teamwork make difficult challenges much more manageable.
 
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: You've demonstrated that problem-solving ability isn't just luck or natural talent.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: It's about systematic thinking and persistent effort. Your approach has not only solved our equipment shortage, but it's taught me new ways to tackle any challenge.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: This experience has taught me that organizing successful activities requires the same qualities as any other achievement.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Planning, persistence, and willingness to adapt when initial strategies don't work perfectly.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Whether someone is solving equipment problems or pursuing cricket, success comes from systematic effort and collaborative thinking.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: Exactly! And you've shown that young people can solve real community problems.
 
 <<SetCharacterExpression "Amit" "Smiling">>
@@ -678,25 +678,25 @@ Amit: When they approach challenges with strategic thinking and mutual support i
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: Now that we've solved the equipment problem, I want to make you the official co-organizer of our neighborhood cricket activities.
 
-<<SetCharacterExpression "Amit" "Excited">>
+<<SetCharacterExpression "Amit" "Determined">>
 Amit: You've earned the right to help plan and manage our matches going forward.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: That's wonderfully generous, Amit!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: But more than the recognition, I value what I've learned about how systematic effort and collaboration can turn frustrating problems into satisfying solutions that benefit everyone.
 
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Then we both benefit perfectly - you gain experience in community organization that will serve you well in any future project.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Confident">>
 Amit: And I gain a reliable partner who understands that successful activities require planning, persistence, and teamwork rather than just hoping everything works out.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: I'm grateful for this opportunity, Amit. Working together like this has made me appreciate how much we can accomplish.
 
-<<SetCharacterExpression "Amit" "Smiling">>
+<<SetCharacterExpression "Amit" "Proud">>
 Amit: And now we get to enjoy the fruits of our labor - actual organized cricket matches! Welcome to the team, partner!
 
 <<PlayBackgroundMusic Emotional_1>>
