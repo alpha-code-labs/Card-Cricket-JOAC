@@ -1,0 +1,31 @@
+title: scene_149
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: 100 from 40 balls in a final. Against proper coaching. You proved something today.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: That dawn practice pays off Bhai.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: It does. Prize money will help with groceries. But the real prize is what you learned. April's tournament will be even bigger.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I'm ready. But first let's help Maa with the cleaning she asked about.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my captain. Victory doesn't excuse duty. Let's go home.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

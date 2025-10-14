@@ -1,0 +1,40 @@
+title: scene_33
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Finals evening. But a small one.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Feels like practice.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: It is practice. Everything is practice until it isn't. This tournament is just March staying busy.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Any prize?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Couple hundred rupees maybe. Tea money. The real tournament comes later this month.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Then why try hard?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Because we don't know how to try soft. We play our way, every day. Ready?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Ready.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

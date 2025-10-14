@@ -1,0 +1,25 @@
+title: scene_145
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: 80 runs against school league boys. They didn't expect that from our lane.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Their bowler kept staring after every boundary.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Let them stare. Your bat does the talking. Tomorrow they'll bring their best.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

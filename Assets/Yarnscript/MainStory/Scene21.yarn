@@ -28,7 +28,7 @@ Ramu: Four coins you'll earn and keep: courage, humility, resourcefulness, fores
 Raju: I am Confused.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Courage. You don't shout to grow it; you stand next to fear and breathe till it gets bored. In the free world, you'll meet folk who test your knees—maybe a drummer who asks you to beat a rhythm in front of a crowd, or a watchman who needs you to speak up for someone smaller. You'll do the honest hard thing even if your voice shakes. That becomes courage in your hands later.
+Ramu: Courage—standing next to fear till it gets bored. You'll do hard things even with a shaking voice.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: So courage is… practice for my heartbeat?
@@ -37,19 +37,19 @@ Raju: So courage is… practice for my heartbeat?
 Ramu: Exactly. Loud heart, steady hands.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Humility. It's not "I am small." It's "I am learning." A sweeper might ask you to carry a bucket without being seen; a temple helper might ask you to queue even when you're in a hurry. You'll thank people who don't get thanked. Then, when a call goes against you someday, your feet won't argue. That steadiness—that's humility working.
+Ramu: Humility—not "I am small" but "I am learning." You'll thank people who don't get thanked. When calls go against you, your feet won't argue.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Learning without noise.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Resourcefulness. Things break. Plans break faster. A cycle-wala may need a hand to patch a tube with nothing but heat and patience; a radio man might ask you to tune a stubborn dial by ear. You'll find answers where shops are closed. Later, when gear is rough or a day is crooked, you'll still find a way to make work happen.
+Ramu: Resourcefulness—making something from almost nothing. When gear is rough or days are crooked, you'll still find a way.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Make something from almost nothing.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Foresight. Seeing before seeing. A newspaper wall—dates, fixtures, rain notices. A librarian who keeps tomorrow's posters under today's. You'll learn to read patterns, not moments. Then, when the field is noisy, you'll know which future to step toward.
+Ramu: Foresight—seeing before seeing. Read patterns, not moments. Know which future to step toward.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Like choosing a lane in a crowded bazaar.
@@ -91,7 +91,5 @@ Ramu: Walk like work. And return like a bigger boy, not a louder one.
 <<FadeToBlack>>
 <<StopBackgroundMusic>>
 <<wait 3>>
-
-
 
 ===

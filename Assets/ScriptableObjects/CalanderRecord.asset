@@ -32,6 +32,12 @@ MonoBehaviour:
     - eventName: Tutorial Scene
       eventDescription: Pre-Tutorial Cutscene
       eventType: 6
+    - eventName: Tutorial Gameplay
+      eventDescription: Mini gameplay after tutorial
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: Post-Tutorial Cutscene
+      eventType: 0
     - eventName: scene_3
       eventDescription: Post-Tutorial Cutscene
       eventType: 0
@@ -124,27 +130,54 @@ MonoBehaviour:
   - date: 1990/03/05
     events:
     - eventName: scene_29
+      eventDescription: Time to go. You're nervous?
+      eventType: 0
+    - eventName: Scene 29_a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_30
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Quarterfinals captain.
+      eventType: 0
+    - eventName: Card Gameplay 12
+      eventDescription: Card Gameplay 12
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/06
     events:
     - eventName: scene_31
+      eventDescription: Just another evening match?
+      eventType: 0
+    - eventName: scene_31a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_32
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Semifinals
+      eventType: 0
+    - eventName: Card Gameplay 13
+      eventDescription: Card Gameplay 13
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/07
     events:
     - eventName: scene_33
+      eventDescription: Finals evening
+      eventType: 0
+    - eventName: scene_33a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_34
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Finals captain
+      eventType: 0
+    - eventName: Card Gameplay 14
+      eventDescription: Card Gameplay 14
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/08
     events:
     - eventName: scene_35
@@ -341,27 +374,54 @@ MonoBehaviour:
   - date: 1990/03/28
     events:
     - eventName: scene_85
+      eventDescription: March has been full of cricket.
+      eventType: 0
+    - eventName: scene_85a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_86
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: School league tournament
+      eventType: 0
+    - eventName: Card Gameplay 15
+      eventDescription: Card Gameplay 15
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/29
     events:
     - eventName: scene_87
+      eventDescription: ' Made it to semifinals again.'
+      eventType: 0
+    - eventName: scene_87a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_88
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Finals to close March
+      eventType: 0
+    - eventName: Card Gameplay 16
+      eventDescription: Card Gameplay 16
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/30
     events:
     - eventName: scene_89
+      eventDescription: 'Finals to close March. '
+      eventType: 0
+    - eventName: scene_89a
       eventDescription: Map System
       eventType: 1
     - eventName: scene_90
-      eventDescription: Map System
-      eventType: 1
+      eventDescription: Finals. They posted 100 in 40 balls.
+      eventType: 0
+    - eventName: Card Gameplay 17
+      eventDescription: Card Gameplay 17
+      eventType: 4
+    - eventName: PostGameplay
+      eventDescription: PostGameplay
+      eventType: 0
   - date: 1990/03/31
     events:
     - eventName: scene_91

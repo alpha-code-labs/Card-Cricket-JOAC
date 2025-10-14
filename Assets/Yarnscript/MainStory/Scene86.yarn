@@ -1,0 +1,33 @@
+title: scene_86
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: School league tournament. Different class. We bat first need 80 from 40 balls.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Two runs a ball throughout?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Yes but their bowling is trained. Watch the wrist look for variations. Build innings then accelerate.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: These boys have proper kits.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: And you have proper practice. Kits don't score runs hands do.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

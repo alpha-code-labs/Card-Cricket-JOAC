@@ -1,0 +1,25 @@
+title: scene_147
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: 110 runs! That tall boy from church lane couldn't believe it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: My arms are tired but my head is clear.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good. Tired arms heal overnight. Clear heads win finals. One more tomorrow.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

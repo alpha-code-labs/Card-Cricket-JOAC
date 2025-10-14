@@ -1,0 +1,29 @@
+title: scene_32
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Semifinals. We're chasing 40 in 20 balls.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Two runs a ball. Need to start strong.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Exactly. No settling in. Attack from ball one. They set this target thinking we can't chase it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Let's prove them wrong.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

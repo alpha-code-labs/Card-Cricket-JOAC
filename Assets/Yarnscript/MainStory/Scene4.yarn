@@ -22,7 +22,7 @@ Ramu: If we blink too long, it'll be yesterday. You coming?
 Raju: Maa will say homework first.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Already told her. You read your poem to her in the night; she melted like hot jaggery. She said, "Take your brother. Sit where the wind is free."
+Ramu: Already told her. You read your poem to her in the night, she melted like hot jaggery. She said, "Take your brother. Sit where the wind is free."
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Kohliwada ground… The big lights?

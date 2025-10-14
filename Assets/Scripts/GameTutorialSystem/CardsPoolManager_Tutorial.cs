@@ -118,6 +118,33 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         StartTurnWithoutTimer();
     }
 
+        public void BallFifthBall()
+    {
+        currentTutorialBall = "fifth";
+        DestroyAllPiles();
+        InitTextDeck(PitchCondition.Friendly, 5);
+        InstantiateCards();
+        StartTurn();
+    }
+
+    public void BallSixthBall()
+    {
+        currentTutorialBall = "sixth";
+        DestroyAllPiles();
+        InitTextDeck(PitchCondition.Friendly, 6);
+        InstantiateCards();
+        StartTurn();
+    }
+
+    public void BallSeventhBall()
+    {
+        currentTutorialBall = "seventh";
+        DestroyAllPiles();
+        InitTextDeck(PitchCondition.Friendly, 7);
+        InstantiateCards();
+        StartTurn();
+    }
+
 
     public void HighlightShotPanel()
     {
@@ -418,6 +445,48 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                     Deck.Add(new AttackCardData(strategy));
                 }
                 break;
+
+                case 5: // Ball 5 - Yorker practice
+                BattingStrategy[] tutorial5Strategies = new BattingStrategy[]
+                {
+                    BattingStrategy.StraightDrivePush,
+                    BattingStrategy.OnDriveNormal,
+                    BattingStrategy.OnDriveAggressive,
+                    BattingStrategy.StraightDriveLofted
+                };
+                foreach (BattingStrategy strategy in tutorial5Strategies)
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            case 6: // Ball 6 - Spin bowling introduction
+                BattingStrategy[] tutorial6Strategies = new BattingStrategy[]
+                {
+                    BattingStrategy.SweepNormal,
+                    BattingStrategy.SweepAggressive,
+                    BattingStrategy.CoverDriveNormal,
+                    BattingStrategy.StraightDrivePush
+                };
+                foreach (BattingStrategy strategy in tutorial6Strategies)
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
+
+            case 7: // Ball 7 - Mixed practice
+                BattingStrategy[] tutorial7Strategies = new BattingStrategy[]
+                {
+                    BattingStrategy.PullShotNormal,
+                    BattingStrategy.CutShotNormal,
+                    BattingStrategy.CutShotLofted,
+                    BattingStrategy.ForwardDefense
+                };
+                foreach (BattingStrategy strategy in tutorial7Strategies)
+                {
+                    Deck.Add(new AttackCardData(strategy));
+                }
+                break;
             
 }
 
@@ -477,8 +546,62 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly, int t
                     BallLength.FullLength,
                     pitchCondition
                 );
+                    break;
+                
+            case 5: // Yorker
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.RightArm,
+                    BallType.Straight,
+                    BallLine.MiddleStump,
+                    BallLength.Yorker,
+                    pitchCondition
+                );
                 break;
 
+            case 6: // Spin ball
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.OffSpin,
+                    Side.RightArm,
+                    BallType.OffSpinner,
+                    BallLine.OffStump,
+                    BallLength.GoodLength,
+                    pitchCondition
+                );
+                break;
+
+            case 7: // Bouncer
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Fast,
+                    Side.LeftArm,
+                    BallType.Straight,
+                    BallLine.OutsideOff,
+                    BallLength.Short,
+                    pitchCondition
+                );
+                break;
+
+            case 8: // Medium pace swing
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.Medium,
+                    Side.RightArm,
+                    BallType.OutSwinger,
+                    BallLine.OffStump,
+                    BallLength.GoodLength,
+                    pitchCondition
+                );
+                break;
+
+            case 9: // Leg spin
+                ballToAdd = new BallThrow(
+                    TypeOfBowler.LegSpin,
+                    Side.RightArm,
+                    BallType.LegSpin,
+                    BallLine.LegStump,
+                    BallLength.FullLength,
+                    pitchCondition
+                );
+                break;
             default:
                 ballToAdd = ExcelDataSOManager.Instance.outComeCalculator
                     .GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);

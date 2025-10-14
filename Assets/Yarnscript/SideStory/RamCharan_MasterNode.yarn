@@ -21,42 +21,149 @@ position: -7,-175
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-
-// Scene Setup - Day 1 at the library
 <<HideCharacter>>
-Seeking a quiet place to read and study away from the noise and distractions of his crowded home, Raju chooses to visit the school library, hoping to find both educational resources and peaceful atmosphere for improving his academic performance.
+Seeking a quiet place to read and study, Raju visits the school library.
 
 <<HideCharacter>>
-The hushed atmosphere of the school library envelops Raju as he steps through its doors, the smell of aging paper and quiet learning creating a sanctuary of knowledge that contrasts sharply with the chaos and constant noise of his overcrowded home. Tall shelves lined with books stretch toward the ceiling like guardians of wisdom, while the soft filtering of afternoon light through dusty windows creates an almost sacred quality that makes him understand why some people dedicate their lives to the pursuit of learning and the preservation of knowledge.
+Away from the noise and distractions of his crowded home.
 
-<<SetCharacterExpression "RamCharan" Angry>>
-RamCharan: Quiet! This is a library, not your cricket ground. If you've come here to meet friends or plan games, you can leave immediately. This space is reserved for students who respect learning.
+<<HideCharacter>>
+He hopes to find both educational resources and peaceful atmosphere.
+
+<<HideCharacter>>
+The hushed atmosphere of the school library envelops him.
+
+<<HideCharacter>>
+The smell of aging paper and quiet learning creates a sanctuary.
+
+<<HideCharacter>>
+This contrasts sharply with the chaos of his overcrowded home.
+
+<<HideCharacter>>
+Tall shelves lined with books stretch toward the ceiling like guardians of wisdom.
+
+<<HideCharacter>>
+Soft afternoon light filters through dusty windows.
+
+<<HideCharacter>>
+The space carries an almost sacred quality.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Quiet!
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: This is a library, not your cricket ground.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: If you've come here to meet friends or plan games, you can leave immediately.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: This space is reserved for students who respect learning.
 
 <<SetCharacterExpression "Raju" "Sad">>
-Raju: Sir, I just came to look at some books. I want to read more, maybe find materials that could help with my studies. I wasn't planning to disturb anyone or talk about cricket.
-
-<<SetCharacterExpression "RamCharan" Angry>>
-RamCharan: Books? Hah! All I ever hear about you from other teachers is cricket, cricket, cricket. Your name comes up in staff meetings as the boy who dreams of playing instead of focusing on academics. Do you even know what algebra is?
+Raju: Sir, I just came to look at some books.
 
 <<SetCharacterExpression "Raju" "Sad">>
-Raju: I... I do like both things, sir. I enjoy cricket, but I know studies are important too. Cricket is just something I feel I'm naturally good at, something that gives me hope for the future.
+Raju: I want to read more.
 
-<<SetCharacterExpression "RamCharan" Angry>>
-RamCharan: Good at hitting a ball with a wooden stick, perhaps. But will that skill help you pass your matriculation exams? Will cricket knowledge get you into college or help you support a family?
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Maybe find materials that could help with my studies.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I wasn't planning to disturb anyone or talk about cricket.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Books? Hah!
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: All I ever hear about you from other teachers is cricket, cricket, cricket.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Your name comes up in staff meetings.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: As the boy who dreams of playing instead of focusing on academics.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Do you even know what algebra is?
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I... I do like both things, sir.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I enjoy cricket, but I know studies are important too.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Cricket is just something I feel I'm naturally good at.
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: Something that gives me hope for the future.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Good at hitting a ball with a wooden stick, perhaps.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: But will that skill help you pass your matriculation exams?
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Will cricket knowledge get you into college?
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Or help you support a family?
 
 <<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: This library contains the wisdom of centuries - mathematics that builds bridges, literature that shapes minds, history that teaches wisdom, science that advances civilization. Don't waste your time here unless you're prepared to abandon childish fantasies.
+RamCharan: This library contains the wisdom of centuries.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Mathematics that builds bridges.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Literature that shapes minds.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: History that teaches wisdom.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Science that advances civilization.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Don't waste your time here unless you're prepared to abandon childish fantasies.
 
 <<SetCharacterExpression "Raju" "Sad">>
-Raju: I understand, sir. I'm sorry for disturbing you.
+Raju: I understand, sir.
 
-<<SetCharacterExpression "RamCharan" Angry>>
-RamCharan: Understanding and action are different things, boy. Prove your seriousness through behavior, not words. This library doesn't need another sports-obsessed student who treats education as secondary to entertainment.
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I'm sorry for disturbing you.
 
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Understanding and action are different things, boy.
 
-// Scene Conclusion
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Prove your seriousness through behavior, not words.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: This library doesn't need another sports-obsessed student.
+
+<<SetCharacterExpression "RamCharan" "Angry">>
+RamCharan: Who treats education as secondary to entertainment.
+
 <<HideCharacter>>
-As Raju exits the library with Ram Charan's harsh words ringing in his ears, he feels the familiar sting of having his dreams dismissed as childish fantasies by an adult who sees only the conflict between academic achievement and athletic pursuits. The librarian's passionate defense of learning resonates with something deep within him, even as the rejection wounds his pride and forces him to confront the uncomfortable question of whether pursuing cricket truly represents an escape from serious responsibilities or a legitimate path toward a meaningful future.
+As Raju exits the library, Ram Charan's harsh words ring in his ears.
+
+<<HideCharacter>>
+He feels the familiar sting of having his dreams dismissed as childish fantasies.
+
+<<HideCharacter>>
+The librarian's passionate defense of learning resonates with something deep within him.
+
+<<HideCharacter>>
+Even as the rejection wounds his pride.
+
+<<HideCharacter>>
+He confronts an uncomfortable question.
+
+<<HideCharacter>>
+Does pursuing cricket represent an escape from responsibilities or a legitimate path toward a meaningful future?
 
 <<set $RamCharan_Day = 2>>
 <<EndEvent true>>
@@ -69,40 +176,114 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-
-// Scene Setup - Day 2 at the library
 <<HideCharacter>>
-Despite yesterday's harsh rejection and public humiliation, Raju chooses to return to the library, determined to prove that his interest in learning is genuine and persistent.
+Despite yesterday's harsh rejection, Raju returns to the library.
 
 <<HideCharacter>>
-The library's familiar quiet embraces Raju as he returns for the second day, his determination to prove his intellectual seriousness strengthened rather than weakened by yesterday's confrontation with Ram Charan. The rows of books seem less intimidating today and more like allies in his quest to demonstrate that academic curiosity and athletic passion can coexist within the same person, though he knows that earning the librarian's respect will require more than simple persistence - it will demand genuine engagement with learning for its own sake.
+Determined to prove that his interest in learning is genuine and persistent.
+
+<<HideCharacter>>
+The library's familiar quiet embraces him as he returns for the second day.
+
+<<HideCharacter>>
+His determination to prove his intellectual seriousness is strengthened rather than weakened.
+
+<<HideCharacter>>
+The rows of books seem less intimidating today.
+
+<<HideCharacter>>
+More like allies in his quest to demonstrate that academic curiosity and athletic passion can coexist.
+
+<<HideCharacter>>
+He knows that earning the librarian's respect will require more than simple persistence.
+
+<<HideCharacter>>
+It will demand genuine engagement with learning for its own sake.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
-RamCharan: Back again? Most boys run away and never return when they receive the kind of honest assessment I gave you yesterday. They prefer easy encouragement to truthful criticism about their misplaced priorities.
-
-<<SetCharacterExpression "Raju" "Serious">>
-Raju: Sir, I came to read and learn, just like I said yesterday. I understand that you think cricket is a distraction, but I want to show you that I can be serious about studies too. I'm not just here to waste time or prove a point.
-
-<<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: Hmm. At least you demonstrate some persistence, which is more than most students show when facing academic challenges. But understand something clearly - books require respect, careful handling, and genuine engagement with their contents.
-
-<<SetCharacterExpression "Raju" "Serious">>
-Raju: I do respect books, sir. My brother Ramu always tells me that learning is the most important thing we can do, that education opens doors that cricket alone never could. But cricket... it makes me dream about possibilities.
-
-<<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: Dreams... dangerous things when they're not properly balanced with practical knowledge and realistic planning. I've seen too many promising students abandon their studies chasing fantasies that lead nowhere.
+RamCharan: Back again?
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
-RamCharan: But I've also observed something in your behavior that intrigues me. Most boys who receive correction either argue defensively or disappear permanently. You've returned with respectful persistence. That suggests character worth investigating.
+RamCharan: Most boys run away and never return when they receive the kind of honest assessment I gave you yesterday.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: They prefer easy encouragement to truthful criticism about their misplaced priorities.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Sir, I came to read and learn, just like I said yesterday.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I understand that you think cricket is a distraction.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: But I want to show you that I can be serious about studies too.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm not just here to waste time or prove a point.
 
 <<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: How do you plan to prove this commitment to learning? What approach will you take to demonstrate genuine academic seriousness?
+RamCharan: Hmm. At least you demonstrate some persistence.
 
--> Raju: I want to prove my dedication through serious academic study, sir. Show me the most challenging books. I'll tackle whatever subjects you think are most important for my development.
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Which is more than most students show when facing academic challenges.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: But understand something clearly.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Books require respect, careful handling, and genuine engagement with their contents.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I do respect books, sir.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: My brother Ramu always tells me that learning is the most important thing we can do.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: That education opens doors that cricket alone never could.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: But cricket... it makes me dream about possibilities.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Dreams... dangerous things.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: When they're not properly balanced with practical knowledge and realistic planning.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: I've seen too many promising students abandon their studies.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Chasing fantasies that lead nowhere.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: But I've also observed something in your behavior that intrigues me.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: Most boys who receive correction either argue defensively or disappear permanently.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: You've returned with respectful persistence.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: That suggests character worth investigating.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: How do you plan to prove this commitment to learning?
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: What approach will you take to demonstrate genuine academic seriousness?
+
+<<AutoAdvance true>>
+Make a Choice
+<<AutoAdvance false>>
+
+-> Raju: Show me the most challenging books, sir. I'll prove my dedication through serious academic study.
     <<jump RamCharan_Day2a>>
--> Raju: I believe cricket and studies can support each other, sir. Help me understand how to balance both properly. Maybe you can show me how successful people integrate their passions with academic excellence.
+-> Raju: Help me understand how to balance both, sir. Cricket and studies can support each other.
     <<jump RamCharan_Day2b>>
--> Raju: Let me help you with library work, sir. I want to earn your trust through service. Show me how to care for books properly, how to organize materials, whatever tasks you need assistance with.
+-> Raju: Let me help with library work, sir. I want to earn your trust through service.
     <<jump RamCharan_Day2c>>
 
 ===
@@ -112,24 +293,57 @@ position: -308,129
 ---
 <<set $RamCharan_Path = "a">>
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: I want to prove my dedication through serious academic study, sir. Show me the most challenging books. I'll tackle whatever subjects you think are most important for my development.
 
 <<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: Challenging books? Most students your age can barely handle basic texts. You think you're ready for advanced mathematics, complex literature, scientific principles that require sustained concentration?
-
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: I may struggle at first, sir, but I'll work through the difficulty. I want to prove that I can handle intellectual challenges with the same dedication I bring to cricket practice.
+RamCharan: Challenging books?
 
 <<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: Very well. Come back tomorrow. If your intellectual curiosity is genuine, I'll provide materials that will test whether your mind is as disciplined as your words suggest.
+RamCharan: Most students your age can barely handle basic texts.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: You think you're ready for advanced mathematics?
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Complex literature, scientific principles that require sustained concentration?
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Thank you, sir. I won't disappoint you.
+Raju: I may struggle at first, sir.
 
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: But I'll work through the difficulty.
 
-// Scene Conclusion
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I want to prove that I can handle intellectual challenges.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: With the same dedication I bring to cricket practice.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Very well. Come back tomorrow.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: If your intellectual curiosity is genuine, I'll provide materials.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: Materials that will test whether your mind is as disciplined as your words suggest.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, sir.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I won't disappoint you.
+
 <<HideCharacter>>
-As Raju leaves the library with Ram Charan's challenge accepted and the promise of advanced academic materials awaiting him tomorrow, he feels the exhilaration of someone who has chosen to prove himself through intellectual rigor rather than defensive arguments. His decision to embrace the most demanding path available reflects a growing understanding that true confidence comes not from avoiding difficult tests but from meeting them head-on with the same determination he brings to mastering cricket techniques.
+As Raju leaves the library, he feels the exhilaration of someone who has chosen to prove himself through intellectual rigor.
+
+<<HideCharacter>>
+Rather than defensive arguments.
+
+<<HideCharacter>>
+His decision to embrace the most demanding path available reflects a growing understanding.
+
+<<HideCharacter>>
+That true confidence comes not from avoiding difficult tests but from meeting them head-on.
 
 <<set $RamCharan_Day = 3>>
 <<EndEvent true>>
@@ -140,24 +354,57 @@ position: -55,122
 ---
 <<set $RamCharan_Path = "b">>
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: I believe cricket and studies can support each other, sir. Help me understand how to balance both properly. Maybe you can show me how successful people integrate their passions with academic excellence.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
-RamCharan: Balance? Most students who claim to seek balance end up excelling at neither. Integration requires exceptional discipline and clear understanding of priorities.
+RamCharan: Balance?
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: Most students who claim to seek balance end up excelling at neither.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: Integration requires exceptional discipline.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: And clear understanding of priorities.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: That's exactly what I want to learn, sir. I don't want to sacrifice either my education or my dreams. I want to find a way to make them strengthen each other.
+Raju: That's exactly what I want to learn, sir.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I don't want to sacrifice either my education or my dreams.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I want to find a way to make them strengthen each other.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Mature thinking for someone your age. Come back tomorrow. If you're serious about integration rather than just making excuses, I might show you something interesting.
+RamCharan: Mature thinking for someone your age.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Come back tomorrow.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: If you're serious about integration rather than just making excuses.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: I might show you something interesting.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: I'll be here, sir. Thank you for considering my perspective.
+Raju: I'll be here, sir.
 
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you for considering my perspective.
 
-// Scene Conclusion
 <<HideCharacter>>
-As Raju departs the library with Ram Charan's intrigued acknowledgment of his mature approach to balancing competing interests, he feels the satisfaction of someone whose thoughtful perspective has earned respect rather than dismissal. His choice to seek integration rather than choosing sides reflects a wisdom beyond his years and sets the stage for tomorrow's revelation about how intellectual discipline and passionate pursuits might actually enhance rather than compete with each other.
+As Raju departs the library, he feels the satisfaction of someone whose thoughtful perspective has earned respect.
+
+<<HideCharacter>>
+Rather than dismissal.
+
+<<HideCharacter>>
+His choice to seek integration rather than choosing sides reflects a wisdom beyond his years.
+
+<<HideCharacter>>
+Tomorrow will reveal how intellectual discipline and passionate pursuits might actually enhance each other.
 
 <<set $RamCharan_Day = 3>>
 <<EndEvent true>>
@@ -168,24 +415,60 @@ position: 184,122
 ---
 <<set $RamCharan_Path = "c">>
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Let me help you with library work, sir. I want to earn your trust through service. Show me how to care for books properly, how to organize materials, whatever tasks you need assistance with.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
-RamCharan: Help with library work? Most students see such tasks as beneath them, preferring to be served rather than serve. You're willing to work without immediate reward?
+RamCharan: Help with library work?
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: Most students see such tasks as beneath them.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: Preferring to be served rather than serve.
+
+<<SetCharacterExpression "RamCharan" "Quizzical">>
+RamCharan: You're willing to work without immediate reward?
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Yes, sir. I want to learn by doing, by proving my respect for this place and these books through my actions. Let me earn the right to be here.
+Raju: Yes, sir.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I want to learn by doing.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: By proving my respect for this place and these books through my actions.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Let me earn the right to be here.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Interesting approach. Come back tomorrow. If your willingness to serve is genuine, perhaps we can find meaningful ways for you to contribute to this library's mission.
+RamCharan: Interesting approach.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Come back tomorrow.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: If your willingness to serve is genuine.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Perhaps we can find meaningful ways for you to contribute to this library's mission.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Thank you for the opportunity, sir. I won't let you down.
+Raju: Thank you for the opportunity, sir.
 
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I won't let you down.
 
-// Scene Conclusion
 <<HideCharacter>>
-As Raju leaves the library with the opportunity to earn his place through humble service rather than grand gestures or defensive arguments, he understands that his willingness to work without immediate recognition has impressed Ram Charan in ways that academic prowess alone might not have achieved. His choice of the service path reflects a maturity that recognizes respect must be earned through consistent action rather than claimed through words or credentials.
+As Raju leaves the library with the opportunity to earn his place through humble service, he understands something important.
+
+<<HideCharacter>>
+His willingness to work without immediate recognition has impressed Ram Charan.
+
+<<HideCharacter>>
+In ways that academic prowess alone might not have achieved.
+
+<<HideCharacter>>
+His choice of the service path reflects a maturity that recognizes respect must be earned through consistent action.
 
 <<set $RamCharan_Day = 3>>
 <<EndEvent true>>
@@ -207,16 +490,38 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-
-// Day 3 - Path A: Academic Challenge
 <<HideCharacter>>
-Raju returns determined to prove his intellectual capacity through rigorous academic engagement with challenging materials.
+Raju returns determined to prove his intellectual capacity.
 
 <<HideCharacter>>
-The library welcomes Raju for his third consecutive day as he arrives prepared to engage with whatever intellectual challenges Ram Charan has prepared for him, his mind focused and eager despite the uncertainty of what advanced materials await. His consistent return demonstrates a level of academic commitment that goes beyond proving a point to the librarian - it reflects a genuine hunger for knowledge that parallels his passion for cricket, suggesting that his earlier claims about balancing both pursuits might contain more substance than even he initially realized.
+Through rigorous academic engagement with challenging materials.
+
+<<HideCharacter>>
+The library welcomes him for his third consecutive day.
+
+<<HideCharacter>>
+He arrives prepared to engage with whatever intellectual challenges await.
+
+<<HideCharacter>>
+His mind is focused and eager despite the uncertainty.
+
+<<HideCharacter>>
+His consistent return demonstrates a level of academic commitment.
+
+<<HideCharacter>>
+That goes beyond proving a point to the librarian.
+
+<<HideCharacter>>
+It reflects a genuine hunger for knowledge that parallels his passion for cricket.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Your scholarly approach has impressed me. But now I want to show you something that might surprise you about the relationship between intellectual discipline and... other pursuits.
+RamCharan: Your scholarly approach has impressed me.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: But now I want to show you something.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Something that might surprise you about the relationship between intellectual discipline and... other pursuits.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm ready to learn whatever you want to teach me, sir.
@@ -230,19 +535,38 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-
-// Day 3 - Path B: Balance and Integration
 <<HideCharacter>>
-Raju returns hoping to learn how to authentically balance his dual interests in cricket and academics.
+Raju returns hoping to learn how to authentically balance his dual interests.
 
 <<HideCharacter>>
-The library atmosphere carries an air of anticipation as Raju arrives for his third day, eager to understand how Ram Charan's promised revelation about integration might transform his understanding of the relationship between academic achievement and athletic passion. His balanced approach to earning the librarian's respect has opened doors to insights that might resolve the apparent conflict between intellectual development and cricket dreams that has troubled him since yesterday's initial confrontation.
+In cricket and academics.
+
+<<HideCharacter>>
+The library atmosphere carries an air of anticipation.
+
+<<HideCharacter>>
+As he arrives for his third day.
+
+<<HideCharacter>>
+Eager to understand how Ram Charan's promised revelation about integration might transform his understanding.
+
+<<HideCharacter>>
+His balanced approach to earning the librarian's respect has opened doors to insights.
+
+<<HideCharacter>>
+That might resolve the apparent conflict between intellectual development and cricket dreams.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Your mature approach to balance has convinced me to share something special. Perhaps you're ready to understand how true integration actually works.
+RamCharan: Your mature approach to balance has convinced me to share something special.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Perhaps you're ready to understand how true integration actually works.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: I'm ready to learn, sir. Please show me what you mean.
+Raju: I'm ready to learn, sir.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Please show me what you mean.
 
 <<jump RamCharan_Revelation>>
 ===
@@ -253,19 +577,38 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-
-// Day 3 - Path C: Service and Humility
 <<HideCharacter>>
-Raju returns ready to demonstrate his commitment through humble service and careful attention to library work.
+Raju returns ready to demonstrate his commitment.
 
 <<HideCharacter>>
-The library awaits Raju's service-oriented approach as he arrives prepared to demonstrate his respect for knowledge through careful attention to the practical needs of maintaining and organizing educational resources. His willingness to earn his place through humble labor rather than demanding recognition based on potential or promises reflects a level of character development that has clearly impressed Ram Charan and opened possibilities for deeper trust and revelation.
+Through humble service and careful attention to library work.
+
+<<HideCharacter>>
+The library awaits his service-oriented approach.
+
+<<HideCharacter>>
+He arrives prepared to demonstrate his respect for knowledge.
+
+<<HideCharacter>>
+Through careful attention to the practical needs of maintaining and organizing educational resources.
+
+<<HideCharacter>>
+His willingness to earn his place through humble labor has clearly impressed Ram Charan.
+
+<<HideCharacter>>
+And opened possibilities for deeper trust and revelation.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Your humble service has shown me something important about your character. You've earned the right to see something I keep hidden from most students.
+RamCharan: Your humble service has shown me something important about your character.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: You've earned the right to see something I keep hidden from most students.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: I'm grateful for your trust, sir. What would you like to show me?
+Raju: I'm grateful for your trust, sir.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: What would you like to show me?
 
 <<jump RamCharan_Revelation>>
 ===
@@ -274,43 +617,132 @@ title: RamCharan_Revelation
 tags:
 ---
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: You've returned again, and I can see in your behavior over these three days that you're not just another noisy boy seeking easy attention. Your consistency suggests I can trust you with something special.
+RamCharan: You've returned again.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: And I can see in your behavior over these three days.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: That you're not just another noisy boy seeking easy attention.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Your consistency suggests I can trust you with something special.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Sir, I'm grateful that you're willing to trust me. I promise that whatever you want to show me, I'll treat it with the same respect I'd give to any important learning material.
+Raju: Sir, I'm grateful that you're willing to trust me.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I promise that whatever you want to show me.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I'll treat it with the same respect I'd give to any important learning material.
 
 // Ram Charan moves toward a locked cabinet, producing a small key and opening it with careful movements. From within, he pulls out a worn bundle wrapped in protective cloth.
 
 <<SetCharacterExpression "RamCharan" "Excited">>
-RamCharan: These are treasures I've kept hidden for years - Wisden Almanacks, Sportstar magazines, cricket biographies, technical guides written by former players and coaches. I too loved cricket once, long before I became a librarian.
+RamCharan: These are treasures I've kept hidden for years.
+
+<<SetCharacterExpression "RamCharan" "Excited">>
+RamCharan: Wisden Almanacks, Sportstar magazines, cricket biographies.
+
+<<SetCharacterExpression "RamCharan" "Excited">>
+RamCharan: Technical guides written by former players and coaches.
+
+<<SetCharacterExpression "RamCharan" "Excited">>
+RamCharan: I too loved cricket once, long before I became a librarian.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Sir, these look incredible! Are these really professional cricket publications? Can I actually read them?
+Raju: Sir, these look incredible!
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Are these really professional cricket publications?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Can I actually read them?
 
 <<SetCharacterExpression "RamCharan" "Serious">>
-RamCharan: Only here in the library, only under my supervision, and only because you've proven through consistent behavior that you understand the value of both academic learning and disciplined pursuit of interests.
+RamCharan: Only here in the library, only under my supervision.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: And only because you've proven through consistent behavior.
+
+<<SetCharacterExpression "RamCharan" "Serious">>
+RamCharan: That you understand the value of both academic learning and disciplined pursuit of interests.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: You see, beta, I learned something important during my own youth - that discipline acquired through academic study actually enhances rather than competes with passionate pursuit of cricket. Mathematics teaches you to analyze statistics. Literature develops mental focus. History shows strategic thinking.
+RamCharan: You see, beta, I learned something important during my own youth.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: That discipline acquired through academic study actually enhances.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Rather than competes with passionate pursuit of cricket.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Mathematics teaches you to analyze statistics.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Literature develops mental focus.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: History shows strategic thinking.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: So you're saying that being serious about studies can actually make me a better cricketer?
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Exactly! Treat these cricket materials like sacred texts - study them with the same discipline you'd apply to mathematics or literature. Balance these elements properly, and you might achieve something greater than either pursuit alone could provide.
-
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: Thank you, sir! This is better than anything I could have hoped for. I promise I'll study these materials carefully and prove that cricket and academics can support each other.
+RamCharan: Exactly!
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
-RamCharan: Remember, boy - this collection represents my own dreams transformed into support for the next generation. Use this knowledge wisely, respect these materials completely, and perhaps you'll go further than either of us dreamed possible.
+RamCharan: Treat these cricket materials like sacred texts.
 
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Study them with the same discipline you'd apply to mathematics or literature.
 
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Balance these elements properly.
 
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: And you might achieve something greater than either pursuit alone could provide.
 
-// Scene Conclusion
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Thank you, sir!
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: This is better than anything I could have hoped for.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: I promise I'll study these materials carefully.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: And prove that cricket and academics can support each other.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Remember, boy.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: This collection represents my own dreams transformed into support for the next generation.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: Use this knowledge wisely, respect these materials completely.
+
+<<SetCharacterExpression "RamCharan" "Smiling">>
+RamCharan: And perhaps you'll go further than either of us dreamed possible.
+
 <<HideCharacter>>
-As Raju leaves the library carrying both the revelation of Ram Charan's hidden cricket passion and access to professional cricket materials that will enhance his understanding of the sport, he understands that he has discovered something far more valuable than either academic resources or athletic guidance alone - he has found a mentor who embodies the successful integration of intellectual discipline and passionate pursuit. The librarian's trust and the treasure trove of cricket knowledge represent a bridge between his dual interests that he never imagined possible.
+As Raju leaves the library carrying both the revelation of Ram Charan's hidden cricket passion and access to professional cricket materials, he understands something profound.
+
+<<HideCharacter>>
+He has discovered something far more valuable than either academic resources or athletic guidance alone.
+
+<<HideCharacter>>
+He has found a mentor who embodies the successful integration of intellectual discipline and passionate pursuit.
+
+<<HideCharacter>>
+The librarian's trust and the treasure trove of cricket knowledge represent a bridge between his dual interests.
+
+<<HideCharacter>>
+A bridge he never imagined possible.
 
 <<set $RamCharan_Complete = true>>
 <<jump Foresight>>
