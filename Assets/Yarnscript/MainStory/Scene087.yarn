@@ -1,0 +1,36 @@
+title: scene_87
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite hutInterior>>
+
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Made it to semifinals again.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: You're getting consistent. That's more important than getting lucky. Today might test you—I heard that tall boy from the church lane is playing.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: The one who bowls fast?
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: Fast but straight. You've faced worse at dawn practice when your eyes were still sleepy.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Should we do anything special?
+
+<<SetCharacterExpression "Ramu" "Relaxed">>
+Ramu: No. Special is for special days. Today is Saturday with stumps.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

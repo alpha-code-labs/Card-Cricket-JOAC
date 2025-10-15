@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: 110 runs! That tall boy from church lane couldn't believe it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: My arms are tired but my head is clear.
 
 <<SetCharacterExpression "Ramu" "Serious">>

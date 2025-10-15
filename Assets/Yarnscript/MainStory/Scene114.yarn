@@ -13,7 +13,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's the Quarterfinals captain. We are batting first. You are opening. 15 overs. Anything below 150 runs is a problem with the opposition having some very good batsmen. Are you up for it?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in. Completely focussed. Ready to roar.
 
 <<SetCharacterExpression "Ramu" "Neutral">>

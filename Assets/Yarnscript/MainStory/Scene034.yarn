@@ -1,0 +1,27 @@
+title: scene_34
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Finals captain. They made 35 in 15 balls.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Same target same balls. It's like a mirror match.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Pressure's on them. They have to defend. You just have to match what they did. Take calculated risks.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: I'll finish it quick so we can help Maa.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

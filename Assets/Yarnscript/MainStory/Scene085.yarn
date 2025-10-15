@@ -1,0 +1,40 @@
+title: scene_85
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Another tournament, Captain. Month-end matches at Kohliwada.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: March has been full of cricket.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Good practice before April. This one has better teams—some boys from the school league are playing.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: School league boys? They have proper coaching.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: And you have proper practice. Different paths, same game. Don't make them bigger in your mind.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Prize money?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Decent. Enough for groceries if we win. But we're playing for form, not funds.
+
+<<HideAllCharacters>>
+<<FadeToBlack>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

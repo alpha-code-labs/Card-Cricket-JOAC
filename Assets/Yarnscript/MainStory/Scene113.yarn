@@ -31,13 +31,13 @@ Raju: So I keep it on the table, not in my head.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Exactly. Second—eyes on you that weren't here before. See near the scorers' desk? Green umbrella, clipboard, cap pulled low?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Coach Dev.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: He'll pretend he's counting pigeons. He's counting how you carry yourself when the ground tries to carry you away. No showing off. No shrinking. Walk like work.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Walk like work. Got it.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
