@@ -24,16 +24,16 @@ Raju: What things?
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Four coins you'll earn and keep: courage, humility, resourcefulness, foresight. Spend them on the ground without going broke.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Confused">>
 Raju: I am Confused.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Courage—standing next to fear till it gets bored. You'll do hard things even with a shaking voice.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: So courage is… practice for my heartbeat?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Exactly. Loud heart, steady hands.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -81,10 +81,10 @@ Ramu: Start where your breath steadies. Listen for a problem you can make lighte
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: All of this will help you in your batting Raju. All of this will get you what you want when you bat. You will find out soon enough. Go for it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Then I'm going. Walk like work.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Proud">>
 Ramu: Walk like work. And return like a bigger boy, not a louder one.
 
 <<HideAllCharacters>>

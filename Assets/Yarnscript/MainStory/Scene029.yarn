@@ -23,10 +23,10 @@ Raju: Who's playing?
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: The usual lanes. Boys you know. Nothing fancy.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Good. I can focus on my shots without the noise.
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Exactly. Use these matches to try things. That late cut you've been practicing? Test it today.
 
 <<HideAllCharacters>>

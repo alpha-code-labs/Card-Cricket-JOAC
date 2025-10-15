@@ -17,7 +17,7 @@ Raju: Two runs a ball. Need to start strong.
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Exactly. No settling in. Attack from ball one. They set this target thinking we can't chase it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's prove them wrong.
 
 <<HideAllCharacters>>

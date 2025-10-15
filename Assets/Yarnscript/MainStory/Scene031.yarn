@@ -13,10 +13,10 @@ Raju: We made it through yesterday.
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Expected. You've been playing well lately. Today's semifinals, but don't let the word grow big in your head.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Just another evening match?
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Relaxed">>
 Ramu: Just another evening match. Home by dinner. Homework after.
 
 <<SetCharacterExpression "Raju" "Excited">>

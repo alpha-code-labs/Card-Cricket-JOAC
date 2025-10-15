@@ -15,7 +15,7 @@ Raju: Same target same balls. It's like a mirror match.
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Pressure's on them. They have to defend. You just have to match what they did. Take calculated risks.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll finish it quick so we can help Maa.
 
 <<HideAllCharacters>>

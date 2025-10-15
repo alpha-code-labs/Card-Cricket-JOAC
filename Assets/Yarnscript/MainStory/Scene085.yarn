@@ -19,10 +19,10 @@ Raju: March has been full of cricket.
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Good practice before April. This one has better teams—some boys from the school league are playing.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: School league boys? They have proper coaching.
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: And you have proper practice. Different paths, same game. Don't make them bigger in your mind.
 
 <<SetCharacterExpression "Raju" "Excited">>

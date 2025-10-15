@@ -17,10 +17,10 @@ Raju: How many do we need?
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Get 25 from 15 balls. Quick singles won't work. You'll need boundaries.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That's aggressive batting.
 
-<<SetCharacterExpression "Ramu" "Serious">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: It's practice tournament. Perfect time to test your attacking shots. Go for it.
 
 <<HideAllCharacters>>

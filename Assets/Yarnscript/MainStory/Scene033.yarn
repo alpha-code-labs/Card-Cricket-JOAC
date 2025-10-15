@@ -22,13 +22,13 @@ Raju: Any prize?
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Couple hundred rupees maybe. Tea money. The real tournament comes later this month.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Then why try hard?
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Because we don't know how to try soft. We play our way, every day. Ready?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Ready.
 
 <<HideAllCharacters>>
