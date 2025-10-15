@@ -33,40 +33,40 @@ After noticing his classmate Priya looking worried about upcoming exams during s
 
 The quiet library provides sanctuary for serious study as Raju approaches the corner table where Priya sits surrounded by textbooks. Her furrowed brow and pile of crumpled papers reveal frustration. The approaching exam deadline creates mounting pressure.
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: Oh Raju, I'm so worried about next week's exams!
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: I've been studying for hours every day, but some of these subjects just aren't making sense.
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Disappointed">>
 Priya: No matter how hard I try.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Don't worry so much, Priya!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Which subjects are giving you the most trouble?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Maybe we can figure out a better approach together.
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Confused">>
 Priya: Mathematics and science are both confusing me.
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: I understand when the teacher explains concepts in class, but when I try to solve problems alone...
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Disappointed">>
 Priya: I get completely lost and make silly mistakes.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: That sounds like you understand the concepts but need practice applying them.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Maybe studying together would help both of us understand the material better?
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: You really think collaborative studying could help?
 
 <<SetCharacterExpression "Priya" "Serious">>
@@ -75,28 +75,28 @@ Priya: I've always tried to learn everything by myself, but maybe discussing pro
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Definitely!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Sometimes explaining concepts to each other helps both people understand better.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We could quiz each other and work through difficult problems together.
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: But what if I'm too far behind?
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: What if my confusion just makes studying harder for you?
 
-<<SetCharacterExpression "Priya" "Sad">>
+<<SetCharacterExpression "Priya" "Embarrassed">>
 Priya: I don't want to waste your time when you probably understand everything already.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Don't think like that, Priya!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Teaching and explaining actually helps me understand concepts more deeply too.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We'd both benefit from working together instead of struggling alone.
 
 <<HideCharacter>>
@@ -120,52 +120,52 @@ The familiar quiet of the library welcomes both students as they settle into col
 <<SetCharacterExpression "Priya" "Serious">>
 Priya: I'm glad you convinced me to try studying together, Raju.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: Last night I kept thinking about what you said regarding collaborative learning.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Skeptical">>
 Priya: And maybe you're right that isolation isn't always the best approach.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm really happy you decided to give it a chance!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Sometimes the best insights come from discussing problems with someone who sees things from a different angle.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: You're probably much better at these subjects than I am.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: I've been struggling with basic concepts while you always seem confident during class discussions.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Don't underestimate yourself, Priya!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I notice you ask really thoughtful questions in class, and that shows you're thinking deeply about the material.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Sometimes people who struggle initially understand concepts more thoroughly once they master them.
 
 <<SetCharacterExpression "Priya" "Quizzical">>
 Priya: Do you really think questioning and struggling can be signs of deeper learning?
 
-<<SetCharacterExpression "Priya" "Quizzical">>
+<<SetCharacterExpression "Priya" "Skeptical">>
 Priya: I always assumed they meant I wasn't smart enough to understand things quickly.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Absolutely!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: People who ask good questions and work through difficulties often develop stronger understanding.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: Than those who accept everything immediately.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Your careful thinking could be a strength, not a weakness.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Astonished">>
 Priya: That's a completely different way of looking at my academic challenges.
 
 <<SetCharacterExpression "Priya" "Smiling">>
@@ -174,16 +174,16 @@ Priya: Maybe instead of feeling ashamed about needing extra time, I should appre
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: And working together means we can combine your careful analysis with different perspectives.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: To master material more effectively than either of us could alone.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: How should we structure our study sessions to maximize both our learning?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: What approach would work best for tackling these challenging subjects?
 
 <<HideCharacter>>
@@ -207,22 +207,22 @@ The school library provides the perfect environment for launching their collabor
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Ready to put our collaborative study plan into action, Raju?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: I've been thinking about our conversation yesterday, and I'm eager to try this new approach to learning.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Absolutely!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I brought some ideas about how we could structure our sessions to help both of us understand the material better.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What subjects should we focus on first?
 
 <<SetCharacterExpression "Priya" "Serious">>
 Priya: I think we should start with the areas where I'm most confused, but I want to make sure our approach also helps you learn.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: How should we organize our study time?
 
 <<AutoAdvance true>>
@@ -243,10 +243,10 @@ position: -308,129
 ---
 <<set $Priya_Path = "a">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's focus on intensive review sessions, Priya.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We can quiz each other systematically and work through practice problems.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -255,40 +255,40 @@ Raju: Until we both master every concept completely.
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Intensive review sounds perfect!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: I learn best when I can practice concepts repeatedly until they become automatic.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: Systematic drilling might be exactly what I need.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Great!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We can create comprehensive question sets for each subject.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And keep practicing until we can answer everything quickly and accurately.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: Repetition builds confidence.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: I love this systematic approach!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: When I know I've practiced enough to handle any question, the exam anxiety disappears.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: And I can focus on demonstrating what I've learned.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Intensive review will give us both the thorough preparation and confidence we need to excel.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's start with your most challenging subject.
 
 <<HideCharacter>>
@@ -304,49 +304,49 @@ position: -55,122
 ---
 <<set $Priya_Path = "b">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's focus on conceptual understanding, Priya.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Instead of just memorizing, we can explore why things work the way they do.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And connect ideas across different subjects.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Conceptual understanding appeals to me!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: I always feel more confident when I grasp the underlying principles.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Serious">>
 Priya: Instead of just following procedures without comprehension.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We can discuss the logic behind mathematical formulas, explore scientific principles through real examples.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And help each other see patterns that connect different topics.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: I love how this approach makes learning feel more meaningful!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: When I understand why concepts work, I remember them better.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: And can apply them to new situations more easily.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Conceptual understanding will help us both develop deeper knowledge.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That goes beyond memorization to genuine comprehension.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -365,52 +365,52 @@ position: 184,122
 ---
 <<set $Priya_Path = "c">>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's focus on mutual teaching, Priya.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: We can take turns explaining concepts to each other.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Which will help both of us understand material more deeply.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Mutual teaching sounds wonderful!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: I learn so much better when I have to explain things clearly to someone else.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: It forces me to organize my thoughts properly.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Exactly!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: When you teach something, you discover gaps in your own understanding.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: And strengthen areas where you're already solid.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We'll both benefit from being both teacher and student.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: I love how this approach makes us equal partners in learning!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: Instead of feeling like the struggling student, I get to contribute.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: By helping you understand things from my perspective too.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Perfect!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Mutual teaching will help us both develop communication skills while mastering academic content.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's start by choosing topics where each of us can teach the other something valuable.
 
 <<HideCharacter>>
@@ -444,31 +444,31 @@ The quiet after-school library provides ideal conditions for implementing their 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Ready to put our study strategy into practice, Raju?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: I'm nervous but also excited to see whether our collaborative approach actually helps me understand these difficult concepts.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm really looking forward to this!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Yesterday's planning gave us a clear approach, and now we get to test whether working together really produces better results.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Than studying alone.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: I hope our method works better than my previous solo efforts.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: These exams feel so important, and I'm worried about disappointing my family if I don't perform well.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I understand that pressure, but remember that doing your best is what matters most.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Our collaborative approach should help you feel more prepared and confident going into these exams.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: You're right about focusing on preparation rather than worry.
 
 <<SetCharacterExpression "Priya" "Excited">>
@@ -494,34 +494,34 @@ The quiet after-school library provides ideal conditions for implementing their 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Ready to explore the deeper concepts behind these subjects?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: I'm excited to see whether understanding the 'why' really does help me remember the 'how'.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'm looking forward to this too!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: When we focus on the underlying principles, everything else starts to make more sense.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: It's like finding the key that unlocks multiple doors.
 
 <<SetCharacterExpression "Priya" "Serious">>
 Priya: I hope this approach works better than just memorizing formulas.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: I want to truly understand the material, not just pass the exam.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That's exactly the right mindset.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: When you understand the concepts deeply, the exam becomes easier because you're not just recalling facts.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Let's start with the concepts I find most confusing.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: And see if we can discover the underlying logic together!
 
 <<HideCharacter>>
@@ -544,34 +544,34 @@ The quiet after-school library provides ideal conditions for implementing their 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Ready to start teaching each other?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: I'm nervous about explaining concepts, but also excited to try this equal partnership approach.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Don't be nervous!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Teaching is one of the best ways to learn. When you have to explain something clearly to someone else.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: You discover what you really understand and what you don't.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Worried">>
 Priya: I hope I can explain things clearly enough to be helpful.
 
-<<SetCharacterExpression "Priya" "Serious">>
+<<SetCharacterExpression "Priya" "Anxious">>
 Priya: What if I confuse you more than help you?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That won't happen because we're learning together.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: If something isn't clear, we'll figure it out as a team. That's the whole point of mutual teaching.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: You're right. Let's start!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: I'll teach you the first concept, then you teach me the next one.
 
 <<HideCharacter>>
@@ -590,10 +590,10 @@ After successfully completing their first collaborative study session, Priya con
 
 The familiar library setting welcomes both students as they return with growing confidence in their collaborative approach. Yesterday's successful session validated their belief that working together produces better results than individual struggle. The second day carries different energy as both move beyond experimental assistance into genuine academic collaboration.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Excited">>
 Priya: I'm so glad we decided to study together!
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: Yesterday's session helped me understand concepts that have been confusing me for weeks.
 
 <<SetCharacterExpression "Priya" "Smiling">>
@@ -602,19 +602,19 @@ Priya: Are you ready to continue building on our progress?
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Absolutely!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Yesterday showed me how much explaining concepts to you helped me understand them more deeply too.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Collaborative learning really does benefit both people involved.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Exactly!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: I feel so much more confident about the material now.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: Today I want to tackle some of the more advanced problems.
 
 <<SetCharacterExpression "Priya" "Excited">>
@@ -623,16 +623,16 @@ Priya: To make sure we're really ready for anything the exams might include.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's a great attitude!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's challenge ourselves with more complex material.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: While continuing to support each other through any difficulties we encounter.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Overjoyed">>
 Priya: I never thought I could feel this positive about academics before.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: Our partnership has transformed studying from something stressful into something enjoyable and productive.
 
 <<HideCharacter>>
@@ -651,79 +651,79 @@ With their study partnership well-established and exam confidence growing, Priya
 
 The library atmosphere reflects the comfortable academic partnership that has developed between Priya and Raju over their days of collaborative study. Established routines and mutual support replace the initial anxiety and uncertainty. Today's conversation carries weight beyond immediate exam preparation as both prepare to discuss the broader implications of their successful collaboration.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Proud">>
 Priya: Raju, I have to tell you - when I first approached you about my academic worries, I never imagined how much our study partnership would transform me.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: My entire approach to learning.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: You've helped me discover strengths I didn't know I had.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Thank you, Priya!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: But this partnership has been just as valuable for me.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Teaching and discussing concepts with you has deepened my own understanding.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: While showing me how much I enjoy collaborative learning.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: You've demonstrated that academic ability isn't fixed - it can be developed through proper support.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Serious">>
 Priya: And effective strategies.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Proud">>
 Priya: Your patient explanations and encouragement have helped me overcome years of self-doubt about my intelligence.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: This experience has taught me that helping others succeed doesn't diminish your own achievements - it enhances them.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Whether someone is supporting classmates or pursuing cricket, success becomes more meaningful when it's shared.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: With people who understand the struggle.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Excited">>
 Priya: Exactly!
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: And you've shown me that academic challenges don't have to be faced alone.
 
 <<SetCharacterExpression "Priya" "Smiling">>
 Priya: When students support each other instead of competing, everyone can achieve more than they thought possible.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Determined">>
 Priya: I want to continue our study partnership even after these exams.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: Would you be interested in maintaining our collaboration for future academic challenges?
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Quizzical">>
 Priya: And helping other struggling students discover the power of collaborative learning?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That sounds wonderful!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'd love to continue working together while helping other students realize that academic success doesn't have to come at the expense of friendship.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And mutual support.
 
 <<SetCharacterExpression "Priya" "Smiling">>
 Priya: Then we both benefit perfectly.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: You continue developing your teaching and communication skills while I gain confidence in my academic abilities.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Excited">>
 Priya: And together we can show other students that collaboration enhances rather than threatens individual achievement.
 
 <<HideCharacter>>
@@ -742,52 +742,52 @@ After the exams have concluded and results are in, Priya and Raju meet one final
 
 The familiar library now feels like a special place - not just where they studied, but where they discovered the power of collaboration and mutual support. Their partnership has proven that academic success and friendship can enhance each other rather than compete.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Overjoyed">>
 Priya: Raju! I got my results - I did so much better than I ever thought possible!
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: My grades improved in every subject we studied together.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: That's amazing! I'm so proud of you!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: But I'm not surprised - you worked so hard and learned so well.
 
 <<SetCharacterExpression "Priya" "Smiling">>
 Priya: I couldn't have done it without you.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: This week taught me that struggling doesn't mean failing.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Proud">>
 Priya: It means I'm growing and learning deeply.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: And you taught me that helping others succeed makes my own success more meaningful.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I understand concepts better now because I had to explain them clearly to you.
 
 <<SetCharacterExpression "Priya" "Excited">>
 Priya: So we really did help each other!
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Confident">>
 Priya: This proves that collaboration isn't about one person helping another.
 
-<<SetCharacterExpression "Priya" "Excited">>
+<<SetCharacterExpression "Priya" "Smiling">>
 Priya: It's about both people becoming better together.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: I'm grateful for this partnership.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: And I'm excited to continue studying together in the future.
 
 <<SetCharacterExpression "Priya" "Smiling">>
 Priya: Me too. And maybe we can help other students discover what we learned.
 
-<<SetCharacterExpression "Priya" "Smiling">>
+<<SetCharacterExpression "Priya" "Proud">>
 Priya: That success is sweeter when it's shared.
 
 <<HideCharacter>>
