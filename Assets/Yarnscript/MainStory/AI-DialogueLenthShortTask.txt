@@ -7,7 +7,7 @@ using the table below to track the changes with the values Need-Processing,Uncha
 
 |   |   |   |
 |---|---|---|
-|Scene001.yarn||Need-Processing|
+|Scene001.yarn||Changed|
 |Scene002.yarn||Need-Processing|
 |Scene003.yarn||Need-Processing|
 |Scene004.yarn||Need-Processing|

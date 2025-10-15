@@ -10,7 +10,7 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Captain. Good—you came. Our lane doesn't have a coach, so you get me. Today, before we step out, I'm telling you the spine of batting in this world. No secrets, just honesty.
+Ramu: Captain, good—you came. Our lane doesn't have a coach, so I'm teaching you the spine of batting—no secrets, just honesty.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Ok.
@@ -34,7 +34,7 @@ Ramu: Four—Timing. Poor people like us can't waste anything—not food, not mo
 Ramu: Five—Temper. Runs come and go; manners stay. Miss once, breathe. Miss twice, breathe longer.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
-Raju: Eyes, feet, hands, timing, tempe... five.
+Raju: Eyes, feet, hands, timing, temper... five.
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Good. Now three rules of our lane. Rule A: Respect the bat—face up when it rests, head up when you walk. Rule B: Respect the bowler—even when you learn their tricks. Rule C: Respect yourself—no throwing, no sulking, no excuses.
