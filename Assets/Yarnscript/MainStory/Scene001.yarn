@@ -50,7 +50,7 @@ Raju: The grip is new?
 
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Borrowed a bicycle tube from the tyre repair shop. Wrapped it tight last night. See this tape on the toe? That crack won't spread now. And I sanded it with brick—don't tell Masterji; he'll make me do real sanding at school.
+Ramu: Borrowed a bicycle tube from the tyre repair shop and wrapped it tight last night. I sanded it with brick—don't tell Masterji.
 
 
 <<SetCharacterExpression "Raju" "ExcitedWithBat">>
@@ -58,7 +58,7 @@ Raju: Why are you giving it to me? You love this bat.
 
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: You're eight now, little tiger. Time to carry something heavier than your school bag. And… dreams don't grow if they're sitting in someone else's hands.
+Ramu: You're eight now, little tiger—time to carry something heavier than your school bag.
 
 
 <<SetCharacterExpression "Raju" "ExcitedWithBat">>
@@ -94,22 +94,22 @@ Raju: Ready.
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Rule one: You'll study first. Even Sachin had homework. If you fail Maths, this bat will hide under the cot and won't come out.
+Ramu: Rule one: You'll study first—even Sachin had homework.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Rule two: You'll share. Gully cricket is not only for heroes. Even if you score a hundred, you pass the bat to the next kid.
+Ramu: Rule two: You'll share—gully cricket is not only for heroes.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Rule three: You'll respect the bat. No throwing it in anger. No leaning on it like a tired buffalo. When it rests, it rests with face up.
+Ramu: Rule three: You'll respect the bat—no throwing it in anger, and when it rests, face up.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Rule four: No fighting if someone calls it "old." Old means seasoned. Like Maa's iron tawa—flat, honest, does the job. Understood?
+Ramu: Rule four: No fighting if someone calls it "old"—old means seasoned, like Maa's iron tawa.
 
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Understood.
 
-<<SetCharacterExpression "Raju" "SeriousWithBat">>
+<<SetCharacterExpression "Raju" "SeriousWithBat">>//TODO: Evalueate Expression
 Raju: Bhai, this faded sticker… who's this player?
 
 
@@ -122,10 +122,10 @@ Raju: I will try.
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Good. Heavy makes your hands strong. Now, stand up. Let's do the first lesson.
+Ramu: Good—heavy makes your hands strong. Now stand up for the first lesson.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Bottom hand firm, top hand gentle. Not strangling a chicken—guiding a kite.
+Ramu: Bottom hand firm, top hand gentle—not strangling a chicken, guiding a kite.
 
 
 <<SetCharacterExpression "Raju" "BattingPose">>
@@ -133,7 +133,7 @@ Raju: Like this?
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Better. Feet shoulder width. Bend the knees a little. Imagine the pitch chalk line here. Eyes on the ball—even if the ball is invisible.
+Ramu: Better—feet shoulder width, knees bent, eyes on the ball.
 
 
 <<SetCharacterExpression "Raju" "BattingPose">>
@@ -141,7 +141,7 @@ Raju: So I stare at nothing?
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: You stare at possibility. Now, pretend I bowl. Slow first. Ball coming to off-stump. What shot?
+Ramu: You stare at possibility—now pretend I bowl to off-stump. What shot?
 
 
 <<SetCharacterExpression "Raju" "BattingPose">>
@@ -149,7 +149,7 @@ Raju: Umm… straight drive?
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Good choice. Now a bouncer—short ball. What will you do?
+Ramu: Good choice—now a bouncer, short ball. What will you do?
 
 
 <<SetCharacterExpression "Raju" "BattingPose">>
@@ -157,7 +157,7 @@ Raju: Duck!
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Excellent survival instinct, Captain. Some days the smartest run is away from the ball.
+Ramu: Excellent survival instinct, Captain—some days the smartest run is away from the ball.
 
 
 <<SetCharacterExpression "Raju" "Worried">>
@@ -165,7 +165,7 @@ Raju: Will people laugh because it's old?
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: People laugh when they're afraid you'll pass them. The bat is old; your courage is new. That's a dangerous combo.
+Ramu: People laugh when they're afraid you'll pass them—the bat is old, your courage is new.
 
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -181,7 +181,7 @@ Raju: Bhai… when I hold it, my hands shake.
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: That's because you can feel its history. Listen to it. It will tell you: "Keep your head still. Play late. Don't swing like a ceiling fan."
+Ramu: That's because you can feel its history—listen to it and let it guide you.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: And one more rule.
@@ -192,7 +192,7 @@ Raju: There's a rule five?
 
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: The most important. When you miss, you try again. When you get out, you smile. When someone else scores, you clap. We don't let poverty take our manners.
+Ramu: The most important—when you miss, try again; when you get out, smile; when someone else scores, clap.
 
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -208,7 +208,7 @@ Raju: I wished that the bat never feels hungry.
 
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Then feed it. With practice. Come, take your first bite.
+Ramu: Then feed it with practice—come, take your first bite.
 
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -216,11 +216,11 @@ Raju: Right here?
 
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Outside. Sun is our floodlight. The chalk line is our red carpet. And remember what I said: face up when it rests, chin up when you walk.
+Ramu: Outside—sun is our floodlight, chalk line is our red carpet.
 
 
 <<SetCharacterExpression "Raju" "ExcitedWithBat">>
-Raju: Face up. Chin up. Captain Raju reporting.
+Raju: Face up, chin up—Captain Raju reporting.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Thank you.

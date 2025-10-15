@@ -7,16 +7,16 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Captain. Well played. Good effort.
+Ramu: Captain, well played—good effort.
 
 <<SetCharacterExpression "Raju" "Disappointed">>
-Raju: I could have done better. I wanted to make more.
+Raju: I could have done better—I wanted to make more.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Yes I am aware. I am completely switched on. I can do this.
+Raju: Yes, I am completely switched on—I can do this.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

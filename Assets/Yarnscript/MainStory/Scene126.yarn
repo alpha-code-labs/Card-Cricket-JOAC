@@ -32,19 +32,19 @@ Ramu: Raju, talk to him properly. Dont be rude.
 Raju: But Bhaiyya, he tormented me and called me names before the match.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: It's fine. Don't hold a grudge. These are small things. Its not important.
+Ramu: It's fine—don't hold a grudge, these are small things that aren't important.
 
 <<SetCharacterExpression "Aryan" "Angry">>
-Aryan: Dont be cocky slum boys. Just luck. Next time we will eat you for breakfast.
+Aryan: Don't be cocky slum boys—just luck. Next time we'll eat you for breakfast.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Yes we are poor. But we have our manners.
+Ramu: Yes we are poor, but we have our manners.
 
 <<SetCharacterExpression "Aryan" "Angry">>
-Aryan: Older brother to the rescue. Slum boy cant fight his own battles.
+Aryan: Older brother to the rescue—slum boy can't fight his own battles.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Yes. I am his shadow. He is my source. We thank you for the compliments.
+Ramu: Yes, I am his shadow and he is my source—we thank you for the compliments.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Thanks.

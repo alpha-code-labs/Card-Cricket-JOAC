@@ -20,25 +20,25 @@ Imtiaz: Forget jalebi. Did you see that calm? Bowlers barked, he blinked slow li
 Vivek: He plays like he's late for nothing. Just… on time. Every ball.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Fourteen months of showing up. Same chalk, same dawn, same rules.
+Ramu: Fourteen months of showing up—same chalk, same dawn, same rules.
 
 <<SetCharacterExpression "Imtiaz" "Excited">>
-Imtiaz: And same bat! This antique with tape and blessings. We should put it in a museum after it buys all of us new soles.
+Imtiaz: And same bat—this antique with tape and blessings should go in a museum after buying us new soles.
 
 <<SetCharacterExpression "Vivek" "Excited">>
-Vivek: Prize money talk—listen: ground repairs first like we promised. The rest—you take home. Your Maa's medicines, Baba's towel, Raju's shoes.
+Vivek: Prize money talk—ground repairs first like we promised, then the rest goes home for your family's needs.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: We split fair, like agreed. And Raju gets exactly what the team gets—no extra crowns, only extra practice.
 
 <<SetCharacterExpression "Vivek" "Excited">>
-Vivek: Haan, king without crown—that's the scary kind. He doesn't shout, the runs shout for him.
+Vivek: Haan, king without crown—that's the scary kind where the runs shout for him.
 
 <<SetCharacterExpression "Imtiaz" "Excited">>
-Imtiaz: Boys from two lanes over were asking his age. I told them, "Old enough to keep promises." They shut up.
+Imtiaz: Boys from two lanes over asked his age—I told them, "Old enough to keep promises."
 
 <<SetCharacterExpression "Vivek" "Excited">>
-Vivek: Next time crowds will come with proper banners. Today half the lane was screaming his name… and he still said thank you to the umpire. Who taught him that?
+Vivek: Next time crowds will come with proper banners, and he'll still say thank you to the umpire like today.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Poverty doesn't get to steal our manners.

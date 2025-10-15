@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Captain. We did it. You did it. You are a star. Maa's medicines, Baba's knee towel, new soles for your shoes. A small step into the void of greatness.
+Ramu: Captain, we did it—you're a star. Maa's medicines, Baba's knee towel, new soles for your shoes—a small step into the void of greatness.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I tried my best.
@@ -23,16 +23,16 @@ Raju: I am deeply obliged that you came to watch me play sir.
 CoachDev: I wouldn't have missed it for the world.
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: The real test is in 24 hours sir. 90% or his dream evaporates into thin air.
+Ramu: The real test is in 24 hours sir—90% or his dream evaporates.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Let him enjoy today. Let him relax.
+CoachDev: Let him enjoy today and relax.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: No sir. I got to rush him to study. Time is vital. Need to prepare for my weak spots.
+Raju: No sir, I've got to rush him to study—time is vital and I need to prepare for my weak spots.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: That's my boy. Never misses a beat.
+CoachDev: That's my boy—never misses a beat.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: He has been trained well.
@@ -44,7 +44,7 @@ CoachDev: Of course. This is all you Ramu. Raju is lucky to have a mentor like y
 Raju: Yes sir. I am lucky beyond words to have bhaiyya in my life.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: All right captain. Stop making me emotional. We head home and dig into the books.
+Ramu: All right captain, stop making me emotional—we head home and dig into the books.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>
