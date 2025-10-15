@@ -35,73 +35,73 @@ The air smells of expensive cleaning products and privilege.
 
 Each step reminds him of the social hierarchy here. He knows confrontations are inevitable in this gilded world.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Oh, look who's back.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: The servant boy returns.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: What's the matter, slum boy?
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Did you lose your way to the garbage dump again?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Irritated">>
 Raju: I'm not your servant.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm here to help my mother, that's all.
 
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Help? Oh, that's rich!
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Your mother cleans our toilets, and you carry her bags.
 
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Very inspiring.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: I bet you think you're special because you kick a ball around in the dirt.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: But that's not real cricket, you know.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: You probably can't even hold a bat properly.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I can play cricket.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Better than you think.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Better than you, probably.
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Astonished">>
 Aryan: Better than me? Ha!
 
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: That's the funniest thing I've heard all week.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: You with your bare feet and torn clothes?
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: You think you can beat someone with real coaching?
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Tell you what, slum boy.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Excited">>
 Aryan: If you're so confident, come back tomorrow.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Bring whatever pathetic excuse for cricket equipment you have.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: We'll see just how good you really are.
 
 <<HideCharacter>>
@@ -131,46 +131,46 @@ His heart pounds as he spots Aryan near the fountain, casually handling professi
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Well, well. The slum boy returns.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Excited">>
 Aryan: And look what I have here.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Proud">>
 Aryan: Genuine English willow, imported directly from the finest manufacturers.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: I bet you've never even touched something this valuable, have you?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Neutral">>
 Raju: It's a beautiful bat.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: But it's still just a piece of willow wood.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: The bat doesn't hit the boundaries - the batsman does.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: That's exactly what losers say!
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: They make themselves feel better about having inferior equipment.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: When you have proper coaching and professional equipment, natural talent becomes irrelevant.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: You think you can play cricket with your makeshift bats and tennis balls?
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: That's not real cricket.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: That's just poor kids playing in the dirt and pretending it matters.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: You want to see what I can do?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Fine. I'll show you.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -179,28 +179,28 @@ Raju: Cricket isn't about how much money your family has.
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: Oh, this is perfect!
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Overjoyed">>
 Aryan: The confident little slum boy thinks he can actually compete.
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: This will be entertaining.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Tomorrow afternoon, right here in this courtyard.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: A proper cricket challenge.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: You with your pathetic equipment against me with my professional gear.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Excited">>
 Aryan: My friends will be here to watch.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be here.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: And when it's over, you'll understand something important.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -236,46 +236,46 @@ This match has become a symbol of class conflict and social hierarchy.
 <<SetCharacterExpression "Jaspreet" "Excited">>
 Jaspreet: I can't believe you actually challenged that slum boy to cricket!
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Worried">>
 Jaspreet: What if he turns out to be actually good at it?
 
 <<SetCharacterExpression "Jaspreet" "Quizzical">>
 Jaspreet: I mean, some of those street kids are surprisingly athletic.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Good? Please, Jaspreet.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: He probably learned cricket by playing with rocks and sticks in garbage dumps.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: There's a difference between street games and real cricket.
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Anxious">>
 Jaspreet: But Aryan, I heard some kids from the regular school saying he's actually not bad.
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Worried">>
 Jaspreet: What if you're underestimating him?
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: It doesn't matter if he has some natural ability.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: When you have proper equipment, professional coaching, and dedicated practice facilities...
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Proud">>
 Aryan: Raw talent becomes meaningless.
 
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: Oh look, everyone! The challenger arrives!
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Perfect timing.
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: I was just telling my friends about tomorrow's entertainment.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Are you ready for your public humiliation, slum boy?
 <<AutoAdvance true>>
 Make a Choice
@@ -295,31 +295,31 @@ position: -308,129
 ---
 <<set $Aryan_Path = "a">>
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: How noble!
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: The slum boy takes the high road.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Bored">>
 Aryan: How boring. I expected more fire from someone so confident.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Relaxed">>
 Raju: Fire without control burns everything.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Including the person who starts it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I prefer focused determination.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: Your calm act won't help you in the match.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: My friends expect entertainment, not philosophy lessons.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Then they'll see real cricket.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -345,13 +345,13 @@ position: -55,122
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: Now THIS is more like it!
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Overjoyed">>
 Aryan: The slum boy shows his true colors.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Angry, desperate, emotional. Perfect!
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Furious">>
 Raju: You think being rich makes you tough?
 
 <<SetCharacterExpression "Raju" "Angry">>
@@ -360,13 +360,13 @@ Raju: You've never had to fight for anything in your life!
 <<SetCharacterExpression "Aryan" "Excited">>
 Aryan: And you've never had anything worth fighting for until now!
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: This is going to be so satisfying to watch.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Furious">>
 Raju: We'll see who's more satisfied when this is over.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Your money can't buy you heart or skill.
 
 <<HideCharacter>>
@@ -391,34 +391,34 @@ position: 184,122
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Smart move, slum boy.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Proud">>
 Aryan: At least you're not completely delusional.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Watch and learn what real cricket looks like.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm watching.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Neutral">>
 Raju: I see good technique, expensive equipment, professional coaching.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: But I also see patterns.
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Confused">>
 Aryan: Patterns?
 
 <<SetCharacterExpression "Aryan" "Quizzical">>
 Aryan: What do you mean, patterns?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Every player has habits, preferences, weaknesses.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Even well-trained ones.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Especially well-trained ones.
 
 <<HideCharacter>>
@@ -457,31 +457,31 @@ Everyone seems aware that the match will bring the culmination of days of buildi
 
 Raju moves through the environment with calm focus, while around him swirls excited chatter.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: Still playing the dignified act, slum boy?
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: Wait until the pressure hits you before the match.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Let's see how calm you stay then.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Relaxed">>
 Raju: Pressure is just another condition to adapt to.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Like playing in rain or wind.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: You adjust and continue.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Confused">>
 Aryan: You're either very wise or very stupid.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Serious">>
 Aryan: The match will show which one.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: The match will show what we've both learned about cricket.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -513,28 +513,28 @@ The atmosphere in the complex crackles with hostile energy.
 
 Both boys have abandoned any pretense of civility.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Furious">>
 Aryan: Ready for war, slum boy?
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Because that's what's coming next.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: A war between your kind and mine.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Furious">>
 Raju: Bring your war.
 
 <<SetCharacterExpression "Raju" "Angry">>
 Raju: I've been fighting my whole life while you've been playing with expensive toys.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Furious">>
 Aryan: Those expensive toys are going to destroy your pathetic dreams!
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: My dreams are stronger than your toys.
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: You'll see.
 
 <<HideCharacter>>
@@ -565,31 +565,31 @@ The complex has become Raju's laboratory.
 
 He watches with the focused attention of someone who understands that knowledge can compensate for material disadvantages.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: Stop staring at me like that!
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Anxious">>
 Aryan: You're trying to get in my head, but it won't work.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Relaxed">>
 Raju: I'm not trying to get in your head.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm trying to understand your game.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Knowledge is the best equipment I can have.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Furious">>
 Aryan: All the studying in the world won't help you!
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Not when you face superior skill and equipment!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: We'll see.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Sometimes understanding your opponent is better than having better gear.
 
 <<HideCharacter>>
@@ -624,72 +624,72 @@ The air vibrates with anticipation and barely concealed prejudice as Raju arrive
 <<SetCharacterExpression "Jaspreet" "Excited">>
 Jaspreet: Finally! The main event!
 
-<<SetCharacterExpression "Jaspreet" "Excited">>
+<<SetCharacterExpression "Jaspreet" "Overjoyed">>
 Jaspreet: Go on, Aryan!
 
 <<SetCharacterExpression "Jaspreet" "Excited">>
 Jaspreet: Show this slum boy how real cricket is played!
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Watch carefully, everyone.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Proud">>
 Aryan: This is what happens when street pretenders face real cricketers.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: Let's see you even touch this ball, slum boy!
 
 // The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Astonished">>
 Jaspreet: Ooooooh! Did you see that shot?!
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Shocked">>
 Jaspreet: That went straight to the boundary!
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Shocked">>
 Aryan: That was just a lucky shot!
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Anxious">>
 Aryan: Anyone can get lucky once!
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: Try again - let's see if you can do it twice!
 
 <<HideCharacter>>
 The second delivery produces another clean strike that sends the ball soaring.
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Astonished">>
 Jaspreet: That... that was actually a really good shot.
 
-<<SetCharacterExpression "Jaspreet" "Quizzical">>
+<<SetCharacterExpression "Jaspreet" "Confused">>
 Jaspreet: How did he read that delivery so well?
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Confused">>
 Aryan: I... I don't understand.
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Astonished">>
 Aryan: He's playing like someone who's been properly trained.
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Shocked">>
 Aryan: But that's impossible.
 
 <<HideCharacter>>
 The third delivery reveals the full extent of Raju's skill - placed with surgical precision.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: ...Not bad, slum boy.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Not bad at all.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Embarrassed">>
 Aryan: But don't think this changes anything between us.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I told you cricket isn't about equipment or social class.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: It's about dedication, practice, and love for the game.
 
 <<HideCharacter>>
@@ -718,79 +718,79 @@ The smugness and casual cruelty of privilege have been replaced by uncomfortable
 
 Talent and worth cannot be purchased or inherited.
 
-<<SetCharacterExpression "Aryan" "Sad">>
+<<SetCharacterExpression "Aryan" "Disappointed">>
 Aryan: I still can't believe it.
 
 <<SetCharacterExpression "Aryan" "Sad">>
 Aryan: You actually beat me.
 
-<<SetCharacterExpression "Aryan" "Sad">>
+<<SetCharacterExpression "Aryan" "Embarrassed">>
 Aryan: Not just once, but consistently, shot after shot.
 
-<<SetCharacterExpression "Aryan" "Sad">>
+<<SetCharacterExpression "Aryan" "Worried">>
 Aryan: My friends haven't stopped talking about it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Relaxed">>
 Raju: I tried to tell you from the beginning.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Cricket isn't about expensive bats or fancy shoes.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: It's about heart, dedication, and genuine love for the game.
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Confused">>
 Aryan: Maybe... maybe you're right about some things.
 
 <<SetCharacterExpression "Aryan" "Quizzical">>
 Aryan: You do have something I didn't expect.
 
-<<SetCharacterExpression "Aryan" "Quizzical">>
+<<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Something raw, natural, authentic.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: But don't think your performance changes everything between us.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: You may have beaten me at cricket, but that doesn't erase our fundamental differences.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Relaxed">>
 Raju: I never expected it to change our social positions, Aryan.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I just wanted you to understand something.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: Talent and worth aren't distributed according to wealth.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Neutral">>
 Aryan: Respect... yes, I suppose you've earned that.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: This won't be the last time we compete.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: I'll get better, train harder, and one day I will beat you.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Then I'll be ready.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Excited">>
 Raju: And I'll keep getting better too.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Having a real competitor will make us both stronger players.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Neutral">>
 Aryan: ...You're not bad, slum boy.
 
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Not bad at all.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: But next time will be different.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm looking forward to it.
 
 <<HideCharacter>>

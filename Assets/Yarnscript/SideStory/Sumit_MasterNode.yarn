@@ -33,13 +33,13 @@ After finishing his homework early and feeling restless on a quiet afternoon, Ra
 
 The familiar neighborhood takes on a different quality as Raju approaches Sumit's usual spot. His friend sits with restless energy, craving stimulation beyond routine activities.
 
-<<SetCharacterExpression "Sumit" "Sad">>
+<<SetCharacterExpression "Sumit" "Bored">>
 Sumit: Raju yaar, I'm so bored with our usual routine!
 
-<<SetCharacterExpression "Sumit" "Sad">>
+<<SetCharacterExpression "Sumit" "Tired">>
 Sumit: Every day it's the same - school, homework, maybe cricket if we're lucky.
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Determined">>
 Sumit: I want something that challenges our minds and makes us think differently.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -48,7 +48,7 @@ Raju: I totally understand that feeling, Sumit!
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What kind of mental challenge are you thinking about?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Something fun and intellectually stimulating?
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -60,13 +60,13 @@ Sumit: Tests our quick thinking too!
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Maybe some kind of competition to see who's the sharper thinker?
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Relaxed">>
 Sumit: But in a friendly way, of course.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That sounds interesting, Sumit.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Skeptical">>
 Raju: But what kind of challenge would be fair to both of us?
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -81,7 +81,7 @@ Sumit: We could test different types of intelligence.
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Word puzzles, logical reasoning, creative thinking, memory challenges.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: Multiple rounds to see who's more well-rounded!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -93,7 +93,7 @@ Raju: It's about overall intellectual agility, not just specialized knowledge.
 <<SetCharacterExpression "Sumit" "Serious">>
 Sumit: But here's the thing - I want this to be a real challenge.
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Determined">>
 Sumit: Not just casual games, you know?
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -154,7 +154,7 @@ Raju: This should be really interesting.
 <<SetCharacterExpression "Sumit" "Serious">>
 Sumit: I want to make sure we're both challenged appropriately.
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Quizzical">>
 Sumit: We have different academic strengths, right?
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -163,7 +163,7 @@ Sumit: So the competition should test multiple types of intelligence!
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: That makes sense.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: What specific areas should we focus on?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -178,7 +178,7 @@ Sumit: Also logical reasoning and creative problem-solving.
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Maybe some memory challenges too?
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: Different rounds testing different mental skills!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -190,7 +190,7 @@ Raju: Testing multiple types of intelligence instead of just academic knowledge.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: It would show us where our thinking strengths lie.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Skeptical">>
 Raju: And our weaknesses too, I suppose?
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -199,16 +199,16 @@ Sumit: Exactly! That's the whole point.
 <<SetCharacterExpression "Sumit" "Serious">>
 Sumit: And the competition should be challenging enough.
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Determined">>
 Sumit: We both have to really concentrate and perform at our best.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Serious">>
 Sumit: No easy questions that we can answer without thinking!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I agree completely!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: The whole point is to push our mental limits.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -255,7 +255,7 @@ Sumit: Time to finalize our intellectual competition, Raju!
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: I'm really excited to see how this turns out.
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Mischievous">>
 Sumit: Are you ready to discover who's the ultimate thinking champion?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -273,7 +273,7 @@ Sumit: Before we begin, let's agree on something.
 <<SetCharacterExpression "Sumit" "Quizzical">>
 Sumit: What type of challenge would be most meaningful and fair?
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Curious">>
 Sumit: What approach do you think would best test our abilities?
 <<AutoAdvance true>>
 Make a Choice
@@ -292,7 +292,7 @@ tags:
 position: -308,129
 ---
 <<set $Sumit_Path = "a">>
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's focus on comprehensive mental agility, Sumit.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -316,7 +316,7 @@ Raju: Exactly! This way we both demonstrate our strongest skills.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: While discovering areas where we need improvement.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: I love this approach!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
@@ -343,7 +343,7 @@ tags:
 position: -55,122
 ---
 <<set $Sumit_Path = "b">>
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's focus on creative problem-solving, Sumit.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -367,7 +367,7 @@ Raju: Exactly! This shows who's better at innovative thinking.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Adapting to unexpected challenges without obvious answers.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: I love how creative challenges test imagination!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
@@ -394,7 +394,7 @@ tags:
 position: 184,122
 ---
 <<set $Sumit_Path = "c">>
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's focus on rapid-fire mental challenges, Sumit.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -418,13 +418,13 @@ Raju: Exactly! This shows who performs better without overthinking.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Just pure mental reflexes and quick processing ability!
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: I love how time pressure eliminates second-guessing!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Forces us to trust our instincts and rapid processing.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Confident">>
 Sumit: It's about mental speed and confidence!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -456,28 +456,28 @@ Sumit: The moment of truth has arrived, yaar!
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Ready to put all our planning into action?
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Mischievous">>
 Sumit: And see who emerges as the thinking champion?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: I'm both nervous and excited!
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: This is going to be really interesting.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Whatever the outcome, we'll both learn something valuable!
 
 <<SetCharacterExpression "Sumit" "Serious">>
 Sumit: Let's make sure we both give our absolute best effort.
 
-<<SetCharacterExpression "Sumit" "Serious">>
+<<SetCharacterExpression "Sumit" "Determined">>
 Sumit: The whole point is to push our intellectual limits.
 
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: To see what we're truly capable of achieving!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Agreed! Win or lose, I want to perform at my mental peak.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -515,13 +515,13 @@ Sumit: Back for round two of our intellectual competition!
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Yesterday was really enlightening.
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Astonished">>
 Sumit: I learned things about my thinking patterns I never realized!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Same here! The competition was challenging in unexpected ways.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: I discovered mental strengths I didn't know I had.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -530,13 +530,13 @@ Raju: And areas where I definitely need more practice!
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: That's exactly what I hoped would happen!
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Determined">>
 Sumit: Today let's make the challenges even more complex.
 
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Really push our intellectual boundaries!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm ready for more advanced challenges!
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -571,10 +571,10 @@ The competition venue takes on new significance as both friends prepare for a cu
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Raju, I have to say something.
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: This whole competition has been one of the most interesting things we've done!
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Astonished">>
 Sumit: It taught me so much about how my mind works.
 
 <<SetCharacterExpression "Sumit" "Smiling">>
@@ -586,10 +586,10 @@ Raju: I completely agree!
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: The competition pushed me to think in new ways.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: It showed me I can handle intellectual pressure better than expected.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Plus it was really fun competing with you!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
@@ -598,7 +598,7 @@ Sumit: You've demonstrated something important.
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Intellectual competition doesn't have to damage friendship.
 
-<<SetCharacterExpression "Sumit" "Smiling">>
+<<SetCharacterExpression "Sumit" "Proud">>
 Sumit: It can actually strengthen it with respect and good sportsmanship!
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -616,7 +616,7 @@ Raju: Through cricket or other physical activities.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Whether competing intellectually or athletically...
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Growth comes from pushing your limits with respect for your opponent!
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -625,7 +625,7 @@ Sumit: Exactly! You've shown me something too.
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Some of the best competitions are where everybody wins.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: Because everybody learns something valuable!
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -646,7 +646,7 @@ Raju: That sounds wonderful!
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I'd love to keep challenging my mind this way.
 
-<<SetCharacterExpression "Raju" "Smiling">>
+<<SetCharacterExpression "Raju" "Loving">>
 Raju: While building an even stronger friendship through shared growth!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
@@ -658,7 +658,7 @@ Sumit: You continue developing mental agility and competitive skills.
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: While I gain a reliable partner for intellectual challenges.
 
-<<SetCharacterExpression "Sumit" "Excited">>
+<<SetCharacterExpression "Sumit" "Proud">>
 Sumit: And together we prove competition can bring people closer!
 
 <<HideCharacter>>

@@ -49,94 +49,94 @@ Yet his determined approach despite obvious class barriers reflects a hunger for
 
 That transcends economic circumstances.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: You there, boy.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: What are you doing loitering near this gate?
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: This is private property.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Disapproving>>
 SunitaMadam: Not a place for wandering street children to waste time staring at what they cannot have.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: Ma'am, I wasn't loitering.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: I was just... looking.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Disappointed>>
 Raju: This school is so big and beautiful.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Sad>>
 Raju: I've never seen anything like it before.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Quizzical>>
 Raju: Do you really learn everything here?
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: Learn?
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: This is not for wandering eyes seeking cheap entertainment, boy.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Students here are from families who value education, discipline, and meaningful contribution.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: Not idle curiosity from children who should be focused on... more appropriate pursuits.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I study too, Ma'am. Every day after school.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: And I play cricket, but I know education is important.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I read books from our local library whenever I can.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Disgusted>>
 SunitaMadam: Cricket? Hmph.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: Slum boys always think games and sports will magically lift them up.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Let me tell you something, child.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: It is education, real education with proper guidance and family investment, that matters.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: Not fantasies about playing games for a living.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: This school costs more per month than your family probably earns in six months.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: These children have tutors, proper books, family support.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: And futures planned from birth.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: You have none of that.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: Stop wasting time on impossible dreams.
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: And focus on realistic goals suited to your... situation.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Sad>>
 Raju: Yes, Ma'am.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Disappointed>>
 Raju: I understand.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" Embarrassed>>
 Raju: I'm sorry for disturbing you.
 
 <<HideCharacter>>
@@ -188,133 +188,133 @@ To risk further humiliation in pursuit of any opportunity.
 
 To access the knowledge that could change his life's trajectory.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Shocked>>
 SunitaMadam: You again?
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: Didn't I make myself perfectly clear yesterday?
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: Why do you persist in wasting your time here?
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: This academy is for serious students with serious family commitments.
 
-<<SetCharacterExpression "SunitaMadam" Angry>>
+<<SetCharacterExpression "SunitaMadam" Disapproving>>
 SunitaMadam: Not for curiosity seekers who refuse to accept their place in society.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Ma'am, I didn't come to loiter or waste time.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I came because I want to learn.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: I was wondering... do you have any books I could read?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: Even old ones that the school doesn't need anymore?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: Books?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: You can even read properly?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Most children from your... background struggle with basic literacy.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Let alone advanced literature.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Yes, Ma'am. I can read.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: 'Where the mind is without fear and the head is held high.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: Where knowledge is free.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Where the world has not been broken up into fragments by narrow domestic walls...'
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: That's from Rabindranath Tagore's 'Where the Mind is Without Fear.'
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: ...You know Tagore?
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Shocked>>
 SunitaMadam: You can recite his poetry from memory?
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: How is that possible?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: Our local librarian, Sharma Uncle, lets me read whatever I want.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: When I finish my homework.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: He says books are the only things that don't care if you're rich or poor.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: They teach anyone willing to learn.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: And what else do you read, besides Tagore?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Stories, history, sometimes mathematics books.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Cricket makes me dream about possibilities, Ma'am.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: But books... books make me think about how to turn dreams into plans.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: They show me that people have overcome worse circumstances than mine.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: ...Interesting. Very interesting.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Most children from your background wouldn't bother with literature or philosophy.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: They usually focus on immediate survival.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Rather than intellectual development.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Your library visits and poetry knowledge suggest something I didn't expect to find.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Perhaps I was... hasty in my initial judgment yesterday.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Does that mean you might help me learn, Ma'am?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Even if I can't afford to study here?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: We'll see, boy. We'll see.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: If this intellectual curiosity is genuine.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Or just a performance designed to impress adults.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: How do you plan to prove this intellectual curiosity is genuine?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What approach will you take to demonstrate real commitment to learning?
 
 <<HideCharacter>>
@@ -360,54 +360,54 @@ position: -308,129
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite WellingtonEstate>>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Bold words.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: Most children your age avoid difficult subjects.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: You're asking me to evaluate you at the same level I would test my privileged students?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Yes, Ma'am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I may not have expensive tutors, but I have curiosity and determination.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I want to prove that intellectual ability isn't limited by economic circumstances.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Neutral>>
 SunitaMadam: Very well. Let's start with literary analysis.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Explain the social commentary in Premchand's stories.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Show me you understand literature beyond surface level.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Premchand shows how poverty shapes moral choices, Ma'am.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: His characters aren't evil - they're trapped by circumstances.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Like in 'Kafan' - the father and son represent how social conditions.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Can corrupt basic human dignity.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Sophisticated analysis.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You understand subtext and social criticism.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: This level of comprehension typically requires formal instruction.
 
 <<HideCharacter>>
@@ -439,48 +439,48 @@ position: -55,122
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite WellingtonEstate>>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Service?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: You're offering to work without payment to prove your worthiness?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: That's... unusual for someone your age.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: My mother taught me that respect is earned through consistent good behavior, Ma'am.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I want to show you the same dignity and reliability she shows in her work.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Your mother sounds like a wise woman.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What kind of service are you offering?
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: And why do you think this would change my opinion?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I could help organize books, clean classroom spaces, assist with small tasks.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I want to show that I understand the value of this educational environment.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: And would treat it with proper respect.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Your respectful attitude and willingness to serve without immediate reward.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Shows maturity beyond your years.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Perhaps there's more character here than I initially recognized.
 
 <<HideCharacter>>
@@ -512,54 +512,54 @@ position: 184,122
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite WellingtonEstate>>
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Determination without direction often leads to wasted effort, boy.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: What makes you think pure willpower can substitute for proper resources and guidance?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Because I've already overcome obstacles others said were impossible, Ma'am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: I've taught myself to read advanced books.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Balanced cricket with studies.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Earned respect from adults who initially dismissed me.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Give me specific examples.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: How exactly have you overcome these obstacles?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: What concrete achievements demonstrate this determination?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I memorized poetry from library books.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Learned cricket techniques through observation and practice.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: Convinced my father to support my dreams by proving academic responsibility.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Every success came from refusing to accept limitations.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Your persistence is remarkable.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Most children give up when faced with significant challenges.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: This level of determination might indeed overcome many barriers.
 
 <<HideCharacter>>
@@ -613,109 +613,109 @@ That maintaining this relationship requires ongoing proof of worthiness.
 
 Rather than presumption of acceptance.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Persistent boy.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: I honestly thought you would give up after our previous conversations.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Most children your age lose interest.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: When adults don't immediately embrace their dreams.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I can't give up, Ma'am.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Not on learning, not on cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: Not on proving that I can be more than people expect from someone like me.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Giving up would mean accepting that my circumstances define my possibilities.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: And what exactly do you hope to prove through these daily visits?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: That determination alone can overcome structural barriers?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: That good intentions substitute for proper resources and guidance?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I want to prove that talent and character matter more than family wealth, Ma'am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Look, I've been writing down questions.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: About subjects I want to understand better.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Mathematics, history, literature, even science.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Excited>>
 SunitaMadam: These are thoughtful questions. Sophisticated questions.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: 'How do economic systems affect educational opportunities?'
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: 'What role does literature play in social change?'
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: Most of my paying students don't demonstrate this level of intellectual curiosity.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: So... you think I might have potential, Ma'am?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: Even though I'm from the slum?
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Perhaps I was too harsh in my initial judgments.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: It's easy to judge a child by his clothes and circumstances.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Rather than by what's visible in his eyes and actions.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: But I see real determination there, genuine intellectual hunger.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You know, boy, I've taught thousands of children over the years.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Some had every advantage money could provide but lacked curiosity.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Others, like you, had nothing.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: But possessed something money can't purchase - authentic passion for learning.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Then you'll help me learn, Ma'am?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: You'll give me a chance to prove that I can succeed despite my background?
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: I'm beginning to think that talent and character.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Might indeed be more important than I initially believed.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: If you continue demonstrating this level of commitment and intellectual curiosity.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: We might find ways to support your educational development.
 
 <<HideCharacter>>
@@ -770,124 +770,124 @@ Though the challenge now lies in converting philosophical support.
 
 Into practical guidance that could genuinely change his educational trajectory.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: You have something particular on your mind today, don't you?
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: I can see it in your posture.
 
-<<SetCharacterExpression "SunitaMadam" "Quizzical">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: This isn't just another casual visit hoping for encouragement.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Ma'am, I've been thinking about what you said yesterday.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: About finding ways to support my educational development.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: I was wondering... would you be willing to recommend some specific books I should read?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: Maybe guide my learning even though I can't afford to study here?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: You're asking me to become your informal tutor?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: To provide the kind of guidance I typically reserve for paying students.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Whose families contribute significantly to this institution?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I know it's a lot to ask, Ma'am.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: But I'm willing to work harder than any paying student.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I'll read whatever you recommend, practice whatever exercises you suggest.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: And prove that your investment in me isn't wasted.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Commitment is easy to promise, boy.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: But educational guidance requires consistent effort over months and years.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: It means accepting criticism, working through difficult material.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: And persisting when progress feels slow.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Worried>>
 SunitaMadam: My reputation has been built on producing successful students from privileged backgrounds.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Anxious>>
 SunitaMadam: Taking responsibility for guiding someone like you.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Worried>>
 SunitaMadam: Represents both professional risk and personal commitment.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: That extends far beyond casual encouragement.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Serious>>
 Raju: I understand the risk you'd be taking, Ma'am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: But I also believe that helping me succeed would prove something important.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: That education can transcend social barriers.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: When real talent meets proper guidance.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You argue your case well. Very well.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Perhaps that's exactly the kind of thinking.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: That suggests you might be worth the investment after all.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Here's a reading list to start with.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Literature, mathematics, history.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Study these books thoroughly and come back next week.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Prepared to discuss what you've learned.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: If you can demonstrate real comprehension and intellectual growth, we'll continue.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Thank you, Ma'am.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I won't let you down.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: I'll study harder than any student you've ever had.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: We'll see, boy.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Actions matter more than promises in education.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Prove to me that my growing faith in your potential isn't misplaced.
 
 <<HideCharacter>>
@@ -950,148 +950,148 @@ While setting the stage for opportunities.
 
 That could fundamentally alter his life's trajectory.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You have something important to discuss today, don't you?
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: I've learned to recognize that focused expression.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: When you're wrestling with significant decisions about your future.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: Ma'am, I've been thinking about everything you've taught me.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: And all the possibilities that education might open up.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: But I need your advice about something important.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: How do I bridge the gap between where I am now and where I want to be?
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Explain what you're considering.
 
-<<SetCharacterExpression "SunitaMadam" "Serious">>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What specific opportunities or challenges are you facing?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: There's going to be a scholarship examination next month.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: For students who want to attend better schools.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I think I'm prepared academically thanks to your guidance.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: But I'm worried about the social aspects.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: Fitting in with wealthy students, having proper clothes and supplies.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Ah, now I understand.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You're not just asking for academic advice.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: You're asking me to help you navigate the social barriers.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: That separate intellectual ability from educational access.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Boy, let me tell you something important.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You've already proven that character and intelligence transcend social background.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Confident>>
 SunitaMadam: The scholarship examination will test your knowledge and abilities.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Confident>>
 SunitaMadam: Areas where you've demonstrated exceptional competence.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Anxious>>
 Raju: What kind of preparation, Ma'am?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: How do I convince evaluators that I belong in their educational environment?
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Excited>>
 SunitaMadam: You convince them the same way you convinced me.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Through consistent demonstration of intellectual curiosity.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Respectful behavior, and genuine commitment to learning.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Excited>>
 SunitaMadam: But more importantly, I'll be writing a letter of recommendation.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: That details your exceptional academic progress and personal character.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Shocked>>
 Raju: You'd really do that for me?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Astonished>>
 Raju: Write an official recommendation?
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Excited>>
 SunitaMadam: More than that.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Determined>>
 SunitaMadam: I'm going to personally ensure you have proper materials for the examination.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Appropriate clothing for the interview.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Confident>>
 SunitaMadam: And preparation for any social situations you might encounter.
 
-<<SetCharacterExpression "SunitaMadam" "Excited">>
+<<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: You've earned not just my academic support, but my advocacy.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You see, boy, helping you succeed doesn't just validate your potential.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: It validates something I've always believed about education.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Disappointed>>
 SunitaMadam: But sometimes forgotten in practice.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: That intellectual ability exists everywhere, but opportunity does not.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You've reminded me why I became a teacher in the first place.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Overjoyed>>
 Raju: Ma'am, I don't know how to thank you properly.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" Crying>>
 Raju: You've changed everything for me.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Thank me by succeeding.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Confident>>
 SunitaMadam: Show everyone that merit can triumph over circumstance.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: When given proper support.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Become the kind of student and eventually the kind of person.
 
-<<SetCharacterExpression "SunitaMadam" "Smiling">>
+<<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: Who opens doors for others facing similar barriers.
 
 <<HideCharacter>>
