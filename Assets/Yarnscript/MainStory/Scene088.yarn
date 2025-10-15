@@ -17,7 +17,7 @@ Raju: That's more than two a ball. They think we can't do it.
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: That tall boy from church lane is bowling. Remember he's fast but straight. Use the pace.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll show them what dawn practice builds.
 
 <<HideAllCharacters>>

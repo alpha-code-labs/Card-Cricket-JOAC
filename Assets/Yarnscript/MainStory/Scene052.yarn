@@ -9,10 +9,10 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Captain. Marvelous. You were top-notch. We needed that.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Their bowling was sharp. I just kept my focus. Was uncle Dev noticing?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Not your business. Get him out of your headspace. Focus on the now.
 
 <<SetCharacterExpression "Raju" "Excited">>

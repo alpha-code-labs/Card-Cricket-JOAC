@@ -3,7 +3,7 @@ title: scene_59
 <<HideAllCharacters>>
 <<PlayBackgroundMusic Disappointing_1>>//Disappointing Background Music 1
 <<SetBGSprite KohliwadaGround>>//Kohliwada Ground
-<<SetCharacterExpression "Ramu" Neutral>>//Ramu's Face Serious
+<<SetCharacterExpression "Ramu" Serious>>//Ramu's Face Serious
 Ramu: This is non negotiable Captain. Try Again.
 -> Try Again
     <<RetryEvent "Card Gameplay 6">>

@@ -18,10 +18,10 @@ Raju: Reporting.
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Today's not like the lane matches. There's a pot at the end—real notes, not bragging rights. Half goes to ground repairs, the rest to the winners.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it twice in my head.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Good. Count your breath the same way—twice, before anything important. And remember: prize money is a reason, not a target. We play to our habits.
 
 <<SetCharacterExpression "Raju" "Serious">>

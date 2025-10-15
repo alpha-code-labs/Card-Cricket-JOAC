@@ -18,13 +18,13 @@ Ramu: You're getting consistent. That's more important than getting lucky. Today
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: The one who bowls fast?
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Fast but straight. You've faced worse at dawn practice when your eyes were still sleepy.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Should we do anything special?
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Relaxed">>
 Ramu: No. Special is for special days. Today is Saturday with stumps.
 
 <<HideAllCharacters>>

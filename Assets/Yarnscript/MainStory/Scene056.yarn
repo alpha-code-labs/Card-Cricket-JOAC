@@ -19,10 +19,10 @@ Raju: 5 coins. That's all I focussed on
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: That's my boy. Thats what we need. Thats the only thing we need.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: Big day tomorrow. Lets go home and rest.
 
-<<SetCharacterExpression "Ramu" "Excited">>
+<<SetCharacterExpression "Ramu" "Relaxed">>
 Ramu: Tomorrow another day. Fresh challenge. Yes, lets go and sleep
 
 <<SetCharacterExpression "Raju" "Excited">>

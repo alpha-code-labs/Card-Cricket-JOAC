@@ -28,7 +28,7 @@ Ramu: The real test is in 24 hours sir. 90% or his dream evaporates into thin ai
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: Let him enjoy today. Let him relax.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: No sir. I got to rush him to study. Time is vital. Need to prepare for my weak spots.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>

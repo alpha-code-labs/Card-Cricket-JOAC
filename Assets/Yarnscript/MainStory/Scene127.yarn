@@ -103,7 +103,7 @@ Ramu: He's ready. I vouch for his hours, not just his highlights.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: I believe your watch. But belief and permission are cousins, not twins. I will keep my word. He brings me ninety percent, I walk him to that banyan, and I tell my fear to take a holiday for one day.
 
-<<SetCharacterExpression "Kamla" "Quizzical">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: And if he brings eighty-nine?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>

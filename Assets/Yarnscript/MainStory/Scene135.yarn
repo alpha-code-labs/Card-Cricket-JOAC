@@ -46,7 +46,7 @@ Ramu: My turn.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: One: I won't coach over Uncle Dev. My mouth will be in my pocket; my eyes will be on your effort. Two: I'll be there—early, steady, and boring in the best way. Three: I'll keep home soft and honest. Win or wobble, you'll find warmth, water, and work waiting.
 
-<<SetCharacterExpression "Raju" "Worried">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: I'm excited. Also… a little scared. With you I know the answers. With him I'll be asked new ones.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
