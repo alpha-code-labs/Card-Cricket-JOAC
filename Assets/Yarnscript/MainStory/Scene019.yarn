@@ -32,10 +32,10 @@ ShivPrasad: Nerves don't feed stomachs.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: True. That's why I'm not asking for feasts. I'm asking for time and routine. No academy, no fees, not yet. Morning practice near the handpump. School on time. Chores done. Then study. If his marks fall, I'll lock this bat myself.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: People will talk. "Poor folks and big dreams."
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: People laugh before they clap, Maa. Let them finish both. We won't borrow money. We'll borrow discipline. It's free—and it pays.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -56,19 +56,19 @@ ShivPrasad: Hope is a dangerous thing, Ramu.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: False hope is. This is measured hope. Three months of routine. If he still lights up the lane, we talk to Masterji about district trials—he knows a PE sir who waives fees for good boys. If not, we call it a season, not a failure.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: He is small.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Determined">>
 Ramu: Small hands learn the shape of courage faster. He already keeps the bat face up when it rests, Maa. Head up when he walks. He remembers. When the noise grew today, he touched his chest and breathed like I taught. Eight-year-olds don't fake that.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: You speak like a coach.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Because our lane doesn't have one. So I'll be it. And I'll keep my marks decent too, I promise. You can test me. Friday nights—both of us read to you. If I slip, you stop me first.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: What if he gets hurt?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -80,13 +80,13 @@ ShivPrasad: And what do you want from me?
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Permission. And one small thing: when neighbors scoff, you say, "He's practicing habits." Not "He's chasing cricket." Habits first. Cricket follows.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Curious">>
 Kamla: Tell me one more time—what do you see in him?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Proud">>
 Ramu: I see a boy who hears the ground. Who waits when waiting is heavy. Who smiles after a miss. Who thanks the bat before he uses it. That… doesn't come from posters. It comes from inside.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: Dreams make the room feel bigger, huh?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -98,16 +98,16 @@ ShivPrasad: I say… three months. No money wasted. Marks steady. Manners steady
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Deal. I'll keep score on both.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: And tell the boy—when he steps out, he carries us with him. Not our burden—our blessing.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Go sleep. Morning comes fast to those with promises.
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Relieved">>
 Ramu: Promises wake me faster. Good night, Maa. Good night, Baba.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Good night, coach. Good Night Hope.
 
 <<HideAllCharacters>>

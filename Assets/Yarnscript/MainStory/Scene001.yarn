@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Oye, birthday hero… close your eyes.
 
-<<SetCharacterExpression "Raju" "Groggy">>
+<<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Closed! But I can still see through my eyelashes.
 
 
@@ -18,7 +18,7 @@ Raju: Closed! But I can still see through my eyelashes.
 Ramu: Then close them properly, na. This is a sacred ceremony.
 
 
-<<SetCharacterExpression "Raju" "Sleeping">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Sacred like when Maa hides the last piece of papad?
 
 
@@ -73,7 +73,7 @@ Ramu: Bats like discipline.
 Raju: I can give it biscuits.
 
 
-<<SetCharacterExpression "Raju" "Disgusted">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: But discipline… does it taste like karela?
 
 
@@ -81,11 +81,11 @@ Raju: But discipline… does it taste like karela?
 Ramu: Worse. But good for you. Listen—if you accept this gift, there are rules.
 
 
-<<SetCharacterExpression "Raju" "Worried">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Rules? On my birthday?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Big gifts, big rules. Ready?
 
 

@@ -18,7 +18,7 @@ Raju: Today-today? Like… in a few hours?
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: If we blink too long, it'll be yesterday. You coming?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Maa will say homework first.
 
 <<SetCharacterExpression "Ramu" "Smiling">>

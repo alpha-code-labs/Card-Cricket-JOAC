@@ -9,7 +9,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Captain. Could have been a better performance. Play as per the situation. You should have played a few more aggressive shots to get more runs.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: No excuses. I need to get better and apply myself more.
 
 <<SetCharacterExpression "Ramu" "Smiling">>

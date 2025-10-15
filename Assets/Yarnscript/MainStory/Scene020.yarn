@@ -11,7 +11,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Captain… you sleeping?
 
-<<SetCharacterExpression "Raju" "Groggy">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: Bhai? Is it school already?
 
 <<SetCharacterExpression "Ramu" "Smiling">>

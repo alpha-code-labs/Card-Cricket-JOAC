@@ -1,0 +1,5 @@
+|Angry|Anxious|Astonished|Bored|Confident|Confused|Crying|Curious|Determined|Disapproving|Disappointed|Disgusted|Embarrassed|Excited|Furious|Irritated|Loving|Mischievous|Neutral|Overjoyed|Pained|Proud|Quizzical|Relaxed|Relieved|Sad|Serious|Shocked|Skeptical|Smiling|Terrified|Tired|Worried|
+
+These are my list of emotion for the game that i am developing while restricting to the emotions mentioned above
+
+i want you to match the above list of emotions correctly to all characters in the story. and send the yarn script back. do it accurately for all characters in the story. do not hallucinate. do not change the story in anyway. do no restrict yourself by the emotions that you see in the attached yarn script. you may choose to keep emotions in .yarn files which are not mentioned above
