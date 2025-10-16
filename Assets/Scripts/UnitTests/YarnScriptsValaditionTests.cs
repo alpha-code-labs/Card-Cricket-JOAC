@@ -29,12 +29,7 @@ public static class YarnScriptsValaditionTests
         }
 
         int totalFiles = files.Length;
-        int filesWithIssues = 0;
-        int totalIssues = 0;
-        var summaryLines = new List<string>();
-
-
-
+        var issues = new List<string>();
         foreach (var path in files.OrderBy(p => p))
         {
             string text;
@@ -47,32 +42,12 @@ public static class YarnScriptsValaditionTests
                 Debug.LogError($"Failed to read {path}: {ex.Message}");
                 continue;
             }
-
-            var issues = new List<string>();
             //Test to Run
             issues.AddRange(TestYarnCommands(text));
-
-            //Summarise Results
-            if (issues.Count > 0)
-            {
-                filesWithIssues++;
-                totalIssues += issues.Count;
-                string relPath = "Assets" + path.Replace(Application.dataPath, "").Replace('\\', '/');
-                // Indent each issue in the log and include the full issue string
-                var indentedIssues = string.Join("\n  - ", issues);
-                Debug.LogWarning($"Yarn issues in {relPath}:\n  - {indentedIssues}");
-                // Include the first few issues (or all) in the summary for quick overview
-                string summaryIssues = issues.Count <= 5 ? indentedIssues : string.Join("\n  - ", issues.Take(5)) + $"\n  - ...(+{issues.Count - 5} more)";
-                summaryLines.Add($"{Path.GetFileName(path)}: {issues.Count} issue(s)\n  - {summaryIssues}");
-            }
         }
-
-        string summary = $"Scanned {totalFiles} .yarn file(s). Files with issues: {filesWithIssues}. Total issues: {totalIssues}.";
-        Debug.Log(summary);
-        if (summaryLines.Count > 0)
-            Debug.Log(string.Join("\n", summaryLines));
-
-        EditorUtility.DisplayDialog("Yarn script validation", summary, "OK");
+        issues = issues.Distinct().ToList();
+        string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
+        EditorUtility.DisplayDialog("Yarn script validation", result, "OK");
     }
     static List<string> TestYarnCommands(string text)
     {
@@ -91,13 +66,12 @@ public static class YarnScriptsValaditionTests
         foreach (var pair in nameExpressionPairs.GroupBy(p => (p.name + p.expr).Replace(" ", "")).Select(g => g.First()))
         {
             var combined = (pair.name + pair.expr).Replace(" ", "");
-            if (DialogueScriptCommandHandler.GetSpriteByName(combined) == null)
+            if (DialogueScriptCommandHandler.GetSpriteByName(combined, false) == null)
             {
-                if (!issues.Contains($"No sprite found for character expression: {combined}"))
-                    issues.Add($"No sprite found for character expression: {combined}");
+                // if (!issues.Contains($"No sprite found for character expression: {combined}"))
+                issues.Add($"No sprite found for character expression: {combined}");
             }
         }
-
         // Test SetBGSprite //Example Command <<SetBGSprite hutInterior>>
         var setBgSpriteRegex = new Regex(@"<<\s*SetBGSprite\s+([a-zA-Z0-9_]+)\s*>>", RegexOptions.IgnoreCase);
         var setBgMatches = setBgSpriteRegex.Matches(text);
@@ -108,14 +82,12 @@ public static class YarnScriptsValaditionTests
             .ToList();
         foreach (var bgName in bgNames)
         {
-            if (DialogueScriptCommandHandler.GetSpriteByName(bgName) == null)
+            if (DialogueScriptCommandHandler.GetSpriteByName(bgName, false) == null)
             {
-                if (!issues.Contains($"No sprite found for background: {bgName}"))
-                    issues.Add($"No sprite found for background: {bgName}");
+                // if (!issues.Contains($"No sprite found for background: {bgName}"))
+                issues.Add($"No sprite found for background: {bgName}");
             }
         }
-
-
         return issues;
     }
 }

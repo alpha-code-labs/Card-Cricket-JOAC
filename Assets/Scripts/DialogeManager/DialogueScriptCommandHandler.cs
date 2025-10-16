@@ -127,7 +127,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
         Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
     }
-    public static Sprite GetSpriteByName(string spriteName)
+    public static Sprite GetSpriteByName(string spriteName, bool logErrorIfNotFound = true)
     {
         string normalizedKey = NormalizeName(spriteName);
         if (spriteNameToIndex.ContainsKey(normalizedKey) && spriteNameToIndex[normalizedKey] != null)
@@ -136,7 +136,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            if (logErrorIfNotFound)
+                Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
             return null;
         }
     }
