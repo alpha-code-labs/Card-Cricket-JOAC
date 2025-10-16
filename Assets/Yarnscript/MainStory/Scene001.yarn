@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Oye, birthday hero… close your eyes.
 
-<<SetCharacterExpression "Raju" "Mischievous">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Closed! But I can still see through my eyelashes.
 
 
@@ -109,7 +109,7 @@ Ramu: Rule four: No fighting if someone calls it "old"—old means seasoned, lik
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Understood.
 
-<<SetCharacterExpression "Raju" "RajuCurious">>
+<<SetCharacterExpression "Raju" "Curious">>
 Raju: Bhai, this faded sticker… who's this player?
 
 
