@@ -78,7 +78,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         allSprites = new List<Sprite>(characterSprites.Count + locationSprites.Count);
         allSprites.AddRange(locationSprites);
         allSprites.AddRange(characterSprites);
-        Debug.Log($"Sprite load: Characters={characterSprites.Count}, Locations={locationSprites.Count}, Total={allSprites.Count}");
+
+        List<string> duplicateNames = new List<string>();// For Debugging
         // Auto-populate based on sprite names in the list
         for (int i = 0; i < allSprites.Count; i++)
         {
@@ -92,12 +93,13 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning($"Duplicate sprite name detected: '{actualSpriteName}'. Keeping the first occurrence and ignoring later duplicates.");
+                    duplicateNames.Add(actualSpriteName + " (normalized: " + normalizedKey + ")");
                 }
-
-                // Debug to see the mapping
-                //Debug.Log($"Mapped '{actualSpriteName}' to normalized key '{normalizedKey}' at index {i}");
             }
+        }
+        if (duplicateNames.Count > 0)
+        {
+            Debug.LogWarning($"Sprite load: Total={allSprites.Count},Mapped={spriteNameToIndex.Count}, Duplicates={duplicateNames.Count}\n{(duplicateNames.Count > 0 ? "Duplicates:\n" + string.Join("\n", duplicateNames) : "")}");
         }
     }
 
