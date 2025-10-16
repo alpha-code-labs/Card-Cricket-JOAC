@@ -15,8 +15,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     [Header("Character Display Images")]
     [SerializeField] Image centerCharacterImage;
-    // Tween tracking
-    private DG.Tweening.Tween centerCharacterTween;
 
     [Header("UI Components")]
     [SerializeField] Image currentBGSprite;
@@ -33,7 +31,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     private Dictionary<string, Sprite> spriteNameToIndex;
 
     private Dictionary<String, AudioClip> musicDictionary;
-    private Characters currentActiveCharacter = Characters.Ramu; // Track active character
     void Awake()
     {
         Instance = this;
@@ -176,20 +173,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             // Kill any existing tween with the same id to clean up old animations
             DOTween.Kill(localTweenId);
 
-            // Also kill the stored instance tween if it's active (defensive)
-            if (Instance.centerCharacterTween != null && Instance.centerCharacterTween.IsActive())
-            {
-                Instance.centerCharacterTween.Kill(true);
-                Instance.centerCharacterTween = null;
-            }
+            // (Removed redundant instance Kill - DOTween.Kill(localTweenId) handles global cleanup)
             // Set sprite and ensure image alpha is zero before fade-in
-            Instance.centerCharacterImage.sprite = targetSprite;
-            Instance.centerCharacterImage.gameObject.SetActive(true);
-            if (Instance.currentActiveCharacter == character)
+            if (Instance.centerCharacterImage.sprite == targetSprite)
             {
                 return;
             }
-            Instance.currentActiveCharacter = character;
+            Instance.centerCharacterImage.sprite = targetSprite;
+            Instance.centerCharacterImage.gameObject.SetActive(true);
 
 
             // Use image color alpha only (no CanvasGroup). Local id per-call as requested.
@@ -205,15 +196,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 Color cc = Instance.centerCharacterImage.color;
                 cc.a = 1f;
                 Instance.centerCharacterImage.color = cc;
-                Instance.centerCharacterTween = null;
             };
 
             // Create fade-in tween and assign id so it can be killed later
-            Instance.centerCharacterTween = Instance.centerCharacterImage.DOFade(1f, 0.18f)
-                .SetId(localTweenId)
-                .SetUpdate(true)
-                .OnComplete(() => restoreToSolid())
-                .OnKill(() => restoreToSolid());
+            Instance.centerCharacterImage.DOFade(1f, 0.18f)
+                 .SetId(localTweenId)
+                 .SetUpdate(true)
+                 .OnComplete(() => restoreToSolid())
+                 .OnKill(() => restoreToSolid());
         }
     }
 
