@@ -97,8 +97,20 @@ public class ScoreManager : MonoBehaviour
     [Header("Game Over UI")]
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] TextMeshProUGUI gameOverText;
-    
+
+    [Header("UI Animation Settings")]
+    [SerializeField] float scoreAnimDuration = 0.5f;
+    [SerializeField] float wicketAnimDuration = 0.6f;
+    [SerializeField] float ballAnimDuration = 0.4f;
+    [SerializeField] AnimationCurve scoreAnimCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [SerializeField] Color wicketLossColor = Color.red;
+    [SerializeField] Color scoreIncreaseColor = new Color(0.4f, 1f, 0.4f); // Green
+    [SerializeField] Color ballDecreaseColor = new Color(1f, 0.8f, 0.2f); // Yellow-orange
+
     private bool gameEnded = false;
+    private int previousRuns;
+    private int previousWickets;
+    private int previousBallsRemaining;
     
     public int getCurrentWickets()
     {
@@ -113,6 +125,17 @@ public class ScoreManager : MonoBehaviour
         int overDisplay = overs + 1;
         int ballsRemain = MaxBalls - ballsBowled;
         remainingBallsText.text = ballsRemain.ToString();
+
+        // Animate balls remaining decrease
+        if (previousBallsRemaining != -1 && ballsRemain < previousBallsRemaining)
+        {
+            AnimateBallsDecrease(ballsRemain);
+        }
+        else
+        {
+            remainingBallsText.text = ballsRemain.ToString();
+        }
+        previousBallsRemaining = ballsRemain;
 
         string statusText = $"Ball {ballDisplay} of over {overDisplay}\n total balls remain {ballsRemain}\n Wickets: {wickets}";
 
@@ -256,12 +279,18 @@ public class ScoreManager : MonoBehaviour
 
         if (runs > 0)
             currentRuns += runs;
-            
-        if(runs == 4 || runs == 6)
+
+        if (runs == 4 || runs == 6)
             PlayCheeringSound();
             
-        currentRunsText.text = currentRuns.ToString();
+        //currentRunsText.text = currentRuns.ToString();
+        if (previousRuns < currentRuns)
+        {
+            AnimateScoreIncrease(previousRuns, currentRuns);
+            previousRuns = currentRuns;
+        }
         
+
         if (isBattingFirst)
         {
             totalRunsNeededText.text = "";
@@ -308,7 +337,8 @@ public class ScoreManager : MonoBehaviour
     public void LooseWicket()
     {
         wickets--;
-        remainingWicketsText.text = wickets.ToString();
+        AnimateWicketLoss(previousWickets, wickets);
+        //remainingWicketsText.text = wickets.ToString();
         
         if (wickets <= 0 && !gameEnded)
         {
@@ -484,6 +514,11 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+
+        previousRuns = currentRuns;
+        previousWickets = wickets;
+        previousBallsRemaining = MaxBalls;
+
         // Update UI based on game mode
         if (isBattingFirst)
         {
@@ -517,6 +552,110 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    private void AnimateScoreIncrease(int fromScore, int toScore)
+    {
+        if (currentRunsText == null) return;
+
+        // Kill any existing animations on this text
+        currentRunsText.DOKill(true);
+
+        // Number counter animation
+        DOTween.To(() => fromScore, x =>
+        {
+            currentRunsText.text = x.ToString();
+        }, toScore, scoreAnimDuration).SetEase(Ease.OutQuad);
+
+        // Pulse and color animation
+        Sequence seq = DOTween.Sequence();
+        seq.Append(currentRunsText.transform.DOScale(1.3f, scoreAnimDuration * 0.4f).SetEase(Ease.OutBack));
+        seq.Join(currentRunsText.DOColor(scoreIncreaseColor, scoreAnimDuration * 0.3f));
+        seq.Append(currentRunsText.transform.DOScale(1f, scoreAnimDuration * 0.6f).SetEase(Ease.InOutQuad));
+        seq.Join(currentRunsText.DOColor(Color.white, scoreAnimDuration * 0.7f));
+
+        // Optional: Add a punch rotation for boundaries
+        int runsScored = toScore - fromScore;
+        if (runsScored >= 4)
+        {
+            currentRunsText.transform.DOPunchRotation(new Vector3(0, 0, 15f), scoreAnimDuration, 10, 1f);
+        }
+
+        // Update score text as well if chasing
+        if (!isBattingFirst && scoreText != null)
+        {
+            scoreText.text = "Score: " + toScore.ToString() + " / " + TargetScore.ToString();
+            scoreText.DOKill(true);
+            scoreText.transform.DOPunchScale(Vector3.one * 0.2f, scoreAnimDuration * 0.5f, 5, 0.5f);
+        }
+    }
+
+    private void AnimateWicketLoss(int fromWickets, int toWickets)
+    {
+        if (remainingWicketsText == null) return;
+        
+        // Kill any existing animations
+        remainingWicketsText.DOKill(true);
+        
+        // Update text
+        remainingWicketsText.text = toWickets.ToString();
+        
+        // Dramatic wicket loss animation
+        Sequence seq = DOTween.Sequence();
+        
+        // Flash red
+        seq.Append(remainingWicketsText.DOColor(wicketLossColor, wicketAnimDuration * 0.2f));
+        
+        // Shake effect
+        seq.Join(remainingWicketsText.transform.DOShakePosition(wicketAnimDuration * 0.5f, 10f, 20, 90, false, true));
+        
+        // Scale bounce
+        seq.Join(remainingWicketsText.transform.DOScale(1.5f, wicketAnimDuration * 0.3f).SetEase(Ease.OutQuad));
+        seq.Append(remainingWicketsText.transform.DOScale(0.8f, wicketAnimDuration * 0.2f));
+        seq.Append(remainingWicketsText.transform.DOScale(1f, wicketAnimDuration * 0.2f).SetEase(Ease.OutBounce));
+        
+        // Return to white color
+        seq.Join(remainingWicketsText.DOColor(Color.white, wicketAnimDuration * 0.5f));
+        
+        // Optional: Flash the background or add a vignette effect if you have one
+        Debug.Log($"Wicket lost! Remaining: {toWickets}");
+    }
+    
+    private void AnimateBallsDecrease(int ballsRemaining)
+    {
+        if (remainingBallsText == null) return;
+        
+        // Kill any existing animations
+        remainingBallsText.DOKill(true);
+        
+        // Update text
+        remainingBallsText.text = ballsRemaining.ToString();
+        
+        // Subtle animation for ball count decrease
+        Sequence seq = DOTween.Sequence();
+        
+        // Quick scale down then back
+        seq.Append(remainingBallsText.transform.DOScale(0.7f, ballAnimDuration * 0.3f).SetEase(Ease.InQuad));
+        seq.Append(remainingBallsText.transform.DOScale(1.1f, ballAnimDuration * 0.4f).SetEase(Ease.OutBack));
+        seq.Append(remainingBallsText.transform.DOScale(1f, ballAnimDuration * 0.3f));
+        
+        // Color flash based on urgency
+        Color targetColor = ballDecreaseColor;
+        if (ballsRemaining <= 6) // Last over
+        {
+            targetColor = difficultChaseColor;
+            // Add extra shake for last 6 balls
+            seq.Join(remainingBallsText.transform.DOShakeRotation(ballAnimDuration, new Vector3(0, 0, 10f), 5, 90));
+        }
+        else if (ballsRemaining <= 12) // Last 2 overs
+        {
+            targetColor = tightChaseColor;
+        }
+        
+        seq.Insert(0, remainingBallsText.DOColor(targetColor, ballAnimDuration * 0.4f));
+        seq.Insert(ballAnimDuration * 0.6f, remainingBallsText.DOColor(Color.white, ballAnimDuration * 0.4f));
+    }
+
+
+    
     void ShowChaseDisplayAfterCountdown()
     {
         if (chaseDisplayText != null && chaseDisplayContainer != null)
