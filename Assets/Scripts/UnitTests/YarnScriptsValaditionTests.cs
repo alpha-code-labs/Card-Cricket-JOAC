@@ -74,41 +74,6 @@ public static class YarnScriptsValaditionTests
 
         EditorUtility.DisplayDialog("Yarn script validation", summary, "OK");
     }
-
-    static List<string> TestPlaceHoldeIssues(string text)
-    {
-        List<string> issues = new List<string>();
-
-        // Matches common label markers like "title: MyLabel" or lines starting with == Label ==
-        var labelRegex = new Regex(@"^	*(?:title:|==)	*(.+)$", RegexOptions.Multiline | RegexOptions.IgnoreCase);
-
-
-        // 1) Duplicate labels in the same file
-        var matches = labelRegex.Matches(text);
-        var labels = matches.Cast<Match>().Select(m => m.Groups[1].Value.Trim()).Where(s => !string.IsNullOrEmpty(s)).ToList();
-        var dupes = labels.GroupBy(l => l).Where(g => g.Count() > 1).Select(g => g.Key).ToList();
-        if (dupes.Count > 0)
-            issues.Add($"Duplicate labels: {string.Join(", ", dupes)}");
-
-        // 2) Unmatched double quotes
-        int quoteCount = text.Count(c => c == '"');
-        if ((quoteCount & 1) != 0)
-            issues.Add("Unmatched double-quote (\") found");
-
-        // 3) Unbalanced braces
-        int openBraces = text.Count(c => c == '{');
-        int closeBraces = text.Count(c => c == '}');
-        if (openBraces != closeBraces)
-            issues.Add($"Unbalanced braces: '{{'={openBraces}, '}}'={closeBraces}");
-
-        // 4) Simple check: lines longer than 200 characters (heuristic)
-        var longLines = text.Split('\n').Select((l, i) => new { l, i }).Where(x => x.l.Length > 200).Take(5).ToList();
-        if (longLines.Count > 0)
-            issues.Add($"{longLines.Count} lines longer than 200 chars (e.g. line {longLines[0].i + 1})");
-
-        return issues;
-    }
-
     static List<string> TestYarnCommands(string text)
     {
         List<string> issues = new List<string>();
@@ -149,7 +114,7 @@ public static class YarnScriptsValaditionTests
                     issues.Add($"No sprite found for background: {bgName}");
             }
         }
-        
+
 
         return issues;
     }
