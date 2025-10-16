@@ -66,6 +66,15 @@ public static class YarnScriptsValaditionTests
         // Remove internal spaces when building combined key (e.g., "Ramu Kumar" + "Neutral" -> "RamuKumarNeutral")
         foreach (var pair in nameExpressionPairs.GroupBy(p => (p.name + p.expr).Replace(" ", "")).Select(g => g.First()))
         {
+            // Validate that the character name is a valid enum value
+            if (!System.Enum.TryParse(pair.name, out Characters _))
+            {
+                issues.Add($"Invalid character name: {pair.name}");
+            }
+            if (!System.Enum.TryParse(pair.expr, out EmotionType _))
+            {
+                issues.Add($"Invalid character expression: {pair.expr}");
+            }
             var combined = (pair.name + pair.expr).Replace(" ", "");
             if (DialogueScriptCommandHandler.GetSpriteByName(combined, false) == null)
             {
