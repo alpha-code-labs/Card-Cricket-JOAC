@@ -74,7 +74,7 @@ Ramu: Face up. Chin up.
 Raju: For us.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

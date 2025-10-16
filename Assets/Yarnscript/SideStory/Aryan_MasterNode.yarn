@@ -104,7 +104,7 @@ Aryan: Bring whatever pathetic excuse for cricket equipment you have.
 <<SetCharacterExpression "Aryan" "Confident">>
 Aryan: We'll see just how good you really are.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 Aryan's mocking laughter echoes as Raju walks away. His hands clench into fists.
 
@@ -206,7 +206,7 @@ Raju: And when it's over, you'll understand something important.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Respect isn't something money can buy.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju departs the complex, he feels the weight of what he has committed to.
 
@@ -325,7 +325,7 @@ Raju: Then they'll see real cricket.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That should be entertainment enough.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju leaves the complex, he maintains his composed demeanor despite the mounting pressure.
 
@@ -369,7 +369,7 @@ Raju: We'll see who's more satisfied when this is over.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Your money can't buy you heart or skill.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju storms away from the confrontation, anger burns in his chest.
 
@@ -421,7 +421,7 @@ Raju: Even well-trained ones.
 <<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Especially well-trained ones.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju departs the complex, his mind processes the valuable intelligence he has gathered.
 
@@ -487,7 +487,7 @@ Raju: The match will show what we've both learned about cricket.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: That's all that matters.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from his final pre-match encounter, he carries quiet confidence.
 
@@ -537,7 +537,7 @@ Raju: My dreams are stronger than your toys.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: You'll see.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju leaves the complex, anger courses through his veins.
 
@@ -592,7 +592,7 @@ Raju: We'll see.
 <<SetCharacterExpression "Raju" "Mischievous">>
 Raju: Sometimes understanding your opponent is better than having better gear.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from his final analytical session, he carries comprehensive understanding.
 
@@ -656,7 +656,7 @@ Aryan: Anyone can get lucky once!
 <<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: Try again - let's see if you can do it twice!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The second delivery produces another clean strike that sends the ball soaring.
 
 <<SetCharacterExpression "Jaspreet" "Astonished">>
@@ -674,7 +674,7 @@ Aryan: He's playing like someone who's been properly trained.
 <<SetCharacterExpression "Aryan" "Shocked">>
 Aryan: But that's impossible.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The third delivery reveals the full extent of Raju's skill - placed with surgical precision.
 
 <<SetCharacterExpression "Aryan" "Disappointed">>
@@ -692,7 +692,7 @@ Raju: I told you cricket isn't about equipment or social class.
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: It's about dedication, practice, and love for the game.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 The crowd disperses in stunned silence.
 
@@ -793,7 +793,7 @@ Aryan: But next time will be different.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm looking forward to it.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju leaves the complex for what may be the final time, he carries satisfaction with him.
 

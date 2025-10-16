@@ -19,7 +19,7 @@ Ramu: Pressure's on them. They have to defend. You just have to match what they 
 Raju: I'll finish it quick so we can help Maa.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

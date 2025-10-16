@@ -90,7 +90,7 @@ Raju: Exactly! Or maybe someone has extra equipment at home but doesn't realize 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: We should check with more people and explore areas around the ground more thoroughly.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju prepares to leave with a clear mission, he carries determination to find practical solutions. The challenge has transformed from simple disappointment into an opportunity to demonstrate that obstacles can be overcome through systematic effort.
 
 <<set $Amit_Day = 2>>
@@ -166,7 +166,7 @@ Amit: How should we organize this search to maximize our chances of success?
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: What's the best strategy for covering all these different possibilities?
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their planning session concludes with expanded strategies and renewed optimism, both boys understand that yesterday's disappointment has evolved into more sophisticated understanding of resource management and creative problem-solving.
 
 <<set $Amit_Day = 3>>
@@ -247,7 +247,7 @@ Raju: Perfect! Systematic searching will teach us both patience and thoroughness
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Let's start with the areas closest to the ground and work outward.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys commit to systematic searching that emphasizes organization and thoroughness, both understand this approach will test their patience and persistence while teaching valuable lessons about methodical problem-solving.
 
 <<set $Amit_Day = 4>>
@@ -284,7 +284,7 @@ Raju: Perfect! Community outreach will teach us both communication skills and sh
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Let's start with the families closest to the ground.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys commit to community outreach that emphasizes communication and collaborative problem-solving, both understand this approach will test their social skills and persistence while teaching valuable lessons about how neighborhoods can work together.
 
 <<set $Amit_Day = 4>>
@@ -321,7 +321,7 @@ Raju: Perfect! Creative improvisation will teach us both resourcefulness and inn
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Let's start by cataloging what materials we have available and what we could create.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys commit to creative improvisation that emphasizes resourcefulness and innovation, both understand this approach will test their creativity and problem-solving skills while teaching valuable lessons about making the best of available resources.
 
 <<set $Amit_Day = 4>>
@@ -407,7 +407,7 @@ Amit: I have a feeling our systematic approach is going to surprise us with how 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles. The collaboration combines their individual strengths while testing their ability to work together effectively.
 
 <<set $Amit_Day = 5>>
@@ -482,7 +482,7 @@ Amit: I have a feeling our systematic approach is going to surprise us with how 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles. The collaboration combines their individual strengths while testing their ability to work together effectively.
 
 <<set $Amit_Day = 5>>
@@ -557,7 +557,7 @@ Amit: I have a feeling our systematic approach is going to surprise us with how 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Whether it works perfectly or teaches us what to improve, we're making real progress. That's what counts!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the boys prepare to implement their chosen strategy with enthusiasm tempered by realistic understanding, both recognize that today's effort will provide definitive evidence of whether systematic planning can overcome practical obstacles. The collaboration combines their individual strengths while testing their ability to work together effectively.
 
 <<set $Amit_Day = 5>>
@@ -625,7 +625,7 @@ Amit: Right! Let's finalize everything we need and then we can schedule the matc
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: All our hard work is about to pay off!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day of sustained effort unfolds with expanded goals and higher expectations, both boys recognize they are approaching the culmination of their collaborative problem-solving journey. The anticipation of finally enjoying organized cricket adds excitement and urgency to their continued efforts.
 
 <<set $Amit_Day = 6>>
@@ -701,7 +701,7 @@ Amit: And now we get to enjoy the fruits of our labor - actual organized cricket
 
 <<PlayBackgroundMusic Emotional_1>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with establishment of an ongoing partnership in organizing neighborhood cricket activities, Raju and Amit understand they have created something more valuable than temporary problem-solving. They have demonstrated how systematic thinking, collaborative effort, and persistent dedication can transform obstacles into opportunities while building friendships and community connections.
 
 <<set $Amit_Complete = true>>

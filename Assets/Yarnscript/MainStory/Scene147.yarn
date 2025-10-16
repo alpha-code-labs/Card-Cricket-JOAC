@@ -17,7 +17,7 @@ Raju: My arms are tired but my head is clear.
 Ramu: Good. Tired arms heal overnight. Clear heads win finals. One more tomorrow.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

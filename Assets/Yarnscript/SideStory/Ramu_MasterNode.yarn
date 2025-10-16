@@ -31,11 +31,11 @@ position: 626,-302
 ---
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 Dawn breaks over their small home. Raju awakens to sounds of the bustling slum. Through thin walls, he hears Ramu already moving about in their makeshift cricket practice ground.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 First rays of sunlight filter through narrow gaps between buildings. Raju finds Ramu arranging makeshift cricket equipment in the tiny courtyard space.
 
@@ -159,7 +159,7 @@ Ramu: Because that feeling is going to carry you further than any fancy equipmen
 <<SetCharacterExpression Ramu Confident>>
 Ramu: Further than expensive coaching ever could.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As the first morning's practice concludes, both understand they've begun something significant - a serious training regimen that could determine if talent becomes skill.
 
@@ -280,7 +280,7 @@ Ramu: More than is safe for me to hope for.
 <<SetCharacterExpression Ramu Determined>>
 Ramu: That's why we need to be smarter about this.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As they leave the ground, both understand the day has revealed truths about talent, risk, and the complex calculus of pursuing dreams from their disadvantaged position.
 
@@ -294,11 +294,11 @@ position: -151,208
 ---
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite Rooftop>>
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 Evening settles over the rooftop. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 The rooftop provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
 
@@ -570,7 +570,7 @@ Ramu: Your patience and understanding are showing me something important.
 <<SetCharacterExpression Ramu Excited>>
 Ramu: That maybe your cricket dreams come with the wisdom to pursue them safely.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju demonstrates emotional maturity by prioritizing his brother's concerns, their relationship evolves from protective oversight to genuine partnership.
 
@@ -653,7 +653,7 @@ Ramu: Maybe that kind of determination really can overcome obstacles.
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Obstacles I thought were impossible.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju's passionate commitment intensifies, Ramu recognizes that this level of dedication might indeed represent something extraordinary.
 
@@ -736,7 +736,7 @@ Ramu: Your strategic approach shows wisdom I didn't expect.
 <<SetCharacterExpression Ramu Excited>>
 Ramu: Maybe you really can handle big dreams without losing sight of what matters most.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju articulates a sophisticated understanding of athletic discipline, Ramu discovers his brother possesses strategic thinking that could make cricket dreams sustainable.
 
@@ -1112,7 +1112,7 @@ Ramu: I'm already proud of you.
 <<SetCharacterExpression Ramu Loving>>
 Ramu: You've already won the only victory that matters.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As the eighth morning concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
 

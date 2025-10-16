@@ -16,7 +16,7 @@ Raju: I am scared.
 Ramu: Good—face your fear, let's go.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

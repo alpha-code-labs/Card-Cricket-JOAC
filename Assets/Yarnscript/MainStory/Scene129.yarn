@@ -23,7 +23,7 @@ Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and 
 Raju: Thank you bhai.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

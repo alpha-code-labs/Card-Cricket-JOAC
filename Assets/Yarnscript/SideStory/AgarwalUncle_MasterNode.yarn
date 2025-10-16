@@ -28,11 +28,11 @@ position: -94,-392
 
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 After overhearing his mother discuss struggles of local shopkeepers, Raju visits Agarwal Uncle's general store during busy evening hours to see if he might need assistance.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 The cramped interior buzzes with evening activity. Customers squeeze between narrow aisles as the shopkeeper moves constantly between tasks.
 
@@ -135,7 +135,7 @@ AgarwalUncle: Your persistence is admirable, I'll give you that.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Come back tomorrow morning. We'll talk more when it's not so chaotic.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju exits the crowded store, he carries deep appreciation for retail complexity and strengthened determination to prove his commitment.
 
@@ -150,11 +150,11 @@ position: 423,-115
 
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite GeneralStore>>
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 Despite yesterday's introduction to demanding retail, Raju returns during morning restocking, hoping to observe how Agarwal Uncle prepares for the day.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 The store emanates methodical efficiency. Agarwal Uncle systematically checks deliveries, updates price lists, and arranges products with precision.
 
@@ -263,7 +263,7 @@ Raju: I've been thinking about that, uncle.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And I'm ready to show you rather than just tell you.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As their conversation concludes with Agarwal Uncle's direct inquiry, Raju recognizes his offers have progressed into serious evaluation.
 
@@ -544,7 +544,7 @@ AgarwalUncle: Then let's begin tomorrow. Come early, before the rush.
 <<SetCharacterExpression "AgarwalUncle" "Excited">>
 AgarwalUncle: We'll start your real education in retail operations.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju prepares to begin his chosen role, both understand they're creating a genuine learning partnership that could benefit them both.
 
@@ -645,7 +645,7 @@ Raju: Accuracy first, then speed. Got it, uncle.
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: You're learning already. Now let's begin.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
@@ -734,7 +734,7 @@ Raju: Accuracy first, then speed. Got it, uncle.
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: You're learning already. Now let's begin.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
@@ -823,7 +823,7 @@ Raju: Accuracy first, then speed. Got it, uncle.
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: You're learning already. Now let's begin.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
@@ -914,7 +914,7 @@ Raju: For now, learning is payment enough, uncle!
 <<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: That attitude will take you far in life, beta.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As the second day unfolds with expanded responsibilities, both recognize they're moving beyond experimentation into sustainable partnership.
 
@@ -1046,7 +1046,7 @@ AgarwalUncle: And to me as well, beta. Welcome to the business!
 
 <<PlayBackgroundMusic Emotional_1>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As their conversation concludes with formalization of their working relationship, both understand they've created something valuable - a partnership that strengthens both individuals and the local community.
 

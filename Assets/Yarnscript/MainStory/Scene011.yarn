@@ -18,7 +18,7 @@ Raju: I am all in - completely focussed and ready to roar.
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

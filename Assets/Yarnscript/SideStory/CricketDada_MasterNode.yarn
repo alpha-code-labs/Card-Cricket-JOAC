@@ -98,7 +98,7 @@ Raju: Thank you, Dada. Can I visit you again?
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
 Cricket Dada: I would like that very much, beta. Very much indeed.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 As Raju leaves, Cricket Dada's stories echo in his mind. The elderly man's passion is inspiring, but his loneliness is concerning.
@@ -204,7 +204,7 @@ Raju: I'll come back tomorrow, Dada. I want to hear more stories.
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
 Cricket Dada: I'll be waiting, beta. I'll be waiting.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 Raju's notebook fills with cricket wisdom. Cricket Dada has become more than a storyteller - he's becoming a mentor.
@@ -433,7 +433,7 @@ Raju: Yes, Dada! Take the risk, like Kapil Dev did.
 <<SetCharacterExpression "CricketDada" "Confident">>
 Cricket Dada: Beta, you've given this old man hope. Real hope.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 Raju leaves carrying the weight of Cricket Dada's revelation and hope that his advice might bridge fifteen years of separation.
@@ -551,7 +551,7 @@ Sunil: This calls for celebration! Let's all watch the match together.
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
 Cricket Dada: Yes! Just like the old days. Beta, sit next to me. I'll explain every shot.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 As the family gathers around the television, Raju witnesses the joy of reconciliation. Cricket Dada's transformation is complete - from lonely patient to surrounded patriarch.

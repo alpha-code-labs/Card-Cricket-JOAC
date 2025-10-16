@@ -12,11 +12,9 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static DialogueScriptCommandHandler Instance;
 
     [Header("All Sprites - Characters and Backgrounds")]
-    [SerializeField] List<Sprite> allSprites;
 
     [Header("Character Display Images")]
-    [SerializeField] Image leftCharacterImage;
-    [SerializeField] Image rightCharacterImage;
+    [SerializeField] Image centerCharacterImage;
 
     [Header("UI Components")]
     [SerializeField] Image currentBGSprite;
@@ -30,14 +28,9 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] float musicFadeDuration = 1f;
 
     // Dictionary for sprite name to index mapping
-    private Dictionary<string, int> spriteNameToIndex;
+    private Dictionary<string, Sprite> spriteNameToIndex;
 
     private Dictionary<String, AudioClip> musicDictionary;
-    private Characters currentActiveCharacter = Characters.Ramu; // Track active character
-    private bool isCharacterOnLeft = true; // Track which side current character is on
-
-
-
     void Awake()
     {
         Instance = this;
@@ -76,8 +69,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     private void InitializeSpriteMapping()
     {
         // Initialize sprite name to index mapping
-        spriteNameToIndex = new Dictionary<string, int>();
+        spriteNameToIndex = new Dictionary<string, Sprite>();
+        List<Sprite> allSprites;
+        // Load Characters and Locations separately for clarity and predictable organization
+        List<Sprite> characterSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Characters"));
+        List<Sprite> locationSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Locations"));
 
+        allSprites = new List<Sprite>(characterSprites.Count + locationSprites.Count);
+        allSprites.AddRange(locationSprites);
+        allSprites.AddRange(characterSprites);
+        Debug.Log($"Sprite load: Characters={characterSprites.Count}, Locations={locationSprites.Count}, Total={allSprites.Count}");
         // Auto-populate based on sprite names in the list
         for (int i = 0; i < allSprites.Count; i++)
         {
@@ -85,7 +86,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             {
                 string actualSpriteName = allSprites[i].name;
                 string normalizedKey = NormalizeName(actualSpriteName);
-                spriteNameToIndex[normalizedKey] = i;
+                if (!spriteNameToIndex.ContainsKey(normalizedKey))
+                {
+                    spriteNameToIndex[normalizedKey] = allSprites[i];
+                }
+                else
+                {
+                    Debug.LogWarning($"Duplicate sprite name detected: '{actualSpriteName}'. Keeping the first occurrence and ignoring later duplicates.");
+                }
 
                 // Debug to see the mapping
                 //Debug.Log($"Mapped '{actualSpriteName}' to normalized key '{normalizedKey}' at index {i}");
@@ -114,13 +122,23 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 {
                     musicDictionary[normalizedName] = clip;
                 }
-
-                // Debug to verify mapping
-                Debug.Log($"Mapped AudioClip '{clipName}' (at index {i}) to dictionary");
             }
         }
 
         Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
+    }
+    private static Sprite GetSpriteByName(string spriteName)
+    {
+        string normalizedKey = NormalizeName(spriteName);
+        if (Instance.spriteNameToIndex.ContainsKey(normalizedKey) || Instance.spriteNameToIndex[normalizedKey] != null)
+        {
+            return Instance.spriteNameToIndex[normalizedKey];
+        }
+        else
+        {
+            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            return null;
+        }
     }
 
     // Helper method to normalize sprite names for lookup
@@ -140,62 +158,51 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             return;
         }
 
-        SetCharacterExpressionInternal(character, emotion);
-    }
-
-    // Internal method that does the actual work
-    private static void SetCharacterExpressionInternal(Characters character, string emotion)
-    {
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
-        string normalizedKey = NormalizeName(spriteName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
+        Sprite targetSprite = GetSpriteByName(spriteName);
+        AnimationCharacterSpriteChange();
+        // Local function to handle sprite change animation
+        void AnimationCharacterSpriteChange()
         {
-            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
-        }
+            // Use a local id so we can both kill and create the tween with the same identifier
+            const string localTweenId = "CenterCharacterFade";
+            // Kill any existing tween with the same id to clean up old animations
+            DOTween.Kill(localTweenId);
 
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Sprite targetSprite = Instance.allSprites[spriteIndex];
-            if (targetSprite != null)
+            // (Removed redundant instance Kill - DOTween.Kill(localTweenId) handles global cleanup)
+            // Set sprite and ensure image alpha is zero before fade-in
+            if (Instance.centerCharacterImage.sprite == targetSprite)
             {
-                // Hide both character images first
-                Instance.leftCharacterImage.gameObject.SetActive(false);
-                Instance.rightCharacterImage.gameObject.SetActive(false);
-
-                // If different character, switch sides
-                if (Instance.currentActiveCharacter != character)
-                {
-                    Instance.isCharacterOnLeft = !Instance.isCharacterOnLeft;
-                    Instance.currentActiveCharacter = character;
-                }
-
-                // Show character on the appropriate side
-                if (Instance.isCharacterOnLeft)
-                {
-                    Instance.leftCharacterImage.sprite = targetSprite;
-                    Instance.leftCharacterImage.gameObject.SetActive(true);
-                }
-                else
-                {
-                    Instance.rightCharacterImage.sprite = targetSprite;
-                    Instance.rightCharacterImage.gameObject.SetActive(true);
-                }
+                return;
             }
-            else
+            Instance.centerCharacterImage.sprite = targetSprite;
+            Instance.centerCharacterImage.gameObject.SetActive(true);
+
+
+            // Use image color alpha only (no CanvasGroup). Local id per-call as requested.
+
+            // Ensure color alpha is set to 0
+            Color startCol = Instance.centerCharacterImage.color;
+            startCol.a = 0f;
+            Instance.centerCharacterImage.color = startCol;
+
+            // Shared restore function for both Complete and Kill
+            Action restoreToSolid = () =>
             {
-                Debug.LogError($"Sprite at index {spriteIndex} is null!");
-            }
-        }
-        else
-        {
-            Debug.LogError($"Sprite index {spriteIndex} out of range!");
+                Color cc = Instance.centerCharacterImage.color;
+                cc.a = 1f;
+                Instance.centerCharacterImage.color = cc;
+            };
+
+            // Create fade-in tween and assign id so it can be killed later
+            Instance.centerCharacterImage.DOFade(1f, 0.18f)
+                 .SetId(localTweenId)
+                 .SetUpdate(true)
+                 .OnComplete(() => restoreToSolid())
+                 .OnKill(() => restoreToSolid());
         }
     }
-
 
 
 
@@ -203,63 +210,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [YarnCommand("SetBGSprite")]
     public static void SetBGSprite(string backgroundName)
     {
-        string normalizedKey = NormalizeName(backgroundName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
-        {
-            Debug.LogError($"Background sprite '{backgroundName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
-        }
-
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[spriteIndex];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {spriteIndex} out of range!");
-        }
+        Instance.currentBGSprite.sprite = GetSpriteByName(backgroundName);
     }
-
-    // BACKGROUND COMMANDS - Legacy index version (for backward compatibility)
-    [YarnCommand("SetBGSpriteIndex")]
-    public static void SetBGSpriteIndex(int index)
-    {
-        if (index >= 0 && index < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[index];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {index} out of range!");
-        }
-    }
-
-
 
     // UTILITY COMMANDS
     [YarnCommand("HideAllCharacters")]
     public static void HideAllCharacters()
     {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
-    }
-
-    [YarnCommand("HideCharacter")]
-    public static void HideCharacter()
-    {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
-    }
-
-    // FADE EFFECTS
-    [YarnCommand("FadeToBlack")]
-    public static void FadeToBlack()
-    {
-        //Instance.StartCoroutine(Instance.FadeToBlackSequence());
-        NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
+        Instance.centerCharacterImage.gameObject.SetActive(false);
     }
 
     // AUDIO COMMANDS

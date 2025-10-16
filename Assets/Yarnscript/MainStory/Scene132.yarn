@@ -86,7 +86,7 @@ Raju: Double knot.
 ShivPrasad: Good—come, all of you.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

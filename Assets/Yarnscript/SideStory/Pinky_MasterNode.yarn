@@ -84,7 +84,7 @@ Pinky: You have to understand things well enough to explain them to yourself.
 
 <<PlayBackgroundMusic Emotional_1>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju packs his books, Pinky's clear explanation still resonates. He has encountered something rare - a peer who combines academic excellence with teaching ability. The brief interaction transformed his frustration into genuine comprehension.
 
 <<set $Pinky_Day = 2>>
@@ -168,7 +168,7 @@ Pinky: Whether it's mathematical equations or human bodies, the principles are s
 <<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Careful observation, logical analysis, systematic solutions.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their second tutoring session concludes, both students begin to recognize their academic collaboration serves purposes beyond mere homework. The partnership reveals intellectual compatibility and mutual respect that transcends different backgrounds and goals.
 
 <<set $Pinky_Day = 3>>
@@ -342,7 +342,7 @@ Pinky: When we achieve top scores through systematic preparation, neither your f
 <<SetCharacterExpression "Pinky" "Determined">>
 Pinky: Excellence speaks louder than family expectations.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their collaborative approach takes shape through Pinky's systematic study schedules and Raju's enthusiastic adoption of organized learning, both discover their partnership generates better results than either could achieve individually. Outstanding exam performance might provide the evidence needed to convince skeptical families.
 
 <<set $Pinky_Day = 4>>
@@ -409,7 +409,7 @@ Pinky: And my dreams deserve to be pursued.
 <<SetCharacterExpression "Pinky" "Proud">>
 Pinky: With your support, I feel strong enough to fight for my future.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their emotional support strengthens both students' resolve, the library transforms into a sanctuary where mutual encouragement provides psychological foundation to maintain hope. Raju's recognition of Pinky's teaching abilities and her acknowledgment of his genuine support create a partnership based on emotional understanding.
 
 <<set $Pinky_Day = 4>>
@@ -476,7 +476,7 @@ Pinky: When smart people work together strategically, everyone benefits.
 <<SetCharacterExpression "Pinky" "Determined">>
 Pinky: This is exactly how we'll overcome family limitations.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their collaborative study approach evolves into sophisticated partnership that enhances both students' academic performance through mutual support, Raju and Pinky discover working together produces better results than either could achieve alone. Their combined success provides concrete evidence that cooperation offers the most effective path toward overcoming barriers.
 
 <<set $Pinky_Day = 4>>
@@ -567,7 +567,7 @@ Pinky: And explaining concepts to you helps me organize my own knowledge more cl
 <<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Our partnership is actually making both of us stronger, not dividing our attention.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As pre-exam pressure tests their partnership's resilience, their collaboration demonstrates that mutual assistance enhances rather than compromises individual performance. The application of systematic thinking to stress management and integration of cricket coaching wisdom with academic preparation show how cross-disciplinary insights strengthen their approach.
 
 <<set $Pinky_Day = 5>>
@@ -647,7 +647,7 @@ Pinky: My skills have tangible results, my preparation is thorough, and my dream
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: With your support, I feel ready to face whatever comes.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their emotional support system proves its value under intense pressure, both students discover that encouragement and belief create resilience that pure academic preparation alone cannot provide. Their partnership demonstrates how mutual support transforms individual struggle into shared strength.
 
 <<set $Pinky_Day = 5>>
@@ -721,7 +721,7 @@ Pinky: This collaborative approach is working beautifully.
 <<SetCharacterExpression "Pinky" "Proud">>
 Pinky: We're demonstrating that mutual support enhances individual achievement rather than compromising it.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their collaborative partnership proves its effectiveness under examination pressure, both students discover that strategic cooperation creates resilience and enhanced performance that neither could achieve through isolated effort. Their systematic approach to mutual support demonstrates how properly structured collaboration strengthens both participants.
 
 <<set $Pinky_Day = 5>>
@@ -806,7 +806,7 @@ Pinky: Win or lose tomorrow, this partnership has been the most rewarding academ
 <<SetCharacterExpression "Pinky" "Grateful">>
 Pinky: You've helped me understand that knowledge becomes more powerful when it's shared.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their final preparation session concludes with both students having demonstrated remarkable academic progress, Raju and Pinky understand tomorrow's exams represent more than academic evaluation - they embody tests of whether passion and responsibility can truly coexist when supported by strategic thinking and mutual collaboration.
 
 <<set $Pinky_Day = 6>>
@@ -912,7 +912,7 @@ Pinky: While showing me that knowledge becomes more meaningful when it's used to
 <<SetCharacterExpression "Pinky" "Proud">>
 Pinky: Achieve their goals.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their final meeting concludes with both students having achieved remarkable success that validates their strategic partnership while securing family support for their individual dreams, Raju and Pinky understand they have accomplished something more significant than academic improvement - they have demonstrated that collaboration enhances rather than diminishes individual excellence.
 
 <<set $Pinky_Complete = true>>

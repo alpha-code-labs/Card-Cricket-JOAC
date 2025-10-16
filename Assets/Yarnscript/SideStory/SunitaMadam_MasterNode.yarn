@@ -139,7 +139,7 @@ Raju: I understand.
 <<SetCharacterExpression "Raju" Embarrassed>>
 Raju: I'm sorry for disturbing you.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from the prestigious school, Sunita Madam's harsh words echo in his mind.
 
@@ -317,7 +317,7 @@ SunitaMadam: How do you plan to prove this intellectual curiosity is genuine?
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What approach will you take to demonstrate real commitment to learning?
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from the second encounter, something significant has shifted.
 
@@ -410,7 +410,7 @@ SunitaMadam: You understand subtext and social criticism.
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: This level of comprehension typically requires formal instruction.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju demonstrates academic capabilities that exceed Sunita Madam's expectations, something significant shifts.
 
@@ -483,7 +483,7 @@ SunitaMadam: Shows maturity beyond your years.
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Perhaps there's more character here than I initially recognized.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju demonstrates his commitment through offers of humble service, Sunita Madam begins to see something new.
 
@@ -562,7 +562,7 @@ SunitaMadam: Most children give up when faced with significant challenges.
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: This level of determination might indeed overcome many barriers.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju articulates his track record of overcoming obstacles, Sunita Madam begins to understand something crucial.
 
@@ -718,7 +718,7 @@ SunitaMadam: If you continue demonstrating this level of commitment and intellec
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: We might find ways to support your educational development.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As the fourth day concludes with Sunita Madam's explicit acknowledgment, both understand something profound.
 
@@ -890,7 +890,7 @@ SunitaMadam: Actions matter more than promises in education.
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Prove to me that my growing faith in your potential isn't misplaced.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from Wellington Estate, he carries both a concrete reading list.
 
@@ -1094,7 +1094,7 @@ SunitaMadam: Become the kind of student and eventually the kind of person.
 <<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: Who opens doors for others facing similar barriers.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju prepares to leave Wellington Estate, he carries something profound.
 

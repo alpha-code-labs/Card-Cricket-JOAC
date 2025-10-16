@@ -107,7 +107,7 @@ Raju: Lighthouse.
 Ramu: Captain.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

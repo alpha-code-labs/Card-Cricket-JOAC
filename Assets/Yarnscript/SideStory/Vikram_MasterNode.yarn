@@ -90,7 +90,7 @@ Raju: I'm not afraid of demanding work or critical customers, uncle.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: My father always says that small businesses are the heart of any community, and I want to understand what that really means.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju exits the bustling tea stall, he carries deep appreciation for the complexity of tea-making operations and strengthened determination to prove his offer represents genuine commitment. The intricate balance Vikram demonstrates has revealed sophisticated expertise successful tea vendors require.
 
 <<set $Vikram_Day = 2>>
@@ -169,7 +169,7 @@ Vikram: You keep expressing interest in learning, but tea service means differen
 <<SetCharacterExpression "Vikram" "Serious">>
 Vikram: What exactly do you think you could contribute to established tea preparation?
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with Vikram's direct question, Raju recognizes his persistent interest has moved beyond polite dismissal into serious consideration. The revelation of the vendor's disappointment about society's undervaluation has transformed his motivation from curiosity into genuine respect.
 
 <<set $Vikram_Day = 3>>
@@ -245,7 +245,7 @@ Vikram: No actual brewing until you prove you understand the discipline that qua
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you for sharing your knowledge, uncle! I'll be the most careful and respectful student you've ever had for traditional tea techniques.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins his introduction to traditional tea preparation under Vikram's instruction, both understand his choice represents commitment to understanding technical foundation rather than seeking immediate customer interaction. Starting with ingredient preparation reflects respect for the complexity of traditional methods.
 
 <<set $Vikram_Day = 4>>
@@ -285,7 +285,7 @@ Raju: I won't disappoint you, uncle!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Every customer will leave understanding why traditional tea preparation creates better, more satisfying results than rushed alternatives.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju prepares for customer service responsibilities, both recognize his choice represents desire to bridge the gap between traditional preparation methods and customer understanding. The decision reflects growing confidence in his genuine appreciation for quality tea service.
 
 <<set $Vikram_Day = 4>>
@@ -322,7 +322,7 @@ Raju: I'll approach this systematically, uncle!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Every observation will honor the complexity of your craft while identifying ways to help more customers without compromising traditional quality standards.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju embarks on systematic analysis of tea service operations, both understand his choice represents an unusual approach combining respect for established culinary expertise with confidence in his analytical abilities. The decision reflects belief that intellectual contribution might prove as valuable as physical assistance.
 
 <<set $Vikram_Day = 4>>
@@ -408,7 +408,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
@@ -483,7 +483,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
@@ -558,7 +558,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
@@ -629,7 +629,7 @@ Raju: It reminds me that excellence in any field requires this level of attentio
 <<SetCharacterExpression "Vikram" "Smiling">>
 Vikram: Now you truly understand what I've been trying to teach you, beta. This lesson applies to everything in life.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day unfolds with expanded responsibilities and higher expectations, both recognize they are moving into a potentially meaningful relationship that could benefit his education and preservation of traditional food service skills. The progression from basic introduction to complex challenges reflects growing mutual trust and competence.
 
 <<set $Vikram_Day = 6>>
@@ -703,7 +703,7 @@ Raju: I'm honored to be your apprentice, uncle. Thank you for sharing your knowl
 <<SetCharacterExpression "Vikram" "Overjoyed">>
 Vikram: Welcome to the tradition, beta. Together we'll keep these skills alive and respected!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with establishment of an ongoing apprenticeship benefiting both participants while serving the broader goal of preserving traditional food service skills, Raju and Vikram understand they have created something more valuable than temporary assistance. They have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and social gaps to create partnerships that strengthen both individuals and traditional hospitality knowledge systems.
 
 <<set $Vikram_Complete = true>>

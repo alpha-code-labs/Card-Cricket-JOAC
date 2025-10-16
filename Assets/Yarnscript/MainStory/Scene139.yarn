@@ -18,7 +18,7 @@ Raju: The practice is showing Bhai.
 Ramu: Tomorrow will be tougher. Rest well tonight.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

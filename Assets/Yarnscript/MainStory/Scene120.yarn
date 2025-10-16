@@ -26,7 +26,7 @@ Ramu: Yes. We are there. Lets go.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

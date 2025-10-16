@@ -27,7 +27,7 @@ Ramu: Let him—your coach is the handpump at dawn, show them what that teaches.
 Raju: Face up chin up.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

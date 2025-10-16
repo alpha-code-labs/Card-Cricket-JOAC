@@ -19,7 +19,7 @@ Ramu: That's my boy. Stay humble and grounded. Tomorrow is another day, a fresh 
 Raju: Yes I am aware. I am completely switched on. I can do this.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

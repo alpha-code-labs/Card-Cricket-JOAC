@@ -17,7 +17,7 @@ Raju: Had to take some risks but they paid off.
 Ramu: Tomorrow's the finals. Small prize but good practice for bigger things.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

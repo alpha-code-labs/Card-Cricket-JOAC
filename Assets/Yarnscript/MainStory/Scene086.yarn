@@ -25,7 +25,7 @@ Raju: These boys have proper kits.
 Ramu: And you have proper practice. Kits don't score runs hands do.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

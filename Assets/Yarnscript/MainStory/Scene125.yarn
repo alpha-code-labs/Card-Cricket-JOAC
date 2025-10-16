@@ -47,7 +47,7 @@ Raju: Yes sir. I am lucky beyond words to have bhaiyya in my life.
 Ramu: All right captain, stop making me emotional—we head home and dig into the books.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -32,7 +32,7 @@ Ramu: Because we don't know how to try soft. We play our way, every day. Ready?
 Raju: Ready.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

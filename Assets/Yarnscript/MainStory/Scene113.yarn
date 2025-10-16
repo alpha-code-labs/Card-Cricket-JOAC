@@ -119,7 +119,7 @@ Ramu: That's it. Play like work.
 Raju: Reporting.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

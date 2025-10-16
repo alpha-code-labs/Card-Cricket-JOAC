@@ -120,7 +120,7 @@ Sumit: I'll think about the best challenges for us.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Great! I'm really looking forward to this.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves with anticipation building for tomorrow's planning session, he carries excitement about testing his mental abilities against a peer. The prospect of intellectual competition has transformed a routine afternoon into something meaningful.
 
 <<set $Sumit_Day = 2>>
@@ -229,7 +229,7 @@ Raju: Maybe we should decide on the main approach first?
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Yes! Let's meet tomorrow to finalize everything.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their planning conversation concludes, both friends understand they've moved beyond casual entertainment into serious mental exercise. Their systematic thinking reflects growing maturity in approaching competition.
 
 <<set $Sumit_Day = 3>>
@@ -331,7 +331,7 @@ Raju: Perfect! This will give us valuable insights.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Into our cognitive strengths while providing engaging competition!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As they commit to comprehensive mental agility testing, both understand this strategy will provide the most educational and fair competition while challenging versatility rather than just specialized knowledge.
 
 <<set $Sumit_Day = 4>>
@@ -382,7 +382,7 @@ Raju: Perfect! This will challenge us to demonstrate innovative thinking.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: While discovering new approaches to mental challenges!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As they commit to creative problem-solving, both understand this strategy will test mental flexibility and imagination while revealing cognitive capabilities that traditional academic work might not demonstrate.
 
 <<set $Sumit_Day = 4>>
@@ -433,7 +433,7 @@ Raju: Perfect! This will test quick and accurate thinking.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: While maintaining composure under competitive pressure!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As they commit to rapid-fire challenges, both understand this strategy will test their ability to perform under pressure while revealing how they handle stress and time constraints in competitive situations.
 
 <<set $Sumit_Day = 4>>
@@ -492,7 +492,7 @@ Sumit: May the best mind win!
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: And may we both become smarter through this challenge!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the competitive phase begins with both participants bringing full mental focus, the friendly rivalry tests not only cognitive abilities but also capacity to maintain good sportsmanship while striving for victory.
 
 <<set $Sumit_Day = 5>>
@@ -551,7 +551,7 @@ Sumit: Let's see if we can both perform even better today.
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: By applying what we learned from yesterday!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day unfolds with increased complexity and growing confidence, their friendly rivalry continues providing educational value while strengthening appreciation for mental challenges.
 
 <<set $Sumit_Day = 6>>
@@ -661,7 +661,7 @@ Sumit: While I gain a reliable partner for intellectual challenges.
 <<SetCharacterExpression "Sumit" "Proud">>
 Sumit: And together we prove competition can bring people closer!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with plans for ongoing intellectual competition that strengthens their friendship, both understand they've discovered something valuable about healthy competition, mental development, and mutual encouragement.
 
 <<set $Sumit_Complete = true>>
