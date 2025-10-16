@@ -12,7 +12,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static DialogueScriptCommandHandler Instance;
 
     [Header("All Sprites - Characters and Backgrounds")]
-    [SerializeField] List<Sprite> allSprites;
+    List<Sprite> allSprites;
 
     [Header("Character Display Images")]
     [SerializeField] Image centerCharacterImage;
@@ -73,6 +73,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         // Initialize sprite name to index mapping
         spriteNameToIndex = new Dictionary<string, int>();
 
+        // Load Characters and Locations separately for clarity and predictable organization
+        List<Sprite> characterSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Characters"));
+        List<Sprite> locationSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Locations"));
+
+        allSprites = new List<Sprite>(characterSprites.Count + locationSprites.Count);
+        allSprites.AddRange(locationSprites);
+        allSprites.AddRange(characterSprites);
+        Debug.Log($"Sprite load: Characters={characterSprites.Count}, Locations={locationSprites.Count}, Total={allSprites.Count}");
         // Auto-populate based on sprite names in the list
         for (int i = 0; i < allSprites.Count; i++)
         {
@@ -80,7 +88,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             {
                 string actualSpriteName = allSprites[i].name;
                 string normalizedKey = NormalizeName(actualSpriteName);
-                spriteNameToIndex[normalizedKey] = i;
+                if (!spriteNameToIndex.ContainsKey(normalizedKey))
+                {
+                    spriteNameToIndex[normalizedKey] = i;
+                }
+                else
+                {
+                    Debug.LogWarning($"Duplicate sprite name detected: '{actualSpriteName}'. Keeping the first occurrence and ignoring later duplicates.");
+                }
 
                 // Debug to see the mapping
                 //Debug.Log($"Mapped '{actualSpriteName}' to normalized key '{normalizedKey}' at index {i}");
