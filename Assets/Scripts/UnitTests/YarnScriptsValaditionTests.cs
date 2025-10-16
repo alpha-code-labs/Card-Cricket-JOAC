@@ -58,8 +58,12 @@ public static class YarnScriptsValaditionTests
                 filesWithIssues++;
                 totalIssues += issues.Count;
                 string relPath = "Assets" + path.Replace(Application.dataPath, "").Replace('\\', '/');
-                Debug.LogWarning($"Yarn issues in {relPath}:\n  - {string.Join("\n  - ", issues)}");
-                summaryLines.Add($"{Path.GetFileName(path)}: {issues.Count} issue(s)");
+                // Indent each issue in the log and include the full issue string
+                var indentedIssues = string.Join("\n  - ", issues);
+                Debug.LogWarning($"Yarn issues in {relPath}:\n  - {indentedIssues}");
+                // Include the first few issues (or all) in the summary for quick overview
+                string summaryIssues = issues.Count <= 5 ? indentedIssues : string.Join("\n  - ", issues.Take(5)) + $"\n  - ...(+{issues.Count - 5} more)";
+                summaryLines.Add($"{Path.GetFileName(path)}: {issues.Count} issue(s)\n  - {summaryIssues}");
             }
         }
 
