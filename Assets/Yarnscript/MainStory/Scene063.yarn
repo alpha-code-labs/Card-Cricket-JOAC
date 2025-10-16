@@ -104,7 +104,7 @@ CoachDev: Good night, ShivPrasad-ji.
 ShivPrasad: Good night.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

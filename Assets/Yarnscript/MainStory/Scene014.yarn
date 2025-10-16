@@ -19,7 +19,7 @@ Ramu: That's my boy - always stay hungry and greedy when it comes to scoring run
 Raju: Yes I am aware. I am completely switched on. I can do this.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

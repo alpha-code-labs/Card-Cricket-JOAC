@@ -32,7 +32,7 @@ Ramu: I am aware—those are eyes of appreciation marveling at your talent, and 
 Raju: Thanks bhai.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

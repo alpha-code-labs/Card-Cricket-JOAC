@@ -178,9 +178,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-
-
-
     // BACKGROUND COMMANDS
     [YarnCommand("SetBGSprite")]
     public static void SetBGSprite(string backgroundName)
@@ -204,21 +201,11 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-
-
     // UTILITY COMMANDS
     [YarnCommand("HideAllCharacters")]
     public static void HideAllCharacters()
     {
         Instance.centerCharacterImage.gameObject.SetActive(false);
-    }
-
-    // FADE EFFECTS
-    [YarnCommand("FadeToBlack")]
-    public static void FadeToBlack()
-    {
-        NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
     }
 
     // AUDIO COMMANDS

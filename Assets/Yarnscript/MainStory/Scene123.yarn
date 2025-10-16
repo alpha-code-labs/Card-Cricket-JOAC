@@ -41,7 +41,7 @@ Raju: 5 coins.
 Aryan: Talking gibberish just like you always do. See you on the field, beggar.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

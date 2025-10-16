@@ -22,7 +22,7 @@ Raju: I know, but I just did not make the right shot selection—I am embarrasse
 Ramu: Smile captain—we will have more chances, heads up, tomorrow is another day.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

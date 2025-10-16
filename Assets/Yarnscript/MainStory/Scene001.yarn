@@ -234,7 +234,7 @@ Ramu: Who are you talking to?
 Raju: The bat. And also… you.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -53,7 +53,7 @@ Raju: Thanks.
 Aryan: I hope not. Cant take your beggar face anymore.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

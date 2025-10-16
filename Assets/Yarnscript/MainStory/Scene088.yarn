@@ -21,7 +21,7 @@ Ramu: That tall boy from church lane is bowling—remember he's fast but straigh
 Raju: I'll show them what dawn practice builds.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

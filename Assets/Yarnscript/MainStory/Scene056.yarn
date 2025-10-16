@@ -29,7 +29,7 @@ Ramu: Tomorrow another day, fresh challenge—yes, let's go and sleep.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -101,7 +101,7 @@ Ramu: Same bell, same breath. He'll stay Raju.
 CoachDev: Then take me to the door that raised him.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

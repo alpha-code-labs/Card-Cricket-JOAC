@@ -22,7 +22,7 @@ Raju: I know, but we were so close to winning and I missed out.
 Ramu: It's fine - we are all shooting in the dark, but you will get there.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -88,7 +88,7 @@ Raju: Then I'm going. Walk like work.
 Ramu: Walk like work. And return like a bigger boy, not a louder one.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

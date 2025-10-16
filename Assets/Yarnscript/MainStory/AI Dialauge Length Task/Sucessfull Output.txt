@@ -532,7 +532,7 @@
        16 +  Ramu: That's like my brother—let's go.
        17
        18    <<HideAllCharacters>>
-       19    <<FadeToBlack>>
+       19    <<EndEvent>>
 
 ● Scene003.yarn is complete! Updating tracking and moving forward. Due to the large number of files (76 total), let me process more files efficiently. Let me update the tracker and continue:
 
@@ -668,7 +668,7 @@
        61 +  Ramu: Good—today you watch, next time you belong out there.
        62
        63    <<HideAllCharacters>>
-       64    <<FadeToBlack>>
+       64    <<EndEvent>>
 
 ● Scene004.yarn complete! Now processing Scene005.yarn. Let me update the tracking and continue with Scene005:
 
@@ -842,7 +842,7 @@
        16 +  Ramu: Good—face your fear, let's go.
        17
        18    <<HideAllCharacters>>
-       19    <<FadeToBlack>>
+       19    <<EndEvent>>
 
 ● Perfect! Scene006 is done. Let me update tracking and continue with the next batch of files. Given the large volume, let me speed up by reading multiple files ahead and processing them:
 
@@ -941,7 +941,7 @@
        22 +  Ramu: Smile captain—we will have more chances, heads up, tomorrow is another day.
        23
        24    <<HideAllCharacters>>
-       25    <<FadeToBlack>>
+       25    <<EndEvent>>
 
 ● Now Scene008:
 
@@ -976,7 +976,7 @@
        19 +  Raju: Yes, I am completely switched on—I can do this.
        20
        21    <<HideAllCharacters>>
-       22    <<FadeToBlack>>
+       22    <<EndEvent>>
 
 ● Now Scene009:
 
@@ -1022,7 +1022,7 @@
        19 +  Raju: Yes, I am completely switched on—I can do this.
        20
        21    <<HideAllCharacters>>
-       22    <<FadeToBlack>>
+       22    <<EndEvent>>
 
 ● Scene010 is already done from earlier reading. Let me update the tracking table for Scene007-010 and continue with more files efficiently. Let me use an agent to help process the remaining files faster:
 

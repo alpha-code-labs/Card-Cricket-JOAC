@@ -25,7 +25,7 @@ Ramu: Tomorrow another day, fresh challenge—keep the focus on.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

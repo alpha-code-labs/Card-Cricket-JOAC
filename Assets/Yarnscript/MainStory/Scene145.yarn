@@ -17,7 +17,7 @@ Raju: Their bowler kept staring after every boundary.
 Ramu: Let them stare. Your bat does the talking. Tomorrow they'll bring their best.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 
