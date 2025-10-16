@@ -11,6 +11,8 @@ public static class YarnScriptsValaditionTests
     [MenuItem("Tools/TestYarnScripts")]
     static void TestYarnScripts()
     {
+        DialogueScriptCommandHandler.InitializeSpriteMapping(); //Prepring for Test
+
         string yarnFolder = Path.Combine(Application.dataPath, "Yarnscript");
         if (!Directory.Exists(yarnFolder))
         {
@@ -107,19 +109,23 @@ public static class YarnScriptsValaditionTests
     {
         List<string> issues = new List<string>();
 
-        // Matches commands like <<set $emotion = "happy">> or <<set $mood = 'sad'>>
-        var emotionRegex = new Regex(@"<<\s*set\s*\$emotion\s*=\s*[""']([^""']+)[""']\s*>>", RegexOptions.IgnoreCase);
-        var matches = emotionRegex.Matches(text);
-        var emotions = matches.Cast<Match>().Select(m => m.Groups[1].Value.Trim()).Where(s => !string.IsNullOrEmpty(s)).ToList();
-        if (DialogueScriptCommandHandler.spriteNameToIndex == null)
-            DialogueScriptCommandHandler.InitializeSpriteMapping();
-        foreach (var emotion in emotions.Distinct())
+        // Accept either single or double quotes for both values
+        var setCharExprRegex = new Regex(@"<<\s*SetCharacterExpression\s+['""]([^'""]+)['""]\s+['""]([^'""]+)['""]\s*>>", RegexOptions.IgnoreCase);
+        var setCharMatches = setCharExprRegex.Matches(text);
+        var nameExpressionPairs = setCharMatches.Cast<Match>()
+            .Select(m => new { name = m.Groups[1].Value.Trim(), expr = m.Groups[2].Value.Trim() })
+            .Where(x => !string.IsNullOrEmpty(x.name) && !string.IsNullOrEmpty(x.expr))
+            .ToList();
+
+        // Check SetCharacterExpression combined name+expression (e.g., RamuNeutral)
+        // Remove internal spaces when building combined key (e.g., "Ramu Kumar" + "Neutral" -> "RamuKumarNeutral")
+        foreach (var pair in nameExpressionPairs.GroupBy(p => (p.name + p.expr).Replace(" ", "")).Select(g => g.First()))
         {
-            // Assuming you have a method GetSpriteForEmotion to check if the sprite exists
-            if (DialogueScriptCommandHandler.GetSpriteByName(emotion) == null)
+            var combined = (pair.name + pair.expr).Replace(" ", "");
+            if (DialogueScriptCommandHandler.GetSpriteByName(combined) == null)
             {
-                if (!issues.Contains($"No sprite found for emotion: {emotion}"))
-                    issues.Add($"No sprite found for emotion: {emotion}");
+                if (!issues.Contains($"No sprite found for character expression: {combined}"))
+                    issues.Add($"No sprite found for character expression: {combined}");
             }
         }
 

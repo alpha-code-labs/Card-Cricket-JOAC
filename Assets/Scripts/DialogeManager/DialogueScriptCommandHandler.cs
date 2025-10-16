@@ -130,7 +130,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static Sprite GetSpriteByName(string spriteName)
     {
         string normalizedKey = NormalizeName(spriteName);
-        if (spriteNameToIndex.ContainsKey(normalizedKey) || spriteNameToIndex[normalizedKey] != null)
+        if (spriteNameToIndex.ContainsKey(normalizedKey) && spriteNameToIndex[normalizedKey] != null)
         {
             return spriteNameToIndex[normalizedKey];
         }
