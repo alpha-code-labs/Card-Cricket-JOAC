@@ -15,8 +15,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] List<Sprite> allSprites;
 
     [Header("Character Display Images")]
-    [SerializeField] Image leftCharacterImage;
-    [SerializeField] Image rightCharacterImage;
+    [SerializeField] Image centerCharacterImage;
 
     [Header("UI Components")]
     [SerializeField] Image currentBGSprite;
@@ -34,10 +33,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     private Dictionary<String, AudioClip> musicDictionary;
     private Characters currentActiveCharacter = Characters.Ramu; // Track active character
-    private bool isCharacterOnLeft = true; // Track which side current character is on
-
-
-
     void Awake()
     {
         Instance = this;
@@ -162,28 +157,15 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             Sprite targetSprite = Instance.allSprites[spriteIndex];
             if (targetSprite != null)
             {
-                // Hide both character images first
-                Instance.leftCharacterImage.gameObject.SetActive(false);
-                Instance.rightCharacterImage.gameObject.SetActive(false);
+                Instance.centerCharacterImage.gameObject.SetActive(false);
 
                 // If different character, switch sides
                 if (Instance.currentActiveCharacter != character)
                 {
-                    Instance.isCharacterOnLeft = !Instance.isCharacterOnLeft;
                     Instance.currentActiveCharacter = character;
                 }
-
-                // Show character on the appropriate side
-                if (Instance.isCharacterOnLeft)
-                {
-                    Instance.leftCharacterImage.sprite = targetSprite;
-                    Instance.leftCharacterImage.gameObject.SetActive(true);
-                }
-                else
-                {
-                    Instance.rightCharacterImage.sprite = targetSprite;
-                    Instance.rightCharacterImage.gameObject.SetActive(true);
-                }
+                Instance.centerCharacterImage.sprite = targetSprite;
+                Instance.centerCharacterImage.gameObject.SetActive(true);
             }
             else
             {
@@ -228,15 +210,13 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [YarnCommand("HideAllCharacters")]
     public static void HideAllCharacters()
     {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
+        Instance.centerCharacterImage.gameObject.SetActive(false);
     }
 
     // FADE EFFECTS
     [YarnCommand("FadeToBlack")]
     public static void FadeToBlack()
     {
-        //Instance.StartCoroutine(Instance.FadeToBlackSequence());
         NewDayManager.currentEventIndex++;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
     }
