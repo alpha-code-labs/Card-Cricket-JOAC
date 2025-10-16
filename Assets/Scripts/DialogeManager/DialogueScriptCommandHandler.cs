@@ -12,7 +12,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static DialogueScriptCommandHandler Instance;
 
     [Header("All Sprites - Characters and Backgrounds")]
-    List<Sprite> allSprites;
 
     [Header("Character Display Images")]
     [SerializeField] Image centerCharacterImage;
@@ -29,7 +28,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] float musicFadeDuration = 1f;
 
     // Dictionary for sprite name to index mapping
-    private Dictionary<string, int> spriteNameToIndex;
+    private Dictionary<string, Sprite> spriteNameToIndex;
 
     private Dictionary<String, AudioClip> musicDictionary;
     private Characters currentActiveCharacter = Characters.Ramu; // Track active character
@@ -71,8 +70,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     private void InitializeSpriteMapping()
     {
         // Initialize sprite name to index mapping
-        spriteNameToIndex = new Dictionary<string, int>();
-
+        spriteNameToIndex = new Dictionary<string, Sprite>();
+        List<Sprite> allSprites;
         // Load Characters and Locations separately for clarity and predictable organization
         List<Sprite> characterSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Characters"));
         List<Sprite> locationSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Locations"));
@@ -90,7 +89,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 string normalizedKey = NormalizeName(actualSpriteName);
                 if (!spriteNameToIndex.ContainsKey(normalizedKey))
                 {
-                    spriteNameToIndex[normalizedKey] = i;
+                    spriteNameToIndex[normalizedKey] = allSprites[i];
                 }
                 else
                 {
@@ -132,6 +131,19 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
         Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
     }
+    private static Sprite GetSpriteByName(string spriteName)
+    {
+        string normalizedKey = NormalizeName(spriteName);
+        if (Instance.spriteNameToIndex.ContainsKey(normalizedKey) || Instance.spriteNameToIndex[normalizedKey] != null)
+        {
+            return Instance.spriteNameToIndex[normalizedKey];
+        }
+        else
+        {
+            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            return null;
+        }
+    }
 
     // Helper method to normalize sprite names for lookup
     private static string NormalizeName(string name)
@@ -150,70 +162,24 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             return;
         }
 
-        SetCharacterExpressionInternal(character, emotion);
-    }
-
-    // Internal method that does the actual work
-    private static void SetCharacterExpressionInternal(Characters character, string emotion)
-    {
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
-        string normalizedKey = NormalizeName(spriteName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
+        Sprite targetSprite = GetSpriteByName(spriteName);
+        Instance.centerCharacterImage.gameObject.SetActive(false);
+        // If different character
+        if (Instance.currentActiveCharacter != character)
         {
-            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
+            Instance.currentActiveCharacter = character;
         }
-
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Sprite targetSprite = Instance.allSprites[spriteIndex];
-            if (targetSprite != null)
-            {
-                Instance.centerCharacterImage.gameObject.SetActive(false);
-
-                // If different character, switch sides
-                if (Instance.currentActiveCharacter != character)
-                {
-                    Instance.currentActiveCharacter = character;
-                }
-                Instance.centerCharacterImage.sprite = targetSprite;
-                Instance.centerCharacterImage.gameObject.SetActive(true);
-            }
-            else
-            {
-                Debug.LogError($"Sprite at index {spriteIndex} is null!");
-            }
-        }
-        else
-        {
-            Debug.LogError($"Sprite index {spriteIndex} out of range!");
-        }
+        Instance.centerCharacterImage.sprite = targetSprite;
+        Instance.centerCharacterImage.gameObject.SetActive(true);
     }
 
     // BACKGROUND COMMANDS
     [YarnCommand("SetBGSprite")]
     public static void SetBGSprite(string backgroundName)
     {
-        string normalizedKey = NormalizeName(backgroundName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
-        {
-            Debug.LogError($"Background sprite '{backgroundName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
-        }
-
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[spriteIndex];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {spriteIndex} out of range!");
-        }
+        Instance.currentBGSprite.sprite = GetSpriteByName(backgroundName);
     }
 
     // UTILITY COMMANDS
