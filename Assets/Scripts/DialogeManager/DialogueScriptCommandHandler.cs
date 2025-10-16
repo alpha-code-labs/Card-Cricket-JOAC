@@ -122,9 +122,6 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 {
                     musicDictionary[normalizedName] = clip;
                 }
-
-                // Debug to verify mapping
-                Debug.Log($"Mapped AudioClip '{clipName}' (at index {i}) to dictionary");
             }
         }
 
