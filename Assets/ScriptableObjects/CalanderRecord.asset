@@ -38,9 +38,6 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post-Tutorial Cutscene
       eventType: 0
-    - eventName: scene_3
-      eventDescription: Post-Tutorial Cutscene
-      eventType: 0
   - date: 1989/01/31
     events:
     - eventName: scene_4

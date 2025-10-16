@@ -13,10 +13,10 @@ Ramu: Captain. You beauty. You were brilliant out there today.
 Raju: I guess I was just lucky.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: That's my boy. Stay humble and grounded. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+Ramu: That's my boy - stay humble and grounded. Tomorrow is another day with a fresh challenge, so be in the groove.
 
 <<SetCharacterExpression "Raju" "Relieved">>
-Raju: Thank you bhai. Thank you for this chance. I really appreciate it.
+Raju: Thank you bhai for this chance - I really appreciate it.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

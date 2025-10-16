@@ -16,76 +16,76 @@ Ramu: Captain.
 Raju: Reporting.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Today's not like the lane matches. There's a pot at the end—real notes, not bragging rights. Half goes to ground repairs, the rest to the winners.
+Ramu: Today's not like the lane matches—there's a pot at the end with real notes, half for ground repairs, the rest for winners.
 
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it twice in my head.
 
 <<SetCharacterExpression "Ramu" "Confident">>
-Ramu: Good. Count your breath the same way—twice, before anything important. And remember: prize money is a reason, not a target. We play to our habits.
+Ramu: Good. Count your breath the same way—twice before anything important, and remember: prize money is a reason, not a target.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Eyes, feet, hands, timing, temper—five coins in the pocket.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Exactly. You're the youngest boy on any team sheet here. Some will test you just because you're ten. Let them. People laugh before they clap—let them finish both.
+Ramu: Exactly. You're the youngest here, and some will test you—let them, because people laugh before they clap.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: If they bowl words at me, I'll leave those outside off.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Leave well. And listen—the older boys, even ours, might want the big moment for themselves. If they glare when you speak, lower your voice and raise your game. Pride is loud; respect is heard.
+Ramu: Leave well, and if older boys glare when you speak, lower your voice and raise your game—pride is loud, respect is heard.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'll be a good teammate first, a good anything else after.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: That's the order. The captain knows you from the banyan side. He'll watch how you walk before he watches how you play. Head up, shoulders easy. When he calls, you answer with your name.
+Ramu: That's the order. The captain will watch how you walk before he watches how you play—head up, shoulders easy.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Raju reporting.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: For us. And one more thing—stakes twist the wind. You'll feel it on your skin. When the wind pushes, don't push back; lean with it, then choose your moment. We are poor in money, not in patience.
+Ramu: For us. Stakes twist the wind, but when it pushes, don't push back—lean with it, then choose your moment.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: The bat is lighter now.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: That's you getting stronger. I retaped the toe last night—brick-sanded, like old times. Face up when it rests?
+Ramu: That's you getting stronger. I retaped the toe last night—brick-sanded, face up when it rests?
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Always.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Today is also about seeing. Not just balls—see the ground breathe. The boy with the red scarf fields lazy at square; the tall one ties his shoe twice when he's nervous; the umpire taps his pocket before he speaks. Little truths. Collect them.
+Ramu: Today is also about seeing—not just balls, but how the ground breathes, little truths about every player.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Like Parle-G crumbs—small but sweet.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Maa said, "Play brave and come back hungry." So we'll bring hunger home—the good kind. If you miss, you breathe. If you shine, you breathe. If someone else shines, you clap like it's your own sun.
+Ramu: Maa said, "Play brave and come back hungry." Whether you miss or shine, you breathe—and if someone else shines, you clap like it's your own sun.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: Bhai, if we win, can we fix the tarp before the rain?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: First we fix our hearts before the toss. Tarp will follow. Look at me.
+Ramu: First we fix our hearts before the toss, tarp will follow.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: I'm not asking you to be special. I'm asking you to be steady. Special happens to steady boys when the world is looking somewhere else.
+Ramu: I'm not asking you to be special, just steady—special happens to steady boys when the world is looking elsewhere.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Steady is my job.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Right. And when pressure knocks, don't argue—open the door and say, "Sit. Watch me work." You've earned that tone.
+Ramu: Right. When pressure knocks, open the door and say, "Sit, watch me work."
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Thank you.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Thank me by showing up like you did at dawn for fourteen months. The boys your brother's age will look across and see a kid. Make them see a teammate. Make them forget your age.
+Ramu: Thank me by showing up like you did at dawn for fourteen months—make them see a teammate, not a kid.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: If someone asks how old I am?
@@ -94,7 +94,7 @@ Raju: If someone asks how old I am?
 Ramu: Say, "Old enough to keep my promises."
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: You'll wait near the scorers' table, face up, chin up. If your name's late, you still stay early in your mind. No sulks, no throws. We don't let poverty steal our manners.
+Ramu: You'll wait near the scorers' table, face up, chin up—and we don't let poverty steal our manners.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: We don't.

@@ -10,10 +10,10 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: It's the Finals captain. We are batting second. You are at number 8. The last 2 overs remain. We have to get 15 runs to win the tournament. Are you up for it?
+Ramu: It's the Finals captain - we're batting second, you're at number 8 with 2 overs remaining, and we need 15 runs to win. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: I am all in. Completely focussed. Ready to roar.
+Raju: I am all in - completely focussed and ready to roar.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Good. Let's go.

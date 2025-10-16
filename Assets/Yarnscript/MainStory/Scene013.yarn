@@ -13,7 +13,7 @@ Ramu: Captain. Could have been a better performance. Play as per the situation. 
 Raju: No excuses. I need to get better and apply myself more.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
+Ramu: That's my boy - always stay hungry and greedy when it comes to scoring runs. Tomorrow is another day with a fresh challenge, so be in the groove.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Yes I am aware. I am completely switched on. I can do this.

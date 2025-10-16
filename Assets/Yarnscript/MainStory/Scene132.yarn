@@ -11,46 +11,46 @@ position: 0,0
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: Don't rub the collar, beta, it will start shining like tin. Here— hair behind the ear… lie down.
+Kamla: Don't rub the collar, beta—it will start shining like tin. Hair behind the ear now, lie down.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Is it sticking up again?
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: Like a stubborn blade of grass. There. Good boy.
+Kamla: Like a stubborn blade of grass—there, good boy.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Baba… what time will they pin the sheets?
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: When the peon finishes his tea and finds the drawing pin. We'll reach before him and watch the wall like it owes us money.
+ShivPrasad: When the peon finishes his tea and finds the drawing pin—we'll reach before him and watch the wall like it owes us money.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: Drink two sips. Not more. Too much water makes numbers blur.
+Kamla: Drink two sips, not more—too much water makes numbers blur.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: My hands are sweaty.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: That's because they remember holding a bat and a pencil on the same week. Proud hands sweat early.
+Ramu: That's because they remember holding a bat and a pencil on the same week—proud hands sweat early.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: Pride can wait. Today we read marks. After that we decide what pride is allowed to say.
+ShivPrasad: Pride can wait—today we read marks, then we decide what pride is allowed to say.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: He studied till the fan scolded him. He slept without stories. He woke before the milkman. That's the work we could do.
+Kamla: He studied till the fan scolded him, slept without stories, and woke before the milkman—that's the work we could do.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: If your heart starts running when we see the crowd, breathe like the drum: in… hold… out. Look at the rusty nail on the old notice board. That's our anchor.
+Ramu: If your heart starts running when we see the crowd, breathe like the drum—in, hold, out—and look at the rusty nail on the old notice board, that's our anchor.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: In… hold… out.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: Anchor won't change the tide. But it keeps the boat from lying.
+ShivPrasad: Anchor won't change the tide, but it keeps the boat from lying.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: True. Listen, captain. Whatever the paper says, you walk the same—straight, without running or drooping. If it's good, we thank it and go home. If it's not, we learn where the holes are and we fill them. No big face, no small face.
+Ramu: True. Listen, captain—whatever the paper says, you walk the same, straight without running or drooping. If it's good we thank it and go home; if not, we learn where the holes are and fill them—no big face, no small face.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Will you stand near me?
@@ -59,22 +59,22 @@ Raju: Will you stand near me?
 Ramu: Like a shadow with laces.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: One rule before we step out. We don't ask others their number. We don't announce ours. We don't compare on the road. The wall is for reading; the lane is for walking.
+ShivPrasad: One rule before we step out—we don't ask others their number, don't announce ours, or compare on the road. The wall is for reading; the lane is for walking.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: We carry each other. Not just today. Everyday.
+ShivPrasad: We carry each other—not just today, but everyday.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: And we walk together. No racing ahead, Ramu.
+Kamla: And we walk together—no racing ahead, Ramu.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: I'll keep pace. If I run, you pull my shirt.
+Ramu: I'll keep pace—if I run, you pull my shirt.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Promise.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: Lock the door, then we go. We'll be early and quiet. Let the wall do the talking.
+ShivPrasad: Lock the door, then we go—we'll be early and quiet, let the wall do the talking.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Shoes tied?
@@ -83,7 +83,7 @@ Kamla: Shoes tied?
 Raju: Double knot.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
-ShivPrasad: Good. Come, all of you.
+ShivPrasad: Good—come, all of you.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

@@ -9,10 +9,10 @@ position: 0,0
 <<SetBGSprite hutInterior>>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Maa… Baba… can I talk? Two minutes. I'll be straight.
+Ramu: Maa… Baba… can I talk for two minutes straight?
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: Two minutes from you becomes twenty. Sit, beta.
+Kamla: Two minutes from you becomes twenty, but sit beta.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 ShivPrasad: If it's about the rice, keep for morning. My head is heavy.
@@ -24,76 +24,76 @@ Ramu: It's about Raju. I think we have a gem in the house.
 Kamla: Every mother thinks so.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: I'm not saying it like a brother. I'm saying it like someone who watches the ground breathe. He sees the ball early, Maa. He listens. He shares. He doesn't sulk. Today at Kohliwada—he stood where men get nervous, and he didn't shrink.
+Ramu: I'm not saying it like a brother, but as someone who watches the ground breathe - he sees the ball early, listens, shares, and doesn't shrink under pressure.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Nerves don't feed stomachs.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: True. That's why I'm not asking for feasts. I'm asking for time and routine. No academy, no fees, not yet. Morning practice near the handpump. School on time. Chores done. Then study. If his marks fall, I'll lock this bat myself.
+Ramu: True, but I'm asking for time and routine - morning practice near the handpump, school on time, chores done, then study. If his marks fall, I'll lock this bat myself.
 
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: People will talk. "Poor folks and big dreams."
 
 <<SetCharacterExpression "Ramu" "Confident">>
-Ramu: People laugh before they clap, Maa. Let them finish both. We won't borrow money. We'll borrow discipline. It's free—and it pays.
+Ramu: People laugh before they clap, Maa - let them finish both. We'll borrow discipline, not money, and it's free.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: What will it cost?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: One steel bottle of water. Chalk for the crease. My sleep. I'll take an extra hour at the tire repair shop—fixed punctures—Munna Bhai said okay. With that, I'll buy second-hand pads later, not now. Mochi Uncle will stitch his shoes for free; he owes me a favor.
+Ramu: One steel bottle of water, chalk for the crease, and my sleep - I'll take an extra hour at the tire repair shop to buy second-hand pads later.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: And studies? His teacher already said his handwriting runs like a train.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Then we slow the train. Half hour every night—poem, dictation, tables. I'll sit with him. If he misses, he misses the ground next day. Rules are rules.
+Ramu: Then we slow the train - half hour every night with poem, dictation, and tables. If he misses, he misses the ground next day.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Hope is a dangerous thing, Ramu.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: False hope is. This is measured hope. Three months of routine. If he still lights up the lane, we talk to Masterji about district trials—he knows a PE sir who waives fees for good boys. If not, we call it a season, not a failure.
+Ramu: False hope is, but this is measured - three months of routine and if he lights up the lane, we talk to Masterji about district trials.
 
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: He is small.
 
 <<SetCharacterExpression "Ramu" "Determined">>
-Ramu: Small hands learn the shape of courage faster. He already keeps the bat face up when it rests, Maa. Head up when he walks. He remembers. When the noise grew today, he touched his chest and breathed like I taught. Eight-year-olds don't fake that.
+Ramu: Small hands learn courage faster - he already keeps the bat face up when it rests and breathed through the pressure like I taught. Eight-year-olds don't fake that.
 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: You speak like a coach.
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Because our lane doesn't have one. So I'll be it. And I'll keep my marks decent too, I promise. You can test me. Friday nights—both of us read to you. If I slip, you stop me first.
+Ramu: Because our lane doesn't have one, so I'll be it while keeping my marks decent - Friday nights, both of us read to you.
 
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: What if he gets hurt?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Then we learn why and fix it. No bravado. No angry swings. We don't let poverty steal our manners or our safety.
+Ramu: Then we learn why and fix it - we don't let poverty steal our manners or our safety.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: And what do you want from me?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Permission. And one small thing: when neighbors scoff, you say, "He's practicing habits." Not "He's chasing cricket." Habits first. Cricket follows.
+Ramu: Permission, and when neighbors scoff, say "He's practicing habits, not chasing cricket."
 
 <<SetCharacterExpression "Kamla" "Curious">>
 Kamla: Tell me one more time—what do you see in him?
 
 <<SetCharacterExpression "Ramu" "Proud">>
-Ramu: I see a boy who hears the ground. Who waits when waiting is heavy. Who smiles after a miss. Who thanks the bat before he uses it. That… doesn't come from posters. It comes from inside.
+Ramu: I see a boy who hears the ground, waits when waiting is heavy, and smiles after a miss - that comes from inside, not posters.
 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: Dreams make the room feel bigger, huh?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: Only if we open the window. Let me open it a little. Dawn to the handpump. I'll chalk the line. He'll carry the water.
+Ramu: Only if we open the window a little - dawn to the handpump, I'll chalk the line and he'll carry the water.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: I say… three months. No money wasted. Marks steady. Manners steady. If either falls, whistle blows—game over.
+ShivPrasad: I say three months - no money wasted, marks and manners steady, or game over.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Deal. I'll keep score on both.

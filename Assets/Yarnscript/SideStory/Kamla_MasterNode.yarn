@@ -49,113 +49,113 @@ Her weathered hands sort through cleaning supplies and prepare tiffin containers
 
 With the quiet dignity of a woman who takes pride in honest work.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Raju, beta, before you run off with that cricket bat, come help your mother.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: I need you to carry these tiffins and laundry up to the big building today.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: The High-Rise Condos?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: But Ma, that's where all the rich kids live.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Embarrassed">>
 Raju: What if someone sees me carrying laundry?
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Yes, beta, they live in those tall buildings and look down on people like us.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: But they also pay me so we can eat.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: So you can go to school.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: So your cricket dreams might someday become possible.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Responsibility comes before play, always.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Those people in their fine apartments need us.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: Even if they don't always show respect.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: And we need their money to survive.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: There's no shame in honest work.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Only in laziness or pride that makes us too good for the work that feeds us.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, Ma.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'll help you.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: And I'll be respectful, no matter how they treat us.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Remember, beta, when we're in their world, we're respectful and quiet.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: But we never bow our heads in shame.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: We work with dignity because our work has value.
 
 <<SetBGSprite WellingtonEstate>>
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: Who's this? Another servant boy?
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Irritated">>
 Aryan: I hope he's more careful than the last one who broke my mother's vase.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: I'm not a servant.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm just helping my mother.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: There's nothing wrong with helping family.
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: Helping? Is that what poor people call working for money?
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Don't break anything, slum boy.
 
-<<SetCharacterExpression "Aryan" Angry>>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: Everything here costs more than your family makes in a month.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Young master, my son is here to learn about different kinds of work.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: He'll be very careful with your family's belongings.
 
 <<SetBGSprite HutInterior>>
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Ignore words like that, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: People who talk down to others usually do it because they're insecure.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: About their own worth.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Our struggles have taught us things that boy will never understand.
 
 <<HideAllCharacters>>
@@ -207,112 +207,112 @@ Kamla's presence radiates the unconditional love and support.
 
 That anchors his sense of self.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Confused">>
 Raju: Ma, why did that boy Aryan talk to us like that?
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Just because his family has money, does he really think he's better than us?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Relaxed">>
 Kamla: Beta, people like Aryan live in tall buildings.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: But that doesn't mean they see far.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: They look down on us not because we're less than them.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: But because looking down makes them feel taller.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: But here's what I noticed yesterday, and what that rich boy didn't see.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: You held your head high.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: When he insulted you, you didn't cower or accept his words as truth.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: You stood up for yourself and for our family with dignity.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to prove him wrong, Ma.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: One day, when I'm successful - maybe through cricket, maybe through something else.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I want him to know that being from the slums doesn't make someone less worthy of respect.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: And you will prove him wrong, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: But not by becoming like him - dismissive and cruel.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: You'll prove him wrong by being exactly who you are.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Kind, determined, and respectful to everyone regardless of their circumstances.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: I see how serious you are about everything you do, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Even if your father worries about your cricket dreams.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Even if he doesn't say it out loud yet, I want you to know.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: I believe in you.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: Really, Ma?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: You believe I can make something of myself, even coming from here?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Beta, I've cleaned the houses of wealthy people for years.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: I've seen their children - given everything, handed opportunities.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: Never having to work for anything.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: And then I watch you - creating your own opportunities.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Working twice as hard for half the recognition.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Which child do you think is really stronger?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: I'll support your dreams, Raju.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Quietly, because your father needs time to understand, but always.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: When you succeed - and I believe you will.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: It won't be because someone gave you advantages.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: It will be because you earned every step forward.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thank you, Ma.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I promise I won't let you down.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -365,34 +365,34 @@ Though her watchful eyes assess how her son handles the competing demands.
 
 Of duty and passion.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Tired">>
 Kamla: Beta, before you run off to the cricket ground, come help me with this water pump.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: It's acting up again.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Pained">>
 Kamla: And I need to fill these containers before the morning rush.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Ma, can't I help you when I come back from practice?
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: The other boys are already waiting for me at the ground.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Disappointed">>
 Raju: And if I'm late, they might start the game without me...
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Skeptical">>
 Kamla: The other boys are waiting, or your cricket practice is calling?
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Quizzical">>
 Kamla: Tell me, beta - what's more important to you right now?
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Helping your family with something we need to survive?
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: Or playing a game with your friends?
 
 <<AutoAdvance true>>
@@ -412,27 +412,27 @@ tags:
 position: -308,129
 ---
 <<set $Kamla_Path = "a">>
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Astonished">>
 Kamla: That's exactly the attitude I hoped to see, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Family first, always.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: This is what makes me believe you have the character to succeed at anything you pursue.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Every morning I want to help you first, Ma.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me show you that I understand what really matters in life.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Your willingness to sacrifice for family shows me the kind of man you're becoming, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: This devotion will serve you well in all your dreams.
 
 <<HideAllCharacters>>
@@ -457,12 +457,12 @@ tags:
 position: -55,122
 ---
 <<set $Kamla_Path = "b">>
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Impressed">>
 Kamla: Balance, beta. That's wisdom beyond your years.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Most people choose one or the other.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -471,13 +471,13 @@ Kamla: But you're trying to honor both your duties and your dreams.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: See Ma? I can handle family needs and still have energy for cricket.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: They don't have to compete with each other.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: You're showing me something important.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: That dreams can make you more responsible, not less.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -503,30 +503,30 @@ tags:
 position: 184,122
 ---
 <<set $Kamla_Path = "c">>
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 
 <<SetCharacterExpression "Kamla" "Quizzical">>
 Kamla: You're thinking about cricket helping the family?
 
-<<SetCharacterExpression "Kamla" "Quizzical">>
+<<SetCharacterExpression "Kamla" "Astonished">>
 Kamla: That's... ambitious, beta.
 
-<<SetCharacterExpression "Kamla" "Quizzical">>
+<<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: But I like that you still understand immediate responsibilities.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Every successful athlete I've heard about started by being reliable at home, Ma.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me prove my cricket dreams are built on solid character.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Your determination is remarkable, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: You're approaching dreams like a man, not a child.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Excited">>
 Kamla: This seriousness makes me want to understand your cricket better.
 
 <<HideAllCharacters>>
@@ -577,10 +577,10 @@ Her observations of his character under pressure have convinced her.
 
 That his cricket ambitions might deserve more serious consideration than she initially believed.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Your devotion these days has shown me something beautiful, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Now let me show you what our family sacrifices look like in the real world.
 
 <<jump Kamla_Revelation>>
@@ -608,10 +608,10 @@ That his integrated approach to responsibility and ambition might provide a foun
 
 For achieving goals that once seemed impossibly out of reach.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Your balanced approach has impressed me, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Now let me show you the realities we're balancing against, so you understand the full picture.
 
 <<jump Kamla_Revelation>>
@@ -644,7 +644,7 @@ Of what might be achievable through dedicated effort and proper support.
 <<SetCharacterExpression "Kamla" "Excited">>
 Kamla: Your serious approach to cricket has caught my attention, beta.
 
-<<SetCharacterExpression "Kamla" "Excited">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Let me show you what we're working with, so your dreams can be realistic and achievable.
 
 <<jump Kamla_Revelation>>
@@ -674,61 +674,61 @@ While working in spaces that emphasize their social and economic marginalization
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Watch carefully, beta.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Tired">>
 Kamla: See how much work it takes to earn twenty rupees?
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: It seems like so much work for so little money, Ma.
 
-<<SetCharacterExpression "Raju" "Sad">>
+<<SetCharacterExpression "Raju" "Pained">>
 Raju: Your hands are hurting.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: This is why education matters, Raju.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: So you don't spend your life cleaning other people's houses.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Pained">>
 Kamla: Watching your hands age before their time.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Sad">>
 Kamla: While their children play with toys that cost more than our monthly food budget.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: But what about cricket, Ma?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: Can't that also help us? If I get really good, maybe...
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Relaxed">>
 Kamla: Cricket is a dream, beta.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Dreams are beautiful.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: And after watching how serious you've been these past few days.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: I'm starting to think maybe some dreams aren't as impossible as I thought.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: But we need practical plans too.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: The difference is, I can see now that you understand responsibility.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: You've helped me every morning without complaining.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Even when I know you wanted to be practicing cricket.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: That tells me maybe you can balance both dreams and reality.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I can, Ma. I can do both.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -737,10 +737,10 @@ Raju: I can help you and still chase my cricket dreams.
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Then prove it.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Show me that your cricket makes you more responsible, not less.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Show me that dreams can make you stronger, not weaker.
 
 <<SetBGSprite HutInterior>>
@@ -789,136 +789,136 @@ Though today's shopping trip carries the anticipation of a significant moment.
 
 That neither fully expects.
 
-<<SetCharacterExpression "Kamla" "Excited">>
+<<SetCharacterExpression "Kamla" "Astonished">>
 Kamla: Beta, look at this.
 
 <<SetCharacterExpression "Kamla" "Excited">>
 Kamla: A real cricket ball - leather, proper stitching.
 
-<<SetCharacterExpression "Kamla" "Excited">>
+<<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Not like those tennis balls you've been practicing with.
 
-<<SetCharacterExpression "Vendor" "Excited">>
+<<SetCharacterExpression "Vendor" "Smiling">>
 Vendor: Madam, that's excellent quality - genuine leather, regulation weight.
 
 <<SetCharacterExpression "Vendor" "Excited">>
 Vendor: Your son would practice like a real cricketer with that ball.
 
-<<SetCharacterExpression "Vendor" "Excited">>
+<<SetCharacterExpression "Vendor" "Neutral">>
 Vendor: Only fifteen rupees, a very good price.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: Fifteen rupees...
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Anxious">>
 Kamla: That's my lunch money for three days.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: That's vegetables for the family for two days.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confused">>
 Kamla: That's...
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: Ma, please don't.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: I can keep practicing with the old tennis ball.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: It's been working fine.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: We need that money for food, for the house, for important things.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Quizzical">>
 Kamla: Important things, you said.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Tell me, beta - after watching you for four days.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: After seeing how seriously you take both your responsibilities and your cricket practice.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Isn't your development important too?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: No, Raju.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: If you're going to practice cricket seriously.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: If you're going to chase this dream with the dedication you've been showing.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Then you should practice with proper equipment.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Dreams deserve proper tools.
 
 <<SetCharacterExpression "Vendor" "Smiling">>
 Vendor: Your son is very lucky to have a mother who supports his games.
 
-<<SetCharacterExpression "Vendor" "Smiling">>
+<<SetCharacterExpression "Vendor" "Neutral">>
 Vendor: This ball will last for years with proper care.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: Ma, you didn't have to do this.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Shocked">>
 Raju: I know what fifteen rupees means to our family.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Crying">>
 Raju: I know what you're giving up.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Beta, a mother doesn't just feed her child's body.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: She feeds his dreams, his potential, his belief in himself.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: This ball isn't just for cricket practice.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: It's my way of saying I believe in you.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: But remember this moment, Raju.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Remember what this ball represents.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: It cost me three days of meals.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: But I chose to invest in your future instead.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Use it wisely. Practice with purpose.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll treasure this ball, Ma.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll use it to become the best cricketer I can be.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: And I'll make you proud - not just in cricket, but in everything I do.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: You already make me proud, beta.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Every day when you help with chores without being asked.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Every day when you balance your dreams with your responsibilities.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: You're already the success I hoped you'd become.
 
 <<SetBGSprite HutInterior>>
@@ -965,25 +965,25 @@ The cricket ball that cost his mother three days of meals has already begun to j
 
 Through improvements that validate both his talent and her faith in his potential.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Excited">>
 Kamla: Look at that smile, beta!
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: How was practice today?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Mischievous">>
 Kamla: You look like you conquered the entire cricket field.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: Ma, it was incredible!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Using the proper cricket ball made such a difference.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: I hit six boundaries today - clean, powerful shots.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: That went exactly where I aimed them.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -992,22 +992,22 @@ Raju: And I took three wickets when I was bowling!
 <<SetCharacterExpression "Kamla" "Quizzical">>
 Kamla: Six boundaries and three wickets...
 
-<<SetCharacterExpression "Kamla" "Quizzical">>
+<<SetCharacterExpression "Kamla" "Confused">>
 Kamla: Beta, I've heard these terms, but explain to me exactly what they mean.
 
-<<SetCharacterExpression "Kamla" "Quizzical">>
+<<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: I want to understand your cricket properly.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Taking wickets means I bowled so well that I got the batsmen out!
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: And boundaries are when you hit the ball so hard and so precisely.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Proud">>
 Raju: That it reaches the edge of the field and you automatically get four runs!
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Beta, you absolutely light up when you talk about cricket.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -1016,40 +1016,40 @@ Kamla: I've never seen you this alive, this energetic about anything else.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: That's because cricket makes me feel... like I can be somebody special, Ma.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: Like I'm not just another poor kid from the slums.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: When I'm playing, I feel like I could become someone important.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Listen to me carefully, Raju.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Serious">>
 Kamla: You already are somebody special. You always have been.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Cricket doesn't make you special, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Cricket just gives the world a way to see the specialness that was already inside you.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: So you really believe in my cricket dreams now?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: You think they could become real?
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: I believe in you, beta.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: I believe in your character, your work ethic, your dreams.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: And your ability to make them reality while staying true to who you are.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Relaxed">>
 Kamla: Cricket is just one way that might happen.
 
 <<HideAllCharacters>>
@@ -1103,94 +1103,94 @@ That have been growing through daily demonstrations of character and faith.
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Beta, before you sleep tonight, I want to tell you something very important.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Something I've been thinking about for days now.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Anxious">>
 Raju: What is it, Ma?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Worried">>
 Raju: You sound very serious.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: For six days, I've been watching you, testing you.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Learning about the kind of person you're becoming.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: I understand that cricket isn't just a game for you.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: It's a calling, something that brings out your best qualities.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Astonished">>
 Raju: Ma, what are you saying?
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: I'm saying that I promise you.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Whatever happens with your father's concerns.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: Whatever doubts other people might have.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: Whatever challenges come in the future.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: I will always support your cricket dreams.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Always, beta. Completely and unconditionally.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: I've watched you for six days, and your dream isn't impossible.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: And my support isn't blind.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: You've earned this promise through your character.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: Ma, you're the most wonderful mother in the world.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Crying">>
 Raju: I can't believe you believe in me this much.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: And you're going to be an incredible cricketer, Raju.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Not just because of your natural talent.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: But because of who you are as a person.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: I feel it in my heart - your success is coming.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I promise I won't let you down, Ma.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll make our whole family proud.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Not just through cricket, but through everything I do.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Beta, you already have made me proud.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Every morning when you chose to help before cricket.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Every moment when you showed that dreams and responsibility can work together.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
+<<SetCharacterExpression "Kamla" "Confident">>
 Kamla: You've already given me more pride than any trophy could.
 
 <<HideAllCharacters>>

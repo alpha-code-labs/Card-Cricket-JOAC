@@ -23,13 +23,13 @@ Ramu: Good practice before April. This one has better teams—some boys from the
 Raju: School league boys? They have proper coaching.
 
 <<SetCharacterExpression "Ramu" "Confident">>
-Ramu: And you have proper practice. Different paths, same game. Don't make them bigger in your mind.
+Ramu: And you have proper practice—different paths, same game, so don't make them bigger in your mind.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Prize money?
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Decent. Enough for groceries if we win. But we're playing for form, not funds.
+Ramu: Decent, enough for groceries if we win, but we're playing for form, not funds.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

@@ -7,13 +7,13 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: We are all set. Hope you are ready too. Make good choices. Keep your focus and I am sure you will kill it.
+Ramu: We are all set—make good choices, keep your focus, and you will kill it.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Ok. I am set. I know the drill. Practice. Study. Play. Repeat. With focus and discipline. I am determined bhaiyya.
+Raju: Ok, I am set—practice, study, play, repeat with focus and discipline.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: That's like my brother. Let's go.
+Ramu: That's like my brother—let's go.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

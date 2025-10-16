@@ -13,7 +13,7 @@ position: 0,0
 Raju: Made it to semifinals again.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: You're getting consistent. That's more important than getting lucky. Today might test you—I heard that tall boy from the church lane is playing.
+Ramu: You're getting consistent, and that's more important than getting lucky—today might test you though, I heard that tall boy from the church lane is playing.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: The one who bowls fast?
@@ -25,7 +25,7 @@ Ramu: Fast but straight. You've faced worse at dawn practice when your eyes were
 Raju: Should we do anything special?
 
 <<SetCharacterExpression "Ramu" "Relaxed">>
-Ramu: No. Special is for special days. Today is Saturday with stumps.
+Ramu: No, special is for special days—today is Saturday with stumps.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

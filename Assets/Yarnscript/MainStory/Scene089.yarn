@@ -17,7 +17,7 @@ Ramu: Finals to close March. Fitting end to a cricket-heavy month.
 Raju: I'm tired, Bhai. So many matches.
 
 <<SetCharacterExpression "Ramu" "Confident">>
-Ramu: I know. April will be quieter, more time for studies. But finish March properly first.
+Ramu: I know—April will be quieter with more time for studies, but finish March properly first.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Their team?
@@ -29,13 +29,13 @@ Ramu: Mix of boys—some you've beaten, some you haven't faced. Standard finals 
 Raju: Maa said to come back early. She needs help with cleaning.
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: We'll finish quick. No long celebrations, no hanging around. Play, win or lose, home.
+Ramu: We'll finish quick—no long celebrations, no hanging around, just play then home.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Just another match.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Just another match. But play it complete. Half-hearted cricket teaches full-hearted bad habits.
+Ramu: Just another match, but play it complete—half-hearted cricket teaches full-hearted bad habits.
 
 <<HideAllCharacters>>
 <<FadeToBlack>>

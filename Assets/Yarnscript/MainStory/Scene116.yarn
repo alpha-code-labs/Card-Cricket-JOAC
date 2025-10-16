@@ -11,16 +11,16 @@ position: 0,0
 Ramu: Captain. Marvelous. You were top-notch. We needed that.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Their bowling was sharp. I just kept my focus. Was uncle Dev noticing?
+Raju: Their bowling was sharp, but I kept my focus. Was uncle Dev noticing?
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Not your business. Get him out of your headspace. Focus on the now.
+Ramu: Not your business—get him out of your headspace and focus on the now.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Yes Sir. I was able to connect the ball clean. So happy for our team.
+Raju: Yes Sir, I connected the ball clean and I'm so happy for our team.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Tomorrow another day. Fresh challenge. Keep the focus on.
+Ramu: Tomorrow's another day with a fresh challenge—keep the focus on.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Yes sir.

@@ -20,13 +20,13 @@ Ramu: Humble and grounded. That's my boy.
 Raju: I want to go home bhai. Can we leave? All this attention is making me nervous.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: When you play like that, people will clap. Acknowledge them. Don't be nervous.
+Ramu: When you play like that, people will clap—acknowledge them, don't be nervous.
 
 <<SetCharacterExpression "Raju" "Worried">>
-Raju: I want to hide behind you. All these piercing eyes.
+Raju: I want to hide behind you from all these piercing eyes.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: I am aware. Those are eyes of appreciation. Eyes that are marveling at your talent. I am here with you. Hold my hand.
+Ramu: I am aware—those are eyes of appreciation marveling at your talent, and I am here with you.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Thanks bhai.
