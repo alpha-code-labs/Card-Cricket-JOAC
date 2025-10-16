@@ -15,6 +15,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     [Header("Character Display Images")]
     [SerializeField] Image centerCharacterImage;
+    // Tween tracking
+    private DG.Tweening.Tween centerCharacterTween;
 
     [Header("UI Components")]
     [SerializeField] Image currentBGSprite;
@@ -165,15 +167,57 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
         Sprite targetSprite = GetSpriteByName(spriteName);
-        Instance.centerCharacterImage.gameObject.SetActive(false);
-        // If different character
-        if (Instance.currentActiveCharacter != character)
+        AnimationCharacterSpriteChange();
+        // Local function to handle sprite change animation
+        void AnimationCharacterSpriteChange()
         {
+            // Use a local id so we can both kill and create the tween with the same identifier
+            const string localTweenId = "CenterCharacterFade";
+            // Kill any existing tween with the same id to clean up old animations
+            DOTween.Kill(localTweenId);
+
+            // Also kill the stored instance tween if it's active (defensive)
+            if (Instance.centerCharacterTween != null && Instance.centerCharacterTween.IsActive())
+            {
+                Instance.centerCharacterTween.Kill(true);
+                Instance.centerCharacterTween = null;
+            }
+            // Set sprite and ensure image alpha is zero before fade-in
+            Instance.centerCharacterImage.sprite = targetSprite;
+            Instance.centerCharacterImage.gameObject.SetActive(true);
+            if (Instance.currentActiveCharacter == character)
+            {
+                return;
+            }
             Instance.currentActiveCharacter = character;
+
+
+            // Use image color alpha only (no CanvasGroup). Local id per-call as requested.
+
+            // Ensure color alpha is set to 0
+            Color startCol = Instance.centerCharacterImage.color;
+            startCol.a = 0f;
+            Instance.centerCharacterImage.color = startCol;
+
+            // Shared restore function for both Complete and Kill
+            Action restoreToSolid = () =>
+            {
+                Color cc = Instance.centerCharacterImage.color;
+                cc.a = 1f;
+                Instance.centerCharacterImage.color = cc;
+                Instance.centerCharacterTween = null;
+            };
+
+            // Create fade-in tween and assign id so it can be killed later
+            Instance.centerCharacterTween = Instance.centerCharacterImage.DOFade(1f, 0.18f)
+                .SetId(localTweenId)
+                .SetUpdate(true)
+                .OnComplete(() => restoreToSolid())
+                .OnKill(() => restoreToSolid());
         }
-        Instance.centerCharacterImage.sprite = targetSprite;
-        Instance.centerCharacterImage.gameObject.SetActive(true);
     }
+
+
 
     // BACKGROUND COMMANDS
     [YarnCommand("SetBGSprite")]
