@@ -187,7 +187,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             // Position the image below the view so it can slide up
             var rt = Instance.centerCharacterImage.rectTransform;
             var anchored = rt.anchoredPosition;
-            anchored.y = -50f;
+            anchored.y = -25f;
             rt.anchoredPosition = anchored;
 
             // Shared restore function for both Complete and Kill - ensure final position and alpha
@@ -208,8 +208,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             Sequence seq = DOTween.Sequence();
             seq.SetId(localTweenId)
                .SetUpdate(true)
-               .Append(rt.DOAnchorPosY(0f, 0.25f).SetEase(Ease.OutCubic))
-               .Join(Instance.centerCharacterImage.DOFade(1f, 0.5f))
+               .Append(rt.DOAnchorPosY(0f, 0.2f).SetEase(Ease.OutCubic))
+               .Join(Instance.centerCharacterImage.DOFade(1f, 0.25f))
                .OnComplete(() => restoreToSolid())
                .OnKill(() => restoreToSolid());
         }
