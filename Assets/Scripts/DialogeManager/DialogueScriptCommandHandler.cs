@@ -28,7 +28,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] float musicFadeDuration = 1f;
 
     // Dictionary for sprite name to index mapping
-    private Dictionary<string, Sprite> spriteNameToIndex;
+    public static Dictionary<string, Sprite> spriteNameToIndex;
 
     private Dictionary<String, AudioClip> musicDictionary;
     void Awake()
@@ -66,7 +66,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-    private void InitializeSpriteMapping()
+    public static void InitializeSpriteMapping()
     {
         // Initialize sprite name to index mapping
         spriteNameToIndex = new Dictionary<string, Sprite>();
@@ -127,12 +127,12 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
         Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
     }
-    private static Sprite GetSpriteByName(string spriteName)
+    public static Sprite GetSpriteByName(string spriteName)
     {
         string normalizedKey = NormalizeName(spriteName);
-        if (Instance.spriteNameToIndex.ContainsKey(normalizedKey) || Instance.spriteNameToIndex[normalizedKey] != null)
+        if (spriteNameToIndex.ContainsKey(normalizedKey) || spriteNameToIndex[normalizedKey] != null)
         {
-            return Instance.spriteNameToIndex[normalizedKey];
+            return spriteNameToIndex[normalizedKey];
         }
         else
         {
