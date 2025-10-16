@@ -109,7 +109,7 @@ Ramu: Rule four: No fighting if someone calls it "old"—old means seasoned, lik
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
 Raju: Understood.
 
-<<SetCharacterExpression "Raju" "SeriousWithBat">>//TODO: Evalueate Expression
+<<SetCharacterExpression "Raju" "RajuCurious">>//TODO: Evalueate Expression
 Raju: Bhai, this faded sticker… who's this player?
 
 
