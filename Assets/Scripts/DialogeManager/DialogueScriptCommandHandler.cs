@@ -179,28 +179,39 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             Instance.centerCharacterImage.sprite = targetSprite;
             Instance.centerCharacterImage.gameObject.SetActive(true);
 
-
-            // Use image color alpha only (no CanvasGroup). Local id per-call as requested.
-
             // Ensure color alpha is set to 0
             Color startCol = Instance.centerCharacterImage.color;
             startCol.a = 0f;
             Instance.centerCharacterImage.color = startCol;
 
-            // Shared restore function for both Complete and Kill
+            // Position the image below the view so it can slide up
+            var rt = Instance.centerCharacterImage.rectTransform;
+            var anchored = rt.anchoredPosition;
+            anchored.y = -25f;
+            rt.anchoredPosition = anchored;
+
+            // Shared restore function for both Complete and Kill - ensure final position and alpha
             Action restoreToSolid = () =>
             {
+                // Ensure fully opaque
                 Color cc = Instance.centerCharacterImage.color;
                 cc.a = 1f;
                 Instance.centerCharacterImage.color = cc;
+
+                // Ensure anchored position is at 0
+                var a = rt.anchoredPosition;
+                a.y = 0f;
+                rt.anchoredPosition = a;
             };
 
-            // Create fade-in tween and assign id so it can be killed later
-            Instance.centerCharacterImage.DOFade(1f, 0.18f)
-                 .SetId(localTweenId)
-                 .SetUpdate(true)
-                 .OnComplete(() => restoreToSolid())
-                 .OnKill(() => restoreToSolid());
+            // Create a sequence to move up and fade in at the same time, assign id so it can be killed later
+            Sequence seq = DOTween.Sequence();
+            seq.SetId(localTweenId)
+               .SetUpdate(true)
+               .Append(rt.DOAnchorPosY(0f, 0.2f).SetEase(Ease.OutCubic))
+               .Join(Instance.centerCharacterImage.DOFade(1f, 0.25f))
+               .OnComplete(() => restoreToSolid())
+               .OnKill(() => restoreToSolid());
         }
     }
 
