@@ -50,7 +50,7 @@ public static class YarnScriptsValaditionTests
 
             var issues = new List<string>();
             //Test to Run
-            issues.AddRange(TestEmotionSpriteExists(text));
+            issues.AddRange(TestYarnCommands(text));
 
             //Summarise Results
             if (issues.Count > 0)
@@ -109,11 +109,11 @@ public static class YarnScriptsValaditionTests
         return issues;
     }
 
-    static List<string> TestEmotionSpriteExists(string text)
+    static List<string> TestYarnCommands(string text)
     {
         List<string> issues = new List<string>();
 
-        // Accept either single or double quotes for both values
+        // Test SetCharacterExpression //Example Command <<SetCharacterExpression "Ramu" "Excited">>
         var setCharExprRegex = new Regex(@"<<\s*SetCharacterExpression\s+['""]([^'""]+)['""]\s+['""]([^'""]+)['""]\s*>>", RegexOptions.IgnoreCase);
         var setCharMatches = setCharExprRegex.Matches(text);
         var nameExpressionPairs = setCharMatches.Cast<Match>()
@@ -132,6 +132,24 @@ public static class YarnScriptsValaditionTests
                     issues.Add($"No sprite found for character expression: {combined}");
             }
         }
+
+        // Test SetBGSprite //Example Command <<SetBGSprite hutInterior>>
+        var setBgSpriteRegex = new Regex(@"<<\s*SetBGSprite\s+([a-zA-Z0-9_]+)\s*>>", RegexOptions.IgnoreCase);
+        var setBgMatches = setBgSpriteRegex.Matches(text);
+        var bgNames = setBgMatches.Cast<Match>()
+            .Select(m => m.Groups[1].Value.Trim())
+            .Where(s => !string.IsNullOrEmpty(s))
+            .Distinct()
+            .ToList();
+        foreach (var bgName in bgNames)
+        {
+            if (DialogueScriptCommandHandler.GetSpriteByName(bgName) == null)
+            {
+                if (!issues.Contains($"No sprite found for background: {bgName}"))
+                    issues.Add($"No sprite found for background: {bgName}");
+            }
+        }
+        
 
         return issues;
     }

@@ -96,7 +96,7 @@ Raju: Ready.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Rule one: You'll study first—even Sachin had homework.
 
-<<SetCharacterExpression "Ramu" "Neutra">>
+<<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Rule two: You'll share—gully cricket is not only for heroes.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
