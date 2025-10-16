@@ -21,9 +21,6 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] GameObject overInfoPanel; // Panel to show over info
     [SerializeField] TextMeshProUGUI overInfoText; // Text for over information
-    
-    [Header("Countdown Settings")]
-    [SerializeField] float countdownDuration = 1f; // Duration each number shows
     public static Action onFirstOverAnimationComplete;
     
     void Awake()
