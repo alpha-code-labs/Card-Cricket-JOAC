@@ -70,16 +70,18 @@ public static class YarnScriptsValaditionTests
             if (!System.Enum.TryParse(pair.name, out Characters _))
             {
                 issues.Add($"Invalid character name: {pair.name}");
+                continue; // Skip further checks if the name is invalid
             }
             if (!System.Enum.TryParse(pair.expr, out EmotionType _))
             {
                 issues.Add($"Invalid character expression: {pair.expr}");
+                continue; // Skip further checks if the name is invalid
             }
             var combined = (pair.name + pair.expr).Replace(" ", "");
             if (DialogueScriptCommandHandler.GetSpriteByName(combined, false) == null)
             {
-                // if (!issues.Contains($"No sprite found for character expression: {combined}"))
                 issues.Add($"No sprite found for character expression: {combined}");
+                continue; // Skip further checks if the name is invalid
             }
         }
         // Test SetBGSprite //Example Command <<SetBGSprite hutInterior>>
