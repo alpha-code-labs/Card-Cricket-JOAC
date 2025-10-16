@@ -108,7 +108,7 @@ MunnaBhai: But come back tomorrow morning if you're serious. We'll talk more the
 <<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: Thank you, bhai! I'll be here early tomorrow!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the busy shop, the sounds of mechanical work and customer negotiations fill his ears. Munna Bhai's initial skepticism has only strengthened his determination to prove his genuine commitment to learning.
 
 <<set $MunnaBhai_Day = 2>>
@@ -217,7 +217,7 @@ Raju: Can I come back tomorrow with a better answer?
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
 MunnaBhai: Yes, beta. Think carefully about what you want to learn and how you can help.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes, Raju recognizes that Munna Bhai's question represents a shift from polite dismissal to serious consideration. The mechanic's frustration about society's undervaluation of skilled trades has transformed his motivation into genuine respect.
 
 <<set $MunnaBhai_Day = 3>>
@@ -325,7 +325,7 @@ Raju: Thank you for sharing your knowledge, bhai!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll be the most careful and respectful student you've ever had.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins learning basic mechanical techniques under careful instruction, both understand that his choice represents commitment to technical foundation rather than seeking immediate involvement. The decision to start with fundamentals reflects respect for complexity and the mechanic's willingness to invest in genuine teaching.
 
 <<set $MunnaBhai_Day = 4>>
@@ -391,7 +391,7 @@ Raju: I won't disappoint you, bhai!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Every customer will understand why professional work creates better results.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju prepares for customer service responsibilities, both recognize his choice represents bridging the gap between professional expertise and customer understanding. The decision reflects growing confidence in his genuine appreciation and ability to communicate quality's value over shortcuts.
 
 <<set $MunnaBhai_Day = 4>>
@@ -454,7 +454,7 @@ Raju: I'll approach this systematically, bhai!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Every observation will honor the complexity of your work.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins his systematic analysis of workshop operations, both understand his choice represents an unusual approach combining deep respect with strategic insights. The focus on workflow rather than direct mechanical work reflects belief that intellectual contribution might prove equally valuable.
 
 <<set $MunnaBhai_Day = 4>>
@@ -543,7 +543,7 @@ MunnaBhai: Good! Your attitude shows real promise.
 <<SetCharacterExpression "MunnaBhai" "Skeptical">>
 MunnaBhai: Now let's see if your performance matches your enthusiasm.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning session intensifies with tool care and preparation work, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The hands-on work tests not only technical abilities but capacity to maintain quality under pressure.
 
 <<set $MunnaBhai_Day = 5>>
@@ -618,7 +618,7 @@ Raju: I understand! Balance empathy with education.
 <<SetCharacterExpression "MunnaBhai" "Proud">>
 MunnaBhai: You learn quickly, beta! Let's see how you do with real customers.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning session prepares Raju for customer interactions, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The customer service role tests communication skills and capacity to represent quality under pressure.
 
 <<set $MunnaBhai_Day = 5>>
@@ -696,7 +696,7 @@ Raju: I'll keep that in mind, bhai. Practical improvements only!
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
 MunnaBhai: Good! Now observe quietly and take detailed notes.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins his systematic observation of workshop operations, both understand the next hours will prove whether his analytical approach can identify genuine improvements. The efficiency focus tests his ability to balance fresh perspective with respect for established expertise.
 
 <<set $MunnaBhai_Day = 5>>
@@ -767,7 +767,7 @@ MunnaBhai: Exactly! Let's see if you can maintain yesterday's quality with incre
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I won't let you down!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day unfolds with expanded responsibilities and higher expectations, both recognize they're moving beyond the experimental phase into potentially meaningful relationship. The progression from basic introduction to complex challenges reflects growing mutual trust and competence.
 
 <<set $MunnaBhai_Day = 6>>
@@ -886,7 +886,7 @@ MunnaBhai: And I gain confidence that these skills will receive proper respect.
 <<SetCharacterExpression "MunnaBhai" "Overjoyed">>
 MunnaBhai: From the next generation!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with an ongoing apprenticeship established, Raju and Munna Bhai understand they've created something valuable. They've demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge gaps to create partnerships that strengthen both individuals and the skilled trade systems they work to preserve.
 
 <<set $MunnaBhai_Complete = true>>

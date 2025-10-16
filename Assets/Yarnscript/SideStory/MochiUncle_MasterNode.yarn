@@ -114,7 +114,7 @@ Raju: And understand how things really work.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn that kind of wisdom.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the cobbler shop, the sounds of hammering and stitching still echo in his ears. He carries deep appreciation for the precision required in traditional craftsmanship. Mochi Uncle's skepticism about young people's commitment has only intensified his resolve.
 
 <<set $MochiUncle_Day = 2>>
@@ -222,7 +222,7 @@ MochiUncle: And commitment.
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: What exactly do you think you could contribute to traditional craftsmanship?
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their second conversation concludes with Mochi Uncle's direct question, Raju recognizes his persistent interest has moved beyond polite dismissal into serious consideration. The revelation of the craftsman's sadness about his children rejecting the family trade has transformed Raju's motivation from simple curiosity into genuine commitment.
 
 <<set $MochiUncle_Day = 3>>
@@ -324,7 +324,7 @@ Raju: Thank you for sharing your knowledge, uncle!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be the most careful and respectful student you've ever had for traditional techniques.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins his introduction to traditional cobbling techniques, both understand his choice to focus on fundamental skills represents commitment to understanding the technical foundation of centuries-old craftsmanship. The decision to start with basic tool care reflects respect for the complexity of traditional methods.
 
 <<set $MochiUncle_Day = 4>>
@@ -382,7 +382,7 @@ Raju: Every customer will leave understanding why traditional craftsmanship crea
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Longer-lasting results than modern shortcuts.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju prepares to take on customer service responsibilities that put him in direct contact with people whose appreciation for traditional craftsmanship could determine whether these skills survive, both recognize his choice represents a desire to bridge the gap between ancient techniques and modern customer expectations.
 
 <<set $MochiUncle_Day = 4>>
@@ -440,7 +440,7 @@ Raju: Every observation will honor the complexity of your craft.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: While helping others understand why traditional skills deserve preservation and respect.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju embarks on his mission to document and preserve traditional cobbling knowledge with the goal of educating others, both participants understand his choice represents an unusual approach that combines deep respect for traditional methods with modern communication strategies. The decision reflects his belief that cultural education might prove as valuable as technical skill development.
 
 <<set $MochiUncle_Day = 4>>
@@ -513,7 +513,7 @@ MochiUncle: Now let's see if your performance matches your reverence for traditi
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Real craftsmanship begins now.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning work session intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work creates mounting pressure that will test not only technical abilities but also capacity to maintain quality.
 
 <<set $MochiUncle_Day = 5>>
@@ -575,7 +575,7 @@ MochiUncle: Now let's see if you can help customers understand what makes tradit
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Real customer education begins now.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning customer interactions begin with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. Working with customers creates mounting pressure that will test not only his knowledge but also his ability to communicate traditional values effectively.
 
 <<set $MochiUncle_Day = 5>>
@@ -637,7 +637,7 @@ MochiUncle: Now let's see if you can capture the essence of traditional craftsma
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Real documentation begins now.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the morning observation session begins with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The documentation work creates mounting pressure that will test not only his observation skills but also his capacity to understand and communicate the subtleties of traditional craft.
 
 <<set $MochiUncle_Day = 5>>
@@ -701,7 +701,7 @@ MochiUncle: Then let's see if you can maintain yesterday's quality while handlin
 <<SetCharacterExpression "MochiUncle" "Neutral">>
 MochiUncle: Traditional craftsmanship demands excellence in every detail, every time.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day of collaboration unfolds with expanded responsibilities and higher expectations, both Raju and Mochi Uncle recognize they are moving beyond the experimental phase into a potentially meaningful relationship. The progression from basic introduction to more complex techniques reflects growing mutual trust and competence.
 
 <<set $MochiUncle_Day = 6>>
@@ -810,7 +810,7 @@ MochiUncle: And I gain hope that these skills will survive into the next generat
 <<SetCharacterExpression "MochiUncle" "Loving">>
 MochiUncle: Through someone who truly understands their value and cultural importance.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with the establishment of an ongoing apprenticeship that benefits both participants while serving the broader goal of cultural preservation, Raju and Mochi Uncle understand they have created something more valuable than temporary assistance - they have demonstrated how mutual respect and shared commitment to excellence can bridge generational gaps.
 
 <<set $MochiUncle_Day = 7>>
@@ -865,7 +865,7 @@ MochiUncle: That's all any master craftsman can ask for.
 <<SetCharacterExpression "MochiUncle" "Proud">>
 MochiUncle: A student who respects the craft and commits to preserving it for future generations.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their week of collaboration concludes with both participants committed to continuing their partnership, Raju carries not just technical knowledge but deeper understanding about the value of traditional wisdom, the dignity of skilled work, and the importance of preserving cultural heritage. The apprenticeship represents more than learning a trade - it embodies the bridging of generations through mutual respect and shared commitment to excellence.
 
 <<set $MochiUncle_Complete = true>>

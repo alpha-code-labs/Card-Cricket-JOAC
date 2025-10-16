@@ -131,7 +131,7 @@ Raju: I understand, bhaiya. I'll be smart about it.
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: That's good to hear, champ. Keep that balance in mind.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 As Raju walks away, he carries both Suresh's story and his warning about balancing passion with practicality.
@@ -411,7 +411,7 @@ Raju: So you'll help me, bhaiya? Guide me through the challenges?
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Absolutely, champ. Let's turn my experience into your advantage.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 Their mentor-student relationship is solidifying. Suresh's abandoned dreams are finding new purpose through Raju's journey.
@@ -559,7 +559,7 @@ Raju: Your cricket journey is still going, bhaiya. Just in a different way.
 <<SetCharacterExpression "Suresh" "Proud">>
 Suresh: You're right, champ. And I'm starting to see that clearly now.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 Raju absorbs Suresh's practical advice about networking, tournaments, and documentation. This insider knowledge could save years of trial and error.
@@ -716,7 +716,7 @@ Raju: Thank you, bhaiya. For everything.
 <<SetCharacterExpression "Suresh" "Loving">>
 Suresh: No, thank you, champ. You've given my story a happy ending after all.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 // Scene Conclusion
 As Raju departs carrying practical guidance and ongoing support promises, he recognizes that Suresh's mentorship embodies the power of community support to overcome systemic barriers.

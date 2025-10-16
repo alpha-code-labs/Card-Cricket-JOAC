@@ -130,7 +130,7 @@ CoachSharma: Until you understand that difference, you're wasting both my time a
 
 <<PlayBackgroundMusic Emotional_1>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away, Coach Sharma's harsh words echo in his mind.
 
@@ -305,7 +305,7 @@ Raju: Thank you, sir.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I won't disappoint you.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju departs the academy, he understands that tomorrow will mark the beginning of a different kind of test.
 
@@ -358,7 +358,7 @@ Raju: I'll be here, sir.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: My fire won't fade - it only grows stronger with challenge.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju leaves the academy, he feels the intensity of someone who has staked everything.
 
@@ -414,7 +414,7 @@ Raju: Planning without execution is worthless.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: But execution without planning is inefficient.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju leaves the academy, his strategic approach has been accepted as a legitimate test.
 
@@ -489,7 +489,7 @@ Raju: Quality matters more than speed, sir.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I want to earn your respect through reliability, not flashiness.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju completes his first morning of unglamorous preparation work, he begins to understand something important.
 
@@ -551,7 +551,7 @@ Raju: Because it does depend on it, sir.
 <<SetCharacterExpression "Raju" "Loving">>
 Raju: Cricket isn't just what I want to do - it's who I am.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju completes his first morning of passionate labor, he demonstrates something crucial.
 
@@ -612,7 +612,7 @@ Raju: Understanding the system makes the work more meaningful, sir.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Every task becomes part of the larger goal.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju completes his first morning of systematic preparation work, he demonstrates a key insight.
 
@@ -738,7 +738,7 @@ CoachSharma: Money for equipment, facility time, individual instruction, structu
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
 CoachSharma: Money that I know you and your family don't have.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju absorbs the reality, the familiar weight returns.
 
@@ -874,7 +874,7 @@ CoachSharma: But if you can maintain this commitment...
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 CoachSharma: Then you might prove worthy of serious coaching investment.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju departs the academy with a concrete path toward earning legitimate coaching opportunity, he understands the truth.
 
@@ -1027,7 +1027,7 @@ CoachSharma: But through character demonstration that impressed a coach who thou
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: Don't waste this opportunity.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 
 As Raju walks away from the academy carrying the promise of unofficial coaching and tournament opportunity, he understands the weight of this moment.
 

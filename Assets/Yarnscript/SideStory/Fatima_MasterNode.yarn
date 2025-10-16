@@ -90,7 +90,7 @@ Raju: I'm not afraid of hard work, aunty.
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: My mother taught me that honest labor is something to be proud of, not to run away from.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the dhaba, he carries admiration for Fatima's skill under pressure and determination to prove his offer represents genuine commitment. The complexity of managing everything simultaneously has opened his eyes to sophisticated multitasking that successful restaurant ownership requires.
 
 <<set $Fatima_Day = 2>>
@@ -172,7 +172,7 @@ Fatima: You keep saying you want to help, but help means different things to dif
 <<SetCharacterExpression "Fatima" "Quizzical">>
 Fatima: What exactly do you think you could contribute to a business like this?
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with Fatima's direct question, Raju understands his persistent offers have moved beyond polite rejection into serious consideration. The revelation of her personal challenges has transformed his motivation from casual helpfulness into genuine commitment.
 
 <<set $Fatima_Day = 3>>
@@ -250,7 +250,7 @@ Fatima: No cooking near heat until you prove you understand food safety and can 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you for the chance, aunty! I'll be the most careful and attentive assistant you've ever had.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju begins his introduction to restaurant food preparation under Fatima's watchful guidance, both understand his choice represents commitment to understanding the technical foundation of her business. Starting with basic vegetable preparation reflects respect for the complexity of professional cooking.
 
 <<set $Fatima_Day = 4>>
@@ -284,7 +284,7 @@ Fatima: Very well - you can help with serving and basic customer interaction, bu
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I won't let you down, aunty! Every customer will leave here feeling valued and satisfied.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju prepares for customer service responsibilities, both recognize his choice represents desire to understand the human side of restaurant operations. The decision to trust him with customer interactions reflects Fatima's growing confidence in his maturity.
 
 <<set $Fatima_Day = 4>>
@@ -318,7 +318,7 @@ Fatima: But remember, any changes must be practical and cost-effective.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll approach this scientifically, aunty! Every suggestion will be based on careful observation and practical benefit.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju embarks on systematic analysis of dhaba operations, both understand his choice represents an unusual approach combining respect for Fatima's experience with confidence in his analytical abilities. The decision reflects his belief that intellectual contribution might prove as valuable as physical assistance.
 
 <<set $Fatima_Day = 4>>
@@ -413,7 +413,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 <<SetCharacterExpression "Fatima" "Determined">>
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -497,7 +497,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 <<SetCharacterExpression "Fatima" "Determined">>
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -581,7 +581,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 <<SetCharacterExpression "Fatima" "Determined">>
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -661,7 +661,7 @@ Fatima: And reputation brings loyal customers who support you through good times
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll remember that lesson, aunty. It applies to everything in life, not just business.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As the second day unfolds with expanded responsibilities and higher expectations, both recognize they are moving into a potentially sustainable working relationship. The progression from basic assistance to more complex tasks reflects growing mutual trust and competence, while continued emphasis on customer satisfaction reinforces that personal success must always serve the larger goal of business excellence.
 
 <<set $Fatima_Day = 6>>
@@ -735,7 +735,7 @@ Raju: I'm grateful for everything you've taught me, aunty. This dhaba has become
 <<SetCharacterExpression "Fatima" "Loving">>
 Fatima: And you've become like family to me, beta. Welcome to the team, officially!
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As their conversation concludes with formalization of a working relationship benefiting both participants while serving the larger community, Raju and Fatima understand they have created something more valuable than temporary assistance. They have demonstrated how mutual respect, dedicated effort, and shared commitment to excellence can bridge generational and circumstantial differences to create partnerships that strengthen both individuals and the communities they serve.
 
 <<set $Fatima_Complete = true>>

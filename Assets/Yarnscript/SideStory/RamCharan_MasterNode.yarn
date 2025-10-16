@@ -21,31 +21,31 @@ position: -7,-175
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Seeking a quiet place to read and study, Raju visits the school library.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Away from the noise and distractions of his crowded home.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He hopes to find both educational resources and peaceful atmosphere.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The hushed atmosphere of the school library envelops him.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The smell of aging paper and quiet learning creates a sanctuary.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 This contrasts sharply with the chaos of his overcrowded home.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Tall shelves lined with books stretch toward the ceiling like guardians of wisdom.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Soft afternoon light filters through dusty windows.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The space carries an almost sacred quality.
 
 <<SetCharacterExpression "RamCharan" "Angry">>
@@ -147,22 +147,22 @@ RamCharan: This library doesn't need another sports-obsessed student.
 <<SetCharacterExpression "RamCharan" "Disgusted">>
 RamCharan: Who treats education as secondary to entertainment.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju exits the library, Ram Charan's harsh words ring in his ears.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He feels the familiar sting of having his dreams dismissed as childish fantasies.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The librarian's passionate defense of learning resonates with something deep within him.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Even as the rejection wounds his pride.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He confronts an uncomfortable question.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Does pursuing cricket represent an escape from responsibilities or a legitimate path toward a meaningful future?
 
 <<set $RamCharan_Day = 2>>
@@ -176,28 +176,28 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Despite yesterday's harsh rejection, Raju returns to the library.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Determined to prove that his interest in learning is genuine and persistent.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The library's familiar quiet embraces him as he returns for the second day.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His determination to prove his intellectual seriousness is strengthened rather than weakened.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The rows of books seem less intimidating today.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 More like allies in his quest to demonstrate that academic curiosity and athletic passion can coexist.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He knows that earning the librarian's respect will require more than simple persistence.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 It will demand genuine engagement with learning for its own sake.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
@@ -333,16 +333,16 @@ Raju: Thank you, sir.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I won't disappoint you.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the library, he feels the exhilaration of someone who has chosen to prove himself through intellectual rigor.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Rather than defensive arguments.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His decision to embrace the most demanding path available reflects a growing understanding.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 That true confidence comes not from avoiding difficult tests but from meeting them head-on.
 
 <<set $RamCharan_Day = 3>>
@@ -394,16 +394,16 @@ Raju: I'll be here, sir.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Thank you for considering my perspective.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju departs the library, he feels the satisfaction of someone whose thoughtful perspective has earned respect.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Rather than dismissal.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His choice to seek integration rather than choosing sides reflects a wisdom beyond his years.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Tomorrow will reveal how intellectual discipline and passionate pursuits might actually enhance each other.
 
 <<set $RamCharan_Day = 3>>
@@ -458,16 +458,16 @@ Raju: Thank you for the opportunity, sir.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I won't let you down.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the library with the opportunity to earn his place through humble service, he understands something important.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His willingness to work without immediate recognition has impressed Ram Charan.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 In ways that academic prowess alone might not have achieved.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His choice of the service path reflects a maturity that recognizes respect must be earned through consistent action.
 
 <<set $RamCharan_Day = 3>>
@@ -490,28 +490,28 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Raju returns determined to prove his intellectual capacity.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Through rigorous academic engagement with challenging materials.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The library welcomes him for his third consecutive day.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He arrives prepared to engage with whatever intellectual challenges await.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His mind is focused and eager despite the uncertainty.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His consistent return demonstrates a level of academic commitment.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 That goes beyond proving a point to the librarian.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 It reflects a genuine hunger for knowledge that parallels his passion for cricket.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -535,25 +535,25 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Raju returns hoping to learn how to authentically balance his dual interests.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 In cricket and academics.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The library atmosphere carries an air of anticipation.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As he arrives for his third day.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Eager to understand how Ram Charan's promised revelation about integration might transform his understanding.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His balanced approach to earning the librarian's respect has opened doors to insights.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 That might resolve the apparent conflict between intellectual development and cricket dreams.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -577,25 +577,25 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PublicSchool>>
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Raju returns ready to demonstrate his commitment.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Through humble service and careful attention to library work.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The library awaits his service-oriented approach.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He arrives prepared to demonstrate his respect for knowledge.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 Through careful attention to the practical needs of maintaining and organizing educational resources.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 His willingness to earn his place through humble labor has clearly impressed Ram Charan.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 And opened possibilities for deeper trust and revelation.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
@@ -729,19 +729,19 @@ RamCharan: Use this knowledge wisely, respect these materials completely.
 <<SetCharacterExpression "RamCharan" "Proud">>
 RamCharan: And perhaps you'll go further than either of us dreamed possible.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the library carrying both the revelation of Ram Charan's hidden cricket passion and access to professional cricket materials, he understands something profound.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He has discovered something far more valuable than either academic resources or athletic guidance alone.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 He has found a mentor who embodies the successful integration of intellectual discipline and passionate pursuit.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 The librarian's trust and the treasure trove of cricket knowledge represent a bridge between his dual interests.
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 A bridge he never imagined possible.
 
 <<set $RamCharan_Complete = true>>

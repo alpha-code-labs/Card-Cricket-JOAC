@@ -70,7 +70,7 @@ Raju: Thank you, Baba. I will come back. I want to learn this kind of focus.
 <<PlayBackgroundMusic Spiritual_1 >>
 
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 // Scene Conclusion
 As Raju walks home from the temple carrying both his cricket bat and new perspective on the relationship between mental discipline and physical performance, he understands that Amarjeet has offered him something more valuable than cricket technique - insight into the mental foundations that support all achievement. His voluntary visit has introduced him to concepts of focus and steadiness that could transform not just his game but his entire approach to pursuing goals.
 
@@ -118,7 +118,7 @@ Amarjeet: Come back tomorrow if you wish to learn more about applying this disci
 
 
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 // Scene Conclusion
 As Raju walks home from the temple carrying both practical techniques for developing focus and growing recognition that Amarjeet's teachings extend far beyond cricket, he feels the satisfaction of a student who has engaged seriously with challenging material. His voluntary return has deepened the priest's investment in his education and opened the door to more advanced teachings about mental discipline and its applications.
 
@@ -176,7 +176,7 @@ Amarjeet: This is the gift of spiritual discipline, child. When we connect to so
 Amarjeet: Tomorrow, we will learn how service to others creates the selflessness needed for perfect focus.
 
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the temple after choosing the path of devotion, he carries with him a sense of inner quiet that he has never experienced before. The meditation session has revealed glimpses of a deeper peace that exists beneath the surface turbulence of daily worries and ambitions, opening his heart to the possibility that spiritual practice might be the key to the mental steadiness he seeks.
 <<set $Amarjeet_Day = 4>>
 <<EndEvent true>>
@@ -202,7 +202,7 @@ Amarjeet: Exactly! Comfort breeds weakness. Only by pushing through mental resis
 Amarjeet: Tomorrow, we train your mind to handle pressure. Real warriors perform best when stakes are highest.
 
 
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the temple after choosing the warrior's path, his arms still trembling slightly from the sustained effort, he feels a fierce pride in having pushed through the mental barriers that normally cause him to quit when training becomes uncomfortable. The physical challenge has awakened something primal and determined within him, revealing that mental toughness can be forged through deliberate confrontation with discomfort.
 <<set $Amarjeet_Day = 4>>
 <<EndEvent true>>
@@ -226,7 +226,7 @@ Amarjeet: Precisely! And when you understand the mechanism, you can design bette
 
 <<SetCharacterExpression "Amarjeet" "Confident">>
 Amarjeet: Tomorrow, we will study how emotions affect concentration, and learn to work with your mind's natural patterns.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju leaves the temple after choosing the path of understanding, his mind buzzes with the satisfaction of someone who has gained intellectual clarity about processes he previously experienced only intuitively. The scientific approach has awakened his natural curiosity and analytical thinking, revealing that knowledge of mental mechanisms can transform mindfulness practice from mysterious ritual into precise psychological engineering.
 <<set $Amarjeet_Day = 4>>
 <<EndEvent true>>
@@ -263,7 +263,7 @@ Raju: Baba, while serving food, I noticed my mind wasn't thinking about my crick
 
 <<SetCharacterExpression "Amarjeet" "Confident">>
 Amarjeet: Service teaches the ego to step aside. When 'I want' becomes 'How can I help?', focus appears naturally.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju walks home after a day spent in service to others, he marvels at how completely his usual self-centered concerns had disappeared while he was focused on meeting the needs of hungry neighbors. The experience has revealed a different dimension of mental discipline - one that arises not from forcing the mind to concentrate, but from allowing the heart to expand beyond the boundaries of personal desire.
 
 <<set $Amarjeet_Day = 5>>
@@ -291,7 +291,7 @@ Raju: Baba, the distractions actually helped! Fighting against them made my conc
 
 <<SetCharacterExpression "Amarjeet" "Proud">>
 Amarjeet: A warrior's mind becomes stronger through battle, not rest. You are learning to make adversity your ally.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju walks home after surviving the gauntlet of intentional distractions, he carries himself with the confident bearing of someone who has discovered an inner fortress that external chaos cannot breach. The warrior training has revealed that mental strength grows not by avoiding challenges but by meeting them head-on with disciplined determination, transforming every obstacle into an opportunity for greater resilience.
 
 <<set $Amarjeet_Day = 5>>
@@ -319,7 +319,7 @@ Raju: Baba, understanding the connection between body and mind makes the techniq
 
 <<SetCharacterExpression "Amarjeet" "Proud">>
 Amarjeet: Knowledge transforms practice from blind following into intelligent cultivation. You become your own teacher.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju walks home after understanding the scientific foundations of mind-body integration, he feels the empowerment that comes from replacing superstition with genuine comprehension. His analytical approach has revealed that mental training follows natural laws that can be studied, predicted, and optimized, transforming him from a passive recipient of teachings into an active investigator of his own psychological development.
 
 <<set $Amarjeet_Day = 5>>
@@ -357,7 +357,7 @@ Raju: Baba, after the breathing practice, when I picked up my cricket bat, it fe
 
 <<SetCharacterExpression "Amarjeet" "Proud">>
 Amarjeet: This is what happens when the spiritual and physical unite through disciplined practice.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju departs the temple after experiencing the profound integration of breath, spirit, and physical skill, he understands that the path of devotion has led him to a place where cricket becomes not just a game but a form of moving meditation. His chosen spiritual approach has revealed that the highest levels of athletic performance emerge naturally when the practitioner aligns with deeper sources of power and peace.
 
 <<set $Amarjeet_Day = 6>>
@@ -385,7 +385,7 @@ Raju: Baba, I practiced imagining the biggest match of my life, and now regular 
 
 <<SetCharacterExpression "Amarjeet" "Proud">>
 Amarjeet: This is the warrior's gift - turning every challenge into strength, every pressure into opportunity.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju departs the temple after mastering the warrior's path to mental discipline, he moves with the quiet confidence of someone who has forged an unshakeable inner core through deliberate confrontation with difficulty. His chosen approach has revealed that mental toughness is not a natural gift but a skill that can be systematically developed through progressive challenges that stretch the mind's capacity to maintain focus under pressure.
 
 <<set $Amarjeet_Day = 6>>
@@ -413,7 +413,7 @@ Raju: Baba, once I understood my mental patterns, I could predict and prevent my
 
 <<SetCharacterExpression "Amarjeet" "Proud">>
 Amarjeet: This is wisdom - not just knowing what to do, but understanding deeply why it works and how to adapt it.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju departs the temple after mastering the scientific approach to mental discipline, he carries himself with the confidence of someone who has developed genuine expertise in the workings of his own mind. His chosen path of understanding has transformed him from a confused student into a knowledgeable practitioner capable of diagnosing his own mental challenges and designing specific solutions based on proven principles.
 
 <<set $Amarjeet_Day = 6>>
@@ -446,7 +446,7 @@ Raju: Thank you, Baba. You've given me something more valuable than cricket skil
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: Use these gifts wisely, beta, and share them generously. The world needs those who carry inner light.
-<<HideCharacter>>
+<<HideAllCharacters>>
 As Raju walks away from the temple for the final time in this series of teachings, he carries within him not just techniques for mental discipline but a transformed understanding of his own potential and purpose. The accumulated wisdom from his chosen path has created an inner foundation of strength and clarity that will serve him in every future challenge, whether on the cricket field or in the larger arena of life itself.
 
 <<set $Amarjeet_Complete = true>>

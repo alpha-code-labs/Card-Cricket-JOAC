@@ -222,32 +222,11 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-    // BACKGROUND COMMANDS - Legacy index version (for backward compatibility)
-    [YarnCommand("SetBGSpriteIndex")]
-    public static void SetBGSpriteIndex(int index)
-    {
-        if (index >= 0 && index < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[index];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {index} out of range!");
-        }
-    }
-
 
 
     // UTILITY COMMANDS
     [YarnCommand("HideAllCharacters")]
     public static void HideAllCharacters()
-    {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
-    }
-
-    [YarnCommand("HideCharacter")]
-    public static void HideCharacter()
     {
         Instance.leftCharacterImage.gameObject.SetActive(false);
         Instance.rightCharacterImage.gameObject.SetActive(false);
