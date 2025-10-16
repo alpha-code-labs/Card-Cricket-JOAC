@@ -46,6 +46,7 @@ public static class YarnScriptsValaditionTests
             issues.AddRange(TestYarnCommands(text));
         }
         issues = issues.Distinct().ToList();
+        issues.Sort();
         string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
         EditorUtility.DisplayDialog("Yarn script validation", result, "OK");
     }
