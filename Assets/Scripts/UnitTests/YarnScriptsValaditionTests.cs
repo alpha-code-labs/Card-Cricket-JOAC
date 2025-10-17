@@ -5,6 +5,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Yarn.Compiler;
+using Yarn.Unity;
+using Yarn;
+using System;
 
 public static class YarnScriptsValaditionTests
 {
@@ -19,6 +23,7 @@ public static class YarnScriptsValaditionTests
             Debug.LogError($"Yarn folder not found: {yarnFolder}");
             return;
         }
+
 
         var files = Directory.GetFiles(yarnFolder, "*.yarn", SearchOption.AllDirectories);
         if (files.Length == 0)
@@ -49,6 +54,28 @@ public static class YarnScriptsValaditionTests
         issues.Sort();
         string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
         EditorUtility.DisplayDialog("Yarn script validation", result, "OK");
+    }
+    static List<string> TestCalanderSystemAndYarnNodes(string text)//WIP
+    {
+        throw new NotImplementedException();
+        List<string> issues = new List<string>();
+        // Load the specific YarnProject asset
+        string yarnProjectPath = "Assets/Yarnscript/NewProject.yarnproject";
+        YarnProject d = AssetDatabase.LoadAssetAtPath<YarnProject>(yarnProjectPath);
+
+        if (d == null)
+        {
+            Debug.LogError($"Failed to load YarnProject at {yarnProjectPath}");
+            EditorUtility.DisplayDialog("Yarn script validation", $"Failed to load YarnProject at {yarnProjectPath}", "OK");
+            return issues;
+        }
+
+        var s = d.NodeNames;
+        foreach (var node in s)
+        {
+            Debug.Log($"Yarn Node: {node}");
+        }
+        return issues;
     }
     static List<string> TestYarnCommands(string text)
     {
