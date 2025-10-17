@@ -1,0 +1,35 @@
+title: scene_90
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Finals. They posted 100 in 40 balls. Tough ask.
+
+<<SetCharacterExpression "Raju" "Tired">>
+Raju: Two and a half runs per ball. I'm tired but ready.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: This is what we trained for—when body is tired, technique takes over, so trust your basics.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Their coach is watching from the boundary.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Let him—your coach is the handpump at dawn, show them what that teaches.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: Face up chin up.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

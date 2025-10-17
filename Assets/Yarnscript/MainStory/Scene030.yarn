@@ -1,0 +1,32 @@
+title: scene_30
+tags: 
+colorID: 0
+position: 0,0
+---
+
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite kohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Quarterfinals captain. We're batting first.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: How many do we need?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Get 25 from 15 balls. Quick singles won't work. You'll need boundaries.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: That's aggressive batting.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: It's practice tournament. Perfect time to test your attacking shots. Go for it.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

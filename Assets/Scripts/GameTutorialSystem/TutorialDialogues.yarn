@@ -322,7 +322,7 @@ position: 29,267
 <<moveDialogue top>>
 <<showCharacterImage center>>
 <<unhideBallerCard>>
-Ramu: On the top you can see a bunch of stats, the runs you scored, the balls remaining and the wickets you have. All of these can be upgraded as you progress through your journey.
+Ramu: On the top you can see a bunch of stats, the runs you scored, the balls remaining and the wickets you have.
 Ramu: We are all set. Lets try a full task now.
 <<hideCharacterImage>>
 <<startNextScene>>

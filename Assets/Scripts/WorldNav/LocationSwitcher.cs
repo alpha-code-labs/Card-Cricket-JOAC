@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using Unity.Collections.LowLevel.Unsafe;
+using UnityEngine.UI;
 
 public class LocationSwitcher : MonoBehaviour
 {
     public static LocationSwitcher instance;
+    [SerializeField] Button mapButton;
     void Awake()
     {
         instance = this;
@@ -16,6 +18,7 @@ public class LocationSwitcher : MonoBehaviour
     void Start()
     {
         BuildLocationDictionary();
+        SwitchLocation(Locations.MapSprite);
     }
     void BuildLocationDictionary()
     {
@@ -51,6 +54,7 @@ public class LocationSwitcher : MonoBehaviour
         //     Debug.Log("Cannot switch location while dialogue is running.");
         //     return;
         // }
+        mapButton.gameObject.SetActive(location != Locations.MapSprite);
         foreach (var loc in locations)
         {
             loc.SetActive(false); // Deactivate all locations

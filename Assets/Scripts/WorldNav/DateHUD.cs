@@ -14,6 +14,6 @@ public class DateHUD : MonoBehaviour
             dateText.text = "Null Date";
             return;
         }
-        dateText.text = NewDayManager.currentDateRecord.date + "\n" + (NewDayManager.isEvening ? " Evening Time" : " Day Time");
+        dateText.text = PrettyStrings.GetPrettyDateString(NewDayManager.currentDateRecord.date) + "\n" + (NewDayManager.isEvening ? "Evening Time" : "Day Time");
     }
 }

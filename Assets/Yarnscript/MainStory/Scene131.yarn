@@ -10,7 +10,7 @@ position: 0,0
 <<PlayBackgroundMusic light_1>>
 <<SetBGSprite "HutInterior">>
 
-<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+<<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: How did it go?
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -38,7 +38,7 @@ ShivPrasad: in 15 days.
 Raju: In 15 days.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

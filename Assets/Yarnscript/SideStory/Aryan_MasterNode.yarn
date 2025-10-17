@@ -27,38 +27,90 @@ position: -7,-175
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Scene Setup - High-rise complex
-Despite knowing the discomfort it brings, Raju chooses to accompany his mother to the high-rise complex today, carrying her work basket. The Meridian Heights complex represents a world of wealth that contrasts sharply with his own neighborhood.
+Despite knowing the discomfort it brings, Raju accompanies his mother to the high-rise complex today, carrying her work basket.
 
-The gleaming marble floors and pristine glass surfaces of the high-rise complex seem to mock Raju's simple clothes and worn sandals as he follows his mother through corridors that smell of expensive cleaning products and privilege. The weight of social hierarchy presses down on him with each step, while the familiar sting of being judged by appearance alone begins to build in his chest, preparing him for confrontations he knows are inevitable in this gilded environment.
+The gleaming marble floors mock Raju's worn sandals.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Oh, look who's back. The servant boy returns. What's the matter, slum boy - did you lose your way to the garbage dump again?
+The air smells of expensive cleaning products and privilege.
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: I'm not your servant. I'm not anybody's servant. I'm here to help my mother, that's all.
+Each step reminds him of the social hierarchy here. He knows confrontations are inevitable in this gilded world.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Help? Oh, that's rich! That's what poor kids call working for free, isn't it? Your mother cleans our toilets, and you carry her bags. Very inspiring.
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Oh, look who's back.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: I bet you think you're special because you can kick a ball around in the dirt with the other slum kids. But that's not real cricket, you know. You probably can't even hold a bat properly.
+<<SetCharacterExpression "Aryan" "Disgusted">>
+Aryan: The servant boy returns.
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: I can play cricket. Better than you think. Better than you, probably.
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: What's the matter, slum boy?
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Did you lose your way to the garbage dump again?
+
+<<SetCharacterExpression "Raju" "Irritated">>
+Raju: I'm not your servant.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm here to help my mother, that's all.
+
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: Help? Oh, that's rich!
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Your mother cleans our toilets, and you carry her bags.
+
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: Very inspiring.
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: I bet you think you're special because you kick a ball around in the dirt.
+
+<<SetCharacterExpression "Aryan" "Disgusted">>
+Aryan: But that's not real cricket, you know.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: You probably can't even hold a bat properly.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I can play cricket.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Better than you think.
+
+<<SetCharacterExpression "Raju" "Proud">>
+Raju: Better than you, probably.
+
+<<SetCharacterExpression "Aryan" "Astonished">>
+Aryan: Better than me? Ha!
+
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: That's the funniest thing I've heard all week.
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: You with your bare feet and torn clothes?
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: You think you can beat someone with real coaching?
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Tell you what, slum boy.
 
 <<SetCharacterExpression "Aryan" "Excited">>
-Aryan: Better than me? Ha! That's the funniest thing I've heard all week. You with your bare feet and torn clothes think you can play better than someone who has a real bat, real gear, real coaching?
+Aryan: If you're so confident, come back tomorrow.
 
-<<SetCharacterExpression "Aryan" "Serious">>
-Aryan: Tell you what, slum boy. If you're so confident, if you really think you can play - come back tomorrow. Bring whatever pathetic excuse for cricket equipment you have. We'll see just how good you really are.
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: Bring whatever pathetic excuse for cricket equipment you have.
 
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: We'll see just how good you really are.
 
+<<HideAllCharacters>>
 
+Aryan's mocking laughter echoes as Raju walks away. His hands clench into fists.
 
-<<HideCharacter>>
-// Scene Conclusion
-As Raju walks away from the confrontation with Aryan's mocking laughter echoing in his ears, his hands clench into fists while a fire of determination burns away the initial sting of humiliation. The wealthy boy's challenge has awakened something fierce and prideful within him - a recognition that tomorrow's encounter will be about much more than cricket, representing a clash between two different worlds and their competing definitions of worth and capability.
+A fire of determination burns away the initial sting of humiliation.
+
+Tomorrow will be about much more than cricket. It's a clash between two worlds.
 
 <<set $Aryan_Day = 2>>
 <<EndEvent true>>
@@ -70,38 +122,97 @@ tags:
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Scene Setup - High-rise complex, Day 2
-After yesterday's confrontation left him with wounded pride and burning determination, Raju chooses to return to the high-rise complex today, ostensibly to help his mother but secretly hoping for another encounter with Aryan.
+After last confrontation with Aryan, Raju returns to the high-rise complex today.
 
-The luxurious courtyard of the complex seems even more intimidating today as Raju approaches with his simple cricket bat, its worn handle and faded paint standing in stark contrast to the polished marble and manicured landscaping that surrounds him. His heart pounds with a mixture of anticipation and nervousness as he spots Aryan lounging near the fountain, casually handling what appears to be professional-grade cricket equipment with the entitled confidence of someone who has never doubted his own superiority.
+He carries his simple cricket bat, its worn handle standing in stark contrast to the polished marble around him.
+
+His heart pounds as he spots Aryan near the fountain, casually handling professional-grade cricket equipment.
 
 <<SetCharacterExpression "Aryan" "Smiling">>
-Aryan: Well, well. The slum boy returns. And look what I have here - genuine English willow, imported directly from the finest cricket manufacturers. I bet you've never even touched something this valuable, have you?
-
-<<SetCharacterExpression "Raju" "Serious">>
-Raju: It's a beautiful bat, but it's still just a piece of willow wood. The bat doesn't hit the boundaries - the batsman does. Equipment doesn't make you play better, practice and heart do.
-
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: That's exactly what losers say to make themselves feel better about having inferior equipment! When you have proper coaching, professional equipment, and dedicated practice facilities, natural talent becomes irrelevant.
-
-Aryan: You think you can play cricket with your makeshift bats and tennis balls? That's not real cricket - that's just poor kids playing in the dirt and pretending it matters.
-
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: You want to see what I can do? Fine. I'll show you that cricket isn't about how much money your family has or how expensive your equipment is.
+Aryan: Well, well. The slum boy returns.
 
 <<SetCharacterExpression "Aryan" "Excited">>
-Aryan: Oh, this is perfect! The confident little slum boy thinks he can actually compete with someone who has everything he lacks. This will be entertaining.
+Aryan: And look what I have here.
+
+<<SetCharacterExpression "Aryan" "Proud">>
+Aryan: Genuine English willow, imported directly from the finest manufacturers.
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: I bet you've never even touched something this valuable, have you?
+
+<<SetCharacterExpression "Raju" "Neutral">>
+Raju: It's a beautiful bat.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: But it's still just a piece of willow wood.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: The bat doesn't hit the boundaries - the batsman does.
+
+<<SetCharacterExpression "Aryan" "Irritated">>
+Aryan: That's exactly what losers say!
+
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: They make themselves feel better about having inferior equipment.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: When you have proper coaching and professional equipment, natural talent becomes irrelevant.
+
+<<SetCharacterExpression "Aryan" "Disgusted">>
+Aryan: You think you can play cricket with your makeshift bats and tennis balls?
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: That's not real cricket.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: That's just poor kids playing in the dirt and pretending it matters.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: You want to see what I can do?
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Fine. I'll show you.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Cricket isn't about how much money your family has.
+
+<<SetCharacterExpression "Aryan" "Excited">>
+Aryan: Oh, this is perfect!
+
+<<SetCharacterExpression "Aryan" "Overjoyed">>
+Aryan: The confident little slum boy thinks he can actually compete.
+
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: This will be entertaining.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: Tomorrow afternoon, right here in this courtyard. A proper cricket challenge - you with your pathetic equipment against me with my professional gear. My friends will be here to watch.
+Aryan: Tomorrow afternoon, right here in this courtyard.
 
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: I'll be here. And when it's over, you'll understand that respect isn't something money can buy - it's something you earn through skill and character.
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: A proper cricket challenge.
 
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: You with your pathetic equipment against me with my professional gear.
 
-<<HideCharacter>>
-// Scene Conclusion
-As Raju departs the complex with tomorrow's challenge officially accepted, he feels the weight of what he has committed himself to - not just a game of cricket but a public test of everything he believes about talent, effort, and the value of a person regardless of their economic circumstances. The anticipation mixes with anxiety as he realizes that failure tomorrow would validate every cruel assumption about his background and capabilities.
+<<SetCharacterExpression "Aryan" "Excited">>
+Aryan: My friends will be here to watch.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I'll be here.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: And when it's over, you'll understand something important.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Respect isn't something money can buy.
+
+<<HideAllCharacters>>
+
+As Raju departs the complex, he feels the weight of what he has committed to.
+
+Not just a game of cricket, but a public test of everything he believes.
+
+The anticipation mixes with anxiety. Failure tomorrow would validate every cruel assumption about his background.
 
 <<set $Aryan_Day = 3>>
 <<EndEvent true>>
@@ -114,26 +225,61 @@ position: -75,-229
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Scene Setup - High-rise complex, Day 3
-Knowing that tomorrow's challenge will be witnessed by Aryan's friends, Raju chooses to visit the high-rise complex again today, wanting to gauge the social pressure and perhaps understand what kind of audience he'll be facing.
+Knowing that upcoming challenge with Aryan will be witnessed by his friends, Raju visits the complex again today.
 
-The complex buzzes with an undercurrent of excitement as word of tomorrow's cricket challenge has spread among the wealthy children who live here, their voices carrying the anticipation of spectators expecting to witness the humiliation of someone they consider beneath their social status. Raju can feel their curious and dismissive glances as he moves through the corridors, each look reinforcing his understanding that tomorrow's match represents far more than athletic competition - it has become a symbol of class conflict and social hierarchy.
+The complex buzzes with excitement. Word of the cricket challenge has spread among the wealthy children.
+
+Raju can feel their curious and dismissive glances as he moves through the corridors.
+
+This match has become a symbol of class conflict and social hierarchy.
 
 <<SetCharacterExpression "Jaspreet" "Excited">>
-Jaspreet: I can't believe you actually challenged that slum boy to cricket! What if he turns out to be actually good at it? I mean, some of those street kids are surprisingly athletic.
+Jaspreet: I can't believe you actually challenged that slum boy to cricket!
 
-<<SetCharacterExpression "Aryan" "Smiling">>
-Aryan: Good? Please, Jaspreet. He probably learned cricket by playing with rocks and sticks in garbage dumps. There's a difference between street games and real cricket.
+<<SetCharacterExpression "Jaspreet" "Worried">>
+Jaspreet: What if he turns out to be actually good at it?
 
 <<SetCharacterExpression "Jaspreet" "Quizzical">>
-Jaspreet: But Aryan, I heard some kids from the regular school saying he's actually not bad at cricket. What if you're underestimating him?
+Jaspreet: I mean, some of those street kids are surprisingly athletic.
+
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: Good? Please, Jaspreet.
+
+<<SetCharacterExpression "Aryan" "Disgusted">>
+Aryan: He probably learned cricket by playing with rocks and sticks in garbage dumps.
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: There's a difference between street games and real cricket.
+
+<<SetCharacterExpression "Jaspreet" "Anxious">>
+Jaspreet: But Aryan, I heard some kids from the regular school saying he's actually not bad.
+
+<<SetCharacterExpression "Jaspreet" "Worried">>
+Jaspreet: What if you're underestimating him?
+
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: It doesn't matter if he has some natural ability.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: It doesn't matter if he has some natural ability, Rohit. When you have proper equipment, professional coaching, and dedicated practice facilities, raw talent becomes meaningless.
+Aryan: When you have proper equipment, professional coaching, and dedicated practice facilities...
+
+<<SetCharacterExpression "Aryan" "Proud">>
+Aryan: Raw talent becomes meaningless.
 
 <<SetCharacterExpression "Aryan" "Excited">>
-Aryan: Oh look, everyone! The challenger arrives! Perfect timing - I was just telling my friends about tomorrow's entertainment. Are you ready for your public humiliation, slum boy?
+Aryan: Oh look, everyone! The challenger arrives!
 
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: Perfect timing.
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: I was just telling my friends about tomorrow's entertainment.
+
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: Are you ready for your public humiliation, slum boy?
+<<AutoAdvance true>>
+Make a Choice
+<<AutoAdvance false>>
 -> Raju: I'll let my cricket speak for itself. Actions matter more than words.
     <<jump Aryan_Day3a>>
 -> Raju: I'm not backing down from you or your friends. You want a fight? You'll get one.
@@ -148,23 +294,45 @@ tags:
 position: -308,129
 ---
 <<set $Aryan_Path = "a">>
+
+<<SetCharacterExpression "Aryan" "Irritated">>
+Aryan: How noble!
+
+<<SetCharacterExpression "Aryan" "Disgusted">>
+Aryan: The slum boy takes the high road.
+
+<<SetCharacterExpression "Aryan" "Bored">>
+Aryan: How boring. I expected more fire from someone so confident.
+
+<<SetCharacterExpression "Raju" "Relaxed">>
+Raju: Fire without control burns everything.
+
 <<SetCharacterExpression "Raju" "Serious">>
+Raju: Including the person who starts it.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: How noble! The slum boy takes the high road. How boring. I expected more fire from someone so confident.
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: I prefer focused determination.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: Your calm act won't help you in the match.
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: My friends expect entertainment, not philosophy lessons.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Then they'll see real cricket.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Fire without control burns everything, including the person who starts it. I prefer focused determination.
+Raju: That should be entertainment enough.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Your calm act won't help you when you're facing real cricket tomorrow. My friends expect entertainment, not philosophy lessons.
+<<HideAllCharacters>>
 
-<<SetCharacterExpression "Raju" "Serious">>
-Raju: Then they'll see real cricket. That should be entertainment enough.
+As Raju leaves the complex, he maintains his composed demeanor despite the mounting pressure.
 
+He feels the inner strength that comes from refusing to be drawn into petty verbal battles.
 
-<<HideCharacter>>
-As Raju leaves the complex maintaining his composed demeanor despite the mounting pressure and taunts, he feels the inner strength that comes from refusing to be drawn into petty verbal battles that would only validate his critics' expectations. His choice to remain dignified in the face of provocation reflects a maturity that contrasts sharply with Aryan's need to perform for his audience, setting the stage for tomorrow's confrontation to be decided by skill rather than bluster.
+His choice to remain dignified sets the stage for tomorrow's confrontation to be decided by skill rather than bluster.
+
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -173,23 +341,44 @@ tags:
 position: -55,122
 ---
 <<set $Aryan_Path = "b">>
-<<SetCharacterExpression "Raju" Angry>>
 
 <<SetCharacterExpression "Aryan" "Excited">>
-Aryan: Now THIS is more like it! The slum boy shows his true colors - angry, desperate, emotional. Perfect!
+Aryan: Now THIS is more like it!
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: You think being rich makes you tough? You've never had to fight for anything in your life!
+<<SetCharacterExpression "Aryan" "Overjoyed">>
+Aryan: The slum boy shows his true colors.
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Angry, desperate, emotional. Perfect!
+
+<<SetCharacterExpression "Raju" "Furious">>
+Raju: You think being rich makes you tough?
+
+<<SetCharacterExpression "Raju" "Angry">>
+Raju: You've never had to fight for anything in your life!
 
 <<SetCharacterExpression "Aryan" "Excited">>
-Aryan: And you've never had anything worth fighting for until now! This is going to be so satisfying to watch.
+Aryan: And you've never had anything worth fighting for until now!
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: We'll see who's more satisfied when this is over. Your money can't buy you heart or skill.
+<<SetCharacterExpression "Aryan" "Smiling">>
+Aryan: This is going to be so satisfying to watch.
 
+<<SetCharacterExpression "Raju" "Furious">>
+Raju: We'll see who's more satisfied when this is over.
 
-<<HideCharacter>>
-As Raju storms away from the confrontation with anger burning in his chest and Aryan's taunts echoing in his ears, he feels the dangerous energy of someone who has been pushed beyond his breaking point and is now channeling raw emotion into fierce determination. The verbal battle has escalated the stakes of tomorrow's match from a simple cricket challenge into a personal war where pride, dignity, and fundamental beliefs about justice and worth will be tested under the most intense pressure he has ever faced.
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: Your money can't buy you heart or skill.
+
+<<HideAllCharacters>>
+
+As Raju storms away from the confrontation, anger burns in his chest.
+
+Aryan's taunts echo in his ears.
+
+He feels the dangerous energy of someone pushed beyond his breaking point.
+
+The verbal battle has escalated the stakes. Tomorrow will test pride, dignity, and fundamental beliefs about justice and worth.
+
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -198,21 +387,48 @@ tags:
 position: 184,122
 ---
 <<set $Aryan_Path = "c">>
-<<SetCharacterExpression "Raju" "Quizzical">>
 
 <<SetCharacterExpression "Aryan" "Smiling">>
-Aryan: Smart move, slum boy. At least you're not completely delusional. Watch and learn what real cricket looks like.
+Aryan: Smart move, slum boy.
+
+<<SetCharacterExpression "Aryan" "Proud">>
+Aryan: At least you're not completely delusional.
+
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: Watch and learn what real cricket looks like.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: I'm watching. I see good technique, expensive equipment, professional coaching. But I also see patterns.
+Raju: I'm watching.
+
+<<SetCharacterExpression "Raju" "Neutral">>
+Raju: I see good technique, expensive equipment, professional coaching.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: But I also see patterns.
+
+<<SetCharacterExpression "Aryan" "Confused">>
+Aryan: Patterns?
 
 <<SetCharacterExpression "Aryan" "Quizzical">>
-Aryan: Patterns? What do you mean, patterns?
+Aryan: What do you mean, patterns?
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Every player has habits, preferences, weaknesses.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Every player has habits, preferences, weaknesses. Even well-trained ones. Especially well-trained ones.
-<<HideCharacter>>
-As Raju departs the complex after his careful observation session, his mind processes the valuable intelligence he has gathered about Aryan's playing style, technical strengths, and behavioral tendencies under pressure. His strategic approach to tomorrow's challenge reflects a mature understanding that victory often belongs not to the most naturally gifted or best-equipped competitor, but to the one who combines preparation with intelligence, turning careful study into tactical advantage.
+Raju: Even well-trained ones.
+
+<<SetCharacterExpression "Raju" "Mischievous">>
+Raju: Especially well-trained ones.
+
+<<HideAllCharacters>>
+
+As Raju departs the complex, his mind processes the valuable intelligence he has gathered.
+
+His strategic approach reflects a mature understanding.
+
+Victory often belongs not to the most naturally gifted or best-equipped competitor, but to the one who combines preparation with intelligence.
+
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -233,26 +449,51 @@ tags:
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Day 4 - Path A: Maintaining Composure
-On the fourth day, Raju maintains his composed approach, focusing on preparation rather than verbal sparring.
+Raju maintains his composed approach, focusing on preparation rather than verbal sparring.
 
-The tension in the complex has reached a palpable intensity as residents and visitors alike seem aware that tomorrow will bring the culmination of days of building conflict between two very different worlds. Raju moves through the environment with the calm focus of someone who has found peace with his decision to let his abilities speak louder than his words, while around him swirls the excited chatter of those who view tomorrow's match as pure entertainment rather than a meaningful test of character and skill.
+The tension in the complex has reached a palpable intensity.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Still playing the dignified act, slum boy? Wait until the pressure hits tomorrow. Let's see how calm you stay then.
+Everyone seems aware that the match will bring the culmination of days of building conflict.
+
+Raju moves through the environment with calm focus, while around him swirls excited chatter.
+
+<<SetCharacterExpression "Aryan" "Irritated">>
+Aryan: Still playing the dignified act, slum boy?
+
+<<SetCharacterExpression "Aryan" "Skeptical">>
+Aryan: Wait until the pressure hits you before the match.
+
+<<SetCharacterExpression "Aryan" "Mischievous">>
+Aryan: Let's see how calm you stay then.
+
+<<SetCharacterExpression "Raju" "Relaxed">>
+Raju: Pressure is just another condition to adapt to.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Like playing in rain or wind.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Pressure is just another condition to adapt to. Like playing in rain or wind - you adjust and continue.
+Raju: You adjust and continue.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: You're either very wise or very stupid. Tomorrow will show which one.
+<<SetCharacterExpression "Aryan" "Confused">>
+Aryan: You're either very wise or very stupid.
+
+<<SetCharacterExpression "Aryan" "Serious">>
+Aryan: The match will show which one.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: The match will show what we've both learned about cricket.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: Tomorrow will show what we've both learned about cricket. That's all that matters.
+Raju: That's all that matters.
 
+<<HideAllCharacters>>
 
-<<HideCharacter>>
-As Raju walks away from his final pre-match encounter with Aryan, he carries with him the quiet confidence of someone who has discovered that inner peace can be more powerful than external bravado. His refusal to be baited into anger or defensiveness has revealed a strength of character that transcends the superficial markers of social status, preparing him mentally for tomorrow's challenge with the clarity that comes from knowing his worth is not determined by others' opinions.
+As Raju walks away from his final pre-match encounter, he carries quiet confidence.
+
+He has discovered that inner peace can be more powerful than external bravado.
+
+His refusal to be baited into anger has revealed a strength of character that transcends superficial markers of social status.
 
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
@@ -264,26 +505,47 @@ tags:
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Day 4 - Path B: Escalating Hostility
-On the fourth day, the tension between them has escalated into open hostility, with both boys feeding off each other's aggression.
+The tension between them has escalated into open hostility.
 
-The atmosphere in the complex crackles with hostile energy as both boys have abandoned any pretense of civility, their mutual antagonism having transformed what began as class-based prejudice into something more personal and volatile. The approaching cricket match has become secondary to the psychological warfare between them, with each interaction raising the emotional stakes and promising that tomorrow's confrontation will be decided as much by who can handle pressure as by who can play cricket.
+Both boys feed off each other's aggression.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Ready for war, slum boy? Because that's what tomorrow is - a war between your kind and mine.
+The atmosphere in the complex crackles with hostile energy.
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: Bring your war. I've been fighting my whole life while you've been playing with expensive toys.
+Both boys have abandoned any pretense of civility.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Those expensive toys are going to destroy your pathetic dreams tomorrow!
+<<SetCharacterExpression "Aryan" "Furious">>
+Aryan: Ready for war, slum boy?
 
-<<SetCharacterExpression "Raju" Angry>>
-Raju: My dreams are stronger than your toys. You'll see.
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Because that's what's coming next.
 
+<<SetCharacterExpression "Aryan" "Determined">>
+Aryan: A war between your kind and mine.
 
-<<HideCharacter>>
-As Raju leaves the complex with anger coursing through his veins and tomorrow's battle looming like a storm on the horizon, he understands that the cricket match has become something far more significant than either boy initially intended - a collision between two worldviews, two definitions of strength, and two competing claims about what truly matters in determining a person's worth and potential. The intensity of their mutual hostility has raised the stakes to a level where tomorrow's outcome will resonate far beyond the boundaries of any game.
+<<SetCharacterExpression "Raju" "Furious">>
+Raju: Bring your war.
+
+<<SetCharacterExpression "Raju" "Angry">>
+Raju: I've been fighting my whole life while you've been playing with expensive toys.
+
+<<SetCharacterExpression "Aryan" "Furious">>
+Aryan: Those expensive toys are going to destroy your pathetic dreams!
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: My dreams are stronger than your toys.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: You'll see.
+
+<<HideAllCharacters>>
+
+As Raju leaves the complex, anger courses through his veins.
+
+Tomorrow's battle looms like a storm on the horizon.
+
+The cricket match has become something far more significant than either boy initially intended.
+
+A collision between two worldviews, two definitions of strength, and two competing claims about what truly matters.
 
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
@@ -295,26 +557,50 @@ tags:
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Day 4 - Path C: Continued Strategic Observation
-On the fourth day, Raju continues his careful observation, studying Aryan's playing style and looking for tactical advantages.
+Raju continues his careful observation.
 
-The complex has become Raju's laboratory as he continues his methodical analysis of Aryan's cricket abilities, watching with the focused attention of someone who understands that knowledge can compensate for material disadvantages. His analytical approach contrasts sharply with Aryan's reliance on superior equipment and training, setting up tomorrow's match as a test between raw preparation and studied intelligence, between privilege and strategic thinking.
+He studies Aryan's playing style and looks for tactical advantages.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: Stop staring at me like that! You're trying to get in my head, but it won't work.
+The complex has become Raju's laboratory.
+
+He watches with the focused attention of someone who understands that knowledge can compensate for material disadvantages.
+
+<<SetCharacterExpression "Aryan" "Irritated">>
+Aryan: Stop staring at me like that!
+
+<<SetCharacterExpression "Aryan" "Anxious">>
+Aryan: You're trying to get in my head, but it won't work.
+
+<<SetCharacterExpression "Raju" "Relaxed">>
+Raju: I'm not trying to get in your head.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: I'm not trying to get in your head. I'm trying to understand your game. Knowledge is the best equipment I can have.
+Raju: I'm trying to understand your game.
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: All the studying in the world won't help you when you face superior skill and equipment!
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Knowledge is the best equipment I can have.
 
-<<SetCharacterExpression "Raju" "Serious">>
-Raju: We'll see. Sometimes understanding your opponent is better than having better gear.
+<<SetCharacterExpression "Aryan" "Furious">>
+Aryan: All the studying in the world won't help you!
 
+<<SetCharacterExpression "Aryan" "Angry">>
+Aryan: Not when you face superior skill and equipment!
 
-<<HideCharacter>>
-As Raju walks away from his final analytical session, he carries with him a comprehensive understanding of Aryan's strengths, weaknesses, and psychological triggers that few opponents would have taken the time to develop. His strategic preparation represents a different kind of courage - the bravery to face superior resources with superior preparation, transforming tomorrow's challenge from a test of natural ability into a battle between different philosophies of competition and success.
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: We'll see.
+
+<<SetCharacterExpression "Raju" "Mischievous">>
+Raju: Sometimes understanding your opponent is better than having better gear.
+
+<<HideAllCharacters>>
+
+As Raju walks away from his final analytical session, he carries comprehensive understanding.
+
+He knows Aryan's strengths, weaknesses, and psychological triggers.
+
+His strategic preparation represents a different kind of courage.
+
+This challenge will be a battle between different philosophies of competition and success.
 
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
@@ -325,44 +611,96 @@ title: Aryan_Day5
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Day 5 - The Challenge Match
-The moment of truth has arrived. Despite his nerves, Raju chooses to meet Aryan at the high-rise complex for their cricket challenge, carrying his simple equipment with quiet determination.
+The moment of truth has arrived.
 
-The courtyard of the complex has been transformed into an arena of judgment as curious residents gather to witness the culmination of days of building tension between two boys from opposite ends of the social spectrum. The air vibrates with anticipation and barely concealed prejudice as Raju arrives carrying his worn cricket bat, while Aryan stands surrounded by supporters and expensive equipment, both boys understanding that the next few minutes will determine far more than athletic supremacy.
+Despite his nerves, Raju meets Aryan at the high-rise complex for their cricket challenge.
 
-<<SetCharacterExpression "Jaspreet" "Excited">>
-Jaspreet: Finally! The main event! Go on, Aryan! Show this slum boy how real cricket is played!
+The courtyard has been transformed into an arena of judgment.
 
-<<SetCharacterExpression "Aryan" "Excited">>
-Aryan: Watch carefully, everyone. This is what happens when street pretenders face real cricketers. Let's see you even touch this ball, slum boy!
+Curious residents gather to witness the culmination of days of building tension.
 
-// The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack that races across the courtyard.
+The air vibrates with anticipation and barely concealed prejudice as Raju arrives.
 
 <<SetCharacterExpression "Jaspreet" "Excited">>
-Jaspreet: Ooooooh! Did you see that shot?! That went straight to the boundary!
+Jaspreet: Finally! The main event!
 
-<<SetCharacterExpression "Aryan" Angry>>
-Aryan: That was just a lucky shot! Anyone can get lucky once! Try again - let's see if you can do it twice!
-
-// The second delivery produces another clean strike that sends the ball soaring over the heads of shocked spectators.
+<<SetCharacterExpression "Jaspreet" "Overjoyed">>
+Jaspreet: Go on, Aryan!
 
 <<SetCharacterExpression "Jaspreet" "Excited">>
-Jaspreet: That... that was actually a really good shot. How did he read that delivery so well?
+Jaspreet: Show this slum boy how real cricket is played!
 
-<<SetCharacterExpression "Aryan" "Sad">>
-Aryan: I... I don't understand. He's playing like someone who's been properly trained. But that's impossible.
+<<SetCharacterExpression "Aryan" "Confident">>
+Aryan: Watch carefully, everyone.
 
-// The third delivery reveals the full extent of Raju's skill - placed with surgical precision, demonstrating genuine understanding of the game.
+<<SetCharacterExpression "Aryan" "Proud">>
+Aryan: This is what happens when street pretenders face real cricketers.
+
+<<SetCharacterExpression "Aryan" "Determined">>
+Aryan: Let's see you even touch this ball, slum boy!
+
+// The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
+
+<<SetCharacterExpression "Jaspreet" "Astonished">>
+Jaspreet: Ooooooh! Did you see that shot?!
+
+<<SetCharacterExpression "Jaspreet" "Shocked">>
+Jaspreet: That went straight to the boundary!
+
+<<SetCharacterExpression "Aryan" "Shocked">>
+Aryan: That was just a lucky shot!
+
+<<SetCharacterExpression "Aryan" "Anxious">>
+Aryan: Anyone can get lucky once!
+
+<<SetCharacterExpression "Aryan" "Irritated">>
+Aryan: Try again - let's see if you can do it twice!
+
+<<HideAllCharacters>>
+The second delivery produces another clean strike that sends the ball soaring.
+
+<<SetCharacterExpression "Jaspreet" "Astonished">>
+Jaspreet: That... that was actually a really good shot.
+
+<<SetCharacterExpression "Jaspreet" "Confused">>
+Jaspreet: How did he read that delivery so well?
+
+<<SetCharacterExpression "Aryan" "Confused">>
+Aryan: I... I don't understand.
+
+<<SetCharacterExpression "Aryan" "Astonished">>
+Aryan: He's playing like someone who's been properly trained.
+
+<<SetCharacterExpression "Aryan" "Shocked">>
+Aryan: But that's impossible.
+
+<<HideAllCharacters>>
+The third delivery reveals the full extent of Raju's skill - placed with surgical precision.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: ...Not bad, slum boy.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: ...Not bad, slum boy. Not bad at all. But don't think this changes anything between us.
+Aryan: Not bad at all.
 
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: I told you cricket isn't about equipment or social class. It's about dedication, practice, and love for the game.
+<<SetCharacterExpression "Aryan" "Embarrassed">>
+Aryan: But don't think this changes anything between us.
 
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: I told you cricket isn't about equipment or social class.
 
-<<HideCharacter>>
-As the crowd disperses in stunned silence, their preconceptions shattered by Raju's unexpected display of genuine cricket mastery, the young man from the slums stands quietly in the center of the courtyard, his simple equipment now vindicated by performance that transcended all material disadvantages. The moment represents more than athletic victory - it is a fundamental challenge to the assumptions that wealth and social status determine worth and capability.
+<<SetCharacterExpression "Raju" "Proud">>
+Raju: It's about dedication, practice, and love for the game.
+
+<<HideAllCharacters>>
+
+The crowd disperses in stunned silence.
+
+Their preconceptions shattered by Raju's unexpected display of genuine cricket mastery.
+
+The young man from the slums stands quietly in the center of the courtyard.
+
+The moment represents more than athletic victory - it is a fundamental challenge to assumptions about wealth and worth.
 
 <<set $Aryan_Day = 6>>
 <<EndEvent true>>
@@ -372,41 +710,98 @@ title: Aryan_Day6
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-// Day 6 - Final Day - Resolution
-After yesterday's surprising cricket performance that left Aryan's assumptions in tatters, Raju chooses to return to the high-rise complex one final time.
+After his surprising cricket performance, Raju returns to the high-rise complex one final time.
 
-The atmosphere in the complex has shifted dramatically since yesterday's cricket demonstration, with the smugness and casual cruelty of privilege replaced by an uncomfortable recognition that talent and worth cannot be purchased or inherited. Raju moves through the corridors with the quiet dignity of someone who has proven his point without malice, while around him swirls the confused energy of a social order that has been forced to confront its own prejudices and limitations.
+The atmosphere in the complex has shifted dramatically.
+
+The smugness and casual cruelty of privilege have been replaced by uncomfortable recognition.
+
+Talent and worth cannot be purchased or inherited.
+
+<<SetCharacterExpression "Aryan" "Disappointed">>
+Aryan: I still can't believe it.
 
 <<SetCharacterExpression "Aryan" "Sad">>
-Aryan: I still can't believe it. You actually beat me. Not just once, but consistently, shot after shot. My friends haven't stopped talking about it.
+Aryan: You actually beat me.
+
+<<SetCharacterExpression "Aryan" "Embarrassed">>
+Aryan: Not just once, but consistently, shot after shot.
+
+<<SetCharacterExpression "Aryan" "Worried">>
+Aryan: My friends haven't stopped talking about it.
+
+<<SetCharacterExpression "Raju" "Relaxed">>
+Raju: I tried to tell you from the beginning.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: I tried to tell you from the beginning. Cricket isn't about expensive bats or fancy shoes. It's about heart, dedication, and genuine love for the game.
+Raju: Cricket isn't about expensive bats or fancy shoes.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: It's about heart, dedication, and genuine love for the game.
+
+<<SetCharacterExpression "Aryan" "Confused">>
+Aryan: Maybe... maybe you're right about some things.
 
 <<SetCharacterExpression "Aryan" "Quizzical">>
-Aryan: Maybe... maybe you're right about some things. You do have something I didn't expect - something raw, natural, authentic.
+Aryan: You do have something I didn't expect.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: But don't think yesterday's performance changes everything between us. You may have beaten me at cricket, but that doesn't erase our fundamental differences.
+Aryan: Something raw, natural, authentic.
+
+<<SetCharacterExpression "Aryan" "Serious">>
+Aryan: But don't think your performance changes everything between us.
+
+<<SetCharacterExpression "Aryan" "Determined">>
+Aryan: You may have beaten me at cricket, but that doesn't erase our fundamental differences.
+
+<<SetCharacterExpression "Raju" "Relaxed">>
+Raju: I never expected it to change our social positions, Aryan.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: I just wanted you to understand something.
+
+<<SetCharacterExpression "Raju" "Proud">>
+Raju: Talent and worth aren't distributed according to wealth.
+
+<<SetCharacterExpression "Aryan" "Neutral">>
+Aryan: Respect... yes, I suppose you've earned that.
+
+<<SetCharacterExpression "Aryan" "Determined">>
+Aryan: This won't be the last time we compete.
+
+<<SetCharacterExpression "Aryan" "Serious">>
+Aryan: I'll get better, train harder, and one day I will beat you.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Then I'll be ready.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: And I'll keep getting better too.
 
 <<SetCharacterExpression "Raju" "Smiling">>
-Raju: I never expected it to change our social positions, Aryan. I just wanted you to understand that talent and worth aren't distributed according to wealth.
+Raju: Having a real competitor will make us both stronger players.
+
+<<SetCharacterExpression "Aryan" "Neutral">>
+Aryan: ...You're not bad, slum boy.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: Respect... yes, I suppose you've earned that. This won't be the last time we compete. I'll get better, train harder, and one day I will beat you.
+Aryan: Not bad at all.
 
-<<SetCharacterExpression "Raju" "Excited">>
-Raju: Then I'll be ready. And I'll keep getting better too. Having a real competitor will make us both stronger players.
+<<SetCharacterExpression "Aryan" "Determined">>
+Aryan: But next time will be different.
 
-<<SetCharacterExpression "Aryan" "Serious">>
-Aryan: ...You're not bad, slum boy. Not bad at all. But next time will be different.
-
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm looking forward to it.
 
+<<HideAllCharacters>>
 
-<<HideCharacter>>
-As Raju leaves the complex for what may be the final time in this particular chapter of his life, he carries with him the satisfaction of having challenged and changed entrenched assumptions about class, worth, and capability without resorting to bitterness or revenge. His victory over Aryan represents more than personal triumph - it stands as proof that dignity, skill, and character cannot be purchased, inherited, or taken away by those who mistake privilege for superiority.
+As Raju leaves the complex for what may be the final time, he carries satisfaction with him.
+
+He has challenged and changed entrenched assumptions about class, worth, and capability.
+
+His victory over Aryan represents more than personal triumph.
+
+It stands as proof that dignity, skill, and character cannot be purchased, inherited, or taken away by those who mistake privilege for superiority.
 
 <<set $Aryan_Complete = true>>
 <<jump Courage>>

@@ -1,0 +1,67 @@
+﻿title: scene_2
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic Exciting_1>>
+ 
+ 
+
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Captain, good—you came. I'm teaching you the spine of batting—no secrets, just honesty.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Ok.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: There are five things you'll carry every time you pick up the bat—not heavy, but important. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: One—Eyes: see before you decide, greed makes you blind. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Two—Feet: quiet feet, quick mind—don't rush, settle first. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Three—Hands: gentle guide, not angry hammer—let the bat speak. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Four—Timing: we can't waste anything—wait for your moment. 
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Five—Temper: runs come and go, but manners stay.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Eyes, feet, hands, timing, temper... five.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Good—now three rules: respect the bat, respect the bowler, and respect yourself.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: What about winning?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Winning is a side-effect of good habits—we practice habits, the rest follows.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Picture the dust, the chalk line, the noise—keep your promises and remember who you're playing for.
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: For us.
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: For us—alright captain, sleeves up, words end here.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Ready? Step out with a steady heart.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

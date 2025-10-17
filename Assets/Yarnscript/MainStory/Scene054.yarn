@@ -1,0 +1,31 @@
+﻿title: scene_54
+tags: 
+colorID: 0
+position: 0,0
+---
+ 
+ 
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: It's the Semifinals captain—we're batting first, you're opening, and we need 110+ runs. Are you up for it?
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I am all in. Completely focussed. Ready to roar.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good. Let's go.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

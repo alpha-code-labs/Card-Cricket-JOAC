@@ -1,0 +1,33 @@
+﻿title: scene_52
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain. Marvelous. You were top-notch. We needed that.
+
+<<SetCharacterExpression "Raju" "Curious">>
+Raju: Their bowling was sharp, but I kept my focus—was uncle Dev noticing?
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Not your business—get him out of your headspace and focus on the now.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes Sir. I connected the ball clean—so happy for our team.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Tomorrow another day, fresh challenge—keep the focus on.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes sir.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

@@ -8,19 +8,19 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Aryan" "Angry">>
-Aryan: Slum boy, your luck has maxed out. That luck runs out now.
+Aryan: Slum boy, your luck has maxed out and runs out now.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I wish you the best of luck too.
 
 <<SetCharacterExpression "Aryan" "Angry">>
-Aryan: The poor can only come so far slum boy. This is the maximum you can go. This is the height of your achievements. From this point onwards, we rich boys rule.
+Aryan: The poor can only come so far slum boy—this is your maximum. From this point onwards, we rich boys rule.
 
 <<SetCharacterExpression "Raju" "Serious">>
-Raju: I dont want to comment on that. Will let my bat do the talking.
+Raju: I don't want to comment on that—I'll let my bat do the talking.
 
 <<SetCharacterExpression "Aryan" "Angry">>
-Aryan: Your bat is broken just like your life. Your shoes are embarrassing. Your hair is unruly. You smell like garbage. Dont you dare dream about rubbing shoulders with us.
+Aryan: Your bat is broken just like your life, your shoes are embarrassing, your hair is unruly, and you smell like garbage. Don't you dare dream about rubbing shoulders with us.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: 5 coins.
@@ -41,7 +41,7 @@ Raju: 5 coins.
 Aryan: Talking gibberish just like you always do. See you on the field, beggar.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

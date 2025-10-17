@@ -12,11 +12,9 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     public static DialogueScriptCommandHandler Instance;
 
     [Header("All Sprites - Characters and Backgrounds")]
-    [SerializeField] List<Sprite> allSprites;
 
     [Header("Character Display Images")]
-    [SerializeField] Image leftCharacterImage;
-    [SerializeField] Image rightCharacterImage;
+    [SerializeField] Image centerCharacterImage;
 
     [Header("UI Components")]
     [SerializeField] Image currentBGSprite;
@@ -28,16 +26,11 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] List<AudioClip> backgroundMusicClips;
     [SerializeField] float musicFadeDuration = 1f;
-     
+
     // Dictionary for sprite name to index mapping
-    private Dictionary<string, int> spriteNameToIndex;
+    private Dictionary<string, Sprite> spriteNameToIndex;
 
-    private Dictionary<String,AudioClip> musicDictionary;
-    private Characters currentActiveCharacter = Characters.Ramu; // Track active character
-    private bool isCharacterOnLeft = true; // Track which side current character is on
-
-
-
+    private Dictionary<String, AudioClip> musicDictionary;
     void Awake()
     {
         Instance = this;
@@ -76,8 +69,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     private void InitializeSpriteMapping()
     {
         // Initialize sprite name to index mapping
-        spriteNameToIndex = new Dictionary<string, int>();
+        spriteNameToIndex = new Dictionary<string, Sprite>();
+        List<Sprite> allSprites;
+        // Load Characters and Locations separately for clarity and predictable organization
+        List<Sprite> characterSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Characters"));
+        List<Sprite> locationSprites = new List<Sprite>(Resources.LoadAll<Sprite>("Textures/Locations"));
 
+        allSprites = new List<Sprite>(characterSprites.Count + locationSprites.Count);
+        allSprites.AddRange(locationSprites);
+        allSprites.AddRange(characterSprites);
+        Debug.Log($"Sprite load: Characters={characterSprites.Count}, Locations={locationSprites.Count}, Total={allSprites.Count}");
         // Auto-populate based on sprite names in the list
         for (int i = 0; i < allSprites.Count; i++)
         {
@@ -85,7 +86,14 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             {
                 string actualSpriteName = allSprites[i].name;
                 string normalizedKey = NormalizeName(actualSpriteName);
-                spriteNameToIndex[normalizedKey] = i;
+                if (!spriteNameToIndex.ContainsKey(normalizedKey))
+                {
+                    spriteNameToIndex[normalizedKey] = allSprites[i];
+                }
+                else
+                {
+                    Debug.LogWarning($"Duplicate sprite name detected: '{actualSpriteName}'. Keeping the first occurrence and ignoring later duplicates.");
+                }
 
                 // Debug to see the mapping
                 //Debug.Log($"Mapped '{actualSpriteName}' to normalized key '{normalizedKey}' at index {i}");
@@ -93,36 +101,46 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-private void InitializeMusicDictionary()
-{
-    musicDictionary = new Dictionary<string, AudioClip>();
-
-    // Map each AudioClip by its actual name, not by index or enum value
-    for (int i = 0; i < backgroundMusicClips.Count; i++)
+    private void InitializeMusicDictionary()
     {
-        if (backgroundMusicClips[i] != null)
+        musicDictionary = new Dictionary<string, AudioClip>();
+
+        // Map each AudioClip by its actual name, not by index or enum value
+        for (int i = 0; i < backgroundMusicClips.Count; i++)
         {
-            AudioClip clip = backgroundMusicClips[i];
-            string clipName = clip.name; // Get the actual name of the AudioClip
-            
-            // Add the clip with its exact name
-            musicDictionary[clipName] = clip;
-            
-            // Also add normalized version for flexibility
-            string normalizedName = NormalizeName(clipName);
-            if (normalizedName != clipName)
+            if (backgroundMusicClips[i] != null)
             {
-                musicDictionary[normalizedName] = clip;
+                AudioClip clip = backgroundMusicClips[i];
+                string clipName = clip.name; // Get the actual name of the AudioClip
+
+                // Add the clip with its exact name
+                musicDictionary[clipName] = clip;
+
+                // Also add normalized version for flexibility
+                string normalizedName = NormalizeName(clipName);
+                if (normalizedName != clipName)
+                {
+                    musicDictionary[normalizedName] = clip;
+                }
             }
-            
-            // Debug to verify mapping
-            Debug.Log($"Mapped AudioClip '{clipName}' (at index {i}) to dictionary");
+        }
+
+        Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
+    }
+    private static Sprite GetSpriteByName(string spriteName)
+    {
+        string normalizedKey = NormalizeName(spriteName);
+        if (Instance.spriteNameToIndex.ContainsKey(normalizedKey) || Instance.spriteNameToIndex[normalizedKey] != null)
+        {
+            return Instance.spriteNameToIndex[normalizedKey];
+        }
+        else
+        {
+            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            return null;
         }
     }
-    
-    Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
-}
-    
+
     // Helper method to normalize sprite names for lookup
     private static string NormalizeName(string name)
     {
@@ -140,62 +158,62 @@ private void InitializeMusicDictionary()
             return;
         }
 
-        SetCharacterExpressionInternal(character, emotion);
-    }
-
-    // Internal method that does the actual work
-    private static void SetCharacterExpressionInternal(Characters character, string emotion)
-    {
         // Create sprite name: CharacterEmotion (e.g., "RamuExcited", "RajuSerious")
         string spriteName = character.ToString() + emotion;
-        string normalizedKey = NormalizeName(spriteName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
+        Sprite targetSprite = GetSpriteByName(spriteName);
+        AnimationCharacterSpriteChange();
+        // Local function to handle sprite change animation
+        void AnimationCharacterSpriteChange()
         {
-            //Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
-        }
+            // Use a local id so we can both kill and create the tween with the same identifier
+            const string localTweenId = "CenterCharacterFade";
+            // Kill any existing tween with the same id to clean up old animations
+            DOTween.Kill(localTweenId);
 
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Sprite targetSprite = Instance.allSprites[spriteIndex];
-            if (targetSprite != null)
+            // (Removed redundant instance Kill - DOTween.Kill(localTweenId) handles global cleanup)
+            // Set sprite and ensure image alpha is zero before fade-in
+            if (Instance.centerCharacterImage.sprite == targetSprite)
             {
-                // Hide both character images first
-                Instance.leftCharacterImage.gameObject.SetActive(false);
-                Instance.rightCharacterImage.gameObject.SetActive(false);
-
-                // If different character, switch sides
-                if (Instance.currentActiveCharacter != character)
-                {
-                    Instance.isCharacterOnLeft = !Instance.isCharacterOnLeft;
-                    Instance.currentActiveCharacter = character;
-                }
-
-                // Show character on the appropriate side
-                if (Instance.isCharacterOnLeft)
-                {
-                    Instance.leftCharacterImage.sprite = targetSprite;
-                    Instance.leftCharacterImage.gameObject.SetActive(true);
-                }
-                else
-                {
-                    Instance.rightCharacterImage.sprite = targetSprite;
-                    Instance.rightCharacterImage.gameObject.SetActive(true);
-                }
+                return;
             }
-            else
+            Instance.centerCharacterImage.sprite = targetSprite;
+            Instance.centerCharacterImage.gameObject.SetActive(true);
+
+            // Ensure color alpha is set to 0
+            Color startCol = Instance.centerCharacterImage.color;
+            startCol.a = 0f;
+            Instance.centerCharacterImage.color = startCol;
+
+            // Position the image below the view so it can slide up
+            var rt = Instance.centerCharacterImage.rectTransform;
+            var anchored = rt.anchoredPosition;
+            anchored.y = -25f;
+            rt.anchoredPosition = anchored;
+
+            // Shared restore function for both Complete and Kill - ensure final position and alpha
+            Action restoreToSolid = () =>
             {
-                Debug.LogError($"Sprite at index {spriteIndex} is null!");
-            }
-        }
-        else
-        {
-            Debug.LogError($"Sprite index {spriteIndex} out of range!");
+                // Ensure fully opaque
+                Color cc = Instance.centerCharacterImage.color;
+                cc.a = 1f;
+                Instance.centerCharacterImage.color = cc;
+
+                // Ensure anchored position is at 0
+                var a = rt.anchoredPosition;
+                a.y = 0f;
+                rt.anchoredPosition = a;
+            };
+
+            // Create a sequence to move up and fade in at the same time, assign id so it can be killed later
+            Sequence seq = DOTween.Sequence();
+            seq.SetId(localTweenId)
+               .SetUpdate(true)
+               .Append(rt.DOAnchorPosY(0f, 0.2f).SetEase(Ease.OutCubic))
+               .Join(Instance.centerCharacterImage.DOFade(1f, 0.25f))
+               .OnComplete(() => restoreToSolid())
+               .OnKill(() => restoreToSolid());
         }
     }
-
 
 
 
@@ -203,86 +221,37 @@ private void InitializeMusicDictionary()
     [YarnCommand("SetBGSprite")]
     public static void SetBGSprite(string backgroundName)
     {
-        string normalizedKey = NormalizeName(backgroundName);
-
-        if (!Instance.spriteNameToIndex.ContainsKey(normalizedKey))
-        {
-            Debug.LogError($"Background sprite '{backgroundName}' (normalized: '{normalizedKey}') not found in sprite list!");
-            return;
-        }
-
-        int spriteIndex = Instance.spriteNameToIndex[normalizedKey];
-        if (spriteIndex >= 0 && spriteIndex < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[spriteIndex];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {spriteIndex} out of range!");
-        }
+        Instance.currentBGSprite.sprite = GetSpriteByName(backgroundName);
     }
-
-    // BACKGROUND COMMANDS - Legacy index version (for backward compatibility)
-    [YarnCommand("SetBGSpriteIndex")]
-    public static void SetBGSpriteIndex(int index)
-    {
-        if (index >= 0 && index < Instance.allSprites.Count)
-        {
-            Instance.currentBGSprite.sprite = Instance.allSprites[index];
-        }
-        else
-        {
-            Debug.LogError($"Background sprite index {index} out of range!");
-        }
-    }
-
-
 
     // UTILITY COMMANDS
     [YarnCommand("HideAllCharacters")]
     public static void HideAllCharacters()
     {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
-    }
-
-    [YarnCommand("HideCharacter")]
-    public static void HideCharacter()
-    {
-        Instance.leftCharacterImage.gameObject.SetActive(false);
-        Instance.rightCharacterImage.gameObject.SetActive(false);
-    }
-
-    // FADE EFFECTS
-    [YarnCommand("FadeToBlack")]
-    public static void FadeToBlack()
-    {
-        //Instance.StartCoroutine(Instance.FadeToBlackSequence());
-        NewDayManager.currentEventIndex++;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);//Instead of loading this scne make newday manager a proper singleton and call BeginNewDaySequence directly
+        Instance.centerCharacterImage.gameObject.SetActive(false);
     }
 
     // AUDIO COMMANDS
- [YarnCommand("PlayBackgroundMusic")]
-public static void PlayBackgroundMusic(string musicName)
-{
-    // Try to find music in dictionary
-    if (Instance.musicDictionary.ContainsKey(musicName))
+    [YarnCommand("PlayBackgroundMusic")]
+    public static void PlayBackgroundMusic(string musicName)
     {
-        AudioClip musicClip = Instance.musicDictionary[musicName];
-        Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
+        // Try to find music in dictionary
+        if (Instance.musicDictionary.ContainsKey(musicName))
+        {
+            AudioClip musicClip = Instance.musicDictionary[musicName];
+            Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
+        }
+        // Try normalized name
+        else if (Instance.musicDictionary.ContainsKey(NormalizeName(musicName)))
+        {
+            AudioClip musicClip = Instance.musicDictionary[NormalizeName(musicName)];
+            Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
+        }
+        else
+        {
+            Debug.LogError($"Music '{musicName}' not found in dictionary!");
+        }
     }
-    // Try normalized name
-    else if (Instance.musicDictionary.ContainsKey(NormalizeName(musicName)))
-    {
-        AudioClip musicClip = Instance.musicDictionary[NormalizeName(musicName)];
-        Instance.StartCoroutine(Instance.PlayBackgroundMusicCoroutine(musicClip));
-    }
-    else
-    {
-        Debug.LogError($"Music '{musicName}' not found in dictionary!");
-    }
-}
     [YarnCommand("StopBackgroundMusic")]
     public static void StopBackgroundMusic()
     {
@@ -290,35 +259,35 @@ public static void PlayBackgroundMusic(string musicName)
     }
 
     // AUDIO COROUTINES
-private IEnumerator PlayBackgroundMusicCoroutine(AudioClip musicClip)
-{
-    if (musicClip != null)
+    private IEnumerator PlayBackgroundMusicCoroutine(AudioClip musicClip)
     {
-        // If same music is already playing, exit immediately
-        if (musicAudioSource.clip == musicClip && musicAudioSource.isPlaying)
+        if (musicClip != null)
         {
-            yield break; // Exit immediately
+            // If same music is already playing, exit immediately
+            if (musicAudioSource.clip == musicClip && musicAudioSource.isPlaying)
+            {
+                yield break; // Exit immediately
+            }
+
+            // Handle music switching
+            if (musicAudioSource.isPlaying && musicAudioSource.clip != musicClip)
+            {
+                // Don't yield - start fade-out independently
+                StartCoroutine(FadeOutMusic());
+            }
+
+            musicAudioSource.clip = musicClip;
+            musicAudioSource.loop = true;
+            musicAudioSource.volume = 0f;
+            musicAudioSource.Play();
+
+            // Don't yield - start fade-in independently
+            StartCoroutine(FadeInMusic());
         }
 
-        // Handle music switching
-        if (musicAudioSource.isPlaying && musicAudioSource.clip != musicClip)
-        {
-            // Don't yield - start fade-out independently
-            StartCoroutine(FadeOutMusic());
-        }
-
-        musicAudioSource.clip = musicClip;
-        musicAudioSource.loop = true;
-        musicAudioSource.volume = 0f;
-        musicAudioSource.Play();
-        
-        // Don't yield - start fade-in independently
-        StartCoroutine(FadeInMusic());
+        // Coroutine ends immediately
+        yield break;
     }
-    
-    // Coroutine ends immediately
-    yield break;
-}
 
     private IEnumerator StopBackgroundMusicCoroutine()
     {
@@ -358,22 +327,42 @@ private IEnumerator PlayBackgroundMusicCoroutine(AudioClip musicClip)
 
 public enum EmotionType
 {
-    Neutral,
-    Excited,
-    Smiling,
-    Serious,
-    Sad,
-    Worried,
-    Quizzical,
-    Groggy,
-    Disgusted,
-    Sleeping,
     Angry,
-    Happy,
-    Surprised,
+    Anxious,
+    Astonished,
+    BattingPose,
+    Bored,
+    Confident,
     Confused,
+    Crying,
+    Curious,
+    Determined,
+    Disappointed,
+    Disapproving,
+    Disgusted,
+    Embarrassed,
+    Excited,
     ExcitedWithBat,
-    
+    Furious,
+    Irritated,
+    Loving,
+    Mischievous,
+    Neutral,
+    Overjoyed,
+    Pained,
+    Proud,
+    Quizzical,
+    Relaxed,
+    Relieved,
+    Sad,
+    Serious,
+    SeriousWithBat,
+    Shocked,
+    Skeptical,
+    Smiling,
+    Terrified,
+    Tired,
+    Worried,
 }
 
 public enum MusicType

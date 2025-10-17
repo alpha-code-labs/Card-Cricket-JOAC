@@ -1,0 +1,242 @@
+﻿title: scene_1
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Oye, birthday hero… close your eyes.
+
+<<SetCharacterExpression "Raju" "Curious">>
+Raju: Closed! But I can still see through my eyelashes.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then close them properly, na. This is a sacred ceremony.
+
+
+<<SetCharacterExpression "Raju" "Curious">>
+Raju: Sacred like when Maa hides the last piece of papad?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Exactly that sacred. No peeking.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Okay… open.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Bhai!!! Your Bat!
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Wrong. Your bat. From today.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: But this is the bat. The one that hit Chintu's six over the scooter. The one with the scratch that looks like the map of India!
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: The same one. She's got more stories than that radio which only plays static.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: The grip is new?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Borrowed a bicycle tube from the tyre repair shop and wrapped it tight last night. I sanded it with brick—don't tell Masterji.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Why are you giving it to me? You love this bat.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: You're eight now, little tiger—time to carry something heavier than your school bag.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Will it like me?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Bats like discipline.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I can give it biscuits.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: But discipline… does it taste like karela?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Worse. But good for you. Listen—if you accept this gift, there are rules.
+
+
+<<SetCharacterExpression "Raju" "Disappointed">>
+Raju: Rules? On my birthday?
+
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: Big gifts, big rules. Ready?
+
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Ready.
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule one: You'll study first—even Sachin had homework.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule two: You'll share—gully cricket is not only for heroes.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule three: You'll respect the bat—no throwing it in anger, and when it rests, face up.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Rule four: No fighting if someone calls it "old"—old means seasoned, like Maa's iron tawa.
+
+
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+Raju: Understood.
+
+<<SetCharacterExpression "Raju" "Curious">>
+Raju: Bhai, this faded sticker… who's this player?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's your future photo. Space kept ready.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I will try.
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good—heavy makes your hands strong. Now stand up for the first lesson.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Bottom hand firm, top hand gentle—not strangling a chicken, guiding a kite.
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Like this?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Better—feet shoulder width, knees bent, eyes on the ball.
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: So I stare at nothing?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: You stare at possibility—now pretend I bowl to off-stump. What shot?
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Umm… straight drive?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good choice—now a bouncer, short ball. What will you do?
+
+
+<<SetCharacterExpression "Raju" "BattingPose">>
+Raju: Duck!
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Excellent survival instinct, Captain—some days the smartest run is away from the ball.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Will people laugh because it's old?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: People laugh when they're afraid you'll pass them—the bat is old, your courage is new.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Did you… did you want to keep it?
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: I had my turn.
+
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Bhai… when I hold it, my hands shake.
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: That's because you can feel its history—listen to it and let it guide you.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: And one more rule.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: There's a rule five?
+
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: The most important—when you miss, try again; when you get out, smile; when someone else scores, clap.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: We won't.
+
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Now blow the candle and make a wish.
+
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: I wished that the bat never feels hungry.
+
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Then feed it with practice—come, take your first bite.
+
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: Right here?
+
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Outside—sun is our floodlight, chalk line is our red carpet.
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: Face up, chin up—Captain Raju reporting.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Thank you.
+
+
+<<SetCharacterExpression "Ramu" "Quizzical">>
+Ramu: Who are you talking to?
+
+
+<<SetCharacterExpression "Raju" "ExcitedWithBat">>
+Raju: The bat. And also… you.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

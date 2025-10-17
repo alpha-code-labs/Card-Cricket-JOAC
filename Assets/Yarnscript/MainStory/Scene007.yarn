@@ -1,0 +1,31 @@
+﻿title: scene_7
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic  Disappointing_1 >>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Captain all ok?
+
+<<SetCharacterExpression "Raju" "Disappointed">>
+Raju: I let you down and the team down—I am not ready.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: But this is cricket captain—you have good days and bad days.
+
+<<SetCharacterExpression "Raju" "Embarrassed">>
+Raju: I know, but I just did not make the right shot selection—I am embarrassed.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Smile captain—we will have more chances, heads up, tomorrow is another day.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

@@ -1,0 +1,118 @@
+﻿title: scene_49
+tags: 
+colorID: 0
+position: 0,0
+---
+ 
+<<PlayBackgroundMusic Exciting_1>>
+
+ 
+<<SetBGSprite hutInterior>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Reporting.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Today's not like the lane matches—there's a pot at the end with real notes, half for ground repairs, the rest for winners.
+
+<<SetCharacterExpression "Raju" "Anxious">>
+Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it twice in my head.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: Good. Count your breath the same way—twice before anything important, and remember: prize money is a reason, not a target.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Eyes, feet, hands, timing, temper—five coins in the pocket.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Exactly. You're the youngest here, and some will test you—let them, because people laugh before they clap.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: If they bowl words at me, I'll leave those outside off.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Leave well, and if older boys glare when you speak, lower your voice and raise your game—pride is loud, respect is heard.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'll be a good teammate first, a good anything else after.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: That's the order. The captain will watch how you walk before he watches how you play—head up, shoulders easy.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju reporting.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: For us. Stakes twist the wind, but when it pushes, don't push back—lean with it, then choose your moment.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: The bat is lighter now.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: That's you getting stronger. I retaped the toe last night—brick-sanded, face up when it rests?
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Always.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Today is also about seeing—not just balls, but how the ground breathes, little truths about every player.
+
+<<SetCharacterExpression "Raju" "Smiling">>
+Raju: Like Parle-G crumbs—small but sweet.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Maa said, "Play brave and come back hungry." Whether you miss or shine, you breathe—and if someone else shines, you clap like it's your own sun.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Bhai, if we win, can we fix the tarp before the rain?
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: First we fix our hearts before the toss, tarp will follow.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: I'm not asking you to be special, just steady—special happens to steady boys when the world is looking elsewhere.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Steady is my job.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Right. When pressure knocks, open the door and say, "Sit, watch me work."
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Thank you.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Thank me by showing up like you did at dawn for fourteen months—make them see a teammate, not a kid.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: If someone asks how old I am?
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Say, "Old enough to keep my promises."
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: You'll wait near the scorers' table, face up, chin up—and we don't let poverty steal our manners.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: We don't.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Whatever happens, we walk out and we walk back the same way—heads steady. If we carry anything extra, it's gratitude.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Go on, Captain. Make the ground remember you without making a noise about it.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Reporting.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

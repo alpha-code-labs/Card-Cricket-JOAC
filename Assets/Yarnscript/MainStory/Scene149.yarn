@@ -23,7 +23,7 @@ Raju: I'm ready. But first let's help Maa with the cleaning she asked about.
 Ramu: That's my captain. Victory doesn't excuse duty. Let's go home.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

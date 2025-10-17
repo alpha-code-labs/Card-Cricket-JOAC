@@ -1,0 +1,79 @@
+﻿title: scene_5
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Bhai? Your turn?
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Our turn—Sunil broke his ankle, we need a substitute.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: A… substitute? Me?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: You—I asked, they said yes, today you belong.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: I'm eight.
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: And you're Raju—eight is a number, heart is a decision.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Face up, chin up.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Good—remember our five: eyes, feet, hands, timing, temper.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: Will they laugh?
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Maybe—people laugh before they clap, let them finish both.
+
+<<SetCharacterExpression "Raju" "Worried">>
+Raju: What do I do first?
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: First, be seen—walk to the captain, say "Substitute reporting," and let the ground learn your name.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju—reporting.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: One last thing—this isn't magic, it's a memory.
+
+<<SetCharacterExpression "Raju" "Anxious">>
+Raju: I'm scared.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: Good—fear is proof you're at the door, courage is turning the handle.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I'm ready.
+
+<<SetCharacterExpression "Ramu" "Proud">>
+Ramu: Then go—touch the ground, touch your heart, and let the evening remember you.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Raju—reporting.
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Play well.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

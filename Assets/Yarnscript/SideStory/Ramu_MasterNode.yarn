@@ -31,50 +31,137 @@ position: 626,-302
 ---
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
-<<HideCharacter>>
-Dawn breaks over their small home as Raju awakens to the sounds of the bustling slum. Through the thin walls, he can hear Ramu already moving about in the narrow courtyard that serves as their makeshift cricket practice ground. Instead of staying in bed or helping with morning chores, Raju decides to join his brother.
+<<HideAllCharacters>>
 
-<<HideCharacter>>
-The first rays of sunlight filter through the narrow gaps between closely packed buildings as Raju emerges from their cramped home to find Ramu arranging makeshift cricket equipment in the tiny courtyard space that barely accommodates a few practice swings. The familiar sounds of early morning activity - vendors calling their wares, children preparing for school, the distant honking of auto-rickshaws - create a backdrop of urban energy that contrasts with the focused intensity that Ramu brings to every cricket session, his weathered hands handling the worn bat with the reverence of someone who understands that dreams require daily dedication.
+Dawn breaks over their small home. Raju awakens to sounds of the bustling slum. Through thin walls, he hears Ramu already moving about in their makeshift cricket practice ground.
 
-<<SetCharacterExpression Ramu Angry>>
-Ramu: Arre, stop lazing around! If you want to play cricket, you need practice, every single day. Talent means nothing without hard work.
+<<HideAllCharacters>>
+
+First rays of sunlight filter through narrow gaps between buildings. Raju finds Ramu arranging makeshift cricket equipment in the tiny courtyard space.
+
+<<SetCharacterExpression Ramu Irritated>>
+Ramu: Arre, stop lazing around!
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: If you want to play cricket, you need practice. Every single day.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Talent means nothing without hard work.
+
+<<SetCharacterExpression Raju Tired>>
+Raju: But... I'm tired, bhaiya.
 
 <<SetCharacterExpression Raju Sad>>
-Raju: But... I'm tired, bhaiya. Yesterday's practice went so late. Can't I rest today? Just this once?
+Raju: Yesterday's practice went so late. Can't I rest today?
+
+<<SetCharacterExpression Raju Sad>>
+Raju: Just this once?
 
 <<SetCharacterExpression Ramu Angry>>
-Ramu: Rest? Do you think Sunil Gavaskar rested when he was your age? Do you think Kapil Dev took days off when he was learning to bowl? Hah! No, they practiced until their hands bled and their legs gave out.
+Ramu: Rest? Do you think Sunil Gavaskar rested when he was your age?
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Do you think Kapil Dev took days off when he was learning to bowl?
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: Hah! No, they practiced until their hands bled.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And their legs gave out.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Every minute you waste lying around is a minute some other boy is getting better.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Some boy who wants it more than you.
 
 <<SetCharacterExpression Ramu Angry>>
-Ramu: Every minute you waste lying around is a minute some other boy is getting better. Some boy who wants it more than you. Some boy who doesn't make excuses. The boys from the rich schools, they have coaches, proper equipment, everything. What do we have? Only determination. Only the willingness to work harder than everyone else.
+Ramu: Some boy who doesn't make excuses.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: The boys from the rich schools, they have coaches, proper equipment, everything.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: What do we have? Only determination.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Only the willingness to work harder than everyone else.
+
+<<SetCharacterExpression Raju Sad>>
+Raju: I understand, bhaiya.
 
 <<SetCharacterExpression Raju Serious>>
-Raju: I understand, bhaiya. I do want this. I want to be good enough to make you proud.
+Raju: I do want this. I want to be good enough to make you proud.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Proud? Pride is a luxury we can't afford until you've earned it. But... yes, I want you to succeed. More than you know.
+Ramu: Proud? Pride is a luxury we can't afford.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Good. Now remember - elbow up, feet balanced. Watch the ball, always watch the ball. And remember this feeling, this morning, when practice is hard and you want to quit. Champions are made in moments like this.
-
-<<SetCharacterExpression Raju Sad>>
-Raju: What if I'm not good enough, bhaiya? What if all this practice doesn't matter?
+Ramu: Not until you've earned it.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Then at least we'll know we tried. At least we'll know that we didn't let fear stop us from reaching for something better. But I've watched you play, little brother. You have something special. Something that can't be bought or taught. You just need to believe in it as much as I do.
+Ramu: But... yes, I want you to succeed. More than you know.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Good. Now remember - elbow up, feet balanced.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Watch the ball, always watch the ball.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And remember this feeling, this morning, when practice is hard and you want to quit.
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: Champions are made in moments like this.
+
+<<SetCharacterExpression Raju Worried>>
+Raju: What if I'm not good enough, bhaiya?
+
+<<SetCharacterExpression Raju Anxious>>
+Raju: What if all this practice doesn't matter?
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: Then at least we'll know we tried.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: At least we'll know that we didn't let fear stop us.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But I've watched you play, little brother. You have something special.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Something that can't be bought or taught.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: There! Did you feel that? That's what I'm talking about. That timing, that natural swing - you can't teach that. But you can perfect it.
+Ramu: You just need to believe in it as much as I do.
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: There! Did you feel that?
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: That's what I'm talking about!
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: That timing, that natural swing - you can't teach that.
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: But you can perfect it.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: I felt it, bhaiya. It felt... right.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Then remember that feeling. Hold onto it. Because that feeling is going to carry you further than any fancy equipment or expensive coaching ever could.
+Ramu: Then remember that feeling. Hold onto it.
 
-<<HideCharacter>>
-As the first morning's practice session concludes with Raju having experienced both Ramu's demanding expectations and his underlying belief in his brother's potential, both participants understand that they have begun something more significant than casual cricket play - a serious training regimen that could determine whether natural talent develops into genuine skill. The combination of harsh criticism and moments of encouragement reveals Ramu's complex approach to mentorship, while Raju's willingness to endure difficult practice despite fatigue demonstrates the beginnings of the dedication that elite cricket demands.
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Because that feeling is going to carry you further than any fancy equipment.
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: Further than expensive coaching ever could.
+
+<<HideAllCharacters>>
+
+As the first morning's practice concludes, both understand they've begun something significant - a serious training regimen that could determine if talent becomes skill.
 
 <<set $Ramu_Day = 2>>
 <<EndEvent true>>
@@ -87,55 +174,115 @@ position: -205,33
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
-The afternoon heat is unforgiving at Koliwada Ground, where local boys gather daily for cricket. Despite the sweltering temperature, Raju chooses to join the older boys' game, eager to apply yesterday's practice lessons. Ramu, drawn by concern for his brother, decides to come watch from the boundary.
+The afternoon heat is unforgiving at Koliwada Ground. Despite the sweltering temperature, Raju joins the older boys' game. Ramu comes to watch from the boundary.
 
-
-The dusty expanse of Koliwada Ground shimmers under the harsh afternoon sun as local boys gather for their daily cricket matches, the makeshift pitch marked by worn patches in the dirt and boundaries defined by scattered stones rather than professional equipment. Raju's decision to test his morning practice lessons against older, more experienced players represents a significant leap in confidence, while Ramu's presence on the boundary reflects both protective concern and genuine curiosity about whether his brother's potential can translate from controlled practice into competitive game situations with players who will show no mercy for age or inexperience.
+The dusty ground shimmers under harsh sun. Raju's decision to test his practice lessons against older players represents a leap in confidence.
 
 <<SetCharacterExpression Sumit Excited>>
-Sumit: Come on, chhote! Yesterday your brother said you were special. Let's see if you can handle my fastest ball!
+Sumit: Come on, chhote! Yesterday your brother said you were special.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Sumit Mischievous>>
+Sumit: Let's see if you can handle my fastest ball!
+
+<<SetCharacterExpression Raju Confident>>
 Raju: Bowl your best, bhaiya! I'm ready!
 
-<<SetCharacterExpression Raju Sad>>
+<<SetCharacterExpression Raju Pained>>
 Raju: Ow! That really hurts...
 
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Show me where it hurts.
+
+<<SetCharacterExpression Ramu Furious>>
+Ramu: Are you crazy, bowling that hard at an eight-year-old?
+
 <<SetCharacterExpression Ramu Angry>>
-Ramu: Show me where it hurts. Are you crazy, bowling that hard at an eight-year-old? He could have been seriously injured!
+Ramu: He could have been seriously injured!
 
-<<SetCharacterExpression Amit Sad>>
-Amit: But bhaiya, he was playing so well! He hit three boundaries before this. He said he could handle the fast bowling!
+<<SetCharacterExpression Amit Anxious>>
+Amit: But bhaiya, he was playing so well!
+
+<<SetCharacterExpression Amit Worried>>
+Amit: He hit three boundaries before this.
+
+<<SetCharacterExpression Amit Embarrassed>>
+Amit: He said he could handle the fast bowling!
 
 <<SetCharacterExpression Ramu Angry>>
-Ramu: I don't care how well he was playing! Look at this bruise! No more for today. You want to break bones over a game?
+Ramu: I don't care how well he was playing!
 
-<<SetCharacterExpression Raju Sad>>
-Raju: But bhaiya, I was doing really well before this happened. Everyone said I was playing like a much older boy. Doesn't that matter?
+<<SetCharacterExpression Ramu Furious>>
+Ramu: Look at this bruise!
 
-<<SetCharacterExpression Ramu Sad>>
-Ramu: That's exactly what scares me. You're too good for your age, too confident. And confidence can be dangerous when you're small and the game gets rough.
+<<SetCharacterExpression Ramu Angry>>
+Ramu: No more for today. You want to break bones over a game?
 
-<<SetCharacterExpression Raju Quizzical>>
-Raju: Are you angry that I got hurt, or angry that I was playing well?
-
-<<SetCharacterExpression Ramu Sad>>
-Ramu: I'm angry because... because when you play that well, I start believing. And believing is dangerous for people like us. What if you get seriously injured chasing this dream? What if you sacrifice everything else and it doesn't work out?
+<<SetCharacterExpression Raju Disappointed>>
+Raju: But bhaiya, I was doing really well before this happened.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: But what if it does work out? What if yesterday's practice and today's playing mean something?
+Raju: Everyone said I was playing like a much older boy.
+
+<<SetCharacterExpression Raju Confused>>
+Raju: Doesn't that matter?
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: That's exactly what scares me.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Then you'll need to be more careful. More disciplined. Because if you really have this gift, if you really can make it, then we can't afford to lose it to some stupid accident on a dusty ground.
+Ramu: You're too good for your age, too confident.
+
+<<SetCharacterExpression Ramu Anxious>>
+Ramu: And confidence can be dangerous when you're small and the game gets rough.
+
+<<SetCharacterExpression Raju Quizzical>>
+Raju: Are you angry that I got hurt?
+
+<<SetCharacterExpression Raju Confused>>
+Raju: Or angry that I was playing well?
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: I'm angry because... because when you play that well, I start believing.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And believing is dangerous for people like us.
+
+<<SetCharacterExpression Ramu Anxious>>
+Ramu: What if you get seriously injured chasing this dream?
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: What if you sacrifice everything else and it doesn't work out?
+
+<<SetCharacterExpression Raju Excited>>
+Raju: But what if it does work out?
+
+<<SetCharacterExpression Raju Confident>>
+Raju: What if yesterday's practice and today's playing mean something?
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Then you'll need to be more careful. More disciplined.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Because if you really have this gift, if you really can make it...
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Then we can't afford to lose it to some stupid accident on a dusty ground.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: So you do think I have talent?
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Yes. More than I want to admit. More than is safe for me to hope for. That's why we need to be smarter about this.
+Ramu: Yes. More than I want to admit.
 
-<<HideCharacter>>
-As they leave Koliwada Ground with Raju nursing his bruised ribs and Ramu grappling with the conflicting emotions of witnessing both his brother's exceptional performance and the physical dangers that competitive cricket presents, both understand that the day has revealed crucial truths about talent, risk, and the complex calculus of pursuing dreams from their disadvantaged position. Ramu's protective anger reflects deeper fears about raising hopes that circumstances might ultimately crush, while Raju's resilience and continued enthusiasm despite injury demonstrate the kind of determination that could either lead to success or devastating disappointment.
+<<SetCharacterExpression Ramu Worried>>
+Ramu: More than is safe for me to hope for.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: That's why we need to be smarter about this.
+
+<<HideAllCharacters>>
+
+As they leave the ground, both understand the day has revealed truths about talent, risk, and the complex calculus of pursuing dreams from their disadvantaged position.
 
 <<set $Ramu_Day = 3>>
 <<EndEvent true>>
@@ -147,39 +294,96 @@ position: -151,208
 ---
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite Rooftop>>
-<<HideCharacter>>
-Evening settles over the rooftop where Raju chooses to seek out his brother for a different kind of conversation. After two days of intense morning practices, he decides this quiet moment might be the right time to ask Ramu the questions that have been building inside him.
+<<HideAllCharacters>>
 
-<<HideCharacter>>
-The rooftop provides a peaceful escape from the crowded chaos of their ground-floor existence as evening shadows lengthen and the harsh heat of day gives way to the gentler warmth of twilight, creating an atmosphere conducive to the kind of honest conversation that might help both brothers understand the emotional complexity surrounding Raju's cricket ambitions. The elevated perspective offers a view across the sprawling neighborhood where countless other families struggle with similar dreams and limitations, while the privacy allows for discussions that might be impossible in their cramped home where every word echoes off thin walls.
+Evening settles over the rooftop. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
+
+<<HideAllCharacters>>
+
+The rooftop provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
 
 <<SetCharacterExpression Raju Serious>>
 Raju: Bhaiya, can I ask you something?
 
-<<SetCharacterExpression Ramu Serious>>
+<<SetCharacterExpression Ramu Neutral>>
 Ramu: What is it?
 
 <<SetCharacterExpression Raju Quizzical>>
-Raju: Why are you always angry when I play cricket? Even when I do well?
+Raju: Why are you always angry when I play cricket?
 
-<<SetCharacterExpression Ramu Sad>>
-Ramu: ...Because every shot you play makes me nervous. You're too small for such big shots, and I know how the world treats boys like us who dream too big.
+<<SetCharacterExpression Raju Confused>>
+Raju: Even when I do well?
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: ...Because every shot you play makes me nervous.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: And yet... when you hit the ball, when you time it perfectly and send it racing to the boundary, even the older boys stop and stare. Even the men who come to watch start talking about 'that little kid with the natural swing.' That scares me more than your failures ever could.
+Ramu: You're too small for such big shots.
+
+<<SetCharacterExpression Ramu Anxious>>
+Ramu: And I know how the world treats boys like us who dream too big.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And yet... when you hit the ball, when you time it perfectly...
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: When you send it racing to the boundary, even the older boys stop and stare.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Even the men who come to watch start talking about 'that little kid with the natural swing.'
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: That scares me more than your failures ever could.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: So you are proud of me? You do think I can really play?
+Raju: So you are proud of me?
+
+<<SetCharacterExpression Raju Excited>>
+Raju: You do think I can really play?
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Proud? Hmph. Pride is a luxury we can't afford. Pride won't win matches, pride won't put food on the table, pride won't pay for coaching or equipment or any of the thousand things you'll need.
+Ramu: Proud? Hmph. Pride is a luxury we can't afford.
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: Pride won't win matches, pride won't put food on the table.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Pride won't pay for coaching or equipment or any of the thousand things you'll need.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But yes, little brother. When you play - when you really play...
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Not just swing wildly but actually play with thought and timing...
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: But yes, little brother. When you play - when you really play, not just swing wildly but actually play with thought and timing - I see something that makes me believe in things I've taught myself not to believe in.
+Ramu: I see something that makes me believe in things I've taught myself not to believe in.
 
-<<HideCharacter>>
-As their rooftop conversation reveals the emotional complexity behind Ramu's seemingly harsh approach to his brother's cricket development, both participants gain deeper understanding of how fear and hope can coexist in the pursuit of unlikely dreams. Ramu's admission of secret pride and belief, carefully guarded behind practical concerns about their family's limitations, provides Raju with validation that his efforts are recognized even when not explicitly praised, while the honest exchange strengthens their bond as brothers united in facing the challenges that separate talent from opportunity.
+<<SetCharacterExpression Raju Excited>>
+Raju: Then why do you always criticize me?
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Because hope is dangerous for people like us, Raju.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Every time I let myself hope, I remember how easily dreams can be crushed.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: So I criticize to protect us both. To keep expectations realistic.
+
+<<SetCharacterExpression Raju Quizzical>>
+Raju: But doesn't that make it harder to improve?
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: Maybe. But you seem to be improving anyway.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Despite my harsh words, or maybe because of them.
+
 <<HideAllCharacters>>
+
+Their rooftop conversation reveals the emotional complexity behind Ramu's seemingly harsh approach. Both gain deeper understanding of how fear and hope coexist.
+
 <<set $Ramu_Day = 4>>
 <<EndEvent true>>
 ===
@@ -191,59 +395,107 @@ position: 469,238
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
-Three days of consistent practice sessions have created a routine, but today Raju chooses to seek out his brother at the Koliwada Ground instead of their usual home practice. He wants to show Ramu how the lessons are paying off in real games with other kids.
+Three days of consistent practice have created a routine. Today, Raju seeks out his brother at Koliwada Ground to show how the lessons are paying off in real games.
 
-<<HideCharacter>>
-The familiar dust and energy of Koliwada Ground welcome Raju as he arrives to demonstrate his progress in the more challenging environment of competitive play with neighborhood boys, while Ramu's presence reflects both continued concern for his brother's safety and growing curiosity about whether the morning practice sessions are translating into improved performance. The public setting creates additional pressure as other players and casual observers gather to witness whether the young boy's reputation for unusual talent can withstand the scrutiny of repeated demonstration under varying conditions and against different opponents.
+The familiar dust and energy of Koliwada Ground welcome Raju. The public setting creates additional pressure as observers gather to witness his progress.
 
 <<SetCharacterExpression Amit Excited>>
-Amit: Bhaiya, your brother's really good! Better than kids twice his age. You must be proud!
+Amit: Bhaiya, your brother's really good!
+
+<<SetCharacterExpression Amit Astonished>>
+Amit: Better than kids twice his age. You must be proud!
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: He's just having a lucky day.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: He's just having a lucky day. Tomorrow might be different. Cricket is unpredictable.
+Ramu: Tomorrow might be different. Cricket is unpredictable.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: Bhaiya! Did you see that six? It went right over the compound wall! Just like you taught me - watch the ball, elbow up, follow through!
+Raju: Bhaiya! Did you see that six?
+
+<<SetCharacterExpression Raju Overjoyed>>
+Raju: It went right over the compound wall!
+
+<<SetCharacterExpression Raju Excited>>
+Raju: Just like you taught me - watch the ball, elbow up, follow through!
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: ...I saw. But one shot doesn't make a player.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: ...I saw. But one shot doesn't make a player. Don't get carried away. There's still so much work to do.
+Ramu: Don't get carried away. There's still so much work to do.
+
+<<SetCharacterExpression Raju Disappointed>>
+Raju: You never appreciate anything I do.
 
 <<SetCharacterExpression Raju Sad>>
-Raju: You never appreciate anything I do. Even when I use everything you taught me, it's still not enough.
+Raju: Even when I use everything you taught me, it's still not enough.
 
-<<SetCharacterExpression Ramu Sad>>
-Ramu: It's not that I don't appreciate... it's just that I know how cruel this game can be. I see your talent growing every day, and that scares me more than I can tell you.
+<<SetCharacterExpression Ramu Worried>>
+Ramu: It's not that I don't appreciate...
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: It's just that I know how cruel this game can be.
+
+<<SetCharacterExpression Ramu Anxious>>
+Ramu: I see your talent growing every day, and that scares me more than I can tell you.
 
 <<SetCharacterExpression Raju Quizzical>>
-Raju: Why does my getting better scare you? Isn't that what you want?
+Raju: Why does my getting better scare you?
 
-<<SetCharacterExpression Ramu Sad>>
-Ramu: Because the better you get, the more people will notice. And when people notice, they expect things. And when they expect things from poor kids like us...
+<<SetCharacterExpression Raju Confused>>
+Raju: Isn't that what you want?
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Because the better you get, the more people will notice.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And when people notice, they expect things.
+
+<<SetCharacterExpression Ramu Anxious>>
+Ramu: And when they expect things from poor kids like us...
 
 <<SetCharacterExpression Raju Quizzical>>
 Raju: What happens?
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Sometimes the pressure breaks you. Sometimes the dream becomes so big that reality can't hold it. I've seen it happen, little brother. I've seen boys with talent like yours lose everything chasing impossible dreams.
+Ramu: Sometimes the pressure breaks you.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Sometimes the dream becomes so big that reality can't hold it.
+
+<<SetCharacterExpression Ramu Sad>>
+Ramu: I've seen it happen, little brother. I've seen boys with talent like yours lose everything.
 
 <<SetCharacterExpression Amit Excited>>
-Amit: But bhaiya, what if his dreams aren't impossible? What if he really can make it?
+Amit: But bhaiya, what if his dreams aren't impossible?
+
+<<SetCharacterExpression Amit Confident>>
+Amit: What if he really can make it?
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: How should you respond to people recognizing your talent? What approach will you take to prove this is more than just a phase?
+Ramu: How should you respond to people recognizing your talent?
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: What approach will you take to prove this is more than just a phase?
 
 <<HideAllCharacters>>
-As Ramu poses the crucial question about how to handle growing recognition while managing the risks that accompany raised expectations, both brothers stand at a crossroads that will determine whether exceptional talent develops into sustained excellence or becomes another cautionary tale of dreams derailed by circumstances beyond their control. The gathering crowd of admirers and the increasingly impressive displays of skill create both opportunity and pressure, while Ramu's protective instincts conflict with his growing recognition that Raju's abilities might indeed justify the risks that serious cricket pursuit necessarily entails.
 
--> Raju: I understand your fears, bhaiya. Let me prove my dedication slowly and show you cricket can be safe. I won't take unnecessary risks or get carried away by praise.
+As Ramu poses the crucial question, both brothers stand at a crossroads that will determine whether talent develops into excellence or becomes another cautionary tale.
+
+<<AutoAdvance true>>
+Make a Choice
+<<AutoAdvance false>>
+-> Prove dedication slowly and safely
     <<set $Ramu_Path = "a">>
     <<set $Ramu_Day = 5>>
     <<EndEvent true>>
--> Raju: I'll prove my commitment is unbreakable, bhaiya. Watch me work harder than anyone else. Nothing will stop me from showing you this dream is real.
+-> Show unbreakable commitment through hard work
     <<set $Ramu_Path = "b">>
     <<set $Ramu_Day = 5>>
     <<EndEvent true>>
--> Raju: Let me show you I can balance cricket dreams with responsibility, bhaiya. I'll be smart about this - prove that pursuing cricket makes me more mature, not less.
+-> Balance cricket with responsibility
     <<set $Ramu_Path = "c">>
     <<set $Ramu_Day = 5>>
     <<EndEvent true>>
@@ -266,41 +518,83 @@ title: Ramu_Day5a
 tags:
 position: 934,-229
 ---
+
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression Raju Serious>>
-Raju: I understand your fears, bhaiya. Let me prove my dedication slowly and show you cricket can be safe. I won't take unnecessary risks or get carried away by praise.
+Raju: I understand your fears, bhaiya.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: Let me prove my dedication slowly and show you cricket can be safe.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: I won't take unnecessary risks or get carried away by praise.
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: You... you want to go slower?
+
+<<SetCharacterExpression Ramu Quizzical>>
+Ramu: Most boys your age would be demanding more opportunities.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: You... you want to go slower? Most boys your age would be demanding more opportunities, not offering to be more careful.
+Ramu: Not offering to be more careful.
 
 <<SetCharacterExpression Raju Serious>>
-Raju: Because I see how worried you get, bhaiya. I'd rather earn your trust gradually than lose it by being reckless. Cricket will wait if it means keeping your support.
+Raju: Because I see how worried you get, bhaiya.
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: Your maturity surprises me sometimes. Most kids wouldn't even notice their brother's fears, let alone want to address them.
+<<SetCharacterExpression Raju Confident>>
+Raju: I'd rather earn your trust gradually than lose it by being reckless.
+
+<<SetCharacterExpression Raju Smiling>>
+Raju: Cricket will wait if it means keeping your support.
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: Your maturity surprises me sometimes.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Most kids wouldn't even notice their brother's fears.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Let alone want to address them.
 
 <<SetCharacterExpression Raju Serious>>
-Raju: Every morning I choose to practice with you because I value what we're building together. I don't want to rush that or risk damaging it.
+Raju: Every morning I choose to practice with you because I value what we're building together.
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: Your patience and understanding are showing me something important - that maybe your cricket dreams come with the wisdom to pursue them safely.
+<<SetCharacterExpression Raju Determined>>
+Raju: I don't want to rush that or risk damaging it.
 
-<<HideCharacter>>
-As Raju demonstrates emotional maturity by prioritizing his brother's concerns over immediate cricket opportunities, their relationship evolves from protective oversight to genuine partnership based on mutual respect and understanding. The willingness to proceed cautiously rather than aggressively pursuing recognition reflects wisdom beyond his years, while Ramu's surprise and growing trust suggest that his brother's approach to balancing ambition with responsibility might indeed justify supporting the cricket dreams that initially seemed too risky for their family's circumstances.
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Your patience and understanding are showing me something important.
 
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Then I'll have to learn to hope instead of fear. And that might be the hardest thing I've ever done.
-
-<<SetCharacterExpression Raju Excited>>
-Raju: I won't let you down, bhaiya. I won't let the dream break me. I'll work harder than anyone.
-
-<<SetCharacterExpression Ramu Serious>>
-Ramu: I know you will. That's exactly what scares me. And what gives me hope.
+<<SetCharacterExpression Ramu Excited>>
+Ramu: That maybe your cricket dreams come with the wisdom to pursue them safely.
 
 <<HideAllCharacters>>
-As both brothers acknowledge the emotional complexity of pursuing dreams that carry both tremendous potential and significant risk, their relationship reaches a new level of honesty and mutual understanding that strengthens their partnership while recognizing the real challenges ahead. Ramu's admission that hope might be more frightening than fear reflects the psychological difficulty of supporting ambitions that could lead to either remarkable success or devastating disappointment, while Raju's commitment to proving worthy of that hope creates accountability that could drive exceptional dedication to training and development.
+
+As Raju demonstrates emotional maturity by prioritizing his brother's concerns, their relationship evolves from protective oversight to genuine partnership.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Then I'll have to learn to hope instead of fear.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: And that might be the hardest thing I've ever done.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: I won't let you down, bhaiya.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: I won't let the dream break me. I'll work harder than anyone.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: I know you will. That's exactly what scares me.
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: And what gives me hope.
+
+<<HideAllCharacters>>
+
+As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 
 <<set $Ramu_Day = 6>>
 <<EndEvent true>>
@@ -310,41 +604,80 @@ title: Ramu_Day5b
 tags:
 position: 902,93
 ---
+
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression Raju Excited>>
-Raju: I'll prove my commitment is unbreakable, bhaiya. Watch me work harder than anyone else. Nothing will stop me from showing you this dream is real.
+<<SetCharacterExpression Raju Determined>>
+Raju: I'll prove my commitment is unbreakable, bhaiya.
 
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Hard work without direction can be dangerous, beta. What if your determination leads you to take risks you're not ready for?
+<<SetCharacterExpression Raju Serious>>
+Raju: Watch me work harder than anyone else.
 
-<<SetCharacterExpression Raju Excited>>
-Raju: Then I'll learn to be ready faster! I'll practice until my hands blister, run until my legs shake, face any challenge that proves I deserve this chance.
+<<SetCharacterExpression Raju Confident>>
+Raju: Nothing will stop me from showing you this dream is real.
 
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Your passion is remarkable, but passion without wisdom can destroy what it's trying to build. How do I know you won't burn yourself out?
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Hard work without direction can be dangerous, beta.
 
-<<SetCharacterExpression Raju Excited>>
-Raju: Because this fire inside me gets stronger with challenge, not weaker. Every hard practice, every difficult drill just proves how much I want this.
+<<SetCharacterExpression Ramu Quizzical>>
+Ramu: What if your determination leads you to take risks you're not ready for?
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: Your intensity is unlike anything I've seen in boys your age. Maybe that kind of determination really can overcome obstacles I thought were impossible.
-
-<<HideCharacter>>
-As Raju's passionate commitment to cricket training intensifies despite his brother's concerns about sustainable pace and realistic limits, Ramu begins to recognize that this level of dedication might indeed represent something extraordinary that transcends typical childhood enthusiasm. The young boy's willingness to embrace physical discomfort and mental challenges while maintaining enthusiasm suggests a temperament suited for the demanding realities of competitive sports, while his articulate defense of his commitment demonstrates both emotional intelligence and genuine understanding of what serious athletic pursuit requires.
-
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Then I'll have to learn to hope instead of fear. And that might be the hardest thing I've ever done.
+<<SetCharacterExpression Raju Determined>>
+Raju: Then I'll learn to be ready faster!
 
 <<SetCharacterExpression Raju Excited>>
-Raju: I won't let you down, bhaiya. I won't let the dream break me. I'll work harder than anyone.
+Raju: I'll practice until my hands blister, run until my legs shake.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Face any challenge that proves I deserve this chance.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: I know you will. That's exactly what scares me. And what gives me hope.
+Ramu: Your passion is remarkable, but passion without wisdom can destroy what it's trying to build.
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: How do I know you won't burn yourself out?
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Because this fire inside me gets stronger with challenge, not weaker.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: Every hard practice, every difficult drill just proves how much I want this.
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: Your intensity is unlike anything I've seen in boys your age.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Maybe that kind of determination really can overcome obstacles.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Obstacles I thought were impossible.
 
 <<HideAllCharacters>>
-As both brothers acknowledge the emotional complexity of pursuing dreams that carry both tremendous potential and significant risk, their relationship reaches a new level of honesty and mutual understanding that strengthens their partnership while recognizing the real challenges ahead. Ramu's admission that hope might be more frightening than fear reflects the psychological difficulty of supporting ambitions that could lead to either remarkable success or devastating disappointment, while Raju's commitment to proving worthy of that hope creates accountability that could drive exceptional dedication to training and development.
+
+As Raju's passionate commitment intensifies, Ramu recognizes that this level of dedication might indeed represent something extraordinary.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Then I'll have to learn to hope instead of fear.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: And that might be the hardest thing I've ever done.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: I won't let you down, bhaiya.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: I won't let the dream break me. I'll work harder than anyone.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: I know you will. That's exactly what scares me.
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: And what gives me hope.
+
+<<HideAllCharacters>>
+
+As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 
 <<set $Ramu_Day = 6>>
 <<EndEvent true>>
@@ -354,41 +687,80 @@ title: Ramu_Day5c
 tags:
 position: 1067,-57
 ---
+
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
+<<SetCharacterExpression Raju Confident>>
+Raju: Let me show you I can balance cricket dreams with responsibility, bhaiya.
+
 <<SetCharacterExpression Raju Serious>>
-Raju: Let me show you I can balance cricket dreams with responsibility, bhaiya. I'll be smart about this - prove that pursuing cricket makes me more mature, not less.
+Raju: I'll be smart about this - prove that pursuing cricket makes me more mature, not less.
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: Balance? Most dreamers I know become so obsessed they ignore everything else.
 
 <<SetCharacterExpression Ramu Quizzical>>
-Ramu: Balance? Most dreamers I know become so obsessed they ignore everything else. How would you stay responsible while chasing cricket?
+Ramu: How would you stay responsible while chasing cricket?
 
-<<SetCharacterExpression Raju Serious>>
-Raju: By using cricket discipline to improve everything else - studies, helping at home, being a better son and brother. Let cricket training make me stronger in all areas of life.
-
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: That's... that's actually sophisticated thinking. Most kids see cricket and responsibility as competing forces, but you're talking about integration.
-
-<<SetCharacterExpression Raju Serious>>
-Raju: Cricket teaches focus, dedication, handling pressure - all skills that help with everything else. I want to prove that pursuing dreams responsibly makes you a better person overall.
-
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: Your strategic approach shows wisdom I didn't expect. Maybe you really can handle big dreams without losing sight of what matters most.
-
-<<HideCharacter>>
-As Raju articulates a sophisticated understanding of how athletic discipline can enhance rather than compromise other responsibilities, Ramu discovers that his brother possesses not just talent but the kind of strategic thinking that could make cricket dreams sustainable and beneficial rather than destructive. The integration of sport with broader life skills represents a mature approach that addresses many of the concerns that initially made supporting cricket ambitions seem irresponsible, while demonstrating intellectual development that complements rather than conflicts with athletic potential.
-
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Then I'll have to learn to hope instead of fear. And that might be the hardest thing I've ever done.
+<<SetCharacterExpression Raju Confident>>
+Raju: By using cricket discipline to improve everything else.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: I won't let you down, bhaiya. I won't let the dream break me. I'll work harder than anyone.
+Raju: Studies, helping at home, being a better son and brother.
 
-<<SetCharacterExpression Ramu Serious>>
-Ramu: I know you will. That's exactly what scares me. And what gives me hope.
+<<SetCharacterExpression Raju Determined>>
+Raju: Let cricket training make me stronger in all areas of life.
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: That's... that's actually sophisticated thinking.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Most kids see cricket and responsibility as competing forces.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But you're talking about integration.
+
+<<SetCharacterExpression Raju Serious>>
+Raju: Cricket teaches focus, dedication, handling pressure.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: All skills that help with everything else.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: I want to prove that pursuing dreams responsibly makes you a better person overall.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Your strategic approach shows wisdom I didn't expect.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Maybe you really can handle big dreams without losing sight of what matters most.
 
 <<HideAllCharacters>>
-As both brothers acknowledge the emotional complexity of pursuing dreams that carry both tremendous potential and significant risk, their relationship reaches a new level of honesty and mutual understanding that strengthens their partnership while recognizing the real challenges ahead. Ramu's admission that hope might be more frightening than fear reflects the psychological difficulty of supporting ambitions that could lead to either remarkable success or devastating disappointment, while Raju's commitment to proving worthy of that hope creates accountability that could drive exceptional dedication to training and development.
+
+As Raju articulates a sophisticated understanding of athletic discipline, Ramu discovers his brother possesses strategic thinking that could make cricket dreams sustainable.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Then I'll have to learn to hope instead of fear.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: And that might be the hardest thing I've ever done.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: I won't let you down, bhaiya.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: I won't let the dream break me. I'll work harder than anyone.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: I know you will. That's exactly what scares me.
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: And what gives me hope.
+
+<<HideAllCharacters>>
+
+As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 
 <<set $Ramu_Day = 6>>
 <<EndEvent true>>
@@ -400,65 +772,115 @@ position: 189,214
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
-The sky is still dark when Ramu wakes his brother, his face more serious than usual. Yesterday's conversation has forced him to confront a crucial question about whether Raju is prepared for serious cricket training.
+The sky is still dark when Ramu wakes his brother. Yesterday's conversation has forced him to confront whether Raju is prepared for serious training.
 
-The pre-dawn darkness envelops their small home as Ramu deliberately awakens his brother earlier than usual, the serious expression on his weathered face reflecting a night of contemplation about whether their cricket journey should advance to the next level of intensity and commitment. Yesterday's honest conversation about hopes, fears, and expectations has crystallized his understanding that half-measures will no longer suffice - either Raju possesses the genuine dedication that serious cricket demands, or their morning practice sessions should return to casual play that avoids raising dangerous expectations about impossible dreams.
+Pre-dawn darkness envelops their small home. Ramu's serious expression reflects a night of contemplation about advancing to the next level.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Wake up, little brother. If you want to play cricket seriously, if you want me to consider that tournament, you need to show me something today.
+Ramu: Wake up, little brother.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: If you want to play cricket seriously, if you want me to consider that tournament...
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: You need to show me something today.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: Show you what, bhaiya? I'll do anything.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: I mean proper cricket training. Not the gentle practice we've been doing. Real training - the kind that hurts, the kind that tests everything you think you know about wanting something.
+Ramu: I mean proper cricket training. Not the gentle practice we've been doing.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Real training - the kind that hurts.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: The kind that tests everything you think you know about wanting something.
+
+<<SetCharacterExpression Raju Confident>>
 Raju: I'm ready, bhaiya. I've been ready for days.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: This isn't a game. For the next two hours, you'll face deliveries at different speeds, different angles. You'll run suicides between wickets until your legs shake. You'll practice defensive shots until your hands blister. And you'll do it all without complaining.
+Ramu: This isn't a game.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: For the next two hours, you'll face deliveries at different speeds, different angles.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: You'll run suicides between wickets until your legs shake.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: You'll practice defensive shots until your hands blister.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: And you'll do it all without complaining.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: And if I do well?
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: If you do well, if you show me the dedication that tournament play requires, then maybe - maybe I'll believe you're serious about this dream.
+Ramu: If you do well, if you show me the dedication that tournament play requires...
 
 <<SetCharacterExpression Ramu Serious>>
+Ramu: Then maybe - maybe I'll believe you're serious about this dream.
+
+<<SetCharacterExpression Ramu Skeptical>>
 Ramu: Tired yet?
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Determined>>
 Raju: No, bhaiya. Keep going.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Your hands are red. Your form is getting sloppy.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Then show me how to do it better. Don't make it easier.
 
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: ...You didn't complain once.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Not even when I made you repeat that difficult leg-side glance fifteen times.
+
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: ...You didn't complain once. Not even when I made you repeat that difficult leg-side glance fifteen times. Not even when your hands started hurting.
+Ramu: Not even when your hands started hurting.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: Because I want this, bhaiya. I really want to play cricket. Not just for fun, but for real. Like those players you talked to yesterday.
+Raju: Because I want this, bhaiya. I really want to play cricket.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Not just for fun, but for real.
+
+<<SetCharacterExpression Raju Serious>>
+Raju: Like those players you talked to yesterday.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Want is not enough. Cricket requires dedication every single day, even when you don't feel like it, even when it hurts, even when you fail.
+Ramu: Want is not enough.
 
-<<SetCharacterExpression Raju Excited>>
-Raju: Then I'll be dedicated. Every single day. You'll see.
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Cricket requires dedication every single day.
 
-<<SetCharacterExpression Ramu Smiling>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Even when you don't feel like it, even when it hurts, even when you fail.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Then I'll be dedicated. Every single day.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: You'll see.
+
+<<SetCharacterExpression Ramu Proud>>
 Ramu: I think... I think you might actually mean that.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: I do mean it. So what happens now?
 
-<<SetCharacterExpression Ramu Smiling>>
+<<SetCharacterExpression Ramu Confident>>
 Ramu: Now we find out if you're serious about that tournament.
+
 <<HideAllCharacters>>
-As the grueling training session concludes with Raju having demonstrated remarkable endurance and dedication despite physical discomfort and mental fatigue, both brothers understand that they have crossed a significant threshold from casual practice to serious athletic development. The transformation from gentle encouragement to demanding evaluation has revealed depths of commitment that surprise even Ramu, while Raju's consistent performance under pressure provides concrete evidence that his cricket ambitions might possess the foundation necessary for sustained pursuit of competitive excellence.
+
+As the grueling training session concludes, both understand they've crossed a threshold from casual practice to serious athletic development.
 
 <<set $Ramu_Day = 7>>
 <<EndEvent true>>
@@ -470,41 +892,85 @@ position: -184,-151
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
-After six consecutive days of consistent practice and improvement, Raju chooses to join his elder brother for another morning session, despite knowing that today's practice will likely draw attention from their neighbors who have started timing their morning routines to catch glimpses of the brothers' training.
+After six consecutive days of consistent practice, Raju joins his brother for another morning session. Today's practice will likely draw attention from neighbors.
 
-The narrow courtyard that serves as their practice ground has become an unexpected source of neighborhood entertainment as curious residents begin timing their morning activities to witness the intense training sessions that have transformed Raju from casual cricket enthusiast into serious athlete, while the growing audience creates additional pressure and motivation that mirrors the public scrutiny that accompanies competitive sports. The community interest reflects recognition that something exceptional is developing in their midst, transforming private family effort into a shared investment in local talent that carries both support and expectations for future success.
+The narrow courtyard has become unexpected neighborhood entertainment. Curious residents time their morning activities to witness the intense training sessions.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Ready for today's session, champ? Word's gotten around the neighborhood about your batting yesterday. Mrs. Sharma asked me if you're really serious about this tournament.
+Ramu: Ready for today's session, champ?
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Word's gotten around the neighborhood about your batting yesterday.
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: Mrs. Sharma asked me if you're really serious about this tournament.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: What did you tell her, bhai?
 
-<<SetCharacterExpression Ramu Smiling>>
+<<SetCharacterExpression Ramu Confident>>
 Ramu: I told her to watch this morning's practice and decide for herself.
 
-<<SetCharacterExpression Ramu Excited>>
-Ramu: Six days ago, I thought this was just another childhood phase. But watching you practice every single morning, seeing how you listen to every suggestion, how you practice the same shot fifty times until you get it right...
-
-<<SetCharacterExpression Ramu Excited>>
-Ramu: These people have seen you grow up. They've watched a hundred kids play cricket in these lanes. But they're gathering to watch you practice. That means something, Raju. That means you're not just playing anymore - you're performing.
-
-<<SetCharacterExpression Raju Excited>>
-Raju: It feels different today. Like I'm not just hitting balls - like I'm proving something.
-
-<<SetCharacterExpression MrsSharma Excited>>
-Mrs. Sharma: Ramu beta, is your little brother going to play in that big tournament? The whole building is talking about his cricket!
-
-<<SetCharacterExpression Ramu Excited>>
-Ramu: Sharma aunty, come down and see for yourself! Six days of sunrise practice - he hasn't missed a single morning!
-
-<<SetCharacterExpression Raju Serious>>
-Raju: Bhai, I won't let you down. Not after everything you've taught me this week.
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Six days ago, I thought this was just another childhood phase.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: You've already made me proud, little brother. Now let's show them what six days of real practice looks like.
+Ramu: But watching you practice every single morning...
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Seeing how you listen to every suggestion...
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: How you practice the same shot fifty times until you get it right...
+
+<<SetCharacterExpression Ramu Astonished>>
+Ramu: These people have seen you grow up.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: They've watched a hundred kids play cricket in these lanes.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But they're gathering to watch you practice.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: That means something, Raju. That means you're not just playing anymore.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: You're performing.
+
+<<SetCharacterExpression Raju Excited>>
+Raju: It feels different today.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: Like I'm not just hitting balls - like I'm proving something.
+
+<<SetCharacterExpression MrsSharma Excited>>
+Mrs. Sharma: Ramu beta, is your little brother going to play in that big tournament?
+
+<<SetCharacterExpression MrsSharma Astonished>>
+Mrs. Sharma: The whole building is talking about his cricket!
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Sharma aunty, come down and see for yourself!
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Six days of sunrise practice - he hasn't missed a single morning!
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Bhai, I won't let you down.
+
+<<SetCharacterExpression Raju Serious>>
+Raju: Not after everything you've taught me this week.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: You've already made me proud, little brother.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Now let's show them what six days of real practice looks like.
+
 <<HideAllCharacters>>
-As the seventh day's practice session unfolds before an appreciative neighborhood audience, both brothers understand that their private journey toward cricket excellence has evolved into a community celebration of dedication and talent that validates their efforts while creating additional motivation to continue pursuing dreams that now represent more than individual ambition. The public recognition transforms their morning routine into performance art that demonstrates how consistent effort and family support can elevate natural ability into something approaching professional competence, inspiring others while creating accountability for sustained excellence.
+
+As the seventh day's practice unfolds before an appreciative audience, their private journey has evolved into a community celebration.
 
 <<set $Ramu_Day = 8>>
 <<EndEvent true>>
@@ -516,54 +982,139 @@ position: 526,-86
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite HutInterior>>
 
-For the eighth consecutive morning, Raju chooses to meet his elder brother for practice, but today carries special weight. After a week of consistent training and growing community recognition, today is the day when Ramu will either commit to helping with tournament registration or suggest waiting another year.
+For the eighth consecutive morning, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
 
-The familiar pre-dawn atmosphere carries unprecedented significance as both brothers prepare for what they understand will be a decisive practice session that determines whether a week of intensive training culminates in tournament registration or represents the conclusion of an experiment in serious cricket development. The accumulated evidence of dedication, improvement, and community support has created momentum that pushes toward a commitment that once seemed premature and risky, while the financial and emotional investment required for tournament participation forces final evaluation of whether dreams have sufficient foundation to justify the leap from practice to competition.
-
-<<SetCharacterExpression Ramu Serious>>
-Ramu: Seven days ago, when you first asked me to help with cricket, I thought it was just another kid's fantasy. But I've watched you choose to wake up early every single morning, choose to practice when other kids are still sleeping, choose to listen and improve instead of just playing around.
-
-<<SetCharacterExpression Raju Serious>>
-Raju: I meant everything I said, bhai. Cricket isn't just play for me - it's my dream. And you've helped me understand what it takes to chase dreams properly.
+The familiar pre-dawn atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: The tournament registration closes tomorrow. The entry fee is fifty rupees - money our family doesn't have to waste on uncertain dreams.
+Ramu: Seven days ago, when you first asked me to help with cricket...
+
+<<SetCharacterExpression Ramu Skeptical>>
+Ramu: I thought it was just another kid's fantasy.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But I've watched you choose to wake up early every single morning.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Choose to practice when other kids are still sleeping.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: But after seven days of watching you prove your commitment, after seeing our neighbors stop their morning routines to watch you practice, after witnessing how seriously you take every piece of advice... I'm convinced this isn't uncertain anymore.
+Ramu: Choose to listen and improve instead of just playing around.
+
+<<SetCharacterExpression Raju Serious>>
+Raju: I meant everything I said, bhai.
+
+<<SetCharacterExpression Raju Determined>>
+Raju: Cricket isn't just play for me - it's my dream.
+
+<<SetCharacterExpression Raju Confident>>
+Raju: And you've helped me understand what it takes to chase dreams properly.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: The tournament registration closes tomorrow.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: The entry fee is fifty rupees.
+
+<<SetCharacterExpression Ramu Worried>>
+Ramu: Money our family doesn't have to waste on uncertain dreams.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: But after seven days of watching you prove your commitment...
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: After seeing our neighbors stop their morning routines to watch you practice...
+
+<<SetCharacterExpression Ramu Smiling>>
+Ramu: After witnessing how seriously you take every piece of advice...
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: I'm convinced this isn't uncertain anymore.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: You really think I'm ready?
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: I think you've been ready for a week. The question was whether I was ready to believe in you. Seven mornings of watching you choose cricket over sleep, improvement over comfort, discipline over fun... you've answered every doubt I had.
+<<SetCharacterExpression Ramu Proud>>
+Ramu: I think you've been ready for a week.
+
+<<SetCharacterExpression Ramu Serious>>
+Ramu: The question was whether I was ready to believe in you.
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: I'll find the fifty rupees. I'll register you tomorrow morning. And I'll be there cheering when you play, knowing that every shot you make comes from the dedication you've shown me this week.
+Ramu: Seven mornings of watching you choose cricket over sleep...
 
-<<SetCharacterExpression Raju Excited>>
-Raju: Thank you, bhai. For believing in me. For teaching me. For giving me this chance.
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Improvement over comfort, discipline over fun...
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: You've answered every doubt I had.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: I'll find the fifty rupees. I'll register you tomorrow morning.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: And I'll be there cheering when you play.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Knowing that every shot you make comes from the dedication you've shown me this week.
+
+<<SetCharacterExpression Raju Overjoyed>>
+Raju: Thank you, bhai. For believing in me.
+
+<<SetCharacterExpression Raju Smiling>>
+Raju: For teaching me. For giving me this chance.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: You earned this chance, Raju.
+
+<<SetCharacterExpression Ramu Excited>>
+Ramu: Every morning for seven days, you chose to earn it.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: You earned this chance, Raju. Every morning for seven days, you chose to earn it.
+Ramu: And since you're going to be playing in a real tournament...
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: And since you're going to be playing in a real tournament, you'll need proper equipment.
+<<SetCharacterExpression Ramu Excited>>
+Ramu: You'll need proper equipment.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Astonished>>
 Raju: You made this? For me?
 
+<<SetCharacterExpression Ramu Loving>>
+Ramu: Every night for the past week, after you went to sleep, I worked on it.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Each day you showed me more dedication...
+
+<<SetCharacterExpression Ramu Loving>>
+Ramu: And each night I put more love into this bat.
+
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Every night for the past week, after you went to sleep, I worked on it. Each day you showed me more dedication, and each night I put more love into this bat. It's not fancy like the ones in the shops, but it's made for your hands, by someone who believes in your dreams.
+Ramu: It's not fancy like the ones in the shops.
 
-<<SetCharacterExpression Raju Excited>>
-Raju: It's perfect, bhai. It's the most beautiful bat in the world because you made it for me.
+<<SetCharacterExpression Ramu Loving>>
+Ramu: But it's made for your hands, by someone who believes in your dreams.
 
-<<SetCharacterExpression Ramu Smiling>>
-Ramu: Now go show them what my little champion can do. And remember - no matter what happens in that tournament, I'm already proud of you. You've already won the only victory that matters.
+<<SetCharacterExpression Raju Overjoyed>>
+Raju: It's perfect, bhai.
 
-<<HideCharacter>>
-As the eighth morning concludes with Ramu's commitment to tournament registration and the presentation of a handcrafted bat that represents both practical support and emotional investment in his brother's dreams, both participants understand that they have successfully completed a transformation from skeptical evaluation to wholehearted partnership in pursuing cricket excellence. The combination of proven dedication, community recognition, and family support has created conditions that justify taking the next step from private practice to public competition, while the custom equipment symbolizes the kind of personal investment that turns individual dreams into shared family projects worthy of significant sacrifice and support.
+<<SetCharacterExpression Raju Loving>>
+Raju: It's the most beautiful bat in the world because you made it for me.
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: Now go show them what my little champion can do.
+
+<<SetCharacterExpression Ramu Loving>>
+Ramu: And remember - no matter what happens in that tournament...
+
+<<SetCharacterExpression Ramu Proud>>
+Ramu: I'm already proud of you.
+
+<<SetCharacterExpression Ramu Loving>>
+Ramu: You've already won the only victory that matters.
+
+<<HideAllCharacters>>
+
+As the eighth morning concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
 
 <<set $Ramu_Complete = true>>
 <<jump Courage>>

@@ -10,7 +10,7 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite "HutInterior">>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Curious">>
 Ramu: Time to go. You're nervous?
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -23,7 +23,7 @@ Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and 
 Raju: Thank you bhai.
 
 <<HideAllCharacters>>
-<<FadeToBlack>>
+<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

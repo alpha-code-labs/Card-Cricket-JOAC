@@ -1,0 +1,37 @@
+title: scene_56
+tags: 
+colorID: 0
+position: 0,0
+---
+
+ 
+ 
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Captain, you beauty—you did exactly what was required, and the team salutes you.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: 5 coins. That's all I focussed on
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: That's my boy—that's what we need, the only thing we need.
+
+<<SetCharacterExpression "Raju" "Tired">>
+Raju: Big day tomorrow—let's go home and rest.
+
+<<SetCharacterExpression "Ramu" "Relaxed">>
+Ramu: Tomorrow another day, fresh challenge—yes, let's go and sleep.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes sir.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===

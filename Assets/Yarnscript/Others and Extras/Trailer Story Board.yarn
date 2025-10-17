@@ -1,0 +1,166 @@
+﻿title: Trailer_Story_Board
+---
+<<HideAllCharacters>>
+// 00:00:00,000 --> 00:00:04,000
+<<SetBGSprite KohliwadaGround>>
+//<<music ambient_gully fadeIn=1>>
+//<<sfx bg_gully_loop vol=0.6>>
+//<<cut EXT_GULLY_DAY>>
+Narrator: In every gully match, there's always one kid who waits.
+// 00:00:04,000 --> 00:00:08,000
+<<SetBGSprite KohliwadaGround>>
+Narrator: Too small to bat. Too slow to field.
+Narrator: But sometimes, one of them is different… and only an elder brother can see it.
+// 00:00:08,000 --> 00:00:15,000
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression Ramu Excited>>
+// Tone note: "Excited" skews upbeat/cartoonish. For a heavy, cinematic beat, prefer restrained urgency.
+// Suggest: Determined/Protective urgency — tight jaw, firm eye contact, low but decisive delivery (no shout).
+Ramu: Raju! Grab the bat — you're in!
+<<SetCharacterExpression Raju BattingPose>>
+// Tone note: "BattingPose" can read flashy/action-hero. Aim for stunned/awed stillness, not a victory pose.
+// Suggest: Quiet awe — slight inhale, eyes widen subtly, bat held loosely; minimal movement; keep the moment internal.
+Raju (monologue): That was the day… I got the chance to prove myself….
+//<<music flashback_pad xfade=1.0>>
+// 00:00:15,000 --> 00:00:18,000
+<<SetBGSprite KohliwadaGround>>
+//<<cut FLASHBACK_WARM_TONE>>
+<<SetCharacterExpression Raju Serious>>
+Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
+// 00:00:18,000 --> 00:00:22,000
+<<SetBGSprite KohliwadaGround>>
+//<<lowerthird Lesson 1 – Eyes>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: See before you decide. Read the bowler, not the ball.
+// 00:00:22,000 --> 00:00:26,000
+<<SetBGSprite KohliwadaGround>>
+//<<lowerthird Lesson 2 – Feet>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Quiet feet. Quick mind. Settle first.
+// 00:00:26,000 --> 00:00:30,000
+<<SetBGSprite KohliwadaGround>>
+//<<lowerthird Lesson 3 – Hands>>
+<<SetCharacterExpression Ramu Neutral>>
+Ramu: Gentle hands. Let the bat talk.
+// 00:00:30,000 --> 00:00:35,000
+<<SetBGSprite KohliwadaGround>>
+//<<lowerthird Lesson 4 – Timing>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Wait for your moment. Poor or rich — timing's everything.
+// 00:00:35,000 --> 00:00:40,000
+<<SetBGSprite KohliwadaGround>>
+//<<lowerthird Lesson 5 – Temper>>
+<<SetCharacterExpression Ramu Neutral>>
+Ramu: Miss once, breathe. Miss twice… breathe longer.
+<<SetCharacterExpression Raju Smiling>>
+// Tone note: Broad "Smiling" can skew too bright. Keep it grateful and grounded.
+// Suggest: Soft gratitude/nostalgia — small, fleeting smile; eyes slightly glassy; voice low and steady.
+Raju: I still carry them all, Bhaiya.
+// 00:00:40,000 --> 00:00:44,080
+<<SetBGSprite KohliwadaGround>>
+//<<music build_light xfade=0.8>>
+//<<sfx bat_hit_clean>>
+//<<vfx ball_trail_slowmo>>
+<<SetCharacterExpression Raju ExcitedWithBat>>
+// Tone note: Big "Excited" reads celebratory. Keep it contained for cinematic weight.
+// Suggest: Contained pride/relief — exhale-laugh under breath, micro-smile, shoulders drop slightly; whisper more than cheer.
+Raju (smiling): Six runs… I can really play.
+// 00:00:44,080 --> 00:00:48,000
+<<SetBGSprite HutInterior>>
+//<<music STOP fadeOut=0.3>>
+//<<sfx cut_silence>>
+//<<cut INT_HOUSE_LOWLIGHT>>
+<<SetCharacterExpression ShivPrasad Angry>>
+// Tone note: Overt "Angry" may feel melodramatic. Heaviness lands better with controlled steel.
+// Suggest: Cold stern/weary — flat tone, clipped words, eyes avoidant; no raised volume, weight in pauses.
+Father: Cricket? First get ninety percent.
+// 00:00:48,000 --> 00:00:52,000
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression Raju Worried>>
+Raju (monologue): Ninety percent… or no academy.
+// 00:00:52,000 --> 00:00:55,500
+<<SetBGSprite HutInterior>>
+//<<music bass_pickup tempo=92>>
+//<<cut STUDY_TABLE_NIGHT>>
+<<SetCharacterExpression Raju Serious>>
+Raju: If that's the price… I'll earn it.
+// 00:00:55,500 --> 00:00:59,000
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression Raju Serious>>
+Raju: I'll get ninety… and I'll play.
+// 00:00:59,000 --> 00:01:03,000
+<<SetBGSprite KohliwadaGround>>
+//<<music rise_local tempo=98>>
+//<<cut GROUND_LOCAL_DAY>>
+<<SetCharacterExpression CoachDev Serious>>
+Coach Dev: There's a city tournament next month. Scouts will be watching.
+// 00:01:03,000 --> 00:01:08,000
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression CoachDev Serious>>
+Coach Dev: Play well, and I'll be able to fight for waivers and concessions.
+// 00:01:08,000 --> 00:01:11,000
+<<SetBGSprite KohliwadaGround>>
+//<<cut MONTAGE_MORNING_FIELD>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Come on, swing straight, Raju! Don't rush the shot!
+// 00:01:11,000 --> 00:01:14,000
+<<SetBGSprite PublicSchool>>
+//<<cut MONTAGE_AFTERNOON_STUDY>>
+<<SetCharacterExpression Pinky Angry>>
+// Tone note: Full "Angry" could skew comedic with the line. Aim for brisk, tough-love focus.
+// Suggest: Firm impatience/caring edge — quick tempo, eyebrow knit, finger tap on page; volume controlled.
+Pinky: Focus here, idiot — this question comes every year!
+// 00:01:14,000 --> 00:01:17,000
+<<SetBGSprite PublicSchool>>
+//<<cut MONTAGE_EVENING_LIBRARY>>
+<<SetCharacterExpression RamCharan Serious>>
+RamCharan: Cricket won't feed you, boy. Books will.
+// 00:01:17,000 --> 00:01:20,000
+<<SetBGSprite HutInterior>>
+//<<cut MONTAGE_MOTHER_WORK>>
+<<SetCharacterExpression Kamla Serious>>
+Kamla: Raju, at least help me wash these plates before you run off!
+// 00:01:20,000 --> 00:01:23,500
+<<SetBGSprite HutInterior>>
+//<<cut NIGHT_SINGLE_BULB>>
+<<SetCharacterExpression Raju Groggy>>
+Raju (monologue): Eyes burn… but I can't stop.
+// 00:01:23,500 --> 00:01:27,000
+<<SetBGSprite KohliwadaGround>>
+//<<cut DAWN_DUSTY_SUNRISE>>
+<<SetCharacterExpression Raju Serious>>
+Raju (monologue): Every second counts.
+// 00:01:27,000 --> 00:01:31,000
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression Raju Worried>>
+Raju (monologue): I can't drop the ball… not now.
+// 00:01:31,000 --> 00:01:34,000
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression CoachDev Excited>>
+// Tone note: "Excited" reads cheerlead-y. Keep it urgent and grounded.
+// Suggest: Low, intense command — compressed breath, narrowed eyes; urgency without pitch lift.
+Coach Dev (VO): This is your chance, Raju!
+// 00:01:34,000 --> 00:01:36,000
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression ShivPrasad Serious>>
+Father (VO): Ninety percent, remember.
+// 00:01:36,000 --> 00:01:40,000
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression Raju Worried>>
+Raju (monologue): If I fail either… I lose everything.
+// 00:01:40,000 --> 00:01:45,000
+<<SetBGSprite KohliwadaGround>>
+//<<music final_climax peak>>
+//<<vfx slowmo_montage>>
+<<SetCharacterExpression Raju Serious>>
+Raju (monologue): I believed I had talent…
+Raju (monologue): But can I prove it — to him?
+Raju (monologue): Can I prove it to the world?
+// 00:01:45,000 --> 00:01:48,000
+//<<music fadeOut=2.0>>
+//<<cut FADE_TO_BLACK>>
+//<<title_card>>
+On-screen text: GULLY CHAMP — Chapter 1: The First Innings
+On-screen text: Can you prove your talent to the world?
+On-screen text: Wishlist on Steam / Coming Soon
+===

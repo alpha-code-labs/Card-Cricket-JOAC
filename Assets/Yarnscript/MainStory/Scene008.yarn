@@ -1,0 +1,28 @@
+﻿title: scene_8
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic  Disappointing_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Neutral">>
+Ramu: Captain, could have been a better performance—play as per the situation next time.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: No excuses. I need to get better and apply myself more.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
+
+<<SetCharacterExpression "Raju" "Serious">>
+Raju: Yes, I am completely switched on—I can do this.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+
+===

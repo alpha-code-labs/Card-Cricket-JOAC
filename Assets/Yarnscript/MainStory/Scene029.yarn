@@ -1,0 +1,38 @@
+﻿title: scene_29
+tags: 
+colorID: 0
+position: 0,0
+---
+
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite hutInterior>>
+
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Small tournament starts today, Captain. Local boys, three evenings.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: At Kohliwada?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: Yes. Think of it as practice with a scorecard. No big prizes, just some pocket money for the winners.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Who's playing?
+
+<<SetCharacterExpression "Ramu" "Excited">>
+Ramu: The usual lanes. Boys you know. Nothing fancy.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Good. I can focus on my shots without the noise.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Exactly. Use these matches to try things. That late cut you've been practicing? Test it today.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+
+===
