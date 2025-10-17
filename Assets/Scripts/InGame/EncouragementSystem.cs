@@ -15,13 +15,21 @@ public class EncouragementSystem : MonoBehaviour
     [SerializeField] Button skipButton; // Skip/Got it button
     [SerializeField] TextMeshProUGUI skipButtonText;
     
+    [Header("Character Expressions")]
+    [SerializeField] Sprite happyExpression;
+    [SerializeField] Sprite lovingExpression;
+    [SerializeField] Sprite relievedExpression;
+    [SerializeField] Sprite seriousExpression;
+    [SerializeField] Sprite overjoyedExpression;
+    [SerializeField] Sprite sadExpression;
+    
     [Header("Animation Settings")]
     [SerializeField] float slideInDuration = 0.5f;
     [SerializeField] float dialogueBoxExpandDuration = 0.3f;
     [SerializeField] float textFadeInDuration = 0.3f;
     [SerializeField] float slideOutDuration = 0.4f;
-    [SerializeField] Vector2 offScreenPosition = new Vector2(800f, 0f); // Start position off-screen right
-    [SerializeField] Vector2 onScreenPosition = Vector2.zero; // Center position
+    [SerializeField] Vector2 offScreenPosition = new Vector2(800f, 0f);
+    [SerializeField] Vector2 onScreenPosition = Vector2.zero;
     
     [Header("Display Settings")]
     [SerializeField] float autoSkipDelay = 10f; // Auto skip after this many seconds (0 = disabled)
@@ -32,19 +40,66 @@ public class EncouragementSystem : MonoBehaviour
     private bool milestone75Triggered = false;
     private bool milestone10RunsTriggered = false;
     private bool milestoneFinalRunsTriggered = false;
-    public bool isShowingEncouragement = false;
-    private Queue<MilestoneType> pendingMilestones = new Queue<MilestoneType>();
+    private bool valiant50Triggered = false;
+    private bool valiant75Triggered = false;
+    private bool _isShowingEncouragement = false;
+    public bool isShowingEncouragement { get { return _isShowingEncouragement; } }
+    private Queue<MilestoneData> pendingMilestones = new Queue<MilestoneData>();
+    
+    // Store context for dynamic dialogues
+    private int currentRunsNeeded;
+    private int currentBallsRemaining;
+    private float currentRequiredRate;
+    private SituationCategory currentSituation;
     
     private enum MilestoneType
     {
         Percent50,
         Percent75,
         TenRuns,
-        FinalRuns
+        FinalRuns,
+        ValiantEffort50,
+        ValiantEffort75,
+        ValiantEffortFinal
     }
     
-    // Dialogue pools for each milestone
-    private Dictionary<MilestoneType, List<string>> dialoguePools = new Dictionary<MilestoneType, List<string>>();
+    private enum CharacterExpression
+    {
+        Happy,
+        Loving,
+        Relieved,
+        Serious,
+        Overjoyed,
+        Sad
+    }
+    
+    private enum SituationCategory
+    {
+        Cruising,      // RRR < 0.8
+        Comfortable,   // RRR 0.8-1.2
+        Manageable,    // RRR 1.2-1.6
+        Challenging,   // RRR 1.6-2.0
+        Difficult,     // RRR 2.0-3.0
+        Critical,      // RRR 3.0-4.0
+        Unreachable    // RRR > 4.0
+    }
+    
+    private class MilestoneData
+    {
+        public MilestoneType type;
+        public CharacterExpression expression;
+        public SituationCategory situation;
+        
+        public MilestoneData(MilestoneType t, CharacterExpression e, SituationCategory s)
+        {
+            type = t;
+            expression = e;
+            situation = s;
+        }
+    }
+    
+    // Dialogue pools organized by milestone and situation
+    private Dictionary<string, List<string>> dialoguePools = new Dictionary<string, List<string>>();
     
     private static EncouragementSystem instance;
     public static EncouragementSystem Instance
@@ -80,108 +135,241 @@ public class EncouragementSystem : MonoBehaviour
     
     void InitializeDialoguePools()
     {
-        // 50% milestone dialogues
-        dialoguePools[MilestoneType.Percent50] = new List<string>
+        // 50% Comfortable/Cruising dialogues
+        dialoguePools["50_Comfortable"] = new List<string>
         {
-            "Brilliant start! You're halfway to victory! Keep this momentum going!",
-            "50% done! The target is within reach - stay focused!",
-            "Halfway there, champion! You've got this!",
-            "Outstanding batting! Half the target achieved already!",
-            "You're crushing it! 50% of the target down!",
-            "Magnificent! The halfway mark reached - victory is in sight!"
+            "Halfway there with {1} balls in hand! You're in complete control!",
+            "50% done, {1} balls remaining - smooth sailing ahead!",
+            "Brilliant! Halfway to victory with plenty of time!",
+            "Outstanding! 50% achieved and the rate is comfortable!"
         };
         
-        // 75% milestone dialogues
-        dialoguePools[MilestoneType.Percent75] = new List<string>
+        // 50% Challenging dialogues
+        dialoguePools["50_Challenging"] = new List<string>
         {
-            "Incredible! Three-quarters done! The finish line is so close!",
-            "75% complete! Just a few more good shots!",
-            "You're dominating! Only 25% left to chase!",
-            "Sensational batting! The target is almost yours!",
-            "What a performance! Just a little push needed now!",
-            "Amazing! You've nearly sealed the victory!"
+            "Halfway to target! {0} needed in {1} balls - need {2} per ball. Stay sharp!",
+            "50% reached but only {1} balls remain. Time to accelerate!",
+            "Halfway there! The required rate is climbing - find the boundaries!",
+            "50% done! Need to maintain {2} runs per ball from here."
         };
         
-        // 10 runs remaining dialogues
-        dialoguePools[MilestoneType.TenRuns] = new List<string>
+        // 50% Critical/Unreachable dialogues
+        dialoguePools["50_Critical"] = new List<string>
         {
-            "Just 10 runs to go! Two boundaries will do it!",
-            "Single digits away from victory! Stay calm!",
-            "10 runs! You can knock these off easily!",
-            "So close! Just 10 more and you're the hero!",
-            "The target is right there! 10 runs to glory!",
-            "Almost home! These last 10 runs are yours!"
+            "Halfway there but {0} needed in just {1} balls. Go for everything!",
+            "50% scored - need boundaries every ball now. Fortune favors the brave!",
+            "Half the target reached! This requires something special now!"
         };
         
-        // 1-2 runs remaining dialogues
-        dialoguePools[MilestoneType.FinalRuns] = new List<string>
+        // 75% Comfortable dialogues
+        dialoguePools["75_Comfortable"] = new List<string>
         {
-            "Just a single needed! This is your moment!",
-            "One hit away from victory! Make it count!",
-            "A couple of runs! Victory is guaranteed!",
-            "This is it! One shot to seal the win!",
-            "Just nudge it for a single! You've won this!",
-            "The winning run! History awaits!"
+            "Three-quarters done with {1} balls left! Victory is yours!",
+            "75% complete! Just {0} needed from {1} balls - you've got this!",
+            "Almost there! The finish line is in sight!",
+            "Incredible! 75% done and cruising to victory!"
+        };
+        
+        // 75% Challenging dialogues
+        dialoguePools["75_Challenging"] = new List<string>
+        {
+            "75% done! {0} from {1} balls - keep pushing!",
+            "Three-quarters complete but the rate is tight. Stay focused!",
+            "Almost there! Need {2} per ball - you can do this!",
+            "75% achieved! These last {0} need smart batting!"
+        };
+        
+        // Final 10 balls dialogues (always mention balls)
+        dialoguePools["Final10Balls"] = new List<string>
+        {
+            "Final {1} ! {0} needed - it's now or never!",
+            "Last {1}, {0} required. Make every ball count!",
+            "Last {1} and a bit! {0} - this is your moment!",
+            "{1} remaining, {0} to win! Time for heroics!"
+        };
+        
+        // Ten runs or less dialogues
+        dialoguePools["TenRuns"] = new List<string>
+        {
+            "Just {0} to go! You're almost there!",
+            "Only {0} needed! Victory is within grasp!",
+            "{0} away from glory! Stay calm and focused!",
+            "So close! Just {0} more for the win!"
+        };
+        
+        // Final runs (1-2) dialogues
+        dialoguePools["FinalRuns"] = new List<string>
+        {
+            "{0} to win! One good shot!",
+            "Just {0} needed! This is it!",
+            "{0} for victory! Make it count!",
+            "The winning runs! Just {0}!"
+        };
+        
+        // Valiant effort dialogues (when target is unreachable)
+        dialoguePools["Valiant50"] = new List<string>
+        {
+            "You've scored half their total! That's an achievement in itself!",
+            "50% of that massive target - you're showing real character!",
+            "Halfway to their score! This is brave batting!",
+            "Half their total reached! You're giving them a real fight!"
+        };
+        
+        dialoguePools["Valiant75"] = new List<string>
+        {
+            "Three-quarters of their total! This has been an incredible effort!",
+            "75% reached! Win or lose, this is impressive batting!",
+            "What a fight! 75% of that huge target scored!",
+            "You've nearly matched their total! This is something special!"
+        };
+        
+        dialoguePools["ValiantFinal"] = new List<string>
+        {
+            "The target was steep, but what a fight you've shown!",
+            "You've given it everything - that's what champions do!",
+            "An incredible effort against tough odds. Be proud!",
+            "You've shown tremendous courage out there!"
         };
     }
     
-    public void CheckMilestones(int currentRuns, int targetScore)
+    public void CheckMilestones(int currentRuns, int targetScore, int ballsRemaining)
     {
         // Don't check if we're batting first (no target to chase)
         if (targetScore <= 0) return;
         
         // Don't check if already showing encouragement
-        if (isShowingEncouragement) return;
+        if (_isShowingEncouragement) return;
         
-        float percentage = (float)currentRuns / targetScore * 100f;
+        // Calculate context
         int runsNeeded = targetScore - currentRuns;
+        // int ballsRemaining = ScoreManager.Instance.MaxBalls - CardsPoolManager.Instance.CurrntTurn;
+        float requiredRate = ballsRemaining > 0 ? (float)runsNeeded / ballsRemaining : 999f;
+        float percentage = (float)currentRuns / targetScore * 100f;
         
-        MilestoneType? triggeredMilestone = null;
+        // Store context for dialogue formatting
+        currentRunsNeeded = runsNeeded;
+        currentBallsRemaining = ballsRemaining;
+        currentRequiredRate = requiredRate;
         
-        // Check which milestone to trigger (prioritize closer to victory)
-        if (runsNeeded <= 2 && runsNeeded > 0 && !milestoneFinalRunsTriggered)
+        // Determine situation category
+        currentSituation = GetSituationCategory(requiredRate);
+        
+        // Determine if target is unreachable
+        bool isUnreachable = requiredRate > 4.0f;
+        
+        MilestoneData triggeredMilestone = null;
+        
+        // Check milestones based on situation
+        if (isUnreachable)
         {
-            milestoneFinalRunsTriggered = true;
-            triggeredMilestone = MilestoneType.FinalRuns;
+            // Valiant effort milestones
+            if (percentage >= 75f && !valiant75Triggered)
+            {
+                valiant75Triggered = true;
+                CharacterExpression expr = percentage >= 75f ? CharacterExpression.Loving : CharacterExpression.Sad;
+                triggeredMilestone = new MilestoneData(MilestoneType.ValiantEffort75, expr, currentSituation);
+            }
+            else if (percentage >= 50f && !valiant50Triggered)
+            {
+                valiant50Triggered = true;
+                triggeredMilestone = new MilestoneData(MilestoneType.ValiantEffort50, CharacterExpression.Loving, currentSituation);
+            }
         }
-        else if (runsNeeded <= 10 && runsNeeded > 2 && !milestone10RunsTriggered)
+        else
         {
-            milestone10RunsTriggered = true;
-            triggeredMilestone = MilestoneType.TenRuns;
-        }
-        else if (percentage >= 75f && !milestone75Triggered)
-        {
-            milestone75Triggered = true;
-            triggeredMilestone = MilestoneType.Percent75;
-        }
-        else if (percentage >= 50f && !milestone50Triggered)
-        {
-            milestone50Triggered = true;
-            triggeredMilestone = MilestoneType.Percent50;
+            // Regular milestones
+            if (runsNeeded <= 2 && runsNeeded > 0 && !milestoneFinalRunsTriggered)
+            {
+                milestoneFinalRunsTriggered = true;
+                CharacterExpression expr = GetExpressionForSituation(currentSituation);
+                triggeredMilestone = new MilestoneData(MilestoneType.FinalRuns, expr, currentSituation);
+            }
+            else if (runsNeeded <= 10 && runsNeeded > 2 && !milestone10RunsTriggered)
+            {
+                milestone10RunsTriggered = true;
+                CharacterExpression expr = GetExpressionForSituation(currentSituation);
+                triggeredMilestone = new MilestoneData(MilestoneType.TenRuns, expr, currentSituation);
+            }
+            else if (percentage >= 75f && !milestone75Triggered && requiredRate < 3.0f)
+            {
+                milestone75Triggered = true;
+                CharacterExpression expr = GetExpressionForSituation(currentSituation);
+                triggeredMilestone = new MilestoneData(MilestoneType.Percent75, expr, currentSituation);
+            }
+            else if (percentage >= 50f && !milestone50Triggered && requiredRate < 3.0f)
+            {
+                milestone50Triggered = true;
+                CharacterExpression expr = GetExpressionForSituation(currentSituation);
+                triggeredMilestone = new MilestoneData(MilestoneType.Percent50, expr, currentSituation);
+            }
         }
         
-        if (triggeredMilestone.HasValue)
+        // Special check for final 10 balls
+        if (ballsRemaining <= 10 && ballsRemaining > 0 && !isUnreachable)
         {
-            pendingMilestones.Clear(); // Clear any previous pending milestones
-            pendingMilestones.Enqueue(triggeredMilestone.Value);
+            // This can trigger alongside other milestones
+            CharacterExpression expr = requiredRate > 1.5f ? CharacterExpression.Serious : CharacterExpression.Happy;
+            if (triggeredMilestone == null)
+            {
+                triggeredMilestone = new MilestoneData(MilestoneType.TenRuns, expr, currentSituation);
+            }
+        }
+        
+        if (triggeredMilestone != null)
+        {
+            pendingMilestones.Clear();
+            pendingMilestones.Enqueue(triggeredMilestone);
+        }
+    }
+    
+    private SituationCategory GetSituationCategory(float requiredRate)
+    {
+        if (requiredRate < 0.8f) return SituationCategory.Cruising;
+        if (requiredRate < 1.2f) return SituationCategory.Comfortable;
+        if (requiredRate < 1.6f) return SituationCategory.Manageable;
+        if (requiredRate < 2.0f) return SituationCategory.Challenging;
+        if (requiredRate < 3.0f) return SituationCategory.Difficult;
+        if (requiredRate < 4.0f) return SituationCategory.Critical;
+        return SituationCategory.Unreachable;
+    }
+    
+    private CharacterExpression GetExpressionForSituation(SituationCategory situation)
+    {
+        switch (situation)
+        {
+            case SituationCategory.Cruising:
+                return CharacterExpression.Overjoyed;
+            case SituationCategory.Comfortable:
+                return CharacterExpression.Happy;
+            case SituationCategory.Manageable:
+                return Random.Range(0, 2) == 0 ? CharacterExpression.Happy : CharacterExpression.Relieved;
+            case SituationCategory.Challenging:
+                return CharacterExpression.Serious;
+            case SituationCategory.Difficult:
+                return Random.Range(0, 2) == 0 ? CharacterExpression.Serious : CharacterExpression.Loving;
+            case SituationCategory.Critical:
+                return CharacterExpression.Loving;
+            case SituationCategory.Unreachable:
+                return CharacterExpression.Sad;
+            default:
+                return CharacterExpression.Happy;
         }
     }
     
     public void TryShowPendingEncouragement()
     {
-        // This should be called after a ball is completed
-        if (pendingMilestones.Count > 0 && !isShowingEncouragement)
+        if (pendingMilestones.Count > 0 && !_isShowingEncouragement)
         {
-            MilestoneType milestone = pendingMilestones.Dequeue();
+            MilestoneData milestone = pendingMilestones.Dequeue();
             ShowEncouragement(milestone);
         }
     }
     
-    void ShowEncouragement(MilestoneType milestone)
+    void ShowEncouragement(MilestoneData milestone)
     {
-        if (isShowingEncouragement) return;
+        if (_isShowingEncouragement) return;
         
-        isShowingEncouragement = true;
+        _isShowingEncouragement = true;
         
         // Pause the game if configured
         if (pauseGameDuringEncouragement)
@@ -190,20 +378,118 @@ public class EncouragementSystem : MonoBehaviour
             CardsPoolManager.Instance?.SetCardsInteractable(false);
         }
         
-        // Get random dialogue for this milestone
-        string dialogue = GetRandomDialogue(milestone);
+        // Set character expression
+        SetCharacterExpression(milestone.expression);
+        
+        // Get appropriate dialogue
+        string dialogue = GetContextualDialogue(milestone);
         
         // Start the encouragement sequence
         StartCoroutine(ShowEncouragementSequence(dialogue));
     }
     
-    string GetRandomDialogue(MilestoneType milestone)
+    private void SetCharacterExpression(CharacterExpression expression)
     {
-        if (dialoguePools.ContainsKey(milestone) && dialoguePools[milestone].Count > 0)
+        if (characterImage == null) return;
+        
+        Sprite expressionSprite = happyExpression; // Default
+        
+        switch (expression)
         {
-            List<string> pool = dialoguePools[milestone];
-            return pool[Random.Range(0, pool.Count)];
+            case CharacterExpression.Happy:
+                expressionSprite = happyExpression;
+                break;
+            case CharacterExpression.Loving:
+                expressionSprite = lovingExpression;
+                break;
+            case CharacterExpression.Relieved:
+                expressionSprite = relievedExpression;
+                break;
+            case CharacterExpression.Serious:
+                expressionSprite = seriousExpression;
+                break;
+            case CharacterExpression.Overjoyed:
+                expressionSprite = overjoyedExpression;
+                break;
+            case CharacterExpression.Sad:
+                expressionSprite = sadExpression;
+                break;
         }
+        
+        if (expressionSprite != null)
+            characterImage.sprite = expressionSprite;
+    }
+    
+    string GetContextualDialogue(MilestoneData milestone)
+    {
+        string poolKey = "";
+        bool shouldMentionBalls = currentBallsRemaining <= 10; // Always mention in last 10 balls
+        
+        // Determine dialogue pool key based on milestone type and situation
+        switch (milestone.type)
+        {
+            case MilestoneType.Percent50:
+                if (currentSituation <= SituationCategory.Comfortable)
+                    poolKey = "50_Comfortable";
+                else if (currentSituation <= SituationCategory.Challenging)
+                    poolKey = "50_Challenging";
+                else
+                    poolKey = "50_Critical";
+                shouldMentionBalls = currentSituation >= SituationCategory.Challenging || currentBallsRemaining <= 30;
+                break;
+                
+            case MilestoneType.Percent75:
+                if (currentSituation <= SituationCategory.Comfortable)
+                    poolKey = "75_Comfortable";
+                else
+                    poolKey = "75_Challenging";
+                shouldMentionBalls = true; // Always mention balls at 75%
+                break;
+                
+            case MilestoneType.TenRuns:
+                if (currentBallsRemaining <= 10)
+                    poolKey = "Final10Balls";
+                else
+                    poolKey = "TenRuns";
+                break;
+                
+            case MilestoneType.FinalRuns:
+                poolKey = "FinalRuns";
+                break;
+                
+            case MilestoneType.ValiantEffort50:
+                poolKey = "Valiant50";
+                break;
+                
+            case MilestoneType.ValiantEffort75:
+                poolKey = "Valiant75";
+                break;
+                
+            case MilestoneType.ValiantEffortFinal:
+                poolKey = "ValiantFinal";
+                break;
+        }
+        
+        if (dialoguePools.ContainsKey(poolKey) && dialoguePools[poolKey].Count > 0)
+        {
+            List<string> pool = dialoguePools[poolKey];
+            string template = pool[Random.Range(0, pool.Count)];
+            
+            // Format the dialogue with context
+            string runsText = currentRunsNeeded == 1 ? "1 run" : $"{currentRunsNeeded} runs";
+            string ballsText = currentBallsRemaining == 1 ? "1 ball" : $"{currentBallsRemaining} balls";
+            string rateText = $"{currentRequiredRate:F1}";
+            
+            // Replace placeholders
+            string formatted = template;
+            formatted = formatted.Replace("{0}", runsText);
+            if (shouldMentionBalls || template.Contains("{1}"))
+                formatted = formatted.Replace("{1}", ballsText);
+            formatted = formatted.Replace("{2}", rateText);
+            
+            return formatted;
+        }
+        
         return "Keep going! You're doing great!";
     }
     
@@ -243,7 +529,7 @@ public class EncouragementSystem : MonoBehaviour
         if (autoSkipDelay > 0)
         {
             yield return new WaitForSeconds(autoSkipDelay);
-            if (isShowingEncouragement) // Check if not already skipped
+            if (_isShowingEncouragement) // Check if not already skipped
             {
                 HideEncouragement();
             }
@@ -258,7 +544,7 @@ public class EncouragementSystem : MonoBehaviour
         foreach (char letter in fullText.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.02f); // Adjust speed as needed
+            yield return new WaitForSeconds(0.02f);
         }
     }
     
@@ -269,7 +555,7 @@ public class EncouragementSystem : MonoBehaviour
     
     void HideEncouragement()
     {
-        if (!isShowingEncouragement) return;
+        if (!_isShowingEncouragement) return;
         
         StartCoroutine(HideEncouragementSequence());
     }
@@ -302,7 +588,7 @@ public class EncouragementSystem : MonoBehaviour
             CardsPoolManager.Instance?.SetCardsInteractable(true);
         }
         
-        isShowingEncouragement = false;
+        _isShowingEncouragement = false;
         
         // Check if there are more pending milestones
         TryShowPendingEncouragement();
@@ -310,11 +596,12 @@ public class EncouragementSystem : MonoBehaviour
     
     public void ResetMilestones()
     {
-        // Call this when starting a new chase
         milestone50Triggered = false;
         milestone75Triggered = false;
         milestone10RunsTriggered = false;
         milestoneFinalRunsTriggered = false;
+        valiant50Triggered = false;
+        valiant75Triggered = false;
         pendingMilestones.Clear();
     }
     

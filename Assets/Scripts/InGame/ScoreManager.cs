@@ -290,9 +290,12 @@ public class ScoreManager : MonoBehaviour
             previousRuns = currentRuns;
         }
         
+        int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
+        UpdateBallsAndOvers(_currentTurn);
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
-            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore);
+            int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore, _ballsRemaining);
         }
         
         if (isBattingFirst)
