@@ -49,31 +49,46 @@ public static class YarnScriptsValaditionTests
             }
             //Test to Run
             issues.AddRange(TestYarnCommands(text));
+            issues.AddRange(TestCalanderSystemAndYarnNodes());
         }
         issues = issues.Distinct().ToList();
         issues.Sort();
         string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
         EditorUtility.DisplayDialog("Yarn script validation", result, "OK");
     }
-    static List<string> TestCalanderSystemAndYarnNodes(string text)//WIP
+    static List<string> TestCalanderSystemAndYarnNodes()
     {
-        throw new NotImplementedException();
         List<string> issues = new List<string>();
         // Load the specific YarnProject asset
         string yarnProjectPath = "Assets/Yarnscript/NewProject.yarnproject";
-        YarnProject d = AssetDatabase.LoadAssetAtPath<YarnProject>(yarnProjectPath);
+        YarnProject yarnProject = AssetDatabase.LoadAssetAtPath<YarnProject>(yarnProjectPath);
 
-        if (d == null)
+        if (yarnProject == null)
         {
             Debug.LogError($"Failed to load YarnProject at {yarnProjectPath}");
             EditorUtility.DisplayDialog("Yarn script validation", $"Failed to load YarnProject at {yarnProjectPath}", "OK");
             return issues;
         }
 
-        var s = d.NodeNames;
-        foreach (var node in s)
+        CalanderRecord calanderRecord = AssetDatabase.LoadAssetAtPath<CalanderRecord>("Assets/ScriptableObjects/CalanderRecord.asset");
+
+        foreach (var dateRecord in calanderRecord.dates)
         {
-            Debug.Log($"Yarn Node: {node}");
+            foreach (var eventRecord in dateRecord.events)
+            {
+                if (eventRecord.eventType == TypeOfEvent.ForcedCutscene)
+                {
+                    // Check if the start node exists in the Yarn project
+                    if (!yarnProject.NodeNames.Contains(eventRecord.eventName))
+                    {
+                        issues.Add($"Calander event '{eventRecord.eventName}' on date '{dateRecord.date}' has invalid start node.");
+                    }
+                }
+            }
+        }
+        if (issues.Count == 0)
+        {
+            Debug.Log("All CalanderRecord events have valid Yarn nodes.");
         }
         return issues;
     }
