@@ -282,7 +282,7 @@ public class ScoreManager : MonoBehaviour
 
         if (runs == 4 || runs == 6)
             PlayCheeringSound();
-            
+
         //currentRunsText.text = currentRuns.ToString();
         if (previousRuns < currentRuns)
         {
@@ -290,7 +290,11 @@ public class ScoreManager : MonoBehaviour
             previousRuns = currentRuns;
         }
         
-
+         if (!isBattingFirst && EncouragementSystem.Instance != null)
+        {
+            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore);
+        }
+        
         if (isBattingFirst)
         {
             totalRunsNeededText.text = "";
@@ -439,7 +443,21 @@ public class ScoreManager : MonoBehaviour
         // Check if game should continue
         if (!gameEnded)
         {
+
             CardsPoolManager.Instance.EndTurn(MaxBalls, (int)outcome != -3);
+
+            if (!isBattingFirst && EncouragementSystem.Instance != null)
+            {
+                EncouragementSystem.Instance.TryShowPendingEncouragement();
+
+                // Wait for encouragement to finish if it's showing
+                while (EncouragementSystem.Instance != null && EncouragementSystem.Instance.isShowingEncouragement)
+                {
+                    yield return null;
+                }
+            }
+
+            Timer.Instance.PauseTimer();
             yield return new WaitForSeconds(3f);
             Timer.Instance.EndTurnTimer();
             
@@ -543,6 +561,12 @@ public class ScoreManager : MonoBehaviour
         if (BatterImage != null)
         {
             batterOriginalPosition = BatterImage.rectTransform.anchoredPosition;
+        }
+
+        // Reset encouragement system if chasing
+        if (!isBattingFirst && EncouragementSystem.Instance != null)
+        {
+            EncouragementSystem.Instance.ResetMilestones();
         }
 
         // Subscribe to the turn started event to show chase display after countdown
