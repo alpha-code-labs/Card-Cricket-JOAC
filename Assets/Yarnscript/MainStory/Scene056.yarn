@@ -22,7 +22,7 @@ Ramu: That's my boy—that's what we need, the only thing we need.
 <<SetCharacterExpression "Raju" "Tired">>
 Raju: Big day tomorrow—let's go home and rest.
 
-<<SetCharacterExpression "Ramu" "Relaxed">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Tomorrow another day, fresh challenge—yes, let's go and sleep.
 
 <<SetCharacterExpression "Raju" "Excited">>
