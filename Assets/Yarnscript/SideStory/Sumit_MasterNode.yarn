@@ -424,7 +424,7 @@ Sumit: I love how time pressure eliminates second-guessing!
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Forces us to trust our instincts and rapid processing.
 
-<<SetCharacterExpression "Sumit" "Confident">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: It's about mental speed and confidence!
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -598,7 +598,7 @@ Sumit: You've demonstrated something important.
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Intellectual competition doesn't have to damage friendship.
 
-<<SetCharacterExpression "Sumit" "Proud">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: It can actually strengthen it with respect and good sportsmanship!
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -658,7 +658,7 @@ Sumit: You continue developing mental agility and competitive skills.
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: While I gain a reliable partner for intellectual challenges.
 
-<<SetCharacterExpression "Sumit" "Proud">>
+<<SetCharacterExpression "Sumit" "Overjoyed">>
 Sumit: And together we prove competition can bring people closer!
 
 <<HideAllCharacters>>

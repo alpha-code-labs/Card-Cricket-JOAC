@@ -201,7 +201,7 @@ Pinky: I can't accept gifts. My parents...
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: What's wrong?
 
-<<SetCharacterExpression "Raju" "Concerned">>
+<<SetCharacterExpression "Raju" "Worried">>//TODO: Should Change To Concerned
 Raju: You've helped me so much these past few days.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -388,7 +388,7 @@ Raju: That kind of intelligence can overcome any obstacle.
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Your encouragement helps more than you know.
 
-<<SetCharacterExpression "Pinky" "Grateful">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: When family pressure makes me question whether I'm being unrealistic, your belief in my capabilities reminds me that my dreams have substance.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -626,7 +626,7 @@ Raju: That same power will change your parents' minds about your potential.
 <<SetCharacterExpression "Pinky" "Relieved">>
 Pinky: Your faith in me gives me strength when my own confidence wavers.
 
-<<SetCharacterExpression "Pinky" "Grateful">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: Having someone who believes in my dreams makes them feel more real and achievable.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -803,7 +803,7 @@ Raju: My questions have strengthened your teaching abilities while you've mainta
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: Win or lose tomorrow, this partnership has been the most rewarding academic experience of my school career.
 
-<<SetCharacterExpression "Pinky" "Grateful">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: You've helped me understand that knowledge becomes more powerful when it's shared.
 
 <<HideAllCharacters>>
@@ -894,7 +894,7 @@ Pinky: But we also learned something more important than academic success.
 <<SetCharacterExpression "Pinky" "Confident">>
 Pinky: We discovered that individual excellence becomes stronger when it's shared.
 
-<<SetCharacterExpression "Pinky" "Grateful">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: With others who understand the struggle.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -906,7 +906,7 @@ Raju: They showed me how to approach any challenge with strategic thinking and l
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: And your questions forced me to understand concepts at a deeper level.
 
-<<SetCharacterExpression "Pinky" "Grateful">>
+<<SetCharacterExpression "Pinky" "Pained">>
 Pinky: While showing me that knowledge becomes more meaningful when it's used to help others.
 
 <<SetCharacterExpression "Pinky" "Proud">>
