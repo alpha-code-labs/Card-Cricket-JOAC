@@ -903,7 +903,7 @@ Ramu: Ready for today's session, champ?
 Ramu: Word's gotten around the neighborhood about your batting yesterday.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Mrs. Sharma asked me if you're really serious about this tournament. //TODO: Change name to Mrs. Das
+Ramu: Mrs. Das asked me if you're really serious about this tournament.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: What did you tell her, bhai?
@@ -944,11 +944,11 @@ Raju: It feels different today.
 <<SetCharacterExpression Raju Confident>>
 Raju: Like I'm not just hitting balls - like I'm proving something.
 
-<<SetCharacterExpression MrsSharma Excited>>
-Mrs. Sharma: Ramu beta, is your little brother going to play in that big tournament?//TODO: Change name to Mrs. Das
+<<SetCharacterExpression MrsDas Excited>>
+Mrs. Sharma: Ramu beta, is your little brother going to play in that big tournament?
 
-<<SetCharacterExpression MrsSharma Astonished>>
-Mrs. Sharma: The whole building is talking about his cricket!//TODO: Change name to Mrs. Das
+<<SetCharacterExpression MrsDas Astonished>>
+Mrs. Sharma: The whole building is talking about his cricket!
 
 <<SetCharacterExpression Ramu Excited>>
 Ramu: Sharma aunty, come down and see for yourself!
