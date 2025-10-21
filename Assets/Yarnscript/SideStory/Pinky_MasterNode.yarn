@@ -201,7 +201,7 @@ Pinky: I can't accept gifts. My parents...
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: What's wrong?
 
-<<SetCharacterExpression "Raju" "Concerned">>
+<<SetCharacterExpression "Raju" "Worried">>//TODO: Should Change To Concerned
 Raju: You've helped me so much these past few days.
 
 <<SetCharacterExpression "Raju" "Serious">>

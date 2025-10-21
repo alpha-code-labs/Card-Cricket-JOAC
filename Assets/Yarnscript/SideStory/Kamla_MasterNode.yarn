@@ -459,7 +459,7 @@ position: -55,122
 <<set $Kamla_Path = "b">>
 <<SetCharacterExpression "Raju" "Confident">>
 
-<<SetCharacterExpression "Kamla" "Impressed">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Balance, beta. That's wisdom beyond your years.
 
 <<SetCharacterExpression "Kamla" "Proud">>
@@ -971,7 +971,7 @@ Kamla: Look at that smile, beta!
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: How was practice today?
 
-<<SetCharacterExpression "Kamla" "Mischievous">>
+<<SetCharacterExpression "Kamla" "Overjoyed">>
 Kamla: You look like you conquered the entire cricket field.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>

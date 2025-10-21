@@ -61,5 +61,9 @@ public enum Characters
     Vivek = 24,
     MrsSharma = 25,
     Jaspreet = 26,
-    Sunil = 27
+    Sunil = 27,
+    Nisha = 28,
+    Sushila = 29,
+    Vendor = 30,
+
 }
