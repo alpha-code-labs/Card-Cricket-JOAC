@@ -12,7 +12,7 @@ using System;
 
 public static class YarnScriptsValaditionTests
 {
-    [MenuItem("Tools/TestYarnScripts")]
+    [MenuItem("Tools/Test Yarn Scripts")]
     static void TestYarnScripts()
     {
         DialogueScriptCommandHandler.InitializeSpriteMapping(); //Prepring for Test
@@ -54,7 +54,8 @@ public static class YarnScriptsValaditionTests
         issues = issues.Distinct().ToList();
         issues.Sort();
         string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
-        EditorUtility.DisplayDialog("Yarn script validation", result, "OK");
+        Debug.Log(result);
+        EditorUtility.DisplayDialog("Yarn script validation", "Tests Finished Check Output in Console", "OK");
     }
     static List<string> TestCalanderSystemAndYarnNodes()
     {
