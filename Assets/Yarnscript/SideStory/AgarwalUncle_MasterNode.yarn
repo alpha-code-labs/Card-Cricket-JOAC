@@ -164,7 +164,7 @@ AgarwalUncle: Back again, beta?
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
 AgarwalUncle: I thought yesterday's madness might have scared you off.
 
-<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
+<<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: Most people don't see the hours of preparation behind every smooth transaction.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -618,7 +618,7 @@ AgarwalUncle: Your attitude is promising, beta.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
+<<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: The evening rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -707,7 +707,7 @@ AgarwalUncle: Your attitude is promising, beta.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
+<<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: The evening rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -796,7 +796,7 @@ AgarwalUncle: Your attitude is promising, beta.
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
-<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
+<<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: The evening rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -936,7 +936,7 @@ The store atmosphere reflects their comfortable working relationship. Today's co
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 AgarwalUncle: Beta, I must confess something.
 
-<<SetCharacterExpression "AgarwalUncle" "Relaxed">>
+<<SetCharacterExpression "AgarwalUncle" "Proud">>
 AgarwalUncle: When you first offered to help, I assumed it was typical childhood curiosity.
 
 <<SetCharacterExpression "AgarwalUncle" "Skeptical">>

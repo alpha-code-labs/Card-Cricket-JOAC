@@ -692,7 +692,7 @@ Kamla: So you don't spend your life cleaning other people's houses.
 <<SetCharacterExpression "Kamla" "Pained">>
 Kamla: Watching your hands age before their time.
 
-<<SetCharacterExpression "Kamla" "Sad">>
+<<SetCharacterExpression "Kamla" "Pained">>
 Kamla: While their children play with toys that cost more than our monthly food budget.
 
 <<SetCharacterExpression "Raju" "Excited">>
