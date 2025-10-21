@@ -113,17 +113,20 @@ public static class YarnScriptsValaditionTests
             if (!System.Enum.TryParse(pair.name, out Characters _))
             {
                 issues.Add($"Invalid character name: {pair.name}");
-                continue; // Skip further checks if the name is invalid
             }
             if (!System.Enum.TryParse(pair.expr, out EmotionType _))
             {
                 issues.Add($"Invalid character expression: {pair.expr}");
-                continue; // Skip further checks if the name is invalid
             }
             var combined = (pair.name + pair.expr).Replace(" ", "");
             if (DialogueScriptCommandHandler.GetSpriteByName(combined, false) == null)
             {
-                issues.Add($"No sprite found for character expression: {combined}");
+                // Find the line containing this SetCharacterExpression command
+                var lines = text.Split('\n');
+                var matchingLine = lines.FirstOrDefault(line => line.Contains($"SetCharacterExpression") &&
+                                                              line.Contains($"\"{pair.name}\"") &&
+                                                              line.Contains($"\"{pair.expr}\""));
+                issues.Add($"No sprite found for character expression: {combined} Line: {matchingLine?.Trim()}");
                 continue; // Skip further checks if the name is invalid
             }
         }
