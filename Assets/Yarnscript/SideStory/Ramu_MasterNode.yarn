@@ -623,7 +623,7 @@ position: 902,93
 <<SetCharacterExpression Raju Determined>>
 Raju: I'll prove my commitment is unbreakable, bhaiya.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Watch me work harder than anyone else.
 
 <<SetCharacterExpression Raju Confident>>
@@ -706,7 +706,7 @@ position: 1067,-57
 <<SetCharacterExpression Raju Confident>>
 Raju: Let me show you I can balance cricket dreams with responsibility, bhaiya.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I'll be smart about this - prove that pursuing cricket makes me more mature, not less.
 
 <<SetCharacterExpression Ramu Skeptical>>
@@ -733,7 +733,7 @@ Ramu: Most kids see cricket and responsibility as competing forces.
 <<SetCharacterExpression Ramu Proud>>
 Ramu: But you're talking about integration.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Cricket teaches focus, dedication, handling pressure.
 
 <<SetCharacterExpression Raju Confident>>
@@ -838,7 +838,7 @@ Ramu: Then maybe - maybe I'll believe you're serious about this dream.
 
 <<HideAllCharacters>>
 <<SetBGSprite KohliwadaGround>>
-Ramu and Raju Head towards KohliwadaGround Ground.
+Ramu and Raju Head towards Kohliwada Ground.
 
 <<SetCharacterExpression Ramu Skeptical>>
 Ramu: Tired yet?
@@ -939,7 +939,7 @@ Ramu: Seeing how you listen to every suggestion...
 <<SetCharacterExpression Ramu Excited>>
 Ramu: How you practice the same shot fifty times until you get it right...
 
-<<SetCharacterExpression Ramu Astonished>>
+<<SetCharacterExpression Ramu Confident>>
 Ramu: These people have seen you grow up.
 
 <<SetCharacterExpression Ramu Excited>>
@@ -970,7 +970,7 @@ Mrs Das: Ramu beta, is your little brother going to play in that big tournament?
 Mrs Das: The whole building is talking about his cricket!
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Sharma aunty, come down and see for yourself!
+Ramu: Das aunty, come down and see for yourself!
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Six days of sunrise practice - he hasn't missed a single morning!
@@ -978,7 +978,7 @@ Ramu: Six days of sunrise practice - he hasn't missed a single morning!
 <<SetCharacterExpression Raju Determined>>
 Raju: Bhai, I won't let you down.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Not after everything you've taught me this week.
 
 <<SetCharacterExpression Ramu Proud>>
@@ -1020,7 +1020,7 @@ Ramu: Choose to practice when other kids are still sleeping.
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Choose to listen and improve instead of just playing around.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I meant everything I said, bhai.
 
 <<SetCharacterExpression Raju Determined>>
@@ -1095,8 +1095,12 @@ Ramu: And since you're going to be playing in a real tournament...
 <<SetCharacterExpression Ramu Excited>>
 Ramu: You'll need proper equipment.
 
+<<HideAllCharacters>>
+Ramu handsover a pair of shoes to Raju.
+
 <<SetCharacterExpression Raju Astonished>>
 Raju: You made this? For me?
+
 
 <<SetCharacterExpression Ramu Loving>>
 Ramu: Every night for the past week, after you went to sleep, I worked on it.
@@ -1105,19 +1109,19 @@ Ramu: Every night for the past week, after you went to sleep, I worked on it.
 Ramu: Each day you showed me more dedication...
 
 <<SetCharacterExpression Ramu Loving>>
-Ramu: And each night I put more love into this bat.
+Ramu: And each night I put more love into these shoes.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: It's not fancy like the ones in the shops.
 
 <<SetCharacterExpression Ramu Loving>>
-Ramu: But it's made for your hands, by someone who believes in your dreams.
+Ramu: But it's made for your feets, by someone who believes in your dreams.
 
 <<SetCharacterExpression Raju Overjoyed>>
 Raju: It's perfect, bhai.
 
 <<SetCharacterExpression Raju Loving>>
-Raju: It's the most beautiful bat in the world because you made it for me.
+Raju: It's the most beautiful pair of shoes in the world because you made it for me.
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Now go show them what my little champion can do.
