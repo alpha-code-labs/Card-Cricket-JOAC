@@ -39,7 +39,7 @@ Amit: Raju yaar, I'm so frustrated! I've been waiting here for two hours.
 <<SetCharacterExpression "Amit" "Irritated">>
 Amit: I was hoping to organize a decent cricket match, but we don't have enough proper equipment for everyone who wants to play.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: That's really annoying, Amit! What exactly are we missing?
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -54,13 +54,13 @@ Amit: Plus some decent wickets that won't fall over every time someone bowls fas
 <<SetCharacterExpression "Amit" "Sad">>
 Amit: The boys are getting impatient and some have already left to find other games.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: This is a real problem, but I'm sure cricket equipment must be available somewhere in our neighborhood.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: We just need to be systematic about finding it instead of giving up.
 
-<<SetCharacterExpression "Amit" "Anxious">>
+<<SetCharacterExpression "Amit" "Smiling">>
 Amit: You're always good at solving problems, Raju!
 
 <<SetCharacterExpression "Amit" "Tired">>
@@ -72,7 +72,7 @@ Amit: This might require more creative thinking than I can manage right now.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Then let's approach this systematically.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket equipment doesn't just disappear - it gets stored, forgotten, or overlooked.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -112,7 +112,7 @@ The familiar setting welcomes Raju with renewed optimism. His overnight reflecti
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Back again, yaar? I was hoping you might have some new ideas about finding cricket equipment.
 
-<<SetCharacterExpression "Amit" "Anxious">>
+<<SetCharacterExpression "Amit" "Sad">>
 Amit: Yesterday's search didn't turn up much, but maybe we missed some obvious possibilities.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -130,7 +130,7 @@ Amit: I was getting so focused on the usual places that I probably missed creati
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Well, I was thinking about all the different ways cricket equipment might end up in unexpected places.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: And all the people who might have supplies they're not currently using.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -232,7 +232,7 @@ Amit: Organization is key to covering everything thoroughly.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Exactly! We'll divide the search area systematically and check each section carefully.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Instead of randomly wandering around. This methodical approach should uncover equipment that casual searching missed.
 
 <<SetCharacterExpression "Amit" "Excited">>
@@ -353,7 +353,7 @@ The early morning calm at Koliwada Ground provides ideal conditions for implemen
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
-<<SetCharacterExpression "Amit" "Anxious">>
+<<SetCharacterExpression "Amit" "Sad">>
 Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -389,7 +389,7 @@ Amit: Right! We should document what we find and what doesn't work.
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Good thinking! And let's keep track of time too. We need to know how long our method actually takes.
 
 <<SetCharacterExpression "Amit" "Excited">>

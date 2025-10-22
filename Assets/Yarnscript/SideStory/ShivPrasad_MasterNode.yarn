@@ -123,7 +123,7 @@ Raju positions himself where his father will see him. His movements show dedicat
 <<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest?
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Disappointed">>
 Shiv Prasad: I thought we discussed this yesterday.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -159,7 +159,7 @@ Shiv Prasad: Steady work makes you special in society, not games!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Then let me work hard at cricket, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: The same way you work hard at the factory.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -183,7 +183,7 @@ Shiv Prasad: That's harder than any factory shift I've worked.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: That requires maturity most adults don't possess.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I don't know if I can, Baba. But I want to try.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -320,13 +320,13 @@ position: -308,129
 ---
 <<set $ShivPrasad_Path = "a">>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll prove myself by focusing completely on studies, Baba.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me show you academics can be my priority.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll reduce cricket time dramatically and put everything into mathematics.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -338,13 +338,13 @@ Shiv Prasad: But be careful - I want genuine understanding, not desperate crammi
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Show me disciplined studying, not panic.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, Baba.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll create a proper study schedule and stick to it religiously.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket can wait - my education comes first, just like you've said.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
