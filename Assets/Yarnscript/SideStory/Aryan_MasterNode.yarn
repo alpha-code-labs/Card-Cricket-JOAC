@@ -304,10 +304,10 @@ Aryan: The slum boy takes the high road.
 <<SetCharacterExpression "Aryan" "Bored">>
 Aryan: How boring. I expected more fire from someone so confident.
 
-<<SetCharacterExpression "Raju" "Relaxed">>
+<<SetCharacterExpression "Raju" "Determined">>//Todo
 Raju: Fire without control burns everything.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Including the person who starts it.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -357,7 +357,7 @@ Raju: You think being rich makes you tough?
 <<SetCharacterExpression "Raju" "Angry">>
 Raju: You've never had to fight for anything in your life!
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: And you've never had anything worth fighting for until now!
 
 <<SetCharacterExpression "Aryan" "Smiling">>
@@ -403,7 +403,7 @@ Raju: I'm watching.
 <<SetCharacterExpression "Raju" "Neutral">>
 Raju: I see good technique, expensive equipment, professional coaching.
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: But I also see patterns.
 
 <<SetCharacterExpression "Aryan" "Confused">>
@@ -466,16 +466,16 @@ Aryan: Wait until the pressure hits you before the match.
 <<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Let's see how calm you stay then.
 
-<<SetCharacterExpression "Raju" "Relaxed">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Pressure is just another condition to adapt to.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Like playing in rain or wind.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: You adjust and continue.
 
-<<SetCharacterExpression "Aryan" "Confused">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: You're either very wise or very stupid.
 
 <<SetCharacterExpression "Aryan" "Serious">>
@@ -484,7 +484,7 @@ Aryan: The match will show which one.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: The match will show what we've both learned about cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: That's all that matters.
 
 <<HideAllCharacters>>
@@ -534,7 +534,7 @@ Aryan: Those expensive toys are going to destroy your pathetic dreams!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: My dreams are stronger than your toys.
 
-<<SetCharacterExpression "Raju" "Confident">>
+<<SetCharacterExpression "Raju" "Angry">>
 Raju: You'll see.
 
 <<HideAllCharacters>>
@@ -571,7 +571,7 @@ Aryan: Stop staring at me like that!
 <<SetCharacterExpression "Aryan" "Anxious">>
 Aryan: You're trying to get in my head, but it won't work.
 
-<<SetCharacterExpression "Raju" "Relaxed">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: I'm not trying to get in your head.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -683,7 +683,7 @@ Aryan: ...Not bad, slum boy.
 <<SetCharacterExpression "Aryan" "Serious">>
 Aryan: Not bad at all.
 
-<<SetCharacterExpression "Aryan" "Embarrassed">>
+<<SetCharacterExpression "Aryan" "Angry">>
 Aryan: But don't think this changes anything between us.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -730,7 +730,7 @@ Aryan: Not just once, but consistently, shot after shot.
 <<SetCharacterExpression "Aryan" "Worried">>
 Aryan: My friends haven't stopped talking about it.
 
-<<SetCharacterExpression "Raju" "Relaxed">>
+<<SetCharacterExpression "Raju" "Confident">>
 Raju: I tried to tell you from the beginning.
 
 <<SetCharacterExpression "Raju" "Serious">>
@@ -745,7 +745,7 @@ Aryan: Maybe... maybe you're right about some things.
 <<SetCharacterExpression "Aryan" "Quizzical">>
 Aryan: You do have something I didn't expect.
 
-<<SetCharacterExpression "Aryan" "Serious">>
+<<SetCharacterExpression "Aryan" "Quizzical">>
 Aryan: Something raw, natural, authentic.
 
 <<SetCharacterExpression "Aryan" "Serious">>
@@ -754,7 +754,7 @@ Aryan: But don't think your performance changes everything between us.
 <<SetCharacterExpression "Aryan" "Determined">>
 Aryan: You may have beaten me at cricket, but that doesn't erase our fundamental differences.
 
-<<SetCharacterExpression "Raju" "Relaxed">>
+<<SetCharacterExpression "Raju" "Neutral">>
 Raju: I never expected it to change our social positions, Aryan.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -775,7 +775,7 @@ Aryan: I'll get better, train harder, and one day I will beat you.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Then I'll be ready.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And I'll keep getting better too.
 
 <<SetCharacterExpression "Raju" "Smiling">>

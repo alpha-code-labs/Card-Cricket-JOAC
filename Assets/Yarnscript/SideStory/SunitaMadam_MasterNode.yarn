@@ -55,7 +55,7 @@ SunitaMadam: You there, boy.
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: What are you doing loitering near this gate?
 
-<<SetCharacterExpression "SunitaMadam" Serious>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: This is private property.
 
 <<SetCharacterExpression "SunitaMadam" Disapproving>>
@@ -188,7 +188,7 @@ To risk further humiliation in pursuit of any opportunity.
 
 To access the knowledge that could change his life's trajectory.
 
-<<SetCharacterExpression "SunitaMadam" Shocked>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: You again?
 
 <<SetCharacterExpression "SunitaMadam" Irritated>>
@@ -206,10 +206,10 @@ SunitaMadam: Not for curiosity seekers who refuse to accept their place in socie
 <<SetCharacterExpression "Raju" Determined>>
 Raju: Ma'am, I didn't come to loiter or waste time.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I came because I want to learn.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Curious>>
 Raju: I was wondering... do you have any books I could read?
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -236,7 +236,7 @@ Raju: 'Where the mind is without fear and the head is held high.
 <<SetCharacterExpression "Raju" Proud>>
 Raju: Where knowledge is free.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: Where the world has not been broken up into fragments by narrow domestic walls...'
 
 <<SetCharacterExpression "Raju" Proud>>
@@ -245,14 +245,14 @@ Raju: That's from Rabindranath Tagore's 'Where the Mind is Without Fear.'
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: ...You know Tagore?
 
-<<SetCharacterExpression "SunitaMadam" Shocked>>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: You can recite his poetry from memory?
 
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: How is that possible?
 
 <<SetCharacterExpression "Raju" Smiling>>
-Raju: Our local librarian, Sharma Uncle, lets me read whatever I want.
+Raju: Our local librarian, Ram Charan Uncle, lets me read whatever I want.
 
 <<SetCharacterExpression "Raju" Neutral>>
 Raju: When I finish my homework.
@@ -260,19 +260,19 @@ Raju: When I finish my homework.
 <<SetCharacterExpression "Raju" Excited>>
 Raju: He says books are the only things that don't care if you're rich or poor.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: They teach anyone willing to learn.
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: And what else do you read, besides Tagore?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: Stories, history, sometimes mathematics books.
 
 <<SetCharacterExpression "Raju" Confident>>
 Raju: Cricket makes me dream about possibilities, Ma'am.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: But books... books make me think about how to turn dreams into plans.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -317,6 +317,9 @@ SunitaMadam: How do you plan to prove this intellectual curiosity is genuine?
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What approach will you take to demonstrate real commitment to learning?
 
+<<SetCharacterExpression "Raju" Smiling>>
+Raju: I will show you soon enough.
+
 <<HideAllCharacters>>
 
 As Raju walks away from the second encounter, something significant has shifted.
@@ -340,9 +343,18 @@ That validates his belief that merit can transcend social prejudice when properl
 ===
 title: SunitaMadam_Day3
 ---
+<<SetBGSprite WellingtonEstate>>
+On the third day, Raju returns to Wellington Estate school with a clear purpose.
+He intends to convince Sunita Madam of his genuine intellectual curiosity.
+
+<<SetCharacterExpression "SunitaMadam" Serious>>
+SunitaMadam: Back again? What approach are you going to take?
+
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
+
+
 
 -> Raju: Test my knowledge in any subject, Ma'am. Give me the hardest questions you have.
     <<jump SunitaMadam_Day3a>>
