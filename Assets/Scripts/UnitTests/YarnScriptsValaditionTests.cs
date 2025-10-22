@@ -49,8 +49,8 @@ public static class YarnScriptsValaditionTests
             }
             //Test to Run
             issues.AddRange(TestYarnCommands(text));
-            issues.AddRange(TestCalanderSystemAndYarnNodes());
         }
+        issues.AddRange(TestCalanderSystemAndYarnNodes());
         issues = issues.Distinct().ToList();
         issues.Sort();
         string result = $"Tested {totalFiles} .yarn files under {yarnFolder}. Found {issues.Count} issues.\n{string.Join("\n", issues)}";
