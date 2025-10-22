@@ -40,6 +40,7 @@ public class EncouragementSystem : MonoBehaviour
     private bool milestone75Triggered = false;
     private bool milestone10RunsTriggered = false;
     private bool milestoneFinalRunsTriggered = false;
+    private bool milestone10ballsTriggered = false;
     private bool valiant50Triggered = false;
     private bool valiant75Triggered = false;
     private bool _isShowingEncouragement = false;
@@ -280,24 +281,28 @@ public class EncouragementSystem : MonoBehaviour
             // Regular milestones
             if (runsNeeded <= 2 && runsNeeded > 0 && !milestoneFinalRunsTriggered)
             {
+                Debug.Log("Pushing milestoneFinalRuns");
                 milestoneFinalRunsTriggered = true;
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.FinalRuns, expr, currentSituation);
             }
             else if (runsNeeded <= 10 && runsNeeded > 2 && !milestone10RunsTriggered)
             {
+                Debug.Log("Pushing milestone10Runs");
                 milestone10RunsTriggered = true;
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.TenRuns, expr, currentSituation);
             }
-            else if (percentage >= 75f && !milestone75Triggered && requiredRate < 3.0f)
+           else if (percentage  >= 75f && !milestone75Triggered && requiredRate < 3.0f)
             {
+                Debug.Log("Pushing milestone75");
                 milestone75Triggered = true;
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.Percent75, expr, currentSituation);
             }
             else if (percentage >= 50f && !milestone50Triggered && requiredRate < 3.0f)
             {
+                Debug.Log("Pushing milestone50");
                 milestone50Triggered = true;
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.Percent50, expr, currentSituation);
@@ -305,8 +310,9 @@ public class EncouragementSystem : MonoBehaviour
         }
         
         // Special check for final 10 balls
-        if (ballsRemaining <= 10 && ballsRemaining > 0 && !isUnreachable)
+        if (ballsRemaining <= 10 && ballsRemaining > 0 && !isUnreachable && !milestone10ballsTriggered)
         {
+            milestone10ballsTriggered = true;
             // This can trigger alongside other milestones
             CharacterExpression expr = requiredRate > 1.5f ? CharacterExpression.Serious : CharacterExpression.Happy;
             if (triggeredMilestone == null)
@@ -318,6 +324,7 @@ public class EncouragementSystem : MonoBehaviour
         if (triggeredMilestone != null)
         {
             pendingMilestones.Clear();
+            Debug.Log("Pushed milestone " + triggeredMilestone.type);
             pendingMilestones.Enqueue(triggeredMilestone);
         }
     }
@@ -332,7 +339,6 @@ public class EncouragementSystem : MonoBehaviour
         if (requiredRate < 4.0f) return SituationCategory.Critical;
         return SituationCategory.Unreachable;
     }
-    
     private CharacterExpression GetExpressionForSituation(SituationCategory situation)
     {
         switch (situation)
@@ -504,31 +510,36 @@ public class EncouragementSystem : MonoBehaviour
         
         RectTransform panelRect = encouragementPanel.GetComponent<RectTransform>();
         panelRect.anchoredPosition = offScreenPosition;
-        
+
         // Slide in from right
         panelRect.DOAnchorPos(onScreenPosition, slideInDuration).SetEase(Ease.OutBack);
         yield return new WaitForSeconds(slideInDuration);
+        Debug.Log("Encouragement panel waited for slide in");
         
         // Expand dialogue box
         dialogueBox.transform.DOScale(Vector3.one, dialogueBoxExpandDuration).SetEase(Ease.OutBack);
         yield return new WaitForSeconds(dialogueBoxExpandDuration);
+        Debug.Log("Encouragement panel waited for dialogue box expand");
         
         // Fade in text with typewriter effect
         dialogueText.text = dialogue;
         dialogueText.DOFade(1f, textFadeInDuration);
-        
+
         // Optional: Typewriter effect
         yield return TypewriterEffect(dialogue);
+        Debug.Log("Encouragement panel waited for text fade in");
         
         // Show skip button
         skipButton.gameObject.SetActive(true);
         skipButton.transform.localScale = Vector3.zero;
         skipButton.transform.DOScale(Vector3.one, 0.2f).SetEase(Ease.OutBack);
-        
+        Debug.Log("Encouragement panel waited for skip button scale in");
+        Debug.Log(autoSkipDelay + " is the auto-skip delay");
         // Auto-skip if configured
         if (autoSkipDelay > 0)
         {
             yield return new WaitForSeconds(autoSkipDelay);
+            Debug.Log("Encouragement panel waited for auto-skip delay");
             if (_isShowingEncouragement) // Check if not already skipped
             {
                 HideEncouragement();
@@ -550,6 +561,7 @@ public class EncouragementSystem : MonoBehaviour
     
     void OnSkipButtonClicked()
     {
+        Debug.Log("Clicked on Skip Button");
         HideEncouragement();
     }
     
@@ -562,6 +574,7 @@ public class EncouragementSystem : MonoBehaviour
     
     IEnumerator HideEncouragementSequence()
     {
+        Debug.Log("Hding Encouragment system");
         // Disable skip button
         skipButton.interactable = false;
         
@@ -600,6 +613,7 @@ public class EncouragementSystem : MonoBehaviour
         milestone75Triggered = false;
         milestone10RunsTriggered = false;
         milestoneFinalRunsTriggered = false;
+        milestone10ballsTriggered = false;
         valiant50Triggered = false;
         valiant75Triggered = false;
         pendingMilestones.Clear();

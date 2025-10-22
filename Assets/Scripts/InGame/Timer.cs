@@ -44,6 +44,7 @@ public class Timer : MonoBehaviour
 
     public void PauseTimer()
     {
+        if (isPaused) return;
         isPaused = true;
         if (currentTimerCoroutine != null)
         {

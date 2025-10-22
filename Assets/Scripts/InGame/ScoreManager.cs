@@ -16,11 +16,13 @@ public class ScoreManager : MonoBehaviour
     private GameplayConfig currentGameplayConfig;
     private bool isBattingFirst;
     private int initialWickets;
-    
+    public ParticleSystem fireworkEffect;
+
+
     void Awake()
     {
         disableRaycasterOnMainDialogueSystem();
-        
+
         // Get gameplay configuration
         currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         if (currentGameplayConfig != null)
@@ -28,16 +30,16 @@ public class ScoreManager : MonoBehaviour
             TargetScore = currentGameplayConfig.targetScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
-            
+
             Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
             Debug.Log($"Batting First: {isBattingFirst}, Target: {TargetScore}, Balls: {MaxBalls}");
         }
-        
+
         if (GameManager.instance != null)
             wickets = baseWickets + GameManager.instance.currentSaveData.humility;
-        else 
+        else
             wickets = baseWickets;
-            
+
         initialWickets = wickets;
         Instance = this;
 
@@ -48,7 +50,13 @@ public class ScoreManager : MonoBehaviour
             chaseDisplayText.gameObject.SetActive(false);
         }
     }
-    
+    public void TriggerFirework()
+    {
+        if (fireworkEffect != null)
+        {
+            fireworkEffect.Play();
+        }
+    }
     public int currentRuns = 0;
     public int TargetScore = 40;
     public int MaxBalls = 24;
@@ -281,7 +289,10 @@ public class ScoreManager : MonoBehaviour
             currentRuns += runs;
 
         if (runs == 4 || runs == 6)
+        {
             PlayCheeringSound();
+        }
+            
 
         //currentRunsText.text = currentRuns.ToString();
         if (previousRuns < currentRuns)
@@ -427,7 +438,10 @@ public class ScoreManager : MonoBehaviour
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
-        
+        if((int)outcome >=4)
+        {
+            TriggerFirework();
+        }
         if (CardPlayAnimationController.Instance != null)
         {
             yield return CardPlayAnimationController.Instance.PlayCardSequence(
@@ -448,7 +462,8 @@ public class ScoreManager : MonoBehaviour
         {
 
             CardsPoolManager.Instance.EndTurn(MaxBalls, (int)outcome != -3);
-
+            if ((int)outcome >= 4)
+                yield return new WaitForSeconds(2f); //wait for the fireworks animation to complete
             if (!isBattingFirst && EncouragementSystem.Instance != null)
             {
                 EncouragementSystem.Instance.TryShowPendingEncouragement();
@@ -456,6 +471,7 @@ public class ScoreManager : MonoBehaviour
                 // Wait for encouragement to finish if it's showing
                 while (EncouragementSystem.Instance != null && EncouragementSystem.Instance.isShowingEncouragement)
                 {
+                    // Debug.Log("isShowingEncouragment Panel " + EncouragementSystem.Instance.isShowingEncouragement);
                     yield return null;
                 }
             }
