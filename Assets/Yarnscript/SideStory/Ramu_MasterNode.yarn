@@ -293,14 +293,14 @@ tags:
 position: -151,208
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite Rooftop>>
+<<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-Evening settles over the rooftop. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
+Evening settles over Kohliwada Ground. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
 
 <<HideAllCharacters>>
 
-The rooftop provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
+The ground provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
 
 <<SetCharacterExpression Raju Serious>>
 Raju: Bhaiya, can I ask you something?
@@ -382,7 +382,7 @@ Ramu: Despite my harsh words, or maybe because of them.
 
 <<HideAllCharacters>>
 
-Their rooftop conversation reveals the emotional complexity behind Ramu's seemingly harsh approach. Both gain deeper understanding of how fear and hope coexist.
+Their conversation on the ground reveals the emotional complexity behind Ramu's seemingly harsh approach. Both gain deeper understanding of how fear and hope coexist.
 
 <<set $Ramu_Day = 4>>
 <<EndEvent true>>
