@@ -41,7 +41,7 @@ Aryan: Oh, look who's back.
 <<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: The servant boy returns.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: What's the matter, slum boy?
 
 <<SetCharacterExpression "Aryan" "Mischievous">>
@@ -53,19 +53,19 @@ Raju: I'm not your servant.
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: I'm here to help my mother, that's all.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Help? Oh, that's rich!
 
 <<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Your mother cleans our toilets, and you carry her bags.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Very inspiring.
 
 <<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: I bet you think you're special because you kick a ball around in the dirt.
 
-<<SetCharacterExpression "Aryan" "Disgusted">>
+<<SetCharacterExpression "Aryan" "Angry">>
 Aryan: But that's not real cricket, you know.
 
 <<SetCharacterExpression "Aryan" "Disappointed">>
@@ -74,10 +74,10 @@ Aryan: You probably can't even hold a bat properly.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I can play cricket.
 
-<<SetCharacterExpression "Raju" "Confident">>
+<<SetCharacterExpression "Raju" "Irritated">>
 Raju: Better than you think.
 
-<<SetCharacterExpression "Raju" "Proud">>
+<<SetCharacterExpression "Raju" "Irritated">>
 Raju: Better than you, probably.
 
 <<SetCharacterExpression "Aryan" "Astonished">>
@@ -95,7 +95,7 @@ Aryan: You think you can beat someone with real coaching?
 <<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Tell you what, slum boy.
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Determined">>
 Aryan: If you're so confident, come back tomorrow.
 
 <<SetCharacterExpression "Aryan" "Smiling">>
@@ -122,13 +122,13 @@ tags:
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-After last confrontation with Aryan, Raju returns to the high-rise complex today.
+After last confrontation with Aryan, Raju returns to the high-rise complex.
 
 He carries his simple cricket bat, its worn handle standing in stark contrast to the polished marble around him.
 
 His heart pounds as he spots Aryan near the fountain, casually handling professional-grade cricket equipment.
 
-<<SetCharacterExpression "Aryan" "Smiling">>
+<<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: Well, well. The slum boy returns.
 
 <<SetCharacterExpression "Aryan" "Excited">>
@@ -143,7 +143,7 @@ Aryan: I bet you've never even touched something this valuable, have you?
 <<SetCharacterExpression "Raju" "Neutral">>
 Raju: It's a beautiful bat.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Neutral">>
 Raju: But it's still just a piece of willow wood.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -170,13 +170,13 @@ Aryan: That's just poor kids playing in the dirt and pretending it matters.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: You want to see what I can do?
 
-<<SetCharacterExpression "Raju" "Confident">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Fine. I'll show you.
 
 <<SetCharacterExpression "Raju" "Serious">>
 Raju: Cricket isn't about how much money your family has.
 
-<<SetCharacterExpression "Aryan" "Excited">>
+<<SetCharacterExpression "Aryan" "Overjoyed">>
 Aryan: Oh, this is perfect!
 
 <<SetCharacterExpression "Aryan" "Overjoyed">>
@@ -275,7 +275,7 @@ Aryan: Perfect timing.
 <<SetCharacterExpression "Aryan" "Mischievous">>
 Aryan: I was just telling my friends about tomorrow's entertainment.
 
-<<SetCharacterExpression "Aryan" "Confident">>
+<<SetCharacterExpression "Aryan" "Confident">>//TODO: Fix
 Aryan: Are you ready for your public humiliation, slum boy?
 <<AutoAdvance true>>
 Make a Choice
