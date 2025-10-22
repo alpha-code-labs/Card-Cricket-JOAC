@@ -534,7 +534,7 @@ position: 934,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I understand your fears, bhaiya.
 
 <<SetCharacterExpression Raju Confident>>
@@ -543,7 +543,7 @@ Raju: Let me prove my dedication slowly and show you cricket can be safe.
 <<SetCharacterExpression Raju Determined>>
 Raju: I won't take unnecessary risks or get carried away by praise.
 
-<<SetCharacterExpression Ramu Astonished>>
+<<SetCharacterExpression Ramu Skeptical>>
 Ramu: You... you want to go slower?
 
 <<SetCharacterExpression Ramu Quizzical>>
@@ -552,7 +552,7 @@ Ramu: Most boys your age would be demanding more opportunities.
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Not offering to be more careful.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Worried>>
 Raju: Because I see how worried you get, bhaiya.
 
 <<SetCharacterExpression Raju Confident>>
@@ -570,7 +570,7 @@ Ramu: Most kids wouldn't even notice their brother's fears.
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Let alone want to address them.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Smiling>>
 Raju: Every morning I choose to practice with you because I value what we're building together.
 
 <<SetCharacterExpression Raju Determined>>
@@ -797,7 +797,7 @@ Ramu: If you want to play cricket seriously, if you want me to consider that tou
 <<SetCharacterExpression Ramu Serious>>
 Ramu: You need to show me something today.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Show you what, bhaiya? I'll do anything.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -809,7 +809,7 @@ Ramu: Real training - the kind that hurts.
 <<SetCharacterExpression Ramu Serious>>
 Ramu: The kind that tests everything you think you know about wanting something.
 
-<<SetCharacterExpression Raju Confident>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I'm ready, bhaiya. I've been ready for days.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -819,7 +819,7 @@ Ramu: This isn't a game.
 Ramu: For the next two hours, you'll face deliveries at different speeds, different angles.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: You'll run suicides between wickets until your legs shake.
+Ramu: You'll run between wickets until your legs shake.
 
 <<SetCharacterExpression Ramu Determined>>
 Ramu: You'll practice defensive shots until your hands blister.
@@ -835,6 +835,10 @@ Ramu: If you do well, if you show me the dedication that tournament play require
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Then maybe - maybe I'll believe you're serious about this dream.
+
+<<HideAllCharacters>>
+<<SetBGSprite KohliwadaGround>>
+Ramu and Raju Head towards KohliwadaGround Ground.
 
 <<SetCharacterExpression Ramu Skeptical>>
 Ramu: Tired yet?
@@ -863,7 +867,7 @@ Raju: Because I want this, bhaiya. I really want to play cricket.
 <<SetCharacterExpression Raju Determined>>
 Raju: Not just for fun, but for real.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: Like those players you talked to yesterday.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -956,11 +960,14 @@ Raju: It feels different today.
 <<SetCharacterExpression Raju Confident>>
 Raju: Like I'm not just hitting balls - like I'm proving something.
 
+
+<<HideAllCharacters>>
+<<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression MrsDas Excited>>
-Mrs. Sharma: Ramu beta, is your little brother going to play in that big tournament?
+Mrs Das: Ramu beta, is your little brother going to play in that big tournament?
 
 <<SetCharacterExpression MrsDas Astonished>>
-Mrs. Sharma: The whole building is talking about his cricket!
+Mrs Das: The whole building is talking about his cricket!
 
 <<SetCharacterExpression Ramu Excited>>
 Ramu: Sharma aunty, come down and see for yourself!
