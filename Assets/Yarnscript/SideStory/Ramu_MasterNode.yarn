@@ -497,9 +497,14 @@ Make a Choice
 -> Balance cricket with responsibility
     <<set $Ramu_Path = "c">>
 
-<<SetCharacterExpression Ramu Smiling>>
- Ramu: Wonderfull Choice Bhai
-    
+<<SetCharacterExpression Ramu Serious>>
+Ramu: You've made your choice, little brother.
+
+<<SetCharacterExpression Ramu Determined>>
+Ramu: Now I will be the judge of whether it was the right one.
+
+<<SetCharacterExpression Ramu Confident>>
+Ramu: Show me through your actions that you understand what this path demands.
     
     
 <<set $Ramu_Day = 5>>
