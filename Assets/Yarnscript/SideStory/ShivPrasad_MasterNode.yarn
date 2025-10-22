@@ -121,7 +121,7 @@ Raju positions himself where his father will see him. His movements show dedicat
 <<SetCharacterExpression "ShivPrasad" "Skeptical">>
 Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest?
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Disappointed">>
 Shiv Prasad: I thought we discussed this yesterday.
 
 <<SetCharacterExpression "Raju" "Excited">>
