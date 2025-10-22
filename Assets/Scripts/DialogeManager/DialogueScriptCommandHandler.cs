@@ -366,6 +366,7 @@ public enum EmotionType
     Terrified,
     Tired,
     Worried,
+    BaseSprite
 }
 
 public enum MusicType
