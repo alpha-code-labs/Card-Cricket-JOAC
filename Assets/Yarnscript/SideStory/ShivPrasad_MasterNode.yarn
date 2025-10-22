@@ -17,8 +17,6 @@
     <<jump ShivPrasad_Day5>>
 <<elseif $ShivPrasad_Day==6>>
     <<jump ShivPrasad_Day6>>
-<<elseif $ShivPrasad_Day==7>>
-    <<jump ShivPrasad_Day7>>
 <<endif>>
 ===
 
@@ -482,6 +480,31 @@ Raju commits to intensive academic focus. Cricket time dramatically reduced to p
 
 The transformation is apparent. Raju's bat remains untouched while textbooks spread everywhere. His commitment creates intense concentration that both impresses and concerns his father. The sacrifice demonstrates genuine readiness.
 
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: I see you've been studying for hours every day, beta.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: Your discipline is remarkable.
+
+<<SetCharacterExpression "ShivPrasad" "Worried">>
+Shiv Prasad: But tell me - do you miss cricket? Are you struggling without it?
+
+<<SetCharacterExpression "Raju" "Sad">>
+Raju: I miss it terribly, Baba.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: But this sacrifice helps me understand how much both mean to me.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I want to earn the right to have both.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: Your sacrifice shows real character, beta.
+
+<<SetCharacterExpression "ShivPrasad" "Proud">>
+Shiv Prasad: Perhaps you're more mature than I gave you credit for.
+
+
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
 ===
@@ -495,6 +518,27 @@ tags:
 Raju demonstrates systematic integration of cricket-learned discipline with academic study. Showing how sports skills enhance learning.
 
 Raju's methodical approach reflects the same systematic thinking from cricket. Athletic discipline enhances academic performance when consciously applied. Study sessions take on practice structure - clear goals, measurable progress, focused attention.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: I have to admit, beta - your study methods are much more organized.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: This systematic approach... you really learned this from cricket?
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Yes, Baba!
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: Cricket taught me improvement comes from consistent effort.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Breaking down complex skills. Same principle works for math equations.
+
+<<SetCharacterExpression "ShivPrasad" "Smiling">>
+Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized.
+
+<<SetCharacterExpression "ShivPrasad" "Proud">>
+Shiv Prasad: You're showing me something I hadn't considered.
 
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
@@ -510,96 +554,38 @@ Raju maintains cricket passion while channeling that energy and confidence into 
 
 High energy fills both cricket practice and math study. The sustainability remains questionable as days progress. His belief that cricket success fuels academics faces practical tests - can enthusiasm substitute for methodical work? His father observes with growing concern.
 
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: You seem energized by your cricket practice, beta.
+
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
+Shiv Prasad: But I need to see this energy actually helping your mathematics.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Not just making you feel good, beta.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: It is helping, Baba!
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: After good cricket practice, I study with more focus.
+
+<<SetCharacterExpression "Raju" "Excited">>
+Raju: My passion for cricket fuels my passion for everything else.
+
+<<SetCharacterExpression "ShivPrasad" "Quizzical">>
+Shiv Prasad: Your energy is certainly high, beta.
+
+<<SetCharacterExpression "ShivPrasad" "Skeptical">>
+Shiv Prasad: But energy without proper direction can be wasteful.
+
+<<SetCharacterExpression "ShivPrasad" "Serious">>
+Shiv Prasad: Show me directed results.
+
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
 ===
 
 title: ShivPrasad_Day5
----
-<<PlayBackgroundMusic Light_3>>
-<<SetBGSprite HutInterior>>
-
-<<if $ShivPrasad_Path=="a">>
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
-    Shiv Prasad: I see you've been studying for hours every day, beta.
-    
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
-    Shiv Prasad: Your discipline is remarkable.
-    
-    <<SetCharacterExpression "ShivPrasad" "Worried">>
-    Shiv Prasad: But tell me - do you miss cricket? Are you struggling without it?
-    
-    <<SetCharacterExpression "Raju" "Sad">>
-    Raju: I miss it terribly, Baba.
-    
-    <<SetCharacterExpression "Raju" "Serious">>
-    Raju: But this sacrifice helps me understand how much both mean to me.
-    
-    <<SetCharacterExpression "Raju" "Determined">>
-    Raju: I want to earn the right to have both.
-    
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
-    Shiv Prasad: Your sacrifice shows real character, beta.
-    
-    <<SetCharacterExpression "ShivPrasad" "Proud">>
-    Shiv Prasad: Perhaps you're more mature than I gave you credit for.
-
-<<elseif $ShivPrasad_Path=="b">>
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
-    Shiv Prasad: I have to admit, beta - your study methods are much more organized.
-    
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
-    Shiv Prasad: This systematic approach... you really learned this from cricket?
-    
-    <<SetCharacterExpression "Raju" "Excited">>
-    Raju: Yes, Baba!
-    
-    <<SetCharacterExpression "Raju" "Excited">>
-    Raju: Cricket taught me improvement comes from consistent effort.
-    
-    <<SetCharacterExpression "Raju" "Confident">>
-    Raju: Breaking down complex skills. Same principle works for math equations.
-    
-    <<SetCharacterExpression "ShivPrasad" "Smiling">>
-    Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized.
-    
-    <<SetCharacterExpression "ShivPrasad" "Proud">>
-    Shiv Prasad: You're showing me something I hadn't considered.
-
-<<elseif $ShivPrasad_Path=="c">>
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
-    Shiv Prasad: You seem energized by your cricket practice, beta.
-    
-    <<SetCharacterExpression "ShivPrasad" "Skeptical">>
-    Shiv Prasad: But I need to see this energy actually helping your mathematics.
-    
-    <<SetCharacterExpression "ShivPrasad" "Serious">>
-    Shiv Prasad: Not just making you feel good, beta.
-    
-    <<SetCharacterExpression "Raju" "Excited">>
-    Raju: It is helping, Baba!
-    
-    <<SetCharacterExpression "Raju" "Confident">>
-    Raju: After good cricket practice, I study with more focus.
-    
-    <<SetCharacterExpression "Raju" "Excited">>
-    Raju: My passion for cricket fuels my passion for everything else.
-    
-    <<SetCharacterExpression "ShivPrasad" "Quizzical">>
-    Shiv Prasad: Your energy is certainly high, beta.
-    
-    <<SetCharacterExpression "ShivPrasad" "Skeptical">>
-    Shiv Prasad: But energy without proper direction can be wasteful.
-    
-    <<SetCharacterExpression "ShivPrasad" "Serious">>
-    Shiv Prasad: Show me directed results.
-<<endif>>
-
-<<set $ShivPrasad_Day = 6>>
-<<EndEvent true>>
-===
-
-title: ShivPrasad_Day6
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
@@ -621,7 +607,7 @@ Shiv Prasad: You've been studying until late and waking up early for cricket.
 <<SetCharacterExpression "Raju" "Tired">>
 Raju: I'm fine, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Just trying to fit everything in like I promised.
 
 <<SetCharacterExpression "Raju" "Tired">>
@@ -717,7 +703,7 @@ Shiv Prasad: Show me your passion gives you energy instead of draining it.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I will, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: These three days were hard because I'm still learning balance.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -726,11 +712,11 @@ Raju: But I won't give up. I can't give up.
 <<HideAllCharacters>>
 As day six concludes, both acknowledge the complexity of balancing passion and responsibility. The conversation evolved from opposition to nuanced understanding. Raju's exhaustion revealed practical limitations, while his determination earned growing respect.
 
-<<set $ShivPrasad_Day = 7>>
+<<set $ShivPrasad_Day = 6>>
 <<EndEvent true>>
 ===
 
-title: ShivPrasad_Day7
+title: ShivPrasad_Day6
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
@@ -749,7 +735,7 @@ Shiv Prasad: After all this preparation, all this effort to prove balance...
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Are you ready?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I think so, Baba.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -758,7 +744,7 @@ Raju: I've studied harder than I've ever studied in my life.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I've applied everything cricket taught me.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: About practice, discipline, staying calm under pressure.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -845,7 +831,7 @@ Shiv Prasad: The moment you show me you can't truly balance both...
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: We end the cricket conversation permanently.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, Baba. And I promise you - my studies will never suffer.
 
 <<SetCharacterExpression "Raju" "Determined">>
