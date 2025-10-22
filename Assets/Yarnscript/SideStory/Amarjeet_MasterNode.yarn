@@ -38,7 +38,9 @@ Amarjeet: Ah, young one. You come with dust on your face and a bat in your hand.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: But I can see something troubling you. Your practice didn't go well today, did it?
 
-<<SetCharacterExpression "Raju" "Astonished">>
+// <<SetCharacterExpression "Raju" "Astonished">>
+<<HideAllCharacters>>
+
 Raju feels surprised by the priest's perceptiveness. He had hoped his frustration wasn't so obvious.
 
 <<SetCharacterExpression "Raju" "Sad">>
@@ -50,10 +52,10 @@ Raju: Other days, I can't connect with anything. I practice the same way, but re
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Am I doing something wrong?
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: Tell me, beta. What do you think discipline means?
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: Most young people think they understand this word. But few grasp its deeper significance.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -62,19 +64,19 @@ Raju: To follow rules? To practice regularly?
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: I try to do both of those things with my cricket.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: Rules and practice—yes, those are the surface of discipline.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: But deeper than that, true discipline is focus. It is keeping your mind steady regardless of circumstances.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: See this diya, child? The wind pushes against it, trying to extinguish the flame.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Determined">>
 Amarjeet: Yet the light survives because it has found steadiness.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Determined">>
 Amarjeet: So too must your mind be if you want consistency in cricket.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -89,25 +91,25 @@ Amarjeet: Exactly, beta. Your hands know the technique. Your body understands th
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: But your mind wanders. True discipline means keeping attention only on this moment.
 
-<<SetCharacterExpression "Amarjeet" "Smiling">>
+<<SetCharacterExpression "Amarjeet" "Determined">>
 Amarjeet: This shot. This breath.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: I think I understand, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: But achieving that kind of focus... it's not easy, is it?
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Loving">>
 Amarjeet: Nothing worth achieving is easy, child.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Loving">>
 Amarjeet: If you truly wish to learn this deeper discipline, return tomorrow evening.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: We will continue this conversation.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thank you, Baba. I will come back.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -137,7 +139,7 @@ Amarjeet: So, you came back, beta.
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: Few boys your age keep promises, especially when teaching involves hard work.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<HideAllCharacters>>
 Raju feels both pride in keeping his commitment and nervous anticipation. Has he understood yesterday's lessons correctly?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -164,10 +166,10 @@ Amarjeet: But tell me this. Was it easy to maintain that focus?
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: Did your mind want to wander to other thoughts?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: No, Baba, it wasn't easy at all.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: My mind kept wanting to think about other things.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -182,16 +184,16 @@ Amarjeet: Mental discipline is indeed like holding water. It requires constant, 
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: The skill is in finding the right amount of focused care.
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: So how do I get better at this holding, Baba?
 
-<<SetCharacterExpression "Raju" "Excited">>
+<<SetCharacterExpression "Raju" "Quizzical">>
 Raju: How do I make my focus stronger and more consistent?
 
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: That is a question that requires time to answer properly.
 
-<<SetCharacterExpression "Amarjeet" "BaseSprite">>
+<<SetCharacterExpression "Amarjeet" "Loving">>
 Amarjeet: Come back tomorrow, child.
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>
@@ -224,10 +226,9 @@ Amarjeet: Today I offer you three paths to deepen your understanding.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: How do you wish to approach the challenge of mastering your mind?
 
-<<SetCharacterExpression "Raju" "Quizzical">>
+<<HideAllCharacters>>
 Raju feels grateful for the priest's perceptiveness. His growing understanding of moment-to-moment focus has raised larger questions about maintaining discipline over weeks and months.
 
-<<SetCharacterExpression "Raju" "Smiling">>
 
 <<AutoAdvance true>>
 Make a Choice
@@ -247,10 +248,10 @@ position: -308,129
 ---
 <<set $Amarjeet_Path = "a">>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn through prayer and spiritual practice, Baba.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Teach me the sacred way.
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>
@@ -265,6 +266,7 @@ Amarjeet: Sit with me in meditation. We will practice focusing on the divine bre
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: When your mind wanders to cricket or worry, gently return it to the sacred rhythm within.
 
+<<HideAllCharacters>>
 Minutes pass in silence. Raju struggles at first, then gradually finds a quieter space within himself.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -319,9 +321,11 @@ Amarjeet: Five minutes without moving.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: When your mind screams to quit, that is when real training begins.
 
+
+<<HideAllCharacters>>
 Raju holds the position. His arms burn. His mind rebels. But he pushes through.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Baba, my arms are burning.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -370,6 +374,7 @@ Amarjeet: The mind has two modes. Focused attention and scattered thinking.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: Like a muscle, whichever mode you exercise more becomes stronger.
 
+<<HideAllCharacters>>
 Amarjeet draws diagrams in the dust. Brain pathways. Attention networks. Raju listens intently.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -428,6 +433,8 @@ Amarjeet: Today you will serve others, beta.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: When the mind focuses on giving rather than getting, it naturally becomes still.
 
+
+<<HideAllCharacters>>
 Hours pass. Raju serves meals, cleans dishes, helps elderly visitors. His usual self-concerns fade away.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -472,6 +479,8 @@ Amarjeet: Practice your focus exercises while I create chaos around you.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: Champions must perform under any conditions.
 
+
+<<HideAllCharacters>>
 Drums beat. People shout. Lights flash. Raju struggles to maintain focus, but gradually finds his center despite the chaos.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -513,6 +522,7 @@ Amarjeet: Notice, beta. Breathe shallowly for a moment.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: How does it affect your thoughts?
 
+<<HideAllCharacters>>
 Raju experiments. Shallow breathing creates scattered thoughts. Deep breathing brings calm.
 
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
@@ -565,6 +575,7 @@ Amarjeet: Breath is the bridge between body and soul, beta.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: Master the breath, and you master the wandering mind.
 
+<<HideAllCharacters>>
 They practice together. Inhale deeply. Hold. Release slowly. With each cycle, Raju feels more centered.
 
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
@@ -612,6 +623,8 @@ Amarjeet: The stadium is full. Everything depends on your next shot.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: See yourself succeeding. Feel the confidence in your body.
 
+
+<<HideAllCharacters>>
 Raju visualizes. The pressure. The crowd. The moment. In his mind, he executes perfectly.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -653,6 +666,7 @@ Amarjeet: Notice what triggers distraction. What creates focus.
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: What patterns repeat?
 
+<<HideAllCharacters>>
 Raju spends the session observing his own mental habits. Recording patterns. Identifying triggers. Building his mental map.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -718,7 +732,7 @@ Raju: Thank you, Baba.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: You've given me something more valuable than cricket skills.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: You've shown me who I can become.
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>

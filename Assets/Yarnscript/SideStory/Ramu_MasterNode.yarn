@@ -57,13 +57,13 @@ Raju: Yesterday's practice went so late. Can't I rest today?
 <<SetCharacterExpression Raju Sad>>
 Raju: Just this once?
 
-<<SetCharacterExpression Ramu Angry>>
+<<SetCharacterExpression Ramu Irritated>>
 Ramu: Rest? Do you think Sunil Gavaskar rested when he was your age?
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Do you think Kapil Dev took days off when he was learning to bowl?
 
-<<SetCharacterExpression Ramu Skeptical>>
+<<SetCharacterExpression Ramu Serious>>
 Ramu: Hah! No, they practiced until their hands bled.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -75,7 +75,7 @@ Ramu: Every minute you waste lying around is a minute some other boy is getting 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Some boy who wants it more than you.
 
-<<SetCharacterExpression Ramu Angry>>
+<<SetCharacterExpression Ramu Irritated>>
 Ramu: Some boy who doesn't make excuses.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -90,7 +90,7 @@ Ramu: Only the willingness to work harder than everyone else.
 <<SetCharacterExpression Raju Sad>>
 Raju: I understand, bhaiya.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I do want this. I want to be good enough to make you proud.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -179,13 +179,13 @@ The afternoon heat is unforgiving at Koliwada Ground. Despite the sweltering tem
 The dusty ground shimmers under harsh sun. Raju's decision to test his practice lessons against older players represents a leap in confidence.
 
 <<SetCharacterExpression Sumit Excited>>
-Sumit: Come on, chhote! Yesterday your brother said you were special.
+Sumit: Come on, Raju! Yesterday your brother said you were special.
 
 <<SetCharacterExpression Sumit Mischievous>>
 Sumit: Let's see if you can handle my fastest ball!
 
 <<SetCharacterExpression Raju Confident>>
-Raju: Bowl your best, bhaiya! I'm ready!
+Raju: Bowl your best, Sumit I'm ready!
 
 <<SetCharacterExpression Raju Pained>>
 Raju: Ow! That really hurts...
@@ -220,7 +220,7 @@ Ramu: No more for today. You want to break bones over a game?
 <<SetCharacterExpression Raju Disappointed>>
 Raju: But bhaiya, I was doing really well before this happened.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Disappointed>>
 Raju: Everyone said I was playing like a much older boy.
 
 <<SetCharacterExpression Raju Confused>>
@@ -302,7 +302,7 @@ Evening settles over Kohliwada Ground. Raju seeks out his brother for a differen
 
 The ground provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
 
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Quizzical>>
 Raju: Bhaiya, can I ask you something?
 
 <<SetCharacterExpression Ramu Neutral>>
@@ -359,7 +359,7 @@ Ramu: Not just swing wildly but actually play with thought and timing...
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: I see something that makes me believe in things I've taught myself not to believe in.
 
-<<SetCharacterExpression Raju Excited>>
+<<SetCharacterExpression Raju Sad>>
 Raju: Then why do you always criticize me?
 
 <<SetCharacterExpression Ramu Serious>>
@@ -405,7 +405,7 @@ Amit: Bhaiya, your brother's really good!
 <<SetCharacterExpression Amit Astonished>>
 Amit: Better than kids twice his age. You must be proud!
 
-<<SetCharacterExpression Ramu Skeptical>>
+<<SetCharacterExpression Ramu Proud>>
 Ramu: He's just having a lucky day.
 
 <<SetCharacterExpression Ramu Serious>>
@@ -474,6 +474,9 @@ Amit: But bhaiya, what if his dreams aren't impossible?
 <<SetCharacterExpression Amit Confident>>
 Amit: What if he really can make it?
 
+<<SetCharacterExpression Raju Confident>>
+Raju: I can make it happen
+
 <<SetCharacterExpression Ramu Serious>>
 Ramu: How should you respond to people recognizing your talent?
 
@@ -489,17 +492,21 @@ Make a Choice
 <<AutoAdvance false>>
 -> Prove dedication slowly and safely
     <<set $Ramu_Path = "a">>
-    <<set $Ramu_Day = 5>>
-    <<EndEvent true>>
 -> Show unbreakable commitment through hard work
     <<set $Ramu_Path = "b">>
-    <<set $Ramu_Day = 5>>
-    <<EndEvent true>>
 -> Balance cricket with responsibility
     <<set $Ramu_Path = "c">>
-    <<set $Ramu_Day = 5>>
-    <<EndEvent true>>
+
+<<SetCharacterExpression Ramu Smiling>>
+ Ramu: Wonderfull Choice Bhai
+    
+    
+    
+<<set $Ramu_Day = 5>>
+<<EndEvent true>>
 ===
+
+
 
 title: Ramu_Day5
 tags:
