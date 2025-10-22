@@ -186,7 +186,7 @@ public class EncouragementSystem : MonoBehaviour
             "Final {1} ! {0} needed - it's now or never!",
             "Last {1}, {0} required. Make every ball count!",
             "Last {1} and a bit! {0} - this is your moment!",
-            "{1} remaining, {0} to win! Time for heroics!"
+            "{1} remaining, {0} to win! Keep the momentum!"
         };
         
         // Ten runs or less dialogues
@@ -228,7 +228,7 @@ public class EncouragementSystem : MonoBehaviour
         {
             "The target was steep, but what a fight you've shown!",
             "You've given it everything - that's what champions do!",
-            "An incredible effort against tough odds. Be proud!",
+            "An incredible effort against tough odds. I am really proud!",
             "You've shown tremendous courage out there!"
         };
     }
