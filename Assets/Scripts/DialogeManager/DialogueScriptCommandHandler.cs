@@ -147,8 +147,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     // Helper method to normalize sprite names for lookup
     private static string NormalizeName(string name)
     {
-        // Remove spaces, underscores, and convert to lowercase
-        return name.Replace(" ", "").Replace("_", "").ToLower();
+        // Remove all special characters, keep only alphabetic characters, and convert to lowercase
+        string result = "";
+        foreach (char c in name)
+        {
+            if (char.IsLetter(c))
+            {
+                result += c;
+            }
+        }
+        return result.ToLower();
     }
 
     // MASTER CHARACTER EXPRESSION METHOD - Now callable from Yarn
