@@ -31,7 +31,9 @@ position: -7,-175
 
 After noticing his own worn-out shoes and remembering his mother's comments about supporting local craftsmen, Raju visits Mochi Uncle's cobbler shop to see if the skilled artisan might need assistance.
 
-The narrow cobbler shop fills with earthy scents of leather and shoe polish. Mochi Uncle sits cross-legged on his low platform, weathered hands moving with practiced precision. Forty years of skilled craftsmanship surround Raju in organized chaos.
+The narrow cobbler shop fills with earthy scents of leather and shoe polish. Mochi Uncle sits cross-legged on his low platform, weathered hands moving with practiced precision. 
+
+Forty years of skilled craftsmanship surround Raju in organized chaos.
 
 <<SetCharacterExpression "MochiUncle" "Smiling">>
 MochiUncle: Arre beta, your shoes look like they've walked a thousand kilometers!
@@ -73,7 +75,7 @@ Raju: Maybe I could help you with something in exchange?
 Raju: I have some free time and I'd love to learn about your craft.
 
 <<SetCharacterExpression "MochiUncle" "Skeptical">>
-MochiUncle: Help? Child, cobbling isn't child's play.
+MochiUncle: Help? Child, fixing shoes isn't child's play.
 
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: These tools are sharp, the work requires years of experience.
@@ -84,7 +86,7 @@ MochiUncle: And one mistake can destroy expensive shoes.
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Customers trust me with footwear that must last for years - it's not a game.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand it's serious craftsmanship, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -108,14 +110,18 @@ Raju: That's exactly why I want to learn, uncle!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: My father always says that fixing things teaches you to value what you have.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And understand how things really work.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn that kind of wisdom.
 
 <<HideAllCharacters>>
-As Raju leaves the cobbler shop, the sounds of hammering and stitching still echo in his ears. He carries deep appreciation for the precision required in traditional craftsmanship. Mochi Uncle's skepticism about young people's commitment has only intensified his resolve.
+As Raju leaves the cobbler shop, the sounds of hammering and stitching still echo in his ears.
+
+ He carries deep appreciation for the precision required in traditional craftsmanship. 
+
+Mochi Uncle's skepticism about young people's commitment has only intensified his resolve.
 
 <<set $MochiUncle_Day = 2>>
 <<EndEvent true>>
@@ -130,12 +136,16 @@ position: -75,-229
 
 Despite yesterday's introduction to the demanding world of traditional craftsmanship, Raju returns during the morning work period. He hopes to observe how Mochi Uncle organizes his tools and materials.
 
-The cobbler shop radiates methodical preparation in the early morning. Mochi Uncle systematically arranges tools, sorts materials, and inspects yesterday's completed work. The peaceful atmosphere reveals the careful planning that enables traditional craftsmen to maintain consistent excellence.
+The cobbler shop radiates methodical preparation in the early morning.
 
-<<SetCharacterExpression "MochiUncle" "Astonished">>
+ Mochi Uncle systematically arranges tools, sorts materials, and inspects yesterday's completed work. 
+
+The peaceful atmosphere reveals the careful planning that enables traditional craftsmen to maintain consistent excellence.
+
+<<SetCharacterExpression "MochiUncle" "Excited">>
 MochiUncle: Back again, beta?
 
-<<SetCharacterExpression "MochiUncle" "Skeptical">>
+<<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: I thought yesterday's reality check about the difficulty of traditional craftsmanship might have sent you running.
 
 <<SetCharacterExpression "MochiUncle" "Disappointed">>
@@ -204,7 +214,7 @@ MochiUncle: Something that serves people for years instead of becoming garbage.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly why I want to learn, uncle!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Traditional skills are disappearing, but they contain wisdom.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -216,14 +226,16 @@ Raju: I don't want that knowledge to be lost.
 <<SetCharacterExpression "MochiUncle" "Quizzical">>
 MochiUncle: You keep expressing interest in learning, but cobbler training means different levels of skill.
 
-<<SetCharacterExpression "MochiUncle" "Skeptical">>
+<<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: And commitment.
 
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: What exactly do you think you could contribute to traditional craftsmanship?
 
 <<HideAllCharacters>>
-As their second conversation concludes with Mochi Uncle's direct question, Raju recognizes his persistent interest has moved beyond polite dismissal into serious consideration. The revelation of the craftsman's sadness about his children rejecting the family trade has transformed Raju's motivation from simple curiosity into genuine commitment.
+As their second conversation concludes with Mochi Uncle's direct question, Raju recognizes his persistent interest has moved beyond polite dismissal into serious consideration. 
+
+The revelation of the craftsman's sadness about his children rejecting the family trade has transformed Raju's motivation from simple curiosity into genuine commitment.
 
 <<set $MochiUncle_Day = 3>>
 <<EndEvent true>>
@@ -238,7 +250,11 @@ position: -75,-229
 
 With Mochi Uncle's question about his potential contribution weighing on his mind, Raju returns during the mid-morning repair period. Ready to demonstrate rather than simply describe how he might assist in preserving traditional cobbling skills.
 
-The cobbler shop hums with rhythmic sounds of traditional craftsmanship as Raju arrives. Mochi Uncle balances active repair work with careful attention to detail. Today carries special significance - yesterday's honest conversation about family tradition has established an atmosphere of mutual evaluation.
+The cobbler shop hums with rhythmic sounds of traditional craftsmanship as Raju arrives. 
+
+Mochi Uncle balances active repair work with careful attention to detail. 
+
+Today carries special significance - yesterday's honest conversation about family tradition has established an atmosphere of mutual evaluation.
 
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Well beta, you've been expressing interest in traditional craftsmanship for three days now.
@@ -252,7 +268,7 @@ MochiUncle: But first - how do you think you could best contribute to preserving
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I've been observing and thinking, uncle.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: There are several ways I could help, but I want to focus on what would be most meaningful.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -300,7 +316,7 @@ MochiUncle: One wrong movement can ruin expensive shoes or injure yourself.
 <<SetCharacterExpression "MochiUncle" "Worried">>
 MochiUncle: Traditional methods require perfect precision and years of practice.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand the responsibility, uncle.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -355,7 +371,7 @@ MochiUncle: Managing expectations, and representing forty years of reputation.
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: If you make promises I can't keep, customers lose faith in traditional craftsmanship entirely.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand the responsibility, uncle.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -434,7 +450,7 @@ MochiUncle: But remember that the deepest knowledge can only be learned through 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll approach this respectfully, uncle!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Every observation will honor the complexity of your craft.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -495,7 +511,7 @@ MochiUncle: And methods.
 <<SetCharacterExpression "MochiUncle" "Neutral">>
 MochiUncle: Craftsmanship tests both your technical skills and your patience under demanding conditions.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -557,7 +573,7 @@ MochiUncle: Who often just want the cheapest, fastest option.
 <<SetCharacterExpression "MochiUncle" "Serious">>
 MochiUncle: Customer service tests both your knowledge and your patience.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -619,7 +635,7 @@ MochiUncle: Traditional knowledge exists in subtle movements and decisions.
 <<SetCharacterExpression "MochiUncle" "Quizzical">>
 MochiUncle: Documentation tests both your observation skills and your understanding of what's truly important.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -756,7 +772,7 @@ MochiUncle: But it's given me hope that traditional skills won't die with my gen
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: This experience has taught me that traditional craftsmanship embodies the same principles as any form of excellence.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Dedication, attention to detail, and genuine care for creating something that lasts.
 
 <<SetCharacterExpression "Raju" "Determined">>
