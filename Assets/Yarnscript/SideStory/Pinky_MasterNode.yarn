@@ -41,13 +41,13 @@ Pinky: Some people are trying to concentrate here.
 Raju: Sorry about that.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
-Raju: Are those medical books? We're only in 8th grade.
+Raju: Are those books for Olympiad preparation? We're only in 4th grade.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: Some of us can't afford to wait until later to start preparing.
 
 <<SetCharacterExpression "Pinky" "Determined">>
-Pinky: Medical entrance exams require years of preparation, not months.
+Pinky: Olympiad exams require years of preparation, not months.
 
 <<HideAllCharacters>>
 Pinky sees Raju solving something incorrectly in his notebook.
@@ -106,7 +106,7 @@ position: -75,-229
 
 Encouraged by yesterday's productive session, Raju returns to the library after school. He carries not only his homework but additional practice problems.
 
-The library welcomes Raju's return. Pinky sits at her usual table surrounded by advanced medical texts. Today something in her posture suggests an emotional burden, creating an opportunity for deeper connection.
+The library welcomes Raju's return. Pinky sits at her usual table surrounded by advanced books. Today something in her posture suggests an emotional burden, creating an opportunity for deeper connection.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: Is everything alright?
@@ -151,7 +151,7 @@ Raju: You make it seem logical instead of mysterious.
 Pinky: That's exactly what it is - systematic investigation.
 
 <<SetCharacterExpression "Pinky" "Determined">>
-Pinky: In medical school, diagnosis follows the same pattern.
+Pinky: In entrance exams, diagnosis follows the same pattern.
 
 <<SetCharacterExpression "Pinky" "Confident">>
 Pinky: Identify symptoms, understand relationships, apply knowledge systematically.
@@ -214,16 +214,16 @@ Raju: You've helped me so much these past few days.
 Raju: Maybe I can help you with whatever you're facing.
 
 <<SetCharacterExpression "Pinky" "Sad">>
-Pinky: My father received a marriage proposal for me yesterday.
+Pinky: My parents are separating. They are constantly arguing.
 
 <<SetCharacterExpression "Pinky" "Worried">>
-Pinky: From a family in the next village.
+Pinky: My father left home last night, after a lot of fighting.
 
 <<SetCharacterExpression "Pinky" "Anxious">>
-Pinky: They want the engagement ceremony right after our final exams.
+Pinky: I am absolutey shattered.
 
 <<SetCharacterExpression "Pinky" "Disappointed">>
-Pinky: I've been preparing for medical entrance exams for two years.
+Pinky: I've been preparing for this entrance exams for two years.
 
 <<SetCharacterExpression "Pinky" "Sad">>
 Pinky: I study by candlelight after everyone sleeps.
@@ -232,7 +232,7 @@ Pinky: I study by candlelight after everyone sleeps.
 Pinky: I've memorized entire anatomy chapters, practiced thousands of chemistry equations.
 
 <<SetCharacterExpression "Pinky" "Crying">>
-Pinky: But none of it matters if I'm married off at fourteen.
+Pinky: But none of it matters if my parents separate.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly how I feel about cricket.
@@ -265,7 +265,7 @@ Pinky: Your father wants you to focus only on studies, my parents want me to aba
 Pinky: But we both need excellent exam scores.
 
 <<SetCharacterExpression "Pinky" "Serious">>
-Pinky: You to prove cricket won't harm your academics, me to prove education has enough value to delay marriage.
+Pinky: You to prove cricket won't harm your academics, me to prove education transcends all problems.
 
 <<SetCharacterExpression "Pinky" "Quizzical">>
 Pinky: How should we approach this challenge?
@@ -401,7 +401,7 @@ Pinky: When family pressure makes me question whether I'm being unrealistic, you
 Raju: Every time you explain a concept to me, you prove that you have the mind of a natural teacher and healer.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Don't let anyone convince you that such gifts should be wasted on early marriage.
+Raju: Don't let anyone convince you that such gifts should be wasted.
 
 <<SetCharacterExpression "Pinky" "Determined">>
 Pinky: You're right.
@@ -450,7 +450,7 @@ Pinky: Your questions force me to understand concepts more deeply, while my expl
 Raju: We could create study schedules that benefit both of us.
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: You get teaching practice that reinforces your medical preparation, I get personalized tutoring that improves my exam scores.
+Raju: You get teaching practice that reinforces your entrance preparation, I get personalized tutoring that improves my exam scores.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Yes!
@@ -856,7 +856,7 @@ Raju: And what's that official-looking letter?
 Pinky: I scored 94% overall - highest in our grade level.
 
 <<SetCharacterExpression "Pinky" "Overjoyed">>
-Pinky: But more importantly, the medical preparation institute offered me a full scholarship.
+Pinky: But more importantly, the training institute offered me a full scholarship.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: Based on these scores. Free coaching, materials, and exam preparation for the next four years.
@@ -883,7 +883,7 @@ Raju: So the engagement is postponed?
 Pinky: Postponed indefinitely.
 
 <<SetCharacterExpression "Pinky" "Excited">>
-Pinky: They've agreed to let me complete medical school before considering marriage.
+Pinky: They've agreed to let me give my entrance exam for now.
 
 <<SetCharacterExpression "Pinky" "Relieved">>
 Pinky: The scholarship convinced them that education could improve our family's entire economic situation.
