@@ -18,6 +18,15 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     string GetYesChoice()
     {
         string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
+        switch (location)
+        {
+            case Locations.MapSprite:
+                locationName = "the Map";
+                break;
+            case Locations.HutInterior:
+                locationName = "Home";
+                break;
+        }
         return "Yes, go to " + locationName;
     }
     void OnConfirmed()
