@@ -103,7 +103,7 @@ Raju: Something that gives me hope for the future.
 RamCharan: Good at hitting a ball with a wooden stick, perhaps.
 
 <<SetCharacterExpression "RamCharan" "Irritated">>
-RamCharan: But will that skill help you pass your matriculation exams?
+RamCharan: But will that skill help you pass your exams?
 
 <<SetCharacterExpression "RamCharan" "Serious">>
 RamCharan: Will cricket knowledge get you into college?
@@ -144,7 +144,7 @@ RamCharan: Prove your seriousness through behavior, not words.
 <<SetCharacterExpression "RamCharan" "Skeptical">>
 RamCharan: This library doesn't need another sports-obsessed student.
 
-<<SetCharacterExpression "RamCharan" "Disgusted">>
+<<SetCharacterExpression "RamCharan" "Serious">>
 RamCharan: Who treats education as secondary to entertainment.
 
 <<HideAllCharacters>>
@@ -279,11 +279,11 @@ RamCharan: What approach will you take to demonstrate genuine academic seriousne
 Make a Choice
 <<AutoAdvance false>>
 
--> Raju: Show me the most challenging books, sir. I'll prove my dedication through serious academic study.
+-> Raju: Show me the most challenging books, sir. 
     <<jump RamCharan_Day2a>>
--> Raju: Help me understand how to balance both, sir. Cricket and studies can support each other.
+-> Raju: Help me understand how to balance both, sir. 
     <<jump RamCharan_Day2b>>
--> Raju: Let me help with library work, sir. I want to earn your trust through service.
+-> Raju: Let me help with library work, sir. 
     <<jump RamCharan_Day2c>>
 
 ===
@@ -376,7 +376,7 @@ Raju: I don't want to sacrifice either my education or my dreams.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I want to find a way to make them strengthen each other.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Mature thinking for someone your age.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
@@ -443,13 +443,13 @@ Raju: Let me earn the right to be here.
 <<SetCharacterExpression "RamCharan" "Neutral">>
 RamCharan: Interesting approach.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Come back tomorrow.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
 RamCharan: If your willingness to serve is genuine.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Perhaps we can find meaningful ways for you to contribute to this library's mission.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -514,7 +514,7 @@ That goes beyond proving a point to the librarian.
 <<HideAllCharacters>>
 It reflects a genuine hunger for knowledge that parallels his passion for cricket.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Loving">>
 RamCharan: Your scholarly approach has impressed me.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
@@ -556,7 +556,7 @@ His balanced approach to earning the librarian's respect has opened doors to ins
 <<HideAllCharacters>>
 That might resolve the apparent conflict between intellectual development and cricket dreams.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Your mature approach to balance has convinced me to share something special.
 
 <<SetCharacterExpression "RamCharan" "Mischievous">>
@@ -598,7 +598,7 @@ His willingness to earn his place through humble labor has clearly impressed Ram
 <<HideAllCharacters>>
 And opened possibilities for deeper trust and revelation.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Your humble service has shown me something important about your character.
 
 <<SetCharacterExpression "RamCharan" "Mischievous">>
@@ -616,7 +616,7 @@ Raju: What would you like to show me?
 title: RamCharan_Revelation
 tags:
 ---
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "BaseSprite">>
 RamCharan: You've returned again.
 
 <<SetCharacterExpression "RamCharan" "Proud">>
@@ -669,13 +669,13 @@ RamCharan: And only because you've proven through consistent behavior.
 <<SetCharacterExpression "RamCharan" "Proud">>
 RamCharan: That you understand the value of both academic learning and disciplined pursuit of interests.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: You see, beta, I learned something important during my own youth.
 
 <<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: That discipline acquired through academic study actually enhances.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Rather than competes with passionate pursuit of cricket.
 
 <<SetCharacterExpression "RamCharan" "Excited">>
@@ -684,7 +684,7 @@ RamCharan: Mathematics teaches you to analyze statistics.
 <<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Literature develops mental focus.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: History shows strategic thinking.
 
 <<SetCharacterExpression "Raju" "Astonished">>
@@ -702,7 +702,7 @@ RamCharan: Study them with the same discipline you'd apply to mathematics or lit
 <<SetCharacterExpression "RamCharan" "Proud">>
 RamCharan: Balance these elements properly.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: And you might achieve something greater than either pursuit alone could provide.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
@@ -717,7 +717,7 @@ Raju: I promise I'll study these materials carefully.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And prove that cricket and academics can support each other.
 
-<<SetCharacterExpression "RamCharan" "Smiling">>
+<<SetCharacterExpression "RamCharan" "Confident">>
 RamCharan: Remember, boy.
 
 <<SetCharacterExpression "RamCharan" "Loving">>
