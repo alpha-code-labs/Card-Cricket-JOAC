@@ -9,7 +9,7 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     [SerializeField] Locations location;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, go to " + GetLocationString(location), "No, stay here", OnConfirmed);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, go to " + GetLocationString(), "No, stay here", OnConfirmed);
     }
     public override void CheckAvaliability()
     {
@@ -22,9 +22,9 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 
     public override void OnHoveringTip()
     {
-        CurrencyToolTip.instance.ShowToolTip("Go to " + GetLocationString(location));
+        CurrencyToolTip.instance.ShowToolTip("Go to " + GetLocationString());
     }
-    string GetLocationString(Locations loc)
+    string GetLocationString()
     {
         string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
         switch (location)
