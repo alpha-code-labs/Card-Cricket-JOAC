@@ -50,6 +50,7 @@ public abstract class ClickAbleObjectHandler : MonoBehaviour
         Collider2D.enabled = false;
         Collider2D.enabled = true;
         CheckAvaliability();
+        OnStopHoveringTip();
     }
     public abstract void CheckAvaliability();
     protected void SetAvaliabilityIndicator(bool isActive)

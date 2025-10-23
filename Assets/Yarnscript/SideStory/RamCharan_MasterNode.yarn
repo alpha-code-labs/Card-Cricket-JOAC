@@ -19,7 +19,7 @@ position: -7,-175
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite PublicSchool>>
+<<SetBGSprite Library>>
 
 <<HideAllCharacters>>
 Seeking a quiet place to read and study, Raju visits the school library.
@@ -174,7 +174,7 @@ position: -75,-229
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite PublicSchool>>
+<<SetBGSprite Library>>
 
 <<HideAllCharacters>>
 Despite yesterday's harsh rejection, Raju returns to the library.
@@ -488,7 +488,7 @@ title: RamCharan_Day3a
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite PublicSchool>>
+<<SetBGSprite Library>>
 
 <<HideAllCharacters>>
 Raju returns determined to prove his intellectual capacity.
@@ -533,7 +533,7 @@ title: RamCharan_Day3b
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite PublicSchool>>
+<<SetBGSprite Library>>
 
 <<HideAllCharacters>>
 Raju returns hoping to learn how to authentically balance his dual interests.
@@ -575,7 +575,7 @@ title: RamCharan_Day3c
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite PublicSchool>>
+<<SetBGSprite Library>>
 
 <<HideAllCharacters>>
 Raju returns ready to demonstrate his commitment.

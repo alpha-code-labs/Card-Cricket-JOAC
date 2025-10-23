@@ -25,7 +25,7 @@ position: -7,-175
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 After hearing older boys talk about the prestigious school in the High-Rises, Raju walks the long distance to see it.
 
@@ -166,7 +166,7 @@ position: -75,-229
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Despite yesterday's harsh dismissal, Raju returns to the prestigious school.
 
@@ -343,7 +343,7 @@ That validates his belief that merit can transcend social prejudice when properl
 ===
 title: SunitaMadam_Day3
 ---
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 On the third day, Raju returns to Wellington Estate school with a clear purpose.
 He intends to convince Sunita Madam of his genuine intellectual curiosity.
 
@@ -370,7 +370,7 @@ position: -308,129
 ---
 <<set $SunitaMadam_Path = "a">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Confident>>
 
@@ -449,7 +449,7 @@ position: -55,122
 ---
 <<set $SunitaMadam_Path = "b">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Serious>>
 
@@ -522,7 +522,7 @@ position: 184,122
 ---
 <<set $SunitaMadam_Path = "c">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Excited>>
 
@@ -599,7 +599,7 @@ title: SunitaMadam_Day4
 tags: 
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Encouraged by yesterday's more positive response, Raju returns to the school once again.
 
@@ -754,7 +754,7 @@ title: SunitaMadam_Day5
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Building on yesterday's positive interaction, Raju approaches with a specific request.
 
@@ -932,7 +932,7 @@ title: SunitaMadam_Day6
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 With their mentor-student relationship now firmly established, Raju seeks guidance.
 

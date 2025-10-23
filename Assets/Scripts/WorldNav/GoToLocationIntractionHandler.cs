@@ -9,16 +9,11 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     [SerializeField] Locations location;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.StartConfirmationDialogue(GetYesChoice(), "No, stay here", OnConfirmed);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, go to " + GetLocationString(), "No, stay here", OnConfirmed);
     }
     public override void CheckAvaliability()
     {
         return; // Always available
-    }
-    string GetYesChoice()
-    {
-        string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
-        return "Yes, go to " + locationName;
     }
     void OnConfirmed()
     {
@@ -27,7 +22,21 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
 
     public override void OnHoveringTip()
     {
-        CurrencyToolTip.instance.ShowToolTip("Go to " + PrettyStrings.GetPrettyEnumString(location.ToString()));
+        CurrencyToolTip.instance.ShowToolTip("Go to " + GetLocationString());
+    }
+    string GetLocationString()
+    {
+        string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
+        switch (location)
+        {
+            case Locations.MapSprite:
+                locationName = "the Map";
+                break;
+            case Locations.HutInterior:
+                locationName = "Home";
+                break;
+        }
+        return locationName;
     }
 
 }
@@ -48,5 +57,8 @@ public enum Locations
     MunnaTyreShop = 11,
     ChaiStall = 12,
     //
-    MapSprite = 13 // Special case for map sprite
+    MapSprite = 13, // Special case for map sprite
+    PrivateSchool = 14,
+    Library = 15,
+
 }
