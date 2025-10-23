@@ -57,5 +57,8 @@ public enum Locations
     MunnaTyreShop = 11,
     ChaiStall = 12,
     //
-    MapSprite = 13 // Special case for map sprite
+    MapSprite = 13, // Special case for map sprite
+    PrivateSchool = 14,
+    Library = 15,
+
 }
