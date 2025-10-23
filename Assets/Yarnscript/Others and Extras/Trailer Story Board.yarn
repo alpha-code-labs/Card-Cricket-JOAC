@@ -123,7 +123,7 @@ Kamla: Raju, at least help me wash these plates before you run off!
 // 00:01:20,000 --> 00:01:23,500
 <<SetBGSprite HutInterior>>
 //<<cut NIGHT_SINGLE_BULB>>
-<<SetCharacterExpression Raju Groggy>>
+<<SetCharacterExpression Raju Groggy>>//TODO: Dont Have to Fix This as its only for trailer
 Raju (monologue): Eyes burn… but I can't stop.
 // 00:01:23,500 --> 00:01:27,000
 <<SetBGSprite KohliwadaGround>>

@@ -466,7 +466,7 @@ Naresh: District level, before life got complicated.
 <<SetCharacterExpression "Naresh" Smiling>>
 Naresh: I understand exactly what you're feeling - that hunger to improve, to understand every detail of the game.
 
-<<SetCharacterExpression "Naresh" Loving>>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: It's rare to find someone who studies cricket the way you do.
 
 <<HideAllCharacters>>
@@ -535,7 +535,7 @@ Raju: I know you can't let me use the facilities, but maybe just the knowledge?
 <<SetCharacterExpression "Naresh" Smiling>>
 Naresh: You know, beta, knowledge wants to be shared.
 
-<<SetCharacterExpression "Naresh" Loving>>
+<<SetCharacterExpression "Naresh" Smiling>>
 Naresh: And you appreciate cricket in a way that deserves respect.
 
 <<SetCharacterExpression "Naresh" Smiling>>
