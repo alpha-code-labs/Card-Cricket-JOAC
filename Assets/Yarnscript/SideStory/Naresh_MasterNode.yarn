@@ -60,7 +60,7 @@ Naresh: These facilities cost more money than your entire neighborhood sees in a
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: The insurance alone would bankrupt me if something gets damaged. Now move along before you get both of us in trouble.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand, bhaiya. I don't want to cause you problems.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -97,7 +97,7 @@ The afternoon sun casts long shadows across the grounds. Naresh notices the youn
 <<SetCharacterExpression "Naresh" Irritated>>
 Naresh: You again? I thought I made myself clear yesterday.
 
-<<SetCharacterExpression "Naresh" Annoyed>>
+<<SetCharacterExpression "Naresh" Angry>>
 Naresh: Don't you boys have anything better to do than hang around places where you don't belong?
 
 <<SetCharacterExpression "Raju" Excited>>
@@ -106,7 +106,7 @@ Raju: I can't stop thinking about cricket, bhaiya. Every night I try to practice
 <<SetCharacterExpression "Raju" Anxious>>
 Raju: But I know I'm missing things. I just want to learn, even if I can only watch from out here.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I won't cause any trouble or ask for anything. I promise.
 
 <<SetCharacterExpression "Naresh" Quizzical>>
@@ -151,10 +151,10 @@ Naresh: Crazy kid. Standing out here in the heat just to watch cricket practice.
 <<SetCharacterExpression "Naresh" Smiling>>
 Naresh: But maybe... maybe not completely useless. At least you're not throwing rocks at the equipment like the others.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I would never damage anything, bhaiya. This place is too precious.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Even watching from outside teaches me more about cricket than I could learn anywhere else.
 
 <<HideAllCharacters>>
@@ -318,7 +318,7 @@ Naresh: You want to work? Most kids your age try to avoid responsibility.
 <<SetCharacterExpression "Naresh" Skeptical>>
 Naresh: But you're volunteering for unpaid labor just to be around cricket?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: This academy is sacred to me, bhaiya.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -333,7 +333,7 @@ Naresh: Maintenance is serious responsibility, beta. These nets cost thousands o
 <<SetCharacterExpression "Naresh" Worried>>
 Naresh: The equipment must be handled with perfect care. Are you truly willing to be held accountable for such valuable items?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand the responsibility, bhaiya.
 
 <<SetCharacterExpression "Raju" Determined>>

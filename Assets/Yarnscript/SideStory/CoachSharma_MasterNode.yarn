@@ -128,7 +128,7 @@ CoachSharma: It costs time, money, sacrifice, and commitment.
 <<SetCharacterExpression "CoachSharma"  "Irritated">>
 CoachSharma: Until you understand that difference, you're wasting both my time and yours.
 
-<<PlayBackgroundMusic Emotional_1>>
+
 
 <<HideAllCharacters>>
 
@@ -178,13 +178,13 @@ CoachSharma: Not for curiosity seekers who don't belong.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Because I want to learn, sir.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand that I can't afford to train here.
 
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: And I know I don't have the proper equipment or background.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: But even if I'm not allowed to play, I can still listen.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -220,7 +220,7 @@ CoachSharma: They make excuses about difficult drills.
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
 CoachSharma: They give up when progress becomes challenging.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Then they don't really understand what they have, sir.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -284,7 +284,7 @@ Raju: Then let me show you that I'm different, sir.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll do whatever tasks you set, however small.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: With complete dedication.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
@@ -387,7 +387,7 @@ CoachSharma: Most boys your age rely on impulse and emotion.
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
 CoachSharma: You think strategic thinking will substitute for raw commitment?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I think understanding what's required is the first step, sir.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -408,7 +408,7 @@ CoachSharma: We'll see if your methodical planning survives the reality of actua
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll be ready, sir.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Planning without execution is worthless.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -471,8 +471,11 @@ CoachSharma: Show me that your consistency isn't just morning enthusiasm.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, sir.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll handle everything with care.
+
+<<HideAllCharacters>>
+Coach Sharma watches as Raju methodically arranges equipment without any complaints.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
 CoachSharma: Most boys would rush this work to impress me.
@@ -483,7 +486,7 @@ CoachSharma: You're taking your time, doing it properly.
 <<SetCharacterExpression "CoachSharma" "Proud">>
 CoachSharma: That shows real discipline.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Quality matters more than speed, sir.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -545,7 +548,7 @@ CoachSharma: You're working like someone whose life depends on it.
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 CoachSharma: That kind of passion might actually survive the long journey ahead.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Because it does depend on it, sir.
 
 <<SetCharacterExpression "Raju" "Loving">>
@@ -591,7 +594,7 @@ CoachSharma: Show me this systematic approach.
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
 CoachSharma: Organize everything according to your strategic thinking.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: First the heavy equipment, then the detailed setup.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -606,7 +609,7 @@ CoachSharma: You're not just working hard - you're working smart.
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 CoachSharma: That combination of planning and execution is exactly what separates good cricketers from great ones.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Understanding the system makes the work more meaningful, sir.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -674,6 +677,8 @@ CoachSharma: I'm going to bowl ten deliveries at you.
 CoachSharma: We'll see what you can do with proper equipment under controlled conditions.
 
 // The first delivery reveals raw talent struggling with technical flaws but producing moments of brilliance.
+<<HideAllCharacters>>
+Coach Sharma watches in awe as Raju Handles all the balls properly, playing each ball on its merit.
 
 <<SetCharacterExpression "CoachSharma" "Astonished">>
 CoachSharma: Interesting.
