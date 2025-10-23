@@ -9,13 +9,22 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
     [SerializeField] Locations location;
     public override void OnClick()
     {
-        WorldIntractionDialougeManager.instance.StartConfirmationDialogue(GetYesChoice(), "No, stay here", OnConfirmed);
+        WorldIntractionDialougeManager.instance.StartConfirmationDialogue("Yes, go to " + GetLocationString(location), "No, stay here", OnConfirmed);
     }
     public override void CheckAvaliability()
     {
         return; // Always available
     }
-    string GetYesChoice()
+    void OnConfirmed()
+    {
+        LocationSwitcher.instance.SwitchLocation(location);
+    }
+
+    public override void OnHoveringTip()
+    {
+        CurrencyToolTip.instance.ShowToolTip("Go to " + GetLocationString(location));
+    }
+    string GetLocationString(Locations loc)
     {
         string locationName = PrettyStrings.GetPrettyEnumString(location.ToString());
         switch (location)
@@ -27,16 +36,7 @@ public class GoToLocationIntractionHandler : ClickAbleObjectHandler
                 locationName = "Home";
                 break;
         }
-        return "Yes, go to " + locationName;
-    }
-    void OnConfirmed()
-    {
-        LocationSwitcher.instance.SwitchLocation(location);
-    }
-
-    public override void OnHoveringTip()
-    {
-        CurrencyToolTip.instance.ShowToolTip("Go to " + PrettyStrings.GetPrettyEnumString(location.ToString()));
+        return locationName;
     }
 
 }
