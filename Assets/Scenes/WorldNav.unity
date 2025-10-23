@@ -594,15 +594,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5724012082361897389, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: character
@@ -614,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6198166005926573467, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.56
+      value: -1.43
       objectReference: {fileID: 0}
     - target: {fileID: 6198166005926573467, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1893,15 +1893,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 973679132709273281, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5724012082361897389, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: character
@@ -1913,7 +1913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6198166005926573467, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.52
+      value: -2.54
       objectReference: {fileID: 0}
     - target: {fileID: 6198166005926573467, guid: e1fe2510826ec954cafee35bf6e27aae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2810,7 +2810,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 502e4fc7df9b0a1409ad3e0d9dff2dc2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83dff8944100d574ca18a4d683677c7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3424,7 +3424,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 502e4fc7df9b0a1409ad3e0d9dff2dc2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 149f4d7df66e0f84e82b546e324a68eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4152,7 +4152,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1279021199
 RectTransform:
