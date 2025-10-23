@@ -65,7 +65,7 @@ Raju: You actually played at district level? That's amazing!
 <<SetCharacterExpression "Suresh" "Proud">>
 Suresh: The coaches said I had natural timing.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Wristwork that reminded them of Mohammad Azharuddin.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
@@ -80,7 +80,7 @@ Suresh: Dreams cost money, beta. More money than families like ours usually have
 <<SetCharacterExpression "Suresh" "Disappointed">>
 Suresh: When I was your age, my cricket was improving every month.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Coaches were talking about state-level selections, maybe even further.
 
 <<SetCharacterExpression "Suresh" "Crying">>
@@ -92,7 +92,7 @@ Suresh: Hospital bills, medicines, no income while he couldn't work.
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: I'm so sorry, bhaiya. That must have been very difficult.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Someone had to step up and support the family.
 
 <<SetCharacterExpression "Suresh" "Pained">>
@@ -113,13 +113,13 @@ Raju: But I'll find a way to make cricket work. I'll find scholarships, sponsors
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I won't let money stop me from playing.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Loving">>
 Suresh: Good, beta. Hold on to that fire - it's precious and rare.
 
 <<SetCharacterExpression "Suresh" "Worried">>
 Suresh: Just remember something important about fire.
 
-<<SetCharacterExpression "Suresh" "Anxious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: It can warm you and give you energy, but it can also burn you if you're not careful.
 
 <<SetCharacterExpression "Suresh" "Loving">>
@@ -165,7 +165,7 @@ Raju: No, bhaiya. I spent all night thinking about your story.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And it made me realize something important.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: You didn't fail at cricket - you chose family responsibility over personal dreams.
 
 <<SetCharacterExpression "Raju" "Proud">>
@@ -177,7 +177,7 @@ Suresh: That's a mature way to look at it, beta.
 <<SetCharacterExpression "Suresh" "Quizzical">>
 Suresh: But tell me - what exactly did you learn from my experience?
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: How will you approach this differently? What specific steps will you take?
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -210,16 +210,16 @@ Raju: Help me understand the practical challenges so I can plan better.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn from your experience to avoid the same obstacles.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Now that's mature thinking, beta.
 
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: Most boys hear my story and either get discouraged or make unrealistic promises.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Loving">>
 Suresh: You're talking about learning from experience and strategic planning.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: You had to choose between cricket and family needs.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -231,7 +231,7 @@ Raju: Scholarships, paid coaching opportunities, finding mentors who can help wi
 <<SetCharacterExpression "Suresh" "Astonished">>
 Suresh: That's exactly the kind of thinking that separates dreamers from achievers, champ.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You're approaching this like a long-term project, not just daily practice sessions.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -240,13 +240,13 @@ Raju: Your experience has educated me, bhaiya.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand now that talent alone isn't enough.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I need to be smart, persistent, and realistic about building support systems.
 
 <<SetCharacterExpression "Suresh" "Loving">>
 Suresh: Dreams are heavy, beta.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Only those with strong shoulders and smart strategies can carry them to success.
 
 <<SetCharacterExpression "Suresh" "Confident">>
@@ -277,7 +277,7 @@ Suresh: Determination without strategy often leads to heartbreak, beta.
 <<SetCharacterExpression "Suresh" "Skeptical">>
 Suresh: What makes you think pure willpower can overcome the obstacles that stopped me?
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: And countless others like me?
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -292,7 +292,7 @@ Raju: My passion will carry me through any challenge.
 <<SetCharacterExpression "Suresh" "Disappointed">>
 Suresh: Passion is powerful, champ, but the world doesn't always reward the most passionate person.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Sometimes it rewards the most strategic one.
 
 <<SetCharacterExpression "Suresh" "Quizzical">>
@@ -310,7 +310,7 @@ Raju: My fire won't burn me - it'll light my way to success.
 <<SetCharacterExpression "Suresh" "Astonished">>
 Suresh: Your spirit is remarkable, beta.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Most people lose that fire when they hear reality checks.
 
 <<SetCharacterExpression "Suresh" "Confident">>
@@ -338,7 +338,7 @@ Raju: Let me carry forward what you started.
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: Make your experience meaningful by succeeding where circumstances stopped you.
 
-<<SetCharacterExpression "Suresh" "Shocked">>
+<<SetCharacterExpression "Suresh" "Loving">>
 Suresh: That's... that's a beautiful way to think about it, beta.
 
 <<SetCharacterExpression "Suresh" "Astonished">>
@@ -365,10 +365,10 @@ Suresh: No one has ever said anything like that to me before, champ.
 <<SetCharacterExpression "Suresh" "Overjoyed">>
 Suresh: The idea that my cricket experience could contribute to someone else's success...
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: That gives it new meaning.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Your knowledge, your experience, even your sacrifice.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -380,7 +380,7 @@ Raju: I'll carry your dreams forward along with my own.
 <<SetCharacterExpression "Suresh" "Crying">>
 Suresh: You've transformed my story from one of lost dreams into one of continuing legacy, beta.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: That kind of thinking shows wisdom far beyond your years.
 
 <<jump Suresh_Day2_Continue>>
@@ -393,16 +393,16 @@ tags:
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You know what, beta? You've given me something to think about too.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Quizzical">>
 Suresh: Maybe my cricket story isn't over after all.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What do you mean, bhaiya?
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: I mean that helping you succeed might be a different kind of victory.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: One I never imagined when I was playing district cricket.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -457,22 +457,22 @@ Raju: Or how to get noticed by selectors when you're from our area.
 <<SetCharacterExpression "Suresh" "Proud">>
 Suresh: Now you're asking the right questions, beta.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Let me share some practical wisdom I learned during my playing days.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Both what worked and what I wish I had understood better.
 
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: First lesson - networking matters as much as talent.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: In cricket, who you know can be as important as how well you play.
 
 <<SetCharacterExpression "Suresh" "Determined">>
 Suresh: But for boys like us, networking doesn't mean family connections.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: It means building relationships with coaches, former players, even other serious young cricketers.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -484,10 +484,10 @@ Raju: What's the best way to approach coaches or former players?
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Respect, consistency, and genuine interest in learning.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Don't just ask for coaching.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Quizzical">>
 Suresh: Ask if you can help with equipment, ground maintenance, anything.
 
 <<SetCharacterExpression "Suresh" "Determined">>
@@ -505,10 +505,10 @@ Raju: And what about getting noticed for selection opportunities?
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Tournaments, beta. Local tournaments, school competitions.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Any organized cricket where performance gets recorded and observed.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: But here's the key - don't just play to win, play to learn.
 
 <<SetCharacterExpression "Suresh" "Determined">>
@@ -523,13 +523,13 @@ Raju: So it's not just about scoring runs or taking wickets!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: But about showing character and cricket intelligence?
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Exactly! And here's something I wish someone had told me.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Document your progress. Keep records of your performances.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Get photographs at tournaments, collect testimonials from coaches.
 
 <<SetCharacterExpression "Suresh" "Confident">>
@@ -547,7 +547,7 @@ Suresh: That's because I learned these lessons the hard way, through missed oppo
 <<SetCharacterExpression "Suresh" "Disappointed">>
 Suresh: Through incomplete preparation.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: If sharing my experience helps you avoid those mistakes...
 
 <<SetCharacterExpression "Suresh" "Loving">>
@@ -556,7 +556,7 @@ Suresh: Then my cricket journey serves a purpose even though it didn't reach my 
 <<SetCharacterExpression "Raju" "Loving">>
 Raju: Your cricket journey is still going, bhaiya. Just in a different way.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You're right, champ. And I'm starting to see that clearly now.
 
 <<HideAllCharacters>>
@@ -584,10 +584,10 @@ The auto stand has transformed into the site of meaningful mentorship. Four days
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: My regular visitor returns!
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: I can see something different in your posture today, champ.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Not just eagerness to learn, but confidence from having absorbed lessons.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
@@ -602,10 +602,10 @@ Raju: Not just as something I love to play, but as a long-term project.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: One that requires intelligence, strategy, and character development.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You absorbed the lessons well, beta.
 
-<<SetCharacterExpression "Suresh" "Astonished">>
+<<SetCharacterExpression "Suresh" "Loving">>
 Suresh: More importantly, you took difficult truths about obstacles.
 
 <<SetCharacterExpression "Suresh" "Loving">>
@@ -623,7 +623,7 @@ Raju: For avoiding mistakes and building support systems.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I feel much more prepared now to face the challenges ahead.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: And I want you to know, champ, that my investment in your success doesn't end here.
 
 <<SetCharacterExpression "Suresh" "Determined">>
@@ -638,7 +638,7 @@ Raju: Practical support? What do you mean, bhaiya?
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Transportation to tournaments, help reaching coaching facilities.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Even references for scholarship applications.
 
 <<SetCharacterExpression "Raju" "Astonished">>
@@ -647,7 +647,7 @@ Raju: You would really do that, bhaiya? Provide practical help beyond just guida
 <<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Absolutely. Listen, maybe I couldn't complete my own cricket journey.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: But helping you succeed with yours...
 
 <<SetCharacterExpression "Suresh" "Loving">>
@@ -656,13 +656,13 @@ Suresh: That would give my experience meaning and purpose beyond just cautionary
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: When you need to reach that academy for trials...
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Or get to a tournament on time...
 
 <<SetCharacterExpression "Suresh" "Determined">>
 Suresh: Or have someone vouch for your character to coaches - I'm your ally in this fight.
 
-<<SetCharacterExpression "Suresh" "Serious">>
+<<SetCharacterExpression "Suresh" "Determined">>
 Suresh: A young cricketer should never miss opportunities because of bus fare or lack of adult support.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
@@ -677,10 +677,10 @@ Raju: Even when your own didn't work out. That's incredible generosity.
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You know what, beta? Through our conversations, I've realized something important.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "Confident">>
 Suresh: My cricket story didn't end in failure.
 
-<<SetCharacterExpression "Suresh" "Excited">>
+<<SetCharacterExpression "Suresh" "Loving">>
 Suresh: It just took a different path than I originally planned.
 
 <<SetCharacterExpression "Suresh" "Loving">>
@@ -692,7 +692,7 @@ Raju: So in a way, when I succeed at cricket, it's also a success for your crick
 <<SetCharacterExpression "Suresh" "Overjoyed">>
 Suresh: Exactly, champ!
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Your victories will carry forward everything valuable from my experience.
 
 <<SetCharacterExpression "Suresh" "Confident">>
@@ -707,7 +707,7 @@ Raju: Partners! I like that, bhaiya.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: We're building something together.
 
-<<SetCharacterExpression "Suresh" "Proud">>
+<<SetCharacterExpression "Suresh" "BaseSprite">>
 Suresh: Yes, beta. Something that honors both our dreams.
 
 <<SetCharacterExpression "Raju" "Loving">>
