@@ -134,7 +134,7 @@ title: Gameplay7Result
 title: Gameplay8Result
 ---
 // Gameplay 8: Chasing 90 runs in 90 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 30>>
+<<if ($finalScore - $initialScore) < 90>>
     <<jump scene_119>>
 <<else>>
     <<jump scene_120>>

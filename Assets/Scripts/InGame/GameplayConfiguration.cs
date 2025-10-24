@@ -57,7 +57,7 @@ public class GameplayConfiguration : MonoBehaviour
             {"1990/03/16", new GameplayConfig(5, "1990/03/16", 60, 0, 0, PitchCondition.Friendly)}, // Batting first
             {"1990/03/17", new GameplayConfig(6, "1990/03/17", 60, 120, 0, PitchCondition.Friendly)}, // Chase 120 runs
             {"1990/04/11", new GameplayConfig(7, "1990/04/11", 90, 0, 0, PitchCondition.Friendly)}, // Batting first
-            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 30, 30, 0, PitchCondition.Friendly)}, // Chase 30 runs
+            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 90, 90, 0, PitchCondition.Friendly)}, // Chase 30 runs
             {"1990/04/13", new GameplayConfig(9, "1990/04/13", 90, 185, 0, PitchCondition.Hostile)}, // Chase 185 runs
             
             // New gameplays (12-17)

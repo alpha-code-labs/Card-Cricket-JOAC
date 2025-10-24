@@ -570,12 +570,14 @@ public class ScoreManager : MonoBehaviour
             totalRunsNeededText.text = "";
             currentRunsText.text = currentRuns.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
+            remainingWicketsText.text = wickets.ToString();
         }
         else
         {
             currentRunsText.text = currentRuns.ToString();
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
+            remainingWicketsText.text = wickets.ToString();
         }
         
         //UpdateScore(0);
