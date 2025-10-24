@@ -580,7 +580,7 @@ public class ScoreManager : MonoBehaviour
             remainingWicketsText.text = wickets.ToString();
         }
         
-        //UpdateScore(0);
+        UpdateScore(0);
         UpdateBallsAndOvers(0);
 
         if (redrawButton != null)
