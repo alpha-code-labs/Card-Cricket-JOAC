@@ -192,7 +192,7 @@ public class OutComeCalculator : ScriptableObject
             return;
         }
 
-        int sheetIndex = pitchType == "Friendly" ? 3 : 2;
+        int sheetIndex = pitchType == "Friendly" ? 1 : 0;
 
         try
         {
@@ -345,6 +345,8 @@ public class OutComeCalculator : ScriptableObject
                     return (T)(object)OutCome.OneRuns;
                 case "2 Runs":
                     return (T)(object)OutCome.TwoRuns;
+                case "2 Run":
+                    return (T)(object)OutCome.TwoRuns;
                 case "3 Runs":
                     return (T)(object)OutCome.ThreeRuns;
                 case "4 Runs":
@@ -387,6 +389,16 @@ public class OutComeCalculator : ScriptableObject
         Debug.Log($"Hostile entries: {hostileOutcomeEntries.Count}");
         if (friendlyOutcomeEntries.Count > 0)
         {
+            //print complete first entry
+            Debug.Log("First Friendly Entry Details:");
+            Debug.Log($"Bowler Type: {friendlyOutcomeEntries[0].typeOfBowler}");
+            Debug.Log($"Side: {friendlyOutcomeEntries[0].side}");
+            Debug.Log($"Ball Type: {friendlyOutcomeEntries[0].typeOfBall}");
+            Debug.Log($"Line of Ball: {friendlyOutcomeEntries[0].lineOfBall}");
+            Debug.Log($"Length of Ball: {friendlyOutcomeEntries[0].lengthOfBall}");
+            Debug.Log($"Shot Selected: {friendlyOutcomeEntries[0].shotSelected}");
+            Debug.Log($"Outcome: {friendlyOutcomeEntries[0].outcome}");
+            Debug.Log($"Special Outcome: {friendlyOutcomeEntries[0].specialOutcome}");
             Debug.Log($"First friendly entry: {friendlyOutcomeEntries[0].shotSelected} vs {friendlyOutcomeEntries[0].typeOfBall} = {friendlyOutcomeEntries[0].outcome}");
         }
         if (hostileOutcomeEntries.Count > 0)

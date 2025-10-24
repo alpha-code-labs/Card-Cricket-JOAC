@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,14 @@ public class ScoreManager : MonoBehaviour
     private GameplayConfig currentGameplayConfig;
     private bool isBattingFirst;
     private int initialWickets;
-    
+    public ParticleSystem fireworkEffect;
+    public ParticleSystem fireworkEffect2;
+
+
     void Awake()
     {
         disableRaycasterOnMainDialogueSystem();
-        
+
         // Get gameplay configuration
         currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         if (currentGameplayConfig != null)
@@ -27,20 +31,34 @@ public class ScoreManager : MonoBehaviour
             TargetScore = currentGameplayConfig.targetScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
-            
+
             Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
             Debug.Log($"Batting First: {isBattingFirst}, Target: {TargetScore}, Balls: {MaxBalls}");
         }
-        
+
         if (GameManager.instance != null)
             wickets = baseWickets + GameManager.instance.currentSaveData.humility;
-        else 
+        else
             wickets = baseWickets;
-            
+
         initialWickets = wickets;
         Instance = this;
+
+        // Setup chase display visibility (only show when chasing)
+        if (chaseDisplayText != null && chaseDisplayContainer != null)
+        {
+            chaseDisplayContainer.SetActive(false);
+            chaseDisplayText.gameObject.SetActive(false);
+        }
     }
-    
+    public void TriggerFirework()
+    {
+        if (fireworkEffect != null)
+        {
+            fireworkEffect.Play();
+            fireworkEffect2.Play();
+        }
+    }
     public int currentRuns = 0;
     public int TargetScore = 40;
     public int MaxBalls = 24;
@@ -56,6 +74,27 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI ballsAndOversText;
     [SerializeField] Button redrawButton;
     [SerializeField] TextMeshProUGUI redrawButtonText;
+
+    [Header("Chase Mode Display")]
+    [SerializeField] TextMeshProUGUI chaseDisplayText; // Single text for "X runs needed in Y balls"
+    [SerializeField] GameObject chaseDisplayContainer;
+    [SerializeField] float chasePulseDuration = 0.3f;
+    [SerializeField] float chasePulseScale = 1.06f;
+    [SerializeField] Color comfortableChaseColor = new Color(0.4f, 1f, 0.4f); // Green
+    [SerializeField] Color normalChaseColor = Color.white;
+    [SerializeField] Color tightChaseColor = new Color(1f, 1f, 0.4f); // Yellow
+    [SerializeField] Color difficultChaseColor = new Color(1f, 0.6f, 0.2f); // Orange
+    [SerializeField] Color criticalChaseColor = new Color(1f, 0.3f, 0.3f); // Red
+
+    [Header("Audio")]
+    [SerializeField] AudioClip cheeringSound; // Assign your cheering audio file here
+    [SerializeField] float cheeringVolume = 1f;
+    [SerializeField] AudioSource cheeringAudioSource; // Optional: separate audio source for cheering
+    
+    
+    private Sequence chaseTextSequence;
+    private int lastRunsNeeded = -1;
+    private int lastBallsRemaining = -1;
     
     [Header("Batter Animation")]
     [SerializeField] Image BatterImage;
@@ -68,14 +107,26 @@ public class ScoreManager : MonoBehaviour
     [Header("Game Over UI")]
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] TextMeshProUGUI gameOverText;
-    
+
+    [Header("UI Animation Settings")]
+    [SerializeField] float scoreAnimDuration = 0.5f;
+    [SerializeField] float wicketAnimDuration = 0.6f;
+    [SerializeField] float ballAnimDuration = 0.4f;
+    [SerializeField] AnimationCurve scoreAnimCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [SerializeField] Color wicketLossColor = Color.red;
+    [SerializeField] Color scoreIncreaseColor = new Color(0.4f, 1f, 0.4f); // Green
+    [SerializeField] Color ballDecreaseColor = new Color(1f, 0.8f, 0.2f); // Yellow-orange
+
     private bool gameEnded = false;
+    private int previousRuns;
+    private int previousWickets;
+    private int previousBallsRemaining;
     
     public int getCurrentWickets()
     {
         return wickets;
     }
-    
+
     public void UpdateBallsAndOvers(int ballsBowled)
     {
         int overs = ballsBowled / 6;
@@ -84,17 +135,28 @@ public class ScoreManager : MonoBehaviour
         int overDisplay = overs + 1;
         int ballsRemain = MaxBalls - ballsBowled;
         remainingBallsText.text = ballsRemain.ToString();
-        
+
+        // Animate balls remaining decrease
+        if (previousBallsRemaining != -1 && ballsRemain < previousBallsRemaining)
+        {
+            AnimateBallsDecrease(ballsRemain);
+        }
+        else
+        {
+            remainingBallsText.text = ballsRemain.ToString();
+        }
+        previousBallsRemaining = ballsRemain;
+
         string statusText = $"Ball {ballDisplay} of over {overDisplay}\n total balls remain {ballsRemain}\n Wickets: {wickets}";
-        
+
         if (!isBattingFirst)
         {
             int runsNeeded = TargetScore - currentRuns;
             statusText += $"\nRuns needed: {runsNeeded}";
         }
-        
+
         ballsAndOversText.text = statusText;
-        
+
         // Check for game over conditions
         if (!gameEnded)
         {
@@ -108,6 +170,114 @@ public class ScoreManager : MonoBehaviour
             }
         }
     }
+
+    
+    private void UpdateChaseDisplay(int runsNeeded, int ballsRemaining)
+    {
+        if (chaseDisplayText == null || gameEnded)
+            return;
+            
+        // Check if values have changed
+        bool valuesChanged = (runsNeeded != lastRunsNeeded || ballsRemaining != lastBallsRemaining);
+        
+        if (valuesChanged)
+        {
+            // Kill any existing animation
+            if (chaseTextSequence != null && chaseTextSequence.IsActive())
+            {
+                chaseTextSequence.Kill();
+                chaseDisplayText.transform.localScale = Vector3.one;
+            }
+            
+            // Update text with formatted display
+            if (runsNeeded <= 0)
+            {
+                chaseDisplayText.text = "Target Achieved!";
+            }
+            else if (ballsRemaining == 1)
+            {
+                chaseDisplayText.text = $"{runsNeeded} {(runsNeeded == 1 ? "run" : "runs")} needed in {ballsRemaining} ball";
+            }
+            else
+            {
+                chaseDisplayText.text = $"{runsNeeded} {(runsNeeded == 1 ? "run" : "runs")} needed in {ballsRemaining} balls";
+            }
+            
+            // Determine color based on chase difficulty
+            Color targetColor = GetChaseColor(runsNeeded, ballsRemaining);
+            
+            // Create animation sequence
+            chaseTextSequence = DOTween.Sequence();
+            
+            // Subtle pulse effect
+            chaseTextSequence.Append(chaseDisplayText.transform.DOScale(chasePulseScale, chasePulseDuration * 0.5f)
+                .SetEase(Ease.OutQuad));
+            chaseTextSequence.Append(chaseDisplayText.transform.DOScale(1f, chasePulseDuration * 0.5f)
+                .SetEase(Ease.InQuad));
+                
+            // Color transition
+            chaseTextSequence.Join(chaseDisplayText.DOColor(targetColor, chasePulseDuration));
+            
+            // Optional: Add emphasis for critical situations
+            if (ballsRemaining <= 6 && runsNeeded > ballsRemaining * 1.5f) // Last over and difficult
+            {
+                chaseTextSequence.Append(chaseDisplayText.transform.DOShakePosition(0.2f, 2f, 8, 90, false, true));
+            }
+            
+            lastRunsNeeded = runsNeeded;
+            lastBallsRemaining = ballsRemaining;
+        }
+    }
+
+    private Color GetChaseColor(int runsNeeded, int ballsRemaining)
+    {
+        if (runsNeeded <= 0) return comfortableChaseColor; // Target achieved
+        if (ballsRemaining <= 0) return criticalChaseColor;
+
+        float requiredRate = (float)runsNeeded / ballsRemaining;
+
+        // Determine difficulty based on required run rate per ball
+        if (requiredRate <= 0.8f) // Comfortable
+            return comfortableChaseColor;
+        else if (requiredRate <= 1.2f) // Normal
+            return normalChaseColor;
+        else if (requiredRate <= 1.5f) // Tight
+            return tightChaseColor;
+        else if (requiredRate <= 2f) // Difficult
+            return difficultChaseColor;
+        else // Critical
+            return criticalChaseColor;
+    }
+
+    private void PlayCheeringSound()
+    {
+        if (cheeringSound == null)
+        {
+            Debug.LogWarning("Cheering sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(cheeringSound, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(cheeringSound, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Cheering sound played for boundary!");
+    }
     
     bool targetReached = false;
     private Vector3 batterOriginalPosition;
@@ -116,11 +286,30 @@ public class ScoreManager : MonoBehaviour
     public void UpdateScore(int runs)
     {
         if (gameEnded) return;
-        
+
         if (runs > 0)
             currentRuns += runs;
+
+        if (runs == 4 || runs == 6)
+        {
+            PlayCheeringSound();
+        }
             
-        currentRunsText.text = currentRuns.ToString();
+
+        //currentRunsText.text = currentRuns.ToString();
+        if (previousRuns < currentRuns)
+        {
+            AnimateScoreIncrease(previousRuns, currentRuns);
+            previousRuns = currentRuns;
+        }
+        
+        int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
+        UpdateBallsAndOvers(_currentTurn);
+         if (!isBattingFirst && EncouragementSystem.Instance != null)
+        {
+            int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore, _ballsRemaining);
+        }
         
         if (isBattingFirst)
         {
@@ -131,6 +320,11 @@ public class ScoreManager : MonoBehaviour
         {
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
+
+            // Update chase display after scoring
+            int runsNeeded = TargetScore - currentRuns;
+            int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+            UpdateChaseDisplay(runsNeeded, ballsRemain);
         }
         
         remainingWicketsText.text = wickets.ToString();
@@ -163,7 +357,8 @@ public class ScoreManager : MonoBehaviour
     public void LooseWicket()
     {
         wickets--;
-        remainingWicketsText.text = wickets.ToString();
+        AnimateWicketLoss(previousWickets, wickets);
+        //remainingWicketsText.text = wickets.ToString();
         
         if (wickets <= 0 && !gameEnded)
         {
@@ -245,7 +440,10 @@ public class ScoreManager : MonoBehaviour
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
-        
+        if((int)outcome >=4)
+        {
+            TriggerFirework();
+        }
         if (CardPlayAnimationController.Instance != null)
         {
             yield return CardPlayAnimationController.Instance.PlayCardSequence(
@@ -264,7 +462,23 @@ public class ScoreManager : MonoBehaviour
         // Check if game should continue
         if (!gameEnded)
         {
+
             CardsPoolManager.Instance.EndTurn(MaxBalls, (int)outcome != -3);
+            if ((int)outcome >= 4)
+                yield return new WaitForSeconds(2f); //wait for the fireworks animation to complete
+            if (!isBattingFirst && EncouragementSystem.Instance != null)
+            {
+                EncouragementSystem.Instance.TryShowPendingEncouragement();
+
+                // Wait for encouragement to finish if it's showing
+                while (EncouragementSystem.Instance != null && EncouragementSystem.Instance.isShowingEncouragement)
+                {
+                    // Debug.Log("isShowingEncouragment Panel " + EncouragementSystem.Instance.isShowingEncouragement);
+                    yield return null;
+                }
+            }
+
+            Timer.Instance.PauseTimer();
             yield return new WaitForSeconds(3f);
             Timer.Instance.EndTurnTimer();
             
@@ -336,9 +550,14 @@ public class ScoreManager : MonoBehaviour
             redrawButtonText.color = canRedraw ? Color.white : Color.gray;
         }
     }
-    
+
     void Start()
     {
+
+        previousRuns = currentRuns;
+        previousWickets = wickets;
+        previousBallsRemaining = MaxBalls;
+
         // Update UI based on game mode
         if (isBattingFirst)
         {
@@ -350,7 +569,7 @@ public class ScoreManager : MonoBehaviour
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
         }
-        
+
         UpdateScore(0);
         UpdateBallsAndOvers(0);
 
@@ -359,13 +578,137 @@ public class ScoreManager : MonoBehaviour
             redrawButton.onClick.AddListener(OnRedrawButtonClicked);
             StartCoroutine(UpdateRedrawButtonRoutine()); // Initial update after delay
         }
-        
+
         if (BatterImage != null)
         {
             batterOriginalPosition = BatterImage.rectTransform.anchoredPosition;
         }
+
+        // Reset encouragement system if chasing
+        if (!isBattingFirst && EncouragementSystem.Instance != null)
+        {
+            EncouragementSystem.Instance.ResetMilestones();
+        }
+
+        // Subscribe to the turn started event to show chase display after countdown
+        if (!isBattingFirst && chaseDisplayText != null)
+        {
+            CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
+        }
+    }
+
+    private void AnimateScoreIncrease(int fromScore, int toScore)
+    {
+        if (currentRunsText == null) return;
+
+        // Kill any existing animations on this text
+        currentRunsText.DOKill(true);
+
+        // Number counter animation
+        DOTween.To(() => fromScore, x =>
+        {
+            currentRunsText.text = x.ToString();
+        }, toScore, scoreAnimDuration).SetEase(Ease.OutQuad);
+
+        // Pulse and color animation
+        Sequence seq = DOTween.Sequence();
+        seq.Append(currentRunsText.transform.DOScale(1.3f, scoreAnimDuration * 0.4f).SetEase(Ease.OutBack));
+        seq.Join(currentRunsText.DOColor(scoreIncreaseColor, scoreAnimDuration * 0.3f));
+        seq.Append(currentRunsText.transform.DOScale(1f, scoreAnimDuration * 0.6f).SetEase(Ease.InOutQuad));
+        seq.Join(currentRunsText.DOColor(Color.white, scoreAnimDuration * 0.7f));
+
+        // Optional: Add a punch rotation for boundaries
+        int runsScored = toScore - fromScore;
+        if (runsScored >= 4)
+        {
+            currentRunsText.transform.DOPunchRotation(new Vector3(0, 0, 15f), scoreAnimDuration, 10, 1f);
+        }
+
+        // Update score text as well if chasing
+        if (!isBattingFirst && scoreText != null)
+        {
+            scoreText.text = "Score: " + toScore.ToString() + " / " + TargetScore.ToString();
+            scoreText.DOKill(true);
+            scoreText.transform.DOPunchScale(Vector3.one * 0.2f, scoreAnimDuration * 0.5f, 5, 0.5f);
+        }
+    }
+
+    private void AnimateWicketLoss(int fromWickets, int toWickets)
+    {
+        if (remainingWicketsText == null) return;
+        
+        // Kill any existing animations
+        remainingWicketsText.DOKill(true);
+        
+        // Update text
+        remainingWicketsText.text = toWickets.ToString();
+        
+        // Dramatic wicket loss animation
+        Sequence seq = DOTween.Sequence();
+        
+        // Flash red
+        seq.Append(remainingWicketsText.DOColor(wicketLossColor, wicketAnimDuration * 0.2f));
+        
+        // Shake effect
+        seq.Join(remainingWicketsText.transform.DOShakePosition(wicketAnimDuration * 0.5f, 10f, 20, 90, false, true));
+        
+        // Scale bounce
+        seq.Join(remainingWicketsText.transform.DOScale(1.5f, wicketAnimDuration * 0.3f).SetEase(Ease.OutQuad));
+        seq.Append(remainingWicketsText.transform.DOScale(0.8f, wicketAnimDuration * 0.2f));
+        seq.Append(remainingWicketsText.transform.DOScale(1f, wicketAnimDuration * 0.2f).SetEase(Ease.OutBounce));
+        
+        // Return to white color
+        seq.Join(remainingWicketsText.DOColor(Color.white, wicketAnimDuration * 0.5f));
+        
+        // Optional: Flash the background or add a vignette effect if you have one
+        Debug.Log($"Wicket lost! Remaining: {toWickets}");
     }
     
+    private void AnimateBallsDecrease(int ballsRemaining)
+    {
+        if (remainingBallsText == null) return;
+        
+        // Kill any existing animations
+        remainingBallsText.DOKill(true);
+        
+        // Update text
+        remainingBallsText.text = ballsRemaining.ToString();
+        
+        // Subtle animation for ball count decrease
+        Sequence seq = DOTween.Sequence();
+        
+        // Quick scale down then back
+        seq.Append(remainingBallsText.transform.DOScale(0.7f, ballAnimDuration * 0.3f).SetEase(Ease.InQuad));
+        seq.Append(remainingBallsText.transform.DOScale(1.1f, ballAnimDuration * 0.4f).SetEase(Ease.OutBack));
+        seq.Append(remainingBallsText.transform.DOScale(1f, ballAnimDuration * 0.3f));
+        
+        // Color flash based on urgency
+        Color targetColor = ballDecreaseColor;
+        if (ballsRemaining <= 6) // Last over
+        {
+            targetColor = difficultChaseColor;
+            // Add extra shake for last 6 balls
+            seq.Join(remainingBallsText.transform.DOShakeRotation(ballAnimDuration, new Vector3(0, 0, 10f), 5, 90));
+        }
+        else if (ballsRemaining <= 12) // Last 2 overs
+        {
+            targetColor = tightChaseColor;
+        }
+        
+        seq.Insert(0, remainingBallsText.DOColor(targetColor, ballAnimDuration * 0.4f));
+        seq.Insert(ballAnimDuration * 0.6f, remainingBallsText.DOColor(Color.white, ballAnimDuration * 0.4f));
+    }
+
+
+    
+    void ShowChaseDisplayAfterCountdown()
+    {
+        if (chaseDisplayText != null && chaseDisplayContainer != null)
+        {
+            chaseDisplayContainer.SetActive(!isBattingFirst);
+            chaseDisplayText.gameObject.SetActive(!isBattingFirst);
+        }
+    }
     IEnumerator UpdateRedrawButtonRoutine()
     {
         yield return new WaitForSeconds(6f);
