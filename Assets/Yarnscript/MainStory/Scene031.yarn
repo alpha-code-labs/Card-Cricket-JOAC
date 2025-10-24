@@ -16,7 +16,7 @@ Ramu: Expected. You've been playing well lately. Today's semifinals, but don't l
 <<SetCharacterExpression "Raju" "Curious">>
 Raju: Just another evening match?
 
-<<SetCharacterExpression "Ramu" "Relaxed">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Just another evening match. Home by dinner. Homework after.
 
 <<SetCharacterExpression "Raju" "Excited">>

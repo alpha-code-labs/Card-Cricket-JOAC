@@ -85,7 +85,7 @@ Kamla: Those people in their fine apartments need us.
 <<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: Even if they don't always show respect.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: And we need their money to survive.
 
 <<SetCharacterExpression "Kamla" "Proud">>
@@ -97,13 +97,13 @@ Kamla: Only in laziness or pride that makes us too good for the work that feeds 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, Ma.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll help you.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And I'll be respectful, no matter how they treat us.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "BaseSprite">>
 Kamla: Remember, beta, when we're in their world, we're respectful and quiet.
 
 <<SetCharacterExpression "Kamla" "Proud">>
@@ -123,7 +123,7 @@ Aryan: I hope he's more careful than the last one who broke my mother's vase.
 <<SetCharacterExpression "Raju" "Disappointed">>
 Raju: I'm not a servant.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm just helping my mother.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -138,13 +138,11 @@ Aryan: Don't break anything, slum boy.
 <<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: Everything here costs more than your family makes in a month.
 
-<<SetCharacterExpression "Kamla" "Serious">>
+<<SetCharacterExpression "Kamla" "Tired">>
 Kamla: Young master, my son is here to learn about different kinds of work.
 
-<<SetCharacterExpression "Kamla" "Confident">>
+<<SetCharacterExpression "Kamla" "BaseSprite">>
 Kamla: He'll be very careful with your family's belongings.
-
-<<SetBGSprite HutInterior>>
 
 <<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Ignore words like that, beta.
@@ -213,7 +211,7 @@ Raju: Ma, why did that boy Aryan talk to us like that?
 <<SetCharacterExpression "Raju" "Disappointed">>
 Raju: Just because his family has money, does he really think he's better than us?
 
-<<SetCharacterExpression "Kamla" "Relaxed">>
+<<SetCharacterExpression "Kamla" "Tired">>
 Kamla: Beta, people like Aryan live in tall buildings.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -270,7 +268,7 @@ Kamla: Even if he doesn't say it out loud yet, I want you to know.
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: I believe in you.
 
-<<SetCharacterExpression "Raju" "Astonished">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Really, Ma?
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -371,7 +369,7 @@ Kamla: Beta, before you run off to the cricket ground, come help me with this wa
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: It's acting up again.
 
-<<SetCharacterExpression "Kamla" "Pained">>
+<<SetCharacterExpression "Kamla" "Tired">>
 Kamla: And I need to fill these containers before the morning rush.
 
 <<SetCharacterExpression "Raju" "Anxious">>
@@ -395,6 +393,7 @@ Kamla: Helping your family with something we need to survive?
 <<SetCharacterExpression "Kamla" "Disappointed">>
 Kamla: Or playing a game with your friends?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -459,7 +458,7 @@ position: -55,122
 <<set $Kamla_Path = "b">>
 <<SetCharacterExpression "Raju" "Confident">>
 
-<<SetCharacterExpression "Kamla" "Impressed">>
+<<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Balance, beta. That's wisdom beyond your years.
 
 <<SetCharacterExpression "Kamla" "Proud">>
@@ -692,7 +691,7 @@ Kamla: So you don't spend your life cleaning other people's houses.
 <<SetCharacterExpression "Kamla" "Pained">>
 Kamla: Watching your hands age before their time.
 
-<<SetCharacterExpression "Kamla" "Sad">>
+<<SetCharacterExpression "Kamla" "Pained">>
 Kamla: While their children play with toys that cost more than our monthly food budget.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -971,7 +970,7 @@ Kamla: Look at that smile, beta!
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: How was practice today?
 
-<<SetCharacterExpression "Kamla" "Mischievous">>
+<<SetCharacterExpression "Kamla" "Overjoyed">>
 Kamla: You look like you conquered the entire cricket field.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>

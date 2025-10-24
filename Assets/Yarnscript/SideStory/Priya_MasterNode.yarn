@@ -100,7 +100,8 @@ Raju: Teaching and explaining actually helps me understand concepts more deeply 
 Raju: We'd both benefit from working together instead of struggling alone.
 
 <<HideAllCharacters>>
-As Raju leaves the library with Priya's academic worries weighing on his mind, he carries determination to help a classmate succeed. The complexity of balancing individual study with collaborative support has revealed opportunities for meaningful educational partnership.
+As Raju leaves the library with Priya's academic worries weighing on his mind, he carries determination to help a classmate succeed. 
+The complexity of balancing individual study with collaborative support has revealed opportunities for meaningful educational partnership.
 
 <<set $Priya_Day = 2>>
 <<EndEvent true>>
@@ -115,7 +116,11 @@ position: -75,-229
 
 Despite her initial hesitation about collaborative studying, Priya meets Raju in the library during lunch break. Hoping that working together might help clarify the academic concepts that have been confusing her.
 
-The familiar quiet of the library welcomes both students as they settle into collaborative study. This represents a new approach for Priya, whose independent learning style has reached its limits. Today's session carries potential to transform individual academic struggle into shared learning experience.
+The familiar quiet of the library welcomes both students as they settle into collaborative study. 
+
+This represents a new approach for Priya, whose independent learning style has reached its limits. 
+
+Today's session carries potential to transform individual academic struggle into shared learning experience.
 
 <<SetCharacterExpression "Priya" "Serious">>
 Priya: I'm glad you convinced me to try studying together, Raju.
@@ -138,7 +143,7 @@ Priya: You're probably much better at these subjects than I am.
 <<SetCharacterExpression "Priya" "Anxious">>
 Priya: I've been struggling with basic concepts while you always seem confident during class discussions.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Don't underestimate yourself, Priya!
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -159,7 +164,7 @@ Raju: Absolutely!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: People who ask good questions and work through difficulties often develop stronger understanding.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Than those who accept everything immediately.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -270,7 +275,7 @@ Raju: We can create comprehensive question sets for each subject.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: And keep practicing until we can answer everything quickly and accurately.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Repetition builds confidence.
 
 <<SetCharacterExpression "Priya" "Excited">>
@@ -389,7 +394,7 @@ Raju: Exactly!
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: When you teach something, you discover gaps in your own understanding.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And strengthen areas where you're already solid.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -462,7 +467,7 @@ Priya: I hope our method works better than my previous solo efforts.
 <<SetCharacterExpression "Priya" "Anxious">>
 Priya: These exams feel so important, and I'm worried about disappointing my family if I don't perform well.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand that pressure, but remember that doing your best is what matters most.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -512,7 +517,7 @@ Priya: I hope this approach works better than just memorizing formulas.
 <<SetCharacterExpression "Priya" "Determined">>
 Priya: I want to truly understand the material, not just pass the exam.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly the right mindset.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -562,7 +567,7 @@ Priya: I hope I can explain things clearly enough to be helpful.
 <<SetCharacterExpression "Priya" "Anxious">>
 Priya: What if I confuse you more than help you?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That won't happen because we're learning together.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -681,7 +686,7 @@ Priya: And effective strategies.
 <<SetCharacterExpression "Priya" "Proud">>
 Priya: Your patient explanations and encouragement have helped me overcome years of self-doubt about my intelligence.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: This experience has taught me that helping others succeed doesn't diminish your own achievements - it enhances them.
 
 <<SetCharacterExpression "Raju" "Confident">>

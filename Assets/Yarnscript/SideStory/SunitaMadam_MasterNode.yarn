@@ -25,7 +25,7 @@ position: -7,-175
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 After hearing older boys talk about the prestigious school in the High-Rises, Raju walks the long distance to see it.
 
@@ -55,7 +55,7 @@ SunitaMadam: You there, boy.
 <<SetCharacterExpression "SunitaMadam" Angry>>
 SunitaMadam: What are you doing loitering near this gate?
 
-<<SetCharacterExpression "SunitaMadam" Serious>>
+<<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: This is private property.
 
 <<SetCharacterExpression "SunitaMadam" Disapproving>>
@@ -166,7 +166,7 @@ position: -75,-229
 ---
 
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Despite yesterday's harsh dismissal, Raju returns to the prestigious school.
 
@@ -188,7 +188,7 @@ To risk further humiliation in pursuit of any opportunity.
 
 To access the knowledge that could change his life's trajectory.
 
-<<SetCharacterExpression "SunitaMadam" Shocked>>
+<<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: You again?
 
 <<SetCharacterExpression "SunitaMadam" Irritated>>
@@ -206,10 +206,10 @@ SunitaMadam: Not for curiosity seekers who refuse to accept their place in socie
 <<SetCharacterExpression "Raju" Determined>>
 Raju: Ma'am, I didn't come to loiter or waste time.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I came because I want to learn.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Curious>>
 Raju: I was wondering... do you have any books I could read?
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -236,7 +236,7 @@ Raju: 'Where the mind is without fear and the head is held high.
 <<SetCharacterExpression "Raju" Proud>>
 Raju: Where knowledge is free.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Proud>>
 Raju: Where the world has not been broken up into fragments by narrow domestic walls...'
 
 <<SetCharacterExpression "Raju" Proud>>
@@ -245,14 +245,14 @@ Raju: That's from Rabindranath Tagore's 'Where the Mind is Without Fear.'
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: ...You know Tagore?
 
-<<SetCharacterExpression "SunitaMadam" Shocked>>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: You can recite his poetry from memory?
 
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: How is that possible?
 
 <<SetCharacterExpression "Raju" Smiling>>
-Raju: Our local librarian, Sharma Uncle, lets me read whatever I want.
+Raju: Our local librarian, Ram Charan Uncle, lets me read whatever I want.
 
 <<SetCharacterExpression "Raju" Neutral>>
 Raju: When I finish my homework.
@@ -260,19 +260,19 @@ Raju: When I finish my homework.
 <<SetCharacterExpression "Raju" Excited>>
 Raju: He says books are the only things that don't care if you're rich or poor.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: They teach anyone willing to learn.
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: And what else do you read, besides Tagore?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: Stories, history, sometimes mathematics books.
 
 <<SetCharacterExpression "Raju" Confident>>
 Raju: Cricket makes me dream about possibilities, Ma'am.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: But books... books make me think about how to turn dreams into plans.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -317,6 +317,9 @@ SunitaMadam: How do you plan to prove this intellectual curiosity is genuine?
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: What approach will you take to demonstrate real commitment to learning?
 
+<<SetCharacterExpression "Raju" Smiling>>
+Raju: I will show you soon enough.
+
 <<HideAllCharacters>>
 
 As Raju walks away from the second encounter, something significant has shifted.
@@ -340,13 +343,22 @@ That validates his belief that merit can transcend social prejudice when properl
 ===
 title: SunitaMadam_Day3
 ---
+<<SetBGSprite PrivateSchool>>
+On the third day, Raju returns to Wellington Estate school with a clear purpose.
+He intends to convince Sunita Madam of his genuine intellectual curiosity.
+
+<<SetCharacterExpression "SunitaMadam" Serious>>
+SunitaMadam: Back again? What approach are you going to take?
+
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
 
+
+
 -> Raju: Test my knowledge in any subject, Ma'am. Give me the hardest questions you have.
     <<jump SunitaMadam_Day3a>>
--> Raju: Let me prove my character through respectful service, Ma'am. I want to earn your trust gradually.
+-> Raju: Let me prove my character through respectful service, Ma'am. I want to earn your trust.
     <<jump SunitaMadam_Day3b>>
 -> Raju: Watch me work harder than anyone, Ma'am. Give me the most challenging assignments.
     <<jump SunitaMadam_Day3c>>
@@ -358,7 +370,7 @@ position: -308,129
 ---
 <<set $SunitaMadam_Path = "a">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Confident>>
 
@@ -389,16 +401,16 @@ SunitaMadam: Explain the social commentary in Premchand's stories.
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Show me you understand literature beyond surface level.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: Premchand shows how poverty shapes moral choices, Ma'am.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: His characters aren't evil - they're trapped by circumstances.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: Like in 'Kafan' - the father and son represent how social conditions.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Neutral>>
 Raju: Can corrupt basic human dignity.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
@@ -437,7 +449,7 @@ position: -55,122
 ---
 <<set $SunitaMadam_Path = "b">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Serious>>
 
@@ -450,10 +462,10 @@ SunitaMadam: You're offering to work without payment to prove your worthiness?
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: That's... unusual for someone your age.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: My mother taught me that respect is earned through consistent good behavior, Ma'am.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I want to show you the same dignity and reliability she shows in her work.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
@@ -465,13 +477,13 @@ SunitaMadam: What kind of service are you offering?
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: And why do you think this would change my opinion?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I could help organize books, clean classroom spaces, assist with small tasks.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I want to show that I understand the value of this educational environment.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: And would treat it with proper respect.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
@@ -510,7 +522,7 @@ position: 184,122
 ---
 <<set $SunitaMadam_Path = "c">>
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Excited>>
 
@@ -541,7 +553,7 @@ SunitaMadam: How exactly have you overcome these obstacles?
 <<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: What concrete achievements demonstrate this determination?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I memorized poetry from library books.
 
 <<SetCharacterExpression "Raju" Confident>>
@@ -587,7 +599,7 @@ title: SunitaMadam_Day4
 tags: 
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Encouraged by yesterday's more positive response, Raju returns to the school once again.
 
@@ -622,16 +634,16 @@ SunitaMadam: I honestly thought you would give up after our previous conversatio
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Most children your age lose interest.
 
-<<SetCharacterExpression "SunitaMadam" Quizzical>>
+<<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: When adults don't immediately embrace their dreams.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I can't give up, Ma'am.
 
 <<SetCharacterExpression "Raju" Determined>>
 Raju: Not on learning, not on cricket.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Not on proving that I can be more than people expect from someone like me.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -646,31 +658,31 @@ SunitaMadam: That determination alone can overcome structural barriers?
 <<SetCharacterExpression "SunitaMadam" Skeptical>>
 SunitaMadam: That good intentions substitute for proper resources and guidance?
 
-<<SetCharacterExpression "Raju" Excited>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I want to prove that talent and character matter more than family wealth, Ma'am.
 
-<<SetCharacterExpression "Raju" Excited>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Look, I've been writing down questions.
 
-<<SetCharacterExpression "Raju" Excited>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: About subjects I want to understand better.
 
-<<SetCharacterExpression "Raju" Excited>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: Mathematics, history, literature, even science.
 
 <<SetCharacterExpression "SunitaMadam" Excited>>
 SunitaMadam: These are thoughtful questions. Sophisticated questions.
 
-<<SetCharacterExpression "SunitaMadam" Astonished>>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: 'How do economic systems affect educational opportunities?'
 
-<<SetCharacterExpression "SunitaMadam" Astonished>>
+<<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: 'What role does literature play in social change?'
 
-<<SetCharacterExpression "SunitaMadam" Astonished>>
+<<SetCharacterExpression "SunitaMadam" Proud>>
 SunitaMadam: Most of my paying students don't demonstrate this level of intellectual curiosity.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Excited>>
 Raju: So... you think I might have potential, Ma'am?
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -742,7 +754,7 @@ title: SunitaMadam_Day5
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 Building on yesterday's positive interaction, Raju approaches with a specific request.
 
@@ -785,7 +797,7 @@ Raju: Ma'am, I've been thinking about what you said yesterday.
 <<SetCharacterExpression "Raju" Excited>>
 Raju: About finding ways to support my educational development.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: I was wondering... would you be willing to recommend some specific books I should read?
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -800,13 +812,13 @@ SunitaMadam: To provide the kind of guidance I typically reserve for paying stud
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Whose families contribute significantly to this institution?
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Smiling>>
 Raju: I know it's a lot to ask, Ma'am.
 
 <<SetCharacterExpression "Raju" Determined>>
 Raju: But I'm willing to work harder than any paying student.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Confident>>
 Raju: I'll read whatever you recommend, practice whatever exercises you suggest.
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -836,7 +848,7 @@ SunitaMadam: Represents both professional risk and personal commitment.
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: That extends far beyond casual encouragement.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: I understand the risk you'd be taking, Ma'am.
 
 <<SetCharacterExpression "Raju" Confident>>
@@ -920,7 +932,7 @@ title: SunitaMadam_Day6
 tags:
 ---
 <<PlayBackgroundMusic Light_3>>
-<<SetBGSprite WellingtonEstate>>
+<<SetBGSprite PrivateSchool>>
 
 With their mentor-student relationship now firmly established, Raju seeks guidance.
 
@@ -965,7 +977,7 @@ Raju: Ma'am, I've been thinking about everything you've taught me.
 <<SetCharacterExpression "Raju" Excited>>
 Raju: And all the possibilities that education might open up.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: But I need your advice about something important.
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -1016,7 +1028,7 @@ SunitaMadam: The scholarship examination will test your knowledge and abilities.
 <<SetCharacterExpression "SunitaMadam" Confident>>
 SunitaMadam: Areas where you've demonstrated exceptional competence.
 
-<<SetCharacterExpression "Raju" Anxious>>
+<<SetCharacterExpression "Raju" Worried>>
 Raju: What kind of preparation, Ma'am?
 
 <<SetCharacterExpression "Raju" Worried>>
@@ -1076,7 +1088,7 @@ SunitaMadam: You've reminded me why I became a teacher in the first place.
 <<SetCharacterExpression "Raju" Overjoyed>>
 Raju: Ma'am, I don't know how to thank you properly.
 
-<<SetCharacterExpression "Raju" Crying>>
+<<SetCharacterExpression "Raju" Relieved>>
 Raju: You've changed everything for me.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>

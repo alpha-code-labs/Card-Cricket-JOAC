@@ -28,7 +28,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [SerializeField] float musicFadeDuration = 1f;
 
     // Dictionary for sprite name to index mapping
-    private Dictionary<string, Sprite> spriteNameToIndex;
+    public static Dictionary<string, Sprite> spriteNameToIndex;
 
     private Dictionary<String, AudioClip> musicDictionary;
     void Awake()
@@ -66,7 +66,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
     }
 
-    private void InitializeSpriteMapping()
+    public static void InitializeSpriteMapping()
     {
         // Initialize sprite name to index mapping
         spriteNameToIndex = new Dictionary<string, Sprite>();
@@ -78,7 +78,8 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         allSprites = new List<Sprite>(characterSprites.Count + locationSprites.Count);
         allSprites.AddRange(locationSprites);
         allSprites.AddRange(characterSprites);
-        Debug.Log($"Sprite load: Characters={characterSprites.Count}, Locations={locationSprites.Count}, Total={allSprites.Count}");
+
+        List<string> duplicateNames = new List<string>();// For Debugging
         // Auto-populate based on sprite names in the list
         for (int i = 0; i < allSprites.Count; i++)
         {
@@ -92,12 +93,13 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning($"Duplicate sprite name detected: '{actualSpriteName}'. Keeping the first occurrence and ignoring later duplicates.");
+                    duplicateNames.Add(actualSpriteName + " (normalized: " + normalizedKey + ")");
                 }
-
-                // Debug to see the mapping
-                //Debug.Log($"Mapped '{actualSpriteName}' to normalized key '{normalizedKey}' at index {i}");
             }
+        }
+        if (duplicateNames.Count > 0)
+        {
+            Debug.LogWarning($"Sprite load: Total={allSprites.Count},Mapped={spriteNameToIndex.Count}, Duplicates={duplicateNames.Count}\n{(duplicateNames.Count > 0 ? "Duplicates:\n" + string.Join("\n", duplicateNames) : "")}");
         }
     }
 
@@ -127,16 +129,17 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
         Debug.Log($"Initialized music dictionary with {musicDictionary.Count} entries");
     }
-    private static Sprite GetSpriteByName(string spriteName)
+    public static Sprite GetSpriteByName(string spriteName, bool logErrorIfNotFound = true)
     {
         string normalizedKey = NormalizeName(spriteName);
-        if (Instance.spriteNameToIndex.ContainsKey(normalizedKey) || Instance.spriteNameToIndex[normalizedKey] != null)
+        if (spriteNameToIndex.ContainsKey(normalizedKey) && spriteNameToIndex[normalizedKey] != null)
         {
-            return Instance.spriteNameToIndex[normalizedKey];
+            return spriteNameToIndex[normalizedKey];
         }
         else
         {
-            Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
+            if (logErrorIfNotFound)
+                Debug.LogError($"Sprite '{spriteName}' (normalized: '{normalizedKey}') not found in sprite list!");
             return null;
         }
     }
@@ -144,8 +147,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     // Helper method to normalize sprite names for lookup
     private static string NormalizeName(string name)
     {
-        // Remove spaces, underscores, and convert to lowercase
-        return name.Replace(" ", "").Replace("_", "").ToLower();
+        // Remove all special characters, keep only alphabetic characters, and convert to lowercase
+        string result = "";
+        foreach (char c in name)
+        {
+            if (char.IsLetter(c))
+            {
+                result += c;
+            }
+        }
+        return result.ToLower();
     }
 
     // MASTER CHARACTER EXPRESSION METHOD - Now callable from Yarn
@@ -363,6 +374,7 @@ public enum EmotionType
     Terrified,
     Tired,
     Worried,
+    BaseSprite
 }
 
 public enum MusicType

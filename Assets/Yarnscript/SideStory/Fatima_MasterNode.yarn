@@ -31,7 +31,9 @@ position: -7,-175
 // Scene Setup - Day 1 at the dhaba during lunch rush
 After hearing his mother mention struggles of local business owners, Raju visits Fatima's dhaba during lunch rush to see if the friendly restaurant owner needs assistance.
 
-Aromatic scents of fresh spices fill the air as Raju approaches the small dhaba. The lunch rush has created chaos - hungry customers, steaming pots, orders called out faster than they can be fulfilled. Fatima moves with practiced efficiency, but sweat on her brow suggests even her experience is being tested.
+Aromatic scents of fresh spices fill the air as Raju approaches the small dhaba. 
+The lunch rush has created chaos - hungry customers, steaming pots, orders called out faster than they can be fulfilled.
+ Fatima moves with practiced efficiency, but sweat on her brow suggests even her experience is being tested.
 
 <<SetCharacterExpression "Fatima" "Worried">>
 Fatima: Arre beta, perfect timing, but also terrible timing!
@@ -57,7 +59,7 @@ Fatima: Running a dhaba means handling hot oil, sharp knives, impatient customer
 <<SetCharacterExpression "Fatima" "Worried">>
 Fatima: One mistake and someone gets burned, orders get mixed up, or I lose customers forever.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand it's serious work, aunty. But I'm careful and I learn quickly.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -91,7 +93,8 @@ Raju: I'm not afraid of hard work, aunty.
 Raju: My mother taught me that honest labor is something to be proud of, not to run away from.
 
 <<HideAllCharacters>>
-As Raju leaves the dhaba, he carries admiration for Fatima's skill under pressure and determination to prove his offer represents genuine commitment. The complexity of managing everything simultaneously has opened his eyes to sophisticated multitasking that successful restaurant ownership requires.
+As Raju leaves the dhaba, he carries admiration for Fatima's skill under pressure and determination to prove his offer represents genuine commitment. 
+The complexity of managing everything simultaneously has opened his eyes to sophisticated multitasking that successful restaurant ownership requires.
 
 <<set $Fatima_Day = 2>>
 <<EndEvent true>>
@@ -148,7 +151,7 @@ Fatima: Money management, customer relations, inventory, supplier negotiations -
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: I'm sorry about your husband, aunty.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: It must be incredibly difficult to run everything alone while also dealing with loss.
 
 <<SetCharacterExpression "Fatima" "Serious">>
@@ -173,7 +176,9 @@ Fatima: You keep saying you want to help, but help means different things to dif
 Fatima: What exactly do you think you could contribute to a business like this?
 
 <<HideAllCharacters>>
-As their conversation concludes with Fatima's direct question, Raju understands his persistent offers have moved beyond polite rejection into serious consideration. The revelation of her personal challenges has transformed his motivation from casual helpfulness into genuine commitment.
+As their conversation concludes with Fatima's direct question, Raju understands his persistent offers have moved beyond polite rejection into serious consideration.
+
+ The revelation of her personal challenges has transformed his motivation from casual helpfulness into genuine commitment.
 
 <<set $Fatima_Day = 3>>
 <<EndEvent true>>
@@ -190,7 +195,9 @@ position: -75,-229
 // Scene Setup - Day 3 during pre-lunch preparation
 With Fatima's question weighing on his mind, Raju returns during pre-lunch preparation, ready to demonstrate rather than simply describe how he might assist.
 
-The dhaba buzzes with anticipatory energy as Raju arrives during the crucial transition between morning prep and lunch service. Today feels different - yesterday's honest conversation has created an atmosphere of mutual evaluation.
+The dhaba buzzes with anticipatory energy as Raju arrives during the crucial transition between morning prep and lunch service. 
+
+Today feels different - yesterday's honest conversation has created an atmosphere of mutual evaluation.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Well beta, you've been asking to help for three days now.
@@ -211,11 +218,11 @@ Fatima: Show me you understand this business beyond just wanting to help. What s
 Make a Choice
 <<AutoAdvance false>>
 
--> Raju: I want to learn proper cooking, aunty. Help me understand your recipes and techniques.
+-> Raju: I want to learn proper cooking, aunty.
     <<jump Fatima_Day3a>>
--> Raju: Let me focus on customer service, aunty. I'll make sure customers feel welcomed and satisfied.
+-> Raju: Let me focus on customer service, aunty.
     <<jump Fatima_Day3b>>
--> Raju: I want to help with organization and efficiency, aunty. Let me observe and suggest improvements.
+-> Raju: I want to help with organization and efficiency, aunty. 
     <<jump Fatima_Day3c>>
 
 ===
@@ -235,7 +242,7 @@ Fatima: Restaurant cooking means consistent quality, proper timing, and safety s
 <<SetCharacterExpression "Fatima" "Anxious">>
 Fatima: One undercooked dish could make customers sick.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand the responsibility, aunty.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -345,7 +352,11 @@ tags:
 // Day 4 - Path A: Learning Cooking Skills
 After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the lunch rush tests his abilities under real pressure.
 
-The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without peak service pressure. Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
+The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice.
+
+ The morning calm provides ideal conditions for beginning his role without peak service pressure.
+ 
+  Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Ready for your first real day of dhaba work, beta?
@@ -365,7 +376,7 @@ Fatima: We'll see how you handle the pressure when orders start piling up and cu
 <<SetCharacterExpression "Fatima" "Anxious">>
 Fatima: Restaurant work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, aunty.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -389,7 +400,7 @@ Fatima: First rule - safety comes before speed. A mistake here doesn't just cost
 <<SetCharacterExpression "Fatima" "Worried">>
 Fatima: Always be aware of hot surfaces, sharp objects, and moving around quickly in tight spaces.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be extra careful, aunty. Safety first, always.
 
 <<SetCharacterExpression "Fatima" "Serious">>
@@ -449,7 +460,7 @@ Fatima: We'll see how you handle the pressure when orders start piling up and cu
 <<SetCharacterExpression "Fatima" "Anxious">>
 Fatima: Restaurant work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, aunty.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -473,7 +484,7 @@ Fatima: First rule - safety comes before speed. A mistake here doesn't just cost
 <<SetCharacterExpression "Fatima" "Worried">>
 Fatima: Always be aware of hot surfaces, sharp objects, and moving around quickly in tight spaces.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be extra careful, aunty. Safety first, always.
 
 <<SetCharacterExpression "Fatima" "Serious">>
@@ -498,7 +509,8 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
 <<HideAllCharacters>>
-As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
+As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
+ The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
 <<EndEvent true>>
@@ -513,7 +525,11 @@ tags:
 // Day 4 - Path C: Organization and Efficiency Focus
 After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the lunch rush tests his abilities under real pressure.
 
-The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without peak service pressure. Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
+The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. 
+
+The morning calm provides ideal conditions for beginning his role without peak service pressure. 
+
+Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Ready for your first real day of dhaba work, beta?
@@ -533,7 +549,7 @@ Fatima: We'll see how you handle the pressure when orders start piling up and cu
 <<SetCharacterExpression "Fatima" "Anxious">>
 Fatima: Restaurant work tests both your skills and your character under stress.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand, aunty.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -557,7 +573,7 @@ Fatima: First rule - safety comes before speed. A mistake here doesn't just cost
 <<SetCharacterExpression "Fatima" "Worried">>
 Fatima: Always be aware of hot surfaces, sharp objects, and moving around quickly in tight spaces.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be extra careful, aunty. Safety first, always.
 
 <<SetCharacterExpression "Fatima" "Serious">>
@@ -582,7 +598,9 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
 <<HideAllCharacters>>
-As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
+As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. 
+
+The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
 <<EndEvent true>>
@@ -628,7 +646,7 @@ Fatima: Then let's see if you can maintain yesterday's quality while handling in
 <<SetCharacterExpression "Fatima" "Confident">>
 Fatima: The customers are counting on us to deliver excellence every single time.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I won't let you down, aunty. What new tasks do you want me to learn today?
 
 <<SetCharacterExpression "Fatima" "Excited">>
@@ -662,7 +680,9 @@ Fatima: And reputation brings loyal customers who support you through good times
 Raju: I'll remember that lesson, aunty. It applies to everything in life, not just business.
 
 <<HideAllCharacters>>
-As the second day unfolds with expanded responsibilities and higher expectations, both recognize they are moving into a potentially sustainable working relationship. The progression from basic assistance to more complex tasks reflects growing mutual trust and competence, while continued emphasis on customer satisfaction reinforces that personal success must always serve the larger goal of business excellence.
+As the second day unfolds with expanded responsibilities and higher expectations, both recognize they are moving into a potentially sustainable working relationship. 
+
+The progression from basic assistance to more complex tasks reflects growing mutual trust and competence, while continued emphasis on customer satisfaction reinforces that personal success must always serve the larger goal of business excellence.
 
 <<set $Fatima_Day = 6>>
 <<EndEvent true>>
@@ -676,7 +696,9 @@ title: Fatima_Day6
 // Day 6 - Final conversation and job offer
 With two successful days behind him, Raju approaches Fatima about making their working arrangement more formal and discussing what this experience has taught him about business, responsibility, and community service.
 
-The dhaba atmosphere reflects the comfortable working relationship developed over days of collaboration. Today's conversation carries weight beyond immediate business concerns as both prepare to discuss broader implications of their successful partnership and what it means for Raju's ongoing education about work, responsibility, and the role of small businesses in community life.
+The dhaba atmosphere reflects the comfortable working relationship developed over days of collaboration. 
+
+Today's conversation carries weight beyond immediate business concerns as both prepare to discuss broader implications of their successful partnership and what it means for Raju's ongoing education about work, responsibility, and the role of small businesses in community life.
 
 <<SetCharacterExpression "Fatima" "Overjoyed">>
 Fatima: Beta, I have to admit - when you first asked to help, I thought it was just childhood curiosity.

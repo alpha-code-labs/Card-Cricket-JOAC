@@ -159,7 +159,7 @@ Raju: Dada, you talk about cricket like it teaches life lessons, not just sports
 <<SetCharacterExpression "CricketDada" "Confident">>
 Cricket Dada: Exactly! Cricket is life, beta.
 
-<<SetCharacterExpression "CricketDada" "Serious">>
+<<SetCharacterExpression "CricketDada" "Smiling">>
 Cricket Dada: Every match teaches you about facing challenges, working with others.
 
 <<SetCharacterExpression "CricketDada" "Determined">>
@@ -186,11 +186,11 @@ Raju: Cricket teaches me to be stronger, to handle pressure, to never give up.
 <<SetCharacterExpression "CricketDada" "Proud">>
 Cricket Dada: You understand it well for someone so young.
 
-<<SetCharacterExpression "CricketDada" "Quizzical">>
+<<SetCharacterExpression "CricketDada" "Smiling">>
 Cricket Dada: Tell me about your cricket dreams, beta. What drives your passion?
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: I dream of playing for my school team one day.
+Raju: I dream of playing for my country one day.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: But more than that, I want to understand cricket the way you do.
@@ -247,7 +247,7 @@ Raju: Dada, something is troubling you today. I can see it.
 <<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: You're very perceptive, beta.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Would you like to talk about it?
 
 <<AutoAdvance true>>
@@ -277,14 +277,14 @@ Cricket Dada: Most people don't notice when old men are struggling inside.
 <<SetCharacterExpression "CricketDada" "Pained">>
 Cricket Dada: It's about loneliness, beta. About choices I made long ago.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm here to listen, Dada. Take your time.
 
 <<SetCharacterExpression "Raju" "Loving">>
 Raju: Sometimes the heart needs to speak as much as the mind needs to remember cricket stories.
 
 <<SetCharacterExpression "CricketDada" "Crying">>
-Cricket Dada: Your gentleness reminds me of my daughter Priya.
+Cricket Dada: Your gentleness reminds me of my daughter Nisha.
 
 <<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: She used to listen with the same patience you're showing now.
@@ -305,7 +305,7 @@ position: -55,122
 
 <<set $CricketDada_Path = "b">>
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Dada, I noticed the photo you tried to hide.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -317,7 +317,7 @@ Cricket Dada: You don't miss much, do you beta?
 <<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: Yes, that photo is all I have left of happier times.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: What happened, Dada? Did you fight with them?
 
 <<SetCharacterExpression "CricketDada" "Disappointed">>
@@ -326,7 +326,7 @@ Cricket Dada: I made mistakes, said things in anger.
 <<SetCharacterExpression "CricketDada" "Pained">>
 Cricket Dada: I felt like they didn't respect me anymore. That they saw me as a burden.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: So you stopped calling them?
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -345,7 +345,7 @@ position: 184,122
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: The cricket heroes you tell me about - they faced lonely times too.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: How did they handle it? What would Kapil Dev do?
 
 <<SetCharacterExpression "CricketDada" "Quizzical">>
@@ -380,7 +380,7 @@ tags:
 Cricket Dada: That photo was taken fifteen years ago at a cricket match.
 
 <<SetCharacterExpression "CricketDada" "Pained">>
-Cricket Dada: My wife Kamala, my son Sunil, my daughter Priya.
+Cricket Dada: My wife Sushila, my son Sunil, my daughter Nisha.
 
 <<SetCharacterExpression "CricketDada" "Crying">>
 Cricket Dada: We used to attend matches together, listen to commentary at home.
@@ -400,13 +400,13 @@ Raju: But Dada, what if they think you abandoned them?
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: What if they're waiting for you to reach out?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: All these years might have been a terrible misunderstanding.
 
-<<SetCharacterExpression "CricketDada" "Astonished">>
+<<SetCharacterExpression "CricketDada" "BaseSprite">>
 Cricket Dada: What do you mean, beta?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: When I fight with my brother Ramu, we both wait for the other to apologize first.
 
 <<SetCharacterExpression "Raju" "Smiling">>
@@ -415,10 +415,10 @@ Raju: But someone has to make the first move, or we stay angry forever.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: The cricket heroes you admire - they never gave up when things looked impossible.
 
-<<SetCharacterExpression "CricketDada" "Shocked">>
+<<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: You think they might be waiting for me?
 
-<<SetCharacterExpression "CricketDada" "Astonished">>
+<<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: All these years, I thought they abandoned me.
 
 <<SetCharacterExpression "CricketDada" "Anxious">>
@@ -465,19 +465,19 @@ Raju: Dada, you sound so excited! What happened?
 Cricket Dada: Meet my family! They're here!
 
 <<SetCharacterExpression "CricketDada" "Proud">>
-Cricket Dada: Kamala, Sunil, Priya - this is Raju, the young cricket enthusiast I told you about.
+Cricket Dada: Sushila, Sunil, Nisha - this is Raju, the young cricket enthusiast I told you about.
 
 <<SetCharacterExpression "CricketDada" "Loving">>
 Cricket Dada: The one who gave me the wisdom to call you.
 
-<<SetCharacterExpression "Kamala" "Loving">>
-Kamala: Raju, beta, we've heard so much about you.
+<<SetCharacterExpression "Sushila" "Loving">>
+Sushila: Raju, beta, we've heard so much about you.
 
-<<SetCharacterExpression "Kamala" "Crying">>
-Kamala: My husband tells me you encouraged him to reach out to us.
+<<SetCharacterExpression "Sushila" "Crying">>
+Sushila: My husband tells me you encouraged him to reach out to us.
 
-<<SetCharacterExpression "Kamala" "Overjoyed">>
-Kamala: We were so afraid he didn't want to see us anymore.
+<<SetCharacterExpression "Sushila" "Overjoyed">>
+Sushila: We were so afraid he didn't want to see us anymore.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: You were both waiting for the other to make the first move.
@@ -506,11 +506,11 @@ Cricket Dada: You showed me that the best innings aren't played on the field.
 <<SetCharacterExpression "CricketDada" "Confident">>
 Cricket Dada: They're played in life, when you find the courage to rebuild what seemed broken.
 
-<<SetCharacterExpression "Priya" "Smiling">>
-Priya: Papa has told us so much about your cricket dreams.
+<<SetCharacterExpression "Nisha" "Smiling">>
+Nisha: Papa has told us so much about your cricket dreams.
 
-<<SetCharacterExpression "Priya" "Excited">>
-Priya: He says you remind him of the champions he's watched over the decades.
+<<SetCharacterExpression "Nisha" "Excited">>
+Nisha: He says you remind him of the champions he's watched over the decades.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Cricket Dada taught me that cricket and life follow the same rules.
@@ -527,11 +527,11 @@ Cricket Dada: And you taught me that wisdom flows both ways, beta.
 <<SetCharacterExpression "CricketDada" "Proud">>
 Cricket Dada: Sometimes the teacher learns the most important lesson from the student.
 
-<<SetCharacterExpression "Kamala" "Loving">>
-Kamala: Raju, you must visit us at home. We'll watch a cricket match together.
+<<SetCharacterExpression "Sushila" "Loving">>
+Sushila: Raju, you must visit us at home. We'll watch a cricket match together.
 
-<<SetCharacterExpression "Priya" "Excited">>
-Priya: Yes! Papa can tell all of us his stories, just like old times.
+<<SetCharacterExpression "Nisha" "Excited">>
+Nisha: Yes! Papa can tell all of us his stories, just like old times.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: I would love that! Thank you!
@@ -558,5 +558,5 @@ As the family gathers around the television, Raju witnesses the joy of reconcili
 
 <<set $CricketDada_Complete = true>>
 
-<<jump Humility>>
+<<jump Resourcefulness>>
 ===

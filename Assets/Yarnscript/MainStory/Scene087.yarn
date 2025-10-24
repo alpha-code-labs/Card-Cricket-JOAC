@@ -24,7 +24,7 @@ Ramu: Fast but straight. You've faced worse at dawn practice when your eyes were
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Should we do anything special?
 
-<<SetCharacterExpression "Ramu" "Relaxed">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: No, special is for special days—today is Saturday with stumps.
 
 <<HideAllCharacters>>

@@ -1,5 +1,7 @@
 ﻿title: Trailer_Story_Board
 ---
+<<wait 3>>
+<<AutoAdvance true>>
 <<HideAllCharacters>>
 // 00:00:00,000 --> 00:00:04,000
 <<SetBGSprite KohliwadaGround>>
@@ -25,7 +27,7 @@ Raju (monologue): That was the day… I got the chance to prove myself….
 // 00:00:15,000 --> 00:00:18,000
 <<SetBGSprite KohliwadaGround>>
 //<<cut FLASHBACK_WARM_TONE>>
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju (monologue): Bhaiya used to say… there are five things you carry every time you pick up the bat.
 // 00:00:18,000 --> 00:00:22,000
 <<SetBGSprite KohliwadaGround>>
@@ -82,11 +84,11 @@ Raju (monologue): Ninety percent… or no academy.
 <<SetBGSprite HutInterior>>
 //<<music bass_pickup tempo=92>>
 //<<cut STUDY_TABLE_NIGHT>>
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: If that's the price… I'll earn it.
 // 00:00:55,500 --> 00:00:59,000
 <<SetBGSprite HutInterior>>
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I'll get ninety… and I'll play.
 // 00:00:59,000 --> 00:01:03,000
 <<SetBGSprite KohliwadaGround>>
@@ -123,15 +125,15 @@ Kamla: Raju, at least help me wash these plates before you run off!
 // 00:01:20,000 --> 00:01:23,500
 <<SetBGSprite HutInterior>>
 //<<cut NIGHT_SINGLE_BULB>>
-<<SetCharacterExpression Raju Groggy>>
+<<SetCharacterExpression Raju Sad>>
 Raju (monologue): Eyes burn… but I can't stop.
 // 00:01:23,500 --> 00:01:27,000
 <<SetBGSprite KohliwadaGround>>
 //<<cut DAWN_DUSTY_SUNRISE>>
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju (monologue): Every second counts.
 // 00:01:27,000 --> 00:01:31,000
-<<SetBGSprite HutInterior>>
+<<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Worried>>
 Raju (monologue): I can't drop the ball… not now.
 // 00:01:31,000 --> 00:01:34,000
@@ -152,7 +154,7 @@ Raju (monologue): If I fail either… I lose everything.
 <<SetBGSprite KohliwadaGround>>
 //<<music final_climax peak>>
 //<<vfx slowmo_montage>>
-<<SetCharacterExpression Raju Serious>>
+<<SetCharacterExpression Raju Determined>>
 Raju (monologue): I believed I had talent…
 Raju (monologue): But can I prove it — to him?
 Raju (monologue): Can I prove it to the world?
