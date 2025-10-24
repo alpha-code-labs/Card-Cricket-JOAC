@@ -303,9 +303,12 @@ public class ScoreManager : MonoBehaviour
             AnimateScoreIncrease(previousRuns, currentRuns);
             previousRuns = currentRuns;
         }
-        
+
         int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
-        UpdateBallsAndOvers(_currentTurn);
+
+        if (runs != -3)
+            UpdateBallsAndOvers(_currentTurn);
+            
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
