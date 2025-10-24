@@ -13,13 +13,13 @@ position: 0,0
 <<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: How did it go?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I am not sure. I tried my best.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 ShivPrasad: I guess we will find out soon.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I guess.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
@@ -34,7 +34,7 @@ Ramu: We will wait and watch.
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
 ShivPrasad: in 15 days.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: In 15 days.
 
 <<HideAllCharacters>>

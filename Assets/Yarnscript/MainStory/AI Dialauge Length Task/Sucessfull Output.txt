@@ -693,7 +693,7 @@
        16 -  Ramu: Our turn. Listen—Sunil broke his ankle in warm-up. We need a substitute.
        16 +  Ramu: Our turn—Sunil broke his ankle, we need a substitute.
        17
-       18    <<SetCharacterExpression "Raju" "Serious">>
+       18    <<SetCharacterExpression "Raju" "Determined">>
        19    Raju: A… substitute? Me?
 
 ● Update(Scene005.yarn)
@@ -704,7 +704,7 @@
        22 -  Ramu: You. I asked. They said yes. Today, you belong. Can you stand brave on this ground?
        22 +  Ramu: You—I asked, they said yes, today you belong.
        23
-       24    <<SetCharacterExpression "Raju" "Serious">>
+       24    <<SetCharacterExpression "Raju" "Determined">>
        25    Raju: I'm eight.
 
 ● Update(Scene005.yarn)
@@ -715,14 +715,14 @@
        28 -  Ramu: And you're Raju. Eight is a number. Heart is a decision. What do we say?
        28 +  Ramu: And you're Raju—eight is a number, heart is a decision.
        29
-       30    <<SetCharacterExpression "Raju" "Serious">>
+       30    <<SetCharacterExpression "Raju" "Determined">>
        31    Raju: Face up. Chin up.
 
 ● Update(Scene005.yarn)
   ⎿  Updated Scene005.yarn with 1 addition and 1 removal
        28    Ramu: And you're Raju—eight is a number, heart is a decision.
        29
-       30    <<SetCharacterExpression "Raju" "Serious">>
+       30    <<SetCharacterExpression "Raju" "Determined">>
        31 -  Raju: Face up. Chin up.
        31 +  Raju: Face up, chin up.
        32
@@ -759,14 +759,14 @@
        46 -  Ramu: First, be seen. Walk straight to the captain, say, "Substitute reporting." Say your name. Let the ground learn it.
        46 +  Ramu: First, be seen—walk to the captain, say "Substitute reporting," and let the ground learn your name.
        47
-       48    <<SetCharacterExpression "Raju" "Serious">>
+       48    <<SetCharacterExpression "Raju" "Determined">>
        49    Raju: Raju. Reporting.
 
 ● Update(Scene005.yarn)
   ⎿  Updated Scene005.yarn with 1 addition and 1 removal
        46    Ramu: First, be seen—walk to the captain, say "Substitute reporting," and let the ground learn your name.
        47
-       48    <<SetCharacterExpression "Raju" "Serious">>
+       48    <<SetCharacterExpression "Raju" "Determined">>
        49 -  Raju: Raju. Reporting.
        49 +  Raju: Raju—reporting.
        50
@@ -803,7 +803,7 @@
        64 -  Ramu: Then go. Touch the ground with your hand, touch your heart, and step in. Let the evening remember you.
        64 +  Ramu: Then go—touch the ground, touch your heart, and let the evening remember you.
        65
-       66    <<SetCharacterExpression "Raju" "Serious">>
+       66    <<SetCharacterExpression "Raju" "Determined">>
        67    Raju: Raju—reporting.
 
 ● Scene005.yarn complete! Now Scene006.yarn, which is short:
@@ -964,14 +964,14 @@
        16 -  Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
        16 +  Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
        17
-       18    <<SetCharacterExpression "Raju" "Serious">>
+       18    <<SetCharacterExpression "Raju" "Determined">>
        19    Raju: Yes I am aware. I am completely switched on. I can do this.
 
 ● Update(Scene008.yarn)
   ⎿  Updated Scene008.yarn with 1 addition and 1 removal
        16    Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
        17
-       18    <<SetCharacterExpression "Raju" "Serious">>
+       18    <<SetCharacterExpression "Raju" "Determined">>
        19 -  Raju: Yes I am aware. I am completely switched on. I can do this.
        19 +  Raju: Yes, I am completely switched on—I can do this.
        20
@@ -1010,14 +1010,14 @@
        16 -  Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
        16 +  Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
        17
-       18    <<SetCharacterExpression "Raju" "Serious">>
+       18    <<SetCharacterExpression "Raju" "Determined">>
        19    Raju: Yes I am aware. I am completely switched on. I can do this.
 
 ● Update(Scene009.yarn)
   ⎿  Updated Scene009.yarn with 1 addition and 1 removal
        16    Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
        17
-       18    <<SetCharacterExpression "Raju" "Serious">>
+       18    <<SetCharacterExpression "Raju" "Determined">>
        19 -  Raju: Yes I am aware. I am completely switched on. I can do this.
        19 +  Raju: Yes, I am completely switched on—I can do this.
        20

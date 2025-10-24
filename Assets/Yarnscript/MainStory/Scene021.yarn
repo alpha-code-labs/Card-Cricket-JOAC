@@ -9,25 +9,25 @@ position: 0,0
  
 <<SetBGSprite hutInterior>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: See this line? That's our lane—but from today the world opens wider, no boundaries, just people and their stories where you choose which chapter to read first.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Free world?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Free world—not free of effort but free of order, where you'll walk, listen, help, learn, and when you return, your cricket will carry something new inside it.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What things?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Four coins you'll earn and keep: courage, humility, resourcefulness, foresight. Spend them on the ground without going broke.
 
 <<SetCharacterExpression "Raju" "Confused">>
 Raju: I am Confused.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Courage—standing next to fear till it gets bored. You'll do hard things even with a shaking voice.
 
 <<SetCharacterExpression "Raju" "Curious">>
@@ -36,49 +36,49 @@ Raju: So courage is… practice for my heartbeat?
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Exactly. Loud heart, steady hands.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Loving">>
 Ramu: Humility—not "I am small" but "I am learning." You'll thank people who don't get thanked. When calls go against you, your feet won't argue.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Learning without noise.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Resourcefulness—making something from almost nothing. When gear is rough or days are crooked, you'll still find a way.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Make something from almost nothing.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Foresight—seeing before seeing. Read patterns, not moments. Know which future to step toward.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Like choosing a lane in a crowded bazaar.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Here's the rule of the free world: no teacher, only clues—you'll talk, help, trade time, make amends when you fail and try again, each thread knotting itself to one of these coins until your batting feels quieter and sharper at the same time.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Do I have to finish in one go?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Walk where your feet want, return when your heart is full, go out again when curious—multi-paths, same boy, just remember the free world watches how you carry yourself more than what you carry.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: And if I choose wrong?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Then you learn why and choose better next. The only wrong path is the one that makes you smaller on the inside.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Courage… humility… resourcefulness… foresight.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Where do I start?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Start where your breath steadies. Listen for a problem you can make lighter. Pay with time, not with pride.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: All of this will help you in your batting, get you what you want when you bat—you'll find out soon enough, so go for it.
 
 <<SetCharacterExpression "Raju" "Determined">>

@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Oye, birthday hero… close your eyes.
 
-<<SetCharacterExpression "Raju" "Curious">>
+<<SetCharacterExpression "Raju" "Tired">>
 Raju: Closed! But I can still see through my eyelashes.
 
 
@@ -93,16 +93,16 @@ Ramu: Big gifts, big rules. Ready?
 Raju: Ready.
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Rule one: You'll study first—even Sachin had homework.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Rule two: You'll share—gully cricket is not only for heroes.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Rule three: You'll respect the bat—no throwing it in anger, and when it rests, face up.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Rule four: No fighting if someone calls it "old"—old means seasoned, like Maa's iron tawa.
 
 
@@ -140,7 +140,7 @@ Ramu: Better—feet shoulder width, knees bent, eyes on the ball.
 Raju: So I stare at nothing?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: You stare at possibility—now pretend I bowl to off-stump. What shot?
 
 
@@ -148,7 +148,7 @@ Ramu: You stare at possibility—now pretend I bowl to off-stump. What shot?
 Raju: Umm… straight drive?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Good choice—now a bouncer, short ball. What will you do?
 
 
@@ -156,7 +156,7 @@ Ramu: Good choice—now a bouncer, short ball. What will you do?
 Raju: Duck!
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Excellent survival instinct, Captain—some days the smartest run is away from the ball.
 
 
@@ -164,7 +164,7 @@ Ramu: Excellent survival instinct, Captain—some days the smartest run is away 
 Raju: Will people laugh because it's old?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: People laugh when they're afraid you'll pass them—the bat is old, your courage is new.
 
 
@@ -191,7 +191,7 @@ Ramu: And one more rule.
 Raju: There's a rule five?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: The most important—when you miss, try again; when you get out, smile; when someone else scores, clap.
 
 

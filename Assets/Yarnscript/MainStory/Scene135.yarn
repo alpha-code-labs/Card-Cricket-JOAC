@@ -16,19 +16,19 @@ Raju: If you change seats, will I still hear you?
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Not over his voice, but between it—like the space in a drumbeat where habits live.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: What if he moves my feet different or changes my grip? We did it one way for months.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Then you try his way first—no arguing inside the net, just try, feel, and file it. After practice we ask why together, because learning looks clumsy before it looks clever.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: So… try now, ask later.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Exactly. Three permissions before we step forward—one: look ordinary while learning something extraordinary; two: ask questions that sound silly but save time; three: disappoint me for one session if it means you did the right thing slowly.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I accept.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -37,7 +37,7 @@ Ramu: And three promises I want back.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: School stays first—numbers don't drop because nets are exciting. Two: manners louder than talent, no throwing, showing off, or shrinking. Three: health over heroics—if something hurts, you speak.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I promise. What about you?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -52,19 +52,19 @@ Raju: I'm excited but also a little scared—with you I know the answers, but wi
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: New questions mean new rooms—we're opening doors, not breaking walls. If doubt knocks, say your name once and check your anchor: the rusty nail, the breath you count, the thread on your wrist—you're not alone, just growing.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Bhai… who am I when I walk in there?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Many things in this order—student, teammate, worker. The applause can join the line at the end—walk like work.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Will you clap if I do something right?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: I'll clap in my chest—outside I'll be a quiet yes. Let Dev-sir measure while I count effort.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: And if I miss?
 
 <<SetCharacterExpression "Ramu" "Neutral">>

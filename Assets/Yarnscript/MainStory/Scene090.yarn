@@ -17,7 +17,7 @@ Raju: Two and a half runs per ball. I'm tired but ready.
 <<SetCharacterExpression "Ramu" "Confident">>
 Ramu: This is what we trained for—when body is tired, technique takes over, so trust your basics.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Their coach is watching from the boundary.
 
 <<SetCharacterExpression "Ramu" "Serious">>

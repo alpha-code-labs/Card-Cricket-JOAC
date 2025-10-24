@@ -27,11 +27,11 @@ public class EventRecord
 [Serializable]
 public enum TypeOfEvent
 {
-    ForcedCutscene,
-    FreeTime,
-    Speical,
-    SkipDayOrEvening,
-    GamePlay,
-    QuizGamePlay,
-    CardGamePlayTutorial
+    ForcedCutscene = 0,
+    FreeTime = 1,
+    Speical = 2,
+    SkipDayOrEvening = 3,
+    GamePlay = 4,
+    QuizGamePlay = 5,
+    CardGamePlayTutorial = 6
 }

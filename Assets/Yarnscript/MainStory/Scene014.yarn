@@ -9,7 +9,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Captain. Well played. Good effort.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I could have done better. I wanted to make more.
 
 <<SetCharacterExpression "Ramu" "Smiling">>

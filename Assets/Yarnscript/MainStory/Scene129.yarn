@@ -13,13 +13,13 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Curious">>
 Ramu: Time to go. You're nervous?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Not really. I prepared well. Honestly i have given it everything.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and a steady brain. I will take you to school.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thank you bhai.
 
 <<HideAllCharacters>>
