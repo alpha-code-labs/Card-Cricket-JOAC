@@ -75,7 +75,7 @@ public class DialoguePositioner : MonoBehaviour
             yield return null;
             if (!characterImageContainer.activeSelf)
             {
-                Debug.LogError($"Container was deactivated on frame {i}!");
+                Debug.Log($"Container was deactivated on frame {i}!. Reactivating..");
                 characterImageContainer.SetActive(true);
             }
         }

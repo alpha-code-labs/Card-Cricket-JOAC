@@ -32,7 +32,7 @@ public class EncouragementSystem : MonoBehaviour
     [SerializeField] Vector2 onScreenPosition = Vector2.zero;
     
     [Header("Display Settings")]
-    [SerializeField] float autoSkipDelay = 10f; // Auto skip after this many seconds (0 = disabled)
+    [SerializeField] float autoSkipDelay = 3f; // Auto skip after this many seconds (0 = disabled)
     [SerializeField] bool pauseGameDuringEncouragement = true;
     
     [Header("Milestone Tracking")]
@@ -300,7 +300,7 @@ public class EncouragementSystem : MonoBehaviour
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.Percent75, expr, currentSituation);
             }
-            else if (percentage >= 50f && !milestone50Triggered && requiredRate < 3.0f)
+            else if (percentage >= 50f && !milestone50Triggered && !milestone75Triggered && requiredRate < 3.0f)
             {
                 Debug.Log("Pushing milestone50");
                 milestone50Triggered = true;
@@ -530,7 +530,7 @@ public class EncouragementSystem : MonoBehaviour
         Debug.Log("Encouragement panel waited for text fade in");
         
         // Show skip button
-        skipButton.gameObject.SetActive(true);
+        skipButton.gameObject.SetActive(false);
         skipButton.transform.localScale = Vector3.zero;
         skipButton.transform.DOScale(Vector3.one, 0.2f).SetEase(Ease.OutBack);
         Debug.Log("Encouragement panel waited for skip button scale in");

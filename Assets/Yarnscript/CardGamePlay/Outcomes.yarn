@@ -6,6 +6,7 @@ title: PostGameplay
 <<declare $targetScore = 0>>
 <<declare $wicketsLost = 0>>
 <<declare $gameResult = "">> // "won", "lost_wickets", "lost_runs"
+<<declare $initialScore = 0 as Number>>
 
 // Check which gameplay based on gameplay number
 <<if $gameplayNumber == 0>>
@@ -54,12 +55,12 @@ title: Gameplay0Result
 
 title: Gameplay1Result
 ---
-// Gameplay 1: Batting first with 12 balls
-<<if $finalScore < 5>>
+// Gameplay 1: Batting first with 12 balls -> starting score 65 
+<<if ($finalScore - $initialScore) < 5>>
     <<jump scene_7>>
-<<elseif $finalScore <= 11>>
+<<elseif ($finalScore - $initialScore) <= 11>>
     <<jump scene_8>>
-<<elseif $finalScore <= 24>>
+<<elseif ($finalScore - $initialScore) <= 24>>
     <<jump scene_9>>
 <<else>>
     <<jump scene_10>>
@@ -68,12 +69,12 @@ title: Gameplay1Result
 
 title: Gameplay2Result
 ---
-// Gameplay 2: Batting first with 24 balls
-<<if $finalScore < 12>>
+// Gameplay 2: Batting first with 24 balls -> starting score 58
+<<if ($finalScore - $initialScore) < 12 >>
     <<jump scene_12>>
-<<elseif $finalScore < 23>>
+<<elseif ($finalScore - $initialScore) < 23>>
     <<jump scene_13>>
-<<elseif $finalScore < 47>>
+<<elseif ($finalScore - $initialScore) < 47>>
     <<jump scene_14>>
 <<else>>
     <<jump scene_15>>
@@ -82,8 +83,8 @@ title: Gameplay2Result
 
 title: Gameplay3Result
 ---
-// Gameplay 3: Chasing 15 runs in 12 balls
-<<if $finalScore < 15>>
+// Gameplay 3: Chasing 15 runs in 12 balls-> starting score 59
+<<if ($finalScore - $initialScore) < 15>>
     <<jump scene_17>>
 <<else>>
     <<jump scene_18>>
@@ -92,8 +93,8 @@ title: Gameplay3Result
 
 title: Gameplay4Result
 ---
-// Gameplay 4: Batting first with 60 balls
-<<if $finalScore < 90>>
+// Gameplay 4: Batting first with 60 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 90>>
     <<jump scene_51>>
 <<else>>
     <<jump scene_52>>
@@ -102,8 +103,8 @@ title: Gameplay4Result
 
 title: Gameplay5Result
 ---
-// Gameplay 5: Batting first with 60 balls
-<<if $finalScore < 110>>
+// Gameplay 5: Batting first with 60 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 110>>
     <<jump scene_55>>
 <<else>>
     <<jump scene_56>>
@@ -112,8 +113,8 @@ title: Gameplay5Result
 
 title: Gameplay6Result
 ---
-// Gameplay 6: Chasing 120 runs in 60 balls
-<<if $finalScore < 120>>
+// Gameplay 6: Chasing 120 runs in 60 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 120>>
     <<jump scene_59>>
 <<else>>
     <<jump scene_60>>
@@ -122,8 +123,8 @@ title: Gameplay6Result
 
 title: Gameplay7Result
 ---
-// Gameplay 7: Batting first with 90 balls
-<<if $finalScore < 150>>
+// Gameplay 7: Batting first with 90 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 150>>
     <<jump scene_115>>
 <<else>>
     <<jump scene_116>>
@@ -132,8 +133,8 @@ title: Gameplay7Result
 
 title: Gameplay8Result
 ---
-// Gameplay 8: Chasing 30 runs in 30 balls
-<<if $finalScore < 30>>
+// Gameplay 8: Chasing 90 runs in 90 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 90>>
     <<jump scene_119>>
 <<else>>
     <<jump scene_120>>
@@ -142,8 +143,8 @@ title: Gameplay8Result
 
 title: Gameplay9Result
 ---
-// Gameplay 9: Chasing 185 runs in 90 balls
-<<if $finalScore < 185>>
+// Gameplay 9: Chasing 185 runs in 90 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 185>>
     <<jump scene_124>>
 <<else>>
     <<jump scene_125>>
@@ -152,8 +153,8 @@ title: Gameplay9Result
 
 title: Gameplay12Result
 ---
-// Gameplay 12: Batting first with 15 balls, target 25 runs
-<<if $finalScore < 25>>
+// Gameplay 12: Batting first with 15 balls, target 25 runs -> starting score 75
+<<if ($finalScore - $initialScore) < 25>>
     <<jump scene_138>>
 <<else>>
     <<jump scene_139>>
@@ -162,8 +163,8 @@ title: Gameplay12Result
 
 title: Gameplay13Result
 ---
-// Gameplay 13: Chasing 40 runs in 20 balls
-<<if $finalScore < 40>>
+// Gameplay 13: Chasing 40 runs in 20 balls -> starting score 63
+<<if ($finalScore - $initialScore) < 40>>
     <<jump scene_140>>
 <<else>>
     <<jump scene_141>>
@@ -172,8 +173,8 @@ title: Gameplay13Result
 
 title: Gameplay14Result
 ---
-// Gameplay 14: Chasing 35 runs in 15 balls
-<<if $finalScore < 35>>
+// Gameplay 14: Chasing 35 runs in 15 balls -> starting score 79
+<<if ($finalScore - $initialScore) < 35>>
     <<jump scene_142>>
 <<else>>
     <<jump scene_143>>
@@ -182,8 +183,8 @@ title: Gameplay14Result
 
 title: Gameplay15Result
 ---
-// Gameplay 15: Batting first with 40 balls, target 80 runs
-<<if $finalScore < 80>>
+// Gameplay 15: Batting first with 40 balls, target 80 runs -> starting score 0
+<<if ($finalScore - $initialScore) < 80>>
     <<jump scene_144>>
 <<else>>
     <<jump scene_145>>
@@ -192,8 +193,8 @@ title: Gameplay15Result
 
 title: Gameplay16Result
 ---
-// Gameplay 16: Chasing 110 runs in 50 balls
-<<if $finalScore < 110>>
+// Gameplay 16: Chasing 110 runs in 50 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 110>>
     <<jump scene_146>>
 <<else>>
     <<jump scene_147>>
@@ -202,8 +203,8 @@ title: Gameplay16Result
 
 title: Gameplay17Result
 ---
-// Gameplay 17: Chasing 100 runs in 40 balls
-<<if $finalScore < 100>>
+// Gameplay 17: Chasing 100 runs in 40 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 100>>
     <<jump scene_148>>
 <<else>>
     <<jump scene_149>>

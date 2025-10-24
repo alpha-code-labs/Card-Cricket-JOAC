@@ -28,12 +28,13 @@ public class ScoreManager : MonoBehaviour
         currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         if (currentGameplayConfig != null)
         {
-            TargetScore = currentGameplayConfig.targetScore;
+            TargetScore = currentGameplayConfig.targetScore + currentGameplayConfig.initialScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
+            currentRuns = currentGameplayConfig.initialScore;
 
             Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
-            Debug.Log($"Batting First: {isBattingFirst}, Target: {TargetScore}, Balls: {MaxBalls}");
+            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
         }
 
         if (GameManager.instance != null)
@@ -302,9 +303,12 @@ public class ScoreManager : MonoBehaviour
             AnimateScoreIncrease(previousRuns, currentRuns);
             previousRuns = currentRuns;
         }
-        
+
         int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
-        UpdateBallsAndOvers(_currentTurn);
+
+        if (runs != -3)
+            UpdateBallsAndOvers(_currentTurn);
+            
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
@@ -313,13 +317,16 @@ public class ScoreManager : MonoBehaviour
         
         if (isBattingFirst)
         {
+            Debug.Log("updating score display text");
             totalRunsNeededText.text = "";
             scoreText.text = "Score: " + currentRuns.ToString();
         }
         else
         {
-            totalRunsNeededText.text = "/ " + TargetScore.ToString();
-            scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
+            Debug.Log("updating score display text while chasing to " + currentRuns);
+            totalRunsNeededText.text = "/ " + TargetScore;
+            scoreText.text = "Score: " + currentRuns + " / " + TargetScore.ToString();
+            Canvas.ForceUpdateCanvases();
 
             // Update chase display after scoring
             int runsNeeded = TargetScore - currentRuns;
@@ -408,8 +415,9 @@ public class ScoreManager : MonoBehaviour
         storage.SetValue("$targetScore", TargetScore);
         storage.SetValue("$wicketsLost", initialWickets - wickets);
         storage.SetValue("$gameResult", result);
+        storage.SetValue("$initialScore", currentGameplayConfig.initialScore);
         
-        Debug.Log($"Yarn Variables Set - Gameplay Number: {currentGameplayConfig.gameplayNumber}, Score: {currentRuns}, " +
+        Debug.Log($"Yarn Variables Set - Gameplay Number: {currentGameplayConfig.gameplayNumber}, Score: {currentRuns}, initialScore: {currentGameplayConfig.initialScore}, " +
                   $"Target: {TargetScore}, Wickets Lost: {initialWickets - wickets}, Result: {result}");
     }
     
@@ -561,15 +569,20 @@ public class ScoreManager : MonoBehaviour
         // Update UI based on game mode
         if (isBattingFirst)
         {
+
             totalRunsNeededText.text = "";
+            currentRunsText.text = currentRuns.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
+            remainingWicketsText.text = wickets.ToString();
         }
         else
         {
+            currentRunsText.text = currentRuns.ToString();
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
+            remainingWicketsText.text = wickets.ToString();
         }
-
+        
         UpdateScore(0);
         UpdateBallsAndOvers(0);
 

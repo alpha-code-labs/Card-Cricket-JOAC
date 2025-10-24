@@ -29,6 +29,7 @@ public class CardsPoolManager : MonoBehaviour
     private int maxRedraws; // Maximum redraws per game
     private int redraws = 0; // Track number of redraws used
     private bool cardsInteractable = true;
+    private GameplayConfig currentGameplayConfig;
 
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
@@ -50,6 +51,7 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
+
         DateRecord dateRecord = NewDayManager.currentDateRecord;
         if (GameManager.instance != null)
         {
@@ -67,6 +69,7 @@ public class CardsPoolManager : MonoBehaviour
 
     void Start()
     {
+        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         gameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         StartCoroutine(WaitAndStartTurn());
     }
@@ -87,7 +90,8 @@ public class CardsPoolManager : MonoBehaviour
     public void StartTurn(bool incrementBalls = true)
     {
         // Check if game is already over
-        bool isBattingFirst = ScoreManager.Instance.TargetScore == 0;
+        bool isBattingFirst = currentGameplayConfig.isBattingFirst;
+        Debug.Log("is batting first " + isBattingFirst);
         int currentScore = ScoreManager.Instance.currentRuns; // You'll need to make currentRuns public or add a getter
 
         // Check various game over conditions
@@ -113,8 +117,8 @@ public class CardsPoolManager : MonoBehaviour
             return;
         }
 
-        if (incrementBalls)
-            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        // if (incrementBalls)
+        //     ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
 
         if (ballerCard != null)
             Destroy(ballerCard);
@@ -153,8 +157,8 @@ public class CardsPoolManager : MonoBehaviour
         HandCards.Clear();
         CurrntTurn++;
         
-        if (CurrntTurn >= maxBallsToBall)
-            ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
+        // if (CurrntTurn >= maxBallsToBall)
+        //     ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
     }
     [ContextMenu("Draw Card")]
     void DrawCard()
