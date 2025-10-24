@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 [Serializable]
 public class BallerCardProps : MonoBehaviour
@@ -55,7 +56,14 @@ public class BallerCardProps : MonoBehaviour
             Debug.LogWarning("PitchConditionText is not assigned!");
 
         if (LineOfBallText != null)
-            LineOfBallText.text = CamelCaseToTitleCase(ballThrow.ballLine.ToString());
+        {
+            string line = CamelCaseToTitleCase(ballThrow.ballLine.ToString());
+            //Downthe Leg special case--- handling seperately
+            line = line.Replace("Downthe", "Down the");
+            LineOfBallText.text = line;
+            
+        }
+            
         else
             Debug.LogWarning("LineOfBallText is not assigned!");
 
