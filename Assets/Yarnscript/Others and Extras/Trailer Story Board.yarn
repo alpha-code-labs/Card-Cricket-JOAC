@@ -42,7 +42,7 @@ Ramu: Quiet feet. Quick mind. Settle first.
 // 00:00:26,000 --> 00:00:30,000
 <<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 3 – Hands>>
-<<SetCharacterExpression Ramu Neutral>>
+<<SetCharacterExpression Ramu Serious>>
 Ramu: Gentle hands. Let the bat talk.
 // 00:00:30,000 --> 00:00:35,000
 <<SetBGSprite KohliwadaGround>>
@@ -52,7 +52,7 @@ Ramu: Wait for your moment. Poor or rich — timing's everything.
 // 00:00:35,000 --> 00:00:40,000
 <<SetBGSprite KohliwadaGround>>
 //<<lowerthird Lesson 5 – Temper>>
-<<SetCharacterExpression Ramu Neutral>>
+<<SetCharacterExpression Ramu Serious>>
 Ramu: Miss once, breathe. Miss twice… breathe longer.
 <<SetCharacterExpression Raju Smiling>>
 // Tone note: Broad "Smiling" can skew too bright. Keep it grateful and grounded.
