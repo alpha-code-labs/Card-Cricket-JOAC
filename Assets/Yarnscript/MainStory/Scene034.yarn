@@ -9,7 +9,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Finals captain. They made 35 in 15 balls.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Same target same balls. It's like a mirror match.
 
 <<SetCharacterExpression "Ramu" "Serious">>

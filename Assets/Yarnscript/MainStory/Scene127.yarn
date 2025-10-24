@@ -46,7 +46,7 @@ Ramu: I know the deal—ninety, and we heard it with both ears.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: You heard it, but did you taste it? Numbers have a flavor of sweat and ink—he can soak in applause for ten minutes, then he soaks in ink.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Baba, I'll bring the ink home—promise.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -55,7 +55,7 @@ Kamla: Promises are lighter than notebooks, beta—sit and open the page with th
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Before we start—one minute for what your hands did well today, say it once, then we lock the ground outside and invite the pages in.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I waited and didn't try to win everything in one breath.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -73,7 +73,7 @@ Kamla: Yes—let it carry the weight of tomorrow's work, and if it bends, it was
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Raju, today the ground said your name and day after tomorrow the paper will ask it in a hundred little ways. Write it with the same hand—neat, patient, no swagger.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I don't know how to swagger, Baba.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -115,7 +115,7 @@ Ramu: Last instruction for tonight, captain—when you close this notebook, clos
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Day after tomorrow, the paper will ask if you can keep a promise—answer "yes" with numbers. Bring me ninety percent and the road to that academy opens; if not, it doesn't—no anger, no tears, clear skies, clear rules.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Understood—I accept.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>

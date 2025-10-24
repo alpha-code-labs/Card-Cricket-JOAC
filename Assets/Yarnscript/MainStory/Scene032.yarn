@@ -11,7 +11,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Semifinals. We're chasing 40 in 20 balls.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Two runs a ball. Need to start strong.
 
 <<SetCharacterExpression "Ramu" "Serious">>

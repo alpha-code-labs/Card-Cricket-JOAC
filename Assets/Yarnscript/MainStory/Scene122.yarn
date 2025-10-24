@@ -21,7 +21,7 @@ CoachDev: Focus my boy—play the ball on its merit, don't go swinging.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Lets go champion.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, I am ready.
 
 <<HideAllCharacters>>

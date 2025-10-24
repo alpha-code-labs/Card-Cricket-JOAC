@@ -9,25 +9,25 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Captain.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Bhai? Your turn?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Our turn—Sunil broke his ankle, we need a substitute.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: A… substitute? Me?
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: You—I asked, they said yes, today you belong.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm eight.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: And you're Raju—eight is a number, heart is a decision.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Face up, chin up.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -45,7 +45,7 @@ Raju: What do I do first?
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: First, be seen—walk to the captain, say "Substitute reporting," and let the ground learn your name.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Raju—reporting.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -63,7 +63,7 @@ Raju: I'm ready.
 <<SetCharacterExpression "Ramu" "Proud">>
 Ramu: Then go—touch the ground, touch your heart, and let the evening remember you.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Raju—reporting.
 
 <<SetCharacterExpression "Ramu" "Neutral">>

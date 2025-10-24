@@ -13,13 +13,13 @@ position: 0,0
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Don't rub the collar, beta—it will start shining like tin. Hair behind the ear now, lie down.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Is it sticking up again?
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Like a stubborn blade of grass—there, good boy.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Baba… what time will they pin the sheets?
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
@@ -28,7 +28,7 @@ ShivPrasad: When the peon finishes his tea and finds the drawing pin—we'll rea
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Drink two sips, not more—too much water makes numbers blur.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: My hands are sweaty.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
@@ -43,7 +43,7 @@ Kamla: He studied till the fan scolded him, slept without stories, and woke befo
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: If your heart starts running when we see the crowd, breathe like the drum—in, hold, out—and look at the rusty nail on the old notice board, that's our anchor.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: In… hold… out.
 
 <<SetCharacterExpression "ShivPrasad" "Smiling">>
@@ -52,7 +52,7 @@ ShivPrasad: Anchor won't change the tide, but it keeps the boat from lying.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: True. Listen, captain—whatever the paper says, you walk the same, straight without running or drooping. If it's good we thank it and go home; if not, we learn where the holes are and fill them—no big face, no small face.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Will you stand near me?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
