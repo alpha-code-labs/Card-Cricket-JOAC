@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour
     private bool isBattingFirst;
     private int initialWickets;
     public ParticleSystem fireworkEffect;
+    public ParticleSystem fireworkEffect2;
 
 
     void Awake()
@@ -55,6 +56,7 @@ public class ScoreManager : MonoBehaviour
         if (fireworkEffect != null)
         {
             fireworkEffect.Play();
+            fireworkEffect2.Play();
         }
     }
     public int currentRuns = 0;
