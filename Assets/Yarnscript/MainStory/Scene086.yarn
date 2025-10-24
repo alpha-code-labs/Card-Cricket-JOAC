@@ -12,7 +12,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: School league tournament, different class—we bat first, need 80 from 40 balls.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Two runs a ball throughout?
 
 <<SetCharacterExpression "Ramu" "Serious">>

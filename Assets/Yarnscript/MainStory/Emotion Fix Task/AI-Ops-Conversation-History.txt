@@ -307,14 +307,14 @@
        57 +  <<SetCharacterExpression "Ramu" "Confident">>
        58    Ramu: Good. Fear is proof you're at the door. Courage is turning the handle. I'm right here. When you look up, you'll find me.
        59
-       60    <<SetCharacterExpression "Raju" "Serious">>
+       60    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Update(Scene005.yarn)
   ⎿  Updated Scene005.yarn with 2 additions and 2 removals
        57    <<SetCharacterExpression "Ramu" "Confident">>
        58    Ramu: Good. Fear is proof you're at the door. Courage is turning the handle. I'm right here. When you look up, you'll find me.
        59
-       60 -  <<SetCharacterExpression "Raju" "Serious">>
+       60 -  <<SetCharacterExpression "Raju" "Determined">>
        60 +  <<SetCharacterExpression "Raju" "Determined">>
        61    Raju: I'm ready.
        62
@@ -322,7 +322,7 @@
        63 +  <<SetCharacterExpression "Ramu" "Proud">>
        64    Ramu: Then go. Touch the ground with your hand, touch your heart, and step in. Let the evening remember you.
        65
-       66    <<SetCharacterExpression "Raju" "Serious">>
+       66    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Let me continue with the remaining files in batch 1. Reading Scene006-010:
 
@@ -791,7 +791,7 @@
        30    <<SetCharacterExpression "Ramu" "Neutral">>
        31    Ramu: Courage—standing next to fear till it gets bored. You'll do hard things even with a shaking voice.
        32
-       33 -  <<SetCharacterExpression "Raju" "Serious">>
+       33 -  <<SetCharacterExpression "Raju" "Determined">>
        33 +  <<SetCharacterExpression "Raju" "Curious">>
        34    Raju: So courage is… practice for my heartbeat?
        35
@@ -806,7 +806,7 @@
        81    <<SetCharacterExpression "Ramu" "Neutral">>
        82    Ramu: All of this will help you in your batting Raju. All of this will get you what you want when you bat. You will find out soon enough. Go for it.
        83
-       84 -  <<SetCharacterExpression "Raju" "Serious">>
+       84 -  <<SetCharacterExpression "Raju" "Determined">>
        84 +  <<SetCharacterExpression "Raju" "Determined">>
        85    Raju: Then I'm going. Walk like work.
        86
@@ -840,7 +840,7 @@
        17    <<SetCharacterExpression "Ramu" "Serious">>
        18    Ramu: Get 25 from 15 balls. Quick singles won't work. You'll need boundaries.
        19
-       20 -  <<SetCharacterExpression "Raju" "Serious">>
+       20 -  <<SetCharacterExpression "Raju" "Determined">>
        20 +  <<SetCharacterExpression "Raju" "Determined">>
        21    Raju: That's aggressive batting.
        22
@@ -870,7 +870,7 @@
        17    <<SetCharacterExpression "Ramu" "Serious">>
        18    Ramu: Exactly. No settling in. Attack from ball one. They set this target thinking we can't chase it.
        19
-       20 -  <<SetCharacterExpression "Raju" "Serious">>
+       20 -  <<SetCharacterExpression "Raju" "Determined">>
        20 +  <<SetCharacterExpression "Raju" "Determined">>
        21    Raju: Let's prove them wrong.
        22
@@ -929,7 +929,7 @@
        13    Ramu: It's the Quarterfinals captain. We are batting first.. You are opening. 10 overs. Anything below 90 runs is a problem with the opposition having some very good batsmen. Are you up for
              it?
        14
-       15 -  <<SetCharacterExpression "Raju" "Serious">>
+       15 -  <<SetCharacterExpression "Raju" "Determined">>
        15 +  <<SetCharacterExpression "Raju" "Determined">>
        16    Raju: I am all in. Completely focussed. Ready to roar.
        17
@@ -957,7 +957,7 @@
        31    <<SetCharacterExpression "Ramu" "Neutral">>
        32    Ramu: Exactly. Second—eyes on you that weren't here before. See near the scorers' desk? Green umbrella, clipboard, cap pulled low?
        33
-       34 -  <<SetCharacterExpression "Raju" "Serious">>
+       34 -  <<SetCharacterExpression "Raju" "Determined">>
        34 +  <<SetCharacterExpression "Raju" "Anxious">>
        35    Raju: Coach Dev.
        36
@@ -965,7 +965,7 @@
        37 +  <<SetCharacterExpression "Ramu" "Confident">>
        38    Ramu: He'll pretend he's counting pigeons. He's counting how you carry yourself when the ground tries to carry you away. No showing off. No shrinking. Walk like work.
        39
-       40 -  <<SetCharacterExpression "Raju" "Serious">>
+       40 -  <<SetCharacterExpression "Raju" "Determined">>
        40 +  <<SetCharacterExpression "Raju" "Determined">>
        41    Raju: Walk like work. Got it.
        42
@@ -1219,7 +1219,7 @@
        24 +  <<SetCharacterExpression "Ramu" "Confident">>
        25    Ramu: Good. Count your breath the same way—twice, before anything important. And remember: prize money is a reason, not a target. We play to our habits.
        26
-       27    <<SetCharacterExpression "Raju" "Serious">>
+       27    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Update(Scene051.yarn)
   ⎿  Updated Scene051.yarn with 1 addition and 1 removal
@@ -1253,7 +1253,7 @@
        13    Ramu: It's the Semifinals today captain. We are batting first. You are opening. 10 overs. Anything below 110 runs is a problem with the opposition having some very good batsmen. Are you up
             for it?
        14
-       15 -  <<SetCharacterExpression "Raju" "Serious">>
+       15 -  <<SetCharacterExpression "Raju" "Determined">>
        15 +  <<SetCharacterExpression "Raju" "Determined">>
        16    Raju: I am all in. Completely focussed. Ready to roar.
        17
@@ -1312,7 +1312,7 @@
        13    <<SetCharacterExpression "Ramu" "Neutral">>
        14    Ramu: This is it captain. We are chasing. We need to get to 125 in 10 overs. Our bowlers have been battered and bruised. We need to return the favor Are you up for it?
        15
-       16 -  <<SetCharacterExpression "Raju" "Serious">>
+       16 -  <<SetCharacterExpression "Raju" "Determined">>
        16 +  <<SetCharacterExpression "Raju" "Determined">>
        17    Raju: I am all in. Completely focussed. Ready to roar.
        18
@@ -1610,7 +1610,7 @@
        17    <<SetCharacterExpression "Ramu" "Serious">>
        18    Ramu: That tall boy from church lane is bowling. Remember he's fast but straight. Use the pace.
        19
-       20 -  <<SetCharacterExpression "Raju" "Serious">>
+       20 -  <<SetCharacterExpression "Raju" "Determined">>
        20 +  <<SetCharacterExpression "Raju" "Determined">>
        21    Raju: I'll show them what dawn practice builds.
        22
@@ -1654,7 +1654,7 @@
        11    <<SetCharacterExpression "Ramu" "Serious">>
        12    Ramu: Finals. They posted 100 in 40 balls. Tough ask.
        13
-       14 -  <<SetCharacterExpression "Raju" "Serious">>
+       14 -  <<SetCharacterExpression "Raju" "Determined">>
        14 +  <<SetCharacterExpression "Raju" "Tired">>
        15    Raju: Two and a half runs per ball. I'm tired but ready.
        16
@@ -1669,14 +1669,14 @@
        17 +  <<SetCharacterExpression "Ramu" "Confident">>
        18    Ramu: This is what we trained for. When body is tired technique takes over. Trust your basics.
        19
-       20    <<SetCharacterExpression "Raju" "Serious">>
+       20    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Update(Scene090.yarn)
   ⎿  Updated Scene090.yarn with 1 addition and 1 removal
        23    <<SetCharacterExpression "Ramu" "Serious">>
        24    Ramu: Let him. Your coach is the handpump at dawn. Show them what that teaches.
        25
-       26 -  <<SetCharacterExpression "Raju" "Serious">>
+       26 -  <<SetCharacterExpression "Raju" "Determined">>
        26 +  <<SetCharacterExpression "Raju" "Determined">>
        27    Raju: Face up chin up.
        28
@@ -1715,7 +1715,7 @@
        14    Ramu: It's the Quarterfinals captain. We are batting first. You are opening. 15 overs. Anything below 150 runs is a problem with the opposition having some very good batsmen. Are you up for
              it?
        15
-       16 -  <<SetCharacterExpression "Raju" "Serious">>
+       16 -  <<SetCharacterExpression "Raju" "Determined">>
        16 +  <<SetCharacterExpression "Raju" "Determined">>
        17    Raju: I am all in. Completely focussed. Ready to roar.
        18
@@ -1738,7 +1738,7 @@
        14    Ramu: It's the Semifinals today captain. We are batting first. You are opening. Conditions are hostile. We need to have a steady start. You need to get 30 runs in the first 5 overs. A
             steady start is essential. Hang in there. Watch the swing and the seam.
        15
-       16 -  <<SetCharacterExpression "Raju" "Serious">>
+       16 -  <<SetCharacterExpression "Raju" "Determined">>
        16 +  <<SetCharacterExpression "Raju" "Determined">>
        17    Raju: I am all in. Completely focussed. Ready to roar.
        18
@@ -1799,7 +1799,7 @@
        13    Ramu: This is it captain. We are chasing. We need to get to 185 in 15 overs. Our bowlers have been crushed. Team spirit is low. Nobody is giving us a chance. We need to go all guns blazing.
              You ready?
        14
-       15 -  <<SetCharacterExpression "Raju" "Serious">>
+       15 -  <<SetCharacterExpression "Raju" "Determined">>
        15 +  <<SetCharacterExpression "Raju" "Determined">>
        16    Raju: Its now or never. Completely focussed. Ready to roar.
        17
@@ -1821,7 +1821,7 @@
        28    <<SetCharacterExpression "CoachDev" "Smiling">>
        29    CoachDev: Let him enjoy today. Let him relax.
        30
-       31 -  <<SetCharacterExpression "Raju" "Serious">>
+       31 -  <<SetCharacterExpression "Raju" "Determined">>
        31 +  <<SetCharacterExpression "Raju" "Determined">>
        32    Raju: No sir. I got to rush him to study. Time is vital. Need to prepare for my weak spots.
        33
@@ -1976,7 +1976,7 @@
        10    <<SetCharacterExpression "Ramu" "Excited">>
        11    Ramu: 110 runs! That tall boy from church lane couldn't believe it.
        12
-       13 -  <<SetCharacterExpression "Raju" "Serious">>
+       13 -  <<SetCharacterExpression "Raju" "Determined">>
        13 +  <<SetCharacterExpression "Raju" "Tired">>
        14    Raju: My arms are tired but my head is clear.
        15
@@ -2255,7 +2255,7 @@
        15    <<SetCharacterExpression "Ramu" "Smiling">>
        16    Ramu: That's my boy. Stay humble and grounded. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
        17
-       18 -  <<SetCharacterExpression "Raju" "Serious">>
+       18 -  <<SetCharacterExpression "Raju" "Determined">>
        18 +  <<SetCharacterExpression "Raju" "Confident">>
        19    Raju: Yes I am aware. I am completely switched on. I can do this.
        20
@@ -2266,7 +2266,7 @@
        15    <<SetCharacterExpression "Ramu" "Smiling">>
        16    Ramu: That's my boy. Always stay hungry. Always be greedy when it comes to scoring runs. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
        17
-       18 -  <<SetCharacterExpression "Raju" "Serious">>
+       18 -  <<SetCharacterExpression "Raju" "Determined">>
        18 +  <<SetCharacterExpression "Raju" "Confident">>
        19    Raju: Yes I am aware. I am completely switched on. I can do this.
        20
@@ -2277,7 +2277,7 @@
        15    <<SetCharacterExpression "Ramu" "Smiling">>
        16    Ramu: That's my boy. Stay humble and grounded. Tomorrow is another day, a fresh start. A fresh challenge. Be in the groove.
        17
-       18 -  <<SetCharacterExpression "Raju" "Serious">>
+       18 -  <<SetCharacterExpression "Raju" "Determined">>
        18 +  <<SetCharacterExpression "Raju" "Relieved">>
        19    Raju: Thank you bhai. Thank you for this chance. I really appreciate it.
        20
@@ -2292,7 +2292,7 @@
        13 +  <<SetCharacterExpression "Ramu" "Curious">>
        14    Ramu: Time to go. You're nervous?
        15
-       16    <<SetCharacterExpression "Raju" "Serious">>
+       16    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Update(Scene131.yarn)
   ⎿  Updated Scene131.yarn with 1 addition and 1 removal
@@ -2303,7 +2303,7 @@
        13 +  <<SetCharacterExpression "ShivPrasad" "Curious">>
        14    ShivPrasad: How did it go?
        15
-       16    <<SetCharacterExpression "Raju" "Serious">>
+       16    <<SetCharacterExpression "Raju" "Determined">>
 
 ● Perfect! Now let me update the todo list and then update the AI-Prompt.txt checklist:
 

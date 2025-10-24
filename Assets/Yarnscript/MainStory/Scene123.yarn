@@ -10,31 +10,31 @@ position: 0,0
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Slum boy, your luck has maxed out and runs out now.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I wish you the best of luck too.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: The poor can only come so far slum boy—this is your maximum. From this point onwards, we rich boys rule.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I don't want to comment on that—I'll let my bat do the talking.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Your bat is broken just like your life, your shoes are embarrassing, your hair is unruly, and you smell like garbage. Don't you dare dream about rubbing shoulders with us.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: 5 coins.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: What?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: 5 coins.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Yes thats what your life is worth. Just 5 coins.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: 5 coins.
 
 <<SetCharacterExpression "Aryan" "Angry">>

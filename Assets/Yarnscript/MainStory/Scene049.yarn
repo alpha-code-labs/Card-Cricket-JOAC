@@ -24,37 +24,37 @@ Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it
 <<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Good. Count your breath the same way—twice before anything important, and remember: prize money is a reason, not a target.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Eyes, feet, hands, timing, temper—five coins in the pocket.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Exactly. You're the youngest here, and some will test you—let them, because people laugh before they clap.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: If they bowl words at me, I'll leave those outside off.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Leave well, and if older boys glare when you speak, lower your voice and raise your game—pride is loud, respect is heard.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll be a good teammate first, a good anything else after.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: That's the order. The captain will watch how you walk before he watches how you play—head up, shoulders easy.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Raju reporting.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: For us. Stakes twist the wind, but when it pushes, don't push back—lean with it, then choose your moment.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: The bat is lighter now.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: That's you getting stronger. I retaped the toe last night—brick-sanded, face up when it rests?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Always.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -75,19 +75,19 @@ Ramu: First we fix our hearts before the toss, tarp will follow.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: I'm not asking you to be special, just steady—special happens to steady boys when the world is looking elsewhere.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Steady is my job.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Right. When pressure knocks, open the door and say, "Sit, watch me work."
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thank you.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Thank me by showing up like you did at dawn for fourteen months—make them see a teammate, not a kid.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: If someone asks how old I am?
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -96,7 +96,7 @@ Ramu: Say, "Old enough to keep my promises."
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: You'll wait near the scorers' table, face up, chin up—and we don't let poverty steal our manners.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: We don't.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -105,7 +105,7 @@ Ramu: Whatever happens, we walk out and we walk back the same way—heads steady
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Go on, Captain. Make the ground remember you without making a noise about it.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Reporting.
 
 <<HideAllCharacters>>

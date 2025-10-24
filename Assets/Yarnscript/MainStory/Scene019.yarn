@@ -14,22 +14,22 @@ Ramu: Maa… Baba… can I talk for two minutes straight?
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Two minutes from you becomes twenty, but sit beta.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "BaseSprite">>
 ShivPrasad: If it's about the rice, keep for morning. My head is heavy.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Proud">>
 Ramu: It's about Raju. I think we have a gem in the house.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Every mother thinks so.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: I'm not saying it like a brother, but as someone who watches the ground breathe - he sees the ball early, listens, shares, and doesn't shrink under pressure.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Nerves don't feed stomachs.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Sad">>
 Ramu: True, but I'm asking for time and routine - morning practice near the handpump, school on time, chores done, then study. If his marks fall, I'll lock this bat myself.
 
 <<SetCharacterExpression "Kamla" "Worried">>
@@ -41,19 +41,19 @@ Ramu: People laugh before they clap, Maa - let them finish both. We'll borrow di
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: What will it cost?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: One steel bottle of water, chalk for the crease, and my sleep - I'll take an extra hour at the tire repair shop to buy second-hand pads later.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: And studies? His teacher already said his handwriting runs like a train.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Then we slow the train - half hour every night with poem, dictation, and tables. If he misses, he misses the ground next day.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Hope is a dangerous thing, Ramu.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: False hope is, but this is measured - three months of routine and if he lights up the lane, we talk to Masterji about district trials.
 
 <<SetCharacterExpression "Kamla" "Worried">>
@@ -71,13 +71,13 @@ Ramu: Because our lane doesn't have one, so I'll be it while keeping my marks de
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: What if he gets hurt?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Then we learn why and fix it - we don't let poverty steal our manners or our safety.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: And what do you want from me?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Anxious">>
 Ramu: Permission, and when neighbors scoff, say "He's practicing habits, not chasing cricket."
 
 <<SetCharacterExpression "Kamla" "Curious">>
@@ -89,13 +89,13 @@ Ramu: I see a boy who hears the ground, waits when waiting is heavy, and smiles 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
 ShivPrasad: Dreams make the room feel bigger, huh?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Only if we open the window a little - dawn to the handpump, I'll chalk the line and he'll carry the water.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: I say three months - no money wasted, marks and manners steady, or game over.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Relieved">>
 Ramu: Deal. I'll keep score on both.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>

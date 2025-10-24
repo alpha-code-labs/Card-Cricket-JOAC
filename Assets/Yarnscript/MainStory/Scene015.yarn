@@ -15,7 +15,7 @@ Raju: I guess I was just lucky.
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: That's my boy - stay humble and grounded. Tomorrow is another day with a fresh challenge, so be in the groove.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes I am aware. I am completely switched on. I can do this.
 
 <<HideAllCharacters>>

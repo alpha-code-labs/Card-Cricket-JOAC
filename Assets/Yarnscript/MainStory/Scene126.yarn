@@ -10,19 +10,19 @@ position: 0,0
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: Well played.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: you have some good shots.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
 <<SetCharacterExpression "Aryan" "Angry">>
 Aryan: You also have a steady hand. I am surprised.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
@@ -46,7 +46,7 @@ Aryan: Older brother to the rescue—slum boy can't fight his own battles.
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Yes, I am his shadow and he is my source—we thank you for the compliments.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
 <<SetCharacterExpression "Aryan" "Angry">>

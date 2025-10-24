@@ -15,7 +15,7 @@ Raju: I could have done better—I wanted to make more.
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: That's my boy—always stay hungry, always be greedy when it comes to scoring runs.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, I am completely switched on—I can do this.
 
 <<HideAllCharacters>>
