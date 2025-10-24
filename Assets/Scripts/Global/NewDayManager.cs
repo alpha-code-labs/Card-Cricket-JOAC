@@ -33,7 +33,7 @@ public class NewDayManager : MonoBehaviour
 
     IEnumerator StartEventWithTransition()
     {
-        AudioSFXManager.instance.PlayOneShotSFX(SFXType.HeartBeat);
+        // AudioSFXManager.instance.PlayOneShotSFX(SFXType.HeartBeat);
         string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
