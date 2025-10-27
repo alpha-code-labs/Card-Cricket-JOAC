@@ -11105,7 +11105,7 @@ MonoBehaviour:
   currentRuns: 0
   TargetScore: 15
   MaxBalls: 12
-  baseWickets: 2
+  baseWickets: 3
   scoreText: {fileID: 44926448}
   currentRunsText: {fileID: 1552231045}
   totalRunsNeededText: {fileID: 1121265624}
