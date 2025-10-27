@@ -57,7 +57,20 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         {
             if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
             {
+                Debug.Log($"Resrarting Current Node at: {currentNode}");
                 YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
+            }
+            else
+            {
+                Debug.LogError("DialogueRunner not assigned!");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
+            {
+                Debug.Log($"Ending Current Node at: {currentNode}");
+                YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("EndEvent");
             }
             else
             {
