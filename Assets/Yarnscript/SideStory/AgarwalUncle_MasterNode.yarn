@@ -916,7 +916,7 @@ AgarwalUncle: That attitude will take you far in life, beta.
 
 <<HideAllCharacters>>
 
-As the second day unfolds with expanded responsibilities, both recognize they're moving beyond experimentation into sustainable partnership.
+As the day unfolds with expanded responsibilities, both recognize they're moving beyond experimentation into sustainable partnership.
 
 <<set $AgarwalUncle_Day = 6>>
 <<EndEvent true>>
@@ -929,7 +929,7 @@ position: 767,58
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-With two successful days behind him, Raju approaches Agarwal Uncle about making their arrangement more formal and discussing what this experience has taught him.
+With a few successful days behind him, Raju approaches Agarwal Uncle about making their arrangement more formal and discussing what this experience has taught him.
 
 The store atmosphere reflects their comfortable working relationship. Today's conversation carries weight beyond immediate business concerns.
 
