@@ -998,7 +998,7 @@ As the seventh day's practice unfolds before an appreciative audience, their pri
 title: Ramu_Day8
 position: 526,-86
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
 
 For the eighth consecutive morning, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.

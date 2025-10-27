@@ -25,7 +25,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Sports academy visit

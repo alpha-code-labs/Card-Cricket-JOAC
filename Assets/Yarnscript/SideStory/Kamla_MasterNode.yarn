@@ -1074,7 +1074,7 @@ Validating Kamla's decision to sacrifice immediate needs for long-term potential
 title: Kamla_Day7
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 In the quiet moments before sleep, Raju chooses to spend time talking with his mother.
