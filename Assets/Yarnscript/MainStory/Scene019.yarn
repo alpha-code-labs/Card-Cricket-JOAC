@@ -17,13 +17,13 @@ Kamla: Two minutes from you becomes twenty, but sit beta.
 <<SetCharacterExpression "ShivPrasad" "BaseSprite">>
 ShivPrasad: If it's about the rice, keep for morning. My head is heavy.
 
-<<SetCharacterExpression "Ramu" "Proud">>
+<<SetCharacterExpression "Ramu" "Sad">>
 Ramu: It's about Raju. I think we have a gem in the house.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Every mother thinks so.
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Astonished">>
 Ramu: I'm not saying it like a brother, but as someone who watches the ground breathe - he sees the ball early, listens, shares, and doesn't shrink under pressure.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -35,25 +35,25 @@ Ramu: True, but I'm asking for time and routine - morning practice near the hand
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: People will talk. "Poor folks and big dreams."
 
-<<SetCharacterExpression "Ramu" "Confident">>
+<<SetCharacterExpression "Ramu" "Anxious">>
 Ramu: People laugh before they clap, Maa - let them finish both. We'll borrow discipline, not money, and it's free.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: What will it cost?
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Anxious">>
 Ramu: One steel bottle of water, chalk for the crease, and my sleep - I'll take an extra hour at the tire repair shop to buy second-hand pads later.
 
 <<SetCharacterExpression "Kamla" "Serious">>
 Kamla: And studies? His teacher already said his handwriting runs like a train.
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Anxious">>
 Ramu: Then we slow the train - half hour every night with poem, dictation, and tables. If he misses, he misses the ground next day.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: Hope is a dangerous thing, Ramu.
 
-<<SetCharacterExpression "Ramu" "Confident">>
+<<SetCharacterExpression "Ramu" "Astonished">>
 Ramu: False hope is, but this is measured - three months of routine and if he lights up the lane, we talk to Masterji about district trials.
 
 <<SetCharacterExpression "Kamla" "Worried">>
@@ -71,13 +71,13 @@ Ramu: Because our lane doesn't have one, so I'll be it while keeping my marks de
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: What if he gets hurt?
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Determined">>
 Ramu: Then we learn why and fix it - we don't let poverty steal our manners or our safety.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 ShivPrasad: And what do you want from me?
 
-<<SetCharacterExpression "Ramu" "Anxious">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Permission, and when neighbors scoff, say "He's practicing habits, not chasing cricket."
 
 <<SetCharacterExpression "Kamla" "Curious">>
