@@ -24,7 +24,7 @@ title: ShivPrasad_Day1
 tags: 
 position: -7,-175
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 The evening air carries the sounds of children playing in the lanes. Raju chooses to return home instead of joining them. His father will be back from work soon.
@@ -111,7 +111,7 @@ title: ShivPrasad_Day2
 tags: 
 position: -75,-229
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 Despite yesterday's difficult conversation, Raju stays home this evening. He sits in their small courtyard, practicing his cricket grip with an old bat.
@@ -210,7 +210,7 @@ title: ShivPrasad_Day3
 tags: 
 position: -75,-229
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 After two intense days, Raju approaches his father directly after dinner. Yesterday's discussion opened a small door of possibility.
@@ -473,7 +473,7 @@ title: ShivPrasad_Day4
 title: ShivPrasad_Day4a
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 Raju commits to intensive academic focus. Cricket time dramatically reduced to prove dedication to studies above all else.
@@ -512,7 +512,7 @@ Shiv Prasad: Perhaps you're more mature than I gave you credit for.
 title: ShivPrasad_Day4b
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 Raju demonstrates systematic integration of cricket-learned discipline with academic study. Showing how sports skills enhance learning.
@@ -547,7 +547,7 @@ Shiv Prasad: You're showing me something I hadn't considered.
 title: ShivPrasad_Day4c
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 Raju maintains cricket passion while channeling that energy and confidence into intensive academic preparation.
@@ -588,7 +588,7 @@ Shiv Prasad: Show me directed results.
 title: ShivPrasad_Day5
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
 Three days have passed since accepting his father's challenge. Raju comes home early from cricket practice to focus on studying. But as he sits with mathematics books, exhaustion weighs heavily.

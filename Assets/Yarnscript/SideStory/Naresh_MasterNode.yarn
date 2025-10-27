@@ -86,7 +86,7 @@ title: Naresh_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 2
@@ -169,7 +169,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 3
@@ -408,7 +408,7 @@ title: Naresh_Day4
 tags:
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 Encouraged by yesterday's positive response, Raju approaches during equipment maintenance time, hoping for deeper conversation about cricket techniques.
@@ -480,7 +480,7 @@ title: Naresh_Day5
 tags:
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 Building on yesterday's revelation, Raju visits during the quiet period, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
@@ -561,7 +561,7 @@ title: Naresh_Day6
 tags:
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)

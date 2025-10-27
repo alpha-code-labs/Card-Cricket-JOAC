@@ -24,7 +24,7 @@ title: Pinky_Day1
 tags: 
 position: -7,-175
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 Instead of heading straight home after school, Raju goes to the public school library. His father's emphasis on academic performance has made him realize he needs dedicated study time.
@@ -101,7 +101,7 @@ title: Pinky_Day2
 tags: 
 position: -75,-229
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 Encouraged by yesterday's productive session, Raju returns to the library after school. He carries not only his homework but additional practice problems.
@@ -185,7 +185,7 @@ title: Pinky_Day3
 tags: 
 position: -75,-229
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 After two successful library sessions, Raju continues this routine. His mathematical understanding has improved remarkably. Today he brings a small gesture of appreciation - a pencil set purchased with saved lunch money.
@@ -503,7 +503,7 @@ title: Pinky_Day4
 title: Pinky_Day4a
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 With midterm exams approaching rapidly, Raju continues his library study sessions despite feeling overwhelmed. He knows abandoning their partnership now would betray both their shared goals and Pinky's investment in his success.
@@ -583,7 +583,7 @@ As pre-exam pressure tests their partnership's resilience, their collaboration d
 title: Pinky_Day4b
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 With midterm exams approaching rapidly, Raju continues his library study sessions despite feeling overwhelmed. He knows abandoning their partnership now would betray both their shared goals and Pinky's investment in his success.
@@ -663,7 +663,7 @@ As their emotional support system proves its value under intense pressure, both 
 title: Pinky_Day4c
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 With midterm exams approaching rapidly, Raju continues his library study sessions despite feeling overwhelmed. He knows abandoning their partnership now would betray both their shared goals and Pinky's investment in his success.
@@ -736,7 +736,7 @@ As their collaborative partnership proves its effectiveness under examination pr
 
 title: Pinky_Day5
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
 On the final day before major exams begin, Raju spends time with Pinky for what might be their last collaborative study session. Rather than cramming additional material, he wants to use this session for review and mutual encouragement.

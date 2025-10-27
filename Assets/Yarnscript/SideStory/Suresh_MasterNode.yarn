@@ -21,7 +21,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Suresh>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Auto stand encounter
@@ -145,7 +145,7 @@ tags:
 position: -7,-50
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Suresh>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 2
@@ -425,7 +425,7 @@ tags:
 position: -7,75
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Suresh>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 3
@@ -573,7 +573,7 @@ tags:
 position: -7,200
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Suresh>>
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 4

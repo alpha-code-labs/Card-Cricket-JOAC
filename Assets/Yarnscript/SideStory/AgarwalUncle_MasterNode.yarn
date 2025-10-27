@@ -148,7 +148,7 @@ tags:
 position: 423,-115
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 <<HideAllCharacters>>
 
@@ -276,7 +276,7 @@ tags:
 position: -98,99
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 With Agarwal Uncle's question weighing on his mind, Raju returns during afternoon inventory period, ready to demonstrate how he might assist.
@@ -569,7 +569,7 @@ tags:
 position: 685,-46
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
@@ -658,7 +658,7 @@ tags:
 position: 375,142
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
@@ -747,7 +747,7 @@ tags:
 position: 374,-300
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
@@ -835,7 +835,7 @@ title: AgarwalUncle_Day5
 position: 20,-238
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 After successfully completing his first full day, Raju returns eager to build on yesterday's experience and continue proving his value.
@@ -926,7 +926,7 @@ title: AgarwalUncle_Day6
 position: 767,58
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
 With two successful days behind him, Raju approaches Agarwal Uncle about making their arrangement more formal and discussing what this experience has taught him.
