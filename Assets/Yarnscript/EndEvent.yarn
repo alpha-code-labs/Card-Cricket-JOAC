@@ -1,0 +1,19 @@
+﻿title: EndEvent
+---
+
+<<AutoAdvance true>>
+Ending Event after this Dialaouge
+<<AutoAdvance false>>
+-> Skip 1
+    <<IncreaseEvnetIndex 0>>
+-> Skip 2
+    <<IncreaseEvnetIndex 1>>
+-> Skip 3
+    <<IncreaseEvnetIndex 2>>
+-> End day
+    <<EndDay>>   
+
+<<StopBackgroundMusic>>
+<<HideAllCharacters>>
+<<EndEvent>>
+===
