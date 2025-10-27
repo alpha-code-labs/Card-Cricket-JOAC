@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6b2c8aedbe9294cae57c961502a6d0, type: 3}
   m_Name: OutComeCalculator
   m_EditorClassIdentifier: 
-  friendlyExcelFilePath: Data/CricketOutcomes_final.xlsx
-  hostileExcelFilePath: Data/CricketOutcomes_final.xlsx
+  friendlyExcelFilePath: Data/cricket_outcomes_v1.xlsx
+  hostileExcelFilePath: Data/cricket_outcomes_v1.xlsx
   friendlyOutcomeEntries:
   - typeOfBowler: 0
     side: 1
@@ -328,7 +328,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -643,7 +643,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -958,7 +958,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -3460,7 +3460,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -3784,7 +3784,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -4720,7 +4720,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -5044,7 +5044,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -5980,7 +5980,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -6304,7 +6304,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -6628,7 +6628,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -7888,7 +7888,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -8203,7 +8203,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -8518,7 +8518,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -8833,7 +8833,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -9148,7 +9148,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -9463,7 +9463,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -9778,7 +9778,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -10093,7 +10093,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -12280,7 +12280,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -12604,7 +12604,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -13540,7 +13540,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -13864,7 +13864,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -14800,7 +14800,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -15124,7 +15124,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -15448,7 +15448,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -16708,7 +16708,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -17023,7 +17023,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -17338,7 +17338,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -17653,7 +17653,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -17968,7 +17968,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -18283,7 +18283,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -18598,7 +18598,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -18913,7 +18913,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -21100,7 +21100,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -21424,7 +21424,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -22360,7 +22360,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -22684,7 +22684,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -23620,7 +23620,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -23944,7 +23944,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -24268,7 +24268,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -25528,7 +25528,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -25843,7 +25843,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -26158,7 +26158,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -26473,7 +26473,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -26788,7 +26788,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -27103,7 +27103,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -27418,7 +27418,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -27733,7 +27733,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -29920,7 +29920,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -30244,7 +30244,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -31180,7 +31180,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -31504,7 +31504,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -32440,7 +32440,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -32764,7 +32764,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -33088,7 +33088,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -34348,7 +34348,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -34663,7 +34663,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -34978,7 +34978,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -35293,7 +35293,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -35608,7 +35608,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -35923,7 +35923,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -36238,7 +36238,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -36553,7 +36553,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -38740,7 +38740,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -39064,7 +39064,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -40000,7 +40000,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -40324,7 +40324,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -41260,7 +41260,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -41584,7 +41584,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -41908,7 +41908,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -43168,7 +43168,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -43483,7 +43483,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -43798,7 +43798,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -44113,7 +44113,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -44428,7 +44428,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -44743,7 +44743,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -45058,7 +45058,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -45373,7 +45373,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -47560,7 +47560,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -47884,7 +47884,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -48820,7 +48820,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -49144,7 +49144,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -50080,7 +50080,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -50404,7 +50404,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -50728,7 +50728,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -51988,7 +51988,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -52303,7 +52303,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -52618,7 +52618,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -52933,7 +52933,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -53248,7 +53248,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -53563,7 +53563,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -53878,7 +53878,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -54193,7 +54193,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -56380,7 +56380,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -56704,7 +56704,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -57640,7 +57640,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -57964,7 +57964,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -58900,7 +58900,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -59224,7 +59224,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -59548,7 +59548,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -60808,7 +60808,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -61123,7 +61123,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -61438,7 +61438,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -61753,7 +61753,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -62068,7 +62068,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -62383,7 +62383,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -62698,7 +62698,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -63013,7 +63013,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -63328,7 +63328,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -65200,7 +65200,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -65524,7 +65524,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -66460,7 +66460,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -66784,7 +66784,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -67720,7 +67720,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -68044,7 +68044,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -68368,7 +68368,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -69628,7 +69628,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -69943,7 +69943,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -70258,7 +70258,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -70573,7 +70573,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -70888,7 +70888,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -71203,7 +71203,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -71518,7 +71518,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -71833,7 +71833,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -74020,7 +74020,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -74344,7 +74344,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -75280,7 +75280,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -75604,7 +75604,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -76540,7 +76540,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -76864,7 +76864,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -77188,7 +77188,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -78448,7 +78448,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -78763,7 +78763,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -79078,7 +79078,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -79393,7 +79393,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -79708,7 +79708,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -80023,7 +80023,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -80338,7 +80338,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -80653,7 +80653,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -82840,7 +82840,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -83164,7 +83164,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -84100,7 +84100,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -84424,7 +84424,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -85360,7 +85360,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -85684,7 +85684,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -86008,7 +86008,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -87268,7 +87268,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -87583,7 +87583,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -87898,7 +87898,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -88213,7 +88213,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -88528,7 +88528,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -88843,7 +88843,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -89158,7 +89158,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -89473,7 +89473,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -89788,7 +89788,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -91660,7 +91660,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -91984,7 +91984,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -92920,7 +92920,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -93244,7 +93244,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -94180,7 +94180,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -94504,7 +94504,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -94828,7 +94828,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -96088,7 +96088,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -96403,7 +96403,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -96718,7 +96718,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -97033,7 +97033,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -97348,7 +97348,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -97663,7 +97663,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -97978,7 +97978,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -98293,7 +98293,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -100480,7 +100480,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -100804,7 +100804,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -101740,7 +101740,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -102064,7 +102064,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -103000,7 +103000,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -103324,7 +103324,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -103648,7 +103648,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -104908,7 +104908,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -105223,7 +105223,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -105538,7 +105538,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -105853,7 +105853,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -106168,7 +106168,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -106483,7 +106483,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -106798,7 +106798,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -107113,7 +107113,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -109300,7 +109300,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -109624,7 +109624,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -110560,7 +110560,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -110884,7 +110884,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -111820,7 +111820,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -112144,7 +112144,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -112468,7 +112468,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -113728,7 +113728,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -114043,7 +114043,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -114358,7 +114358,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -114673,7 +114673,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -114988,7 +114988,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -115303,7 +115303,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -115618,7 +115618,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -115933,7 +115933,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -116248,7 +116248,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -118120,7 +118120,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -118444,7 +118444,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -119380,7 +119380,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -119704,7 +119704,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -120640,7 +120640,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -120964,7 +120964,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -121288,7 +121288,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -122548,7 +122548,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -122863,7 +122863,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -123178,7 +123178,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -123493,7 +123493,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -123808,7 +123808,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -124123,7 +124123,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -124438,7 +124438,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -124753,7 +124753,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -126940,7 +126940,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -127264,7 +127264,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -128200,7 +128200,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -128524,7 +128524,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -129460,7 +129460,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -129784,7 +129784,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -130108,7 +130108,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -131368,7 +131368,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -131683,7 +131683,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -131998,7 +131998,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -132313,7 +132313,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -132628,7 +132628,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -132943,7 +132943,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -133258,7 +133258,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -133573,7 +133573,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -135760,7 +135760,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -136084,7 +136084,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -137020,7 +137020,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -137344,7 +137344,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -138280,7 +138280,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -138604,7 +138604,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -138928,7 +138928,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -140188,7 +140188,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -140503,7 +140503,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -140818,7 +140818,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -141133,7 +141133,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -141448,7 +141448,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -141763,7 +141763,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -142078,7 +142078,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -142393,7 +142393,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -144580,7 +144580,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -144904,7 +144904,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -145840,7 +145840,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -146164,7 +146164,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -147100,7 +147100,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -147424,7 +147424,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -147748,7 +147748,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -149008,7 +149008,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -149323,7 +149323,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -149638,7 +149638,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -149953,7 +149953,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -150268,7 +150268,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -150583,7 +150583,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -150898,7 +150898,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -151213,7 +151213,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -153400,7 +153400,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -153724,7 +153724,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -154660,7 +154660,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -154984,7 +154984,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -155920,7 +155920,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -156244,7 +156244,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -156568,7 +156568,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -157828,7 +157828,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -158143,7 +158143,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -158458,7 +158458,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -158773,7 +158773,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -159088,7 +159088,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -159403,7 +159403,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -159718,7 +159718,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -160033,7 +160033,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -162220,7 +162220,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -162544,7 +162544,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -163480,7 +163480,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -163804,7 +163804,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -164740,7 +164740,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -165064,7 +165064,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -165388,7 +165388,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -166648,7 +166648,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -166963,7 +166963,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -167278,7 +167278,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -167593,7 +167593,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -167908,7 +167908,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -168223,7 +168223,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -168538,7 +168538,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -168853,7 +168853,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -169168,7 +169168,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -171040,7 +171040,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -171364,7 +171364,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -172300,7 +172300,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -172624,7 +172624,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -173560,7 +173560,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -173884,7 +173884,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -174208,7 +174208,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -175468,7 +175468,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -175783,7 +175783,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -176098,7 +176098,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -176413,7 +176413,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -176728,7 +176728,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -177043,7 +177043,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -177358,7 +177358,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -177673,7 +177673,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -179860,7 +179860,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -180184,7 +180184,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -181120,7 +181120,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -181444,7 +181444,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -182380,7 +182380,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -182704,7 +182704,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -183028,7 +183028,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -184288,7 +184288,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -184603,7 +184603,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -184918,7 +184918,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -185233,7 +185233,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -185548,7 +185548,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -185863,7 +185863,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -186178,7 +186178,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -186493,7 +186493,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -188680,7 +188680,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -189004,7 +189004,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -189940,7 +189940,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -190264,7 +190264,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -191200,7 +191200,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -191524,7 +191524,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -191848,7 +191848,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -193108,7 +193108,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -193423,7 +193423,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -193738,7 +193738,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -194053,7 +194053,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -194368,7 +194368,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -194683,7 +194683,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -194998,7 +194998,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -195313,7 +195313,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -195628,7 +195628,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -197500,7 +197500,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -197824,7 +197824,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -198760,7 +198760,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -199084,7 +199084,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -200020,7 +200020,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -200344,7 +200344,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -200668,7 +200668,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -201928,7 +201928,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -202243,7 +202243,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -202558,7 +202558,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -202873,7 +202873,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -203188,7 +203188,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -203503,7 +203503,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -203818,7 +203818,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -204133,7 +204133,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -206320,7 +206320,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -206644,7 +206644,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -207580,7 +207580,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -207904,7 +207904,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -208840,7 +208840,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -209164,7 +209164,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -209488,7 +209488,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -210748,7 +210748,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -211063,7 +211063,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -211378,7 +211378,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -211693,7 +211693,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -212008,7 +212008,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -212323,7 +212323,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -212638,7 +212638,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -212953,7 +212953,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -215140,7 +215140,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -215464,7 +215464,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -216400,7 +216400,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -216724,7 +216724,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -217660,7 +217660,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -217984,7 +217984,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -218308,7 +218308,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -219568,7 +219568,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -219883,7 +219883,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -220198,7 +220198,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -220513,7 +220513,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -220828,7 +220828,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -221143,7 +221143,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -221458,7 +221458,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -221773,7 +221773,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -223960,7 +223960,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -224284,7 +224284,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -225220,7 +225220,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -225544,7 +225544,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -226480,7 +226480,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -226804,7 +226804,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -227128,7 +227128,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -228388,7 +228388,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -228703,7 +228703,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -229018,7 +229018,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -229333,7 +229333,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -229648,7 +229648,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -229963,7 +229963,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -230278,7 +230278,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -230593,7 +230593,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -232780,7 +232780,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -233104,7 +233104,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -234040,7 +234040,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -234364,7 +234364,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -235300,7 +235300,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -235624,7 +235624,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -235948,7 +235948,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -237208,7 +237208,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -237523,7 +237523,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -237838,7 +237838,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -238153,7 +238153,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -238468,7 +238468,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -238783,7 +238783,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -239098,7 +239098,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -239413,7 +239413,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -241600,7 +241600,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -241924,7 +241924,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -242860,7 +242860,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -243184,7 +243184,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -244120,7 +244120,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -244444,7 +244444,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -244768,7 +244768,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -246028,7 +246028,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -246343,7 +246343,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -246658,7 +246658,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -246973,7 +246973,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -247288,7 +247288,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -247603,7 +247603,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -247918,7 +247918,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -248233,7 +248233,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -250420,7 +250420,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -250744,7 +250744,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -251680,7 +251680,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -252004,7 +252004,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -252940,7 +252940,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -253264,7 +253264,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -253588,7 +253588,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -254848,7 +254848,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -255163,7 +255163,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -255478,7 +255478,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -255793,7 +255793,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -256108,7 +256108,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -256423,7 +256423,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -256738,7 +256738,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -257053,7 +257053,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -257368,7 +257368,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -259240,7 +259240,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -259564,7 +259564,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -260500,7 +260500,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -260824,7 +260824,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -261760,7 +261760,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -262084,7 +262084,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -262408,7 +262408,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -263668,7 +263668,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -263983,7 +263983,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -264298,7 +264298,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -264613,7 +264613,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -264928,7 +264928,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -265243,7 +265243,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -265558,7 +265558,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -265873,7 +265873,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -268060,7 +268060,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -268384,7 +268384,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -269320,7 +269320,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -269644,7 +269644,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -270580,7 +270580,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -270904,7 +270904,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -271228,7 +271228,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -272488,7 +272488,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -272803,7 +272803,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -273118,7 +273118,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -273433,7 +273433,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -273748,7 +273748,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -274063,7 +274063,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -274378,7 +274378,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -274693,7 +274693,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -276880,7 +276880,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -277204,7 +277204,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -278140,7 +278140,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -278464,7 +278464,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -279400,7 +279400,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -279724,7 +279724,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -280048,7 +280048,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -281308,7 +281308,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -281623,7 +281623,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -281938,7 +281938,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -282253,7 +282253,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -282568,7 +282568,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -282883,7 +282883,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -283198,7 +283198,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -283513,7 +283513,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -285700,7 +285700,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -286024,7 +286024,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -286960,7 +286960,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -287284,7 +287284,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -288220,7 +288220,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -288544,7 +288544,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -288868,7 +288868,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -290128,7 +290128,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -290443,7 +290443,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -290758,7 +290758,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -291073,7 +291073,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -291388,7 +291388,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -291703,7 +291703,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -292018,7 +292018,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -292333,7 +292333,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -294520,7 +294520,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -294844,7 +294844,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -295780,7 +295780,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -296104,7 +296104,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -297040,7 +297040,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -297364,7 +297364,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -297688,7 +297688,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -298948,7 +298948,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -299263,7 +299263,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -299578,7 +299578,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -299893,7 +299893,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -300208,7 +300208,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -300523,7 +300523,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -300838,7 +300838,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -301153,7 +301153,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -303340,7 +303340,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -303664,7 +303664,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -304600,7 +304600,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -304924,7 +304924,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -305860,7 +305860,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -306184,7 +306184,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -306508,7 +306508,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -307768,7 +307768,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -308083,7 +308083,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -308398,7 +308398,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -308713,7 +308713,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -309028,7 +309028,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -309343,7 +309343,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -309658,7 +309658,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -309973,7 +309973,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -312160,7 +312160,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -312484,7 +312484,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -313420,7 +313420,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -313744,7 +313744,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -314680,7 +314680,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -315004,7 +315004,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -315328,7 +315328,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -316588,7 +316588,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -316903,7 +316903,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -317218,7 +317218,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -317533,7 +317533,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -317848,7 +317848,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -318163,7 +318163,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -318478,7 +318478,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -318793,7 +318793,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -320980,7 +320980,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -321304,7 +321304,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -322240,7 +322240,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -322564,7 +322564,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -323500,7 +323500,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -323824,7 +323824,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -324148,7 +324148,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -325408,7 +325408,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -325723,7 +325723,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -326038,7 +326038,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -326353,7 +326353,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -326668,7 +326668,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -326983,7 +326983,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -327298,7 +327298,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -327613,7 +327613,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -329800,7 +329800,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -330124,7 +330124,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -331060,7 +331060,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -331384,7 +331384,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -332320,7 +332320,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -332644,7 +332644,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -332968,7 +332968,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -334228,7 +334228,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -334543,7 +334543,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -334858,7 +334858,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -335173,7 +335173,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -335488,7 +335488,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -335803,7 +335803,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -336118,7 +336118,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -336433,7 +336433,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -338620,7 +338620,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -338944,7 +338944,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -339880,7 +339880,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -340204,7 +340204,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -341140,7 +341140,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -341464,7 +341464,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -341788,7 +341788,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -343048,7 +343048,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -343363,7 +343363,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -343678,7 +343678,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -343993,7 +343993,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -344308,7 +344308,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -344623,7 +344623,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -344938,7 +344938,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -345253,7 +345253,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -347440,7 +347440,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -347764,7 +347764,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -348700,7 +348700,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -349024,7 +349024,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -349960,7 +349960,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -350284,7 +350284,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -350608,7 +350608,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -351868,7 +351868,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -352183,7 +352183,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -352498,7 +352498,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -352813,7 +352813,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -353128,7 +353128,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -353443,7 +353443,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -353758,7 +353758,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -354073,7 +354073,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -356260,7 +356260,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -356584,7 +356584,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -357520,7 +357520,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -357844,7 +357844,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -358780,7 +358780,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -359104,7 +359104,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -359428,7 +359428,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -360688,7 +360688,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -361003,7 +361003,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -361318,7 +361318,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -361633,7 +361633,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -361948,7 +361948,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -362263,7 +362263,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -362578,7 +362578,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -362893,7 +362893,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -365080,7 +365080,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -365404,7 +365404,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -366340,7 +366340,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -366664,7 +366664,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -367600,7 +367600,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 33
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -367924,7 +367924,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 34
     timing: 0
-    outcome: 1
+    outcome: 0
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -368248,7 +368248,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -369508,7 +369508,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -369823,7 +369823,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -370138,7 +370138,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -370453,7 +370453,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   hostileOutcomeEntries:
   - typeOfBowler: 0
@@ -370769,7 +370769,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -371084,7 +371084,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -371399,7 +371399,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -371714,7 +371714,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -377069,7 +377069,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -378329,7 +378329,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -378644,7 +378644,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -378959,7 +378959,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -379274,7 +379274,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -379589,7 +379589,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -379904,7 +379904,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -380219,7 +380219,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -380534,7 +380534,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -385889,7 +385889,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -387149,7 +387149,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -387464,7 +387464,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -387779,7 +387779,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -388094,7 +388094,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -388409,7 +388409,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -388724,7 +388724,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -389039,7 +389039,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -389354,7 +389354,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -394709,7 +394709,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -395969,7 +395969,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -396284,7 +396284,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -396599,7 +396599,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -396914,7 +396914,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -397229,7 +397229,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -397544,7 +397544,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -397859,7 +397859,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -398174,7 +398174,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -403529,7 +403529,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -404789,7 +404789,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -405104,7 +405104,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -405419,7 +405419,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -405734,7 +405734,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -406049,7 +406049,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -406364,7 +406364,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -406679,7 +406679,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -406994,7 +406994,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -412349,7 +412349,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -413609,7 +413609,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -413924,7 +413924,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -414239,7 +414239,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -414554,7 +414554,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -414869,7 +414869,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -415184,7 +415184,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -415499,7 +415499,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -415814,7 +415814,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -421169,7 +421169,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -422429,7 +422429,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -422744,7 +422744,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -423059,7 +423059,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 1
@@ -423374,7 +423374,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -423689,7 +423689,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -424004,7 +424004,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -424319,7 +424319,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -424634,7 +424634,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -429989,7 +429989,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -431249,7 +431249,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -431564,7 +431564,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -431879,7 +431879,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -432194,7 +432194,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -432509,7 +432509,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -432824,7 +432824,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -433139,7 +433139,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -433454,7 +433454,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -438809,7 +438809,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -440069,7 +440069,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -440384,7 +440384,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -440699,7 +440699,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -441014,7 +441014,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -441329,7 +441329,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -441644,7 +441644,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -441959,7 +441959,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -442274,7 +442274,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -447629,7 +447629,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -448889,7 +448889,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -449204,7 +449204,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -449519,7 +449519,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -449834,7 +449834,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -450149,7 +450149,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -450464,7 +450464,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -450779,7 +450779,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -451094,7 +451094,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -456449,7 +456449,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -457709,7 +457709,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -458024,7 +458024,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -458339,7 +458339,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -458654,7 +458654,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -458969,7 +458969,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -459284,7 +459284,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -459599,7 +459599,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -459914,7 +459914,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -465269,7 +465269,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -466529,7 +466529,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -466844,7 +466844,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -467159,7 +467159,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -467474,7 +467474,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -467789,7 +467789,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -468104,7 +468104,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -468419,7 +468419,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -468734,7 +468734,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -474089,7 +474089,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -475349,7 +475349,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -475664,7 +475664,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -475979,7 +475979,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 0
     side: 0
@@ -476294,7 +476294,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -476609,7 +476609,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -476924,7 +476924,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -477239,7 +477239,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -477554,7 +477554,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -482909,7 +482909,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -484169,7 +484169,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -484484,7 +484484,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -484799,7 +484799,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -485114,7 +485114,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -485429,7 +485429,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -485744,7 +485744,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -486059,7 +486059,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -486374,7 +486374,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -491729,7 +491729,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -492989,7 +492989,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -493304,7 +493304,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -493619,7 +493619,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -493934,7 +493934,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -494249,7 +494249,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -494564,7 +494564,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -494879,7 +494879,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -495194,7 +495194,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -500549,7 +500549,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -501809,7 +501809,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -502124,7 +502124,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -502439,7 +502439,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -502754,7 +502754,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -503069,7 +503069,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -503384,7 +503384,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -503699,7 +503699,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -504014,7 +504014,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -509369,7 +509369,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -510629,7 +510629,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -510944,7 +510944,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -511259,7 +511259,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -511574,7 +511574,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -511889,7 +511889,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -512204,7 +512204,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -512519,7 +512519,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -512834,7 +512834,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -518189,7 +518189,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -519449,7 +519449,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -519764,7 +519764,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -520079,7 +520079,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -520394,7 +520394,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -520709,7 +520709,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -521024,7 +521024,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -521339,7 +521339,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -521654,7 +521654,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -527009,7 +527009,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -528269,7 +528269,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -528584,7 +528584,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -528899,7 +528899,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 1
@@ -529214,7 +529214,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -529529,7 +529529,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -529844,7 +529844,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -530159,7 +530159,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -530474,7 +530474,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -535829,7 +535829,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -537089,7 +537089,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -537404,7 +537404,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -537719,7 +537719,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -538034,7 +538034,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -538349,7 +538349,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -538664,7 +538664,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -538979,7 +538979,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -539294,7 +539294,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -544649,7 +544649,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -545909,7 +545909,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -546224,7 +546224,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -546539,7 +546539,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -546854,7 +546854,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -547169,7 +547169,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -547484,7 +547484,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -547799,7 +547799,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -548114,7 +548114,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -553469,7 +553469,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -554729,7 +554729,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -555044,7 +555044,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -555359,7 +555359,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -555674,7 +555674,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -555989,7 +555989,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -556304,7 +556304,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -556619,7 +556619,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -556934,7 +556934,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -562289,7 +562289,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -563549,7 +563549,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -563864,7 +563864,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -564179,7 +564179,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -564494,7 +564494,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -564809,7 +564809,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -565124,7 +565124,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -565439,7 +565439,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -565754,7 +565754,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -571109,7 +571109,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -572369,7 +572369,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -572684,7 +572684,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -572999,7 +572999,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -573314,7 +573314,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -573629,7 +573629,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -573944,7 +573944,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -574259,7 +574259,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -574574,7 +574574,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -579929,7 +579929,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -581189,7 +581189,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -581504,7 +581504,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -581819,7 +581819,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 3
     side: 0
@@ -582134,7 +582134,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -582449,7 +582449,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -582764,7 +582764,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -583079,7 +583079,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -583394,7 +583394,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -588749,7 +588749,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -590009,7 +590009,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -590324,7 +590324,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -590639,7 +590639,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -590954,7 +590954,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -591269,7 +591269,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -591584,7 +591584,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -591899,7 +591899,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -592214,7 +592214,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -597569,7 +597569,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -598829,7 +598829,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -599144,7 +599144,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -599459,7 +599459,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -599774,7 +599774,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -600089,7 +600089,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -600404,7 +600404,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -600719,7 +600719,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -601034,7 +601034,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -606389,7 +606389,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -607649,7 +607649,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -607964,7 +607964,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -608279,7 +608279,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -608594,7 +608594,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -608909,7 +608909,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -609224,7 +609224,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -609539,7 +609539,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -609854,7 +609854,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -615209,7 +615209,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -616469,7 +616469,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -616784,7 +616784,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -617099,7 +617099,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 1
@@ -617414,7 +617414,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -617729,7 +617729,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -618044,7 +618044,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -618359,7 +618359,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -618674,7 +618674,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -624029,7 +624029,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -625289,7 +625289,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -625604,7 +625604,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -625919,7 +625919,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -626234,7 +626234,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -626549,7 +626549,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -626864,7 +626864,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -627179,7 +627179,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -627494,7 +627494,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -632849,7 +632849,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -634109,7 +634109,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -634424,7 +634424,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -634739,7 +634739,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -635054,7 +635054,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -635369,7 +635369,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -635684,7 +635684,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -635999,7 +635999,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -636314,7 +636314,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -641669,7 +641669,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -642929,7 +642929,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -643244,7 +643244,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -643559,7 +643559,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -643874,7 +643874,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -644189,7 +644189,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -644504,7 +644504,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -644819,7 +644819,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -645134,7 +645134,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -650489,7 +650489,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -651749,7 +651749,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -652064,7 +652064,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -652379,7 +652379,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 1
     side: 0
@@ -652694,7 +652694,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -653009,7 +653009,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -653324,7 +653324,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -653639,7 +653639,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -653954,7 +653954,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -659309,7 +659309,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -660569,7 +660569,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -660884,7 +660884,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -661199,7 +661199,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -661514,7 +661514,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -661829,7 +661829,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -662144,7 +662144,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -662459,7 +662459,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -662774,7 +662774,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -668129,7 +668129,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -669389,7 +669389,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -669704,7 +669704,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -670019,7 +670019,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -670334,7 +670334,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -670649,7 +670649,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -670964,7 +670964,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -671279,7 +671279,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -671594,7 +671594,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -676949,7 +676949,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -678209,7 +678209,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -678524,7 +678524,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -678839,7 +678839,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -679154,7 +679154,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -679469,7 +679469,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -679784,7 +679784,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -680099,7 +680099,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -680414,7 +680414,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -685769,7 +685769,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -687029,7 +687029,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -687344,7 +687344,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -687659,7 +687659,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -687974,7 +687974,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -688289,7 +688289,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -688604,7 +688604,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -688919,7 +688919,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -689234,7 +689234,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -694589,7 +694589,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -695849,7 +695849,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -696164,7 +696164,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -696479,7 +696479,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 1
@@ -696794,7 +696794,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -697109,7 +697109,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -697424,7 +697424,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -697739,7 +697739,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -698054,7 +698054,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -703409,7 +703409,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -704669,7 +704669,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -704984,7 +704984,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -705299,7 +705299,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -705614,7 +705614,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -705929,7 +705929,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -706244,7 +706244,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -706559,7 +706559,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -706874,7 +706874,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -712229,7 +712229,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -713489,7 +713489,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -713804,7 +713804,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -714119,7 +714119,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -714434,7 +714434,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -714749,7 +714749,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -715064,7 +715064,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -715379,7 +715379,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -715694,7 +715694,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -721049,7 +721049,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -722309,7 +722309,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -722624,7 +722624,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -722939,7 +722939,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -723254,7 +723254,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -723569,7 +723569,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -723884,7 +723884,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -724199,7 +724199,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -724514,7 +724514,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -729869,7 +729869,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -731129,7 +731129,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -731444,7 +731444,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -731759,7 +731759,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -732074,7 +732074,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -732389,7 +732389,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -732704,7 +732704,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -733019,7 +733019,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -733334,7 +733334,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -738689,7 +738689,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -739949,7 +739949,7 @@ MonoBehaviour:
     lengthOfBall: 3
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -740264,7 +740264,7 @@ MonoBehaviour:
     lengthOfBall: 0
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -740579,7 +740579,7 @@ MonoBehaviour:
     lengthOfBall: 1
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
   - typeOfBowler: 2
     side: 0
@@ -740894,5 +740894,5 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 0
     timing: 0
-    outcome: 1
+    outcome: -3
     specialOutcome: 0
