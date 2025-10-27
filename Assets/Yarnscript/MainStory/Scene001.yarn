@@ -196,7 +196,7 @@ Ramu: The most important—when you miss, try again; when you get out, smile; wh
 
 
 <<SetCharacterExpression "Raju" "Smiling">>
-Raju: We won't.
+Raju: Understood.
 
 
 <<SetCharacterExpression "Ramu" "Excited">>
