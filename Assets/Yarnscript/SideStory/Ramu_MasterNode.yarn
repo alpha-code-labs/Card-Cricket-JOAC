@@ -1001,9 +1001,9 @@ position: 526,-86
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
 
-For the eighth consecutive morning, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
+For the eighth consecutive day, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
 
-The familiar pre-dawn atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
+The familiar atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Seven days ago, when you first asked me to help with cricket...
