@@ -1137,7 +1137,7 @@ Ramu: You've already won the only victory that matters.
 
 <<HideAllCharacters>>
 
-As the eighth morning concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
+As the eighth day concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
 
 <<set $Ramu_Complete = true>>
 <<jump Courage>>
