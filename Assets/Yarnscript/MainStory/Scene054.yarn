@@ -23,9 +23,4 @@ Ramu: Good. Let's go.
 <<StopBackgroundMusic>>
 <<wait 3>>
 
-<<HideAllCharacters>>
-<<EndEvent>>
-<<StopBackgroundMusic>>
-<<wait 3>>
-
 ===
