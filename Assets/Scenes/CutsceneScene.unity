@@ -819,6 +819,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3544179ca6ee775499b8f14c22c460ca, type: 3}
   - {fileID: 8300000, guid: ffcd824a1ebe0c04b8f02733f826618a, type: 3}
   - {fileID: 8300000, guid: 8c268468219474a47b947e21c55da275, type: 3}
+  - {fileID: 8300000, guid: 2766b132d5dcb724ebe432b5170560a3, type: 3}
   musicFadeDuration: 1
 --- !u!1 &1998626979
 GameObject:
