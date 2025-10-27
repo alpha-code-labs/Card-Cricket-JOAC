@@ -67,7 +67,7 @@ public class NewDayManager : MonoBehaviour
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
-                string timeOfDay = isEvening ? "Evening" : "Day";
+                string timeOfDay = isEvening ? "Evening" : "Morning";
                 yield return DisplayTextThenFade($"Free Time\n{timeOfDay}");
                 TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
