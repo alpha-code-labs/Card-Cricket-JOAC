@@ -9,10 +9,10 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Semifinals. We're chasing 40 in 20 balls.
+Ramu: Semifinals. We're chasing 40 in 24 balls.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Two runs a ball. Need to start strong.
+Raju: Two runs a ball. Need to play strong.
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Exactly. No settling in. Attack from ball one. They set this target thinking we can't chase it.

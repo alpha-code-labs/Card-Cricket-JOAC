@@ -9,16 +9,16 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Big chase captain. 110 from 50 balls.
+Ramu: Big chase captain. 110 from 54 balls.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: That's more than two a ball. They think we can't do it.
+Raju: That's more than two a ball.
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: That tall boy from church lane is bowling—remember he's fast but straight, use the pace.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: I'll show them what dawn practice builds.
+Raju: I'll try my best.
 
 <<HideAllCharacters>>
 <<EndEvent>>

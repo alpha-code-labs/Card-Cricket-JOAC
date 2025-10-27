@@ -11,7 +11,7 @@ position: 0,0
 Raju: We made it through yesterday.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Expected. You've been playing well lately. Today's semifinals, but don't let the word grow big in your head.
+Ramu: Expected. We have been playing well lately. Today's semifinals, but don't let the word grow big in your head.
 
 <<SetCharacterExpression "Raju" "Curious">>
 Raju: Just another evening match?
@@ -20,10 +20,10 @@ Raju: Just another evening match?
 Ramu: Just another evening match. Home by dinner. Homework after.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: The boys yesterday were easy to read.
+Raju: I am up for it.
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: Today's might be too. Stay focused anyway. Bad habits grow in easy matches.
+Ramu: Stay focused.
 
 <<HideAllCharacters>>
 <<EndEvent>>

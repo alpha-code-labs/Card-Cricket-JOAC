@@ -9,13 +9,13 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Quarterfinals captain. We're batting first.
+Ramu: Quarterfinals captain. We're batting second. You are up at number 5.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: How many do we need?
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Get 25 from 15 balls. Quick singles won't work. You'll need boundaries.
+Ramu: Get 25 from 18 balls. Quick singles won't work. You'll need boundaries.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's aggressive batting.

@@ -10,7 +10,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: School league tournament, different class—we bat first, need 80 from 40 balls.
+Ramu: School league tournament, different class—we bat second, need 80 from 42 balls.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Two runs a ball throughout?
