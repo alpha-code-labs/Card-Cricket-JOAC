@@ -1,0 +1,8 @@
+﻿title: EndEvent
+---
+Ending Event after this Dialaouge
+
+<<StopBackgroundMusic>>
+<<HideAllCharacters>>
+<<EndEvent>>
+===
