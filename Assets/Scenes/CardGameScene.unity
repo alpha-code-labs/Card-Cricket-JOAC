@@ -11126,6 +11126,7 @@ MonoBehaviour:
   criticalChaseColor: {r: 1, g: 0.3, b: 0.3, a: 1}
   cheeringSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
   cheeringSound_gameWon: {fileID: 8300000, guid: 0211a0855d707d9419e550495bafeb1a, type: 3}
+  groaningSound: {fileID: 8300000, guid: 0608b70dd9b654b44b161767bfa5672f, type: 3}
   cheeringVolume: 1
   cheeringAudioSource: {fileID: 0}
   BatterImage: {fileID: 963504216}
