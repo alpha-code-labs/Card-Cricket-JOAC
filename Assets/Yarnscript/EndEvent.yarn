@@ -10,6 +10,8 @@ Ending Event after this Dialaouge
     <<IncreaseEvnetIndex 1>>
 -> Skip 3
     <<IncreaseEvnetIndex 2>>
+-> End day
+    <<EndDay>>   
 
 <<StopBackgroundMusic>>
 <<HideAllCharacters>>

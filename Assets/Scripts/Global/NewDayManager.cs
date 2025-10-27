@@ -193,6 +193,7 @@ public class NewDayManager : MonoBehaviour
         currentEventIndex = resetToIndex;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
+    [YarnCommand("EndDay")]
     public void EndDay()
     {
         currentEventIndex = 0;
