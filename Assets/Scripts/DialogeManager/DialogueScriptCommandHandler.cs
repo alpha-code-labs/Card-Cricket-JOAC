@@ -388,7 +388,14 @@ public enum EmotionType
     Terrified,
     Tired,
     Worried,
-    BaseSprite
+    BaseSprite,
+    Calmlyexplaining,
+    Confidentexplaining,
+    FatherlyWarmth,
+    Gentle,
+    Teaching,
+    Warm
+
 }
 
 public enum MusicType
