@@ -813,9 +813,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 20bd262673471fb4cb4886e288f117e4, type: 3}
   - {fileID: 8300000, guid: 38f99c2772b04f349b845c1b5b490b3d, type: 3}
   - {fileID: 8300000, guid: 20affde3f80a6494783b8fdbcfc46370, type: 3}
-  - {fileID: 8300000, guid: 8c268468219474a47b947e21c55da275, type: 3}
+  - {fileID: 8300000, guid: 2e8872702dcc8864c923083ee3ea4169, type: 3}
+  - {fileID: 8300000, guid: e3ac413bafd9774408d23c0b76d7c7a7, type: 3}
+  - {fileID: 8300000, guid: 008b46011d473df4296573a63236bb97, type: 3}
   - {fileID: 8300000, guid: 3544179ca6ee775499b8f14c22c460ca, type: 3}
   - {fileID: 8300000, guid: ffcd824a1ebe0c04b8f02733f826618a, type: 3}
+  - {fileID: 8300000, guid: 8c268468219474a47b947e21c55da275, type: 3}
   musicFadeDuration: 1
 --- !u!1 &1998626979
 GameObject:
