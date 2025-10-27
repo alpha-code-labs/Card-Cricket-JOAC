@@ -27,7 +27,7 @@ public class LocationSwitcher : MonoBehaviour
             Locations enumKey = (Locations)(int)-1;
             if (!System.Enum.TryParse(locations[i].name, out enumKey))
             {
-                Debug.LogError($"Failed to parse location name '{locations[i].name}' to Locations enum.");
+                Debug.LogError($"Failed to parse GameObject of name '{locations[i].name}' to Locations enum.");
                 continue;
             }
             // Debug.Log($"Mapping location '{locations[i].name}' to enum '{enumKey}'");
