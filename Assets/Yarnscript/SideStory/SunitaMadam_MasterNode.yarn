@@ -24,7 +24,10 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Light_03>>
+// <<PlayBackgroundMusic Light003>>
+// <<PlayBackgroundMusic Light0003>>
+
 <<SetBGSprite PrivateSchool>>
 
 After hearing older boys talk about the prestigious school in the High-Rises, Raju walks the long distance to see it.
