@@ -202,5 +202,10 @@ public class NewDayManager : MonoBehaviour
         YarnDialogSystemSingleTonMaker.instance.dialogueRunner.SaveStateToPersistentStorage("yarnSaveData.json");
         TransitionScreenManager.instance.LoadScene("NewDayScene");
     }
+    [YarnCommand("IncreaseEvnetIndex")]
+    public static void IncreaseEvnetIndex(int increaseby)
+    {
+        currentEventIndex += increaseby;
+    }
 
 }
