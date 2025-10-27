@@ -10,10 +10,10 @@ position: 0,0
 Ramu: Finals captain. They made 114, you are in at number 5. Last 3 overs we need 35 to win.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Same target same balls. It's like a mirror match.
+Raju: Understood.
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: You just have to match what they did. Take calculated risks.
+Ramu: All the best. Take calculated risks.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll try my best.
