@@ -26,7 +26,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 The morning light filters through their small window.
@@ -180,7 +180,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 After yesterday's difficult encounter at the wealthy apartment, Raju chooses to spend the evening at home.
@@ -338,7 +338,7 @@ tags:
 position: -75,-229
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 Despite his eagerness to join the morning cricket practice session, Raju chooses to help his mother.
@@ -557,7 +557,7 @@ title: Kamla_Day4
 title: Kamla_Day4a
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 Raju demonstrates complete dedication to family needs.
@@ -588,7 +588,7 @@ Kamla: Now let me show you what our family sacrifices look like in the real worl
 title: Kamla_Day4b
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 Raju demonstrates that his cricket passion enhances rather than diminishes his family commitment.
@@ -619,7 +619,7 @@ Kamla: Now let me show you the realities we're balancing against, so you underst
 title: Kamla_Day4c
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 Raju demonstrates that his cricket ambition includes mature understanding of responsibility.
@@ -652,7 +652,7 @@ Kamla: Let me show you what we're working with, so your dreams can be realistic 
 title: Kamla_Revelation
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 
 After three days of voluntarily helping his mother and demonstrating growing maturity, Raju accompanies Kamla to the wealthy Mehta household.
 
@@ -767,7 +767,7 @@ That athletic ambition and family duty can indeed strengthen each other.
 title: Kamla_Day5
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite LocalMarket>>
 
 After four days of witnessing his growing maturity and dedication, Raju accompanies his mother to the local market.
@@ -943,7 +943,7 @@ That carries the responsibility to honor both her belief and the family resource
 title: Kamla_Day6
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 After an especially successful cricket practice session with the new ball, Raju comes home directly.
@@ -1074,7 +1074,7 @@ Validating Kamla's decision to sacrifice immediate needs for long-term potential
 title: Kamla_Day7
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
 In the quiet moments before sleep, Raju chooses to spend time talking with his mother.

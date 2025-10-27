@@ -24,7 +24,7 @@ tags:
 position: -7,-175
 ---
 
-<<PlayBackgroundMusic Angry_1>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 After hearing about the prestigious sports academy, Raju walks the long distance to the facility.
@@ -147,7 +147,7 @@ title: CoachSharma_Day2
 tags: 
 ---
 
-<<PlayBackgroundMusic Angry_1>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 Despite yesterday's harsh dismissal, Raju returns to the prestigious sports academy.
@@ -441,7 +441,7 @@ title: CoachSharma_Day3
 title: CoachSharma_Day3a
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 True to his promise, Raju arrives at the academy before dawn.
@@ -509,7 +509,7 @@ His methodical approach to simple tasks reveals a maturity that transcends age a
 title: CoachSharma_Day3b
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 Raju arrives at dawn with intense energy.
@@ -571,7 +571,7 @@ His love for cricket runs deeper than surface excitement, encompassing every asp
 title: CoachSharma_Day3c
 tags:
 ---
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 Raju arrives early with a mental plan.
@@ -631,7 +631,7 @@ He transforms simple labor into purposeful preparation for larger goals.
 title: CoachSharma_Day4
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 After proving his dedication through consistent morning work, Raju hopes for the chance to demonstrate his actual cricket ability.
@@ -761,7 +761,7 @@ A burning awareness of possibilities that remain tantalizingly out of reach.
 title: CoachSharma_Day5
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 After yesterday's successful demonstration of his natural cricket ability, Raju returns.
@@ -899,7 +899,7 @@ Barriers that separate talent from opportunity.
 title: CoachSharma_Day6
 ---
 
-<<PlayBackgroundMusic Light_3>>
+<<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
 After three weeks of consistent 5 AM arrivals and dedicated facility preparation work, Raju approaches Coach Sharma.
