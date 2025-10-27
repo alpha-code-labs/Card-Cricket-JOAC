@@ -5702,6 +5702,7 @@ MonoBehaviour:
     isBattingFirst: 0
     pitchCondition: 0
     initialScore: 0
+    winScore: 0
   ballerCardPrefab: {fileID: 9059906081896085217, guid: 861cfae5cb02e3441aa843a7bc23bd9a, type: 3}
 --- !u!4 &86049936
 Transform:
@@ -11124,6 +11125,7 @@ MonoBehaviour:
   difficultChaseColor: {r: 1, g: 0.6, b: 0.2, a: 1}
   criticalChaseColor: {r: 1, g: 0.3, b: 0.3, a: 1}
   cheeringSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
+  cheeringSound_gameWon: {fileID: 8300000, guid: 0211a0855d707d9419e550495bafeb1a, type: 3}
   cheeringVolume: 1
   cheeringAudioSource: {fileID: 0}
   BatterImage: {fileID: 963504216}
