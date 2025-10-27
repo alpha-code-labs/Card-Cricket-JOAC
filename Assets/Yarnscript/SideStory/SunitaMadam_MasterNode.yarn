@@ -91,7 +91,7 @@ SunitaMadam: Not idle curiosity from children who should be focused on... more a
 <<SetCharacterExpression "Raju" Determined>>
 Raju: I study too, Ma'am. Every day after school.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: And I play cricket, but I know education is important.
 
 <<SetCharacterExpression "Raju" Confident>>
@@ -451,7 +451,7 @@ position: -55,122
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PrivateSchool>>
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Service?

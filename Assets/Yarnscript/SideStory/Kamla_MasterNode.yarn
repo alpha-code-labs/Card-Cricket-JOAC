@@ -827,7 +827,7 @@ Raju: I can keep practicing with the old tennis ball.
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: It's been working fine.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: We need that money for food, for the house, for important things.
 
 <<SetCharacterExpression "Kamla" "Quizzical">>

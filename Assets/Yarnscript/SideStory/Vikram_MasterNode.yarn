@@ -57,7 +57,7 @@ Vikram: Every cup must taste perfect, customers expect fast service, and one mis
 <<SetCharacterExpression "Vikram" "Worried">>
 Vikram: This business feeds my family - it can't afford errors.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand it's serious work, uncle. But I'm careful and I learn quickly.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -142,7 +142,7 @@ Vikram: Twenty-five years I've been perfecting these blends, learning customer p
 <<SetCharacterExpression "Vikram" "Disappointed">>
 Vikram: But young people today want modern jobs - they think food service is beneath them.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: That must be disappointing, uncle.
 
 <<SetCharacterExpression "Raju" "Sad">>
@@ -267,7 +267,7 @@ Vikram: Managing rush periods when everyone wants service immediately, and repre
 <<SetCharacterExpression "Vikram" "Anxious">>
 Vikram: If you disappoint customers, they blame my entire operation.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand the responsibility, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -369,7 +369,7 @@ Vikram: We'll see how you handle the precision required when working with tradit
 <<SetCharacterExpression "Vikram" "Neutral">>
 Vikram: Food service tests both your technical skills and your consistency under pressure.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -396,7 +396,7 @@ Raju: I'm watching every detail, uncle. The way you measure, the timing, the ord
 <<SetCharacterExpression "Vikram" "Smiling">>
 Vikram: Good! You're already showing the right mindset. Many people rush, but quality comes from patience and precision.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I can see why your customers are so loyal. Every cup receives the same careful attention.
 
 <<SetCharacterExpression "Vikram" "Proud">>
@@ -444,7 +444,7 @@ Vikram: We'll see how you handle the precision required when working with tradit
 <<SetCharacterExpression "Vikram" "Neutral">>
 Vikram: Food service tests both your technical skills and your consistency under pressure.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -471,7 +471,7 @@ Raju: I'm watching every detail, uncle. The way you measure, the timing, the ord
 <<SetCharacterExpression "Vikram" "Smiling">>
 Vikram: Good! You're already showing the right mindset. Many people rush, but quality comes from patience and precision.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I can see why your customers are so loyal. Every cup receives the same careful attention.
 
 <<SetCharacterExpression "Vikram" "Proud">>
@@ -519,7 +519,7 @@ Vikram: We'll see how you handle the precision required when working with tradit
 <<SetCharacterExpression "Vikram" "Neutral">>
 Vikram: Food service tests both your technical skills and your consistency under pressure.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand, uncle.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -546,7 +546,7 @@ Raju: I'm watching every detail, uncle. The way you measure, the timing, the ord
 <<SetCharacterExpression "Vikram" "Smiling">>
 Vikram: Good! You're already showing the right mindset. Many people rush, but quality comes from patience and precision.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I can see why your customers are so loyal. Every cup receives the same careful attention.
 
 <<SetCharacterExpression "Vikram" "Proud">>
@@ -605,7 +605,7 @@ Vikram: Then let's see if you can maintain yesterday's quality while handling in
 <<SetCharacterExpression "Vikram" "Neutral">>
 Vikram: Professional food service must deliver excellence consistently, regardless of pressure or complexity.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand the importance of consistency, uncle. It's what builds your reputation and keeps customers returning.
 
 <<SetCharacterExpression "Vikram" "Proud">>
@@ -623,7 +623,7 @@ Vikram: Yes! That's the difference between just making tea and creating an exper
 <<SetCharacterExpression "Vikram" "Proud">>
 Vikram: You're starting to see tea preparation as an art form, not just a mechanical process.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: It reminds me that excellence in any field requires this level of attention and care.
 
 <<SetCharacterExpression "Vikram" "Smiling">>
@@ -655,7 +655,7 @@ Vikram: But these past few days have revealed something remarkable about your re
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Thank you, uncle! Working here has been incredibly meaningful.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I've learned so much about traditional techniques, but also about hospitality, precision, and the importance of food service in creating community connections.
 
 <<SetCharacterExpression "Vikram" "Smiling">>
@@ -664,7 +664,7 @@ Vikram: You've demonstrated that appreciation for food service isn't determined 
 <<SetCharacterExpression "Vikram" "Proud">>
 Vikram: Your help has not only made my work more manageable, but it's given me hope that these skills will maintain their value.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: This experience has taught me that tea preparation embodies the same principles as any form of excellence.
 
 <<SetCharacterExpression "Raju" "Confident">>
