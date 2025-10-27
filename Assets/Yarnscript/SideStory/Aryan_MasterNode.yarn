@@ -50,7 +50,7 @@ Aryan: Did you lose your way to the garbage dump again?
 <<SetCharacterExpression "Raju" "Irritated">>
 Raju: I'm not your servant.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I'm here to help my mother, that's all.
 
 <<SetCharacterExpression "Aryan" "Mischievous">>
@@ -173,7 +173,7 @@ Raju: You want to see what I can do?
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Fine. I'll show you.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Cricket isn't about how much money your family has.
 
 <<SetCharacterExpression "Aryan" "Overjoyed">>
@@ -203,7 +203,7 @@ Raju: I'll be here.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And when it's over, you'll understand something important.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Respect isn't something money can buy.
 
 <<HideAllCharacters>>
@@ -252,7 +252,7 @@ Aryan: He probably learned cricket by playing with rocks and sticks in garbage d
 Aryan: There's a difference between street games and real cricket.
 
 <<SetCharacterExpression "Jaspreet" "Anxious">>
-Jaspreet: But Aryan, I heard some kids from the regular school saying he's actually not bad.
+Jaspreet: But Aryan, I heard some kids from our school saying he's actually not bad.
 
 <<SetCharacterExpression "Jaspreet" "Worried">>
 Jaspreet: What if you're underestimating him?
@@ -322,7 +322,7 @@ Aryan: My friends expect entertainment, not philosophy lessons.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Then they'll see real cricket.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: That should be entertainment enough.
 
 <<HideAllCharacters>>
@@ -397,7 +397,7 @@ Aryan: At least you're not completely delusional.
 <<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Watch and learn what real cricket looks like.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I'm watching.
 
 <<SetCharacterExpression "Raju" "Neutral">>
@@ -415,7 +415,7 @@ Aryan: What do you mean, patterns?
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Every player has habits, preferences, weaknesses.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Even well-trained ones.
 
 <<SetCharacterExpression "Raju" "Mischievous">>
@@ -574,7 +574,7 @@ Aryan: You're trying to get in my head, but it won't work.
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: I'm not trying to get in your head.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I'm trying to understand your game.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -639,7 +639,7 @@ Aryan: This is what happens when street pretenders face real cricketers.
 <<SetCharacterExpression "Aryan" "Determined">>
 Aryan: Let's see you even touch this ball, slum boy!
 
-// The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
+The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
 
 <<SetCharacterExpression "Jaspreet" "Astonished">>
 Jaspreet: Ooooooh! Did you see that shot?!
@@ -733,7 +733,7 @@ Aryan: My friends haven't stopped talking about it.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I tried to tell you from the beginning.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Cricket isn't about expensive bats or fancy shoes.
 
 <<SetCharacterExpression "Raju" "Confident">>

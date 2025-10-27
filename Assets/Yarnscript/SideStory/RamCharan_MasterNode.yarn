@@ -212,7 +212,7 @@ RamCharan: They prefer easy encouragement to truthful criticism about their misp
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Sir, I came to read and learn, just like I said yesterday.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand that you think cricket is a distraction.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -233,13 +233,13 @@ RamCharan: But understand something clearly.
 <<SetCharacterExpression "RamCharan" "Serious">>
 RamCharan: Books require respect, careful handling, and genuine engagement with their contents.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I do respect books, sir.
 
 <<SetCharacterExpression "Raju" "Neutral">>
 Raju: My brother Ramu always tells me that learning is the most important thing we can do.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: That education opens doors that cricket alone never could.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -353,7 +353,7 @@ tags:
 position: -55,122
 ---
 <<set $RamCharan_Path = "b">>
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: Balance?
@@ -370,7 +370,7 @@ RamCharan: And clear understanding of priorities.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly what I want to learn, sir.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I don't want to sacrifice either my education or my dreams.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -414,7 +414,7 @@ tags:
 position: 184,122
 ---
 <<set $RamCharan_Path = "c">>
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: Help with library work?
@@ -431,7 +431,7 @@ RamCharan: You're willing to work without immediate reward?
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, sir.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I want to learn by doing.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -631,7 +631,7 @@ RamCharan: Your consistency suggests I can trust you with something special.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Sir, I'm grateful that you're willing to trust me.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I promise that whatever you want to show me.
 
 <<SetCharacterExpression "Raju" "Determined">>

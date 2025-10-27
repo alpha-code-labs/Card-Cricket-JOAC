@@ -33,7 +33,7 @@ He knows he doesn't belong there and can't afford the fees.
 
 But his curiosity about quality education drives him to explore.
 
-The imposing gates of Wellington Estate school rise before him.
+The imposing gates of Summit Heights School school rise before him.
 
 Like monuments to a world of privilege and opportunity.
 
@@ -91,7 +91,7 @@ SunitaMadam: Not idle curiosity from children who should be focused on... more a
 <<SetCharacterExpression "Raju" Determined>>
 Raju: I study too, Ma'am. Every day after school.
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: And I play cricket, but I know education is important.
 
 <<SetCharacterExpression "Raju" Confident>>
@@ -172,7 +172,7 @@ Despite yesterday's harsh dismissal, Raju returns to the prestigious school.
 
 Driven by an unshakeable belief that education represents his best chance.
 
-The morning sun illuminates the Wellington Estate school grounds.
+The morning sun illuminates the Summit Heights School school grounds.
 
 As Raju approaches for the second time.
 
@@ -344,7 +344,7 @@ That validates his belief that merit can transcend social prejudice when properl
 title: SunitaMadam_Day3
 ---
 <<SetBGSprite PrivateSchool>>
-On the third day, Raju returns to Wellington Estate school with a clear purpose.
+On the third day, Raju returns to Summit Heights School school with a clear purpose.
 He intends to convince Sunita Madam of his genuine intellectual curiosity.
 
 <<SetCharacterExpression "SunitaMadam" Serious>>
@@ -451,7 +451,7 @@ position: -55,122
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PrivateSchool>>
 
-<<SetCharacterExpression "Raju" Serious>>
+<<SetCharacterExpression "Raju" Determined>>
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: Service?
@@ -607,7 +607,7 @@ Hoping that his consistent demonstration of intellectual curiosity and respectfu
 
 Might further soften Sunita Madam's initial prejudice.
 
-The familiar grounds of Wellington Estate school welcome his fourth consecutive visit.
+The familiar grounds of Summit Heights School school welcome his fourth consecutive visit.
 
 He approaches with growing confidence.
 
@@ -764,7 +764,7 @@ That will test whether her words about supporting his educational development.
 
 Translate into concrete action.
 
-The Wellington Estate school grounds seem different today.
+The Summit Heights School school grounds seem different today.
 
 As Raju approaches for what he senses will be a pivotal conversation.
 
@@ -904,7 +904,7 @@ SunitaMadam: Prove to me that my growing faith in your potential isn't misplaced
 
 <<HideAllCharacters>>
 
-As Raju walks away from Wellington Estate, he carries both a concrete reading list.
+As Raju walks away from Summit Heights School, he carries both a concrete reading list.
 
 And the weight of Sunita Madam's conditional trust.
 
@@ -934,33 +934,21 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite PrivateSchool>>
 
-With their mentor-student relationship now firmly established, Raju seeks guidance.
+With their mentor-student relationship now firmly established, Raju seeks guidance, on a crucial decision about his future educational path.
 
-On a crucial decision about his future educational path.
 
-Knowing that her respect and support have opened new possibilities.
+The Summit Heights School school has now become a place of learning.
 
-The Wellington Estate school has become a place of genuine belonging.
+As he approaches for what feels like a culminating conversation, about his educational future.
 
-As he approaches for what feels like a culminating conversation.
+Sunita Madam's mentorship has opened doors, that seemed permanently closed just a week ago.
 
-About his educational future.
+The transformation of their relationship from hostile dismissal to active advocacy, represents more than personal growth.
 
-Sunita Madam's mentorship having opened doors.
+It validates his fundamental belief that merit can transcend social barriers, when given proper recognition and support.
 
-That seemed permanently closed just a week ago.
+Setting the stage for opportunities, that could fundamentally alter his life's trajectory.
 
-The transformation of their relationship from hostile dismissal to active advocacy.
-
-Represents more than personal growth.
-
-It validates his fundamental belief that merit can transcend social barriers.
-
-When given proper recognition and support.
-
-While setting the stage for opportunities.
-
-That could fundamentally alter his life's trajectory.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: You have something important to discuss today, don't you?
@@ -1108,29 +1096,21 @@ SunitaMadam: Who opens doors for others facing similar barriers.
 
 <<HideAllCharacters>>
 
-As Raju prepares to leave Wellington Estate, he carries something profound.
+As Raju prepares to leave Summit Heights School, he carries something profound.
 
 Not just educational support but comprehensive advocacy for his future success.
 
-He understands that Sunita Madam's transformation.
-
-From prejudiced gatekeeper to passionate advocate.
-
-Represents more than personal growth.
+He understands that Sunita Madam's transformation, from prejudiced gatekeeper to passionate advocate, represents more than personal growth.
 
 It embodies the possibility that systemic barriers can be overcome.
 
 Through persistent demonstration of merit and character.
 
-Her commitment to providing practical support for the scholarship examination.
+Her commitment to providing practical support for the scholarship examination, validates his belief that education can serve as a bridge, between circumstances and aspirations.
 
-Validates his belief that education can serve as a bridge.
+Her challenge to become someone who opens doors for others, transforms his personal success into a broader mission of social change.
 
-Between circumstances and aspirations.
 
-While her challenge to become someone who opens doors for others.
-
-Transforms his personal success into a broader mission of social change.
 
 <<set $SunitaMadam_Complete = true>>
 <<jump Resourcefulness>>

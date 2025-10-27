@@ -464,7 +464,7 @@ Amit: Right! We should document what we find and what doesn't work.
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Good thinking! And let's keep track of time too. We need to know how long our method actually takes.
 
 <<SetCharacterExpression "Amit" "Excited">>
@@ -539,7 +539,7 @@ Amit: Right! We should document what we find and what doesn't work.
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: That way we can adjust our approach if needed.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Good thinking! And let's keep track of time too. We need to know how long our method actually takes.
 
 <<SetCharacterExpression "Amit" "Excited">>
@@ -616,7 +616,7 @@ Raju: And we're proving that young people can solve real problems when we work t
 <<SetCharacterExpression "Amit" "Overjoyed">>
 Amit: The other boys are going to be so excited when we tell them we've actually solved this. They've been waiting all week!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Let's make sure we finish completely today. We don't want to promise a match and then not deliver.
 
 <<SetCharacterExpression "Amit" "Serious">>

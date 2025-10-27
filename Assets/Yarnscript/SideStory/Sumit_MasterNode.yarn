@@ -63,13 +63,13 @@ Sumit: Maybe some kind of competition to see who's the sharper thinker?
 <<SetCharacterExpression "Sumit" "Relaxed">>
 Sumit: But in a friendly way, of course.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: That sounds interesting, Sumit.
 
 <<SetCharacterExpression "Raju" "Skeptical">>
 Raju: But what kind of challenge would be fair to both of us?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: We each have different strengths and knowledge areas.
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -524,7 +524,7 @@ Raju: Same here! The competition was challenging in unexpected ways.
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: I discovered mental strengths I didn't know I had.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: And areas where I definitely need more practice!
 
 <<SetCharacterExpression "Sumit" "Excited">>
@@ -607,7 +607,7 @@ Sumit: Win or lose, we both became better thinkers.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: This experience taught me something profound!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Challenging your mind is just as important as challenging your body.
 
 <<SetCharacterExpression "Raju" "Excited">>

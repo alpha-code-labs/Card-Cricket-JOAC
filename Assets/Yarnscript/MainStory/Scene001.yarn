@@ -65,7 +65,7 @@ Ramu: You're eight now, little tiger—time to carry something heavier than your
 Raju: Will it like me?
 
 
-<<SetCharacterExpression "Ramu" "Smiling">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Bats like discipline.
 
 

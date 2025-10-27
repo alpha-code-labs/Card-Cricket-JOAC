@@ -57,7 +57,7 @@ MunnaBhai: Help? Beta, this isn't child's play.
 <<SetCharacterExpression "MunnaBhai" "Worried">>
 MunnaBhai: These tires cost people their daily wages. One mistake means a customer's bicycle fails on the road.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand it's serious work, bhai. But I'm careful with tools and I learn quickly.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -78,7 +78,7 @@ Raju: That's exactly why I want to help, bhai!
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: You provide such essential service to our entire neighborhood.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Surely there's some small way I could assist without causing problems?
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
@@ -175,7 +175,7 @@ MunnaBhai: Learning to diagnose problems by sound, touch, and experience.
 <<SetCharacterExpression "MunnaBhai" "Disappointed">>
 MunnaBhai: But young people today want office jobs - they think mechanical work is beneath them.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: That must be frustrating, bhai.
 
 <<SetCharacterExpression "Raju" "Sad">>
@@ -196,7 +196,7 @@ Raju: That's exactly why I want to learn, bhai!
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Mechanical skills create immediate, practical value for people's daily lives.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I don't want to miss the chance to understand such important knowledge.
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
@@ -249,7 +249,7 @@ Raju: I've been thinking about your question, bhai.
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
 MunnaBhai: And? How do you think you could best contribute to this trade?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I've been observing carefully. There are several ways I could help.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -280,7 +280,7 @@ position: -308,129
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn basic repair techniques, bhai.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Teach me fundamental tool handling, tire maintenance, and simple repair methods.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -298,7 +298,7 @@ MunnaBhai: One wrong movement can damage expensive parts or create unsafe repair
 <<SetCharacterExpression "MunnaBhai" "Serious">>
 MunnaBhai: This work requires perfect precision and years of practice.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand the responsibility, bhai.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -358,7 +358,7 @@ MunnaBhai: You'd be representing eighteen years of reputation.
 <<SetCharacterExpression "MunnaBhai" "Serious">>
 MunnaBhai: If you disappoint customers, they blame my entire operation.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand the responsibility, bhai.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -406,7 +406,7 @@ position: 184,122
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I want to help improve your workshop efficiency, bhai.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Let me observe your workflow.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -600,7 +600,7 @@ MunnaBhai: Exactly! Help them understand value, not just cost.
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
 MunnaBhai: Some customers get impatient. How would you handle that?
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Stay calm and explain why quality takes time?
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
@@ -758,7 +758,7 @@ MunnaBhai: Professional mechanics must deliver excellence every time.
 <<SetCharacterExpression "MunnaBhai" "Serious">>
 MunnaBhai: Regardless of pressure or complexity.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand, bhai. Consistency builds trust.
 
 <<SetCharacterExpression "MunnaBhai" "Confident">>
@@ -823,7 +823,7 @@ MunnaBhai: It's determined by character and genuine respect for expertise.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: This experience has taught me something profound!
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: Mechanical work embodies the same principles as any excellence.
 
 <<SetCharacterExpression "Raju" "Confident">>

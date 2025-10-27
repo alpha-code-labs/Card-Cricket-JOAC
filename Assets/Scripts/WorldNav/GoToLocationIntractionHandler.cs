@@ -58,7 +58,7 @@ public enum Locations
     ChaiStall = 12,
     //
     MapSprite = 13, // Special case for map sprite
-    PrivateSchool = 14,
+    SummitHeightsSchool = 14,
     Library = 15,
 
 }

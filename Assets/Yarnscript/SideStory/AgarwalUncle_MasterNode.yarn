@@ -66,7 +66,7 @@ AgarwalUncle: And one mistake in calculations or inventory can cost me profit.
 <<SetCharacterExpression "AgarwalUncle" "Anxious">>
 AgarwalUncle: Profit that feeds my family.
 
-<<SetCharacterExpression "Raju" "Serious">>
+<<SetCharacterExpression "Raju" Determined>>
 Raju: I understand it's serious business, uncle.
 
 <<SetCharacterExpression "Raju" "Confident">>
