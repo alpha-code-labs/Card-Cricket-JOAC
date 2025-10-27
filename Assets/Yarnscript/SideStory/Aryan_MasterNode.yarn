@@ -252,7 +252,7 @@ Aryan: He probably learned cricket by playing with rocks and sticks in garbage d
 Aryan: There's a difference between street games and real cricket.
 
 <<SetCharacterExpression "Jaspreet" "Anxious">>
-Jaspreet: But Aryan, I heard some kids from the regular school saying he's actually not bad.
+Jaspreet: But Aryan, I heard some kids from our school saying he's actually not bad.
 
 <<SetCharacterExpression "Jaspreet" "Worried">>
 Jaspreet: What if you're underestimating him?
@@ -639,7 +639,7 @@ Aryan: This is what happens when street pretenders face real cricketers.
 <<SetCharacterExpression "Aryan" "Determined">>
 Aryan: Let's see you even touch this ball, slum boy!
 
-// The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
+The first delivery comes fast and precise, but Raju watches with intense focus. The connection is sweet and pure - bat meeting ball with a satisfying crack.
 
 <<SetCharacterExpression "Jaspreet" "Astonished">>
 Jaspreet: Ooooooh! Did you see that shot?!
