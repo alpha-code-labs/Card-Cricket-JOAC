@@ -94,8 +94,12 @@ title: Gameplay3Result
 title: Gameplay4Result
 ---
 // Gameplay 4: Batting first with 60 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 90>>
-    <<jump scene_51>>
+<<if ($finalScore - $initialScore) < 45>>
+    <<jump scene_51a>>
+<<elseif ($finalScore - $initialScore) < 75>>
+    <<jump scene_51b>>
+<<elseif ($finalScore - $initialScore) < 90>>
+    <<jump scene_51c>>
 <<else>>
     <<jump scene_52>>
 <<endif>>
@@ -104,8 +108,12 @@ title: Gameplay4Result
 title: Gameplay5Result
 ---
 // Gameplay 5: Batting first with 60 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 110>>
-    <<jump scene_55>>
+<<if ($finalScore - $initialScore) < 50>>
+    <<jump scene_55a>>
+<<elseif ($finalScore - $initialScore) < 80>>
+    <<jump scene_55b>>
+<<elseif ($finalScore - $initialScore) < 110>>
+    <<jump scene_55c>>
 <<else>>
     <<jump scene_56>>
 <<endif>>
@@ -114,8 +122,12 @@ title: Gameplay5Result
 title: Gameplay6Result
 ---
 // Gameplay 6: Chasing 120 runs in 60 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 120>>
-    <<jump scene_59>>
+<<if ($finalScore - $initialScore) < 55>>
+    <<jump scene_59a>>
+<<elseif ($finalScore - $initialScore) < 85>>
+    <<jump scene_59a>>
+<<elseif ($finalScore - $initialScore) < 125>>
+    <<jump scene_59c>>
 <<else>>
     <<jump scene_60>>
 <<endif>>
@@ -124,8 +136,12 @@ title: Gameplay6Result
 title: Gameplay7Result
 ---
 // Gameplay 7: Batting first with 90 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 150>>
+<<if ($finalScore - $initialScore) < 60>>
     <<jump scene_115>>
+<<elseif ($finalScore - $initialScore) < 90>>
+    <<jump scene_115b>>
+<<elseif ($finalScore - $initialScore) < 150>>
+    <<jump scene_115c>>
 <<else>>
     <<jump scene_116>>
 <<endif>>
@@ -134,8 +150,12 @@ title: Gameplay7Result
 title: Gameplay8Result
 ---
 // Gameplay 8: Chasing 90 runs in 90 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 90>>
+<<if ($finalScore - $initialScore) < 50>>
     <<jump scene_119>>
+<<elseif ($finalScore - $initialScore) < 70>>
+    <<jump scene_119b>>
+<<elseif ($finalScore - $initialScore) < 90>>
+    <<jump scene_119c>>
 <<else>>
     <<jump scene_120>>
 <<endif>>
@@ -144,8 +164,12 @@ title: Gameplay8Result
 title: Gameplay9Result
 ---
 // Gameplay 9: Chasing 185 runs in 90 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 185>>
+<<if ($finalScore - $initialScore) < 90>>
     <<jump scene_124>>
+<<elseif ($finalScore - $initialScore) < 130>>
+    <<jump scene_124b>>
+<<elseif ($finalScore - $initialScore) < 185>>
+    <<jump scene_124c>>
 <<else>>
     <<jump scene_125>>
 <<endif>>
@@ -153,7 +177,7 @@ title: Gameplay9Result
 
 title: Gameplay12Result
 ---
-// Gameplay 12: Batting first with 15 balls, target 25 runs -> starting score 75
+// Gameplay 12: Batting first with 18 balls, target 25 runs -> starting score 75
 <<if ($finalScore - $initialScore) < 25>>
     <<jump scene_138>>
 <<else>>
