@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
     private int initialWickets;
     public ParticleSystem fireworkEffect;
     public ParticleSystem fireworkEffect2;
+    private bool canUpdateChaseDisplay = false;
 
 
     void Awake()
@@ -89,6 +90,8 @@ public class ScoreManager : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] AudioClip cheeringSound; // Assign your cheering audio file here
+    [SerializeField] AudioClip cheeringSound_gameWon;
+    [SerializeField] AudioClip groaningSound;
     [SerializeField] float cheeringVolume = 1f;
     [SerializeField] AudioSource cheeringAudioSource; // Optional: separate audio source for cheering
     
@@ -279,6 +282,66 @@ public class ScoreManager : MonoBehaviour
 
         Debug.Log($"Cheering sound played for boundary!");
     }
+
+    private void PlayGroaningSound()
+    {
+        if (groaningSound == null)
+        {
+            Debug.LogWarning("Cheering sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(groaningSound, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(groaningSound, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Cheering sound played for boundary!");
+    }
+
+    private void PlayGameWonCheeringSound()
+    {
+        if (cheeringSound_gameWon == null)
+        {
+            Debug.LogWarning("Cheering sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(cheeringSound_gameWon, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(cheeringSound_gameWon, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Cheering sound played for boundary!");
+    }
     
     bool targetReached = false;
     private Vector3 batterOriginalPosition;
@@ -290,6 +353,8 @@ public class ScoreManager : MonoBehaviour
 
         if (runs > 0)
             currentRuns += runs;
+        else if (runs == -3)
+            currentRuns += 1;
 
         if (runs == 4 || runs == 6)
         {
@@ -305,8 +370,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
-
-        if (runs != -3)
+        if(runs != -3)
             UpdateBallsAndOvers(_currentTurn);
             
          if (!isBattingFirst && EncouragementSystem.Instance != null)
@@ -331,7 +395,17 @@ public class ScoreManager : MonoBehaviour
             // Update chase display after scoring
             int runsNeeded = TargetScore - currentRuns;
             int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            UpdateChaseDisplay(runsNeeded, ballsRemain);
+            // dont update on first iteration
+            if (canUpdateChaseDisplay)
+            {
+                UpdateChaseDisplay(runsNeeded, ballsRemain);
+            }
+            else
+            {
+                UpdateChaseDisplay(runsNeeded, MaxBalls);
+                canUpdateChaseDisplay = true;
+            }
+            
         }
         
         remainingWicketsText.text = wickets.ToString();
@@ -347,23 +421,12 @@ public class ScoreManager : MonoBehaviour
         {
             LooseWicket();
         }
-        if (runs == -3) // Wide ball
-        {
-            currentRuns += 1;
-            if (isBattingFirst)
-            {
-                scoreText.text = "Score: " + currentRuns.ToString();
-            }
-            else
-            {
-                scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
-            }
-        }
     }
     
     public void LooseWicket()
     {
         wickets--;
+        PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
         //remainingWicketsText.text = wickets.ToString();
         
@@ -423,6 +486,13 @@ public class ScoreManager : MonoBehaviour
     
     private IEnumerator EndGameAfterDelay()
     {
+        //check if player won the match
+        if(currentGameplayConfig.winScore <= currentRuns)
+        {
+            PlayGameWonCheeringSound();
+            TriggerFirework();
+            yield return new WaitForSeconds(5f);
+        }
         yield return new WaitForSeconds(3f);
         
         // Re-enable the main dialogue system
