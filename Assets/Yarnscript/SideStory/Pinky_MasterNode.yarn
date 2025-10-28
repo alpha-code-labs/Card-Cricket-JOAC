@@ -277,11 +277,11 @@ Pinky: What's the best way to prove that our dreams and academic success can wor
 Make a Choice
 <<AutoAdvance false>>
 
--> Raju: Let's focus completely on academics. Excellence in exams is our best weapon.
+-> Raju: Let's focus completely on academics.
     <<jump Pinky_Day3a>>
--> Raju: I understand your struggle. Let me help you stay strong while we both pursue our dreams.
+-> Raju: Let me help you stay strong while we both pursue our dreams.
     <<jump Pinky_Day3b>>
--> Raju: We're stronger together. Let's create a plan where we both succeed through mutual support.
+-> Raju: Let's create a plan where we both succeed through mutual support.
     <<jump Pinky_Day3c>>
 ===
 
