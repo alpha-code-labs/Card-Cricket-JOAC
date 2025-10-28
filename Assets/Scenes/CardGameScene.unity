@@ -5536,8 +5536,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86049936}
-  - component: {fileID: 86049935}
   - component: {fileID: 86049937}
+  - component: {fileID: 86049935}
   m_Layer: 0
   m_Name: CardsPoolManager
   m_TagString: Untagged
@@ -5702,6 +5702,7 @@ MonoBehaviour:
     isBattingFirst: 0
     pitchCondition: 0
     initialScore: 0
+    winScore: 0
   ballerCardPrefab: {fileID: 9059906081896085217, guid: 861cfae5cb02e3441aa843a7bc23bd9a, type: 3}
 --- !u!4 &86049936
 Transform:
@@ -11104,7 +11105,7 @@ MonoBehaviour:
   currentRuns: 0
   TargetScore: 15
   MaxBalls: 12
-  baseWickets: 2
+  baseWickets: 3
   scoreText: {fileID: 44926448}
   currentRunsText: {fileID: 1552231045}
   totalRunsNeededText: {fileID: 1121265624}
@@ -11124,6 +11125,8 @@ MonoBehaviour:
   difficultChaseColor: {r: 1, g: 0.6, b: 0.2, a: 1}
   criticalChaseColor: {r: 1, g: 0.3, b: 0.3, a: 1}
   cheeringSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
+  cheeringSound_gameWon: {fileID: 8300000, guid: 0211a0855d707d9419e550495bafeb1a, type: 3}
+  groaningSound: {fileID: 8300000, guid: 0608b70dd9b654b44b161767bfa5672f, type: 3}
   cheeringVolume: 1
   cheeringAudioSource: {fileID: 0}
   BatterImage: {fileID: 963504216}
@@ -17118,13 +17121,13 @@ Transform:
   m_GameObject: {fileID: 724427813}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6974897, y: -0.11622484, z: 0.11622484, w: 0.6974897}
-  m_LocalPosition: {x: 6.76, y: -4.0065694, z: 0.022987898}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 8.391886, y: -2.9601507, z: 0.022892402}
+  m_LocalScale: {x: 0.2, y: 0.20000002, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 54477550}
   - {fileID: 226880984}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1208274867}
   m_LocalEulerAnglesHint: {x: -71.079, y: -90, z: 90}
 --- !u!1 &741047591
 GameObject:
@@ -18268,10 +18271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdc47367aafcf64491bd69f8d32d502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arcRadius: 2650
-  arcAngle: 8
-  maxArcAngle: 60
-  arcCenterOffset: {x: 0, y: 0, z: 0}
+  cardSpacing: 200
+  lineYPosition: 0
+  lineOffset: {x: 0, y: 0, z: 0}
   hoverScale: 1.2
   hoverYOffset: 0
   normalScale: 0.95
@@ -18288,7 +18290,7 @@ MonoBehaviour:
   neighbor2Push: 0.8
   neighbor3Push: 0.4
   neighborFarPush: 0.2
-  useRotationEffect: 1
+  useRotationEffect: 0
   rotationMultiplier: 5
 --- !u!1 &1113648355
 GameObject:
@@ -18610,6 +18612,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198059913}
   m_CullTransparentMesh: 1
+--- !u!1 &1208274866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208274867}
+  m_Layer: 0
+  m_Name: Fireworkds Particle System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208274867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208274866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6318854, y: -1.0464187, z: 0.00009549549}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2129397315}
+  - {fileID: 724427816}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1230803575
 GameObject:
   m_ObjectHideFlags: 0
@@ -35310,13 +35345,13 @@ Transform:
   m_GameObject: {fileID: 2129397312}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6953471, y: 0.12842327, z: -0.12842327, w: 0.6953471}
-  m_LocalPosition: {x: -7.26, y: -4.0065694, z: 0.022987898}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -5.6281147, y: -2.9601507, z: 0.022892402}
+  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.20000003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1272353279}
   - {fileID: 1249952517}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1208274867}
   m_LocalEulerAnglesHint: {x: -69.072, y: 90, z: -90}
 --- !u!1001 &4460442403914898203
 PrefabInstance:
@@ -35636,5 +35671,4 @@ SceneRoots:
   - {fileID: 1951655356}
   - {fileID: 2022242532}
   - {fileID: 602577866}
-  - {fileID: 2129397315}
-  - {fileID: 724427816}
+  - {fileID: 1208274867}

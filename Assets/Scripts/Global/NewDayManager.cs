@@ -186,18 +186,14 @@ public class NewDayManager : MonoBehaviour
         currentEventIndex++;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
-    [YarnCommand("RetryCurrentEvent")]//special command to retry the current event
-    public static void RetryCurrentEvent()
-    {
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
-    }
-    [YarnCommand("RetryEvent")]//special command to retry a specific event by name
+    [YarnCommand("RetryEvent")]
     public static void RetryEvent(string eventName)//only works for current day
     {
         int resetToIndex = currentDateRecord.events.FindIndex(e => e.eventName == eventName);
         currentEventIndex = resetToIndex;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
+    [YarnCommand("EndDay")]
     public void EndDay()
     {
         currentEventIndex = 0;
@@ -207,21 +203,10 @@ public class NewDayManager : MonoBehaviour
         YarnDialogSystemSingleTonMaker.instance.dialogueRunner.SaveStateToPersistentStorage("yarnSaveData.json");
         TransitionScreenManager.instance.LoadScene("NewDayScene");
     }
-    [YarnFunction("GetCurrentEventName")]
-    public static string GetCurrentEventNameStatic(int i)
+    [YarnCommand("IncreaseEvnetIndex")]
+    public static void IncreaseEvnetIndex(int increaseby)
     {
-        if (i < 0 || i >= currentDateRecord.events.Count)
-            return "End Day (Index Out of Range)";
-        return $"{i}: {currentDateRecord.events[i].eventName} of type {currentDateRecord.events[i].eventType}";
+        currentEventIndex += increaseby;
     }
-    [YarnFunction("GetCurrentEventIndex")]
-    public static int GetCurrentEventIndex()
-    {
-        return currentEventIndex;
-    }
-    [YarnCommand("SetEventIndex")]
-    public static void SetEventIndex(int index)
-    {
-        currentEventIndex = index;
-    }
+
 }

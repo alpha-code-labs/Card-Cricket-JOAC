@@ -18,25 +18,12 @@ public class ScoreManager : MonoBehaviour
     private int initialWickets;
     public ParticleSystem fireworkEffect;
     public ParticleSystem fireworkEffect2;
+    private bool canUpdateChaseDisplay = false;
 
 
     void Awake()
     {
         disableRaycasterOnMainDialogueSystem();
-
-        // Get gameplay configuration
-        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
-        if (currentGameplayConfig != null)
-        {
-            TargetScore = currentGameplayConfig.targetScore + currentGameplayConfig.initialScore;
-            MaxBalls = currentGameplayConfig.balls;
-            isBattingFirst = currentGameplayConfig.isBattingFirst;
-            currentRuns = currentGameplayConfig.initialScore;
-
-            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
-            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
-        }
-
         if (GameManager.instance != null)
             wickets = baseWickets + GameManager.instance.currentSaveData.humility;
         else
@@ -45,7 +32,7 @@ public class ScoreManager : MonoBehaviour
         initialWickets = wickets;
         Instance = this;
 
-        // Setup chase display visibility (only show when chasing)
+        // Initially hide chase display
         if (chaseDisplayText != null && chaseDisplayContainer != null)
         {
             chaseDisplayContainer.SetActive(false);
@@ -89,6 +76,8 @@ public class ScoreManager : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] AudioClip cheeringSound; // Assign your cheering audio file here
+    [SerializeField] AudioClip cheeringSound_gameWon;
+    [SerializeField] AudioClip groaningSound;
     [SerializeField] float cheeringVolume = 1f;
     [SerializeField] AudioSource cheeringAudioSource; // Optional: separate audio source for cheering
     
@@ -175,6 +164,7 @@ public class ScoreManager : MonoBehaviour
     
     private void UpdateChaseDisplay(int runsNeeded, int ballsRemaining)
     {
+        Debug.Log("Updating chase display text");
         if (chaseDisplayText == null || gameEnded)
             return;
             
@@ -279,6 +269,66 @@ public class ScoreManager : MonoBehaviour
 
         Debug.Log($"Cheering sound played for boundary!");
     }
+
+    private void PlayGroaningSound()
+    {
+        if (groaningSound == null)
+        {
+            Debug.LogWarning("Cheering sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(groaningSound, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(groaningSound, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Cheering sound played for boundary!");
+    }
+
+    private void PlayGameWonCheeringSound()
+    {
+        if (cheeringSound_gameWon == null)
+        {
+            Debug.LogWarning("Cheering sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(cheeringSound_gameWon, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(cheeringSound_gameWon, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Cheering sound played for boundary!");
+    }
     
     bool targetReached = false;
     private Vector3 batterOriginalPosition;
@@ -290,6 +340,8 @@ public class ScoreManager : MonoBehaviour
 
         if (runs > 0)
             currentRuns += runs;
+        else if (runs == -3)
+            currentRuns += 1;
 
         if (runs == 4 || runs == 6)
         {
@@ -305,16 +357,15 @@ public class ScoreManager : MonoBehaviour
         }
 
         int _currentTurn = runs == -3 ? CardsPoolManager.Instance.CurrntTurn : CardsPoolManager.Instance.CurrntTurn + 1;
-
-        if (runs != -3)
+        if(runs != -3)
             UpdateBallsAndOvers(_currentTurn);
             
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore, _ballsRemaining);
+            EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore, _ballsRemaining);
         }
-        
+
         if (isBattingFirst)
         {
             Debug.Log("updating score display text");
@@ -328,16 +379,27 @@ public class ScoreManager : MonoBehaviour
             scoreText.text = "Score: " + currentRuns + " / " + TargetScore.ToString();
             Canvas.ForceUpdateCanvases();
 
-            // Update chase display after scoring
-            int runsNeeded = TargetScore - currentRuns;
-            int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+
+        }
+
+        // Update chase display after scoring
+        int runsNeeded = TargetScore - currentRuns;
+        int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+        // dont update on first iteration 
+         if (canUpdateChaseDisplay)
+        {
             UpdateChaseDisplay(runsNeeded, ballsRemain);
+        }
+        else
+        {
+            UpdateChaseDisplay(runsNeeded, MaxBalls);
+            canUpdateChaseDisplay = true;
         }
         
         remainingWicketsText.text = wickets.ToString();
         
-        // Check if target is reached (when chasing)
-        if (!isBattingFirst && currentRuns >= TargetScore && !targetReached)
+        // Check if target is reached
+        if (currentRuns >= currentGameplayConfig.winScore && !targetReached)
         {
             targetReached = true;
             HandleGameOver("won", "Target reached! You win!");
@@ -347,23 +409,12 @@ public class ScoreManager : MonoBehaviour
         {
             LooseWicket();
         }
-        if (runs == -3) // Wide ball
-        {
-            currentRuns += 1;
-            if (isBattingFirst)
-            {
-                scoreText.text = "Score: " + currentRuns.ToString();
-            }
-            else
-            {
-                scoreText.text = "Score: " + currentRuns.ToString() + " / " + TargetScore.ToString();
-            }
-        }
     }
     
     public void LooseWicket()
     {
         wickets--;
+        PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
         //remainingWicketsText.text = wickets.ToString();
         
@@ -407,7 +458,18 @@ public class ScoreManager : MonoBehaviour
     
     private void SetYarnVariables(string result)
     {
+        if (YarnDialogSystemSingleTonMaker.instance == null)
+        {
+            Debug.LogError("YarnDialogSystemSingleTonMaker.instance is null");
+            return;
+        }
+
         var storage = YarnDialogSystemSingleTonMaker.instance.dialogueRunner.VariableStorage;
+        if(storage == null)
+        {
+            Debug.LogError("could not set yarn variable");
+            return;
+        }
         
         // Set gameplay outcome variables
         storage.SetValue("$gameplayNumber", currentGameplayConfig.gameplayNumber); // Changed from $gameplayDate to $gameplayNumber
@@ -423,6 +485,13 @@ public class ScoreManager : MonoBehaviour
     
     private IEnumerator EndGameAfterDelay()
     {
+        //check if player won the match
+        if(currentGameplayConfig.winScore <= currentRuns)
+        {
+            PlayGameWonCheeringSound();
+            TriggerFirework();
+            yield return new WaitForSeconds(5f);
+        }
         yield return new WaitForSeconds(3f);
         
         // Re-enable the main dialogue system
@@ -441,7 +510,9 @@ public class ScoreManager : MonoBehaviour
     {
         Timer.Instance.PauseTimer();
         AnimateBatterSwing();
-        gameAudioSource.Play();
+        //play batting sound
+        if(battingStrategy != BattingStrategy.Leave)
+            gameAudioSource.Play();
         
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
@@ -562,6 +633,31 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
 
+        // Get gameplay configuration
+        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
+        if (currentGameplayConfig != null)
+        {
+            TargetScore = currentGameplayConfig.winScore;
+            MaxBalls = currentGameplayConfig.balls;
+            isBattingFirst = currentGameplayConfig.isBattingFirst;
+            currentRuns = currentGameplayConfig.initialScore;
+
+            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
+            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
+        }
+        else
+        {
+            Debug.Log("Loading gameplay 2 as date is not found");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            TargetScore = currentGameplayConfig.winScore;
+            MaxBalls = currentGameplayConfig.balls;
+            isBattingFirst = currentGameplayConfig.isBattingFirst;
+            currentRuns = currentGameplayConfig.initialScore;
+            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
+            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
+
+        }
+
         previousRuns = currentRuns;
         previousWickets = wickets;
         previousBallsRemaining = MaxBalls;
@@ -604,7 +700,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         // Subscribe to the turn started event to show chase display after countdown
-        if (!isBattingFirst && chaseDisplayText != null)
+        if (chaseDisplayText != null)
         {
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
@@ -718,8 +814,8 @@ public class ScoreManager : MonoBehaviour
     {
         if (chaseDisplayText != null && chaseDisplayContainer != null)
         {
-            chaseDisplayContainer.SetActive(!isBattingFirst);
-            chaseDisplayText.gameObject.SetActive(!isBattingFirst);
+            chaseDisplayContainer.SetActive(true);
+            chaseDisplayText.gameObject.SetActive(true);
         }
     }
     IEnumerator UpdateRedrawButtonRoutine()

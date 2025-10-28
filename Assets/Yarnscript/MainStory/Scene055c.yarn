@@ -1,0 +1,26 @@
+title: scene_55c
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic Exciting_1>>
+<<SetBGSprite KohliwadaGround>>
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Captain. Well played. Good effort.
+
+<<SetCharacterExpression "Raju" "Determined">>
+Raju: I could have done better. I wanted to make more.
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: That's my boy - always stay hungry and greedy when it comes to scoring runs. Tomorrow is another day with a fresh challenge, so be in the groove.
+
+<<SetCharacterExpression "Raju" "Confident">>
+Raju: Yes I am aware. I am completely switched on. I can do this.
+
+<<HideAllCharacters>>
+<<EndEvent>>
+<<StopBackgroundMusic>>
+<<wait 3>>
+
+===

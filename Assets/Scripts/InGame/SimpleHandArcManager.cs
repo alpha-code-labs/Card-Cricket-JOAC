@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Simplified manager that works with your existing AttackCardProps
+// Modified manager that arranges cards in a horizontal line instead of an arc
 public class SimpleHandArcManager : MonoBehaviour
 {
-    [Header("Arc Configuration")]
-    [SerializeField] private float arcRadius = 800f;
-    [SerializeField] private float arcAngle = 30f;
-    [SerializeField] private float maxArcAngle = 60f;
-    [SerializeField] private Vector3 arcCenterOffset = new Vector3(0, -400, 0);
+    [Header("Line Configuration")]
+    [SerializeField] private float cardSpacing = 200f; // Space between cards
+    [SerializeField] private float lineYPosition = 0f; // Y position of the line
+    [SerializeField] private Vector3 lineOffset = new Vector3(0, 0, 0); // Overall line offset
 
     [Header("Card Hover Settings")]
     [SerializeField] private float hoverScale = 1.3f;
@@ -20,7 +19,6 @@ public class SimpleHandArcManager : MonoBehaviour
     [SerializeField] private float centerHoverYOffset = 10f; // Min Y offset for center cards
     [SerializeField] private float minHoverYOffset = 10f; // Minimum Y offset for center cards
     [SerializeField] private bool useDynamicYOffset = true; // Enable dynamic Y offset based on position
-
 
     [Header("Animation")]
     [SerializeField] private float animationSpeed = 8f;
@@ -150,11 +148,12 @@ public class SimpleHandArcManager : MonoBehaviour
 
         if (activeCards.Count == 0) return;
 
-        // Calculate positions for each card
+        // Calculate positions for each card in a horizontal line
         int cardCount = activeCards.Count;
-        float dynamicArcAngle = Mathf.Min(arcAngle + (cardCount - 3) * 5f, maxArcAngle);
-        float angleStep = cardCount > 1 ? dynamicArcAngle / (cardCount - 1) : 0;
-        float startAngle = -dynamicArcAngle / 2f;
+        
+        // Calculate total width needed for all cards
+        float totalWidth = (cardCount - 1) * cardSpacing;
+        float startX = -totalWidth / 2f; // Start from left to center the line
 
         for (int i = 0; i < cardCount; i++)
         {
@@ -175,15 +174,13 @@ public class SimpleHandArcManager : MonoBehaviour
             }
             info.canvas.overrideSorting = true;
 
-            // Calculate arc position (bottom-up arc)
-            float angle = startAngle + angleStep * i;
-            float radians = angle * Mathf.Deg2Rad;
-            float x = Mathf.Sin(radians) * arcRadius;
-            float y = Mathf.Cos(radians) * arcRadius - arcRadius; // Changed sign for bottom-up arc
+            // Calculate position in a straight horizontal line
+            float x = startX + (i * cardSpacing);
+            float y = lineYPosition;
 
-            info.basePosition = arcCenterOffset + new Vector3(x, y, 0);
+            info.basePosition = lineOffset + new Vector3(x, y, 0);
             info.targetPosition = info.basePosition;
-            info.baseRotation = Quaternion.Euler(0, 0, -angle * 0.5f);
+            info.baseRotation = Quaternion.identity; // No rotation for flat line
             info.targetRotation = info.baseRotation;
             info.targetScale = Vector3.one * normalScale;
             info.baseSortingOrder = i * 2 + 3;
@@ -208,11 +205,11 @@ public class SimpleHandArcManager : MonoBehaviour
 
         // Scale and elevate
         hoveredInfo.targetScale = Vector3.one * hoverScale;
-        // hoveredInfo.targetPosition = hoveredInfo.basePosition + Vector3.up * hoverYOffset;
+        
         // Calculate dynamic Y offset based on card position
         float dynamicYOffset = CalculateDynamicYOffset(hoveredInfo);
         hoveredInfo.targetPosition = hoveredInfo.basePosition + Vector3.up * dynamicYOffset;
-        hoveredInfo.targetRotation = Quaternion.identity; // Straighten
+        hoveredInfo.targetRotation = Quaternion.identity; // Keep straight when hovered
 
         // Adjust ALL cards based on distance from hovered card
         foreach (var kvp in cardInfos)
@@ -256,7 +253,7 @@ public class SimpleHandArcManager : MonoBehaviour
             if (useRotationEffect)
             {
                 float rotationAdjust = pushDirection * (rotationMultiplier / (distance + 1));
-                otherInfo.targetRotation = Quaternion.Euler(otherInfo.baseRotation.eulerAngles + new Vector3(0, 0, rotationAdjust));
+                otherInfo.targetRotation = Quaternion.Euler(0, 0, rotationAdjust);
             }
         }
 
@@ -354,7 +351,7 @@ public class SimpleHandArcManager : MonoBehaviour
         
         // Interpolate Y offset based on position
         // Edge cards get full hoverYOffset, center cards get centerHoverYOffset
-       float dynamicOffset = Mathf.Lerp(hoverYOffset, centerHoverYOffset, distanceFromCenter) + minHoverYOffset;
+        float dynamicOffset = Mathf.Lerp(hoverYOffset, centerHoverYOffset, distanceFromCenter) + minHoverYOffset;
         return dynamicOffset;
     }
 }

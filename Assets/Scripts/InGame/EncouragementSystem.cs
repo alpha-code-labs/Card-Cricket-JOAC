@@ -139,45 +139,44 @@ public class EncouragementSystem : MonoBehaviour
         // 50% Comfortable/Cruising dialogues
         dialoguePools["50_Comfortable"] = new List<string>
         {
-            "Halfway there with {1} balls in hand! You're in complete control!",
-            "50% done, {1} balls remaining - smooth sailing ahead!",
-            "Brilliant! Halfway to victory with plenty of time!",
-            "Outstanding! 50% achieved and the rate is comfortable!"
+            "{1} balls in hand! You're in complete control!",
+            "{1} balls remaining - smooth sailing ahead!",
+            "Brilliant! On the way to victory with plenty of time!",
+            "Outstanding! The rate is comfortable!"
         };
         
         // 50% Challenging dialogues
         dialoguePools["50_Challenging"] = new List<string>
         {
-            "Halfway to target! {0} needed in {1} balls - need {2} per ball. Stay sharp!",
-            "50% reached but only {1} balls remain. Time to accelerate!",
-            "Halfway there! The required rate is climbing - find the boundaries!",
-            "50% done! Need to maintain {2} runs per ball from here."
+            "{0} needed in {1} balls -Stay sharp!",
+            "Only {1} balls remain. Time to accelerate!",
+            "The required rate is climbing - find the boundaries!",
         };
         
         // 50% Critical/Unreachable dialogues
         dialoguePools["50_Critical"] = new List<string>
         {
-            "Halfway there but {0} needed in just {1} balls. Go for everything!",
-            "50% scored - need boundaries every ball now. Fortune favors the brave!",
-            "Half the target reached! This requires something special now!"
+            "{0} needed in just {1} balls. Go for everything!",
+            "Need boundaries every ball now. Fortune favors the brave!",
+            "More than half the target reached! This requires something special now!"
         };
         
         // 75% Comfortable dialogues
         dialoguePools["75_Comfortable"] = new List<string>
         {
-            "Three-quarters done with {1} balls left! Victory is yours!",
-            "75% complete! Just {0} needed from {1} balls - you've got this!",
+            "{1} balls left! Victory is yours!",
+            "Just {0} needed from {1} balls - you've got this!",
             "Almost there! The finish line is in sight!",
-            "Incredible! 75% done and cruising to victory!"
+            "Incredible! Cruising to victory!"
         };
         
         // 75% Challenging dialogues
         dialoguePools["75_Challenging"] = new List<string>
         {
-            "75% done! {0} from {1} balls - keep pushing!",
-            "Three-quarters complete but the rate is tight. Stay focused!",
-            "Almost there! Need {2} per ball - you can do this!",
-            "75% achieved! These last {0} need smart batting!"
+            "{0} from {1} balls - keep pushing!",
+            "The rate is tight. Stay focused!",
+            "Almost there! you can do this!",
+            "These last {0} need smart batting!"
         };
         
         // Final 10 balls dialogues (always mention balls)
@@ -210,17 +209,17 @@ public class EncouragementSystem : MonoBehaviour
         // Valiant effort dialogues (when target is unreachable)
         dialoguePools["Valiant50"] = new List<string>
         {
-            "You've scored half their total! That's an achievement in itself!",
-            "50% of that massive target - you're showing real character!",
-            "Halfway to their score! This is brave batting!",
-            "Half their total reached! You're giving them a real fight!"
+            "That's an achievement in itself!",
+            "You're showing real character!",
+            "Past halfway to their score! This is brave batting!",
+            "More than half of their total reached! You're giving them a real fight!"
         };
         
         dialoguePools["Valiant75"] = new List<string>
         {
-            "Three-quarters of their total! This has been an incredible effort!",
-            "75% reached! Win or lose, this is impressive batting!",
-            "What a fight! 75% of that huge target scored!",
+            "More than three-quarters of their total! This has been an incredible effort!",
+            "We have covered a loo! Win or lose, this is impressive batting!",
+            "What a fight! A lot of that huge target scored!",
             "You've nearly matched their total! This is something special!"
         };
         
@@ -251,9 +250,11 @@ public class EncouragementSystem : MonoBehaviour
         currentRunsNeeded = runsNeeded;
         currentBallsRemaining = ballsRemaining;
         currentRequiredRate = requiredRate;
-        
+
         // Determine situation category
         currentSituation = GetSituationCategory(requiredRate);
+        Debug.Log("Required run rate is " + requiredRate);
+        Debug.Log(currentRunsNeeded + " " + currentBallsRemaining + " " + currentRequiredRate);
         
         // Determine if target is unreachable
         bool isUnreachable = requiredRate > 4.0f;
@@ -286,14 +287,14 @@ public class EncouragementSystem : MonoBehaviour
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.FinalRuns, expr, currentSituation);
             }
-            else if (runsNeeded <= 10 && runsNeeded > 2 && !milestone10RunsTriggered)
+            else if (runsNeeded <= 10 && runsNeeded > 2 && !milestone10RunsTriggered && !milestoneFinalRunsTriggered)
             {
                 Debug.Log("Pushing milestone10Runs");
                 milestone10RunsTriggered = true;
                 CharacterExpression expr = GetExpressionForSituation(currentSituation);
                 triggeredMilestone = new MilestoneData(MilestoneType.TenRuns, expr, currentSituation);
             }
-           else if (percentage  >= 75f && !milestone75Triggered && requiredRate < 3.0f)
+           else if (percentage  >= 75f && !milestone75Triggered && !milestone10RunsTriggered && !milestoneFinalRunsTriggered && requiredRate < 3.0f)
             {
                 Debug.Log("Pushing milestone75");
                 milestone75Triggered = true;

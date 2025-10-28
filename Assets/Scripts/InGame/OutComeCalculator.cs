@@ -304,7 +304,7 @@ public class OutComeCalculator : ScriptableObject
             string outcomeStr = worksheet.Cells[row, 8].Value?.ToString();
             string specialOutcome = worksheet.Cells[row, 9].Value?.ToString();
 
-            if ((outcomeStr == "1 Run" || outcomeStr == "1 Run Run") && specialOutcome == "Wide Ball")
+            if ((outcomeStr == "1 Run" || outcomeStr == "1 Run Run") && specialOutcome == "Wide")
             {
                 entry.outcome = OutCome.OneRunWideBall;
             }

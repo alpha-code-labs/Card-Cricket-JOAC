@@ -2357,7 +2357,6 @@ GameObject:
   - component: {fileID: 814541512}
   - component: {fileID: 814541514}
   - component: {fileID: 814541513}
-  - component: {fileID: 814541515}
   m_Layer: 5
   m_Name: ToolTipHolder
   m_TagString: Untagged
@@ -2423,20 +2422,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814541511}
   m_CullTransparentMesh: 1
---- !u!114 &814541515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814541511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c85880b9a7d2b6a4382691b818e87bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Background: {fileID: 814541513}
-  currencyToolTip: {fileID: 823328898}
 --- !u!1 &823328896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +2433,7 @@ GameObject:
   - component: {fileID: 823328897}
   - component: {fileID: 823328899}
   - component: {fileID: 823328898}
+  - component: {fileID: 823328900}
   m_Layer: 5
   m_Name: ToolTip
   m_TagString: Untagged
@@ -2572,6 +2558,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823328896}
   m_CullTransparentMesh: 1
+--- !u!114 &823328900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823328896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85880b9a7d2b6a4382691b818e87bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyToolTip: {fileID: 823328898}
 --- !u!1001 &853985374
 PrefabInstance:
   m_ObjectHideFlags: 0
