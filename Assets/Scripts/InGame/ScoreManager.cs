@@ -363,7 +363,7 @@ public class ScoreManager : MonoBehaviour
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore, _ballsRemaining);
+            EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore, _ballsRemaining);
         }
 
         if (isBattingFirst)
