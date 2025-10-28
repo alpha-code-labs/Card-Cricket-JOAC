@@ -637,10 +637,10 @@ Shiv Prasad: But you're making careless errors because you're rushing, because y
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Is this really the path you want to continue?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: So you want me to choose?
 
-<<SetCharacterExpression "Raju" "Angry">>
+<<SetCharacterExpression "Raju" "Sad">>
 Raju: Between what makes me feel alive and what you think is practical?
 
 <<SetCharacterExpression "Raju" "Sad">>
