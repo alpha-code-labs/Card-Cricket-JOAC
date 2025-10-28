@@ -413,7 +413,7 @@ position: -308,129
 <<set $Kamla_Path = "a">>
 <<SetCharacterExpression "Raju" "Determined">>
 
-<<SetCharacterExpression "Kamla" "Astonished">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: That's exactly the attitude I hoped to see, beta.
 
 <<SetCharacterExpression "Kamla" "Proud">>
@@ -507,7 +507,7 @@ position: 184,122
 <<SetCharacterExpression "Kamla" "Quizzical">>
 Kamla: You're thinking about cricket helping the family?
 
-<<SetCharacterExpression "Kamla" "Astonished">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: That's... ambitious, beta.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
@@ -653,6 +653,7 @@ title: Kamla_Revelation
 tags:
 ---
 <<PlayBackgroundMusic Kamla>>
+<<HideAllCharacters>>
 
 After three days of voluntarily helping his mother and demonstrating growing maturity, Raju accompanies Kamla to the wealthy Mehta household.
 
@@ -788,7 +789,7 @@ Though today's shopping trip carries the anticipation of a significant moment.
 
 That neither fully expects.
 
-<<SetCharacterExpression "Kamla" "Astonished">>
+<<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Beta, look at this.
 
 <<SetCharacterExpression "Kamla" "Excited">>
