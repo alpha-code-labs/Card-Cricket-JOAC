@@ -11,7 +11,7 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: It's the Semifinals today captain. We're batting first, you're opening, we need 90 runs in the first 15 overs. Hang in there and watch the swing and the seam.
+Ramu: It's the Semifinals today captain. We're batting first, you're opening, we need 145 runs in the first 15 overs. Hang in there and watch the swing and the seam.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in, completely focused and ready to roar.

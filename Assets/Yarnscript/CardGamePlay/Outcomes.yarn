@@ -149,12 +149,12 @@ title: Gameplay7Result
 
 title: Gameplay8Result
 ---
-// Gameplay 8: Chasing 90 runs in 90 balls -> starting score 0
-<<if ($finalScore - $initialScore) < 50>>
+// Gameplay 8: Chasing 145 runs in 90 balls -> starting score 0
+<<if ($finalScore - $initialScore) < 70>>
     <<jump scene_119>>
-<<elseif ($finalScore - $initialScore) < 70>>
-    <<jump scene_119b>>
 <<elseif ($finalScore - $initialScore) < 90>>
+    <<jump scene_119b>>
+<<elseif ($finalScore - $initialScore) < 145>>
     <<jump scene_119c>>
 <<else>>
     <<jump scene_120>>
