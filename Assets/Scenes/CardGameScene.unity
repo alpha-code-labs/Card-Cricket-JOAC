@@ -18270,10 +18270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdc47367aafcf64491bd69f8d32d502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arcRadius: 2650
-  arcAngle: 8
-  maxArcAngle: 60
-  arcCenterOffset: {x: 0, y: 0, z: 0}
+  cardSpacing: 200
+  lineYPosition: 0
+  lineOffset: {x: 0, y: 0, z: 0}
   hoverScale: 1.2
   hoverYOffset: 0
   normalScale: 0.95
@@ -18290,7 +18289,7 @@ MonoBehaviour:
   neighbor2Push: 0.8
   neighbor3Push: 0.4
   neighborFarPush: 0.2
-  useRotationEffect: 1
+  useRotationEffect: 0
   rotationMultiplier: 5
 --- !u!1 &1113648355
 GameObject:
