@@ -183,6 +183,7 @@ public class NewDayManager : MonoBehaviour
     {
         if (FreeTimeConsumed)
             isEvening = true;
+        currentEventIndex++;
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     [YarnCommand("RetryCurrentEvent")]//special command to retry the current event
