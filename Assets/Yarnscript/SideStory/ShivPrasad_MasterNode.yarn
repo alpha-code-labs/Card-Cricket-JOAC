@@ -345,13 +345,13 @@ Raju: I'll create a proper study schedule and stick to it religiously.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket can wait - my education comes first, just like you've said.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Your willingness to sacrifice shows maturity.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: But remember - this isn't about giving up cricket forever.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: It's about proving you understand priorities.
 
 <<HideAllCharacters>>
@@ -483,7 +483,7 @@ The transformation is apparent. Raju's bat remains untouched while textbooks spr
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
 Shiv Prasad: I see you've been studying for hours every day, beta.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Your discipline is remarkable.
 
 <<SetCharacterExpression "ShivPrasad" "Worried">>
@@ -498,7 +498,7 @@ Raju: But this sacrifice helps me understand how much both mean to me.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to earn the right to have both.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Your sacrifice shows real character, beta.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
@@ -519,7 +519,7 @@ Raju demonstrates systematic integration of cricket-learned discipline with acad
 
 Raju's methodical approach reflects the same systematic thinking from cricket. Athletic discipline enhances academic performance when consciously applied. Study sessions take on practice structure - clear goals, measurable progress, focused attention.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: I have to admit, beta - your study methods are much more organized.
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
@@ -534,7 +534,7 @@ Raju: Cricket taught me improvement comes from consistent effort.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Breaking down complex skills. Same principle works for math equations.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
@@ -750,13 +750,13 @@ Raju: About practice, discipline, staying calm under pressure.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: If I'm not ready now, I'll never be.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: I've been watching you these past six days, beta.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: The discipline you've shown, the way you've organized your time...
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: The balance you've managed between cricket and studies.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
@@ -768,13 +768,13 @@ Shiv Prasad: When this week started, I saw cricket as a threat to your education
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: To your future security.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: But watching you apply cricket discipline to your studies...
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Seeing you grow more mature and focused...
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: I've learned something important.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -813,7 +813,7 @@ Shiv Prasad: Not just memorization, but genuine mathematical comprehension.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: And I'll not only support your cricket, I'll help you find proper coaching.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: And opportunities.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -840,16 +840,16 @@ Raju: Cricket will make me a better student, not worse.
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Everything I've learned this week proves that.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Then go to school today and show your teacher.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Show yourself. Show me.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: That passion and responsibility can work together.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Prove that a cricket-loving boy can also be an excellent student.
 
 <<SetCharacterExpression "Raju" "Excited">>

@@ -16,7 +16,7 @@ ShivPrasad: How did it go?
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am not sure. I tried my best.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: I guess we will find out soon.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -31,7 +31,7 @@ Kamla: His eyes look like he is unsure. I read him well. I am his mother.
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: We will wait and watch.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: in 15 days.
 
 <<SetCharacterExpression "Raju" "Determined">>
