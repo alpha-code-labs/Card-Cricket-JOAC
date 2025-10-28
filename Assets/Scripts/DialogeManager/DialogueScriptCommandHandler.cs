@@ -58,6 +58,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
             {
                 Debug.Log($"Resrarting Current Node at: {currentNode}");
+                HideAllCharacters();
                 YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
             }
             else
