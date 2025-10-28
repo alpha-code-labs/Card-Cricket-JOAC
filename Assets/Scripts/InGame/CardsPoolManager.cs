@@ -29,7 +29,6 @@ public class CardsPoolManager : MonoBehaviour
     private int maxRedraws; // Maximum redraws per game
     private int redraws = 0; // Track number of redraws used
     private bool cardsInteractable = true;
-    private GameplayConfig currentGameplayConfig;
 
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
@@ -51,7 +50,6 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
-
         DateRecord dateRecord = NewDayManager.currentDateRecord;
         if (GameManager.instance != null)
         {
@@ -69,9 +67,20 @@ public class CardsPoolManager : MonoBehaviour
 
     void Start()
     {
-        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
-        gameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
         StartCoroutine(WaitAndStartTurn());
+         if (GameplayConfiguration.Instance != null)
+        {
+            gameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
+        }
+        else
+        {
+            Debug.LogError("GameplayConfiguration.Instance is null!");
+        }
+        if(gameplayConfig == null)
+        {
+            Debug.Log("loading gameplay 2 in CardsPoolManager as date is null");
+            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+        }
     }
 
     IEnumerator WaitAndStartTurn()
@@ -89,9 +98,6 @@ public class CardsPoolManager : MonoBehaviour
     [ContextMenu("Start Turn")]
     public void StartTurn(bool incrementBalls = true)
     {
-        // Check if game is already over
-        bool isBattingFirst = currentGameplayConfig.isBattingFirst;
-        Debug.Log("is batting first " + isBattingFirst);
         int currentScore = ScoreManager.Instance.currentRuns; // You'll need to make currentRuns public or add a getter
 
         // Check various game over conditions
@@ -109,8 +115,8 @@ public class CardsPoolManager : MonoBehaviour
             return;
         }
 
-        // Check if target achieved (when chasing)
-        if (!isBattingFirst && currentScore >= ScoreManager.Instance.TargetScore)
+        // Check if target achieved
+        if (currentScore >= gameplayConfig.winScore)
         {
             Debug.Log("Game Over - Target achieved!");
             ScoreManager.Instance.enableRaycasterOnMainDialogueSystem();
@@ -136,12 +142,12 @@ public class CardsPoolManager : MonoBehaviour
         OnTurnStarted?.Invoke();
     }
     [ContextMenu("End Turn")]
-    public void EndTurn(int maxBallsToBall, bool incrementBalls = true)
+    public void EndTurn(int maxBallsToBall, bool isNormalDelivery = true)
     {
-        StartCoroutine(EndTurnWithAnimation( maxBallsToBall, incrementBalls));
+        StartCoroutine(EndTurnWithAnimation( maxBallsToBall, isNormalDelivery));
     }
 
-    private IEnumerator EndTurnWithAnimation(int maxBallsToBall, bool incrementBalls)
+    private IEnumerator EndTurnWithAnimation(int maxBallsToBall, bool isNormalDelivery)
     {
         // Animate cards out first
         yield return AnimateCardsOut();
@@ -155,7 +161,9 @@ public class CardsPoolManager : MonoBehaviour
 
         SetCardsInteractable(true);
         HandCards.Clear();
-        CurrntTurn++;
+        //Increment current turn if it's a normal delivery i.d not wide or no ball
+        if(isNormalDelivery)
+            CurrntTurn++;
         
         // if (CurrntTurn >= maxBallsToBall)
         //     ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
@@ -406,41 +414,53 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
         }
         
         BallThrow ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
-        
-        // Check if this ball is a yorker
-        if (ballThrow.ballLength == BallLength.Yorker)
-        {
-            // Check if we already have a yorker in the last 10 balls
-            int startCheckIndex = Mathf.Max(0, i - 9); // Check last 9 balls (current would be the 10th)
-            bool yorkerExistsInRange = false;
-            
-            for (int j = startCheckIndex; j < i && j < BallThrows.Count; j++)
+
+            // Check if this ball is a yorker
+            if (ballThrow.ballLength == BallLength.Yorker)
             {
-                if (BallThrows[j].ballLength == BallLength.Yorker)
+                // Check if we already have a yorker in the last 10 balls
+                int startCheckIndex = Mathf.Max(0, i - 9); // Check last 9 balls (current would be the 10th)
+                bool yorkerExistsInRange = false;
+
+                for (int j = startCheckIndex; j < i && j < BallThrows.Count; j++)
                 {
-                    yorkerExistsInRange = true;
-                    break; 
-                }
-            }
-            
-            // If yorker already exists in the last 10 balls window, generate a new non-yorker ball
-            if (yorkerExistsInRange)
-            {
-                int attempts = 0;
-                do
-                {
-                    ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
-                    attempts++;
-                    
-                    // Safety check to avoid infinite loop
-                    if (attempts > 50)
+                    if (BallThrows[j].ballLength == BallLength.Yorker)
                     {
-                        Debug.LogWarning($"Could not generate non-yorker after 50 attempts at ball {i + 1}, using current ball");
+                        yorkerExistsInRange = true;
                         break;
                     }
-                } while (ballThrow.ballLength == BallLength.Yorker);
+                }
+
+                // If yorker already exists in the last 10 balls window, generate a new non-yorker ball
+                if (yorkerExistsInRange)
+                {
+                    int attempts = 0;
+                    do
+                    {
+                        ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+                        attempts++;
+
+                        // Safety check to avoid infinite loop
+                        if (attempts > 50)
+                        {
+                            Debug.LogWarning($"Could not generate non-yorker after 50 attempts at ball {i + 1}, using current ball");
+                            break;
+                        }
+                    } while (ballThrow.ballLength == BallLength.Yorker);
+                }
             }
-        }
+        
+        //Setup for testing wide balls
+            // BallThrow firstBallThrow = new BallThrow(
+            //                 TypeOfBowler.Fast,
+            //                 Side.RightArm,
+            //                 BallType.Straight,
+            //                 BallLine.WayOutsideOff,
+            //                 BallLength.Short,
+            //                 PitchCondition.Friendly
+            //             );
+            // BallThrows.Add(firstBallThrow);
+        ///-----------------------------///
         
         BallThrows.Add(ballThrow);
     }

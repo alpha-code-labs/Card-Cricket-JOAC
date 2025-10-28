@@ -24,20 +24,6 @@ public class ScoreManager : MonoBehaviour
     void Awake()
     {
         disableRaycasterOnMainDialogueSystem();
-
-        // Get gameplay configuration
-        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
-        if (currentGameplayConfig != null)
-        {
-            TargetScore = currentGameplayConfig.targetScore + currentGameplayConfig.initialScore;
-            MaxBalls = currentGameplayConfig.balls;
-            isBattingFirst = currentGameplayConfig.isBattingFirst;
-            currentRuns = currentGameplayConfig.initialScore;
-
-            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
-            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
-        }
-
         if (GameManager.instance != null)
             wickets = baseWickets + GameManager.instance.currentSaveData.humility;
         else
@@ -46,7 +32,7 @@ public class ScoreManager : MonoBehaviour
         initialWickets = wickets;
         Instance = this;
 
-        // Setup chase display visibility (only show when chasing)
+        // Initially hide chase display
         if (chaseDisplayText != null && chaseDisplayContainer != null)
         {
             chaseDisplayContainer.SetActive(false);
@@ -178,6 +164,7 @@ public class ScoreManager : MonoBehaviour
     
     private void UpdateChaseDisplay(int runsNeeded, int ballsRemaining)
     {
+        Debug.Log("Updating chase display text");
         if (chaseDisplayText == null || gameEnded)
             return;
             
@@ -378,7 +365,7 @@ public class ScoreManager : MonoBehaviour
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
             EncouragementSystem.Instance.CheckMilestones(currentRuns, TargetScore, _ballsRemaining);
         }
-        
+
         if (isBattingFirst)
         {
             Debug.Log("updating score display text");
@@ -392,26 +379,27 @@ public class ScoreManager : MonoBehaviour
             scoreText.text = "Score: " + currentRuns + " / " + TargetScore.ToString();
             Canvas.ForceUpdateCanvases();
 
-            // Update chase display after scoring
-            int runsNeeded = TargetScore - currentRuns;
-            int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            // dont update on first iteration
-            if (canUpdateChaseDisplay)
-            {
-                UpdateChaseDisplay(runsNeeded, ballsRemain);
-            }
-            else
-            {
-                UpdateChaseDisplay(runsNeeded, MaxBalls);
-                canUpdateChaseDisplay = true;
-            }
-            
+
+        }
+
+        // Update chase display after scoring
+        int runsNeeded = TargetScore - currentRuns;
+        int ballsRemain = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
+        // dont update on first iteration 
+         if (canUpdateChaseDisplay)
+        {
+            UpdateChaseDisplay(runsNeeded, ballsRemain);
+        }
+        else
+        {
+            UpdateChaseDisplay(runsNeeded, MaxBalls);
+            canUpdateChaseDisplay = true;
         }
         
         remainingWicketsText.text = wickets.ToString();
         
-        // Check if target is reached (when chasing)
-        if (!isBattingFirst && currentRuns >= TargetScore && !targetReached)
+        // Check if target is reached
+        if (currentRuns >= currentGameplayConfig.winScore && !targetReached)
         {
             targetReached = true;
             HandleGameOver("won", "Target reached! You win!");
@@ -470,7 +458,18 @@ public class ScoreManager : MonoBehaviour
     
     private void SetYarnVariables(string result)
     {
+        if (YarnDialogSystemSingleTonMaker.instance == null)
+        {
+            Debug.LogError("YarnDialogSystemSingleTonMaker.instance is null");
+            return;
+        }
+
         var storage = YarnDialogSystemSingleTonMaker.instance.dialogueRunner.VariableStorage;
+        if(storage == null)
+        {
+            Debug.LogError("could not set yarn variable");
+            return;
+        }
         
         // Set gameplay outcome variables
         storage.SetValue("$gameplayNumber", currentGameplayConfig.gameplayNumber); // Changed from $gameplayDate to $gameplayNumber
@@ -511,7 +510,9 @@ public class ScoreManager : MonoBehaviour
     {
         Timer.Instance.PauseTimer();
         AnimateBatterSwing();
-        gameAudioSource.Play();
+        //play batting sound
+        if(battingStrategy != BattingStrategy.Leave)
+            gameAudioSource.Play();
         
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
@@ -632,6 +633,31 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
 
+        // Get gameplay configuration
+        currentGameplayConfig = GameplayConfiguration.Instance.GetCurrentGameplayConfig();
+        if (currentGameplayConfig != null)
+        {
+            TargetScore = currentGameplayConfig.winScore;
+            MaxBalls = currentGameplayConfig.balls;
+            isBattingFirst = currentGameplayConfig.isBattingFirst;
+            currentRuns = currentGameplayConfig.initialScore;
+
+            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
+            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
+        }
+        else
+        {
+            Debug.Log("Loading gameplay 2 as date is not found");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            TargetScore = currentGameplayConfig.winScore;
+            MaxBalls = currentGameplayConfig.balls;
+            isBattingFirst = currentGameplayConfig.isBattingFirst;
+            currentRuns = currentGameplayConfig.initialScore;
+            Debug.Log($"Gameplay {currentGameplayConfig.gameplayNumber} - Date: {currentGameplayConfig.date}");
+            Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
+
+        }
+
         previousRuns = currentRuns;
         previousWickets = wickets;
         previousBallsRemaining = MaxBalls;
@@ -674,7 +700,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         // Subscribe to the turn started event to show chase display after countdown
-        if (!isBattingFirst && chaseDisplayText != null)
+        if (chaseDisplayText != null)
         {
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
@@ -788,8 +814,8 @@ public class ScoreManager : MonoBehaviour
     {
         if (chaseDisplayText != null && chaseDisplayContainer != null)
         {
-            chaseDisplayContainer.SetActive(!isBattingFirst);
-            chaseDisplayText.gameObject.SetActive(!isBattingFirst);
+            chaseDisplayContainer.SetActive(true);
+            chaseDisplayText.gameObject.SetActive(true);
         }
     }
     IEnumerator UpdateRedrawButtonRoutine()
