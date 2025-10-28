@@ -148,10 +148,9 @@ public class EncouragementSystem : MonoBehaviour
         // 50% Challenging dialogues
         dialoguePools["50_Challenging"] = new List<string>
         {
-            "{0} needed in {1} balls - need {2} per ball. Stay sharp!",
+            "{0} needed in {1} balls -Stay sharp!",
             "Only {1} balls remain. Time to accelerate!",
             "The required rate is climbing - find the boundaries!",
-            "Need to maintain {2} runs per ball from here."
         };
         
         // 50% Critical/Unreachable dialogues
@@ -176,7 +175,7 @@ public class EncouragementSystem : MonoBehaviour
         {
             "{0} from {1} balls - keep pushing!",
             "The rate is tight. Stay focused!",
-            "Almost there! Need {2} per ball - you can do this!",
+            "Almost there! you can do this!",
             "These last {0} need smart batting!"
         };
         
