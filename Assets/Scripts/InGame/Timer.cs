@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
     {
         //courage, foresight, humility, resourcefulness
         if (GameManager.instance != null)
-            maxTimeToChooseStrategy = baseTimeToChooseStrategy + GameManager.instance.currentSaveData.foresight*5;
+            maxTimeToChooseStrategy = baseTimeToChooseStrategy + GameManager.instance.currentSaveData.foresight;
         else 
             maxTimeToChooseStrategy = baseTimeToChooseStrategy;
         Instance = this;
