@@ -29,9 +29,9 @@ public class GameplayConfig
 public class GameplayConfiguration : MonoBehaviour
 {
     public static GameplayConfiguration Instance;
-    
+
     private Dictionary<string, GameplayConfig> gameplayConfigs;
-    
+
     void Awake()
     {
         if (Instance == null)
@@ -44,7 +44,7 @@ public class GameplayConfiguration : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     void InitializeConfigurations()
     {
         gameplayConfigs = new Dictionary<string, GameplayConfig>
@@ -59,7 +59,7 @@ public class GameplayConfiguration : MonoBehaviour
             {"1990/03/16", new GameplayConfig(5, "1990/03/16", 60, 0, 0, 110, PitchCondition.Friendly)}, // Batting first
             {"1990/03/17", new GameplayConfig(6, "1990/03/17", 60, 125, 0, 125, PitchCondition.Friendly)}, // Chase 120 runs
             {"1990/04/11", new GameplayConfig(7, "1990/04/11", 90, 0, 0, 150,  PitchCondition.Friendly)}, // Batting first
-            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 90, 0, 0, 90, PitchCondition.Hostile)}, // Batting first
+            {"1990/04/12", new GameplayConfig(8, "1990/04/12", 90, 0, 0, 90, PitchCondition.Friendly)}, // Batting first
             {"1990/04/13", new GameplayConfig(9, "1990/04/13", 90, 185, 0, 185, PitchCondition.Friendly)}, // Chase 185 runs
             
             // New gameplays (12-17)
@@ -71,18 +71,18 @@ public class GameplayConfiguration : MonoBehaviour
             {"1990/03/30", new GameplayConfig(17, "1990/03/30", 54, 101, 0, 101, PitchCondition.Friendly)} // Chase 100 runs
         };
     }
-    
+
     public GameplayConfig GetConfigForDate(string date)
     {
         if (gameplayConfigs.ContainsKey(date))
         {
             return gameplayConfigs[date];
         }
-        
+
         Debug.LogError($"No gameplay configuration found for date: {date}");
         return null;
     }
-    
+
     public GameplayConfig GetCurrentGameplayConfig()
     {
         if (NewDayManager.currentDateRecord != null)
@@ -90,7 +90,7 @@ public class GameplayConfiguration : MonoBehaviour
             string currentDate = NewDayManager.currentDateRecord.date;
             return GetConfigForDate(currentDate);
         }
-        
+
         Debug.LogError("No current date record available!");
         return null;
     }
