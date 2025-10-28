@@ -244,7 +244,7 @@ Raju: My father sees it as a distraction from studies, something that threatens 
 Raju: We're both fighting for dreams our families don't understand.
 
 <<SetCharacterExpression "Pinky" "Astonished">>
-Pinky: Your cricket means as much to you as medicine means to me?
+Pinky: Your cricket means as much to you as academics means to me?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket makes me feel like I could be someone special.
