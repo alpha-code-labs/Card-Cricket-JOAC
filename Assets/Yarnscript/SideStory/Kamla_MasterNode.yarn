@@ -96,7 +96,10 @@ Kamla: But we never bow our heads in shame.
 <<SetCharacterExpression "Kamla" "Confident">>
 Kamla: We work with dignity because our work has value.
 
+<<HideAllCharacters>>
 <<SetBGSprite WellingtonEstate>>
+
+Kamla and Raju arrive at the opulent high-rise complex where Kamla works.
 
 <<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: Who's this? Another servant boy?
@@ -167,27 +170,11 @@ position: -75,-229
 <<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
-After yesterday's difficult encounter at the wealthy apartment, Raju chooses to spend the evening at home.
+The familiar warmth of their small home welcomes Raju as he settles beside his mother.
 
-With his mother instead of going out to play cricket with friends.
+His mind still processes yesterday's encounter with casual cruelty at the wealthy apartment.
 
-The familiar warmth of their small home welcomes Raju.
-
-As he settles beside his mother for conversation.
-
-Rather than rushing off to evening cricket practice.
-
-His mind still processing yesterday's exposure to casual cruelty.
-
-That often accompanies wealth and privilege.
-
-The simple comfort of being in a space where his worth is never questioned.
-
-Creates a stark contrast to the hostile environment of the high-rise complex.
-
-Kamla's presence radiates the unconditional love and support.
-
-That anchors his sense of self.
+The simple comfort of being in a space where his worth is never questioned creates a stark contrast to the high-rise complex.
 
 <<SetCharacterExpression "Raju" "Confused">>
 Raju: Ma, why did that boy Aryan talk to us like that?
@@ -302,7 +289,7 @@ Raju: I'll make our family proud.
 
 <<HideAllCharacters>>
 
-As Raju prepares for sleep with his mother's words of support echoing in his heart, he understands something important.
+His mother's words of support echoing in his heart, he understands something important.
 
 He has received something more valuable than any expensive equipment or coaching.
 
@@ -325,27 +312,9 @@ position: -75,-229
 <<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
-Despite his eagerness to join the morning cricket practice session, Raju chooses to help his mother.
+The routine of their modest home unfolds as Raju faces a choice between cricket practice and helping his mother.
 
-With household tasks before heading out.
-
-Wanting to show that her faith in him is well-placed.
-
-The morning routine of their modest home unfolds.
-
-As Raju demonstrates his growing maturity.
-
-By prioritizing family responsibilities over personal desires.
-
-His willingness to delay cricket practice reflects a deeper understanding.
-
-Of the balance between pursuing dreams and honoring obligations.
-
-Kamla's daily preparations for another day of hard work continue with practiced efficiency.
-
-Though her watchful eyes assess how her son handles the competing demands.
-
-Of duty and passion.
+Kamla's daily preparations continue with practiced efficiency, her watchful eyes assessing her son.
 
 <<SetCharacterExpression "Kamla" "Tired">>
 Kamla: Beta, before you run off to the cricket ground, come help me with this water pump.
@@ -354,7 +323,7 @@ Kamla: Beta, before you run off to the cricket ground, come help me with this wa
 Kamla: It's acting up again.
 
 <<SetCharacterExpression "Kamla" "Tired">>
-Kamla: And I need to fill these containers before the morning rush.
+Kamla: And I need to fill these containers before the rush.
 
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: Ma, can't I help you when I come back from practice?
@@ -405,9 +374,6 @@ Kamla: Family first, always.
 
 <<SetCharacterExpression "Kamla" "Loving">>
 Kamla: This is what makes me believe you have the character to succeed at anything you pursue.
-
-<<SetCharacterExpression "Raju" "Confident">>
-Raju: Every morning I want to help you first, Ma.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Let me show you that I understand what really matters in life.
@@ -702,9 +668,6 @@ Kamla: But we need practical plans too.
 
 <<SetCharacterExpression "Kamla" "Loving">>
 Kamla: The difference is, I can see now that you understand responsibility.
-
-<<SetCharacterExpression "Kamla" "Proud">>
-Kamla: You've helped me every morning without complaining.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Even when I know you wanted to be practicing cricket.
@@ -1062,30 +1025,12 @@ tags:
 <<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
-In the quiet moments before sleep, Raju chooses to spend time talking with his mother.
+After another day of helping his mother with her work, Raju and Kamla return home.
 
-Sensing that tonight might be important.
-
-For something more significant than daily conversation.
-
-The peaceful intimacy of their modest home creates a sacred space for conversation.
-
-As evening settles around Raju and Kamla.
-
-The day's activities giving way to the deeper reflections.
-
-That often emerge in quiet moments between mother and son.
-
-The accumulated experiences of the past week have built toward this moment.
-
-Of connection and understanding.
-
-With both sensing that tonight's conversation will formalize commitments and promises.
-
-That have been growing through daily demonstrations of character and faith.
+The quiet intimacy of their modest home settles around them as Kamla prepares to share something important.
 
 <<SetCharacterExpression "Kamla" "Serious">>
-Kamla: Beta, before you sleep tonight, I want to tell you something very important.
+Kamla: Beta, I want to tell you something very important.
 
 <<SetCharacterExpression "Kamla" "Determined">>
 Kamla: Something I've been thinking about for days now.
@@ -1168,9 +1113,6 @@ Raju: Not just through cricket, but through everything I do.
 <<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Beta, you already have made me proud.
 
-<<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: Every morning when you chose to help before cricket.
-
 <<SetCharacterExpression "Kamla" "Proud">>
 Kamla: Every moment when you showed that dreams and responsibility can work together.
 
@@ -1179,7 +1121,7 @@ Kamla: You've already given me more pride than any trophy could.
 
 <<HideAllCharacters>>
 
-As Raju settles into sleep carrying his mother's unconditional promise, he understands the gift he has received.
+As Raju understands the gift he has received.
 
 Something more precious than any material advantage.
 
