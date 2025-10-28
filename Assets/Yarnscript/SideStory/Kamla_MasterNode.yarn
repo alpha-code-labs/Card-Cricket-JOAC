@@ -29,27 +29,11 @@ position: -7,-175
 <<PlayBackgroundMusic Kamla>>
 <<SetBGSprite HutInterior>>
 
-The morning light filters through their small window.
+Raju watches his mother prepare for another day of labor in the homes of people who live in a completely different world.
 
-Raju chooses to help his mother prepare for her work at the wealthy households.
+Her weathered hands sort through cleaning supplies and tiffin containers with quiet dignity.
 
-Instead of rushing off to cricket practice.
-
-He knows Kamla works incredibly hard to support their family.
-
-The modest single room comes alive with soft golden light of dawn.
-
-He watches his mother prepare for another day of labor.
-
-In the homes of people who live in a completely different world.
-
-Her movements carry the practiced efficiency of someone who maximizes every moment.
-
-Her weathered hands sort through cleaning supplies and prepare tiffin containers.
-
-With the quiet dignity of a woman who takes pride in honest work.
-
-<<SetCharacterExpression "Kamla" "Determined">>
+<<SetCharacterExpression "Kamla" "Worried">>
 Kamla: Raju, beta, before you run off with that cricket bat, come help your mother.
 
 <<SetCharacterExpression "Kamla" "Serious">>
