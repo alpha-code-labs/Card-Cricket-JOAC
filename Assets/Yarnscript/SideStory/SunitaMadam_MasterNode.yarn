@@ -32,25 +32,16 @@ position: -7,-175
 
 After hearing older boys talk about the prestigious school in the High-Rises, Raju walks the long distance to see it.
 
-He knows he doesn't belong there and can't afford the fees.
+He knows he doesn't belong there and can't afford the fees. But his curiosity about quality education drives him to explore.
 
-But his curiosity about quality education drives him to explore.
-
-The imposing gates of Summit Heights School school rise before him.
-
-Like monuments to a world of privilege and opportunity.
-
-That seems impossibly distant from his daily reality.
+The imposing gates of Summit Heights School school rise before him. Like monuments to a world of privilege and opportunity. That seems impossibly distant from his daily reality.
 
 Yet the gleaming buildings and manicured grounds represent everything he dreams education might offer.
 
-His worn clothes and dusty sandals mark him immediately as an outsider.
+His worn clothes and dusty sandals mark him immediately as an outsider in this environment of wealth and social status.
 
-In this environment of wealth and social status.
+Yet his determined approach despite obvious class barriers reflects a hunger for knowledge that transcends economic circumstances
 
-Yet his determined approach despite obvious class barriers reflects a hunger for knowledge.
-
-That transcends economic circumstances.
 
 <<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: You there, boy.
@@ -146,19 +137,13 @@ Raju: I'm sorry for disturbing you.
 
 As Raju walks away from the prestigious school, Sunita Madam's harsh words echo in his mind.
 
-He carries both the sting of class-based rejection.
+He carries both the sting of class-based rejection and a strengthened resolve to prove something important.
 
-And a strengthened resolve to prove something important.
+He wants to prove that intellectual curiosity and educational ambition cannot be contained by economic circumstances.
 
-That intellectual curiosity and educational ambition cannot be contained by economic circumstances.
+The encounter has crystallized his understanding of the barriers that separate him from quality education.
 
-The encounter has crystallized his understanding of the barriers.
-
-That separate him from quality education.
-
-While simultaneously fueling his determination to find ways around or through those obstacles.
-
-Transforming humiliation into motivation.
+Simultaneously fueling his determination to find ways around or through those obstacles thus transforming humiliation into motivation.
 
 <<set $SunitaMadam_Day = 2>>
 <<EndEvent true>>
@@ -177,17 +162,11 @@ Driven by an unshakeable belief that education represents his best chance.
 
 The morning sun illuminates the Summit Heights School school grounds.
 
-As Raju approaches for the second time.
-
-His persistent return demonstrates a level of determination.
-
-That few adults would show in the face of such discouragement.
+His persistent return demonstrates a level of determination that few adults would show in the face of such discouragement.
 
 Yesterday's confrontation has taught him to expect hostility.
 
-Yet his belief in the transformative power of education compels him.
-
-To risk further humiliation in pursuit of any opportunity.
+Yet his belief in the transformative power of education compels him to risk further humiliation in pursuit of any opportunity.
 
 To access the knowledge that could change his life's trajectory.
 
@@ -327,17 +306,11 @@ Raju: I will show you soon enough.
 
 As Raju walks away from the second encounter, something significant has shifted.
 
-His intellectual abilities acknowledged for the first time.
+His intellectual abilities acknowledged for the first time by someone from the privileged educational world.
 
-By someone from the privileged educational world.
+He understands that yesterday's humiliation has transformed into today's opportunity through the simple act of demonstrating knowledge rather than merely claiming it.
 
-He understands that yesterday's humiliation has transformed into today's opportunity.
-
-Through the simple act of demonstrating knowledge rather than merely claiming it.
-
-Sunita Madam's shift from dismissive hostility to cautious interest.
-
-Represents a crucial breakthrough.
+Sunita Madam's shift from dismissive hostility to cautious interest represents a crucial breakthrough.
 
 That validates his belief that merit can transcend social prejudice when properly demonstrated.
 
@@ -430,19 +403,9 @@ SunitaMadam: This level of comprehension typically requires formal instruction.
 
 As Raju demonstrates academic capabilities that exceed Sunita Madam's expectations, something significant shifts.
 
-Through sophisticated literary analysis and critical thinking.
+Through sophisticated literary analysis and critical thinking both teacher and student recognize that their relationship has transformed.
 
-Both teacher and student recognize that their relationship has transformed.
-
-From dismissive prejudice to genuine academic engagement.
-
-His choice to prove himself through intellectual rigor.
-
-Rather than emotional appeals.
-
-Has validated his belief that merit can overcome social barriers.
-
-When properly demonstrated and fairly evaluated.
+His choice to prove himself through intellectual rigor has validated his belief that merit can overcome social barriers when properly demonstrated and fairly evaluated.
 
 <<set $SunitaMadam_Day = 4>>
 <<EndEvent true>>
@@ -513,9 +476,7 @@ His approach reflects lessons learned from his mother.
 
 About earning respect through consistent character.
 
-Transforming what could have been seen as servility.
-
-Into evidence of mature understanding about how relationships and trust develop over time.
+Transforming what could have been seen as servility into evidence of mature understanding about how relationships and trust develop over time.
 
 <<set $SunitaMadam_Day = 4>>
 <<EndEvent true>>
@@ -582,17 +543,9 @@ SunitaMadam: This level of determination might indeed overcome many barriers.
 
 As Raju articulates his track record of overcoming obstacles, Sunita Madam begins to understand something crucial.
 
-Through sheer determination and systematic effort.
+That his confidence stems not from naive optimism but from demonstrated ability to achieve goals that seemed impossible.
 
-That his confidence stems not from naive optimism.
-
-But from demonstrated ability to achieve goals that seemed impossible.
-
-His examples of previous successes in diverse areas.
-
-Academic, athletic, and familial.
-
-Provide concrete evidence that his claims about overcoming barriers through persistence.
+His examples of previous successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
 
 Reflect genuine capability rather than empty boasting.
 
@@ -607,27 +560,17 @@ tags:
 
 Encouraged by yesterday's more positive response, Raju returns to the school once again.
 
-Hoping that his consistent demonstration of intellectual curiosity and respectful behavior.
+Hoping that his consistent demonstration of intellectual curiosity and respectful behavior might further soften Sunita Madam's initial prejudice.
 
-Might further soften Sunita Madam's initial prejudice.
+He approaches the school with growing confidence.
 
-The familiar grounds of Summit Heights School school welcome his fourth consecutive visit.
-
-He approaches with growing confidence.
-
-That yesterday's breakthrough has established a foundation for genuine educational mentorship.
+Yesterday's breakthrough has established a foundation for genuine educational mentorship.
 
 His persistence having transformed initial hostility into cautious respect.
 
-Sunita Madam's evolving perception of his capabilities has created an opportunity.
+Sunita Madam's evolving perception of his capabilities has created an opportunity that seemed impossible just days ago.
 
-That seemed impossible just days ago.
-
-While his continued respectful approach demonstrates understanding.
-
-That maintaining this relationship requires ongoing proof of worthiness.
-
-Rather than presumption of acceptance.
+While his continued respectful approach demonstrates understanding rather than presumption of acceptance.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 SunitaMadam: Persistent boy.
@@ -742,13 +685,10 @@ Of Raju's potential and her tentative commitment to supporting his educational d
 
 They have crossed a threshold from skeptical evaluation to genuine mentorship possibility.
 
-The transformation from initial prejudice to recognition of merit demonstrates clearly.
+The transformation from initial prejudice to recognition of merit demonstrates clearly that persistent demonstration of character and ability can indeed overcome social barriers.
 
-That persistent demonstration of character and ability can indeed overcome social barriers.
+While the promise of continued support validates Raju's belief that education can serve as a bridge between circumstances and aspirations.
 
-While the promise of continued support validates Raju's belief.
-
-That education can serve as a bridge between circumstances and aspirations.
 
 <<set $SunitaMadam_Day = 5>>
 <<EndEvent true>>
@@ -762,11 +702,7 @@ tags:
 
 Building on yesterday's positive interaction, Raju approaches with a specific request.
 
-And Sunita Madam's growing recognition of his potential.
-
-That will test whether her words about supporting his educational development.
-
-Translate into concrete action.
+This will test whether her words about supporting his educational development translate into concrete action.
 
 The Summit Heights School school grounds seem different today.
 
@@ -780,11 +716,8 @@ That requesting specific assistance will test the depth of Sunita Madam's newfou
 
 The relationship that began with hostile dismissal has evolved through demonstrated merit.
 
-Into genuine possibility.
+Though the challenge now lies in converting philosophical support into practical guidance that could genuinely change his educational trajectory.
 
-Though the challenge now lies in converting philosophical support.
-
-Into practical guidance that could genuinely change his educational trajectory.
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 SunitaMadam: You have something particular on your mind today, don't you?
@@ -908,15 +841,11 @@ SunitaMadam: Prove to me that my growing faith in your potential isn't misplaced
 
 <<HideAllCharacters>>
 
-As Raju walks away from Summit Heights School, he carries both a concrete reading list.
-
-And the weight of Sunita Madam's conditional trust.
+As Raju walks away from Summit Heights School, he carries both a concrete reading list and the weight of Sunita Madam's conditional trust.
 
 He understands that the relationship has transformed.
 
-From skeptical evaluation into genuine educational mentorship.
-
-With real expectations and responsibilities.
+From skeptical evaluation into genuine educational mentorship with real expectations and responsibilities.
 
 The books she has recommended represent more than academic materials.
 
@@ -924,9 +853,7 @@ They embody an investment in his potential.
 
 That he must validate through sustained effort and demonstrated growth.
 
-While her willingness to take professional risk on his behalf.
-
-Creates both opportunity and obligation.
+While her willingness to take professional risk on his behalf creates both opportunity and obligation.
 
 <<set $SunitaMadam_Day = 6>>
 <<EndEvent true>>
@@ -1113,7 +1040,6 @@ Through persistent demonstration of merit and character.
 Her commitment to providing practical support for the scholarship examination, validates his belief that education can serve as a bridge, between circumstances and aspirations.
 
 Her challenge to become someone who opens doors for others, transforms his personal success into a broader mission of social change.
-
 
 
 <<set $SunitaMadam_Complete = true>>
