@@ -257,11 +257,11 @@ Naresh: What's your next step in this cricket education?
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
--> Raju: Let me show you more of my analysis, bhaiya. I've been studying ball physics, pitch conditions, even player psychology.
+-> Raju: Let me tell you about ball physics, pitch conditions, even player psychology, bhaiya. 
     <<jump Naresh_Day3a>>
--> Raju: Let me earn your trust by helping with maintenance work, bhaiya. I want to prove my dedication through actions.
+-> Raju: Let me earn your trust by helping with maintenance work, bhaiya. 
     <<jump Naresh_Day3b>>
--> Raju: Help me understand how to make my cricket dreams real, bhaiya. Guide me toward excellence.
+-> Raju: Help me understand how to make my cricket dreams real, bhaiya. 
     <<jump Naresh_Day3c>>
 
 
@@ -288,7 +288,7 @@ Raju: It's like solving puzzles - every movement gives clues about what's coming
 <<SetCharacterExpression "Naresh" Excited>>
 Naresh: Show me these observations about reading bowlers.
 
-<<SetCharacterExpression "Naresh" Serious>>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: If you've truly identified patterns that predict delivery types, that's professional-level cricket intelligence.
 
 <<SetCharacterExpression "Raju" Excited>>
@@ -427,7 +427,7 @@ Raju: When students practice their drives, they focus on power, but the most suc
 <<SetCharacterExpression "Raju" Quizzical>>
 Raju: Is that because of the equipment quality, or is it a fundamental technique principle?
 
-<<SetCharacterExpression "Naresh" Serious>>
+<<SetCharacterExpression "Naresh" Proud>>
 Naresh: That's... that's actually a very sophisticated observation, beta.
 
 <<SetCharacterExpression "Naresh" Proud>>
@@ -567,7 +567,7 @@ tags:
 // Scene Setup - Day 7 (Final Day)
 With anticipation from yesterday's promise, Raju arrives as dusk settles, knowing this quiet period might offer the privacy needed for informal mentorship.
 
-The academy grounds take on a sacred quality as evening settles. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
+The academy grounds take on a sacred quality as dust settles. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 
 <<SetCharacterExpression "Naresh" Mischievous>>
 Naresh: Psst! Over here, beta.
