@@ -621,7 +621,7 @@ Raju: Let me help you find balance between intensive preparation and maintaining
 Pinky: Sometimes I feel like I'm fighting a battle I can't win.
 
 <<SetCharacterExpression "Pinky" "Disappointed">>
-Pinky: Even if I score perfectly, will my parents really change their minds about the engagement?
+Pinky: Even if I score perfectly, will my parents really change their minds about the seperation?
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Your intelligence and determination have already changed my mind about what's possible in mathematics.
@@ -877,10 +877,10 @@ Pinky: 'Maybe our daughter's education is worth more than we realized.'
 Pinky: The scholarship offer made them understand that my academic achievement has real economic value.
 
 <<SetCharacterExpression "Raju" "Anxious">>
-Raju: So the engagement is postponed?
+Raju: So will they be together?
 
 <<SetCharacterExpression "Pinky" "Overjoyed">>
-Pinky: Postponed indefinitely.
+Pinky: We will find out soon. Finger crossed.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: They've agreed to let me give my entrance exam for now.
