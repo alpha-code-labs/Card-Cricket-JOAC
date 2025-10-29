@@ -110,9 +110,9 @@ public class RewardsSequenceManager : MonoBehaviour
         Reward reward;
         System.Enum.TryParse<Reward>(rewardType, out reward);
         const int maxStat = 3;
-        const float segementSize = 1 / maxStat;
+        const float segementSize = 1 / (float)maxStat;
 
-        int currantStat = 0;
+        float currantStat = 0;
         switch (reward)
         {
             case Reward.Courage:
@@ -147,7 +147,7 @@ public class RewardsSequenceManager : MonoBehaviour
             instance.RewardImage.transform.localPosition = originalPos + new Vector3(0, 300, 0);
 
 
-            float targetFill = ((int)currantStat) * segementSize;
+            float targetFill = currantStat * segementSize;
 
             Sequence seq = DOTween.Sequence();
             seq.Append(instance.RewardImage.transform.DOLocalMove(originalPos, 0.6f).SetEase(Ease.OutBounce));
