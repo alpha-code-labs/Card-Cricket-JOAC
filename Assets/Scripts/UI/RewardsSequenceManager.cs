@@ -109,24 +109,26 @@ public class RewardsSequenceManager : MonoBehaviour
         //Parsing
         Reward reward;
         System.Enum.TryParse<Reward>(rewardType, out reward);
+        const int maxStat = 3;
+        const float segementSize = 1 / (float)maxStat;
 
-        int currantStat = 0;
+        float currantStat = 0;
         switch (reward)
         {
             case Reward.Courage:
-                GameManager.instance.currentSaveData.courage = Mathf.Min(GameManager.instance.currentSaveData.courage + 1, 5);
+                GameManager.instance.currentSaveData.courage = Mathf.Min(GameManager.instance.currentSaveData.courage + 1, maxStat);
                 currantStat = GameManager.instance.currentSaveData.courage;
                 break;
             case Reward.Foresight:
-                GameManager.instance.currentSaveData.foresight = Mathf.Min(GameManager.instance.currentSaveData.foresight + 1, 5);
+                GameManager.instance.currentSaveData.foresight = Mathf.Min(GameManager.instance.currentSaveData.foresight + 1, maxStat);
                 currantStat = GameManager.instance.currentSaveData.foresight;
                 break;
             case Reward.Humility:
-                GameManager.instance.currentSaveData.humility = Mathf.Min(GameManager.instance.currentSaveData.humility + 1, 5);
+                GameManager.instance.currentSaveData.humility = Mathf.Min(GameManager.instance.currentSaveData.humility + 1, maxStat);
                 currantStat = GameManager.instance.currentSaveData.humility;
                 break;
             case Reward.Resourcefulness:
-                GameManager.instance.currentSaveData.resourcefulness = Mathf.Min(GameManager.instance.currentSaveData.resourcefulness + 1, 5);
+                GameManager.instance.currentSaveData.resourcefulness = Mathf.Min(GameManager.instance.currentSaveData.resourcefulness + 1, maxStat);
                 currantStat = GameManager.instance.currentSaveData.resourcefulness;
                 break;
         }
@@ -145,7 +147,7 @@ public class RewardsSequenceManager : MonoBehaviour
             instance.RewardImage.transform.localPosition = originalPos + new Vector3(0, 300, 0);
 
 
-            float targetFill = ((int)currantStat) * 0.2f;
+            float targetFill = currantStat * segementSize;
 
             Sequence seq = DOTween.Sequence();
             seq.Append(instance.RewardImage.transform.DOLocalMove(originalPos, 0.6f).SetEase(Ease.OutBounce));

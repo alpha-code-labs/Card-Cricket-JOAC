@@ -30,11 +30,11 @@ position: -94,-392
 <<SetBGSprite GeneralStore>>
 <<HideAllCharacters>>
 
-After overhearing his mother discuss struggles of local shopkeepers, Raju visits Agarwal Uncle's general store during busy evening hours to see if he might need assistance.
+After overhearing his mother discuss struggles of local shopkeepers, Raju visits Agarwal Uncle's general store during busy hours to see if he might need assistance.
 
 <<HideAllCharacters>>
 
-The cramped interior buzzes with evening activity. Customers squeeze between narrow aisles as the shopkeeper moves constantly between tasks.
+The cramped interior buzzes with activity. Customers squeeze between narrow aisles as the shopkeeper moves constantly between tasks.
 
 <<SetCharacterExpression "AgarwalUncle" "Worried">>
 AgarwalUncle: Arre beta, terrible timing and perfect timing all at once!
@@ -133,7 +133,7 @@ Raju: Then let me learn by doing, uncle. Give me a chance to prove myself.
 AgarwalUncle: Your persistence is admirable, I'll give you that.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-AgarwalUncle: Come back tomorrow morning. We'll talk more when it's not so chaotic.
+AgarwalUncle: Come back tomorrow. We'll talk more when it's not so chaotic.
 
 <<HideAllCharacters>>
 

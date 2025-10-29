@@ -135,6 +135,8 @@ Ramu: Something that can't be bought or taught.
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: You just need to believe in it as much as I do.
 
+Just then, Raju swings the bat and connects perfectly with the ball.
+
 <<SetCharacterExpression Ramu Astonished>>
 Ramu: There! Did you feel that?
 
@@ -852,6 +854,8 @@ Ramu: Your hands are red. Your form is getting sloppy.
 <<SetCharacterExpression Raju Determined>>
 Raju: Then show me how to do it better. Don't make it easier.
 
+Ramu grills and grinds raju with intense training drills for two hours.
+
 <<SetCharacterExpression Ramu Astonished>>
 Ramu: ...You didn't complain once.
 
@@ -910,7 +914,7 @@ position: -184,-151
 
 After six consecutive days of consistent practice, Raju joins his brother for another session. Today's practice will likely draw attention from neighbors.
 
-The narrow courtyard has become unexpected neighborhood entertainment. Curious residents time their morning activities to witness the intense training sessions.
+The Kohliwada Ground has become unexpected neighborhood entertainment. Curious residents time their morning activities to witness the intense training sessions.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Ready for today's session, champ?
@@ -967,7 +971,7 @@ Raju: Like I'm not just hitting balls - like I'm proving something.
 Mrs Das: Ramu beta, is your little brother going to play in that big tournament?
 
 <<SetCharacterExpression MrsDas Astonished>>
-Mrs Das: The whole building is talking about his cricket!
+Mrs Das: Our entire slum is talking about his cricket!
 
 <<SetCharacterExpression Ramu Excited>>
 Ramu: Das aunty, come down and see for yourself!
@@ -1137,7 +1141,7 @@ Ramu: You've already won the only victory that matters.
 
 <<HideAllCharacters>>
 
-As the eighth day concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
+As the eighth day concludes with tournament commitment and a handcrafted shoes, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
 
 <<set $Ramu_Complete = true>>
 <<jump Courage>>
