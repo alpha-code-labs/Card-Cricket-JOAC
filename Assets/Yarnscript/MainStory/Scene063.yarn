@@ -10,19 +10,19 @@ position: 0,0
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: Namaste, ShivPrasad. I'm Dev.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Namaste. Sit. Tea?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Not for me, thank you—I know you leave for the mill soon, so I'll be brief and honest.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Brief and honest pair well—say.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I watched your younger boy today—Raju sees the ball early and carries himself steady, which is rarer than runs. I run an academy in Matunga and want him to come for structured training.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Matunga sounds far when pockets are near-empty.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
@@ -88,7 +88,7 @@ ShivPrasad: Sir, I thank you for the respect and for speaking to me as if my "no
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Understood.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: May your boys play well and mine sleep well—both are victories where we live.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
@@ -100,7 +100,7 @@ Ramu: Yes, sir.
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Good night, ShivPrasad-ji.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Good night.
 
 <<HideAllCharacters>>

@@ -244,7 +244,7 @@ Raju: My father sees it as a distraction from studies, something that threatens 
 Raju: We're both fighting for dreams our families don't understand.
 
 <<SetCharacterExpression "Pinky" "Astonished">>
-Pinky: Your cricket means as much to you as medicine means to me?
+Pinky: Your cricket means as much to you as academics means to me?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Cricket makes me feel like I could be someone special.
@@ -277,11 +277,11 @@ Pinky: What's the best way to prove that our dreams and academic success can wor
 Make a Choice
 <<AutoAdvance false>>
 
--> Raju: Let's focus completely on academics. Excellence in exams is our best weapon.
+-> Raju: Let's focus completely on academics.
     <<jump Pinky_Day3a>>
--> Raju: I understand your struggle. Let me help you stay strong while we both pursue our dreams.
+-> Raju: Let me help you stay strong while we both pursue our dreams.
     <<jump Pinky_Day3b>>
--> Raju: We're stronger together. Let's create a plan where we both succeed through mutual support.
+-> Raju: Let's create a plan where we both succeed through mutual support.
     <<jump Pinky_Day3c>>
 ===
 
@@ -621,7 +621,7 @@ Raju: Let me help you find balance between intensive preparation and maintaining
 Pinky: Sometimes I feel like I'm fighting a battle I can't win.
 
 <<SetCharacterExpression "Pinky" "Disappointed">>
-Pinky: Even if I score perfectly, will my parents really change their minds about the engagement?
+Pinky: Even if I score perfectly, will my parents really change their minds about the seperation?
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Your intelligence and determination have already changed my mind about what's possible in mathematics.
@@ -877,10 +877,10 @@ Pinky: 'Maybe our daughter's education is worth more than we realized.'
 Pinky: The scholarship offer made them understand that my academic achievement has real economic value.
 
 <<SetCharacterExpression "Raju" "Anxious">>
-Raju: So the engagement is postponed?
+Raju: So will they be together?
 
 <<SetCharacterExpression "Pinky" "Overjoyed">>
-Pinky: Postponed indefinitely.
+Pinky: We will find out soon. Finger crossed.
 
 <<SetCharacterExpression "Pinky" "Excited">>
 Pinky: They've agreed to let me give my entrance exam for now.

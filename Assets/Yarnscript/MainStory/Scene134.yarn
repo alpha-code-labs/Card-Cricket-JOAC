@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "CoachDev" "Excited">>
 CoachDev: Permission to make noise?
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: If the noise is short and respectful.
 
 <<SetCharacterExpression "Ramu" "Excited">>
@@ -22,7 +22,7 @@ Raju: I did it Sir.
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: I heard before your feet reached the lane—Shiv Prasadji, congratulations, you kept a hard line and he crossed it.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: He did—the house ate dal sweeter than usual today.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
@@ -34,7 +34,7 @@ Raju: Thank you, sir.
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: May I talk next steps—no pressure, just a clean plan?
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Talk—the door is open because the boy opened it.
 
 <<SetCharacterExpression "Ramu" "Excited">>
@@ -43,13 +43,13 @@ Ramu: We're ready with notebooks if needed.
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: Good. Phase One is trial and onboarding—we need documents (school ID, ration card, two passport photos), I'll help with birth certificate if missing. Choose Saturday evening or Sunday morning for trial, and parent signature on a simple consent form I'll bring.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Cost?
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
 CoachDev: Trial is free, and if he clears it we push for a fee waiver. Even with a waiver there's bus fare and small things—I can arrange a shared ride with two boys from your side for the first month.
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Time?
 
 <<SetCharacterExpression "CoachDev" "Serious">>

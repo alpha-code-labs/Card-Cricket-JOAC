@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Making 40 from 20 balls isn't easy. Well played.
+Ramu: Making 40 from 24 balls isn't easy. Well played.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Had to take some risks but they paid off.

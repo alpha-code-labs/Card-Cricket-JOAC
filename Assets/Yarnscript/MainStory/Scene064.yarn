@@ -10,7 +10,7 @@ position: 0,0
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Baba… two minutes?
 
-<<SetCharacterExpression "ShivPrasad" "Smiling">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Two minutes become twenty with you boys—say it.
 
 <<SetCharacterExpression "Ramu" "Neutral">>

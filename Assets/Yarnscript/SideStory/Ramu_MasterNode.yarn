@@ -296,11 +296,11 @@ position: -151,208
 <<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-Evening settles over Kohliwada Ground. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
+Dust settles over Kohliwada Ground. Raju seeks out his brother for a different kind of conversation. After two days of intense practice, this quiet moment might be right for difficult questions.
 
 <<HideAllCharacters>>
 
-The ground provides peaceful escape from crowded chaos. Evening shadows lengthen as the harsh heat gives way to gentler warmth.
+The ground provides peaceful escape from crowded chaos.
 
 <<SetCharacterExpression Raju Quizzical>>
 Raju: Bhaiya, can I ask you something?
@@ -397,7 +397,7 @@ position: 469,238
 
 Three days of consistent practice have created a routine. Today, Raju seeks out his brother at Koliwada Ground to show how the lessons are paying off in real games.
 
-The familiar dust and energy of Koliwada Ground welcome Raju. The public setting creates additional pressure as observers gather to witness his progress.
+The familiar dust and energy of Koliwada Ground welcome Raju. The public setting creates additional pressure as friends gather to witness his progress.
 
 <<SetCharacterExpression Amit Excited>>
 Amit: Bhaiya, your brother's really good!
@@ -784,9 +784,9 @@ position: 189,214
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
 
-The sky is still dark when Ramu wakes his brother. Yesterday's conversation has forced him to confront whether Raju is prepared for serious training.
+Yesterday's conversation has forced Ramu to confront whether Raju is prepared for serious training.
 
-Pre-dawn darkness envelops their small home. Ramu's serious expression reflects a night of contemplation about advancing to the next level.
+Ramu's serious expression reflects a night of contemplation about advancing to the next level.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Wake up, little brother.
@@ -908,7 +908,7 @@ position: -184,-151
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
 
-After six consecutive days of consistent practice, Raju joins his brother for another morning session. Today's practice will likely draw attention from neighbors.
+After six consecutive days of consistent practice, Raju joins his brother for another session. Today's practice will likely draw attention from neighbors.
 
 The narrow courtyard has become unexpected neighborhood entertainment. Curious residents time their morning activities to witness the intense training sessions.
 
@@ -1001,9 +1001,9 @@ position: 526,-86
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
 
-For the eighth consecutive morning, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
+For the eighth consecutive day, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
 
-The familiar pre-dawn atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
+The familiar atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Seven days ago, when you first asked me to help with cricket...
@@ -1060,7 +1060,7 @@ Ramu: I think you've been ready for a week.
 Ramu: The question was whether I was ready to believe in you.
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Seven mornings of watching you choose cricket over sleep...
+Ramu: Seven days of watching you choose cricket over sleep...
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Improvement over comfort, discipline over fun...
@@ -1137,7 +1137,7 @@ Ramu: You've already won the only victory that matters.
 
 <<HideAllCharacters>>
 
-As the eighth morning concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
+As the eighth day concludes with tournament commitment and a handcrafted bat, both understand they've completed a transformation from skeptical evaluation to wholehearted partnership.
 
 <<set $Ramu_Complete = true>>
 <<jump Courage>>
