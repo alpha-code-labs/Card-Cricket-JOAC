@@ -648,7 +648,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Debug.Log("Loading gameplay 2 as date is not found");
-            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/03/05");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
             TargetScore = currentGameplayConfig.winScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
