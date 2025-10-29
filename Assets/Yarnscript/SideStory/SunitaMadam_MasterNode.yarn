@@ -320,6 +320,7 @@ That validates his belief that merit can transcend social prejudice when properl
 title: SunitaMadam_Day3
 ---
 <<SetBGSprite PrivateSchool>>
+<<PlayBackgroundMusic Light_03>>
 On the third day, Raju returns to Summit Heights School school with a clear purpose.
 He intends to convince Sunita Madam of his genuine intellectual curiosity.
 
@@ -345,7 +346,6 @@ tags:
 position: -308,129
 ---
 <<set $SunitaMadam_Path = "a">>
-<<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Confident>>
@@ -414,7 +414,6 @@ tags:
 position: -55,122
 ---
 <<set $SunitaMadam_Path = "b">>
-<<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Determined>>
@@ -485,7 +484,6 @@ tags:
 position: 184,122
 ---
 <<set $SunitaMadam_Path = "c">>
-<<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
 <<SetCharacterExpression "Raju" Excited>>
