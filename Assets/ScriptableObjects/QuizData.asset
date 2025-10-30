@@ -15,355 +15,355 @@ MonoBehaviour:
   totalQuestions: 50
   maxWrongAnswers: 5
   questions:
-  - questionText: How many sides does a triangle have?
+  - questionText: What is 12 × 8?
     options:
-    - 2
-    - 3
-    - 4
-    - 5
-    correctAnswerIndex: 1
-  - questionText: What color is the grass?
-    options:
-    - Blue
-    - Green
-    - Red
-    - Yellow
-    correctAnswerIndex: 1
-  - questionText: How many legs does a dog have?
-    options:
-    - 2
-    - 3
-    - 4
-    - 5
-    correctAnswerIndex: 2
-  - questionText: What do we wear on our feet?
-    options:
-    - Hat
-    - Shoes
-    - Gloves
-    - Tie
-    correctAnswerIndex: 1
-  - questionText: Which animal says "Moo"?
-    options:
-    - Dog
-    - Cow
-    - Cat
-    - Duck
-    correctAnswerIndex: 1
-  - questionText: What is the opposite of hot?
-    options:
-    - Warm
-    - Cold
-    - Soft
-    - Hard
-    correctAnswerIndex: 1
-  - questionText: How many fingers do you have on one hand?
-    options:
-    - 3
-    - 4
-    - 5
-    - 6
-    correctAnswerIndex: 2
-  - questionText: What color are apples usually?
-    options:
-    - Yellow
-    - Blue
-    - Red
-    - Green
-    correctAnswerIndex: 2
-  - questionText: How many wheels does a bicycle have?
-    options:
-    - 1
-    - 2
-    - 3
-    - 4
-    correctAnswerIndex: 1
-  - questionText: What do fish use to breathe?
-    options:
-    - Lungs
-    - Gills
-    - Nose
-    - Mouth
-    correctAnswerIndex: 1
-  - questionText: Which fruit is yellow and we peel it?
-    options:
-    - Apple
-    - Orange
-    - Banana
-    - Grape
-    correctAnswerIndex: 2
-  - questionText: What is 2 + 3?
-    options:
-    - 4
-    - 5
-    - 6
-    - 7
-    correctAnswerIndex: 1
-  - questionText: What animal lives in the ocean?
-    options:
-    - Lion
-    - Fish
-    - Bird
-    - Bear
-    correctAnswerIndex: 1
-  - questionText: How many eyes does a cat have?
-    options:
-    - 1
-    - 2
-    - 3
-    - 4
-    correctAnswerIndex: 1
-  - questionText: What do we use to write?
-    options:
-    - Spoon
-    - Pencil
-    - Fork
-    - Knife
-    correctAnswerIndex: 1
-  - questionText: What is the biggest planet in our solar system?
-    options:
-    - Mars
-    - Jupiter
-    - Venus
-    - Earth
-    correctAnswerIndex: 1
-  - questionText: What do bees make?
-    options:
-    - Milk
-    - Honey
-    - Cheese
-    - Butter
-    correctAnswerIndex: 1
-  - questionText: How many days are there in a week?
-    options:
-    - 5
-    - 6
-    - 7
-    - 8
-    correctAnswerIndex: 2
-  - questionText: What is 5 + 2?
-    options:
-    - 6
-    - 7
-    - 8
-    - 9
-    correctAnswerIndex: 1
-  - questionText: Which animal is very tall and has spots?
-    options:
-    - Zebra
-    - Giraffe
-    - Leopard
-    - Tiger
-    correctAnswerIndex: 1
-  - questionText: What do plants need to grow?
-    options:
-    - Water and sunlight
-    - Only water
-    - Only sunlight
-    - Nothing
+    - 96
+    - 84
+    - 104
+    - 88
     correctAnswerIndex: 0
-  - questionText: What is 3 + 4?
+  - questionText: Who was the first Prime Minister of India?
     options:
-    - 6
-    - 7
-    - 8
-    - 9
-    correctAnswerIndex: 1
-  - questionText: Which shape has 4 equal sides?
+    - Sardar Patel
+    - Mahatma Gandhi
+    - Jawaharlal Nehru
+    - Dr. B.R. Ambedkar
+    correctAnswerIndex: 2
+  - questionText: What is the capital of Maharashtra?
     options:
-    - Triangle
-    - Square
-    - Circle
-    - Rectangle
-    correctAnswerIndex: 1
-  - questionText: What do we call a baby dog?
+    - Pune
+    - Nagpur
+    - Nashik
+    - Mumbai
+    correctAnswerIndex: 3
+  - questionText: How many players are there in a cricket team?
     options:
-    - Pup
-    - Puppy
-    - Kitten
-    - Calf
+    - 10
+    - 11
+    - 12
+    - 13
     correctAnswerIndex: 1
-  - questionText: How many months are there in a year?
+  - questionText: What is the process by which plants make their food called?
+    options:
+    - Respiration
+    - Digestion
+    - Germination
+    - Photosynthesis
+    correctAnswerIndex: 3
+  - questionText: Which is the longest river in India?
+    options:
+    - Ganga
+    - Yamuna
+    - Brahmaputra
+    - Narmada
+    correctAnswerIndex: 0
+  - questionText: What is 144 ÷ 12?
     options:
     - 10
     - 11
     - 12
     - 13
     correctAnswerIndex: 2
-  - questionText: What color is the sky on a clear day?
+  - questionText: In which year did India gain independence?
     options:
-    - Green
-    - Blue
-    - Orange
-    - White
+    - 1945
+    - 1947
+    - 1946
+    - 1948
     correctAnswerIndex: 1
-  - questionText: What is 1 + 1?
+  - questionText: What is the smallest planet in our solar system?
     options:
-    - 1
-    - 2
-    - 3
-    - 4
-    correctAnswerIndex: 1
-  - questionText: Which animal says "Quack"?
+    - Mars
+    - Venus
+    - Pluto
+    - Mercury
+    correctAnswerIndex: 3
+  - questionText: How many states are there in India?
     options:
-    - Chicken
-    - Duck
-    - Goose
-    - Swan
-    correctAnswerIndex: 1
-  - questionText: How many sides does a square have?
+    - 28
+    - 26
+    - 27
+    - 29
+    correctAnswerIndex: 0
+  - questionText: What is the square root of 81?
     options:
-    - 2
-    - 3
-    - 4
-    - 5
-    correctAnswerIndex: 2
-  - questionText: What color is snow?
-    options:
-    - Yellow
-    - Blue
-    - White
-    - Green
-    correctAnswerIndex: 2
-  - questionText: What do we use to eat soup?
-    options:
-    - Fork
-    - Knife
-    - Spoon
-    - Plate
-    correctAnswerIndex: 2
-  - questionText: How many hours are there in a day?
-    options:
-    - 20
-    - 24
-    - 30
-    - 12
-    correctAnswerIndex: 1
-  - questionText: What animal says "Hiss"?
-    options:
-    - Dog
-    - Cat
-    - Snake
-    - Bird
-    correctAnswerIndex: 2
-  - questionText: What is 10 - 5?
-    options:
-    - 3
-    - 4
-    - 5
-    - 6
-    correctAnswerIndex: 2
-  - questionText: Which color do we get by mixing red and white?
-    options:
-    - Orange
-    - Pink
-    - Purple
-    - Brown
-    correctAnswerIndex: 1
-  - questionText: What do we wear on our head?
-    options:
-    - Socks
-    - Hat
-    - Gloves
-    - Shoes
-    correctAnswerIndex: 1
-  - questionText: How many legs does a spider have?
-    options:
-    - 6
+    - 7
+    - 9
     - 8
     - 10
-    - 4
     correctAnswerIndex: 1
-  - questionText: What is the opposite of big?
+  - questionText: Which gas do plants absorb from the air?
     options:
-    - Tall
-    - Small
-    - Large
-    - Wide
+    - Oxygen
+    - Nitrogen
+    - Carbon dioxide
+    - Hydrogen
+    correctAnswerIndex: 2
+  - questionText: Who is known as the Father of the Nation in India?
+    options:
+    - Jawaharlal Nehru
+    - Sardar Patel
+    - Subhas Chandra Bose
+    - Mahatma Gandhi
+    correctAnswerIndex: 3
+  - questionText: What is the capital of India?
+    options:
+    - New Delhi
+    - Mumbai
+    - Kolkata
+    - Chennai
+    correctAnswerIndex: 0
+  - questionText: How many continents are there in the world?
+    options:
+    - 5
+    - 6
+    - 7
+    - 8
+    correctAnswerIndex: 2
+  - questionText: What is 15% of 200?
+    options:
+    - 25
+    - 35
+    - 40
+    - 30
+    correctAnswerIndex: 3
+  - questionText: Which planet is known as the Red Planet?
+    options:
+    - Mars
+    - Venus
+    - Jupiter
+    - Saturn
+    correctAnswerIndex: 0
+  - questionText: What is the national bird of India?
+    options:
+    - Parrot
+    - Eagle
+    - Peacock
+    - Sparrow
+    correctAnswerIndex: 2
+  - questionText: How many runs is a century in cricket?
+    options:
+    - 50
+    - 150
+    - 200
+    - 100
+    correctAnswerIndex: 3
+  - questionText: What is the boiling point of water in Celsius?
+    options:
+    - 100°C
+    - 90°C
+    - 110°C
+    - 120°C
+    correctAnswerIndex: 0
+  - questionText: Who wrote the national anthem of India?
+    options:
+    - Bankim Chandra Chatterjee
+    - Rabindranath Tagore
+    - Sarojini Naidu
+    - Subramanya Bharathi
     correctAnswerIndex: 1
-  - questionText: What do we call a baby cat?
+  - questionText: What is 7 × 13?
     options:
-    - Foal
-    - Kitten
-    - Cub
-    - Kit
+    - 89
+    - 90
+    - 91
+    - 92
+    correctAnswerIndex: 2
+  - questionText: Which is the largest ocean in the world?
+    options:
+    - Atlantic Ocean
+    - Indian Ocean
+    - Arctic Ocean
+    - Pacific Ocean
+    correctAnswerIndex: 3
+  - questionText: What is the full form of CPU?
+    options:
+    - Central Processing Unit
+    - Computer Processing Unit
+    - Central Program Unit
+    - Computer Program Unit
+    correctAnswerIndex: 0
+  - questionText: How many sides does a hexagon have?
+    options:
+    - 5
+    - 6
+    - 7
+    - 8
     correctAnswerIndex: 1
-  - questionText: What is 6 + 4?
+  - questionText: What is the currency of Japan?
     options:
+    - Yuan
+    - Won
+    - Yen
+    - Ringgit
+    correctAnswerIndex: 2
+  - questionText: Which vitamin do we get from sunlight?
+    options:
+    - Vitamin A
+    - Vitamin B
+    - Vitamin C
+    - Vitamin D
+    correctAnswerIndex: 3
+  - questionText: What is 3/4 of 100?
+    options:
+    - 75
+    - 70
+    - 80
+    - 85
+    correctAnswerIndex: 0
+  - questionText: Who invented the light bulb?
+    options:
+    - Alexander Graham Bell
+    - Thomas Edison
+    - Nikola Tesla
+    - Benjamin Franklin
+    correctAnswerIndex: 1
+  - questionText: What is the national animal of India?
+    options:
+    - Lion
+    - Elephant
+    - Bengal Tiger
+    - Leopard
+    correctAnswerIndex: 2
+  - questionText: How many bones are there in the human body?
+    options:
+    - 196
+    - 216
+    - 226
+    - 206
+    correctAnswerIndex: 3
+  - questionText: What is the largest state in India by area?
+    options:
+    - Rajasthan
+    - Madhya Pradesh
+    - Uttar Pradesh
+    - Maharashtra
+    correctAnswerIndex: 0
+  - questionText: What is 225 ÷ 15?
+    options:
+    - 13
+    - 15
+    - 14
+    - 16
+    correctAnswerIndex: 1
+  - questionText: Which metal is liquid at room temperature?
+    options:
+    - Iron
+    - Gold
+    - Mercury
+    - Silver
+    correctAnswerIndex: 2
+  - questionText: Who was the first woman Prime Minister of India?
+    options:
+    - Sarojini Naidu
+    - Pratibha Patil
+    - Sonia Gandhi
+    - Indira Gandhi
+    correctAnswerIndex: 3
+  - questionText: What is the freezing point of water in Celsius?
+    options:
+    - 0°C
+    - -5°C
+    - 5°C
+    - 10°C
+    correctAnswerIndex: 0
+  - questionText: How many planets are there in our solar system?
+    options:
+    - 7
     - 8
     - 9
     - 10
-    - 11
-    correctAnswerIndex: 2
-  - questionText: Which fruit is red and round?
-    options:
-    - Orange
-    - Apple
-    - Watermelon
-    - Cherry
     correctAnswerIndex: 1
-  - questionText: How many seconds are there in a minute?
+  - questionText: What is the national sport of India?
     options:
-    - 30
-    - 60
+    - Cricket
+    - Football
+    - Hockey
+    - Kabaddi
+    correctAnswerIndex: 2
+  - questionText: What is 16 × 6?
+    options:
+    - 94
+    - 95
+    - 97
+    - 96
+    correctAnswerIndex: 3
+  - questionText: Which is the tallest mountain in the world?
+    options:
+    - Mount Everest
+    - K2
+    - Kanchenjunga
+    - Makalu
+    correctAnswerIndex: 0
+  - questionText: What do we call animals that eat both plants and meat?
+    options:
+    - Herbivores
+    - Omnivores
+    - Carnivores
+    - Insectivores
+    correctAnswerIndex: 1
+  - questionText: How many minutes are there in 3 hours?
+    options:
+    - 150
+    - 160
+    - 180
+    - 170
+    correctAnswerIndex: 2
+  - questionText: Which freedom fighter is known as Netaji?
+    options:
+    - Bhagat Singh
+    - Chandrashekhar Azad
+    - Lala Lajpat Rai
+    - Subhas Chandra Bose
+    correctAnswerIndex: 3
+  - questionText: What is the square of 11?
+    options:
+    - 121
+    - 111
+    - 131
+    - 141
+    correctAnswerIndex: 0
+  - questionText: Which organ pumps blood throughout the body?
+    options:
+    - Lungs
+    - Heart
+    - Liver
+    - Kidney
+    correctAnswerIndex: 1
+  - questionText: What is the national flower of India?
+    options:
+    - Rose
+    - Sunflower
+    - Lotus
+    - Jasmine
+    correctAnswerIndex: 2
+  - questionText: How many days does Earth take to orbit the Sun?
+    options:
+    - 360
+    - 366
+    - 370
+    - 365
+    correctAnswerIndex: 3
+  - questionText: What is 50% of 80?
+    options:
+    - 40
+    - 35
     - 45
     - 50
+    correctAnswerIndex: 0
+  - questionText: Which language is spoken most widely in India?
+    options:
+    - Bengali
+    - Hindi
+    - Telugu
+    - Tamil
     correctAnswerIndex: 1
-  - questionText: What animal lives in a nest?
+  - questionText: What is the speed of light approximately?
     options:
-    - Fish
-    - Bird
-    - Snake
-    - Squirrel
-    correctAnswerIndex: 1
-  - questionText: What do we use to see?
-    options:
-    - Ears
-    - Eyes
-    - Nose
-    - Mouth
-    correctAnswerIndex: 1
-  - questionText: What is the opposite of cold?
-    options:
-    - Frozen
-    - Hot
-    - Cool
-    - Warm
-    correctAnswerIndex: 1
-  - questionText: What is 8 + 2?
-    options:
-    - 8
-    - 9
-    - 10
-    - 11
-    correctAnswerIndex: 2
-  - questionText: Which color is the sun?
-    options:
-    - Blue
-    - Yellow
-    - White
-    - Orange
-    correctAnswerIndex: 1
-  - questionText: What animal says "Baaa"?
-    options:
-    - Pig
-    - Sheep
-    - Goat
-    - Horse
-    correctAnswerIndex: 1
-  - questionText: What is 9 + 1?
-    options:
-    - 8
-    - 9
-    - 10
-    - 11
-    correctAnswerIndex: 2
-  - questionText: What color is an orange fruit?
-    options:
-    - Red
-    - Green
-    - Orange
-    - Yellow
+    - 200,000 km/s
+    - 400,000 km/s
+    - 300,000 km/s
+    - 500,000 km/s
     correctAnswerIndex: 2
   backgroundMusic: {fileID: 8300000, guid: 3d9841975a0c0fc4daaf6d1b0cc9a4a6, type: 3}
   backgroundImage: {fileID: 21300000, guid: 09879df8de260b443973801774211195, type: 3}
