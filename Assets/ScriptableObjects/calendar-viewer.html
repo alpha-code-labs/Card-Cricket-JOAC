@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Event Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .header-title svg {
+            width: 32px;
+            height: 32px;
+            color: #2563eb;
+            flex-shrink: 0;
+        }
+
+        .header-title h1 {
+            font-size: 28px;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .stat-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-card.highlight {
+            background: #fef3c7;
+            border-color: #fbbf24;
+        }
+
+        .stat-card.gameplay {
+            background: #fae8ff;
+            border-color: #c084fc;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f2937;
+        }
+
+        .highlight .stat-label {
+            color: #92400e;
+        }
+
+        .highlight .stat-value {
+            color: #92400e;
+        }
+
+        .gameplay .stat-label {
+            color: #581c87;
+        }
+
+        .gameplay .stat-value {
+            color: #581c87;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .filter-btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .filter-btn.active {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-btn.all {
+            background: #e5e7eb;
+            color: #374151;
+        }
+
+        .filter-btn.all.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .control-btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .expand-btn {
+            background: #16a34a;
+        }
+
+        .expand-btn:hover {
+            background: #15803d;
+        }
+
+        .collapse-btn {
+            background: #dc2626;
+        }
+
+        .collapse-btn:hover {
+            background: #b91c1c;
+        }
+
+        .date-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+            align-items: start;
+        }
+
+        @media (min-width: 768px) {
+            .date-list {
+                grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .date-list {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            }
+        }
+
+        .date-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .date-card.has-skip {
+            border-left-color: #eab308;
+        }
+
+        .date-header {
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background 0.2s;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .date-header:hover {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        }
+
+        .date-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .date-header-left svg {
+            width: 20px;
+            height: 20px;
+            color: #6b7280;
+        }
+
+        .date-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1f2937;
+        }
+
+        .date-count {
+            font-size: 12px;
+            color: #6b7280;
+            margin-left: 6px;
+        }
+
+        .date-icons {
+            display: flex;
+            gap: 4px;
+        }
+
+        .date-icons svg {
+            width: 16px;
+            height: 16px;
+            color: #9ca3af;
+        }
+
+        .events-container {
+            padding: 12px 16px 16px;
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .events-container.expanded {
+            display: block;
+            max-height: 2000px;
+        }
+
+        .event-card {
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+
+        .event-card:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transform: translateX(2px);
+        }
+
+        .event-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .event-content {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .event-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            font-size: 16px;
+        }
+
+        .event-details {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .event-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+
+        .event-name {
+            font-weight: bold;
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .event-type-badge {
+            padding: 2px 8px;
+            font-size: 11px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .event-description {
+            font-size: 13px;
+            opacity: 0.9;
+            line-height: 1.4;
+            word-break: break-word;
+        }
+
+        /* Event type colors */
+        .type-0 {
+            background: #dbeafe;
+            border-color: #60a5fa;
+            color: #1e3a8a;
+        }
+
+        .type-1 {
+            background: #dcfce7;
+            border-color: #4ade80;
+            color: #14532d;
+        }
+
+        .type-3 {
+            background: #fef3c7;
+            border-color: #eab308;
+            color: #713f12;
+        }
+
+        .type-4 {
+            background: #f3e8ff;
+            border-color: #a78bfa;
+            color: #581c87;
+        }
+
+        .type-5 {
+            background: #fce7f3;
+            border-color: #f472b6;
+            color: #831843;
+        }
+
+        .type-6 {
+            background: #fed7aa;
+            border-color: #fb923c;
+            color: #7c2d12;
+        }
+
+        .legend {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .legend h2 {
+            font-size: 20px;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .legend-item {
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .legend-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .legend-text .legend-name {
+            font-weight: bold;
+            display: block;
+        }
+
+        .legend-text .legend-type {
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="file-selector" style="background: white; border-radius: 12px; padding: 40px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div style="font-size: 48px; margin-bottom: 20px;">📂</div>
+            <h2 style="margin-bottom: 10px; color: #1f2937;">Select Your Calendar File</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Choose the CalanderRecord.asset file to visualize</p>
+            <input type="file" id="yaml-file-input" accept=".asset,.yaml,.yml" style="display: none;">
+            <label for="yaml-file-input" style="display: inline-block; padding: 12px 24px; background: #2563eb; color: white; border-radius: 8px; cursor: pointer; font-weight: 500; transition: background 0.2s;">
+                Choose File
+            </label>
+            <div id="file-info" style="margin-top: 20px; color: #6b7280; font-size: 14px;"></div>
+        </div>
+        
+        <div id="main-content" style="display: none;">
+        <div class="header">
+            <div class="header-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke-width="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6" stroke-width="2"/>
+                    <line x1="8" y1="2" x2="8" y2="6" stroke-width="2"/>
+                    <line x1="3" y1="10" x2="21" y2="10" stroke-width="2"/>
+                </svg>
+                <h1>Calendar Event Viewer</h1>
+                <button onclick="document.getElementById('yaml-file-input').click()" style="margin-left: auto; padding: 8px 16px; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 14px;">
+                    Load Different File
+                </button>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Dates</div>
+                    <div class="stat-value" id="total-dates">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Events</div>
+                    <div class="stat-value" id="total-events">0</div>
+                </div>
+                <div class="stat-card highlight">
+                    <div class="stat-label">Skip Events</div>
+                    <div class="stat-value" id="skip-events">0</div>
+                </div>
+                <div class="stat-card gameplay">
+                    <div class="stat-label">Gameplay</div>
+                    <div class="stat-value" id="gameplay-events">0</div>
+                </div>
+            </div>
+
+            <div class="filter-buttons" id="filter-buttons"></div>
+
+            <div style="margin-top: 16px; padding: 16px; background: #f9fafb; border-radius: 8px; border: 1px solid #e5e7eb;">
+                <h3 style="font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 12px;">
+                    🚫 Hide Days With Only These Event Types:
+                </h3>
+                <div id="exclusion-checkboxes" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+                <p style="font-size: 12px; color: #6b7280; margin-top: 8px; font-style: italic;">
+                    Days containing ONLY the selected event types will be hidden
+                </p>
+            </div>
+
+            <div class="control-buttons">
+                <button class="control-btn expand-btn" onclick="expandAll()">Expand All</button>
+                <button class="control-btn collapse-btn" onclick="collapseAll()">Collapse All</button>
+            </div>
+        </div>
+
+        <div class="date-list" id="date-list"></div>
+
+        <div class="legend">
+            <h2>Event Type Legend</h2>
+            <div class="legend-grid" id="legend-grid"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+        let yamlData = { dates: [] };
+
+        const eventTypeConfig = {
+            0: { name: 'Cutscene', color: 'type-0', icon: '🎬' },
+            1: { name: 'Map System', color: 'type-1', icon: '🗺️' },
+            3: { name: 'Skip', color: 'type-3', icon: '⏭️' },
+            4: { name: 'Card Gameplay', color: 'type-4', icon: '🎮' },
+            5: { name: 'Quiz/VN', color: 'type-5', icon: '🧠' },
+            6: { name: 'Tutorial', color: 'type-6', icon: '👁️' }
+        };
+
+        let currentFilter = 'all';
+        let expandedDates = new Set();
+        let excludedEventTypes = new Set(); // Event types to exclude days that only contain these
+        // Handle file selection
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            document.getElementById('file-info').innerHTML = `<div style="color: #2563eb;">Loading ${file.name}...</div>`;
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                try {
+                    let yamlText = e.target.result;
+                    
+                    // Remove Unity-specific YAML directives and tags that js-yaml can't handle
+                    // Remove %YAML directive
+                    yamlText = yamlText.replace(/%YAML\s+[\d.]+\s*\n/g, '');
+                    // Remove %TAG directive
+                    yamlText = yamlText.replace(/%TAG\s+!u!\s+tag:unity3d\.com,\d+:\s*\n/g, '');
+                    // Remove Unity document markers with tags
+                    yamlText = yamlText.replace(/---\s+!u!\d+\s+&\d+\s*\n/g, '');
+                    // Remove fileID references that cause issues
+                    yamlText = yamlText.replace(/\{fileID:\s*\d+\}/g, 'null');
+                    
+                    const parsedData = jsyaml.load(yamlText);
+                    
+                    // Extract the dates from the Unity YAML structure
+                    if (parsedData && parsedData.MonoBehaviour && parsedData.MonoBehaviour.dates) {
+                        yamlData = { dates: parsedData.MonoBehaviour.dates };
+                    } else {
+                        throw new Error('Invalid YAML structure - could not find MonoBehaviour.dates');
+                    }
+                    
+                    // Initialize the interface
+                    updateStats();
+                    createFilterButtons();
+                    createLegend();
+                    renderDateList();
+                    
+                    // Hide file selector and show main content
+                    document.getElementById('file-selector').style.display = 'none';
+                    document.getElementById('main-content').style.display = 'block';
+                    
+                    document.getElementById('file-info').innerHTML = `<div style="color: #16a34a;">✓ Successfully loaded ${file.name}</div>`;
+                } catch (error) {
+                    console.error('Error parsing YAML file:', error);
+                    document.getElementById('file-info').innerHTML = `
+                        <div style="background: #fee; color: #c00; padding: 12px; border-radius: 8px; border: 1px solid #c00; margin-top: 12px;">
+                            <strong>⚠️ Error Loading File</strong><br>
+                            ${error.message}
+                        </div>
+                    `;
+                }
+            };
+            
+            reader.onerror = function() {
+                document.getElementById('file-info').innerHTML = `
+                    <div style="background: #fee; color: #c00; padding: 12px; border-radius: 8px; border: 1px solid #c00; margin-top: 12px;">
+                        <strong>⚠️ Error Reading File</strong><br>
+                        Could not read the file. Please try again.
+                    </div>
+                `;
+            };
+            
+            reader.readAsText(file);
+        }
+
+        function calculateStats() {
+            const stats = {
+                totalDates: yamlData.dates.length,
+                totalEvents: 0,
+                byType: {}
+            };
+
+            Object.keys(eventTypeConfig).forEach(type => {
+                stats.byType[type] = 0;
+            });
+
+            yamlData.dates.forEach(dateEntry => {
+                stats.totalEvents += dateEntry.events.length;
+                
+                dateEntry.events.forEach(event => {
+                    if (stats.byType[event.eventType] !== undefined) {
+                        stats.byType[event.eventType]++;
+                    }
+                });
+            });
+
+            return stats;
+        }
+
+        function updateStats() {
+            const stats = calculateStats();
+            document.getElementById('total-dates').textContent = stats.totalDates;
+            document.getElementById('total-events').textContent = stats.totalEvents;
+            document.getElementById('skip-events').textContent = stats.byType[3];
+            document.getElementById('gameplay-events').textContent = stats.byType[4];
+        }
+
+        function createFilterButtons() {
+            const stats = calculateStats();
+            const container = document.getElementById('filter-buttons');
+            
+            let html = `<button class="filter-btn all active" onclick="setFilter('all')">All (${stats.totalEvents})</button>`;
+            
+            Object.entries(eventTypeConfig).forEach(([type, config]) => {
+                html += `<button class="filter-btn" onclick="setFilter('${type}')" data-type="${type}">
+                    ${config.icon} ${config.name} (${stats.byType[type]})
+                </button>`;
+            });
+            
+            container.innerHTML = html;
+            
+            // Create exclusion checkboxes
+            createExclusionCheckboxes();
+        }
+
+        function createExclusionCheckboxes() {
+            const container = document.getElementById('exclusion-checkboxes');
+            let html = '';
+            
+            Object.entries(eventTypeConfig).forEach(([type, config]) => {
+                const checked = excludedEventTypes.has(parseInt(type)) ? 'checked' : '';
+                html += `
+                    <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: white; border-radius: 6px; cursor: pointer; font-size: 13px; border: 2px solid #e5e7eb; transition: all 0.2s;">
+                        <input type="checkbox" class="exclusion-checkbox" data-type="${type}" ${checked} onchange="toggleExclusion(${type})" style="width: 16px; height: 16px; cursor: pointer;">
+                        <span>${config.icon} ${config.name}</span>
+                    </label>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        function toggleExclusion(type) {
+            const typeNum = parseInt(type);
+            if (excludedEventTypes.has(typeNum)) {
+                excludedEventTypes.delete(typeNum);
+            } else {
+                excludedEventTypes.add(typeNum);
+            }
+            renderDateList();
+        }
+
+        function setFilter(type) {
+            currentFilter = type;
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            if (type === 'all') {
+                document.querySelector('.filter-btn.all').classList.add('active');
+            } else {
+                document.querySelector(`.filter-btn[data-type="${type}"]`).classList.add('active');
+            }
+            
+            renderDateList();
+        }
+
+        function toggleDate(date) {
+            if (expandedDates.has(date)) {
+                expandedDates.delete(date);
+            } else {
+                expandedDates.add(date);
+            }
+            renderDateList();
+        }
+
+        function expandAll() {
+            expandedDates = new Set(yamlData.dates.map(d => d.date));
+            renderDateList();
+        }
+
+        function collapseAll() {
+            expandedDates = new Set();
+            renderDateList();
+        }
+
+        function renderDateList() {
+            const container = document.getElementById('date-list');
+            let filteredDates = yamlData.dates;
+            
+            // Filter by event type if not 'all'
+            if (currentFilter !== 'all') {
+                filteredDates = filteredDates.filter(dateEntry => 
+                    dateEntry.events.some(event => event.eventType === parseInt(currentFilter))
+                );
+            }
+            
+            // Filter out days that contain ONLY excluded event types
+            if (excludedEventTypes.size > 0) {
+                filteredDates = filteredDates.filter(dateEntry => {
+                    // Get all unique event types in this date
+                    const eventTypesInDate = new Set(dateEntry.events.map(e => e.eventType));
+                    
+                    // Check if ALL event types in this date are in the exclusion list
+                    const allExcluded = [...eventTypesInDate].every(type => excludedEventTypes.has(type));
+                    
+                    // Only include if NOT all excluded
+                    return !allExcluded;
+                });
+            }
+            
+            let html = '';
+            
+            filteredDates.forEach(dateEntry => {
+                const isExpanded = expandedDates.has(dateEntry.date);
+                const hasSkip = dateEntry.events.some(e => e.eventType === 3);
+                const uniqueTypes = [...new Set(dateEntry.events.map(e => e.eventType))];
+                
+                html += `
+                    <div class="date-card ${hasSkip ? 'has-skip' : ''}">
+                        <div class="date-header" onclick="toggleDate('${dateEntry.date}')">
+                            <div class="date-header-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    ${isExpanded 
+                                        ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>'
+                                        : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>'
+                                    }
+                                </svg>
+                                <span class="date-title">${dateEntry.date}</span>
+                                <span class="date-count">(${dateEntry.events.length} event${dateEntry.events.length !== 1 ? 's' : ''})</span>
+                            </div>
+                            <div class="date-icons">
+                                ${uniqueTypes.map(type => eventTypeConfig[type] ? eventTypeConfig[type].icon : '').join(' ')}
+                            </div>
+                        </div>
+                        <div class="events-container ${isExpanded ? 'expanded' : ''}">
+                `;
+                
+                dateEntry.events.forEach(event => {
+                    const config = eventTypeConfig[event.eventType] || { name: `Type ${event.eventType}`, color: 'type-0', icon: '❓' };
+                    
+                    html += `
+                        <div class="event-card ${config.color}">
+                            <div class="event-content">
+                                <div class="event-icon">${config.icon}</div>
+                                <div class="event-details">
+                                    <div class="event-header">
+                                        <span class="event-name">${event.eventName}</span>
+                                        <span class="event-type-badge">${config.name}</span>
+                                    </div>
+                                    ${event.eventDescription ? `<div class="event-description">${event.eventDescription}</div>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        function createLegend() {
+            const container = document.getElementById('legend-grid');
+            let html = '';
+            
+            Object.entries(eventTypeConfig).forEach(([type, config]) => {
+                html += `
+                    <div class="legend-item ${config.color}">
+                        <div class="legend-icon">${config.icon}</div>
+                        <div class="legend-text">
+                            <span class="legend-name">${config.name}</span>
+                            <span class="legend-type">Type ${type}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        // Attach event listener to file input after DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('yaml-file-input').addEventListener('change', handleFileSelect);
+        });
+    </script>
+</body>
+</html>
