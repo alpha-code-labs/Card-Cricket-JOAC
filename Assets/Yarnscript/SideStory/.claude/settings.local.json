@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cat \"H:\\1ProjectFiles\\UnityProjects\\morning-evening-fix\\Assets\\Yarnscript\\SideStory\\AI-Task.txt\")"
-    ],
-    "deny": [],
-    "ask": []
-  }
-}
