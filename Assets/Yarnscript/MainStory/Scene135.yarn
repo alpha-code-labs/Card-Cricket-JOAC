@@ -4,7 +4,7 @@ colorID: 0
 position: 0,0
 ---
 
-<<PlayBackgroundMusic Emotional_1>>
+<<PlayBackgroundMusic Emotional_2>>
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "Ramu" "Smiling">>
