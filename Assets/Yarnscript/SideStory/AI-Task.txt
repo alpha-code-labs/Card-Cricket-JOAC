@@ -1,0 +1,7 @@
+this is an Error Log of all the places where Hide All Characters command is not utilized even when it should be. add it accordingy use AI-TODO.txt to track your tasks there should be no remove operations
+
+
+Narration line has visible character sprites without <<HideAllCharacters>> above it. File: Naresh_MasterNode.yarn, Line 180: 'Raju pauses, considering his response carefully. This moment could determine whether Naresh becomes just another obstacle or a potential mentor in his cricket journey.'. Visible characters: Naresh, Raju
+Narration line has visible character sprites without <<HideAllCharacters>> above it. File: Naresh_MasterNode.yarn, Line 225: 'Raju chooses a practical approach, offering to demonstrate his dedication through hard work and responsibility rather than words alone.'. Visible characters: Naresh, Raju
+Narration line has visible character sprites without <<HideAllCharacters>> above it. File: Naresh_MasterNode.yarn, Line 257: 'Raju decides to appeal to Naresh on an emotional level, speaking directly about his passion and dreams to find common ground.'. Visible characters: Naresh, Raju
+Narration line has visible character sprites without <<HideAllCharacters>> above it. File: Naresh_MasterNode.yarn, Line 285: 'Regardless of which path Raju chose, his sincerity and dedication have made a lasting impression on the groundskeeper.'. Visible characters: Naresh, Raju

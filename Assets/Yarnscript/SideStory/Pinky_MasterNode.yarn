@@ -29,7 +29,7 @@ position: -7,-175
 
 Instead of heading straight home after school, Raju goes to the public school library. His father's emphasis on academic performance has made him realize he needs dedicated study time.
 
-The hushed library provides refuge from the chaos of home. Rows of books and study tables create an academic sanctuary. Late afternoon light filters through dusty windows as scattered students work quietly.
+The hushed library provides refuge from the chaos of home. Rows of books and study tables create an academic sanctuary. Natural light filters through dusty windows as scattered students work quietly.
 
 <<SetCharacterExpression "Pinky" "Irritated">>
 Pinky: You're making too much noise with that chair.
@@ -190,7 +190,7 @@ position: -75,-229
 
 After two successful library sessions, Raju continues this routine. His mathematical understanding has improved remarkably. Today he brings a small gesture of appreciation - a pencil set purchased with saved lunch money.
 
-The afternoon sunlight illuminates the library as Raju arrives for his third consecutive day. The modest gift of pencils tucked in his bag represents gratitude for her generous tutoring. Their academic partnership has begun developing into something more meaningful.
+The library welcomes Raju as he arrives for his third consecutive day. The modest gift of pencils tucked in his bag represents gratitude for her generous tutoring. Their academic partnership has begun developing into something more meaningful.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I brought these for you.
@@ -273,6 +273,7 @@ Pinky: How should we approach this challenge?
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: What's the best way to prove that our dreams and academic success can work together?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

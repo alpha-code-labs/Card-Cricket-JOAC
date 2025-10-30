@@ -43,10 +43,19 @@ This contrasts sharply with the chaos of his overcrowded home.
 Tall shelves lined with books stretch toward the ceiling like guardians of wisdom.
 
 <<HideAllCharacters>>
-Soft afternoon light filters through dusty windows.
+Soft light filters through dusty windows.
 
 <<HideAllCharacters>>
 The space carries an almost sacred quality.
+
+<<HideAllCharacters>>
+Suddenly, a sharp voice cuts through the silence.
+
+<<HideAllCharacters>>
+The librarian, Ram Charan, emerges from behind a bookshelf.
+
+<<HideAllCharacters>>
+His stern expression fixes upon Raju with immediate disapproval.
 
 <<SetCharacterExpression "RamCharan" "Angry">>
 RamCharan: Quiet!
@@ -212,7 +221,7 @@ RamCharan: They prefer easy encouragement to truthful criticism about their misp
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Sir, I came to read and learn, just like I said yesterday.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand that you think cricket is a distraction.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -233,13 +242,13 @@ RamCharan: But understand something clearly.
 <<SetCharacterExpression "RamCharan" "Serious">>
 RamCharan: Books require respect, careful handling, and genuine engagement with their contents.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I do respect books, sir.
 
 <<SetCharacterExpression "Raju" "Neutral">>
 Raju: My brother Ramu always tells me that learning is the most important thing we can do.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: That education opens doors that cricket alone never could.
 
 <<SetCharacterExpression "Raju" "Excited">>
@@ -275,6 +284,7 @@ RamCharan: How do you plan to prove this commitment to learning?
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: What approach will you take to demonstrate genuine academic seriousness?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -353,7 +363,7 @@ tags:
 position: -55,122
 ---
 <<set $RamCharan_Path = "b">>
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: Balance?
@@ -370,7 +380,7 @@ RamCharan: And clear understanding of priorities.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's exactly what I want to learn, sir.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I don't want to sacrifice either my education or my dreams.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -414,7 +424,7 @@ tags:
 position: 184,122
 ---
 <<set $RamCharan_Path = "c">>
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: Help with library work?
@@ -431,7 +441,7 @@ RamCharan: You're willing to work without immediate reward?
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, sir.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I want to learn by doing.
 
 <<SetCharacterExpression "Raju" "Confident">>
@@ -631,13 +641,23 @@ RamCharan: Your consistency suggests I can trust you with something special.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Sir, I'm grateful that you're willing to trust me.
 
-<<SetCharacterExpression "Raju" Determined>>
+<<SetCharacterExpression "Raju" "Determined">>
 Raju: I promise that whatever you want to show me.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'll treat it with the same respect I'd give to any important learning material.
 
-// Ram Charan moves toward a locked cabinet, producing a small key and opening it with careful movements. From within, he pulls out a worn bundle wrapped in protective cloth.
+<<HideAllCharacters>>
+Ram Charan moves toward a locked cabinet in the corner of the library.
+
+<<HideAllCharacters>>
+He produces a small key and opens it with careful, deliberate movements.
+
+<<HideAllCharacters>>
+From within, he pulls out a worn bundle wrapped in protective cloth.
+
+<<HideAllCharacters>>
+His hands treat the package with reverence, as if handling something precious and sacred.
 
 <<SetCharacterExpression "RamCharan" "Excited">>
 RamCharan: These are treasures I've kept hidden for years.

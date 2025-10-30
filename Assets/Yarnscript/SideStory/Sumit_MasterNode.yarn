@@ -29,7 +29,7 @@ position: -7,-175
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 1 at Koliwada Ground
-After finishing his homework early and feeling restless on a quiet afternoon, Raju chooses to visit his friend Sumit who had mentioned wanting to organize some kind of intellectual challenge.
+After finishing his homework early and feeling restless, Raju chooses to visit his friend Sumit who had mentioned wanting to organize some kind of intellectual challenge.
 
 The familiar neighborhood takes on a different quality as Raju approaches Sumit's usual spot. His friend sits with restless energy, craving stimulation beyond routine activities.
 
@@ -121,7 +121,7 @@ Sumit: I'll think about the best challenges for us.
 Raju: Great! I'm really looking forward to this.
 
 <<HideAllCharacters>>
-As Raju leaves with anticipation building for tomorrow's planning session, he carries excitement about testing his mental abilities against a peer. The prospect of intellectual competition has transformed a routine afternoon into something meaningful.
+As Raju leaves with anticipation building for tomorrow's planning session, he carries excitement about testing his mental abilities against a peer. The prospect of intellectual competition has transformed a routine day into something meaningful.
 
 <<set $Sumit_Day = 2>>
 <<EndEvent true>>
@@ -275,6 +275,8 @@ Sumit: What type of challenge would be most meaningful and fair?
 
 <<SetCharacterExpression "Sumit" "Curious">>
 Sumit: What approach do you think would best test our abilities?
+
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

@@ -33,11 +33,15 @@ position: 626,-302
 <<SetBGSprite HutInterior>>
 <<HideAllCharacters>>
 
-Dawn breaks over their small home. Raju awakens to sounds of the bustling slum. Through thin walls, he hears Ramu already moving about in their makeshift cricket practice ground.
+Raju awakens to sounds of the bustling slum. Through thin walls, he hears Ramu already moving about in their makeshift cricket practice ground.
 
 <<HideAllCharacters>>
 
-First rays of sunlight filter through narrow gaps between buildings. Raju finds Ramu arranging makeshift cricket equipment in the tiny courtyard space.
+Raju rises from his makeshift bed and makes his way outside, still rubbing sleep from his eyes.
+
+<<HideAllCharacters>>
+
+Light filters through narrow gaps between buildings. Raju finds Ramu arranging makeshift cricket equipment in the tiny courtyard space.
 
 <<SetCharacterExpression Ramu Irritated>>
 Ramu: Arre, stop lazing around!
@@ -109,7 +113,7 @@ Ramu: Good. Now remember - elbow up, feet balanced.
 Ramu: Watch the ball, always watch the ball.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: And remember this feeling, this morning, when practice is hard and you want to quit.
+Ramu: And remember this feeling, this moment, when practice is hard and you want to quit.
 
 <<SetCharacterExpression Ramu Confident>>
 Ramu: Champions are made in moments like this.
@@ -135,6 +139,7 @@ Ramu: Something that can't be bought or taught.
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: You just need to believe in it as much as I do.
 
+<<HideAllCharacters>>
 Just then, Raju swings the bat and connects perfectly with the ball.
 
 <<SetCharacterExpression Ramu Astonished>>
@@ -163,7 +168,7 @@ Ramu: Further than expensive coaching ever could.
 
 <<HideAllCharacters>>
 
-As the first morning's practice concludes, both understand they've begun something significant - a serious training regimen that could determine if talent becomes skill.
+As the first practice session concludes, both understand they've begun something significant - a serious training regimen that could determine if talent becomes skill.
 
 <<set $Ramu_Day = 2>>
 <<EndEvent true>>
@@ -175,10 +180,13 @@ position: -205,33
 ---
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite KohliwadaGround>>
+<<HideAllCharacters>>
 
-The afternoon heat is unforgiving at Koliwada Ground. Despite the sweltering temperature, Raju joins the older boys' game. Ramu comes to watch from the boundary.
+The heat is unforgiving at Koliwada Ground. Despite the sweltering temperature, Raju joins the older boys' game. Ramu comes to watch from the boundary.
 
-The dusty ground shimmers under harsh sun. Raju's decision to test his practice lessons against older players represents a leap in confidence.
+<<HideAllCharacters>>
+
+The dusty ground shimmers in the heat. Raju's decision to test his practice lessons against older players represents a leap in confidence.
 
 <<SetCharacterExpression Sumit Excited>>
 Sumit: Come on, Raju! Yesterday your brother said you were special.
@@ -302,7 +310,7 @@ Dust settles over Kohliwada Ground. Raju seeks out his brother for a different k
 
 <<HideAllCharacters>>
 
-The ground provides peaceful escape from crowded chaos.
+The ground provides peaceful escape from crowded chaos. Raju and Ramu sit together on the weathered boundary line, the usual bustle of the day giving way to a rare moment of quiet.
 
 <<SetCharacterExpression Raju Quizzical>>
 Raju: Bhaiya, can I ask you something?
@@ -396,8 +404,11 @@ position: 469,238
 ---
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite KohliwadaGround>>
+<<HideAllCharacters>>
 
 Three days of consistent practice have created a routine. Today, Raju seeks out his brother at Koliwada Ground to show how the lessons are paying off in real games.
+
+<<HideAllCharacters>>
 
 The familiar dust and energy of Koliwada Ground welcome Raju. The public setting creates additional pressure as friends gather to witness his progress.
 
@@ -535,6 +546,9 @@ position: 934,-229
 
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite KohliwadaGround>>
+<<HideAllCharacters>>
+
+The morning sun casts long shadows across the ground as Raju and Ramu return for another day of practice. The air between them carries the weight of yesterday's conversation.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: I understand your fears, bhaiya.
@@ -621,6 +635,9 @@ position: 902,93
 
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite KohliwadaGround>>
+<<HideAllCharacters>>
+
+The determination in Raju's eyes is unmistakable as he steps onto the practice ground. Today, he will show his brother the depth of his commitment.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: I'll prove my commitment is unbreakable, bhaiya.
@@ -704,6 +721,9 @@ position: 1067,-57
 
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite KohliwadaGround>>
+<<HideAllCharacters>>
+
+Raju approaches the practice session with a calm confidence. He has thought carefully about how to address his brother's concerns while pursuing his dreams.
 
 <<SetCharacterExpression Raju Confident>>
 Raju: Let me show you I can balance cricket dreams with responsibility, bhaiya.
@@ -785,8 +805,11 @@ position: 189,214
 ---
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
+<<HideAllCharacters>>
 
 Yesterday's conversation has forced Ramu to confront whether Raju is prepared for serious training.
+
+<<HideAllCharacters>>
 
 Ramu's serious expression reflects a night of contemplation about advancing to the next level.
 
@@ -840,7 +863,8 @@ Ramu: Then maybe - maybe I'll believe you're serious about this dream.
 
 <<HideAllCharacters>>
 <<SetBGSprite KohliwadaGround>>
-Ramu and Raju Head towards Kohliwada Ground.
+
+Ramu and Raju head towards Kohliwada Ground. The morning air is thick with anticipation as they prepare for the most intense training session yet.
 
 <<SetCharacterExpression Ramu Skeptical>>
 Ramu: Tired yet?
@@ -854,7 +878,9 @@ Ramu: Your hands are red. Your form is getting sloppy.
 <<SetCharacterExpression Raju Determined>>
 Raju: Then show me how to do it better. Don't make it easier.
 
-Ramu grills and grinds raju with intense training drills for two hours.
+<<HideAllCharacters>>
+
+Two grueling hours pass. Ramu puts Raju through relentless training drills - batting technique after technique, running drills until his legs burn, defensive shots repeated until muscle memory takes over. The sun climbs higher as sweat and determination mix on the dusty ground.
 
 <<SetCharacterExpression Ramu Astonished>>
 Ramu: ...You didn't complain once.
@@ -911,10 +937,13 @@ position: -184,-151
 ---
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
+<<HideAllCharacters>>
 
 After six consecutive days of consistent practice, Raju joins his brother for another session. Today's practice will likely draw attention from neighbors.
 
-The Kohliwada Ground has become unexpected neighborhood entertainment. Curious residents time their morning activities to witness the intense training sessions.
+<<HideAllCharacters>>
+
+The Kohliwada Ground has become unexpected neighborhood entertainment. Curious residents time their daily activities to witness the intense training sessions.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Ready for today's session, champ?
@@ -935,7 +964,7 @@ Ramu: I told her to watch this morning's practice and decide for herself.
 Ramu: Six days ago, I thought this was just another childhood phase.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: But watching you practice every single morning...
+Ramu: But watching you practice every single day...
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Seeing how you listen to every suggestion...
@@ -967,6 +996,9 @@ Raju: Like I'm not just hitting balls - like I'm proving something.
 
 <<HideAllCharacters>>
 <<SetBGSprite KohliwadaGround>>
+
+They arrive at Kohliwada Ground to find several neighbors already gathered, eager to watch the young prodigy practice.
+
 <<SetCharacterExpression MrsDas Excited>>
 Mrs Das: Ramu beta, is your little brother going to play in that big tournament?
 
@@ -977,7 +1009,7 @@ Mrs Das: Our entire slum is talking about his cricket!
 Ramu: Das aunty, come down and see for yourself!
 
 <<SetCharacterExpression Ramu Proud>>
-Ramu: Six days of sunrise practice - he hasn't missed a single morning!
+Ramu: Six days of dedicated practice - he hasn't missed a single session!
 
 <<SetCharacterExpression Raju Determined>>
 Raju: Bhai, I won't let you down.
@@ -1004,8 +1036,11 @@ position: 526,-86
 ---
 <<PlayBackgroundMusic Ramu>>
 <<SetBGSprite HutInterior>>
+<<HideAllCharacters>>
 
 For the eighth consecutive day, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
+
+<<HideAllCharacters>>
 
 The familiar atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
 
@@ -1016,10 +1051,10 @@ Ramu: Seven days ago, when you first asked me to help with cricket...
 Ramu: I thought it was just another kid's fantasy.
 
 <<SetCharacterExpression Ramu Proud>>
-Ramu: But I've watched you choose to wake up early every single morning.
+Ramu: But I've watched you choose to practice every single day.
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Choose to practice when other kids are still sleeping.
+Ramu: Choose to practice when other kids are just playing around.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Choose to listen and improve instead of just playing around.
@@ -1034,7 +1069,7 @@ Raju: Cricket isn't just play for me - it's my dream.
 Raju: And you've helped me understand what it takes to chase dreams properly.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: The tournament registration closes tomorrow.
+Ramu: The tournament registration closes soon.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: The entry fee is fifty rupees.
@@ -1046,7 +1081,7 @@ Ramu: Money our family doesn't have to waste on uncertain dreams.
 Ramu: But after seven days of watching you prove your commitment...
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: After seeing our neighbors stop their morning routines to watch you practice...
+Ramu: After seeing our neighbors stop their daily routines to watch you practice...
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: After witnessing how seriously you take every piece of advice...
@@ -1064,7 +1099,7 @@ Ramu: I think you've been ready for a week.
 Ramu: The question was whether I was ready to believe in you.
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Seven days of watching you choose cricket over sleep...
+Ramu: Seven days of watching you choose cricket over everything else...
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Improvement over comfort, discipline over fun...
@@ -1073,7 +1108,7 @@ Ramu: Improvement over comfort, discipline over fun...
 Ramu: You've answered every doubt I had.
 
 <<SetCharacterExpression Ramu Determined>>
-Ramu: I'll find the fifty rupees. I'll register you tomorrow morning.
+Ramu: I'll find the fifty rupees. I'll register you right away.
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: And I'll be there cheering when you play.
@@ -1091,7 +1126,7 @@ Raju: For teaching me. For giving me this chance.
 Ramu: You earned this chance, Raju.
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Every morning for seven days, you chose to earn it.
+Ramu: Every day for seven days, you chose to earn it.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: And since you're going to be playing in a real tournament...
@@ -1100,20 +1135,25 @@ Ramu: And since you're going to be playing in a real tournament...
 Ramu: You'll need proper equipment.
 
 <<HideAllCharacters>>
-Ramu handsover a pair of shoes to Raju.
+
+Ramu reaches behind him and pulls out a carefully wrapped bundle. With trembling hands, he unwraps it to reveal a pair of handmade cricket shoes, crafted with love and dedication.
+
+<<HideAllCharacters>>
+
+Ramu hands over the shoes to Raju, his eyes glistening with emotion.
 
 <<SetCharacterExpression Raju Astonished>>
 Raju: You made this? For me?
 
 
 <<SetCharacterExpression Ramu Loving>>
-Ramu: Every night for the past week, after you went to sleep, I worked on it.
+Ramu: Every day for the past week, when you weren't looking, I worked on it.
 
 <<SetCharacterExpression Ramu Proud>>
 Ramu: Each day you showed me more dedication...
 
 <<SetCharacterExpression Ramu Loving>>
-Ramu: And each night I put more love into these shoes.
+Ramu: And each day I put more love into these shoes.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: It's not fancy like the ones in the shops.

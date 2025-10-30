@@ -154,7 +154,7 @@ Despite yesterday's harsh dismissal, Raju returns to the prestigious sports acad
 
 His resolve is strengthened rather than weakened by yesterday's confrontation.
 
-The morning sun casts long shadows across the academy grounds.
+The academy grounds stretch out before him.
 
 The pristine facility represents both the pinnacle of cricket training and the embodiment of social barriers.
 
@@ -212,7 +212,7 @@ CoachSharma: These boys have every advantage.
 CoachSharma: Proper equipment, dedicated practice time, nutritional support, family backing.
 
 <<SetCharacterExpression "CoachSharma" "Irritated">>
-CoachSharma: Yet half of them complain about early morning sessions.
+CoachSharma: Yet half of them complain about early training sessions.
 
 <<SetCharacterExpression "CoachSharma" "Disgusted">>
 CoachSharma: They make excuses about difficult drills.
@@ -247,6 +247,7 @@ CoachSharma: How do you plan to prove this discipline to me, boy?
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
 CoachSharma: Words are easy when there's no real test behind them.
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -291,10 +292,10 @@ Raju: With complete dedication.
 CoachSharma: Very well.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Come back tomorrow morning.
+CoachSharma: Come back tomorrow.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Early - before my regular sessions begin.
+CoachSharma: Before my regular sessions begin.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
 CoachSharma: We'll see if your quiet consistency extends to unglamorous preparation work.
@@ -444,13 +445,13 @@ tags:
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-True to his promise, Raju arrives at the academy before dawn.
+True to his promise, Raju arrives at the academy on time.
 
 He is determined to prove his discipline through patient, consistent effort.
 
-The academy grounds lie quiet and empty in the pre-dawn darkness.
+The academy grounds lie quiet and empty.
 
-The silence is broken only by the distant sounds of the awakening city.
+The silence is broken only by the distant sounds of the city.
 
 His punctual arrival demonstrates the depth of his commitment.
 
@@ -466,7 +467,7 @@ CoachSharma: Here's your test.
 CoachSharma: Set up all this equipment quietly and thoroughly.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Show me that your consistency isn't just morning enthusiasm.
+CoachSharma: Show me that your consistency isn't just initial enthusiasm.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, sir.
@@ -494,7 +495,7 @@ Raju: I want to earn your respect through reliability, not flashiness.
 
 <<HideAllCharacters>>
 
-As Raju completes his first morning of unglamorous preparation work, he begins to understand something important.
+As Raju completes his first session of unglamorous preparation work, he begins to understand something important.
 
 His chosen path of quiet consistency is already distinguishing him.
 
@@ -512,7 +513,7 @@ tags:
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-Raju arrives at dawn with intense energy.
+Raju arrives on time with intense energy.
 
 He is determined to channel his passionate commitment into demonstrable action.
 
@@ -522,7 +523,7 @@ His passionate commitment to cricket burns bright despite the mundane tasks awai
 
 His energetic approach reflects a belief that emotional intensity can be channeled into sustained effort.
 
-Though the coming hours will test whether his fire can illuminate the path through routine labor.
+Though the time ahead will test whether his fire can illuminate the path through routine labor.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: Channel all that fire into this equipment setup.
@@ -556,7 +557,7 @@ Raju: Cricket isn't just what I want to do - it's who I am.
 
 <<HideAllCharacters>>
 
-As Raju completes his first morning of passionate labor, he demonstrates something crucial.
+As Raju completes his first session of passionate labor, he demonstrates something crucial.
 
 His emotional fire can indeed fuel sustained effort rather than simply burning bright for brief moments.
 
@@ -574,7 +575,7 @@ tags:
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-Raju arrives early with a mental plan.
+Raju arrives on time with a mental plan.
 
 A plan for how to approach every task efficiently and thoroughly.
 
@@ -586,7 +587,7 @@ His methodical mindset reflects a mature understanding.
 
 Success often depends on intelligent application of effort rather than simply working harder.
 
-Though the morning ahead will test whether his theoretical planning can adapt to practical realities.
+Though the time ahead will test whether his theoretical planning can adapt to practical realities.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: Show me this systematic approach.
@@ -617,7 +618,7 @@ Raju: Every task becomes part of the larger goal.
 
 <<HideAllCharacters>>
 
-As Raju completes his first morning of systematic preparation work, he demonstrates a key insight.
+As Raju completes his first session of systematic preparation work, he demonstrates a key insight.
 
 Strategic thinking can indeed enhance rather than replace passionate commitment.
 
@@ -634,9 +635,9 @@ title: CoachSharma_Day4
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-After proving his dedication through consistent morning work, Raju hopes for the chance to demonstrate his actual cricket ability.
+After proving his dedication through consistent work, Raju hopes for the chance to demonstrate his actual cricket ability.
 
-The academy nets beckon tantalizingly as Raju completes another morning of preparation work.
+The academy nets beckon tantalizingly as Raju completes another session of preparation work.
 
 His hands are eager to grip a proper cricket bat after days of proving his character through unglamorous labor.
 
@@ -823,7 +824,7 @@ CoachSharma: I'll make you a deal.
 CoachSharma: One that tests whether your commitment extends beyond verbal promises into actual sacrifice.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Come here every morning for the next month, 5 AM sharp.
+CoachSharma: Come here every day for the next month before my regular sessions start.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 CoachSharma: Do all the setup work.
@@ -862,7 +863,7 @@ CoachSharma: Then maybe I'll spend some time correcting your technique and teach
 Raju: I'll be here, sir.
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: Every single morning at 5 AM.
+Raju: Every single day on time.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: You won't have to wait for me or wonder if I'm coming.
@@ -902,15 +903,15 @@ title: CoachSharma_Day6
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-After three weeks of consistent 5 AM arrivals and dedicated facility preparation work, Raju approaches Coach Sharma.
+After three weeks of consistent arrivals and dedicated facility preparation work, Raju approaches Coach Sharma.
 
 He hopes to understand whether his sustained commitment has earned progress toward the coaching opportunity.
 
 The academy grounds have become as familiar as his own neighborhood.
 
-After three weeks of pre-dawn arrivals, his consistent presence has transformed him.
+After three weeks of punctual arrivals, his consistent presence has transformed him.
 
-From an unwelcome intruder into an integral part of the facility's morning routine.
+From an unwelcome intruder into an integral part of the facility's routine.
 
 Coach Sharma's recognition of his sustained effort carries weight.
 
@@ -922,7 +923,7 @@ The stage is set for a conversation that could determine everything.
 CoachSharma: Three weeks now.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Every single morning at 5 AM sharp.
+CoachSharma: Every single day on time.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
 CoachSharma: Without fail, without complaint, without excuses.
@@ -937,10 +938,10 @@ Raju: I told you I was serious, sir.
 Raju: I wanted to prove that my dedication runs deeper than convenient enthusiasm.
 
 <<SetCharacterExpression "Raju" "Proud">>
-Raju: Every morning for twenty-one days.
+Raju: Every day for twenty-one days.
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: I've chosen cricket preparation over sleep, commitment over comfort.
+Raju: I've chosen cricket preparation over comfort, commitment over excuses.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 CoachSharma: Serious, yes. That much is undeniable.

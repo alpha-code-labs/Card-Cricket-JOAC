@@ -92,7 +92,7 @@ tags:
 // Scene Setup - Day 2
 Despite yesterday's dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
 
-The afternoon sun casts long shadows across the grounds. Naresh notices the young man's return with irritation and grudging recognition of his persistence.
+Naresh notices the young man's return with irritation and grudging recognition of his persistence.
 
 <<SetCharacterExpression "Naresh" Irritated>>
 Naresh: You again? I thought I made myself clear yesterday.
@@ -254,6 +254,11 @@ Naresh: How do you plan to build on this foundation you've created?
 
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: What's your next step in this cricket education?
+
+<<HideAllCharacters>>
+Raju pauses, considering his response carefully. This moment could determine whether Naresh becomes just another obstacle or a potential mentor in his cricket journey.
+
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -272,6 +277,8 @@ tags:
 position: -308,129
 ---
 <<set $Naresh_Path = "a">>
+
+Raju decides to showcase his analytical approach, hoping to impress Naresh with his deep understanding of cricket's technical and psychological aspects.
 
 <<SetCharacterExpression "Naresh" Astonished>>
 Naresh: Ball physics? Player psychology?
@@ -311,6 +318,9 @@ tags:
 position: -55,122
 ---
 <<set $Naresh_Path = "b">>
+
+<<HideAllCharacters>>
+Raju chooses a practical approach, offering to demonstrate his dedication through hard work and responsibility rather than words alone.
 
 <<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: You want to work? Most kids your age try to avoid responsibility.
@@ -357,6 +367,9 @@ position: 184,122
 ---
 <<set $Naresh_Path = "c">>
 
+<<HideAllCharacters>>
+Raju decides to appeal to Naresh on an emotional level, speaking directly about his passion and dreams to find common ground.
+
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: Dreams are fragile things, beta.
 
@@ -396,6 +409,9 @@ Naresh: That kind of dedication deserves guidance, not just encouragement.
 title: Naresh_Day3_Continue
 tags:
 ---
+
+<<HideAllCharacters>>
+Regardless of which path Raju chose, his sincerity and dedication have made a lasting impression on the groundskeeper.
 
 <<HideAllCharacters>>
 As Naresh examines Raju's detailed observations, their relationship transforms from suspicious monitoring to genuine mentorship consideration. The notebook has provided concrete evidence of serious cricket study.
@@ -565,9 +581,9 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)
-With anticipation from yesterday's promise, Raju arrives as dusk settles, knowing this quiet period might offer the privacy needed for informal mentorship.
+With anticipation from yesterday's promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
 
-The academy grounds take on a sacred quality as dust settles. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
+The academy grounds take on a sacred quality. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 
 <<SetCharacterExpression "Naresh" Mischievous>>
 Naresh: Psst! Over here, beta.

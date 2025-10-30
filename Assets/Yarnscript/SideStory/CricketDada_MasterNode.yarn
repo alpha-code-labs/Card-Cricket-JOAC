@@ -250,6 +250,9 @@ Cricket Dada: You're very perceptive, beta.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Would you like to talk about it?
 
+// Raju sees the depth of Cricket Dada's pain and must decide how to approach this delicate moment. His heart tells him different paths might help.
+
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
