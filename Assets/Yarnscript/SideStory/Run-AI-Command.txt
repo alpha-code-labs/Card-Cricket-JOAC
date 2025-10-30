@@ -1,3 +1,0 @@
-for %%f in (*.yarn) do (
-    start cmd /k claude "read AI-Task.txt and execture for %%f in this folder use AI-TODO.txt to track your tasks"
-)
