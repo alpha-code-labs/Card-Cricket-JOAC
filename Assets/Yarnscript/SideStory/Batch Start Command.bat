@@ -1,0 +1,3 @@
+for %%f in (AgarwalUncle_MasterNode.yarn Amarjeet_MasterNode.yarn Amit_MasterNode.yarn Aryan_MasterNode.yarn CoachSharma_MasterNode.yarn CricketDada_MasterNode.yarn Fatima_MasterNode.yarn Kamla_MasterNode.yarn MochiUncle_MasterNode.yarn MunnaBhai_MasterNode.yarn Naresh_MasterNode.yarn Pinky_MasterNode.yarn Priya_MasterNode.yarn RamCharan_MasterNode.yarn Ramu_MasterNode.yarn ShivPrasad_MasterNode.yarn Sumit_MasterNode.yarn SunitaMadam_MasterNode.yarn Suresh_MasterNode.yarn Vikram_MasterNode.yarn) do (
+    start cmd /k claude "read the file AI-Task.txt and then excute the given insturctions only for the file %%f in this folder"
+)
