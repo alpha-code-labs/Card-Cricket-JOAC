@@ -307,6 +307,7 @@ AgarwalUncle: Show me you understand retail beyond just wanting to help.
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
 AgarwalUncle: What specific approach would you take to contribute effectively?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

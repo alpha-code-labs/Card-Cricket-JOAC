@@ -247,6 +247,7 @@ CoachSharma: How do you plan to prove this discipline to me, boy?
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
 CoachSharma: Words are easy when there's no real test behind them.
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
