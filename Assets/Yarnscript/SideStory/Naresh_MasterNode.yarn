@@ -255,6 +255,7 @@ Naresh: How do you plan to build on this foundation you've created?
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: What's your next step in this cricket education?
 
+<<HideAllCharacters>>
 Raju pauses, considering his response carefully. This moment could determine whether Naresh becomes just another obstacle or a potential mentor in his cricket journey.
 
 <<HideAllCharacters>>
@@ -318,6 +319,7 @@ position: -55,122
 ---
 <<set $Naresh_Path = "b">>
 
+<<HideAllCharacters>>
 Raju chooses a practical approach, offering to demonstrate his dedication through hard work and responsibility rather than words alone.
 
 <<SetCharacterExpression "Naresh" Quizzical>>
@@ -365,6 +367,7 @@ position: 184,122
 ---
 <<set $Naresh_Path = "c">>
 
+<<HideAllCharacters>>
 Raju decides to appeal to Naresh on an emotional level, speaking directly about his passion and dreams to find common ground.
 
 <<SetCharacterExpression "Naresh" Serious>>
@@ -407,6 +410,7 @@ title: Naresh_Day3_Continue
 tags:
 ---
 
+<<HideAllCharacters>>
 Regardless of which path Raju chose, his sincerity and dedication have made a lasting impression on the groundskeeper.
 
 <<HideAllCharacters>>
