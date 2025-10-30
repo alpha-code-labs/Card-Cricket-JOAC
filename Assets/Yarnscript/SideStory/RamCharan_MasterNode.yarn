@@ -284,6 +284,7 @@ RamCharan: How do you plan to prove this commitment to learning?
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 RamCharan: What approach will you take to demonstrate genuine academic seriousness?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

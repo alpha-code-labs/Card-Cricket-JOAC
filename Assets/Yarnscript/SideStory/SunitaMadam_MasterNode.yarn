@@ -200,6 +200,7 @@ Raju: I was wondering... do you have any books I could read?
 <<SetCharacterExpression "Raju" Worried>>
 Raju: Even old ones that the school doesn't need anymore?
 
+<<HideAllCharacters>>
 Her expression shifts from irritation to surprise. This is not what she expected to hear.
 
 <<SetCharacterExpression "SunitaMadam" Astonished>>
@@ -335,6 +336,7 @@ She is waiting near the gates, as if expecting him. There's a test in her eyes.
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Back again? What approach are you going to take?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -356,6 +358,7 @@ position: -308,129
 <<set $SunitaMadam_Path = "a">>
 <<SetBGSprite PrivateSchool>>
 
+<<HideAllCharacters>>
 Raju takes a deep breath and decides to prove himself through knowledge. His eyes shine with determination.
 
 <<SetCharacterExpression "Raju" Confident>>

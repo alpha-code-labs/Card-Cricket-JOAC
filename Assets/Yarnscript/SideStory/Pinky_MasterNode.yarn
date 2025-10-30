@@ -273,6 +273,7 @@ Pinky: How should we approach this challenge?
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: What's the best way to prove that our dreams and academic success can work together?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

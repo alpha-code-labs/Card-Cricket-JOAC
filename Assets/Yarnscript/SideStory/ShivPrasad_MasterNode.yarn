@@ -301,6 +301,7 @@ Raju: How should I approach these seven days, Baba?
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: What's the best way to prove I can handle both?
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -515,8 +516,10 @@ tags:
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
+<<HideAllCharacters>>
 Raju demonstrates systematic integration of cricket-learned discipline with academic study. Showing how sports skills enhance learning.
 
+<<HideAllCharacters>>
 Raju's methodical approach reflects the same systematic thinking from cricket. Athletic discipline enhances academic performance when consciously applied. Study sessions take on practice structure - clear goals, measurable progress, focused attention.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
@@ -550,8 +553,10 @@ tags:
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
+<<HideAllCharacters>>
 Raju maintains cricket passion while channeling that energy and confidence into intensive academic preparation.
 
+<<HideAllCharacters>>
 High energy fills both cricket practice and math study. The sustainability remains questionable as days progress. His belief that cricket success fuels academics faces practical tests - can enthusiasm substitute for methodical work? His father observes with growing concern.
 
 <<SetCharacterExpression "ShivPrasad" "Quizzical">>
@@ -591,8 +596,10 @@ tags:
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
+<<HideAllCharacters>>
 Three days have passed since accepting his father's challenge. Raju comes home early from cricket practice to focus on studying. But as he sits with mathematics books, exhaustion weighs heavily.
 
+<<HideAllCharacters>>
 Accumulated stress of excelling at both begins showing its toll. Fatigue threatens to undermine performance in both areas. His ambitious attempt reveals practical limitations even the most determined young person faces.
 
 <<SetCharacterExpression "ShivPrasad" "Worried">>

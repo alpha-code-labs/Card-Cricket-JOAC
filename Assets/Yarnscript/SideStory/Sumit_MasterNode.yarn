@@ -275,6 +275,8 @@ Sumit: What type of challenge would be most meaningful and fair?
 
 <<SetCharacterExpression "Sumit" "Curious">>
 Sumit: What approach do you think would best test our abilities?
+
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>

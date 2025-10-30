@@ -47,6 +47,7 @@ Raju: Not just in the lanes with tennis balls, but proper cricket with leather b
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: In stadiums, maybe even for India someday. Do you think that sounds crazy?
 
+<<HideAllCharacters>>
 Suresh's expression shifts, his smile fading into something more contemplative and tinged with old pain.
 
 <<SetCharacterExpression "Suresh" "Sad">>
@@ -73,6 +74,7 @@ Suresh: Wristwork that reminded them of Mohammad Azharuddin.
 <<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: That's incredible, bhaiya! Azharuddin's wristwork is legendary!
 
+<<HideAllCharacters>>
 The question hangs in the air between them, innocent yet piercing. Raju's excitement dims as he notices the shadow crossing Suresh's face.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
@@ -96,6 +98,7 @@ Suresh: Hospital bills, medicines, no income while he couldn't work.
 <<SetCharacterExpression "Raju" "Sad">>
 Raju: I'm so sorry, bhaiya. That must have been very difficult.
 
+<<HideAllCharacters>>
 A heavy silence settles between them. The noise of the auto stand continues around them, but in this moment it feels distant and muted.
 
 <<SetCharacterExpression "Suresh" "BaseSprite">>
@@ -137,6 +140,7 @@ Raju: I understand, bhaiya. I'll be smart about it.
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: That's good to hear, champ. Keep that balance in mind.
 
+<<HideAllCharacters>>
 The conversation winds down naturally, both having shared something meaningful. Suresh returns to checking his auto while Raju prepares to leave.
 
 <<HideAllCharacters>>
@@ -191,8 +195,10 @@ Suresh: How will you approach this differently? What specific steps will you tak
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: That's what I want to talk about, bhaiya.
 
+<<HideAllCharacters>>
 Raju pauses, gathering his thoughts. This is the moment to articulate what Suresh's story has truly taught him.
 
+<<HideAllCharacters>>
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -262,6 +268,7 @@ Suresh: Only those with strong shoulders and smart strategies can carry them to 
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: I'm beginning to think you have both.
 
+<<HideAllCharacters>>
 A moment of mutual respect passes between them. Suresh sees in Raju not just youthful enthusiasm, but genuine strategic thinking.
 
 <<jump Suresh_Day2_Continue>>
@@ -328,6 +335,7 @@ Suresh: Most people lose that fire when they hear reality checks.
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Maybe that kind of determination really can overcome obstacles others couldn't handle.
 
+<<HideAllCharacters>>
 Suresh studies Raju's face, seeing an intensity that reminds him of his younger self, but tempered with something more - adaptability.
 
 <<jump Suresh_Day2_Continue>>
@@ -397,6 +405,7 @@ Suresh: You've transformed my story from one of lost dreams into one of continui
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: That kind of thinking shows wisdom far beyond your years.
 
+<<HideAllCharacters>>
 The weight of Raju's words settles over Suresh like a warm blanket. For the first time in years, his abandoned cricket dreams feel less like failure and more like a continuing story.
 
 <<jump Suresh_Day2_Continue>>
@@ -427,6 +436,7 @@ Raju: So you'll help me, bhaiya? Guide me through the challenges?
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Absolutely, champ. Let's turn my experience into your advantage.
 
+<<HideAllCharacters>>
 Something has shifted between them. What started as casual conversation has evolved into genuine mentorship, built on mutual respect and shared dreams.
 
 <<HideAllCharacters>>
@@ -577,6 +587,7 @@ Raju: Your cricket journey is still going, bhaiya. Just in a different way.
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: You're right, champ. And I'm starting to see that clearly now.
 
+<<HideAllCharacters>>
 Raju tucks the advice away carefully, already planning how to implement each suggestion. The auto stand no longer feels like just a place to catch a ride - it's become a classroom.
 
 <<HideAllCharacters>>
@@ -736,6 +747,7 @@ Raju: Thank you, bhaiya. For everything.
 <<SetCharacterExpression "Suresh" "Loving">>
 Suresh: No, thank you, champ. You've given my story a happy ending after all.
 
+<<HideAllCharacters>>
 They share a moment of quiet understanding, a bond forged through honest conversation and mutual respect. The partnership they've formed transcends their different circumstances.
 
 <<HideAllCharacters>>

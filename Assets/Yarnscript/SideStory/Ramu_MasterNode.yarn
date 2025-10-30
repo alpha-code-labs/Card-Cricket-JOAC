@@ -139,6 +139,7 @@ Ramu: Something that can't be bought or taught.
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: You just need to believe in it as much as I do.
 
+<<HideAllCharacters>>
 Just then, Raju swings the bat and connects perfectly with the ball.
 
 <<SetCharacterExpression Ramu Astonished>>
