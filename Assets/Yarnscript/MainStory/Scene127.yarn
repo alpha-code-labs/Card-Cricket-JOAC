@@ -31,7 +31,7 @@ Kamla: Right options taste better than sweet ones, but the laddu of marks is sti
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Yes, Maa. First paper.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: Then tonight we eat simple, talk simple, and sleep simple—the brain learns best when the room is boring.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
@@ -43,7 +43,7 @@ Kamla: Good, Raju—wash your feet again, mud doesn't enter a mind that needs to
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: I know the deal—ninety, and we heard it with both ears.
 
-<<SetCharacterExpression "ShivPrasad" "Serious">>
+<<SetCharacterExpression "ShivPrasad" "Proud">>
 ShivPrasad: You heard it, but did you taste it? Numbers have a flavor of sweat and ink—he can soak in applause for ten minutes, then he soaks in ink.
 
 <<SetCharacterExpression "Raju" "Determined">>
