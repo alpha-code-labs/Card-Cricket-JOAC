@@ -22,6 +22,8 @@ public class Timer : MonoBehaviour
     [SerializeField] GameObject overInfoPanel; // Panel to show over info
     [SerializeField] TextMeshProUGUI overInfoText; // Text for over information
     public static Action onFirstOverAnimationComplete;
+
+    public bool ignoreClickTimeRanOut = false;
     
     void Awake()
     {
@@ -200,6 +202,7 @@ public class Timer : MonoBehaviour
         currentTimerCoroutine = null;
         timerText.color = Color.red;
         timerText.text = "Time's Up!";
+        ignoreClickTimeRanOut = true;
         yield return new WaitForSeconds(1f);
         timerText.text = "";
        if (ScoreManager.Instance != null)
@@ -221,6 +224,7 @@ public class Timer : MonoBehaviour
         {
             CardsPoolManager.Instance.EndTurn(ScoreManager.Instance.MaxBalls, true);
             yield return new WaitForSeconds(1f);
+            ignoreClickTimeRanOut = false;
             CardsPoolManager.Instance.StartTurn(true);
         }
         // CardsPoolManager.Instance.EndTurn(true);

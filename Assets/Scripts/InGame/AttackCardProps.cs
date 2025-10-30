@@ -111,7 +111,7 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
 
     void OnClick()
     {
-        if (CardPlayAnimationController.Instance != null && CardPlayAnimationController.Instance.IsAnimating)
+        if (Timer.Instance.ignoreClickTimeRanOut || (CardPlayAnimationController.Instance != null && CardPlayAnimationController.Instance.IsAnimating))
             return;
 
         // if (EnergyManager.Instance.GetEnergy() < cardData.EnergyCost)

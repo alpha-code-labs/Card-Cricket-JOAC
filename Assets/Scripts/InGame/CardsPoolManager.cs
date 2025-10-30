@@ -21,6 +21,7 @@ public class CardsPoolManager : MonoBehaviour
     [SerializeField] List<AttackCardProps> HandCards;
     [Header("Game State Vars")]
     public int CurrntTurn = 0; // Current turn number
+    private int ballCount = 0;
     public List<BallThrow> BallThrows; // List to hold BallThrow instances
     [Header("Difficulty Settings")]
     [SerializeField] public int baseMaxHandSize = 4;
@@ -79,7 +80,7 @@ public class CardsPoolManager : MonoBehaviour
         if(gameplayConfig == null)
         {
             Debug.Log("loading gameplay 2 in CardsPoolManager as date is null");
-            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
         }
     }
 
@@ -123,9 +124,6 @@ public class CardsPoolManager : MonoBehaviour
             return;
         }
 
-        // if (incrementBalls)
-        //     ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
-
         if (ballerCard != null)
             Destroy(ballerCard);
 
@@ -162,6 +160,7 @@ public class CardsPoolManager : MonoBehaviour
         SetCardsInteractable(true);
         HandCards.Clear();
         //Increment current turn if it's a normal delivery i.d not wide or no ball
+        ballCount++;
         if(isNormalDelivery)
             CurrntTurn++;
         
@@ -294,177 +293,132 @@ public class CardsPoolManager : MonoBehaviour
         return ballerCard;
     }
 
-
-
     [ContextMenu("Init Text Deck")]
-    // void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
-    // {
-    //     Deck.Clear();
-    //     foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
-    //     {
-    //         Deck.Add(new AttackCardData(strategy));
-    //     }
-    //     RandomizeDeck();
-    //     BallThrows.Clear();
-
-    //     //Over - Fast Bowler Right Arm (6 balls)
-    //     // Initialize bowler variables outside the loop
-    //     TypeOfBowler bowlerType = TypeOfBowler.Fast;
-    //     Side bowlerSide = Side.RightArm;
-
-    //     for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
-    //     {
-    //         // Randomize bowler type and side every 6 balls (start of each over)
-    //         if (i % 6 == 0)
-    //         {
-    //             bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
-    //             bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
-    //         }
-    //         BallThrows.Add(ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition));
-    //     }
-    // }
-
-//     [ContextMenu("Init Text Deck")]
-// void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
-// {
-//     Deck.Clear();
-//     foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
-//     {
-//         Deck.Add(new AttackCardData(strategy));
-//     }
-//     RandomizeDeck();
-//     BallThrows.Clear();
-
-//     // Initialize bowler variables outside the loop (will be randomized each over)
-//     TypeOfBowler bowlerType = TypeOfBowler.Fast;
-//     Side bowlerSide = Side.RightArm;
-    
-//     for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
-//     {
-//         // Randomize bowler type and side every 6 balls (start of each over)
-//         if (i % 6 == 0)
-//         {
-//             bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
-//             bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
-//         }
-        
-//         BallThrow ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
-        
-//         // Check if this ball is a yorker
-//         if (ballThrow.ballLength == BallLength.Yorker)
-//         {
-//             // Check if we already have a yorker in this over
-//             int startOfCurrentOver = (i / 6) * 6;
-//             bool yorkerExistsInOver = false;
-            
-//             for (int j = startOfCurrentOver; j < i && j < BallThrows.Count; j++)
-//             {
-//                 if (BallThrows[j].ballLength == BallLength.Yorker)
-//                 {
-//                    yorkerExistsInOver = true;
-//                     break; 
-//                 }
-//             }
-            
-//             // If yorker already exists in this over, generate a new non-yorker ball
-//             if (yorkerExistsInOver)
-//             {
-//                 int attempts = 0;
-//                 do
-//                 {
-//                     ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
-//                     attempts++;
-                    
-//                     // Safety check to avoid infinite loop
-//                     if (attempts > 50)
-//                     {
-//                         Debug.LogWarning($"Could not generate non-yorker after 50 attempts at ball {i + 1}, using current ball");
-//                         break;
-//                     }
-//                 } while (ballThrow.ballLength == BallLength.Yorker);
-//             }
-//         }
-        
-//         BallThrows.Add(ballThrow);
-//     }
-// }
-
-[ContextMenu("Init Text Deck")]
-void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
-{
-    Deck.Clear();
-    foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
+    void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
     {
-        Deck.Add(new AttackCardData(strategy));
-    }
-    RandomizeDeck();
-    BallThrows.Clear();
-
-    // Initialize bowler variables outside the loop (will be randomized each over)
-    TypeOfBowler bowlerType = TypeOfBowler.Fast;
-    Side bowlerSide = Side.RightArm;
-    
-    for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
-    {
-        // Randomize bowler type and side every 6 balls (start of each over)
-        if (i % 6 == 0)
+        Deck.Clear();
+        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
         {
-            bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
-            bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+            Deck.Add(new AttackCardData(strategy));
         }
-        
-        BallThrow ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+        RandomizeDeck();
+        BallThrows.Clear();
 
-            // Check if this ball is a yorker
-            if (ballThrow.ballLength == BallLength.Yorker)
+        // Initialize bowler variables outside the loop (will be randomized each over)
+        TypeOfBowler bowlerType = TypeOfBowler.Fast;
+        Side bowlerSide = Side.RightArm;
+
+        for (int i = 0; i < ScoreManager.Instance.MaxBalls; i++)
+        {
+            // Randomize bowler type and side every 6 balls (start of each over)
+            if (i % 6 == 0)
             {
-                // Check if we already have a yorker in the last 10 balls
-                int startCheckIndex = Mathf.Max(0, i - 9); // Check last 9 balls (current would be the 10th)
-                bool yorkerExistsInRange = false;
+                bowlerType = (TypeOfBowler)Random.Range(0, System.Enum.GetValues(typeof(TypeOfBowler)).Length);
+                bowlerSide = (Side)Random.Range(0, System.Enum.GetValues(typeof(Side)).Length);
+            }
 
-                for (int j = startCheckIndex; j < i && j < BallThrows.Count; j++)
+            BallThrow ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+            bool validBallGenerated = false;
+            int attempts = 0;
+            const int MAX_ATTEMPTS = 100; // Increased attempts for better chance of success
+
+            while (!validBallGenerated && attempts < MAX_ATTEMPTS)
+            {
+                var candidateBall = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+                attempts++;
+
+                bool isValid = true;
+
+                // Check yorker constraint (1 per 10 balls)
+                if (candidateBall.ballLength == BallLength.Yorker)
                 {
-                    if (BallThrows[j].ballLength == BallLength.Yorker)
+                    int yorkerCheckStart = Mathf.Max(0, i - 9);
+                    for (int j = yorkerCheckStart; j < i; j++)
                     {
-                        yorkerExistsInRange = true;
-                        break;
+                        if (j < BallThrows.Count && BallThrows[j].ballLength == BallLength.Yorker)
+                        {
+                            isValid = false;
+                            break;
+                        }
                     }
                 }
 
-                // If yorker already exists in the last 10 balls window, generate a new non-yorker ball
-                if (yorkerExistsInRange)
+                // Check extreme line constraint (1 per 20 balls)
+                if (isValid && (candidateBall.ballLine == BallLine.WayOutsideOff || candidateBall.ballLine == BallLine.WayDowntheLeg))
                 {
-                    int attempts = 0;
-                    do
+                    int lineCheckStart = Mathf.Max(0, i - 19);
+                    for (int j = lineCheckStart; j < i; j++)
                     {
-                        ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
-                        attempts++;
-
-                        // Safety check to avoid infinite loop
-                        if (attempts > 50)
+                        if (j < BallThrows.Count &&
+                            (BallThrows[j].ballLine == BallLine.WayOutsideOff || BallThrows[j].ballLine == BallLine.WayDowntheLeg))
                         {
-                            Debug.LogWarning($"Could not generate non-yorker after 50 attempts at ball {i + 1}, using current ball");
+                            isValid = false;
                             break;
                         }
-                    } while (ballThrow.ballLength == BallLength.Yorker);
+                    }
+                }
+
+                if (isValid)
+                {
+                    ballThrow = candidateBall;
+                    validBallGenerated = true;
                 }
             }
-        
-        //Setup for testing wide balls
+
+            // If we couldn't generate a valid ball, force generate one that's not extreme
+            if (!validBallGenerated)
+            {
+                Debug.LogWarning($"Could not generate valid ball after {attempts} attempts at ball {i + 1}, forcing safe ball generation");
+
+                // Force generate a "safe" ball that doesn't violate constraints
+                attempts = 0;
+                do
+                {
+                    ballThrow = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(bowlerType, bowlerSide, pitchCondition);
+                    attempts++;
+
+                    if (attempts > 100)
+                    {
+                        Debug.LogError($"Critical: Cannot generate non-extreme balls. Check your GetRandomBallThrow probability distribution!");
+                        // Create a default safe ball as last resort
+                        // You'll need to adjust this based on your BallThrow structure
+                        ballThrow = new BallThrow()
+                        {
+                            ballLength = BallLength.FullLength, // Or whatever your default safe length is
+                            ballLine = BallLine.OffStump  // Or whatever your default safe line is
+                        };
+                        break;
+                    }
+                }
+                while (ballThrow.ballLine == BallLine.WayOutsideOff ||
+                    ballThrow.ballLine == BallLine.WayDowntheLeg ||
+                    ballThrow.ballLength == BallLength.Yorker);
+            }
+            //Setup for testing wide balls
             // BallThrow firstBallThrow = new BallThrow(
             //                 TypeOfBowler.Fast,
             //                 Side.RightArm,
-            //                 BallType.Straight,
-            //                 BallLine.WayOutsideOff,
+            //                 BallType.OffCutter,
+            //                 BallLine.OutsideOff,
             //                 BallLength.Short,
             //                 PitchCondition.Friendly
             //             );
             // BallThrows.Add(firstBallThrow);
-        ///-----------------------------///
-        
-        BallThrows.Add(ballThrow);
+            ///-----------------------------///
+            
+            // Debug.Log("Added ball with length " + ballThrow.ballLength + " and line " + ballThrow.ballLine);
+            BallThrows.Add(ballThrow);
+        }
+
+        for(int i=0; i< BallThrows.Count; i++)
+        {
+            Debug.Log("ball with length " + BallThrows[i].ballLength + " and line " + BallThrows[i].ballLine);
+        }
     }
-}
+
+    //What is actually in ballThrow
+
+
     /// <summary>
     /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
     /// </summary>
@@ -530,7 +484,7 @@ void InitTextDeck(PitchCondition pitchCondition = PitchCondition.Friendly)
         {
             if (BallThrows.Count > 0)
             {
-                return BallThrows[CurrntTurn % BallThrows.Count]; // Cycle through BallThrows based on current turn
+                return BallThrows[ballCount % BallThrows.Count]; // Cycle through BallThrows based on current turn
             }
             return null; // No BallThrow available
         }

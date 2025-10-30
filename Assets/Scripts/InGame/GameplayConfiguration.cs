@@ -50,7 +50,7 @@ public class GameplayConfiguration : MonoBehaviour
         gameplayConfigs = new Dictionary<string, GameplayConfig>
         {
             //Tutorial gameplay
-            { "1988/07/23", new GameplayConfig(0, "1988/07/23", 6, 0, 0, 15,  PitchCondition.Friendly) }, // Tutorial gameplay
+            { "1988/07/23", new GameplayConfig(0, "1988/07/23", 6, 0, 0, 8,  PitchCondition.Friendly) }, // Tutorial gameplay
             // Original gameplays (1-9)
             {"1989/01/31", new GameplayConfig(1, "1989/01/31", 12, 0, 65, 89, PitchCondition.Friendly)}, // Batting first
             {"1989/02/01", new GameplayConfig(2, "1989/02/01", 24, 0, 58, 105, PitchCondition.Friendly)}, // Batting first
@@ -63,7 +63,7 @@ public class GameplayConfiguration : MonoBehaviour
             {"1990/04/13", new GameplayConfig(9, "1990/04/13", 90, 185, 0, 185, PitchCondition.Friendly)}, // Chase 185 runs
             
             // New gameplays (12-17)
-            {"1990/03/05", new GameplayConfig(12, "1990/03/05", 18, 25, 75, 90, PitchCondition.Friendly)}, // Batting second
+            {"1990/03/05", new GameplayConfig(12, "1990/03/05", 18, 25, 75, 100, PitchCondition.Friendly)}, // Batting second
             {"1990/03/06", new GameplayConfig(13, "1990/03/06", 24, 40, 63, 103, PitchCondition.Friendly)}, // Chase 40 runs
             {"1990/03/07", new GameplayConfig(14, "1990/03/07", 18, 35, 79, 114, PitchCondition.Friendly)}, // Chase 35 runs
             {"1990/03/28", new GameplayConfig(15, "1990/03/28", 42, 80, 0, 122, PitchCondition.Friendly)}, // Chase 80

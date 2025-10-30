@@ -58,9 +58,9 @@ title: Gameplay1Result
 // Gameplay 1: Batting first with 12 balls -> starting score 65 
 <<if ($finalScore - $initialScore) < 5>>
     <<jump scene_7>>
-<<elseif ($finalScore - $initialScore) <= 11>>
+<<elseif ($finalScore - $initialScore) < 11>>
     <<jump scene_8>>
-<<elseif ($finalScore - $initialScore) <= 24>>
+<<elseif ($finalScore - $initialScore) < 24>>
     <<jump scene_9>>
 <<else>>
     <<jump scene_10>>
