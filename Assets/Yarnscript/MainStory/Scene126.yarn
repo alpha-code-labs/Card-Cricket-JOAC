@@ -7,19 +7,19 @@ position: 0,0
 <<PlayBackgroundMusic light_1>>
 <<SetBGSprite "KohliwadaGround">>
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Skeptical">>
 Aryan: Well played.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: you have some good shots.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Astonished">>
 Aryan: You also have a steady hand. I am surprised.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -34,13 +34,13 @@ Raju: But Bhaiyya, he tormented me and called me names before the match.
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: It's fine—don't hold a grudge, these are small things that aren't important.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Furious">>
 Aryan: Don't be cocky slum boys—just luck. Next time we'll eat you for breakfast.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Yes we are poor, but we have our manners.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Proud">>
 Aryan: Older brother to the rescue—slum boy can't fight his own battles.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
@@ -49,7 +49,7 @@ Ramu: Yes, I am his shadow and he is my source—we thank you for the compliment
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
-<<SetCharacterExpression "Aryan" "Angry">>
+<<SetCharacterExpression "Aryan" "Disgusted">>
 Aryan: I hope not. Cant take your beggar face anymore.
 
 <<HideAllCharacters>>
