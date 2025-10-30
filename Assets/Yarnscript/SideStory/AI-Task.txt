@@ -1,0 +1,1 @@
+For this file i want to go throught the dialogs and identify if there are missing narrations. if there are missing narrations fill them out. once you are done add the name of the file in AI-TODO.txt and make it either as Done or NA for no changes needed
