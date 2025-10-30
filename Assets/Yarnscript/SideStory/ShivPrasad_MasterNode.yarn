@@ -27,12 +27,12 @@ position: -7,-175
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
-The evening air carries the sounds of children playing in the lanes. Raju chooses to return home instead of joining them. His father will be back from work soon.
+The air carries the sounds of children playing in the lanes. Raju chooses to return home instead of joining them. His father will be back from work soon.
 
 The modest home feels charged with anticipation. Raju waits for his father's return, his cricket bat resting beside him. The familiar sounds of Shiv's footsteps create excitement and anxiety in equal measure.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-Shiv Prasad: Raju, where were you this afternoon?
+Shiv Prasad: Raju, where were you earlier?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Your mother mentioned you were at the ground again instead of with your books.
@@ -101,7 +101,7 @@ Shiv Prasad: Then, if there's time and energy left, play your cricket.
 Shiv Prasad: But never let it become more important than your education.
 
 <<HideAllCharacters>>
-As evening settles, Shiv's practical wisdom hangs heavy in the air. Raju understands the tension between dreams and security. His father's words carry genuine concern, yet they feel like barriers around what makes him feel most alive.
+Shiv's practical wisdom hangs heavy in the air. Raju understands the tension between dreams and security. His father's words carry genuine concern, yet they feel like barriers around what makes him feel most alive.
 
 <<set $ShivPrasad_Day = 2>>
 <<EndEvent true>>
@@ -114,7 +114,7 @@ position: -75,-229
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
-Despite yesterday's difficult conversation, Raju stays home this evening. He sits in their small courtyard, practicing his cricket grip with an old bat.
+Despite yesterday's difficult conversation, Raju stays home. He sits in their small courtyard, practicing his cricket grip with an old bat.
 
 Raju positions himself where his father will see him. His movements show dedication and a calculated attempt to prove his commitment. He waits for Shiv to return from work.
 
@@ -215,7 +215,7 @@ position: -75,-229
 
 After two intense days, Raju approaches his father directly after dinner. Yesterday's discussion opened a small door of possibility.
 
-The quiet intimacy of their evening meal creates the perfect atmosphere. Raju senses this will be pivotal. The flickering oil lamp casts dancing shadows as father and son prepare to negotiate the terms of a test.
+The quiet intimacy of their meal creates the perfect atmosphere. Raju senses this will be pivotal. The flickering oil lamp casts dancing shadows as father and son prepare to negotiate the terms of a test.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Raju, come sit with me.
@@ -611,7 +611,7 @@ Raju: I'm fine, Baba.
 Raju: Just trying to fit everything in like I promised.
 
 <<SetCharacterExpression "Raju" "Tired">>
-Raju: Cricket in the morning, school during the day, studying at night.
+Raju: Cricket practice, school, studying - trying to fit it all in.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I can handle it.
@@ -722,9 +722,9 @@ tags:
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
-On the morning of the crucial mathematics test, Raju wakes earlier than necessary. He seeks a quiet moment with his father before the day that will determine his cricket future.
+On the day of the crucial mathematics test, Raju wakes earlier than necessary. He seeks a quiet moment with his father before the test that will determine his cricket future.
 
-Pre-dawn quiet creates a sacred space. Both understand this is their final conversation before the test. Six days of preparation hang in the air. Early morning light filters through their small window, illuminating promise and uncertainty.
+The quiet creates a sacred space. Both understand this is their final conversation before the test. Six days of preparation hang in the air. Light filters through their small window, illuminating promise and uncertainty.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Beta, today is your test day.

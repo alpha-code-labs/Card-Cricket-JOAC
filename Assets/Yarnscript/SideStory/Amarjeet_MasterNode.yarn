@@ -30,7 +30,7 @@ position: -7,-175
 
 After a particularly frustrating cricket practice where his shots lacked consistency and his focus kept wandering, Raju chooses to visit the small neighborhood temple where Amarjeet, the elderly priest, has always offered quiet wisdom.
 
-The evening shadows lengthen across the temple courtyard. The familiar scent of incense mingles with distant neighborhood sounds. Raju's footsteps slow as he approaches, his cricket bat feeling heavy—weighed down by accumulated frustrations.
+Shadows lengthen across the temple courtyard. The familiar scent of incense mingles with distant neighborhood sounds. Raju's footsteps slow as he approaches, his cricket bat feeling heavy—weighed down by accumulated frustrations.
 
 <<SetCharacterExpression "Amarjeet" "BaseSprite">>
 Amarjeet: Ah, young one. You come with dust on your face and a bat in your hand.
@@ -104,7 +104,7 @@ Raju: But achieving that kind of focus... it's not easy, is it?
 Amarjeet: Nothing worth achieving is easy, child.
 
 <<SetCharacterExpression "Amarjeet" "Loving">>
-Amarjeet: If you truly wish to learn this deeper discipline, return tomorrow evening.
+Amarjeet: If you truly wish to learn this deeper discipline, return tomorrow.
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: We will continue this conversation.
@@ -129,9 +129,9 @@ position: -7,-75
 <<PlayBackgroundMusic Spiritual_1>>
 <<SetBGSprite ShivTemple>>
 
-True to his promise, Raju returns to the temple the following evening, determined to learn more about mental discipline.
+True to his promise, Raju returns to the temple the following day, determined to learn more about mental discipline.
 
-The temple courtyard glows softly in evening light. Amarjeet tends to the oil lamps with steady devotion. When he sees Raju approaching, his expression shows pleased surprise.
+The temple courtyard glows softly with natural light. Amarjeet tends to the oil lamps with steady devotion. When he sees Raju approaching, his expression shows pleased surprise.
 
 <<SetCharacterExpression "Amarjeet" "Smiling">>
 Amarjeet: So, you came back, beta.

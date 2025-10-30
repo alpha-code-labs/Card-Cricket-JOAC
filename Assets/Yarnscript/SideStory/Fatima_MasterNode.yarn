@@ -28,11 +28,11 @@ position: -7,-175
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
-// Scene Setup - Day 1 at the dhaba during lunch rush
-After hearing his mother mention struggles of local business owners, Raju visits Fatima's dhaba during lunch rush to see if the friendly restaurant owner needs assistance.
+// Scene Setup - Day 1 at the dhaba during a busy rush
+After hearing his mother mention struggles of local business owners, Raju visits Fatima's dhaba during a busy rush to see if the friendly restaurant owner needs assistance.
 
-Aromatic scents of fresh spices fill the air as Raju approaches the small dhaba. 
-The lunch rush has created chaos - hungry customers, steaming pots, orders called out faster than they can be fulfilled.
+Aromatic scents of fresh spices fill the air as Raju approaches the small dhaba.
+The rush has created chaos - hungry customers, steaming pots, orders called out faster than they can be fulfilled.
  Fatima moves with practiced efficiency, but sweat on her brow suggests even her experience is being tested.
 
 <<SetCharacterExpression "Fatima" "Worried">>
@@ -107,10 +107,10 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
-// Scene Setup - Day 2 during morning preparation
-Despite yesterday's chaotic introduction, Raju returns during morning preparation time, hoping to observe how Fatima organizes before the lunch rush.
+// Scene Setup - Day 2 during preparation time
+Despite yesterday's chaotic introduction, Raju returns during preparation time, hoping to observe how Fatima organizes before the busy rush.
 
-The dhaba carries completely different energy in the morning. Fatima methodically prepares ingredients - chopping vegetables, measuring spices, arranging her station with precision. The peaceful atmosphere contrasts sharply with yesterday's frenzy, revealing the careful planning that makes successful service possible.
+The dhaba carries completely different energy during preparation. Fatima methodically prepares ingredients - chopping vegetables, measuring spices, arranging her station with precision. The peaceful atmosphere contrasts sharply with yesterday's frenzy, revealing the careful planning that makes successful service possible.
 
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: Back again, beta? I thought yesterday's madness might have scared you away from restaurant life forever.
@@ -192,10 +192,10 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite FatimaDhaba>>
 
-// Scene Setup - Day 3 during pre-lunch preparation
-With Fatima's question weighing on his mind, Raju returns during pre-lunch preparation, ready to demonstrate rather than simply describe how he might assist.
+// Scene Setup - Day 3 during preparation
+With Fatima's question weighing on his mind, Raju returns during preparation, ready to demonstrate rather than simply describe how he might assist.
 
-The dhaba buzzes with anticipatory energy as Raju arrives during the crucial transition between morning prep and lunch service. 
+The dhaba buzzes with anticipatory energy as Raju arrives during the crucial transition between preparation and service. 
 
 Today feels different - yesterday's honest conversation has created an atmosphere of mutual evaluation.
 
@@ -234,7 +234,7 @@ position: -308,129
 <<set $Fatima_Path = "a">>
 
 <<SetCharacterExpression "Fatima" "Worried">>
-Fatima: Cooking? Beta, this isn't home cooking where mistakes just mean dinner tastes bad.
+Fatima: Cooking? Beta, this isn't home cooking where mistakes just mean the meal tastes bad.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Restaurant cooking means consistent quality, proper timing, and safety standards.
@@ -350,12 +350,12 @@ tags:
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path A: Learning Cooking Skills
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the lunch rush tests his abilities under real pressure.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the busy rush tests his abilities under real pressure.
 
 The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice.
 
- The morning calm provides ideal conditions for beginning his role without peak service pressure.
- 
+ The calm atmosphere provides ideal conditions for beginning his role without peak service pressure.
+
   Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Fatima" "Serious">>
@@ -368,7 +368,7 @@ Fatima: Today you'll discover whether your enthusiasm survives contact with actu
 Raju: I'm more than ready, aunty!
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: I've been thinking about this all night and I'm eager to prove that my help can make a real difference.
+Raju: I've been thinking about this and I'm eager to prove that my help can make a real difference.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: We'll see how you handle the pressure when orders start piling up and customers get impatient.
@@ -386,7 +386,7 @@ Raju: But I believe that helping you succeed will teach me valuable lessons abou
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises.
 
 <<SetCharacterExpression "Fatima" "Neutral">>
-Fatima: The lunch rush starts in one hour.
+Fatima: The rush starts in one hour.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Let me show you the basics of what you'll be handling today. Pay close attention.
@@ -425,7 +425,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
 <<HideAllCharacters>>
-As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
+As the rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
 <<EndEvent true>>
@@ -438,9 +438,9 @@ tags:
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path B: Customer Service Focus
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the lunch rush tests his abilities under real pressure.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the busy rush tests his abilities under real pressure.
 
-The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without peak service pressure. Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
+The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. The calm atmosphere provides ideal conditions for beginning his role without peak service pressure. Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Ready for your first real day of dhaba work, beta?
@@ -452,7 +452,7 @@ Fatima: Today you'll discover whether your enthusiasm survives contact with actu
 Raju: I'm more than ready, aunty!
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: I've been thinking about this all night and I'm eager to prove that my help can make a real difference.
+Raju: I've been thinking about this and I'm eager to prove that my help can make a real difference.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: We'll see how you handle the pressure when orders start piling up and customers get impatient.
@@ -470,7 +470,7 @@ Raju: But I believe that helping you succeed will teach me valuable lessons abou
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises.
 
 <<SetCharacterExpression "Fatima" "Neutral">>
-Fatima: The lunch rush starts in one hour.
+Fatima: The rush starts in one hour.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Let me show you the basics of what you'll be handling today. Pay close attention.
@@ -509,7 +509,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
 <<HideAllCharacters>>
-As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
+As the rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
  The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
 <<set $Fatima_Day = 5>>
@@ -523,11 +523,11 @@ tags:
 <<SetBGSprite FatimaDhaba>>
 
 // Day 4 - Path C: Organization and Efficiency Focus
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the lunch rush tests his abilities under real pressure.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the busy rush tests his abilities under real pressure.
 
-The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice. 
+The dhaba welcomes Raju's early arrival as he prepares to put commitments into practice.
 
-The morning calm provides ideal conditions for beginning his role without peak service pressure. 
+The calm atmosphere provides ideal conditions for beginning his role without peak service pressure.
 
 Fatima's evaluation today will determine whether his assistance becomes regular or remains well-intentioned but impractical.
 
@@ -541,7 +541,7 @@ Fatima: Today you'll discover whether your enthusiasm survives contact with actu
 Raju: I'm more than ready, aunty!
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: I've been thinking about this all night and I'm eager to prove that my help can make a real difference.
+Raju: I've been thinking about this and I'm eager to prove that my help can make a real difference.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: We'll see how you handle the pressure when orders start piling up and customers get impatient.
@@ -559,7 +559,7 @@ Raju: But I believe that helping you succeed will teach me valuable lessons abou
 Fatima: Your attitude is good, beta. Now let's see if your performance matches your promises.
 
 <<SetCharacterExpression "Fatima" "Neutral">>
-Fatima: The lunch rush starts in one hour.
+Fatima: The rush starts in one hour.
 
 <<SetCharacterExpression "Fatima" "Serious">>
 Fatima: Let me show you the basics of what you'll be handling today. Pay close attention.
@@ -598,7 +598,7 @@ Raju: Teamwork! I like that, aunty. We'll handle anything that comes our way tog
 Fatima: Here come the first customers. Remember everything I taught you. Let's begin!
 
 <<HideAllCharacters>>
-As the lunch rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. 
+As the rush intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
 The mounting pressure will test not only technical abilities but also capacity to maintain quality and composure when customer satisfaction depends on flawless execution.
 
@@ -614,7 +614,7 @@ title: Fatima_Day5
 // Day 5 - Building on success
 After successfully completing his first full day, Raju returns for a second day, eager to build on yesterday's experience and continue proving his value.
 
-The familiar sights and sounds greet Raju as he returns with growing confidence. Yesterday's successful navigation of lunch rush pressure validated both his capabilities and Fatima's decision to trust him. The second day carries different energy as both move beyond experimental assistance into genuine working partnership.
+The familiar sights and sounds greet Raju as he returns with growing confidence. Yesterday's successful navigation of the busy rush pressure validated both his capabilities and Fatima's decision to trust him. The second day carries different energy as both move beyond experimental assistance into genuine working partnership.
 
 <<SetCharacterExpression "Fatima" "Smiling">>
 Fatima: You came back, beta! Yesterday was impressive - you handled the pressure better than I expected.

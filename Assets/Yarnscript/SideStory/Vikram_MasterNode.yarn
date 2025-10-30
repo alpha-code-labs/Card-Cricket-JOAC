@@ -28,8 +28,8 @@ position: -7,-175
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite TeaStall>>
 
-// Scene Setup - Day 1 at the tea stall during evening rush
-After noticing the long queue outside Vikram's tea stall and hearing his mother mention how hard small vendors work, Raju visits during the busy evening period to see if the hardworking tea seller might need assistance.
+// Scene Setup - Day 1 at the tea stall during rush hour
+After noticing the long queue outside Vikram's tea stall and hearing his mother mention how hard small vendors work, Raju visits during a busy period to see if the hardworking tea seller might need assistance.
 
 Aromatic clouds of cardamom and ginger fill the air around Vikram's modest tea stall. The skilled vendor prepares fresh chai for a steady stream of customers. Vikram moves between boiling milk, measuring spices, and serving steaming cups, but the sweat on his brow suggests even his experience is being tested by today's heavy demand.
 
@@ -104,10 +104,10 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite TeaStall>>
 
-// Scene Setup - Day 2 during morning preparation
-Despite yesterday's introduction to the demanding world of tea vending, Raju returns during morning preparation, hoping to observe how Vikram organizes his ingredients and prepares for the day's service.
+// Scene Setup - Day 2 during preparation time
+Despite yesterday's introduction to the demanding world of tea vending, Raju returns during preparation time, hoping to observe how Vikram organizes his ingredients and prepares for the day's service.
 
-The tea stall emanates methodical preparation in the early morning. Vikram systematically arranges spices, checks milk quality, and organizes his workspace with precision. The peaceful atmosphere contrasts sharply with yesterday's rush, revealing careful planning that enables consistent quality.
+The tea stall emanates methodical preparation during a quiet period. Vikram systematically arranges spices, checks milk quality, and organizes his workspace with precision. The peaceful atmosphere contrasts sharply with yesterday's rush, revealing careful planning that enables consistent quality.
 
 <<SetCharacterExpression "Vikram" "Smiling">>
 Vikram: Back again, beta? I thought yesterday's reality check about the complexity of tea preparation might have discouraged you.
@@ -184,8 +184,8 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite TeaStall>>
 
-// Scene Setup - Day 3 during mid-morning preparation period
-With Vikram's question weighing on his mind, Raju returns during mid-morning preparation, ready to demonstrate rather than simply describe how he might assist in tea preparation and customer service.
+// Scene Setup - Day 3 during a preparation period
+With Vikram's question weighing on his mind, Raju returns during a preparation period, ready to demonstrate rather than simply describe how he might assist in tea preparation and customer service.
 
 The tea stall hums with gentle sounds of traditional beverage preparation. Vikram balances ingredient preparation with careful attention to recipe precision. Today carries special significance because yesterday's honest conversation has established an atmosphere of mutual evaluation.
 
@@ -349,7 +349,7 @@ tags:
 // Day 4 - Path A: Recipe Preparation Focus
 After yesterday's selection of his specific contribution area, Raju arrives at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities.
 
-The tea stall welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The tea stall welcomes Raju's arrival as he prepares to put commitments into practice. A calm period provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Vikram" "Serious">>
 Vikram: Ready for your first real day of tea service work, beta?
@@ -409,7 +409,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
 <<HideAllCharacters>>
-As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
+As the work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
 <<EndEvent true>>
@@ -424,7 +424,7 @@ tags:
 // Day 4 - Path B: Customer Service Focus
 After yesterday's selection of his specific contribution area, Raju arrives at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities.
 
-The tea stall welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The tea stall welcomes Raju's arrival as he prepares to put commitments into practice. A calm period provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Vikram" "Serious">>
 Vikram: Ready for your first real day of tea service work, beta?
@@ -484,7 +484,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
 <<HideAllCharacters>>
-As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
+As the work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
 <<EndEvent true>>
@@ -499,7 +499,7 @@ tags:
 // Day 4 - Path C: Service Optimization Focus
 After yesterday's selection of his specific contribution area, Raju arrives at the tea stall early to begin implementing his chosen approach before the day's service demands test his abilities.
 
-The tea stall welcomes Raju's early arrival as he prepares to put commitments into practice. The morning calm provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The tea stall welcomes Raju's arrival as he prepares to put commitments into practice. A calm period provides ideal conditions for beginning his role without active customer pressure. Vikram's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "Vikram" "Serious">>
 Vikram: Ready for your first real day of tea service work, beta?
@@ -559,7 +559,7 @@ Vikram: Whether you're making tea or pursuing any other skill, people remember h
 Raju: That's such an important lesson, uncle. It's not just about the tea - it's about the care and respect you show through your work.
 
 <<HideAllCharacters>>
-As the morning work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
+As the work session intensifies with Raju taking on designated responsibilities while Vikram maintains supervisory oversight, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work tests not only technical abilities but also capacity to maintain quality when beverage reputation depends on flawless execution.
 
 <<set $Vikram_Day = 5>>
 <<EndEvent true>>

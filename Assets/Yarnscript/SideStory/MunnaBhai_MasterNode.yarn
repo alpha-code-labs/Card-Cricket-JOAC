@@ -28,8 +28,8 @@ position: -7,-175
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite MunnaTyreShop>>
 
-// Scene Setup - Day 1 at the tire shop during busy afternoon
-After noticing the long line of bicycles outside Munna Bhai's shop, Raju decides to visit during the busy afternoon to see if the skilled repairman needs help.
+// Scene Setup - Day 1 at the tire shop during busy period
+After noticing the long line of bicycles outside Munna Bhai's shop, Raju decides to visit during the busy period to see if the skilled repairman needs help.
 
 The tire shop buzzes with activity. Air pumps hiss and tire irons clang as Munna Bhai works through a mountain of repairs. Sweat beads on his forehead despite his practiced efficiency.
 
@@ -43,7 +43,7 @@ Raju: It looks very busy, bhai. Is everything alright?
 MunnaBhai: Everyone's bicycle needs repair at the same time, and I'm just one person with two hands.
 
 <<SetCharacterExpression "MunnaBhai" "Pained">>
-MunnaBhai: Look at this line - it's going to take me until midnight to fix all these punctures.
+MunnaBhai: Look at this line - it's going to take me hours and hours to fix all these punctures.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Munna bhai, you look exhausted! I have some free time. Can I help somehow?
@@ -103,10 +103,10 @@ Raju: I want to understand what that really means.
 MunnaBhai: Hmm. Most young people these days only want easy office jobs.
 
 <<SetCharacterExpression "MunnaBhai" "Disappointed">>
-MunnaBhai: But come back tomorrow morning if you're serious. We'll talk more then.
+MunnaBhai: But come back again if you're serious. We'll talk more then.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
-Raju: Thank you, bhai! I'll be here early tomorrow!
+Raju: Thank you, bhai! I'll be back!
 
 <<HideAllCharacters>>
 As Raju leaves the busy shop, the sounds of mechanical work and customer negotiations fill his ears. Munna Bhai's initial skepticism has only strengthened his determination to prove his genuine commitment to learning.
@@ -122,13 +122,13 @@ tags:
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite MunnaTyreShop>>
 
-// Scene Setup - Day 2 during morning setup period
-True to his word, Raju returns during the peaceful morning setup period to observe how Munna Bhai prepares for the day's work.
+// Scene Setup - Day 2 during setup period
+True to his word, Raju returns during the peaceful setup period to observe how Munna Bhai prepares for his work.
 
-The shop emanates methodical efficiency as Munna Bhai systematically checks tools and organizes repair materials. The peaceful atmosphere contrasts sharply with yesterday's chaos.
+The shop emanates methodical efficiency as Munna Bhai systematically checks tools and organizes repair materials. The peaceful atmosphere contrasts sharply with the previous chaos.
 
 <<SetCharacterExpression "MunnaBhai" "Astonished">>
-MunnaBhai: Back again, beta? I thought yesterday might have scared you off!
+MunnaBhai: Back again, beta? I thought last time might have scared you off!
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Not at all, bhai! Actually, I couldn't stop thinking about your work.
@@ -173,7 +173,7 @@ MunnaBhai: Eighteen years I've been perfecting these techniques.
 MunnaBhai: Learning to diagnose problems by sound, touch, and experience.
 
 <<SetCharacterExpression "MunnaBhai" "Disappointed">>
-MunnaBhai: But young people today want office jobs - they think mechanical work is beneath them.
+MunnaBhai: But young people nowadays want office jobs - they think mechanical work is beneath them.
 
 <<SetCharacterExpression "Raju" Determined>>
 Raju: That must be frustrating, bhai.
@@ -185,7 +185,7 @@ Raju: When people don't understand how much expertise this work requires.
 MunnaBhai: They don't understand that every repair requires problem-solving and precision.
 
 <<SetCharacterExpression "MunnaBhai" "Worried">>
-MunnaBhai: When someone's transportation fails, their entire day is ruined.
+MunnaBhai: When someone's transportation fails, it disrupts their entire schedule.
 
 <<SetCharacterExpression "MunnaBhai" "Proud">>
 MunnaBhai: But when my repairs work perfectly? People can earn their living, children get to school, families function.
@@ -212,7 +212,7 @@ MunnaBhai: What exactly do you think you could contribute to professional bicycl
 Raju: That's a good question, bhai. Let me think about it properly.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Can I come back tomorrow with a better answer?
+Raju: Can I come back again with a better answer?
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
 MunnaBhai: Yes, beta. Think carefully about what you want to learn and how you can help.
@@ -232,16 +232,16 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite MunnaTyreShop>>
 
-// Scene Setup - Day 3 during mid-morning repair period
-Ready with a clear answer, Raju returns during the mid-morning period to demonstrate how he can contribute to the mechanical work.
+// Scene Setup - Day 3 during repair period
+Ready with a clear answer, Raju returns during the busy period to demonstrate how he can contribute to the mechanical work.
 
-The shop hums with steady professional work. Munna Bhai balances active repairs with attention to detail. Today's atmosphere carries special significance - yesterday's honest conversation has created mutual evaluation.
+The shop hums with steady professional work. Munna Bhai balances active repairs with attention to detail. The atmosphere carries special significance - their previous honest conversation has created mutual evaluation.
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
-MunnaBhai: Good morning, beta! You're here for the third day now.
+MunnaBhai: Back again, beta! You're here for the third time now.
 
 <<SetCharacterExpression "MunnaBhai" "Serious">>
-MunnaBhai: I'm handling complex repairs today that could give you real understanding of what this work requires.
+MunnaBhai: I'm handling complex repairs right now that could give you real understanding of what this work requires.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I've been thinking about your question, bhai.
@@ -479,21 +479,21 @@ tags:
 <<SetBGSprite MunnaTyreShop>>
 
 // Day 4 - Path A: Learning Basic Repair Techniques
-Ready to put yesterday's commitments into practice, Raju arrives early before the day's repair demands test his abilities.
+Ready to put his commitments into practice, Raju arrives before the repair demands test his abilities.
 
-The morning calm provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation today will determine whether his assistance becomes meaningful contribution or impractical interest.
+The calm period provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation will determine whether his assistance becomes meaningful contribution or impractical interest.
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
-MunnaBhai: Ah, you're early! Good sign, beta.
+MunnaBhai: Ah, you're here! Good sign, beta.
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
-MunnaBhai: Ready for your first real day of mechanical work?
+MunnaBhai: Ready for your first real session of mechanical work?
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Completely ready, bhai!
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: I've been thinking about this all night.
+Raju: I've been thinking about this constantly.
 
 <<SetCharacterExpression "MunnaBhai" "Serious">>
 MunnaBhai: First, let me show you how to properly clean and organize tools.
@@ -544,7 +544,7 @@ MunnaBhai: Good! Your attitude shows real promise.
 MunnaBhai: Now let's see if your performance matches your enthusiasm.
 
 <<HideAllCharacters>>
-As the morning session intensifies with tool care and preparation work, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The hands-on work tests not only technical abilities but capacity to maintain quality under pressure.
+As the session intensifies with tool care and preparation work, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The hands-on work tests not only technical abilities but capacity to maintain quality under pressure.
 
 <<set $MunnaBhai_Day = 5>>
 <<EndEvent true>>
@@ -557,12 +557,12 @@ tags:
 <<SetBGSprite MunnaTyreShop>>
 
 // Day 4 - Path B: Customer Service Focus
-Ready to put yesterday's commitments into practice, Raju arrives early before the day's repair demands test his abilities.
+Ready to put his commitments into practice, Raju arrives before the repair demands test his abilities.
 
-The morning calm provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation today will determine whether his assistance becomes meaningful contribution or impractical interest.
+The calm period provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation will determine whether his assistance becomes meaningful contribution or impractical interest.
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
-MunnaBhai: Ah, you're early! Good sign, beta.
+MunnaBhai: Ah, you're here! Good sign, beta.
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
 MunnaBhai: Ready to face demanding customers?
@@ -571,7 +571,7 @@ MunnaBhai: Ready to face demanding customers?
 Raju: Completely ready, bhai!
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: I've been thinking about how to help customers understand quality work.
+Raju: I've been thinking about how to help customers appreciate quality work.
 
 <<SetCharacterExpression "MunnaBhai" "Serious">>
 MunnaBhai: Let me give you some important guidance first.
@@ -586,7 +586,7 @@ Raju: Quick repairs?
 MunnaBhai: They say quick. But what they really need is reliable.
 
 <<SetCharacterExpression "MunnaBhai" "Worried">>
-MunnaBhai: A quick patch that fails tomorrow creates bigger problems.
+MunnaBhai: A quick patch that fails later creates bigger problems.
 
 <<SetCharacterExpression "MunnaBhai" "Confident">>
 MunnaBhai: A proper repair that takes extra time saves them money and trouble.
@@ -619,7 +619,7 @@ Raju: I understand! Balance empathy with education.
 MunnaBhai: You learn quickly, beta! Let's see how you do with real customers.
 
 <<HideAllCharacters>>
-As the morning session prepares Raju for customer interactions, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The customer service role tests communication skills and capacity to represent quality under pressure.
+As the session prepares Raju for customer interactions, both understand the next hours will prove whether his assistance represents genuine value or well-meaning interference. The customer service role tests communication skills and capacity to represent quality under pressure.
 
 <<set $MunnaBhai_Day = 5>>
 <<EndEvent true>>
@@ -632,12 +632,12 @@ tags:
 <<SetBGSprite MunnaTyreShop>>
 
 // Day 4 - Path C: Workshop Efficiency Focus
-Ready to put yesterday's commitments into practice, Raju arrives early before the day's repair demands test his abilities.
+Ready to put his commitments into practice, Raju arrives before the repair demands test his abilities.
 
-The morning calm provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation today will determine whether his assistance becomes meaningful contribution or impractical interest.
+The calm period provides ideal conditions for beginning his chosen role. Munna Bhai's evaluation will determine whether his assistance becomes meaningful contribution or impractical interest.
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
-MunnaBhai: Ah, you're early! Good sign, beta.
+MunnaBhai: Ah, you're here! Good sign, beta.
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
 MunnaBhai: Ready to analyze my workshop?
@@ -667,7 +667,7 @@ Raju: So finding ways to save time on non-repair activities?
 MunnaBhai: Now you're thinking correctly!
 
 <<SetCharacterExpression "MunnaBhai" "Serious">>
-MunnaBhai: Watch how I move through the day. Notice where time gets lost.
+MunnaBhai: Watch how I move through my work. Notice where time gets lost.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: Should I focus on any particular area?
@@ -682,7 +682,7 @@ MunnaBhai: Sometimes I repeat the same question to multiple customers.
 MunnaBhai: Or search for a tool I used minutes ago.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Those small moments add up over a full day!
+Raju: Those small moments really add up over time!
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
 MunnaBhai: Exactly! Find those moments, but remember -
@@ -709,18 +709,18 @@ title: MunnaBhai_Day5
 <<SetBGSprite MunnaTyreShop>>
 
 // Day 5 - Building on success
-After successfully completing his first full day, Raju returns eager to build on yesterday's experience and continue proving his value.
+After successfully completing his first work session, Raju returns eager to build on his previous experience and continue proving his value.
 
-The familiar sights and sounds greet Raju with growing confidence. Yesterday's successful navigation of workshop pressure validated both his capabilities and Munna Bhai's trust. The second day carries different energy as both move beyond experimental assistance into genuine skill transfer partnership.
+The familiar sights and sounds greet Raju with growing confidence. His successful navigation of workshop pressure validated both his capabilities and Munna Bhai's trust. This session carries different energy as both move beyond experimental assistance into genuine skill transfer partnership.
 
 <<SetCharacterExpression "MunnaBhai" "Astonished">>
 MunnaBhai: You returned, beta! And on time again!
 
 <<SetCharacterExpression "MunnaBhai" "Proud">>
-MunnaBhai: Yesterday was quite impressive.
+MunnaBhai: Last time was quite impressive.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Thank you, bhai! Yesterday taught me so much.
+Raju: Thank you, bhai! Last time taught me so much.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: About mechanical precision and the responsibility that comes with repair work.
@@ -729,19 +729,19 @@ Raju: About mechanical precision and the responsibility that comes with repair w
 MunnaBhai: You showed more respect for this work than I expected.
 
 <<SetCharacterExpression "MunnaBhai" "Quizzical">>
-MunnaBhai: Are you prepared to deepen your understanding today?
+MunnaBhai: Are you prepared to deepen your understanding further?
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Absolutely! What will I be learning today?
+Raju: Absolutely! What will I be learning next?
 
 <<SetCharacterExpression "MunnaBhai" "Serious">>
-MunnaBhai: Today I want to see if you can handle more complex challenges.
+MunnaBhai: Now I want to see if you can handle more complex challenges.
 
 <<SetCharacterExpression "MunnaBhai" "Confident">>
-MunnaBhai: Yesterday was basic introduction.
+MunnaBhai: Last time was basic introduction.
 
 <<SetCharacterExpression "MunnaBhai" "Skeptical">>
-MunnaBhai: Today we test whether you can truly contribute to professional work.
+MunnaBhai: Now we test whether you can truly contribute to professional work.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I'm ready for whatever challenge you have, bhai!
@@ -762,13 +762,13 @@ MunnaBhai: Regardless of pressure or complexity.
 Raju: I understand, bhai. Consistency builds trust.
 
 <<SetCharacterExpression "MunnaBhai" "Confident">>
-MunnaBhai: Exactly! Let's see if you can maintain yesterday's quality with increased responsibility.
+MunnaBhai: Exactly! Let's see if you can maintain that same quality with increased responsibility.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I won't let you down!
 
 <<HideAllCharacters>>
-As the second day unfolds with expanded responsibilities and higher expectations, both recognize they're moving beyond the experimental phase into potentially meaningful relationship. The progression from basic introduction to complex challenges reflects growing mutual trust and competence.
+As this session unfolds with expanded responsibilities and higher expectations, both recognize they're moving beyond the experimental phase into potentially meaningful relationship. The progression from basic introduction to complex challenges reflects growing mutual trust and competence.
 
 <<set $MunnaBhai_Day = 6>>
 <<EndEvent true>>
@@ -780,9 +780,9 @@ title: MunnaBhai_Day6
 <<SetBGSprite MunnaTyreShop>>
 
 // Day 6 - Final conversation and apprenticeship offer
-With two successful days behind him, Raju approaches Munna Bhai about making their collaboration more formal and discussing what this experience has taught him.
+With two successful sessions behind him, Raju approaches Munna Bhai about making their collaboration more formal and discussing what this experience has taught him.
 
-The shop atmosphere reflects the comfortable working relationship that has developed. Established respect and mutual understanding have replaced initial uncertainty. Today's conversation carries weight beyond immediate mechanical concerns.
+The shop atmosphere reflects the comfortable working relationship that has developed. Established respect and mutual understanding have replaced initial uncertainty. This conversation carries weight beyond immediate mechanical concerns.
 
 <<SetCharacterExpression "MunnaBhai" "Smiling">>
 MunnaBhai: Beta, I must admit something.
@@ -797,7 +797,7 @@ MunnaBhai: The kind that fades when encountering real labor.
 Raju: And now, bhai?
 
 <<SetCharacterExpression "MunnaBhai" "Overjoyed">>
-MunnaBhai: These past few days revealed something remarkable.
+MunnaBhai: These past few sessions revealed something remarkable.
 
 <<SetCharacterExpression "MunnaBhai" "Proud">>
 MunnaBhai: Your respect for skilled trades and quality work is genuine!

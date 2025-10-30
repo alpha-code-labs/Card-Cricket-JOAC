@@ -149,9 +149,9 @@ position: -7,-50
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 2
-After thinking about Suresh's story all night, Raju returns to the auto stand, determined to prove his commitment runs deeper than fantasy.
+After thinking about Suresh's story, Raju returns to the auto stand, determined to prove his commitment runs deeper than fantasy.
 
-The morning bustle provides a familiar backdrop as Raju approaches for the second day. His resolve has strengthened, not weakened.
+The familiar bustle provides a backdrop as Raju approaches for the second day. His resolve has strengthened, not weakened.
 
 <<SetCharacterExpression "Suresh" "Smiling">>
 Suresh: Back again, champ? I thought after yesterday's reality check, you might decide to focus on safer pursuits.
@@ -160,7 +160,7 @@ Suresh: Back again, champ? I thought after yesterday's reality check, you might 
 Suresh: Didn't get scared off by my lecture about the harsh world of professional cricket?
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: No, bhaiya. I spent all night thinking about your story.
+Raju: No, bhaiya. I've been thinking about your story.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: And it made me realize something important.

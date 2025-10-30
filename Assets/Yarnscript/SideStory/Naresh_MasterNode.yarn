@@ -92,7 +92,7 @@ tags:
 // Scene Setup - Day 2
 Despite yesterday's dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
 
-The afternoon sun casts long shadows across the grounds. Naresh notices the young man's return with irritation and grudging recognition of his persistence.
+Naresh notices the young man's return with irritation and grudging recognition of his persistence.
 
 <<SetCharacterExpression "Naresh" Irritated>>
 Naresh: You again? I thought I made myself clear yesterday.
@@ -565,9 +565,9 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)
-With anticipation from yesterday's promise, Raju arrives as dusk settles, knowing this quiet period might offer the privacy needed for informal mentorship.
+With anticipation from yesterday's promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
 
-The academy grounds take on a sacred quality as dust settles. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
+The academy grounds take on a sacred quality. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 
 <<SetCharacterExpression "Naresh" Mischievous>>
 Naresh: Psst! Over here, beta.

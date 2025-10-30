@@ -134,9 +134,9 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
-Despite yesterday's introduction to the demanding world of traditional craftsmanship, Raju returns during the morning work period. He hopes to observe how Mochi Uncle organizes his tools and materials.
+Despite yesterday's introduction to the demanding world of traditional craftsmanship, Raju returns during the work period. He hopes to observe how Mochi Uncle organizes his tools and materials.
 
-The cobbler shop radiates methodical preparation in the early morning.
+The cobbler shop radiates methodical preparation as Raju arrives.
 
  Mochi Uncle systematically arranges tools, sorts materials, and inspects yesterday's completed work. 
 
@@ -248,7 +248,7 @@ position: -75,-229
 <<PlayBackgroundMusic Light_3>>
 <<SetBGSprite CobblerShop>>
 
-With Mochi Uncle's question about his potential contribution weighing on his mind, Raju returns during the mid-morning repair period. Ready to demonstrate rather than simply describe how he might assist in preserving traditional cobbling skills.
+With Mochi Uncle's question about his potential contribution weighing on his mind, Raju returns during the repair period. Ready to demonstrate rather than simply describe how he might assist in preserving traditional cobbling skills.
 
 The cobbler shop hums with rhythmic sounds of traditional craftsmanship as Raju arrives. 
 
@@ -482,7 +482,7 @@ tags:
 
 After yesterday's selection of his specific contribution area, Raju arrives at the cobbler shop early to begin implementing his chosen approach before the day's repair work begins.
 
-The cobbler shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice. The morning calm provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The cobbler shop welcomes Raju's arrival as he prepares to put yesterday's commitments into practice. The calm atmosphere provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "MochiUncle" "Skeptical">>
 MochiUncle: Ready for your first real day of traditional craft work, beta?
@@ -497,7 +497,7 @@ MochiUncle: Of preserving centuries-old techniques.
 Raju: I'm completely ready, uncle!
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: I've been thinking about this opportunity all night.
+Raju: I've been thinking about this opportunity constantly.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm eager to prove that my respect for traditional crafts can translate into meaningful contribution.
@@ -530,7 +530,7 @@ MochiUncle: Now let's see if your performance matches your reverence for traditi
 MochiUncle: Real craftsmanship begins now.
 
 <<HideAllCharacters>>
-As the morning work session intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work creates mounting pressure that will test not only technical abilities but also capacity to maintain quality.
+As the work session intensifies with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The hands-on work creates mounting pressure that will test not only technical abilities but also capacity to maintain quality.
 
 <<set $MochiUncle_Day = 5>>
 <<EndEvent true>>
@@ -544,7 +544,7 @@ tags:
 
 After yesterday's selection of his specific contribution area, Raju arrives at the cobbler shop early to begin implementing his chosen approach before the day's repair work begins.
 
-The cobbler shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice. The morning calm provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The cobbler shop welcomes Raju's arrival as he prepares to put yesterday's commitments into practice. The calm atmosphere provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "MochiUncle" "Skeptical">>
 MochiUncle: Ready for your first real day working with customers, beta?
@@ -592,7 +592,7 @@ MochiUncle: Now let's see if you can help customers understand what makes tradit
 MochiUncle: Real customer education begins now.
 
 <<HideAllCharacters>>
-As the morning customer interactions begin with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. Working with customers creates mounting pressure that will test not only his knowledge but also his ability to communicate traditional values effectively.
+As the customer interactions begin with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. Working with customers creates mounting pressure that will test not only his knowledge but also his ability to communicate traditional values effectively.
 
 <<set $MochiUncle_Day = 5>>
 <<EndEvent true>>
@@ -606,7 +606,7 @@ tags:
 
 After yesterday's selection of his specific contribution area, Raju arrives at the cobbler shop early to begin implementing his chosen approach before the day's repair work begins.
 
-The cobbler shop welcomes Raju's early arrival as he prepares to put yesterday's commitments into practice. The morning calm provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
+The cobbler shop welcomes Raju's arrival as he prepares to put yesterday's commitments into practice. The calm atmosphere provides ideal conditions for beginning his chosen role. Mochi Uncle's evaluation today will determine whether his assistance becomes meaningful or remains well-intentioned but impractical.
 
 <<SetCharacterExpression "MochiUncle" "Skeptical">>
 MochiUncle: Ready for your first real day documenting traditional techniques, beta?
@@ -654,7 +654,7 @@ MochiUncle: Now let's see if you can capture the essence of traditional craftsma
 MochiUncle: Real documentation begins now.
 
 <<HideAllCharacters>>
-As the morning observation session begins with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The documentation work creates mounting pressure that will test not only his observation skills but also his capacity to understand and communicate the subtleties of traditional craft.
+As the observation session begins with Raju taking on his designated responsibilities, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value. The documentation work creates mounting pressure that will test not only his observation skills but also his capacity to understand and communicate the subtleties of traditional craft.
 
 <<set $MochiUncle_Day = 5>>
 <<EndEvent true>>

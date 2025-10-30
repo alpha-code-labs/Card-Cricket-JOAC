@@ -29,7 +29,7 @@ position: -7,-175
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 1 at Koliwada Ground
-After finishing morning practice with Ramu, Raju visits Koliwada Ground where his friend Amit has been waiting, hoping to organize a proper cricket match for the afternoon.
+After finishing practice with Ramu, Raju visits Koliwada Ground where his friend Amit has been waiting, hoping to organize a proper cricket match.
 
 The dusty expanse of Koliwada Ground stretches before Raju. Amit sits on a boundary stone with obvious frustration, his cricket bat beside him. His eyes scan the empty ground with disappointed expression, stranded between boredom and persistent hope.
 
@@ -105,18 +105,18 @@ tags:
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 2 returning with new ideas
-Despite yesterday's unsuccessful initial search, Raju returns to meet Amit at Koliwada Ground, bringing new ideas about where they might find needed supplies.
+Despite the unsuccessful initial search, Raju returns to meet Amit at Koliwada Ground, bringing new ideas about where they might find needed supplies.
 
-The familiar setting welcomes Raju with renewed optimism. His overnight reflection has generated several promising strategies for locating cricket supplies. Amit's presence reflects both continued hope and mounting frustration as another day threatens to pass.
+The familiar setting welcomes Raju with renewed optimism. His reflection has generated several promising strategies for locating cricket supplies. Amit's presence reflects both continued hope and mounting frustration as another day threatens to pass.
 
 <<SetCharacterExpression "Amit" "Smiling">>
 Amit: Back again, yaar? I was hoping you might have some new ideas about finding cricket equipment.
 
 <<SetCharacterExpression "Amit" "Sad">>
-Amit: Yesterday's search didn't turn up much, but maybe we missed some obvious possibilities.
+Amit: The search didn't turn up much, but maybe we missed some obvious possibilities.
 
 <<SetCharacterExpression "Raju" "Confident">>
-Raju: Actually, I spent last night thinking about this problem.
+Raju: Actually, I spent some time thinking about this problem.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I have several new strategies we could try. Sometimes the best solutions come from approaching familiar problems with fresh perspectives.
@@ -167,7 +167,7 @@ Amit: How should we organize this search to maximize our chances of success?
 Amit: What's the best strategy for covering all these different possibilities?
 
 <<HideAllCharacters>>
-As their planning session concludes with expanded strategies and renewed optimism, both boys understand that yesterday's disappointment has evolved into more sophisticated understanding of resource management and creative problem-solving.
+As their planning session concludes with expanded strategies and renewed optimism, both boys understand that the disappointment has evolved into more sophisticated understanding of resource management and creative problem-solving.
 
 <<set $Amit_Day = 3>>
 <<EndEvent true>>
@@ -182,18 +182,18 @@ position: -75,-229
 <<SetBGSprite KohliwadaGround>>
 
 // Scene Setup - Day 3 implementing strategy
-With yesterday's expanded strategies in mind, Raju meets Amit at Koliwada Ground to begin implementing their plan for finding cricket equipment through systematic searching and creative outreach.
+With the expanded strategies in mind, Raju meets Amit at Koliwada Ground to begin implementing their plan for finding cricket equipment through systematic searching and creative outreach.
 
-The morning energy at Koliwada Ground reflects the boys' growing confidence that today's systematic approach will yield better results. Both bring focused determination and strategic thinking to what has evolved from simple equipment hunting into a comprehensive lesson.
+The energy at Koliwada Ground reflects the boys' growing confidence that today's systematic approach will yield better results. Both bring focused determination and strategic thinking to what has evolved from simple equipment hunting into a comprehensive lesson.
 
 <<SetCharacterExpression "Amit" "Confident">>
 Amit: Ready to put our strategic plan into action, Raju?
 
 <<SetCharacterExpression "Amit" "Excited">>
-Amit: I'm feeling much more optimistic about today's search now that we have systematic approaches instead of just wandering around hoping to get lucky.
+Amit: I'm feeling much more optimistic about this search now that we have systematic approaches instead of just wandering around hoping to get lucky.
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Absolutely! Yesterday's planning session really helped clarify all the different possibilities we should explore.
+Raju: Absolutely! The planning session really helped clarify all the different possibilities we should explore.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Now we just need to decide which approach to focus on first.
@@ -346,21 +346,21 @@ tags:
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path A: Systematic Searching Implementation
-After yesterday's selection of their specific strategy, Raju meets Amit early at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
+After selecting their specific strategy, Raju meets Amit at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
 
-The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
+The calm at Koliwada Ground provides ideal conditions for implementing the strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
 <<SetCharacterExpression "Amit" "Sad">>
-Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
+Amit: We'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Yesterday's planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
+Raju: The planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
@@ -378,7 +378,7 @@ Raju: Even if our first approach doesn't work perfectly, we'll learn valuable le
 Amit: Your attitude is perfect, yaar!
 
 <<SetCharacterExpression "Amit" "Confident">>
-Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
+Amit: Success or not, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
@@ -421,21 +421,21 @@ tags:
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path B: Community Outreach Implementation
-After yesterday's selection of their specific strategy, Raju meets Amit early at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
+After selecting their specific strategy, Raju meets Amit at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
 
-The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
+The calm at Koliwada Ground provides ideal conditions for implementing the strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
 <<SetCharacterExpression "Amit" "Anxious">>
-Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
+Amit: We'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Yesterday's planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
+Raju: The planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
@@ -453,7 +453,7 @@ Raju: Even if our first approach doesn't work perfectly, we'll learn valuable le
 Amit: Your attitude is perfect, yaar!
 
 <<SetCharacterExpression "Amit" "Confident">>
-Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
+Amit: Success or not, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
@@ -496,21 +496,21 @@ tags:
 <<SetBGSprite KohliwadaGround>>
 
 // Day 4 - Path C: Creative Improvisation Implementation
-After yesterday's selection of their specific strategy, Raju meets Amit early at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
+After selecting their specific strategy, Raju meets Amit at Koliwada Ground to begin implementing their chosen approach before other boys arrive expecting to play.
 
-The early morning calm at Koliwada Ground provides ideal conditions for implementing yesterday's strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
+The calm at Koliwada Ground provides ideal conditions for implementing the strategic plan. Both boys bring focused energy and systematic thinking to what has evolved from simple equipment hunting into a comprehensive exercise.
 
 <<SetCharacterExpression "Amit" "Determined">>
 Amit: Ready to put our plan into action, yaar?
 
 <<SetCharacterExpression "Amit" "Anxious">>
-Amit: Today we'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
+Amit: We'll find out whether our strategic thinking can actually solve real-world problems or if we're just good at making plans that don't work in practice.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm completely ready, Amit!
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Yesterday's planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
+Raju: The planning gave us a clear strategy, and now we get to test whether systematic approaches really work better than random hoping. This is exciting!
 
 <<SetCharacterExpression "Amit" "Serious">>
 Amit: Let's see how our approach handles the reality of actually finding equipment or creating solutions.
@@ -528,7 +528,7 @@ Raju: Even if our first approach doesn't work perfectly, we'll learn valuable le
 Amit: Your attitude is perfect, yaar!
 
 <<SetCharacterExpression "Amit" "Confident">>
-Amit: Win or lose, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
+Amit: Success or not, we're going to learn something important about tackling challenges systematically instead of just hoping for luck. Let's begin!
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Let's stay organized and methodical. Remember, we're testing our strategy, not just rushing through randomly.
@@ -570,27 +570,27 @@ title: Amit_Day5
 <<SetBGSprite KohliwadaGround>>
 
 // Day 5 - Building on progress
-After successfully implementing their strategy and making progress on the equipment situation, Raju meets Amit again to continue their efforts and build on yesterday's momentum.
+After successfully implementing their strategy and making progress on the equipment situation, Raju meets Amit again to continue their efforts and build on the momentum.
 
-The encouraging atmosphere at Koliwada Ground reflects the boys' growing confidence that their systematic approach is yielding tangible results. Yesterday's success provides both motivation and validation for continuing their collaborative effort.
+The encouraging atmosphere at Koliwada Ground reflects the boys' growing confidence that their systematic approach is yielding tangible results. The success provides both motivation and validation for continuing their collaborative effort.
 
 <<SetCharacterExpression "Amit" "Smiling">>
-Amit: You're back, and I'm feeling much more optimistic! Yesterday's progress proved that our systematic approach actually works.
+Amit: You're back, and I'm feeling much more optimistic! Our progress proved that our systematic approach actually works.
 
 <<SetCharacterExpression "Amit" "Confident">>
 Amit: Are you ready to build on what we accomplished?
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Definitely! Yesterday taught me so much about the difference between hoping for solutions and working systematically to create them.
+Raju: Definitely! This taught me so much about the difference between hoping for solutions and working systematically to create them.
 
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: I feel like we're really making progress now.
 
 <<SetCharacterExpression "Amit" "Excited">>
-Amit: Excellent! Today I want to see if we can complete our equipment collection.
+Amit: Excellent! I want to see if we can complete our equipment collection.
 
 <<SetCharacterExpression "Amit" "Determined">>
-Amit: And maybe even organize that proper cricket match we've been planning. Yesterday was problem-solving - today could be celebration!
+Amit: And maybe even organize that proper cricket match we've been planning. This could be our celebration!
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'm ready for whatever we need to finish, Amit.
@@ -602,7 +602,7 @@ Raju: This experience has shown me how persistence and teamwork can overcome obs
 Amit: Then let's finish what we started!
 
 <<SetCharacterExpression "Amit" "Excited">>
-Amit: With the progress we made yesterday, today we might actually get our neighborhood cricket match organized.
+Amit: With the progress we made, we might actually get our neighborhood cricket match organized.
 
 <<SetCharacterExpression "Raju" "Proud">>
 Raju: You know what's amazing? We're not just solving one problem - we're learning skills we can use for any challenge.
@@ -620,13 +620,13 @@ Amit: The other boys are going to be so excited when we tell them we've actually
 Raju: Let's make sure we finish completely today. We don't want to promise a match and then not deliver.
 
 <<SetCharacterExpression "Amit" "Serious">>
-Amit: Right! Let's finalize everything we need and then we can schedule the match for tomorrow or the next day.
+Amit: Right! Let's finalize everything we need and then we can schedule the match soon.
 
 <<SetCharacterExpression "Amit" "Excited">>
 Amit: All our hard work is about to pay off!
 
 <<HideAllCharacters>>
-As the second day of sustained effort unfolds with expanded goals and higher expectations, both boys recognize they are approaching the culmination of their collaborative problem-solving journey. The anticipation of finally enjoying organized cricket adds excitement and urgency to their continued efforts.
+As sustained effort unfolds with expanded goals and higher expectations, both boys recognize they are approaching the culmination of their collaborative problem-solving journey. The anticipation of finally enjoying organized cricket adds excitement and urgency to their continued efforts.
 
 <<set $Amit_Day = 6>>
 <<EndEvent true>>
@@ -643,7 +643,7 @@ With their equipment collection nearly complete and neighborhood cricket almost 
 The atmosphere at Koliwada Ground buzzes with anticipation as Raju and Amit prepare for what could be the culminating session of their week-long effort. Their accumulated success has transformed initial frustration into genuine confidence that systematic effort can overcome practical obstacles.
 
 <<SetCharacterExpression "Amit" "Relaxed">>
-Amit: Yaar, I have to admit - when this equipment crisis first started, I thought it was just bad luck.
+Amit: Yaar, I have to admit - when this equipment crisis started, I thought it was just bad luck.
 
 <<SetCharacterExpression "Amit" "Proud">>
 Amit: Bad luck that would ruin our cricket plans. But working with you this week has shown me something amazing about what's possible when you approach problems systematically.

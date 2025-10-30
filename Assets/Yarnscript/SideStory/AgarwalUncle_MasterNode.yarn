@@ -152,7 +152,7 @@ position: 423,-115
 <<SetBGSprite GeneralStore>>
 <<HideAllCharacters>>
 
-Despite yesterday's introduction to demanding retail, Raju returns during morning restocking, hoping to observe how Agarwal Uncle prepares for the day.
+Despite yesterday's introduction to demanding retail, Raju returns during restocking, hoping to observe how Agarwal Uncle prepares for business.
 
 <<HideAllCharacters>>
 
@@ -572,9 +572,9 @@ position: 685,-46
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
-The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
+The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
@@ -619,7 +619,7 @@ AgarwalUncle: Your attitude is promising, beta.
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-AgarwalUncle: The evening rush starts in two hours.
+AgarwalUncle: The rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Then let's use these two hours to prepare perfectly!
@@ -647,7 +647,7 @@ AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideAllCharacters>>
 
-As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
+As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>
@@ -661,9 +661,9 @@ position: 375,142
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
-The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
+The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
@@ -708,7 +708,7 @@ AgarwalUncle: Your attitude is promising, beta.
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-AgarwalUncle: The evening rush starts in two hours.
+AgarwalUncle: The rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Then let's use these two hours to prepare perfectly!
@@ -736,7 +736,7 @@ AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideAllCharacters>>
 
-As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
+As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>
@@ -750,9 +750,9 @@ position: 374,-300
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the evening rush tests his abilities.
+After yesterday's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
-The store welcomes Raju's early arrival. The morning calm provides ideal conditions for beginning without peak pressure.
+The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 AgarwalUncle: Ready for your first real day of retail work, beta?
@@ -797,7 +797,7 @@ AgarwalUncle: Your attitude is promising, beta.
 AgarwalUncle: Now let's see if your performance matches your commitment.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-AgarwalUncle: The evening rush starts in two hours.
+AgarwalUncle: The rush starts in two hours.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Then let's use these two hours to prepare perfectly!
@@ -825,7 +825,7 @@ AgarwalUncle: You're learning already. Now let's begin.
 
 <<HideAllCharacters>>
 
-As pre-evening preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
+As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
 
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>

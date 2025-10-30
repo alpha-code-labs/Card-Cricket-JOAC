@@ -186,7 +186,7 @@ Aryan: The confident little slum boy thinks he can actually compete.
 Aryan: This will be entertaining.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: Tomorrow afternoon, right here in this courtyard.
+Aryan: Tomorrow, right here in this courtyard.
 
 <<SetCharacterExpression "Aryan" "Confident">>
 Aryan: A proper cricket challenge.
