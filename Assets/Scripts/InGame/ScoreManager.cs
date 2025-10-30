@@ -274,7 +274,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (groaningSound == null)
         {
-            Debug.LogWarning("Cheering sound not assigned!");
+            Debug.LogWarning("Groaning sound not assigned!");
             return;
         }
 
@@ -297,7 +297,7 @@ public class ScoreManager : MonoBehaviour
             AudioSource.PlayClipAtPoint(groaningSound, Camera.main.transform.position, cheeringVolume);
         }
 
-        Debug.Log($"Cheering sound played for boundary!");
+        Debug.Log($"Groaning sound played on loosing wicket!");
     }
 
     private void PlayGameWonCheeringSound()
@@ -363,7 +363,7 @@ public class ScoreManager : MonoBehaviour
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore, _ballsRemaining);
+            // EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore, _ballsRemaining);
         }
 
         if (isBattingFirst)
@@ -510,15 +510,16 @@ public class ScoreManager : MonoBehaviour
     {
         Timer.Instance.PauseTimer();
         AnimateBatterSwing();
-        //play batting sound
-        if(battingStrategy != BattingStrategy.Leave)
-            gameAudioSource.Play();
+        
         
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
+        //play batting sound
+        if((int)outcome != -3 && (int)outcome != -4)
+            gameAudioSource.Play();
         if((int)outcome >=4)
         {
             TriggerFirework();

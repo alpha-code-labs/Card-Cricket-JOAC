@@ -308,6 +308,11 @@ public class OutComeCalculator : ScriptableObject
             {
                 entry.outcome = OutCome.OneRunWideBall;
             }
+            // special entry for wrong shots
+            else if (specialOutcome == "No Sound")
+            {
+                entry.outcome = OutCome.NoSound;
+            }
             else if (outcomeStr == "1 Run Run")
             {
                 entry.outcome = OutCome.OneRuns;

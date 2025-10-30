@@ -216,7 +216,8 @@ public enum OutCome
     TwoRuns = 2,
     ThreeRuns = 3,
     FourRuns = 4,
-    SixRuns = 6
+    SixRuns = 6,
+    NoSound = -4
 }
 
 public enum SpecialOutcome
