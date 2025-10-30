@@ -49,6 +49,7 @@ public static class YarnScriptsValaditionTests
             }
             //Test to Run
             issues.AddRange(TestYarnCommands(text));
+            issues.AddRange(TestCharacterSpriteShownDuringNarration(text, path));
         }
         issues.AddRange(TestCalanderSystemAndYarnNodes());
         issues = issues.Distinct().ToList();
@@ -172,6 +173,85 @@ public static class YarnScriptsValaditionTests
                     break;
             }
         }
+        return issues;
+    }
+    static List<string> TestCharacterSpriteShownDuringNarration(string text, string filePath)
+    {
+        List<string> issues = new List<string>();
+
+        // Split the text into lines for analysis
+        var lines = text.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+        // Track if characters are currently shown
+        var shownCharacters = new HashSet<string>();
+        var hideAllCharactersPattern = new Regex(@"<<\s*HideAllCharacters\s*>>", RegexOptions.IgnoreCase);
+        var setCharacterExpressionPattern = new Regex(@"<<\s*SetCharacterExpression\s+['""]?([^'""]+)['""]?\s+['""]?([^'""]+)['""]?\s*>>", RegexOptions.IgnoreCase);
+
+        string fileName = Path.GetFileName(filePath);
+
+        for (int i = 0; i < lines.Length; i++)
+        {
+            var line = lines[i].Trim();
+            var lineNumber = i + 1;
+
+            // Skip empty lines
+            if (string.IsNullOrWhiteSpace(line))
+                continue;
+
+            // Check if this line hides all characters
+            if (hideAllCharactersPattern.IsMatch(line))
+            {
+                shownCharacters.Clear();
+                continue;
+            }
+
+            // Check if this line shows a character
+            var characterMatch = setCharacterExpressionPattern.Match(line);
+            if (characterMatch.Success)
+            {
+                var characterName = characterMatch.Groups[1].Value.Trim();
+                shownCharacters.Add(characterName);
+                continue;
+            }
+
+            // Check if this is a narration line (doesn't start with << and doesn't contain :)
+            bool isNarration = !line.StartsWith("<<") && !line.Contains(":");
+
+            // Additional check for common Yarn syntax patterns that are not narration
+            bool isYarnSyntax = line.StartsWith("->") || // choice
+                               line.StartsWith("===") || // node header
+                               line.StartsWith("---") || // node separator
+                               line.StartsWith("//") || // comment
+                               line.StartsWith("if") || // conditional
+                               line.StartsWith("endif") || // end conditional
+                               line.StartsWith("else") || // else conditional
+                               line.Contains("jump") || // jump command
+                               line.Contains("stop") || // stop command
+                               line.StartsWith("title:") || // node title
+                               line.StartsWith("tags:"); // node tags
+
+            if (isNarration && !isYarnSyntax)
+            {
+                // Check if any characters are currently shown during this narration
+                if (shownCharacters.Count > 0)
+                {
+                    // Check if the previous line was HideAllCharacters
+                    bool hasHideAllCharactersAbove = false;
+                    if (i > 0)
+                    {
+                        var previousLine = lines[i - 1].Trim();
+                        hasHideAllCharactersAbove = hideAllCharactersPattern.IsMatch(previousLine);
+                    }
+
+                    if (!hasHideAllCharactersAbove)
+                    {
+                        var characterList = string.Join(", ", shownCharacters);
+                        issues.Add($"Narration line has visible character sprites without <<HideAllCharacters>> above it. File: {fileName}, Line {lineNumber}: '{line}'. Visible characters: {characterList}");
+                    }
+                }
+            }
+        }
+
         return issues;
     }
 }
