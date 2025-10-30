@@ -254,6 +254,9 @@ Naresh: How do you plan to build on this foundation you've created?
 
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: What's your next step in this cricket education?
+
+Raju pauses, considering his response carefully. This moment could determine whether Naresh becomes just another obstacle or a potential mentor in his cricket journey.
+
 <<AutoAdvance true>>
 Make a Choice
 <<AutoAdvance false>>
@@ -272,6 +275,8 @@ tags:
 position: -308,129
 ---
 <<set $Naresh_Path = "a">>
+
+Raju decides to showcase his analytical approach, hoping to impress Naresh with his deep understanding of cricket's technical and psychological aspects.
 
 <<SetCharacterExpression "Naresh" Astonished>>
 Naresh: Ball physics? Player psychology?
@@ -311,6 +316,8 @@ tags:
 position: -55,122
 ---
 <<set $Naresh_Path = "b">>
+
+Raju chooses a practical approach, offering to demonstrate his dedication through hard work and responsibility rather than words alone.
 
 <<SetCharacterExpression "Naresh" Quizzical>>
 Naresh: You want to work? Most kids your age try to avoid responsibility.
@@ -357,6 +364,8 @@ position: 184,122
 ---
 <<set $Naresh_Path = "c">>
 
+Raju decides to appeal to Naresh on an emotional level, speaking directly about his passion and dreams to find common ground.
+
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: Dreams are fragile things, beta.
 
@@ -396,6 +405,8 @@ Naresh: That kind of dedication deserves guidance, not just encouragement.
 title: Naresh_Day3_Continue
 tags:
 ---
+
+Regardless of which path Raju chose, his sincerity and dedication have made a lasting impression on the groundskeeper.
 
 <<HideAllCharacters>>
 As Naresh examines Raju's detailed observations, their relationship transforms from suspicious monitoring to genuine mentorship consideration. The notebook has provided concrete evidence of serious cricket study.

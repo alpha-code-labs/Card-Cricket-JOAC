@@ -42,6 +42,7 @@ His worn clothes and dusty sandals mark him immediately as an outsider in this e
 
 Yet his determined approach despite obvious class barriers reflects a hunger for knowledge that transcends economic circumstances
 
+A stern voice cuts through his thoughts. A well-dressed teacher approaches with sharp eyes that assess him immediately.
 
 <<SetCharacterExpression "SunitaMadam" Irritated>>
 SunitaMadam: You there, boy.
@@ -170,6 +171,8 @@ Yet his belief in the transformative power of education compels him to risk furt
 
 To access the knowledge that could change his life's trajectory.
 
+As he approaches the gates once more, the same teacher from yesterday spots him. Her expression hardens with recognition.
+
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: You again?
 
@@ -196,6 +199,8 @@ Raju: I was wondering... do you have any books I could read?
 
 <<SetCharacterExpression "Raju" Worried>>
 Raju: Even old ones that the school doesn't need anymore?
+
+Her expression shifts from irritation to surprise. This is not what she expected to hear.
 
 <<SetCharacterExpression "SunitaMadam" Astonished>>
 SunitaMadam: Books?
@@ -325,6 +330,8 @@ title: SunitaMadam_Day3
 On the third day, Raju returns to Summit Heights School school with a clear purpose.
 He intends to convince Sunita Madam of his genuine intellectual curiosity.
 
+She is waiting near the gates, as if expecting him. There's a test in her eyes.
+
 <<SetCharacterExpression "SunitaMadam" Serious>>
 SunitaMadam: Back again? What approach are you going to take?
 
@@ -348,6 +355,8 @@ position: -308,129
 ---
 <<set $SunitaMadam_Path = "a">>
 <<SetBGSprite PrivateSchool>>
+
+Raju takes a deep breath and decides to prove himself through knowledge. His eyes shine with determination.
 
 <<SetCharacterExpression "Raju" Confident>>
 
@@ -416,6 +425,8 @@ position: -55,122
 ---
 <<set $SunitaMadam_Path = "b">>
 <<SetBGSprite PrivateSchool>>
+
+Raju chooses humility over pride. He remembers his mother's teachings about earning respect through action.
 
 <<SetCharacterExpression "Raju" Determined>>
 
@@ -486,6 +497,8 @@ position: 184,122
 ---
 <<set $SunitaMadam_Path = "c">>
 <<SetBGSprite PrivateSchool>>
+
+Raju decides to showcase his greatest strength - unwavering determination. His posture straightens with confidence.
 
 <<SetCharacterExpression "Raju" Excited>>
 
@@ -852,6 +865,8 @@ They embody an investment in his potential.
 That he must validate through sustained effort and demonstrated growth.
 
 While her willingness to take professional risk on his behalf creates both opportunity and obligation.
+
+His heart swells with gratitude and renewed purpose as he clutches the precious list.
 
 <<set $SunitaMadam_Day = 6>>
 <<EndEvent true>>
