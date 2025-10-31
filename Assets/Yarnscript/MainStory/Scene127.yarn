@@ -14,7 +14,7 @@ Ramu: I know we're keeping quiet for the neighbors, but my chest is making noise
 Kamla: I saw the clay on his elbows and the shine in his eyes—enough seeing for a mother, speak softly.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: What happened is done—tell it in short words, he has long pages tomorrow.
+Shiv Prasad: What happened is done—tell it in short words, he has long pages tomorrow.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Short words then—he held his spine like a flagpole, answered the crowd's shouts with silence, and when the moment got heavy, he turned it like a knob, one click at a time.
@@ -32,7 +32,7 @@ Kamla: Right options taste better than sweet ones, but the laddu of marks is sti
 Raju: Yes, Maa. First paper.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Then tonight we eat simple, talk simple, and sleep simple—the brain learns best when the room is boring.
+Shiv Prasad: Then tonight we eat simple, talk simple, and sleep simple—the brain learns best when the room is boring.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: I've already made boring into a plan—table of contents twice, dictation for new words, ten sums till they stop wobbling, then lights off with no hero tales.
@@ -44,7 +44,7 @@ Kamla: Good, Raju—wash your feet again, mud doesn't enter a mind that needs to
 Ramu: I know the deal—ninety, and we heard it with both ears.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: You heard it, but did you taste it? Numbers have a flavor of sweat and ink—he can soak in applause for ten minutes, then he soaks in ink.
+Shiv Prasad: You heard it, but did you taste it? Numbers have a flavor of sweat and ink—he can soak in applause for ten minutes, then he soaks in ink.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Baba, I'll bring the ink home—promise.
@@ -71,7 +71,7 @@ Raju: Under?
 Kamla: Yes—let it carry the weight of tomorrow's work, and if it bends, it wasn't worth much.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Raju, today the ground said your name and day after tomorrow the paper will ask it in a hundred little ways. Write it with the same hand—neat, patient, no swagger.
+Shiv Prasad: Raju, today the ground said your name and day after tomorrow the paper will ask it in a hundred little ways. Write it with the same hand—neat, patient, no swagger.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I don't know how to swagger, Baba.
@@ -101,25 +101,25 @@ Kamla: No "then" tonight—the only prize we discuss is a clean page and a calm 
 Ramu: He's ready—I vouch for his hours, not just his highlights.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: I believe your watch, but belief and permission are cousins, not twins. I'll keep my word—he brings me ninety percent, I walk him to that banyan and tell my fear to take a holiday.
+Shiv Prasad: I believe your watch, but belief and permission are cousins, not twins. I'll keep my word—he brings me ninety percent, I walk him to that banyan and tell my fear to take a holiday.
 
 <<SetCharacterExpression "Kamla" "Worried">>
 Kamla: And if he brings eighty-nine?
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: We shake his hand for trying and keep him here longer. The world is not kind, so let the rules be clear at home.
+Shiv Prasad: We shake his hand for trying and keep him here longer. The world is not kind, so let the rules be clear at home.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Last instruction for tonight, captain—when you close this notebook, close the stadium inside your head too, lock it with the key under the pillow. Tomorrow evening you can visit it again.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Day after tomorrow, the paper will ask if you can keep a promise—answer "yes" with numbers. Bring me ninety percent and the road to that academy opens; if not, it doesn't—no anger, no tears, clear skies, clear rules.
+Shiv Prasad: Day after tomorrow, the paper will ask if you can keep a promise—answer "yes" with numbers. Bring me ninety percent and the road to that academy opens; if not, it doesn't—no anger, no tears, clear skies, clear rules.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Understood—I accept.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Now let's make the home quiet enough for the answers to hear us.
+Shiv Prasad: Now let's make the home quiet enough for the answers to hear us.
 
 <<HideAllCharacters>>
 <<EndEvent>>

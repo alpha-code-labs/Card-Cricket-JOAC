@@ -23,7 +23,7 @@ Kamla: Like a stubborn blade of grass—there, good boy.
 Raju: Baba… what time will they pin the sheets?
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: When the peon finishes his tea and finds the drawing pin—we'll reach before him and watch the wall like it owes us money.
+Shiv Prasad: When the peon finishes his tea and finds the drawing pin—we'll reach before him and watch the wall like it owes us money.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Drink two sips, not more—too much water makes numbers blur.
@@ -35,7 +35,7 @@ Raju: My hands are sweaty.
 Ramu: That's because they remember holding a bat and a pencil on the same week—proud hands sweat early.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Pride can wait—today we read marks, then we decide what pride is allowed to say.
+Shiv Prasad: Pride can wait—today we read marks, then we decide what pride is allowed to say.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: He studied till the fan scolded him, slept without stories, and woke before the milkman—that's the work we could do.
@@ -47,7 +47,7 @@ Ramu: If your heart starts running when we see the crowd, breathe like the drum�
 Raju: In… hold… out.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Anchor won't change the tide, but it keeps the boat from lying.
+Shiv Prasad: Anchor won't change the tide, but it keeps the boat from lying.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: True. Listen, captain—whatever the paper says, you walk the same, straight without running or drooping. If it's good we thank it and go home; if not, we learn where the holes are and fill them—no big face, no small face.
@@ -59,10 +59,10 @@ Raju: Will you stand near me?
 Ramu: Like a shadow with laces.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: One rule before we step out—we don't ask others their number, don't announce ours, or compare on the road. The wall is for reading; the lane is for walking.
+Shiv Prasad: One rule before we step out—we don't ask others their number, don't announce ours, or compare on the road. The wall is for reading; the lane is for walking.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: We carry each other—not just today, but everyday.
+Shiv Prasad: We carry each other—not just today, but everyday.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: And we walk together—no racing ahead, Ramu.
@@ -74,7 +74,7 @@ Ramu: I'll keep pace—if I run, you pull my shirt.
 Raju: Promise.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Lock the door, then we go—we'll be early and quiet, let the wall do the talking.
+Shiv Prasad: Lock the door, then we go—we'll be early and quiet, let the wall do the talking.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: Shoes tied?
@@ -83,7 +83,7 @@ Kamla: Shoes tied?
 Raju: Double knot.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Good—come, all of you.
+Shiv Prasad: Good—come, all of you.
 
 <<HideAllCharacters>>
 <<EndEvent>>

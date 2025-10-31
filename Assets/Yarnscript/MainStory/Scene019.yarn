@@ -15,7 +15,7 @@ Ramu: Maa… Baba… can I talk for two minutes straight?
 Kamla: Two minutes from you becomes twenty, but sit beta.
 
 <<SetCharacterExpression "ShivPrasad" "BaseSprite">>
-ShivPrasad: If it's about the rice, keep for morning. My head is heavy.
+Shiv Prasad: If it's about the rice, keep for morning. My head is heavy.
 
 <<SetCharacterExpression "Ramu" "Sad">>
 Ramu: It's about Raju. I think we have a gem in the house.
@@ -27,7 +27,7 @@ Kamla: Every mother thinks so.
 Ramu: I'm not saying it like a brother, but as someone who watches the ground breathe - he sees the ball early, listens, shares, and doesn't shrink under pressure.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Nerves don't feed stomachs.
+Shiv Prasad: Nerves don't feed stomachs.
 
 <<SetCharacterExpression "Ramu" "Sad">>
 Ramu: True, but I'm asking for time and routine - morning practice near the handpump, school on time, chores done, then study. If his marks fall, I'll lock this bat myself.
@@ -39,7 +39,7 @@ Kamla: People will talk. "Poor folks and big dreams."
 Ramu: People laugh before they clap, Maa - let them finish both. We'll borrow discipline, not money, and it's free.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: What will it cost?
+Shiv Prasad: What will it cost?
 
 <<SetCharacterExpression "Ramu" "Anxious">>
 Ramu: One steel bottle of water, chalk for the crease, and my sleep - I'll take an extra hour at the tire repair shop to buy second-hand pads later.
@@ -51,7 +51,7 @@ Kamla: And studies? His teacher already said his handwriting runs like a train.
 Ramu: Then we slow the train - half hour every night with poem, dictation, and tables. If he misses, he misses the ground next day.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Hope is a dangerous thing, Ramu.
+Shiv Prasad: Hope is a dangerous thing, Ramu.
 
 <<SetCharacterExpression "Ramu" "Astonished">>
 Ramu: False hope is, but this is measured - three months of routine and if he lights up the lane, we talk to Masterji about district trials.
@@ -63,7 +63,7 @@ Kamla: He is small.
 Ramu: Small hands learn courage faster - he already keeps the bat face up when it rests and breathed through the pressure like I taught. Eight-year-olds don't fake that.
 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
-ShivPrasad: You speak like a coach.
+Shiv Prasad: You speak like a coach.
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Because our lane doesn't have one, so I'll be it while keeping my marks decent - Friday nights, both of us read to you.
@@ -75,7 +75,7 @@ Kamla: What if he gets hurt?
 Ramu: Then we learn why and fix it - we don't let poverty steal our manners or our safety.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: And what do you want from me?
+Shiv Prasad: And what do you want from me?
 
 <<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Permission, and when neighbors scoff, say "He's practicing habits, not chasing cricket."
@@ -87,19 +87,19 @@ Kamla: Tell me one more time—what do you see in him?
 Ramu: I see a boy who hears the ground, waits when waiting is heavy, and smiles after a miss - that comes from inside, not posters.
 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
-ShivPrasad: Dreams make the room feel bigger, huh?
+Shiv Prasad: Dreams make the room feel bigger, huh?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Only if we open the window a little - dawn to the handpump, I'll chalk the line and he'll carry the water.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: I say three months - no money wasted, marks and manners steady, or game over.
+Shiv Prasad: I say three months - no money wasted, marks and manners steady, or game over.
 
 <<SetCharacterExpression "Ramu" "Relieved">>
 Ramu: Deal. I'll keep score on both.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: And tell the boy—when he steps out, he carries us with him. Not our burden—our blessing.
+Shiv Prasad: And tell the boy—when he steps out, he carries us with him. Not our burden—our blessing.
 
 <<SetCharacterExpression "Kamla" "Loving">>
 Kamla: Go sleep. Morning comes fast to those with promises.

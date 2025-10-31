@@ -11,85 +11,85 @@ position: 0,0
 CoachDev: Namaste, ShivPrasad. I'm Dev.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Namaste. Sit. Tea?
+Shiv Prasad: Namaste. Sit. Tea?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Not for me, thank you—I know you leave for the mill soon, so I'll be brief and honest.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Brief and honest pair well—say.
+Shiv Prasad: Brief and honest pair well—say.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I watched your younger boy today—Raju sees the ball early and carries himself steady, which is rarer than runs. I run an academy in Matunga and want him to come for structured training.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Matunga sounds far when pockets are near-empty.
+Shiv Prasad: Matunga sounds far when pockets are near-empty.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I understand the worry—there are fee waivers for boys who earn them, and I can get him a trial first with no promises beyond that.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Trial is also cost—bus fare is not air, time is a wage, and who will walk him when his mother washes floors and I watch gates?
+Shiv Prasad: Trial is also cost—bus fare is not air, time is a wage, and who will walk him when his mother washes floors and I watch gates?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: True, but sometimes the city makes space for a boy who won't waste it—we can arrange morning batches or late evening, and I can escort him the first few times.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Sir, notes do not bend night shifts, and your feet won't always be free—tomorrow when the bus breaks or coin is short, who carries him then?
+Shiv Prasad: Sir, notes do not bend night shifts, and your feet won't always be free—tomorrow when the bus breaks or coin is short, who carries him then?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Many boys come with less and make it through because a father said yes once, even when the maths looked ugly.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Many boys also come back with less—I have seen scouts who took money for "trials" and promises that ate our rice.
+Shiv Prasad: Many boys also come back with less—I have seen scouts who took money for "trials" and promises that ate our rice.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I won't ask for a rupee for a trial—if anyone does, you call me first, and we will manage the rest.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: And if he enters your ground and the world enters his head—big places make small boys feel like kings, then the fall is long.
+Shiv Prasad: And if he enters your ground and the world enters his head—big places make small boys feel like kings, then the fall is long.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Raju doesn't strut—he thanks umpires, shares water, and your elder one taught him that foundation. I'm offering a door to learning, not promising stardom.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Doors creak, hinges cost oil—the world speaks sweet when it wants something, so what do you want?
+Shiv Prasad: Doors creak, hinges cost oil—the world speaks sweet when it wants something, so what do you want?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I want to see whether a boy with a clear mind and quick hands can grow where there is better light—and if he can, we do not let poverty steal his chance.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Poverty steals quietly because it knows our house—fourteen months ago I agreed to routine here at dawn, and that was my "yes" without bus fare or new fear.
+Shiv Prasad: Poverty steals quietly because it knows our house—fourteen months ago I agreed to routine here at dawn, and that was my "yes" without bus fare or new fear.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: And it gave him muscles memory can trust, but the next inch needs better bowling and correction—same bell, same breath, just longer shadows.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Longer shadows also hide things—if Matunga takes him far and he returns late, his studies slip and the city counts our slips loudly.
+Shiv Prasad: Longer shadows also hide things—if Matunga takes him far and he returns late, his studies slip and the city counts our slips loudly.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Allow me one month with two sessions a week—I'll pick him up from the banyan, and if your heart says no after that, I step back.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: My heart already says no, sir—it says feed the house, not the dream, and keep the boy near until the world proves it won't swallow him.
+Shiv Prasad: My heart already says no, sir—it says feed the house, not the dream, and keep the boy near until the world proves it won't swallow him.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: I respect a father who protects his own—may I leave a number in case the sums change, and I'll just answer without pushing.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Leave the number—numbers don't eat, words sometimes do.
+Shiv Prasad: Leave the number—numbers don't eat, words sometimes do.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Here. No pressure. Only possibility.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-ShivPrasad: Sir, I thank you for the respect and for speaking to me as if my "no" matters—for now it's no, completely.
+Shiv Prasad: Sir, I thank you for the respect and for speaking to me as if my "no" matters—for now it's no, completely.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: Understood.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: May your boys play well and mine sleep well—both are victories where we live.
+Shiv Prasad: May your boys play well and mine sleep well—both are victories where we live.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 CoachDev: True—I'll take your leave, and Ramu, you're raising him well.
@@ -101,7 +101,7 @@ Ramu: Yes, sir.
 CoachDev: Good night, ShivPrasad-ji.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: Good night.
+Shiv Prasad: Good night.
 
 <<HideAllCharacters>>
 <<EndEvent>>

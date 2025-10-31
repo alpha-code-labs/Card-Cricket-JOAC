@@ -11,13 +11,13 @@ position: 0,0
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "ShivPrasad" "Curious">>
-ShivPrasad: How did it go?
+Shiv Prasad: How did it go?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am not sure. I tried my best.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: I guess we will find out soon.
+Shiv Prasad: I guess we will find out soon.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I guess.
@@ -32,7 +32,7 @@ Kamla: His eyes look like he is unsure. I read him well. I am his mother.
 Ramu: We will wait and watch.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-ShivPrasad: in 15 days.
+Shiv Prasad: in 15 days.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: In 15 days.
