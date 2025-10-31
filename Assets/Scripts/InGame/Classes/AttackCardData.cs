@@ -38,7 +38,6 @@ public class AttackCardData
     }
     Sprite TryGetSprite(string spriteName)
     {
-        List<Sprite> sprites = TemporaryResources.instance.cardSprites;
         return FindRelevantSprite(spriteName);
     }
 
@@ -115,6 +114,8 @@ public class AttackCardData
             return "sweep";
         else if (result.Contains("leave"))
             return "leave";
+        else
+            Debug.LogWarning($"No specific mapping found for '{strategyName}', using default conversion.");
 
         // Default: convert PascalCase to snake_case
         return System.Text.RegularExpressions.Regex.Replace(result, "(?<!^)([A-Z])", "_$1").ToLower();
