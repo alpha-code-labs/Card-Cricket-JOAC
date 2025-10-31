@@ -51,10 +51,15 @@ public class CardsPoolManager : MonoBehaviour
     public GameObject ballerCardPrefab;
     void Awake()
     {
-        DateRecord dateRecord = NewDayManager.currentDateRecord;
         if (GameManager.instance != null)
         {
-            maxHandSize = baseMaxHandSize + GameManager.instance.currentSaveData.resourcefulness;
+            switch (GameManager.instance.currentSaveData.resourcefulness)
+            {
+                case 1: maxHandSize = baseMaxHandSize + 1; break;
+                case 2: maxHandSize = baseMaxHandSize + 1; break;
+                case 3: maxHandSize = baseMaxHandSize + 2; break;
+                default:  maxHandSize = baseMaxHandSize; break;
+            }
             maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
         }
         else
