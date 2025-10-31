@@ -775,7 +775,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &220481298
 GameObject:
@@ -1111,6 +1111,7 @@ MonoBehaviour:
     isBattingFirst: 0
     pitchCondition: 0
     initialScore: 0
+    winScore: 0
   ballerCardPrefab: {fileID: 9059906081896085217, guid: 861cfae5cb02e3441aa843a7bc23bd9a, type: 3}
 --- !u!4 &351060987
 Transform:
@@ -3704,10 +3705,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdc47367aafcf64491bd69f8d32d502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arcRadius: 2650
-  arcAngle: 9
-  maxArcAngle: 60
-  arcCenterOffset: {x: 0, y: 0, z: 0}
+  cardSpacing: 200
+  lineYPosition: 0
+  lineOffset: {x: 0, y: 0, z: 0}
   hoverScale: 1.2
   hoverYOffset: 0
   normalScale: 0.95

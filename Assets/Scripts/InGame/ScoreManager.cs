@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
     public ParticleSystem fireworkEffect;
     public ParticleSystem fireworkEffect2;
     private bool canUpdateChaseDisplay = false;
+    public GameObject gamePuaseInstructionText;
 
 
     void Awake()
@@ -38,11 +39,16 @@ public class ScoreManager : MonoBehaviour
             chaseDisplayContainer.SetActive(false);
             chaseDisplayText.gameObject.SetActive(false);
         }
+
+        // Initially hide pause intruction
+        gamePuaseInstructionText.SetActive(false);
+        musicIntensity.SetExcitement(.3f);
     }
     public void TriggerFirework()
     {
         if (fireworkEffect != null)
         {
+            musicIntensity.SetExcitement(.7f);
             fireworkEffect.Play();
             fireworkEffect2.Play();
         }
@@ -80,6 +86,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] AudioClip groaningSound;
     [SerializeField] float cheeringVolume = 1f;
     [SerializeField] AudioSource cheeringAudioSource; // Optional: separate audio source for cheering
+    [SerializeField] MusicIntensity musicIntensity;
     
     
     private Sequence chaseTextSequence;
@@ -416,6 +423,7 @@ public class ScoreManager : MonoBehaviour
         wickets--;
         PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
+        musicIntensity.SetExcitement(.4f);
         //remainingWicketsText.text = wickets.ToString();
         
         if (wickets <= 0 && !gameEnded)
@@ -679,7 +687,7 @@ public class ScoreManager : MonoBehaviour
             totalWicketsText.text = "/ " + wickets.ToString();
             remainingWicketsText.text = wickets.ToString();
         }
-        
+
         UpdateScore(0);
         UpdateBallsAndOvers(0);
 
@@ -818,6 +826,8 @@ public class ScoreManager : MonoBehaviour
             chaseDisplayContainer.SetActive(true);
             chaseDisplayText.gameObject.SetActive(true);
         }
+        //show pause intruction
+         gamePuaseInstructionText.SetActive(true);
     }
     IEnumerator UpdateRedrawButtonRoutine()
     {
