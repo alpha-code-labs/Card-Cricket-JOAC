@@ -33,9 +33,11 @@ Raju: I know, but we were so close to winning and I missed out.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: It's fine - we are all shooting in the dark, but you will get there.
-
+-> Try Again
+    <<RetryEvent "Card Gameplay 16">>
+-> Continue
+	<<EndEvent>>
 <<HideAllCharacters>>
-<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

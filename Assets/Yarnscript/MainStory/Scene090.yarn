@@ -9,10 +9,10 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Finals. They posted 100 in 54 balls. Tough ask.
+Ramu: Finals. They posted 130 in 60 balls. Tough ask.
 
 <<SetCharacterExpression "Raju" "Tired">>
-Raju: Two and a half runs per ball. I'm tired but ready.
+Raju: More than two runs per ball. I'm tired but ready.
 
 <<SetCharacterExpression "Ramu" "Confident">>
 Ramu: This is what we trained for—when body is tired, technique takes over, so trust your basics.

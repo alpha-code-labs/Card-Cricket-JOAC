@@ -20,9 +20,11 @@ Raju: I know, but I just did not make the right shot selection and I am embarras
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Smile captain. We will have more chances don't get yourself down. Heads up. Smile. Tomorrow is another day.
-
+-> Try Again
+    <<RetryEvent "Card Gameplay 5">>
+-> Continue
+	<<EndEvent>>
 <<HideAllCharacters>>
-<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

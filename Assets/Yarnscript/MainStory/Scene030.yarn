@@ -15,7 +15,7 @@ Ramu: Quarterfinals captain. We're batting second. You are up at number 5.
 Raju: How many do we need?
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Get 25 from 18 balls. Quick singles won't work. You'll need boundaries.
+Ramu: Get 66 from 36 balls. Quick singles won't work. You'll need boundaries.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: That's aggressive batting.

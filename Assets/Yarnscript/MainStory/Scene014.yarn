@@ -17,9 +17,11 @@ Ramu: That's my boy - always stay hungry and greedy when it comes to scoring run
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Yes I am aware. I am completely switched on. I can do this.
-
+-> Try Again
+    <<RetryEvent "Card Gameplay 2">>
+-> Continue
+	<<EndEvent>>
 <<HideAllCharacters>>
-<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 
