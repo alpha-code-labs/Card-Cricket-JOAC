@@ -394,7 +394,9 @@ public enum EmotionType
     FatherlyWarmth,
     Gentle,
     Teaching,
-    Warm
+    Warm,
+
+    Encourage,
 
 }
 
