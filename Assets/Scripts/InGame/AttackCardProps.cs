@@ -113,16 +113,7 @@ public class AttackCardProps : MonoBehaviour, IPointerClickHandler, IPointerEnte
     {
         if (Timer.Instance.ignoreClickTimeRanOut || (CardPlayAnimationController.Instance != null && CardPlayAnimationController.Instance.IsAnimating))
             return;
-
-        // if (EnergyManager.Instance.GetEnergy() < cardData.EnergyCost)
-        // {
-        //     Debug.LogWarning("Not enough energy to play this card.");
-        //     return;
-        // }
         CardsPoolManager.Instance.SetCardsInteractable(false);
-        // Deduct energy
-        // EnergyManager.Instance.HandelEnergyChange(cardData.EnergyCost);
-        
         // Get sprite and pass card object
         Sprite sprite = GetCardSprite();
         // CardsPoolManager.Instance.DestroyCurrentBallCard();
