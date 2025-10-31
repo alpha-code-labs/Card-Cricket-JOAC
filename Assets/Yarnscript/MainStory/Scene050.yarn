@@ -9,13 +9,13 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: It's the Quarterfinals captain—we're batting first, you're opening, and we need 90+ runs. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in. Completely focussed. Ready to roar.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

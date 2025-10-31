@@ -6,7 +6,7 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: It's the quarterfinals captain—you're at number 8, last 2 overs remain, get as many runs as you can.
 
 <<SetCharacterExpression "Raju" "Anxious">>

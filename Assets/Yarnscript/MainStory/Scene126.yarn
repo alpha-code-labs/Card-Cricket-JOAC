@@ -25,19 +25,19 @@ Aryan: You also have a steady hand. I am surprised.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Thanks.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Raju, talk to him properly. Dont be rude.
 
 <<SetCharacterExpression "Raju" "Angry">>
 Raju: But Bhaiyya, he tormented me and called me names before the match.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: It's fine—don't hold a grudge, these are small things that aren't important.
 
 <<SetCharacterExpression "Aryan" "Furious">>
 Aryan: Don't be cocky slum boys—just luck. Next time we'll eat you for breakfast.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Proud">>
 Ramu: Yes we are poor, but we have our manners.
 
 <<SetCharacterExpression "Aryan" "Proud">>

@@ -9,7 +9,7 @@ position: 0,0
 
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Captain, good—you came. I'm teaching you the spine of batting—no secrets, just honesty.
 
 <<SetCharacterExpression "Raju" "SeriousWithBat">>
@@ -54,7 +54,7 @@ Raju: For us.
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: For us—alright captain, sleeves up, words end here.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Ready? Step out with a steady heart.
 
 <<HideAllCharacters>>

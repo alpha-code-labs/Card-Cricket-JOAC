@@ -44,13 +44,13 @@ Ramu: Then we learn, fix, and try again. We don't let poverty steal our mannersâ
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: What do we do first?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: First, we say thank you through small actions - keep the bat face-up when it rests and our promises upright all day.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Ok.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Our promise stack - up with the first bell, water bottle filled, chores done, school on time, then half an hour of study with me. If the page is messy, the ground is off-limits next morning.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -74,7 +74,7 @@ Ramu: Today the ground will know your name was spoken at home with blessing. Tha
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I can't Wait.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Remember our five coins?
 
 <<SetCharacterExpression "Raju" "Determined">>

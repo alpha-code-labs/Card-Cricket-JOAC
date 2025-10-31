@@ -46,25 +46,25 @@ Ramu: He has learned to—missing once is fine, missing manners isn't, because w
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: Diet?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: We do what we can—bananas on match days, chana most evenings, milk when there's extra, and prize money goes to ground repairs then home needs.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: Gear?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Second-hand pads later, not now—our mochi fixes shoes, I sand the bat with brick, and we keep the face up because respect is free.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: You speak like a coach and a brother both. Any pressure from family to stop this and focus only on studies?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: We had that talk—they gave us three months that became fourteen, as long as marks don't fall and we don't borrow money.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: Paperwork—birth certificate, school ID, address proof?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: School ID and ration card, yes—birth certificate I can find, or we can get a duplicate from the ward office.
 
 <<SetCharacterExpression "CoachDev" "Serious">>

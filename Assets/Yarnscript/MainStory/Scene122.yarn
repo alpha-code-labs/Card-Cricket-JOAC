@@ -9,7 +9,7 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite "KohliwadaGround">>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: This is it captain. We're chasing 185 in 15 overs—our bowlers have been crushed, team spirit is low, nobody's giving us a chance. We need to go all guns blazing, you ready?
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -18,7 +18,7 @@ Raju: It's now or never—completely focused and ready to roar.
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: Focus my boy—play the ball on its merit, don't go swinging.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Lets go champion.
 
 <<SetCharacterExpression "Raju" "Determined">>

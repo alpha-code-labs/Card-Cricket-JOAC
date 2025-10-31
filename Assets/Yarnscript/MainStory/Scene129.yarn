@@ -16,7 +16,7 @@ Ramu: Time to go. You're nervous?
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Not really. I prepared well. Honestly i have given it everything.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Gentle">>
 Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and a steady brain. I will take you to school.
 
 <<SetCharacterExpression "Raju" "Determined">>

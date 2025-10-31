@@ -12,7 +12,7 @@ Ramu: Captain.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Bhai? Your turn?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Our turn—Sunil broke his ankle, we need a substitute.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -30,25 +30,25 @@ Ramu: And you're Raju—eight is a number, heart is a decision.
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Face up, chin up.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Good—remember our five: eyes, feet, hands, timing, temper.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: Will they laugh?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Gentle">>
 Ramu: Maybe—people laugh before they clap, let them finish both.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: What do I do first?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: First, be seen—walk to the captain, say "Substitute reporting," and let the ground learn your name.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Raju—reporting.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Warm">>
 Ramu: One last thing—this isn't magic, it's a memory.
 
 <<SetCharacterExpression "Raju" "Anxious">>
@@ -66,7 +66,7 @@ Ramu: Then go—touch the ground, touch your heart, and let the evening remember
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Raju—reporting.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Warm">>
 Ramu: Play well.
 
 <<HideAllCharacters>>

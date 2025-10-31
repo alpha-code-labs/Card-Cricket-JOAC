@@ -94,7 +94,7 @@ Shiv Prasad: May your boys play well and mine sleep well—both are victories wh
 <<SetCharacterExpression "CoachDev" "Serious">>
 Coach Dev: True—I'll take your leave, and Ramu, you're raising him well.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Gentle">>
 Ramu: Yes, sir.
 
 <<SetCharacterExpression "CoachDev" "Serious">>

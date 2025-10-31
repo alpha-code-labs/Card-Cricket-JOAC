@@ -10,13 +10,13 @@ position: 0,0
 <<PlayBackgroundMusic light_1>>
 <<SetBGSprite "HutInterior">>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: All right captain. Time to buckle down and do revisions. No going out today. Focus on your task.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes sir. On it.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: All the best. I am heading out to work. You focus and remember the 5 coins apply everywhere.
 
 <<SetCharacterExpression "Raju" "Determined">>

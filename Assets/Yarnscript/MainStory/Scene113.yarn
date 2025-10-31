@@ -22,13 +22,13 @@ Ramu: Big ground, bigger noise. Breathe with the drum, not against it.
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: In… hold… out.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Good. Two new things today—stakes and scouts. There's real prize money on the table that can fix the tarp, buy Maa's medicines, and pay your school fees, but it doesn't sit on your shoulders unless you invite it.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: So I keep it on the table, not in my head.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Exactly. Second—see near the scorers' desk? Green umbrella, clipboard, cap pulled low?
 
 <<SetCharacterExpression "Raju" "Anxious">>
@@ -40,79 +40,79 @@ Ramu: He'll pretend he's counting pigeons, but he's watching how you carry yours
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Walk like work. Got it.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Today you'll hear clever jokes thrown like bouncers—let them pass, your reply is your rhythm. If someone bumps you, become water and flow around, don't splash.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Water wins by staying.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: You've been listening. New checklist—three switches to keep on: Calm (slow eyes, steady breath), Courage (say your name when doubt whispers), and Care (for the team, the ground, your bat). If one flickers, touch the red thread.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Calm. Courage. Care. On.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Also, two promises for today: Compete clean—if the call is tight, accept it without shouting. And carry someone else—make a teammate taller with a word, a clap, a nod.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I can do both.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: One secret, too—finish fully. Whatever you start, complete it, because half-decisions break more than bats.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Finish fully. Even if the noise jumps.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Especially then. If your heart runs ahead, look at that rusty nail on the banyan board—one look, one breath, world slows.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Slower already.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Remember why you are here, not why they are. Crowds come for a show; we came to keep a promise—same boy, same work, just a bigger ground.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Familiar work, unfamiliar volume.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Nicely said. About Dev-sir—don't chase his eyes, let them find you working. He respects silence that does the job, and our measure is your compass, not his cap.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Compass says: north is effort.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: East is humility, west is patience, south is team. If some older boy tests you, answer with the ball, not your mouth—steady boys start overs, not arguments.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: You're in coach mode today.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: I'm in brother mode who knows the rent is due. Win or lose, we walk the same way, and if we lift notes later, we lift gratitude first.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: To Maa, to Baba, to the lane, to this bat.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: That's my captain. One more thing—when you hear your name, don't rush: bat face-up for a heartbeat, touch the soil, then pick it to tell the ground you're here to work, not pose.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Work, not pose.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confidentexplaining">>
 Ramu: Alright, the drum is ours now. Whatever happens, we meet by the banyan after the final whistle—no excuses—and count notes or lessons together.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Together.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Warm">>
 Ramu: Go on, little-big man. Let the game find the boy it's been hearing about, and if the world gets faster than you like—
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I slow it. One look, one breath.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: That's it. Play like work.
 
 <<SetCharacterExpression "Raju" "Determined">>

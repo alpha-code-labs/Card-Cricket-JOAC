@@ -6,7 +6,7 @@ position: 0,0
 <<PlayBackgroundMusic  Disappointing_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Worried">>
 Ramu: Captain all ok?
 
 <<SetCharacterExpression "Raju" "Disappointed">>

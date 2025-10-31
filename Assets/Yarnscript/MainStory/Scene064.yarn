@@ -7,13 +7,13 @@ position: 0,0
 <<PlayBackgroundMusic emotional_1>>
 <<SetBGSprite "HutInterior">>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Gentle">>
 Ramu: Baba… two minutes?
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Two minutes become twenty with you boys—say it.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: We want your yes for the academy trial in Matunga.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -34,13 +34,13 @@ Shiv Prasad: Words are light; bus fare is heavy. What will you give up to carry 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I will get up with the first bell, practice only when you say, keep homework clean, and help warm your towel before anything.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: I'll escort him, Baba, and adjust my hours—prize money after ground repairs can cover bus for a while, and if sums don't add up, we stop straight.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Prize money blinks and disappears, but school marks stay on the wall—what about those?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: We'll guard them with evening study sessions, and if the page is messy, the ground is off-limits—same rule as before.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -64,13 +64,13 @@ Raju: Doing the right thing even when no one is watching.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: The city is watching, little one—waiting for you to slip so it can laugh.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Gentle">>
 Ramu: And then clap, Baba—we won't answer with our mouths, we'll answer with habits.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Habits don't hold umbrellas in rain—if the bus is late and shifts are angry?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Then we skip that day with no heroics or lies—safety and school first, because the academy is a door, not our roof.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -82,7 +82,7 @@ Raju: Five coins, Baba—eyes, feet, hands, timing, temper, and I'll be a good t
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Your coach talks smooth, you talk steady—steady is better, but my "no" is about plates and nights, not pride.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confidentexplaining">>
 Ramu: Make it a conditional yes, then. Give us a line we must cross before we step onto that turf.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -100,7 +100,7 @@ Raju: Accepted.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Earning is louder than pleading—from tomorrow, your timetable is a wall, and Ramu, you guard it.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Determined">>
 Ramu: I'll guard it, Baba.
 
 <<SetCharacterExpression "Raju" "Determined">>
