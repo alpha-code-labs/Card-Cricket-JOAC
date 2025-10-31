@@ -7,7 +7,7 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: It's the quarterfinals captain—you're at number 8, last 2 overs remain, get as many runs as you can.
+Ramu: It's the quarterfinals captain—you're at number 8, last 4 overs remain, get as many runs as you can.
 
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: I am scared.

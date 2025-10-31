@@ -11,7 +11,7 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: It's the Quarterfinals captain. We're batting first, you're opening, 15 overs—anything below 150 runs is a problem with their strong batsmen. Are you up for it?
+Ramu: It's the Quarterfinals captain. We're batting first, you're opening, 12 overs—anything below 144 runs is a problem with their strong batsmen. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in, completely focused and ready to roar.

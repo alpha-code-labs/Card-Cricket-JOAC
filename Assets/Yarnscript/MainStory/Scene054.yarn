@@ -10,7 +10,7 @@ position: 0,0
 <<SetBGSprite KohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: It's the Semifinals captain—we're batting first, you're opening, and we need 110+ runs. Are you up for it?
+Ramu: It's the Semifinals captain—we're batting first, you're opening, and we need 88+ runs. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in. Completely focussed. Ready to roar.

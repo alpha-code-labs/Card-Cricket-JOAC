@@ -11,7 +11,7 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: This is it captain—we're chasing 125 in 10 overs, and we need to return the favor. Are you up for it?
+Ramu: This is it captain—we're chasing 104 in 8 overs, and we need to return the favor. Are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in. Completely focussed. Ready to roar.

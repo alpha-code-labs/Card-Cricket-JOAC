@@ -10,7 +10,7 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: This is it captain. We're chasing 185 in 15 overs—our bowlers have been crushed, team spirit is low, nobody's giving us a chance. We need to go all guns blazing, you ready?
+Ramu: This is it captain. We're chasing 180 in 12 overs—our bowlers have been crushed, team spirit is low, nobody's giving us a chance. We need to go all guns blazing, you ready?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: It's now or never—completely focused and ready to roar.
