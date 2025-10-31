@@ -69,7 +69,6 @@ public class QuizManager : MonoBehaviour
     private bool dialogComplete = false;
 
     // Timer Configuration
-    private readonly float[] questionTimers = { 20f, 18f, 15f, 12f, 10f };
 
     void Start()
     {
@@ -206,15 +205,13 @@ public class QuizManager : MonoBehaviour
 
     void SetTimerForQuestion()
     {
-        int timerIndex = 0;
 
-        if (currentQuestionIndex >= 40) timerIndex = 4; // Questions 41-50: 10 seconds
-        else if (currentQuestionIndex >= 30) timerIndex = 3; // Questions 31-40: 12 seconds  
-        else if (currentQuestionIndex >= 20) timerIndex = 2; // Questions 21-30: 15 seconds
-        else if (currentQuestionIndex >= 10) timerIndex = 1; // Questions 11-20: 18 seconds
-        else timerIndex = 0; // Questions 1-10: 20 seconds
+        if (currentQuestionIndex >= 40) currentTimer = 10;// Questions 41-50: 10 seconds
+        else if (currentQuestionIndex >= 30) currentTimer = 12; // Questions 31-40: 12 seconds  
+        else if (currentQuestionIndex >= 20) currentTimer = 15; // Questions 21-30: 15 seconds
+        else if (currentQuestionIndex >= 10) currentTimer = 18; // Questions 11-20: 18 seconds
+        else currentTimer = 20; // Questions 1-10: 20 seconds
 
-        currentTimer = questionTimers[timerIndex];
     }
 
     IEnumerator QuestionTimer()
