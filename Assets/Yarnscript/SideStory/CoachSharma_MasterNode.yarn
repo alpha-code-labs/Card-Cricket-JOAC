@@ -42,16 +42,16 @@ The contrast weighs heavily on his shoulders.
 Yet his determination propels him forward despite the risk of rejection.
 
 <<SetCharacterExpression "CoachSharma"  "Furious">>
-CoachSharma: Hey! You there, boy!
+Coach Sharma: Hey! You there, boy!
 
 <<SetCharacterExpression "CoachSharma"  "Furious">>
-CoachSharma: Who let you into this academy?
+Coach Sharma: Who let you into this academy?
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: These grounds are private property!
+Coach Sharma: These grounds are private property!
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: Not a playground for stray kids from the slums!
+Coach Sharma: Not a playground for stray kids from the slums!
 
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: Sir, I'm sorry for disturbing practice.
@@ -66,43 +66,43 @@ Raju: I've been practicing cricket with my brother.
 Raju: But I know I need proper coaching to really improve.
 
 <<SetCharacterExpression "CoachSharma"  "Disgusted">>
-CoachSharma: Learn? Ha!
+Coach Sharma: Learn? Ha!
 
 <<SetCharacterExpression "CoachSharma"  "Skeptical">>
-CoachSharma: You think watching from the sidelines will magically make you a cricketer?
+Coach Sharma: You think watching from the sidelines will magically make you a cricketer?
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: Boy, cricket isn't a game you learn by osmosis.
+Coach Sharma: Boy, cricket isn't a game you learn by osmosis.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: You need fees - substantial fees.
+Coach Sharma: You need fees - substantial fees.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: You need proper equipment.
+Coach Sharma: You need proper equipment.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: You need years of disciplined training under professional guidance.
+Coach Sharma: You need years of disciplined training under professional guidance.
 
 <<SetCharacterExpression "CoachSharma"  "Irritated">>
-CoachSharma: These boys pay fifteen thousand rupees per month for coaching.
+Coach Sharma: These boys pay fifteen thousand rupees per month for coaching.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: They've been training for years.
+Coach Sharma: They've been training for years.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: They have everything cricket requires.
+Coach Sharma: They have everything cricket requires.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: Resources, commitment, family support.
+Coach Sharma: Resources, commitment, family support.
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: You have none of that.
+Coach Sharma: You have none of that.
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: Go back to your galli cricket with tennis balls and wooden sticks.
+Coach Sharma: Go back to your galli cricket with tennis balls and wooden sticks.
 
 <<SetCharacterExpression "CoachSharma"  "Disgusted">>
-CoachSharma: That's your level.
+Coach Sharma: That's your level.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Maybe I don't have money or fancy equipment now, sir.
@@ -114,19 +114,19 @@ Raju: But one day I'll prove to you that I can play cricket properly.
 Raju: One day you'll see that talent and determination matter more than fees.
 
 <<SetCharacterExpression "CoachSharma"  "Skeptical">>
-CoachSharma: Dreams are cheap, boy.
+Coach Sharma: Dreams are cheap, boy.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: Anyone can dream of playing cricket.
+Coach Sharma: Anyone can dream of playing cricket.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: But discipline is costly.
+Coach Sharma: But discipline is costly.
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: It costs time, money, sacrifice, and commitment.
+Coach Sharma: It costs time, money, sacrifice, and commitment.
 
 <<SetCharacterExpression "CoachSharma"  "Irritated">>
-CoachSharma: Until you understand that difference, you're wasting both my time and yours.
+Coach Sharma: Until you understand that difference, you're wasting both my time and yours.
 
 
 
@@ -161,19 +161,19 @@ The pristine facility represents both the pinnacle of cricket training and the e
 Yet his hunger for genuine improvement compels him to return.
 
 <<SetCharacterExpression "CoachSharma"  "Astonished">>
-CoachSharma: You again?
+Coach Sharma: You again?
 
 <<SetCharacterExpression "CoachSharma"  "Irritated">>
-CoachSharma: Didn't I make myself clear yesterday?
+Coach Sharma: Didn't I make myself clear yesterday?
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: Why do you persist in wasting your time here?
+Coach Sharma: Why do you persist in wasting your time here?
 
 <<SetCharacterExpression "CoachSharma"  "Serious">>
-CoachSharma: This academy is for serious students with serious commitments.
+Coach Sharma: This academy is for serious students with serious commitments.
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
-CoachSharma: Not for curiosity seekers who don't belong.
+Coach Sharma: Not for curiosity seekers who don't belong.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Because I want to learn, sir.
@@ -194,31 +194,31 @@ Raju: I can still observe.
 Raju: Discipline means showing up consistently, doesn't it?
 
 <<SetCharacterExpression "CoachSharma" "Astonished">>
-CoachSharma: Discipline?
+Coach Sharma: Discipline?
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: That's a big word for someone your age.
+Coach Sharma: That's a big word for someone your age.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Most of my own paying trainees don't even understand what real discipline means.
+Coach Sharma: Most of my own paying trainees don't even understand what real discipline means.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Children whose families invest thousands of rupees monthly.
+Coach Sharma: Children whose families invest thousands of rupees monthly.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: These boys have every advantage.
+Coach Sharma: These boys have every advantage.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Proper equipment, dedicated practice time, nutritional support, family backing.
+Coach Sharma: Proper equipment, dedicated practice time, nutritional support, family backing.
 
 <<SetCharacterExpression "CoachSharma" "Irritated">>
-CoachSharma: Yet half of them complain about early training sessions.
+Coach Sharma: Yet half of them complain about early training sessions.
 
 <<SetCharacterExpression "CoachSharma" "Disgusted">>
-CoachSharma: They make excuses about difficult drills.
+Coach Sharma: They make excuses about difficult drills.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: They give up when progress becomes challenging.
+Coach Sharma: They give up when progress becomes challenging.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Then they don't really understand what they have, sir.
@@ -233,19 +233,19 @@ Raju: When you have no guarantees, when every door seems closed.
 Raju: It means showing up because improvement matters more than comfort.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Hmm.
+Coach Sharma: Hmm.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: And you believe you possess this kind of discipline?
+Coach Sharma: And you believe you possess this kind of discipline?
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: You think you understand what serious cricket training requires?
+Coach Sharma: You think you understand what serious cricket training requires?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: How do you plan to prove this discipline to me, boy?
+Coach Sharma: How do you plan to prove this discipline to me, boy?
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Words are easy when there's no real test behind them.
+Coach Sharma: Words are easy when there's no real test behind them.
 
 <<HideAllCharacters>>
 <<AutoAdvance true>>
@@ -268,16 +268,16 @@ position: -308,129
 <<SetCharacterExpression "Raju" "Determined">>
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Consistency?
+Coach Sharma: Consistency?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: That's easy to claim but hard to maintain.
+Coach Sharma: That's easy to claim but hard to maintain.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Most boys your age are full of enthusiasm for a week.
+Coach Sharma: Most boys your age are full of enthusiasm for a week.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Then they find excuses when reality sets in.
+Coach Sharma: Then they find excuses when reality sets in.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Then let me show you that I'm different, sir.
@@ -289,16 +289,16 @@ Raju: I'll do whatever tasks you set, however small.
 Raju: With complete dedication.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Very well.
+Coach Sharma: Very well.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Come back tomorrow.
+Coach Sharma: Come back tomorrow.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Before my regular sessions begin.
+Coach Sharma: Before my regular sessions begin.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: We'll see if your quiet consistency extends to unglamorous preparation work.
+Coach Sharma: We'll see if your quiet consistency extends to unglamorous preparation work.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Thank you, sir.
@@ -327,13 +327,13 @@ position: -55,122
 <<SetCharacterExpression "Raju" "Excited">>
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Passion?
+Coach Sharma: Passion?
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Every boy claims passion when they first discover cricket.
+Coach Sharma: Every boy claims passion when they first discover cricket.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But passion without discipline is just noise and wasted energy.
+Coach Sharma: But passion without discipline is just noise and wasted energy.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Then let me show you passion backed by real commitment, sir.
@@ -345,13 +345,13 @@ Raju: I'll work harder than anyone else.
 Raju: Because cricket means everything to me.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Emotional fire burns bright.
+Coach Sharma: Emotional fire burns bright.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But it often burns out quickly.
+Coach Sharma: But it often burns out quickly.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Come back tomorrow and we'll see if your intensity survives real work.
+Coach Sharma: Come back tomorrow and we'll see if your intensity survives real work.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll be here, sir.
@@ -380,13 +380,13 @@ position: 184,122
 <<SetCharacterExpression "Raju" "Quizzical">>
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Systematic?
+Coach Sharma: Systematic?
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Most boys your age rely on impulse and emotion.
+Coach Sharma: Most boys your age rely on impulse and emotion.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: You think strategic thinking will substitute for raw commitment?
+Coach Sharma: You think strategic thinking will substitute for raw commitment?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I think understanding what's required is the first step, sir.
@@ -398,13 +398,13 @@ Raju: The first step to meeting those requirements.
 Raju: Let me learn your standards and exceed them consistently.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Interesting approach.
+Coach Sharma: Interesting approach.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Come back tomorrow.
+Coach Sharma: Come back tomorrow.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: We'll see if your methodical planning survives the reality of actual work.
+Coach Sharma: We'll see if your methodical planning survives the reality of actual work.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll be ready, sir.
@@ -458,16 +458,16 @@ His punctual arrival demonstrates the depth of his commitment.
 Proving himself through reliable action rather than empty promises.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: You came. Good.
+Coach Sharma: You came. Good.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Here's your test.
+Coach Sharma: Here's your test.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Set up all this equipment quietly and thoroughly.
+Coach Sharma: Set up all this equipment quietly and thoroughly.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Show me that your consistency isn't just initial enthusiasm.
+Coach Sharma: Show me that your consistency isn't just initial enthusiasm.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, sir.
@@ -479,13 +479,13 @@ Raju: I'll handle everything with care.
 Coach Sharma watches as Raju methodically arranges equipment without any complaints.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Most boys would rush this work to impress me.
+Coach Sharma: Most boys would rush this work to impress me.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: You're taking your time, doing it properly.
+Coach Sharma: You're taking your time, doing it properly.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: That shows real discipline.
+Coach Sharma: That shows real discipline.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Quality matters more than speed, sir.
@@ -526,13 +526,13 @@ His energetic approach reflects a belief that emotional intensity can be channel
 Though the time ahead will test whether his fire can illuminate the path through routine labor.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Channel all that fire into this equipment setup.
+Coach Sharma: Channel all that fire into this equipment setup.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Show me that your passion translates to sustained effort.
+Coach Sharma: Show me that your passion translates to sustained effort.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Not just emotional displays.
+Coach Sharma: Not just emotional displays.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Every piece of equipment I move is bringing me closer to real cricket, sir.
@@ -541,13 +541,13 @@ Raju: Every piece of equipment I move is bringing me closer to real cricket, sir
 Raju: That's what drives me.
 
 <<SetCharacterExpression "CoachSharma" "Astonished">>
-CoachSharma: Your intensity is remarkable.
+Coach Sharma: Your intensity is remarkable.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: You're working like someone whose life depends on it.
+Coach Sharma: You're working like someone whose life depends on it.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: That kind of passion might actually survive the long journey ahead.
+Coach Sharma: That kind of passion might actually survive the long journey ahead.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Because it does depend on it, sir.
@@ -590,10 +590,10 @@ Success often depends on intelligent application of effort rather than simply wo
 Though the time ahead will test whether his theoretical planning can adapt to practical realities.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Show me this systematic approach.
+Coach Sharma: Show me this systematic approach.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Organize everything according to your strategic thinking.
+Coach Sharma: Organize everything according to your strategic thinking.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: First the heavy equipment, then the detailed setup.
@@ -605,10 +605,10 @@ Raju: Finishing with quality inspection.
 Raju: Each step builds on the previous one.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: You're not just working hard - you're working smart.
+Coach Sharma: You're not just working hard - you're working smart.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: That combination of planning and execution is exactly what separates good cricketers from great ones.
+Coach Sharma: That combination of planning and execution is exactly what separates good cricketers from great ones.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Understanding the system makes the work more meaningful, sir.
@@ -648,16 +648,16 @@ The period of testing commitment through routine tasks may be giving way to eval
 Though Raju understands that earning this opportunity required first demonstrating reliability and dedication.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Alright, boy.
+Coach Sharma: Alright, boy.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: You've proven you can work without complaint and show up consistently.
+Coach Sharma: You've proven you can work without complaint and show up consistently.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Now comes the real test.
+Coach Sharma: Now comes the real test.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Show me what you can actually do with a cricket bat.
+Coach Sharma: Show me what you can actually do with a cricket bat.
 
 <<SetCharacterExpression "Raju" "Astonished">>
 Raju: Really, sir?
@@ -666,41 +666,41 @@ Raju: Really, sir?
 Raju: You'll actually let me bat in the professional nets?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Don't get ahead of yourself, boy.
+Coach Sharma: Don't get ahead of yourself, boy.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: This isn't a training session - it's purely assessment.
+Coach Sharma: This isn't a training session - it's purely assessment.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: I'm going to bowl ten deliveries at you.
+Coach Sharma: I'm going to bowl ten deliveries at you.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: We'll see what you can do with proper equipment under controlled conditions.
+Coach Sharma: We'll see what you can do with proper equipment under controlled conditions.
 
 // The first delivery reveals raw talent struggling with technical flaws but producing moments of brilliance.
 <<HideAllCharacters>>
 Coach Sharma watches in awe as Raju Handles all the balls properly, playing each ball on its merit.
 
 <<SetCharacterExpression "CoachSharma" "Astonished">>
-CoachSharma: Interesting.
+Coach Sharma: Interesting.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Again.
+Coach Sharma: Again.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Raw talent, definitely.
+Coach Sharma: Raw talent, definitely.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Natural timing that can't be taught.
+Coach Sharma: Natural timing that can't be taught.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But your technique is absolutely terrible.
+Coach Sharma: But your technique is absolutely terrible.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: No proper footwork, grip is completely wrong.
+Coach Sharma: No proper footwork, grip is completely wrong.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Your stance leaves you vulnerable to specific types of delivery.
+Coach Sharma: Your stance leaves you vulnerable to specific types of delivery.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: But I did hit several boundaries, sir!
@@ -709,25 +709,25 @@ Raju: But I did hit several boundaries, sir!
 Raju: And I read your bowling better than I expected!
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Boundaries mean nothing without consistency, boy.
+Coach Sharma: Boundaries mean nothing without consistency, boy.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: What matters is whether you can build a foundation of reliable technique.
+Coach Sharma: What matters is whether you can build a foundation of reliable technique.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: On top of whatever natural ability you possess.
+Coach Sharma: On top of whatever natural ability you possess.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: But... there is something there.
+Coach Sharma: But... there is something there.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Something authentic.
+Coach Sharma: Something authentic.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: You have natural timing, hand-eye coordination.
+Coach Sharma: You have natural timing, hand-eye coordination.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: And the kind of cricket instincts that can't be purchased or trained into someone.
+Coach Sharma: And the kind of cricket instincts that can't be purchased or trained into someone.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Can you teach me proper technique, sir?
@@ -736,13 +736,13 @@ Raju: Can you teach me proper technique, sir?
 Raju: Can you help me build on whatever natural ability I have?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Teaching at this level costs serious money, boy.
+Coach Sharma: Teaching at this level costs serious money, boy.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Money for equipment, facility time, individual instruction, structured progression.
+Coach Sharma: Money for equipment, facility time, individual instruction, structured progression.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Money that I know you and your family don't have.
+Coach Sharma: Money that I know you and your family don't have.
 
 <<HideAllCharacters>>
 
@@ -782,19 +782,19 @@ Coach Sharma's acknowledgment has planted seeds of possibility.
 Seeds that now await uncertain ground to determine whether they can grow into genuine opportunity.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: You're back again, I see.
+Coach Sharma: You're back again, I see.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Yesterday's assessment confirmed what I suspected.
+Coach Sharma: Yesterday's assessment confirmed what I suspected.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: You have genuine natural ability that can't be taught.
+Coach Sharma: You have genuine natural ability that can't be taught.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But talent without proper development is like raw diamond without cutting.
+Coach Sharma: But talent without proper development is like raw diamond without cutting.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Valuable but unrealized.
+Coach Sharma: Valuable but unrealized.
 
 <<SetCharacterExpression "Raju" "Anxious">>
 Raju: Sir, does that mean you might be willing to teach me?
@@ -803,34 +803,34 @@ Raju: Sir, does that mean you might be willing to teach me?
 Raju: Even though I can't afford the regular academy fees?
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: I've been thinking about exactly that question since yesterday's session.
+Coach Sharma: I've been thinking about exactly that question since yesterday's session.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: About what you said.
+Coach Sharma: About what you said.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: About talent and determination mattering more than fees and family wealth.
+Coach Sharma: About talent and determination mattering more than fees and family wealth.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: It's a compelling argument.
+Coach Sharma: It's a compelling argument.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But coaching requires more than good intentions.
+Coach Sharma: But coaching requires more than good intentions.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: I'll make you a deal.
+Coach Sharma: I'll make you a deal.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: One that tests whether your commitment extends beyond verbal promises into actual sacrifice.
+Coach Sharma: One that tests whether your commitment extends beyond verbal promises into actual sacrifice.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Come here every day for the next month before my regular sessions start.
+Coach Sharma: Come here every day for the next month before my regular sessions start.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Do all the setup work.
+Coach Sharma: Do all the setup work.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Equipment management, net arrangement, ground maintenance, facility preparation.
+Coach Sharma: Equipment management, net arrangement, ground maintenance, facility preparation.
 
 <<SetCharacterExpression "Raju" "Astonished">>
 Raju: That's it? Just work?
@@ -839,25 +839,25 @@ Raju: That's it? Just work?
 Raju: I thought you might want me to demonstrate more batting or bowling techniques.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: Just work? Boy, most of my paying students can't handle that schedule consistently.
+Coach Sharma: Just work? Boy, most of my paying students can't handle that schedule consistently.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Cricket excellence isn't built only during practice sessions.
+Coach Sharma: Cricket excellence isn't built only during practice sessions.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: It's built through daily commitment to every aspect of the sport.
+Coach Sharma: It's built through daily commitment to every aspect of the sport.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: Then you'll consider providing actual coaching?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: If you can stick to that schedule for an entire month.
+Coach Sharma: If you can stick to that schedule for an entire month.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: If you can prove that your commitment runs deeper than convenient enthusiasm.
+Coach Sharma: If you can prove that your commitment runs deeper than convenient enthusiasm.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Then maybe I'll spend some time correcting your technique and teaching you strategic elements.
+Coach Sharma: Then maybe I'll spend some time correcting your technique and teaching you strategic elements.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: I'll be here, sir.
@@ -869,16 +869,16 @@ Raju: Every single day on time.
 Raju: You won't have to wait for me or wonder if I'm coming.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
-CoachSharma: We'll see, boy.
+Coach Sharma: We'll see, boy.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Promises are easy to make when excitement is high and reality hasn't set in.
+Coach Sharma: Promises are easy to make when excitement is high and reality hasn't set in.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: But if you can maintain this commitment...
+Coach Sharma: But if you can maintain this commitment...
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Then you might prove worthy of serious coaching investment.
+Coach Sharma: Then you might prove worthy of serious coaching investment.
 
 <<HideAllCharacters>>
 
@@ -920,16 +920,16 @@ The weight of someone who has witnessed dedication that exceeds even that of pay
 The stage is set for a conversation that could determine everything.
 
 <<SetCharacterExpression "CoachSharma" "Astonished">>
-CoachSharma: Three weeks now.
+Coach Sharma: Three weeks now.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Every single day on time.
+Coach Sharma: Every single day on time.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: Without fail, without complaint, without excuses.
+Coach Sharma: Without fail, without complaint, without excuses.
 
 <<SetCharacterExpression "CoachSharma" "Disappointed">>
-CoachSharma: Even my academy students don't demonstrate this level of consistency.
+Coach Sharma: Even my academy students don't demonstrate this level of consistency.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I told you I was serious, sir.
@@ -944,19 +944,19 @@ Raju: Every day for twenty-one days.
 Raju: I've chosen cricket preparation over comfort, commitment over excuses.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Serious, yes. That much is undeniable.
+Coach Sharma: Serious, yes. That much is undeniable.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: You've demonstrated work ethic that exceeds most of my paying students.
+Coach Sharma: You've demonstrated work ethic that exceeds most of my paying students.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: And character that can't be purchased with monthly fees.
+Coach Sharma: And character that can't be purchased with monthly fees.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: But now comes the real question.
+Coach Sharma: But now comes the real question.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-CoachSharma: Are you ready for what comes next?
+Coach Sharma: Are you ready for what comes next?
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: What do you mean, sir?
@@ -965,16 +965,16 @@ Raju: What do you mean, sir?
 Raju: What comes next?
 
 <<SetCharacterExpression "CoachSharma" "Excited">>
-CoachSharma: There's a junior cricket tournament scheduled for next month.
+Coach Sharma: There's a junior cricket tournament scheduled for next month.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: If you can organize a team from your neighborhood, I might consider something.
+Coach Sharma: If you can organize a team from your neighborhood, I might consider something.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Providing unofficial coaching support.
+Coach Sharma: Providing unofficial coaching support.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: Not formal academy training, but guidance that could help you compete effectively.
+Coach Sharma: Not formal academy training, but guidance that could help you compete effectively.
 
 <<SetCharacterExpression "Raju" "Astonished">>
 Raju: Really, sir?
@@ -986,28 +986,28 @@ Raju: You'd actually coach me?
 Raju: Despite everything about fees and barriers you mentioned before?
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Don't get ahead of yourself, boy.
+Coach Sharma: Don't get ahead of yourself, boy.
 
 <<SetCharacterExpression "CoachSharma" "Neutral">>
-CoachSharma: This would be unofficial, after regular academy hours, without guarantees.
+Coach Sharma: This would be unofficial, after regular academy hours, without guarantees.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: But yes...
+Coach Sharma: But yes...
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: Your three weeks of consistent character demonstration have earned you something.
+Coach Sharma: Your three weeks of consistent character demonstration have earned you something.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: A chance I've never offered to any non-paying student.
+Coach Sharma: A chance I've never offered to any non-paying student.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: You've proven that dedication isn't limited to those who can afford premium training.
+Coach Sharma: You've proven that dedication isn't limited to those who can afford premium training.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: If you demonstrate even half your work ethic...
+Coach Sharma: If you demonstrate even half your work ethic...
 
 <<SetCharacterExpression "CoachSharma" "Excited">>
-CoachSharma: You might surprise everyone in that tournament.
+Coach Sharma: You might surprise everyone in that tournament.
 
 <<SetCharacterExpression "Raju" "Overjoyed">>
 Raju: Sir, I promise we won't disappoint you.
@@ -1022,16 +1022,16 @@ Raju: Not just for cricket, but for proving something important.
 Raju: That talent and hard work can compete with privilege and resources.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: Remember this moment, boy.
+Coach Sharma: Remember this moment, boy.
 
 <<SetCharacterExpression "CoachSharma" "Proud">>
-CoachSharma: You've earned recognition not through family connections or fee payments.
+Coach Sharma: You've earned recognition not through family connections or fee payments.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
-CoachSharma: But through character demonstration that impressed a coach who thought he'd seen everything.
+Coach Sharma: But through character demonstration that impressed a coach who thought he'd seen everything.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-CoachSharma: Don't waste this opportunity.
+Coach Sharma: Don't waste this opportunity.
 
 <<HideAllCharacters>>
 

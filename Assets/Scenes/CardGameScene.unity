@@ -12437,14 +12437,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardSprites:
-  - {fileID: 21300000, guid: 5c83ad86f21321a42a711545843b8a5e, type: 3}
+  - {fileID: 21300000, guid: 9f440b9cd38fc5944a3fc52db8e99b6a, type: 3}
   - {fileID: 21300000, guid: 998663c8bc11d93469e123dd578d0727, type: 3}
   - {fileID: 21300000, guid: fdf4c688cac3e844794c05c689f46dd6, type: 3}
   - {fileID: 21300000, guid: 6f5f891fd32213742a4045a757b15dcb, type: 3}
-  - {fileID: 21300000, guid: f4b3a6cee0b90144894096c51c7e492c, type: 3}
   - {fileID: 21300000, guid: 90be6d53e70d5bc42ae26f33c4c1e6aa, type: 3}
   - {fileID: 21300000, guid: 2f9e5b8493340c04da17fb8e1325f872, type: 3}
-  - {fileID: 21300000, guid: 1704ed32e1a27264f998dbf244f6db38, type: 3}
+  - {fileID: 21300000, guid: 3882cbfc879046849882944fda8ead33, type: 3}
   - {fileID: 21300000, guid: bc9150bcb61c14242a5d6890ed7e6fdd, type: 3}
   - {fileID: 21300000, guid: 1470d26380d8b6348ac74bd49d023502, type: 3}
   - {fileID: 21300000, guid: 289621f7aa17b574ea200d8c6844e5ba, type: 3}
