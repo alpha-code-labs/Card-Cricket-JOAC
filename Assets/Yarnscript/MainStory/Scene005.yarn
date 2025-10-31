@@ -36,7 +36,7 @@ Ramu: Good—remember our five: eyes, feet, hands, timing, temper.
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: Will they laugh?
 
-<<SetCharacterExpression "Ramu" "Gentle">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Maybe—people laugh before they clap, let them finish both.
 
 <<SetCharacterExpression "Raju" "Worried">>
