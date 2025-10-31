@@ -4748,12 +4748,7 @@ MonoBehaviour:
   countdownText: {fileID: 608107521}
   totalQuestionsText: {fileID: 1310880316}
   attemptingText: {fileID: 705486704}
-  retryPanel: {fileID: 1855719581}
   topRightPanel: {fileID: 1613215041}
-  characterImage: {fileID: 1613215043}
-  dialogText: {fileID: 1375578136}
-  retryButton: {fileID: 294905053}
-  lightmusic: {fileID: 8300000, guid: ffcd824a1ebe0c04b8f02733f826618a, type: 3}
   winningPanel: {fileID: 671289882}
   progressBar: {fileID: 2086543924}
   loadingText: {fileID: 633469733}
@@ -4766,9 +4761,7 @@ MonoBehaviour:
   backgroundMusicSource: {fileID: 2022267551}
   soundEffectSource: {fileID: 191181166}
   backgroundImage: {fileID: 416717366}
-  dialogMessage: This is non negotiable Captain. Try Again
-  typewriterSpeed: 0.05
-  enableTestingMode: 1
+  enableTestingMode: 0
   testCorrectAnswers: 50
   testWinningKey: 119
   testLosingKey: 108

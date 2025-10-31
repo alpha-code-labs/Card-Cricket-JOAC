@@ -20,14 +20,8 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI totalQuestionsText; // Display total questions
     public TextMeshProUGUI attemptingText; // Display current question number
 
-    [Header("Retry Panel UI")]
-    public GameObject retryPanel;
     public GameObject topRightPanel;
-    public Image characterImage;
-    public TextMeshProUGUI dialogText;
-    public Button retryButton;
-    public AudioClip lightmusic;
-
+   
     [Header("Winning Panel UI")]
     public GameObject winningPanel;
     public Slider progressBar;
@@ -46,10 +40,6 @@ public class QuizManager : MonoBehaviour
     [Header("Background")]
     public Image backgroundImage;
 
-    [Header("Retry Panel Settings")]
-    public string dialogMessage = "This is non negotiable Captain. Try Again";
-    public float typewriterSpeed = 0.05f;
-
     [Header("Testing/Debug")]
     public bool enableTestingMode = false;
     public int testCorrectAnswers = 50; // Set how many you want correct for testing
@@ -65,8 +55,7 @@ public class QuizManager : MonoBehaviour
     private bool gameStarted = false;
 
     // Retry Panel Variables
-    private bool isTyping = false;
-    private bool dialogComplete = false;
+
 
     // Timer Configuration
     private readonly float[] questionTimers = { 20f, 18f, 15f, 12f, 10f };
@@ -105,9 +94,7 @@ public class QuizManager : MonoBehaviour
             backgroundImage.sprite = quizData.backgroundImage;
         }
 
-        // Hide retry panel initially
-        if (retryPanel != null)
-            retryPanel.SetActive(false);
+   
 
         // Hide winning panel initially
         if (winningPanel != null)
@@ -485,120 +472,13 @@ public class QuizManager : MonoBehaviour
     void ShowRetryPanel()
     {
         // Hide quiz UI
-        SetQuizUIActive(false);
+        // SetQuizUIActive(false);
 
-        // Show retry panel
-        if (retryPanel != null)
-            retryPanel.SetActive(true);
-
-        // Setup retry button
-        if (retryButton != null)
-        {
-            retryButton.onClick.RemoveAllListeners();
-            retryButton.onClick.AddListener(OnRetryPressed);
-            retryButton.gameObject.SetActive(false); // Hide initially
-        }
-
-        if(lightmusic != null && backgroundMusicSource != null)
-        {
-            backgroundMusicSource.clip = lightmusic;
-            backgroundMusicSource.Play();
-            backgroundMusicSource.loop = true;
-        }
-
-        // Make sure top right panel is visible
-        if (topRightPanel != null)
-            topRightPanel.SetActive(true);
-
-        // Clear dialog text initially
-        if (dialogText != null)
-            dialogText.text = "";
-
-        // Start typewriter effect
-        StartCoroutine(TypewriterEffect());
+   DialogueScriptCommandHandler.currentNode = "QuizRetry";
+TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
+    //  
     }
 
-    IEnumerator TypewriterEffect()
-    {
-        isTyping = true;
-        if (dialogText != null)
-            dialogText.text = "";
-
-        // Type each character one by one
-        for (int i = 0; i < dialogMessage.Length; i++)
-        {
-            if (dialogText != null)
-                dialogText.text += dialogMessage[i];
-            yield return new WaitForSeconds(typewriterSpeed);
-        }
-
-        isTyping = false;
-        dialogComplete = true;
-
-        // Show retry button after dialog is complete
-        yield return new WaitForSeconds(0.5f);
-        if (retryButton != null)
-        {
-            retryButton.gameObject.SetActive(true);
-            StartCoroutine(AnimateButtonAppear());
-        }
-    }
-
-    IEnumerator AnimateButtonAppear()
-    {
-        if (retryButton != null)
-        {
-            retryButton.transform.localScale = Vector3.zero;
-
-            float timer = 0f;
-            float duration = 0.3f;
-
-            while (timer < duration)
-            {
-                timer += Time.deltaTime;
-                float scale = Mathf.Lerp(0f, 1f, timer / duration);
-                retryButton.transform.localScale = Vector3.one * scale;
-                yield return null;
-            }
-
-            retryButton.transform.localScale = Vector3.one;
-        }
-    }
-
-public void OnRetryPressed()
-{
-    if (!dialogComplete) return;
-
-    // Hide retry panel
-    if (retryPanel != null)
-        retryPanel.SetActive(false);
-
-    // Restore original background music
-    if (quizData.backgroundMusic != null && backgroundMusicSource != null)
-    {
-        backgroundMusicSource.Stop(); // Stop current music
-        backgroundMusicSource.clip = quizData.backgroundMusic;
-        backgroundMusicSource.loop = true;
-        backgroundMusicSource.Play();
-    }
-
-    // Reset game state
-    currentQuestionIndex = 0;
-    wrongAnswersCount = 0;
-    correctAnswersCount = 0;
-    isTyping = false;
-    dialogComplete = false;
-
-    // Reset cross images to normal
-    for (int i = 0; i < crossImages.Length; i++)
-    {
-        crossImages[i].color = Color.white;
-    }
-
-    // Restart quiz
-    SetQuizUIActive(true);
-    StartQuiz();
-}
 
     void SetQuizUIActive(bool active)
     {
@@ -642,21 +522,7 @@ public void OnRetryPressed()
             if (Input.GetKeyDown(KeyCode.Alpha6)) TestWinWithCorrect(50); // 100%
         }
 
-        // Skip typewriter effect on click during retry panel
-        if (isTyping && Input.GetMouseButtonDown(0))
-        {
-            // Skip typewriter effect and show full text immediately
-            StopAllCoroutines();
-            if (dialogText != null)
-                dialogText.text = dialogMessage;
-            isTyping = false;
-            dialogComplete = true;
-            if (retryButton != null)
-            {
-                retryButton.gameObject.SetActive(true);
-                retryButton.transform.localScale = Vector3.one;
-            }
-        }
+   
     }
 
 
