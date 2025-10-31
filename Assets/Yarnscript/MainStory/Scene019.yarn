@@ -8,7 +8,7 @@ position: 0,0
  <<PlayBackgroundMusic "Emotional_1">>
 <<SetBGSprite hutInterior>>
 
-<<SetCharacterExpression "Ramu" "Gentle">>
+<<SetCharacterExpression "Ramu" "Sad">>
 Ramu: Maa… Baba… can I talk for two minutes straight?
 
 <<SetCharacterExpression "Kamla" "Smiling">>
