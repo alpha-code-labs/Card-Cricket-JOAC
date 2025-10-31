@@ -22,6 +22,11 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
+        dateText.text = "";
+        if (currentEventIndex == 0)
+            SetFilmGrain(true);
+        else
+            SetFilmGrain(false);
     }
     public void BeginNewDaySequence()
     {
@@ -32,7 +37,6 @@ public class NewDayManager : MonoBehaviour
 
     IEnumerator StartEventWithTransition()
     {
-        // AudioSFXManager.instance.PlayOneShotSFX(SFXType.HeartBeat);
         string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
@@ -43,15 +47,9 @@ public class NewDayManager : MonoBehaviour
         EventRecord events = currentDateRecord.events[currentEventIndex];
         if (currentEventIndex == 0)
         {
-            SetFilmGrain(true);
             DateTime previousDate = CalanderSystem.instance.GetPreviousDateTime(GameManager.instance.currentSaveData.currentDate);
             DateTime currentDate = DateTime.Parse(GameManager.instance.currentSaveData.currentDate);
             yield return AnimateDateProgression(previousDate, currentDate);
-        }
-        else
-        {
-            SetFilmGrain(false);
-            dateText.text = "";
         }
 
         Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
