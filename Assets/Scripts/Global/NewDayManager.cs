@@ -22,7 +22,6 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
-        BeginNewDaySequence();
     }
     public void BeginNewDaySequence()
     {
