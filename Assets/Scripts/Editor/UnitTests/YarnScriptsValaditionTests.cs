@@ -50,6 +50,7 @@ public static class YarnScriptsValaditionTests
             //Test to Run
             issues.AddRange(TestYarnCommands(text));
             issues.AddRange(TestCharacterSpriteShownDuringNarration(text, path));
+            //TODO: add test for CamelCase Names \b(?=[A-Za-z]*[A-Z][A-Za-z]*[A-Z])[A-Za-z]+\b: like ShivPrashad
         }
         issues.AddRange(TestCalanderSystemAndYarnNodes());
         issues = issues.Distinct().ToList();
