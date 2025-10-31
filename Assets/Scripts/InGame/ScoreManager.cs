@@ -827,7 +827,8 @@ public class ScoreManager : MonoBehaviour
             chaseDisplayText.gameObject.SetActive(true);
         }
         //show pause intruction
-         gamePuaseInstructionText.SetActive(true);
+        if(gamePuaseInstructionText != null)
+            gamePuaseInstructionText.SetActive(true);
     }
     IEnumerator UpdateRedrawButtonRoutine()
     {

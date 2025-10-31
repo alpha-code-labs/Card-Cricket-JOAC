@@ -8,13 +8,13 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: It's the semifinals captain - we're batting first and you're at number 8 with 4 overs remaining. Every run is vital against their strong batting lineup, so are you up for it?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in - completely focussed and ready to roar.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

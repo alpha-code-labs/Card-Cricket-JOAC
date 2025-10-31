@@ -6,7 +6,7 @@ position: 0,0
 <<PlayBackgroundMusic  Disappointing_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Captain. Could have been a better performance. Play as per the situation. You should have played a few more aggressive shots to get more runs.
 
 <<SetCharacterExpression "Raju" "Determined">>
@@ -17,9 +17,11 @@ Ramu: That's my boy - always stay hungry and greedy when it comes to scoring run
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes I am aware. I am completely switched on. I can do this.
-
+-> Try Again
+    <<RetryEvent "Card Gameplay 7">>
+-> Continue
+	<<EndEvent>>
 <<HideAllCharacters>>
-<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

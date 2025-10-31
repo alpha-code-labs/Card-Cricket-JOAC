@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite "HutInterior">>
 
 <<SetCharacterExpression "CoachDev" "Excited">>
-CoachDev: Permission to make noise?
+Coach Dev: Permission to make noise?
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: If the noise is short and respectful.
@@ -20,19 +20,19 @@ Ramu: Come in, Dev-sir.
 Raju: I did it Sir.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: I heard before your feet reached the lane—Shiv Prasadji, congratulations, you kept a hard line and he crossed it.
+Coach Dev: I heard before your feet reached the lane—Shiv Prasadji, congratulations, you kept a hard line and he crossed it.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: He did—the house ate dal sweeter than usual today.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Top work—numbers first, then nets, that's how the game shakes hands with life. Proud of you.
+Coach Dev: Top work—numbers first, then nets, that's how the game shakes hands with life. Proud of you.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Thank you, sir.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: May I talk next steps—no pressure, just a clean plan?
+Coach Dev: May I talk next steps—no pressure, just a clean plan?
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Talk—the door is open because the boy opened it.
@@ -41,34 +41,34 @@ Shiv Prasad: Talk—the door is open because the boy opened it.
 Ramu: We're ready with notebooks if needed.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Good. Phase One is trial and onboarding—we need documents (school ID, ration card, two passport photos), I'll help with birth certificate if missing. Choose Saturday evening or Sunday morning for trial, and parent signature on a simple consent form I'll bring.
+Coach Dev: Good. Phase One is trial and onboarding—we need documents (school ID, ration card, two passport photos), I'll help with birth certificate if missing. Choose Saturday evening or Sunday morning for trial, and parent signature on a simple consent form I'll bring.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Cost?
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Trial is free, and if he clears it we push for a fee waiver. Even with a waiver there's bus fare and small things—I can arrange a shared ride with two boys from your side for the first month.
+Coach Dev: Trial is free, and if he clears it we push for a fee waiver. Even with a waiver there's bus fare and small things—I can arrange a shared ride with two boys from your side for the first month.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Time?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: We keep school first—Tuesday and Thursday evenings for one hour, Sunday morning for longer net, no late nights. On exam weeks we pause automatically.
+Coach Dev: We keep school first—Tuesday and Thursday evenings for one hour, Sunday morning for longer net, no late nights. On exam weeks we pause automatically.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: I'll escort him.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Done. Phase Two is kit basics—not the fancy bag, just what keeps him safe: inner gloves and abdominal guard at wholesale, second-hand pads if available or he'll rotate with the lane set. I'll pay Ganesh cycle-wala to redo his soles from the academy fund.
+Coach Dev: Done. Phase Two is kit basics—not the fancy bag, just what keeps him safe: inner gloves and abdominal guard at wholesale, second-hand pads if available or he'll rotate with the lane set. I'll pay Ganesh cycle-wala to redo his soles from the academy fund.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Food?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Banana before, chana after, water through—if there's milk great, if not no guilt. Fuel is discipline as much as diet.
+Coach Dev: Banana before, chana after, water through—if there's milk great, if not no guilt. Fuel is discipline as much as diet.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Three things—shape (how your stance holds under real pace), choices (when you leave or commit), and character (how you react to bad calls or loud bowlers). You've already shown me that third one.
+Coach Dev: Three things—shape (how your stance holds under real pace), choices (when you leave or commit), and character (how you react to bad calls or loud bowlers). You've already shown me that third one.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Choices—no half-yes.
@@ -76,7 +76,7 @@ Ramu: Choices—no half-yes.
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: And the studies?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: We lock it in writing—drop below eighty-five in any term and we reduce sessions until it's fixed. Training is a ladder, not a tunnel.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
@@ -86,16 +86,16 @@ Shiv Prasad: We also keep one rule from home—no boasting on roads, no sulking 
 Ramu: That rule is now academy policy for him—I'll put it on my board.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Last bit is communication—if money pinches you call me, if he's tired you tell me, and if a coach raises a voice I'll ensure it raises teaching, not fear.
+Coach Dev: Last bit is communication—if money pinches you call me, if he's tired you tell me, and if a coach raises a voice I'll ensure it raises teaching, not fear.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: And if the city throws rain at this plan?
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Then we practice under the stand or go home early—safety, school, and dignity always first.
+Coach Dev: Then we practice under the stand or go home early—safety, school, and dignity always first.
 
 <<SetCharacterExpression "CoachDev" "Excited">>
-CoachDev: Enough planning—come here, all of you, this is the part I'm not strict about.
+Coach Dev: Enough planning—come here, all of you, this is the part I'm not strict about.
 
 <<HideAllCharacters>>
 <<EndEvent>>

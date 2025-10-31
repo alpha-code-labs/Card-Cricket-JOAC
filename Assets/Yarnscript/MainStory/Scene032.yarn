@@ -9,7 +9,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Semifinals. We're chasing 40 in 24 balls.
+Ramu: Semifinals. We're chasing 72 in 36 balls.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Two runs a ball. Need to play strong.

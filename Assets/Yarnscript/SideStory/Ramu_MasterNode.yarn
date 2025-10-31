@@ -315,7 +315,7 @@ The ground provides peaceful escape from crowded chaos. Raju and Ramu sit togeth
 <<SetCharacterExpression Raju Quizzical>>
 Raju: Bhaiya, can I ask you something?
 
-<<SetCharacterExpression Ramu Neutral>>
+<<SetCharacterExpression Ramu Quizzical>>
 Ramu: What is it?
 
 <<SetCharacterExpression Raju Quizzical>>

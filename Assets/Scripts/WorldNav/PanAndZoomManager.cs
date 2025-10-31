@@ -5,7 +5,7 @@ public class PanAndZoomManager : MonoBehaviour
     [SerializeField] private float swipeSensitivity = 1f; // Adjust camera movement speed
     [SerializeField] private float pinchSensitivity = 1f; // Adjust zoom speed
     [SerializeField] private float MinZoom = 2f;
-    [SerializeField] private NavigationType navigationType = NavigationType.DragPan;
+    private NavigationType navigationType = NavigationType.DragPan;
     [SerializeField] private float edgePanSpeed = 5f; // Speed for edge panning
     [SerializeField] private float edgePanBorder = 50f; // Pixel distance from edge to trigger panning
     private float MaxZoom = 21f;
@@ -19,6 +19,12 @@ public class PanAndZoomManager : MonoBehaviour
     void Start()
     {
         // InitCamera(boxCollider2D);
+#if UNITY_ANDROID
+        navigationType = NavigationType.DragPan;
+#endif
+#if UNITY_EDITOR
+        navigationType = NavigationType.EdgePan;
+#endif
     }
     [SerializeField] BoxCollider2D boxCollider2D;
     internal void InitCamera(BoxCollider2D cameraBoundsCollider)

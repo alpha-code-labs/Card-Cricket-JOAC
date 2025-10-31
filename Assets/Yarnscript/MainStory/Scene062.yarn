@@ -8,97 +8,97 @@ position: 0,0
 <<SetBGSprite "KohliwadaGround">>
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Ramu, right?
+Coach Dev: Ramu, right?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Yes, sir.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: I run a small academy nearby in Matunga, and I've been watching your brother—ten years old?
+Coach Dev: I run a small academy nearby in Matunga, and I've been watching your brother—ten years old?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Just turned.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: I could see that—the name is already traveling between overs, so who's been coaching him?
+Coach Dev: I could see that—the name is already traveling between overs, so who's been coaching him?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Our lane, sir—dawn near the handpump with chalk, rubber balls, this bat, and habits of eyes, feet, hands, timing, and temper.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Not a bad syllabus. Where's he now?
+Coach Dev: Not a bad syllabus. Where's he now?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: With the team sharing chai and the tiny trophy—I told him to listen more than he speaks.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Good. Tell me about home. Schooling, parents, work shifts… I like to know the ground a boy is growing in.
+Coach Dev: Good. Tell me about home. Schooling, parents, work shifts… I like to know the ground a boy is growing in.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Baba works nights at the rolling mill, Maa cleans high-rises morning and afternoon—we manage with what comes and keep Raju's homework before everything.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Non-negotiable. And he listens?
+Coach Dev: Non-negotiable. And he listens?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: He has learned to—missing once is fine, missing manners isn't, because we don't let poverty steal our manners.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Diet?
+Coach Dev: Diet?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: We do what we can—bananas on match days, chana most evenings, milk when there's extra, and prize money goes to ground repairs then home needs.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Gear?
+Coach Dev: Gear?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: Second-hand pads later, not now—our mochi fixes shoes, I sand the bat with brick, and we keep the face up because respect is free.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: You speak like a coach and a brother both. Any pressure from family to stop this and focus only on studies?
+Coach Dev: You speak like a coach and a brother both. Any pressure from family to stop this and focus only on studies?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: We had that talk—they gave us three months that became fourteen, as long as marks don't fall and we don't borrow money.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Paperwork—birth certificate, school ID, address proof?
+Coach Dev: Paperwork—birth certificate, school ID, address proof?
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Calmlyexplaining">>
 Ramu: School ID and ration card, yes—birth certificate I can find, or we can get a duplicate from the ward office.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: We can help with that later if needed. You know why I'm asking.
+Coach Dev: We can help with that later if needed. You know why I'm asking.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Because a boy's story matters more than a highlight reel.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Exactly. Talent is loud, background is the volume knob—and when I see a boy who sees the ball early and his ego late, I ask questions.
+Coach Dev: Exactly. Talent is loud, background is the volume knob—and when I see a boy who sees the ball early and his ego late, I ask questions.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: He's steady, sir. Special happens to steady boys when the world looks away.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: I'd like to meet your parents. If your father is on the night shift, maybe now?
+Coach Dev: I'd like to meet your parents. If your father is on the night shift, maybe now?
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: He leaves after the eight-o'clock bell, and we can catch him before he goes—it's a small walk from here.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Good. Let's go while the dust is still on your shoes.
+Coach Dev: Good. Let's go while the dust is still on your shoes.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: This way, sir—watch your step near the drain where the light fades faster.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: I can see, and Ramu—whatever happens next, don't change the lane inside his head.
+Coach Dev: I can see, and Ramu—whatever happens next, don't change the lane inside his head.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Same bell, same breath. He'll stay Raju.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Then take me to the door that raised him.
+Coach Dev: Then take me to the door that raised him.
 
 <<HideAllCharacters>>
 <<EndEvent>>

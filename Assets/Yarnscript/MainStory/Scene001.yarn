@@ -77,7 +77,7 @@ Raju: I can give it biscuits.
 Raju: But discipline… does it taste like karela?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: Worse. But good for you. Listen—if you accept this gift, there are rules.
 
 
@@ -121,10 +121,10 @@ Ramu: That's your future photo. Space kept ready.
 Raju: I will try.
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Good—heavy makes your hands strong. Now stand up for the first lesson.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Bottom hand firm, top hand gentle—not strangling a chicken, guiding a kite.
 
 
@@ -132,7 +132,7 @@ Ramu: Bottom hand firm, top hand gentle—not strangling a chicken, guiding a ki
 Raju: Like this?
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Teaching">>
 Ramu: Better—feet shoulder width, knees bent, eyes on the ball.
 
 
@@ -180,10 +180,10 @@ Ramu: I had my turn.
 Raju: Bhai… when I hold it, my hands shake.
 
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Warm">>
 Ramu: That's because you can feel its history—listen to it and let it guide you.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Serious">>
 Ramu: And one more rule.
 
 

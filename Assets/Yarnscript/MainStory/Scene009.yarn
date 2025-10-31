@@ -6,7 +6,7 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite KohliwadaGround>>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Captain, well played—good effort.
 
 <<SetCharacterExpression "Raju" "Disappointed">>
@@ -17,9 +17,11 @@ Ramu: That's my boy—always stay hungry, always be greedy when it comes to scor
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, I am completely switched on—I can do this.
-
+-> Try Again
+    <<RetryEvent "Card Gameplay 1">>
+-> Continue
+	<<EndEvent>>
 <<HideAllCharacters>>
-<<EndEvent>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

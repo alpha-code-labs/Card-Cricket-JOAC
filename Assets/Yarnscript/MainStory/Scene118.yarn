@@ -10,13 +10,13 @@ position: 0,0
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite "KohliwadaGround">>
 
-<<SetCharacterExpression "Ramu" "Neutral">>
-Ramu: It's the Semifinals today captain. We're batting first, you're opening, we need 145 runs in the first 15 overs. Hang in there and watch the swing and the seam.
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: It's the Semifinals today captain. We're batting first, you're opening, we need 156 runs in the first 12 overs. Hang in there and watch the swing and the seam.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I am all in, completely focused and ready to roar.
 
-<<SetCharacterExpression "Ramu" "Neutral">>
+<<SetCharacterExpression "Ramu" "Confident">>
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>

@@ -7,7 +7,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Finals captain. They made 114, you are in at number 5. Last 3 overs we need 35 to win.
+Ramu: Finals captain. They made 157, you are in at number 5. Last 6 overs we need 78 to win.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Understood.
