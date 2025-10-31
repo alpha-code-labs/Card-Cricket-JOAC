@@ -16,7 +16,7 @@ Ramu: This is it captain. We're chasing 185 in 15 overs—our bowlers have been 
 Raju: It's now or never—completely focused and ready to roar.
 
 <<SetCharacterExpression "CoachDev" "Serious">>
-CoachDev: Focus my boy—play the ball on its merit, don't go swinging.
+Coach Dev: Focus my boy—play the ball on its merit, don't go swinging.
 
 <<SetCharacterExpression "Ramu" "Neutral">>
 Ramu: Lets go champion.

@@ -14,31 +14,31 @@ Ramu: Captain, we did it—you're a star. Maa's medicines, Baba's knee towel, ne
 Raju: I tried my best.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Humble and grounded. That's my boy.
+Coach Dev: Humble and grounded. That's my boy.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: I am deeply obliged that you came to watch me play sir.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: I wouldn't have missed it for the world.
+Coach Dev: I wouldn't have missed it for the world.
 
 <<SetCharacterExpression "Ramu" "Serious">>
 Ramu: The real test is in 24 hours sir—90% or his dream evaporates.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Let him enjoy today and relax.
+Coach Dev: Let him enjoy today and relax.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: No sir, I've got to rush him to study—time is vital and I need to prepare for my weak spots.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: That's my boy—never misses a beat.
+Coach Dev: That's my boy—never misses a beat.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: He has been trained well.
 
 <<SetCharacterExpression "CoachDev" "Smiling">>
-CoachDev: Of course. This is all you Ramu. Raju is lucky to have a mentor like you.
+Coach Dev: Of course. This is all you Ramu. Raju is lucky to have a mentor like you.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Yes sir. I am lucky beyond words to have bhaiyya in my life.
