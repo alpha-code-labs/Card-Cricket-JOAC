@@ -47,7 +47,13 @@ public class NewDayManager : MonoBehaviour
             SetFilmGrain(true);
             DateTime previousDate = CalanderSystem.instance.GetPreviousDateTime(GameManager.instance.currentSaveData.currentDate);
             DateTime currentDate = DateTime.Parse(GameManager.instance.currentSaveData.currentDate);
-            yield return AnimateDateProgression(previousDate, currentDate);
+            if (currentDate == previousDate && currentDate == DateTime.Parse("1988/07/18"))
+            {
+                //Special Case for first day of game no animation
+                yield return DisplayTextThenFade(PrettyStrings.GetPrettyDateString(currentDate.ToString()) + "\nSomewhere in Dharavi, Mumbai");
+            }
+            else
+                yield return AnimateDateProgression(previousDate, currentDate);
         }
         else
         {
