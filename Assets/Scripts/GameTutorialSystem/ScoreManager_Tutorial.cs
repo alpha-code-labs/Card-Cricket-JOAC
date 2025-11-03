@@ -154,10 +154,10 @@ public class ScoreManager_Tutorial : MonoBehaviour
         BallThrow currentBallThrow = CardsPoolManager_Tutorial.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
-        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
+        OutcomeResult outcomeResult = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
 
-
+        OutCome outcome = outcomeResult.outcome;
 
         // Play animation sequence
         if (CardPlayAnimationController.Instance != null)

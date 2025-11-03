@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6b2c8aedbe9294cae57c961502a6d0, type: 3}
   m_Name: OutComeCalculator
   m_EditorClassIdentifier: 
-  friendlyExcelFilePath: Data/cricket_outcomes_v10.xlsx
-  hostileExcelFilePath: Data/cricket_outcomes_v10.xlsx
+  friendlyExcelFilePath: Data/cricket_outcomes_v10_commentary.xlsx
+  hostileExcelFilePath: Data/cricket_outcomes_v10_commentary.xlsx
   friendlyOutcomeEntries:
   - typeOfBowler: 0
     side: 1

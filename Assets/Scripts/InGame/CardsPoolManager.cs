@@ -152,7 +152,7 @@ public class CardsPoolManager : MonoBehaviour
         if (gameplayConfig == null)
         {
             Debug.Log("loading gameplay 2 in CardsPoolManager as date is null");
-            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/03/28");
+            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
         }
          ScoreManager.OnWideBall += HandleWideBall;
     }
