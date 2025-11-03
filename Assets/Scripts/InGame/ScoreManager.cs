@@ -114,6 +114,8 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] Color scoreIncreaseColor = new Color(0.4f, 1f, 0.4f); // Green
     [SerializeField] Color ballDecreaseColor = new Color(1f, 0.8f, 0.2f); // Yellow-orange
 
+    public static event System.Action<int> OnWideBall;
+
     private bool gameEnded = false;
     private int previousRuns;
     private int previousWickets;
@@ -525,6 +527,12 @@ public class ScoreManager : MonoBehaviour
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
         OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
+        
+        //on wide
+        if((int)outcome == -3)
+        {
+            OnWideBall.Invoke(-3);
+        }
         //play batting sound
         if((int)outcome != -3 && (int)outcome != -4)
             gameAudioSource.Play();

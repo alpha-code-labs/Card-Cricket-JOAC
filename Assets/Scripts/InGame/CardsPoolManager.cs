@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using System.Linq;
 
 public class CardsPoolManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class CardsPoolManager : MonoBehaviour
     [SerializeField] GameObject countdownPanel; // Panel to show countdown
     [SerializeField] TextMeshProUGUI countdownText; // Text for 3, 2, 1 countdown
     [SerializeField] float countdownDuration = 1f;
-     [SerializeField] AnimationCurve countdownScaleCurve = AnimationCurve.EaseInOut(0, 1, 1, 1.5f);
+    [SerializeField] AnimationCurve countdownScaleCurve = AnimationCurve.EaseInOut(0, 1, 1, 1.5f);
     [Header("Card Decks")]
     [SerializeField] List<AttackCardData> Deck;
     [Header("Piles")]
@@ -30,6 +31,10 @@ public class CardsPoolManager : MonoBehaviour
     private int maxRedraws; // Maximum redraws per game
     private int redraws = 0; // Track number of redraws used
     private bool cardsInteractable = true;
+    
+    [Header("Smart Card Selection")]
+    [SerializeField] bool useSmartCardSelection = true; // Toggle for smart card selection
+    [SerializeField] float debugRunRateOverride = -1f; // For testing specific run rates, -1 means use actual
 
     [Header("Reffrences")]
     [SerializeField] Transform hand; // Transform to parent drawn cards
@@ -49,6 +54,10 @@ public class CardsPoolManager : MonoBehaviour
     public GameplayConfig gameplayConfig;
 
     public GameObject ballerCardPrefab;
+    
+    // Track which cards have been created for smart selection
+    private Dictionary<BattingStrategy, AttackCardProps> cardPropsMap = new Dictionary<BattingStrategy, AttackCardProps>();
+
     void Awake()
     {
         if (GameManager.instance != null)
@@ -58,7 +67,7 @@ public class CardsPoolManager : MonoBehaviour
                 case 1: maxHandSize = baseMaxHandSize + 1; break;
                 case 2: maxHandSize = baseMaxHandSize + 1; break;
                 case 3: maxHandSize = baseMaxHandSize + 2; break;
-                default:  maxHandSize = baseMaxHandSize; break;
+                default: maxHandSize = baseMaxHandSize; break;
             }
             maxRedraws = baseMaxRedraws + GameManager.instance.currentSaveData.courage;
         }
@@ -71,6 +80,64 @@ public class CardsPoolManager : MonoBehaviour
         Instance = this;
     }
 
+    public void HandleWideBall(int x)
+    {
+        //when wide occurs add a ball
+        
+        //get current overs bowlerType and bowlerSide
+        BallThrow CurrentBallThrow = BallThrows[ballCount];
+        TypeOfBowler bowlerType = CurrentBallThrow.bowlerType;
+        Side bowlerSide = CurrentBallThrow.bowlerSide;
+
+        //generate a random ball for the same over
+        BallThrow ball = GenerateSafeBall(bowlerType, bowlerSide);
+
+        //insert it in the list
+        BallThrows.Insert(ballCount + 1, ball);
+
+        Debug.Log("Inserted one ball of bowlerType " + bowlerType + " and side " + bowlerSide + " after encountering wide ball");
+    }
+    
+    private BallThrow GenerateSafeBall(TypeOfBowler bowlerType, Side bowlerSide)
+    {
+        BallThrow safeBall = null;
+        int attempts = 0;
+        const int MAX_ATTEMPTS = 100;
+        
+        // Get pitch condition from gameplayConfig
+        PitchCondition pitchCondition = gameplayConfig != null ? gameplayConfig.pitchCondition : PitchCondition.Friendly;
+        
+        while (attempts < MAX_ATTEMPTS)
+        {
+            BallThrow candidateBall = ExcelDataSOManager.Instance.outComeCalculator.GetRandomBallThrow(
+                bowlerType, bowlerSide, pitchCondition);
+            attempts++;
+            
+            // Ensure it's not an extreme ball
+            if (candidateBall.ballLine != BallLine.WayOutsideOff && 
+                candidateBall.ballLine != BallLine.WayDowntheLeg &&
+                candidateBall.ballLength != BallLength.Yorker)
+            {
+                safeBall = candidateBall;
+                break;
+            }
+        }
+        
+        // Fallback to create a default safe ball if generation fails
+        if (safeBall == null)
+        {
+            Debug.LogWarning("Could not generate safe ball, using default");
+            safeBall = new BallThrow()
+            {
+                ballLength = BallLength.FullLength,
+                ballLine = BallLine.OffStump
+            };
+        }
+        
+        return safeBall;
+    }
+
+
     void Start()
     {
         StartCoroutine(WaitAndStartTurn());
@@ -82,11 +149,12 @@ public class CardsPoolManager : MonoBehaviour
         {
             Debug.LogError("GameplayConfiguration.Instance is null!");
         }
-        if(gameplayConfig == null)
+        if (gameplayConfig == null)
         {
             Debug.Log("loading gameplay 2 in CardsPoolManager as date is null");
-            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
+            gameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/03/28");
         }
+         ScoreManager.OnWideBall += HandleWideBall;
     }
 
     IEnumerator WaitAndStartTurn()
@@ -95,7 +163,16 @@ public class CardsPoolManager : MonoBehaviour
         if (gameplayConfig != null)
             InitTextDeck(gameplayConfig.pitchCondition); // Initialize the deck with random cards for batting and bowling disable to keep deck in scene
         else InitTextDeck(PitchCondition.Friendly);
-        InstantiateCards();
+        
+        if (useSmartCardSelection)
+        {
+            InstantiateAllPossibleCards(); // Create all cards for smart selection
+        }
+        else
+        {
+            InstantiateCards(); // Original random card instantiation
+        }
+        
          yield return new WaitForSeconds(1f);
         StartTurn();
     }
@@ -135,15 +212,121 @@ public class CardsPoolManager : MonoBehaviour
         ballerCard = InstantiateBallerCard(CurrentBallThrow);
         BallThrowText.text = CurrentBallThrow.ToString();
 
-        // Draw cards for new turn
-        for (int i = 0; i < maxHandSize; i++)
+        // Use smart card selection or traditional random draw
+        if (useSmartCardSelection)
         {
-            DrawCard();
+            DrawSmartCards();
+        }
+        else
+        {
+            // Original random card drawing
+            for (int i = 0; i < maxHandSize; i++)
+            {
+                DrawCard();
+            }
         }
 
         Timer.Instance.StartTurnTimer();
         OnTurnStarted?.Invoke();
     }
+    
+    void DrawSmartCards()
+    {
+        Debug.Log("target score :" + ScoreManager.Instance.TargetScore);
+        Debug.Log("current score :" + ScoreManager.Instance.currentRuns);
+        Debug.Log("Max balls: " + ScoreManager.Instance.MaxBalls);
+        Debug.Log("CurrentTurn: " + CurrntTurn);
+        // Calculate run rate
+       float runRate = ScoreManager.Instance.MaxBalls - CurrntTurn > 0 
+        ? (float)(ScoreManager.Instance.TargetScore - ScoreManager.Instance.currentRuns) 
+            / (ScoreManager.Instance.MaxBalls - CurrntTurn) 
+        : 0f;
+        
+        // Get smart card selection based on current game state
+        List<AttackCardData> smartSelection = CardSelectionLogic.GetSmartCardSelection(
+            CurrentBallThrow,
+            maxHandSize,
+            runRate,
+            CurrntTurn,
+            ScoreManager.Instance.MaxBalls,
+            ScoreManager.Instance.currentRuns
+        );
+        
+        Debug.Log($"Drawing Smart Cards - Run Rate: {runRate:F2}, Ball: {CurrentBallThrow.ballLength} {CurrentBallThrow.ballLine}");
+        
+        // Clear current hand
+        foreach (var card in HandCards)
+        {
+            if (card != null && card.gameObject != null)
+            {
+                card.gameObject.SetActive(false);
+            }
+        }
+        HandCards.Clear();
+        
+        // Add the smart selected cards to hand
+        foreach (var cardData in smartSelection)
+        {
+            AttackCardProps cardProp = GetOrCreateCardProp(cardData.excelBattinStrategy);
+            
+            if (cardProp != null)
+            {
+                // Move from draw pile or discard pile to hand
+                if (DrawPile.Contains(cardProp))
+                {
+                    DrawPile.Remove(cardProp);
+                }
+                else if (DiscardPile.Contains(cardProp))
+                {
+                    DiscardPile.Remove(cardProp);
+                }
+                
+                HandCards.Add(cardProp);
+                cardProp.gameObject.SetActive(true);
+            }
+        }
+        
+        // Refresh hand arrangement
+        SimpleHandArcManager arcManager = hand.GetComponent<SimpleHandArcManager>();
+        if (arcManager != null)
+            arcManager.RefreshCardArrangement();
+    }
+    
+    AttackCardProps GetOrCreateCardProp(BattingStrategy strategy)
+    {
+        // Check if we already have this card created
+        if (cardPropsMap.ContainsKey(strategy))
+        {
+            return cardPropsMap[strategy];
+        }
+        
+        // Create new card if not exists
+        AttackCardProps card = Instantiate(cardPrefab, hand).GetComponent<AttackCardProps>();
+        card.cardData = new AttackCardData(strategy);
+        cardPropsMap[strategy] = card;
+        card.gameObject.SetActive(false);
+        
+        return card;
+    }
+    
+    void InstantiateAllPossibleCards()
+    {
+        DrawPile.Clear();
+        cardPropsMap.Clear();
+        
+        // Create one card for each possible batting strategy
+        foreach (BattingStrategy strategy in System.Enum.GetValues(typeof(BattingStrategy)))
+        {
+            AttackCardProps card = Instantiate(cardPrefab, hand).GetComponent<AttackCardProps>();
+            card.cardData = new AttackCardData(strategy);
+            cardPropsMap[strategy] = card;
+            DrawPile.Add(card);
+            card.gameObject.SetActive(false);
+        }
+        
+        Debug.Log($"Created {cardPropsMap.Count} unique cards for smart selection");
+    }
+    
     [ContextMenu("End Turn")]
     public void EndTurn(int maxBallsToBall, bool isNormalDelivery = true)
     {
@@ -172,6 +355,7 @@ public class CardsPoolManager : MonoBehaviour
         // if (CurrntTurn >= maxBallsToBall)
         //     ScoreManager.Instance.UpdateBallsAndOvers(CurrntTurn);
     }
+    
     [ContextMenu("Draw Card")]
     void DrawCard()
     {
@@ -213,10 +397,18 @@ public class CardsPoolManager : MonoBehaviour
         }
         HandCards.Clear();
 
-        // Draw new cards
-        for (int i = 0; i < maxHandSize; i++)
+        // Use smart redraw or normal redraw
+        if (useSmartCardSelection)
         {
-            DrawCard();
+            DrawSmartCards();
+        }
+        else
+        {
+            // Draw new cards normally
+            for (int i = 0; i < maxHandSize; i++)
+            {
+                DrawCard();
+            }
         }
 
         redraws++;
@@ -283,6 +475,7 @@ public class CardsPoolManager : MonoBehaviour
         float maxDuration = cardOutroDuration + (HandCards.Count * 0.05f);
         yield return new WaitForSeconds(maxDuration);
     }
+    
     public void DestroyCurrentBallCard()
     {
         if (ballerCard != null)
@@ -399,19 +592,7 @@ public class CardsPoolManager : MonoBehaviour
                     ballThrow.ballLine == BallLine.WayDowntheLeg ||
                     ballThrow.ballLength == BallLength.Yorker);
             }
-            //Setup for testing wide balls
-            // BallThrow firstBallThrow = new BallThrow(
-            //                 TypeOfBowler.Fast,
-            //                 Side.RightArm,
-            //                 BallType.OffCutter,
-            //                 BallLine.OutsideOff,
-            //                 BallLength.Short,
-            //                 PitchCondition.Friendly
-            //             );
-            // BallThrows.Add(firstBallThrow);
-            ///-----------------------------///
             
-            // Debug.Log("Added ball with length " + ballThrow.ballLength + " and line " + ballThrow.ballLine);
             BallThrows.Add(ballThrow);
         }
 
@@ -420,9 +601,6 @@ public class CardsPoolManager : MonoBehaviour
             Debug.Log("ball with length " + BallThrows[i].ballLength + " and line " + BallThrows[i].ballLine);
         }
     }
-
-    //What is actually in ballThrow
-
 
     /// <summary>
     /// Randomizes the order of cards in the deck using Fisher-Yates shuffle algorithm
@@ -494,11 +672,13 @@ public class CardsPoolManager : MonoBehaviour
             return null; // No BallThrow available
         }
     }
+    
     public void StartInitialCountdown()
     {
         Debug.Log("Starting Initial Countdown");
        StartCoroutine(InitialCountdown());
     }
+    
     public IEnumerator InitialCountdown()
     {
         Debug.Log("Starting Initial Countdown coroutine");
@@ -575,4 +755,39 @@ public class CardsPoolManager : MonoBehaviour
         countdownText.color = finalColor;
     }
 
+    // Debug method to test smart card selection
+    [ContextMenu("Test Smart Card Selection")]
+    public void TestSmartCardSelection()
+    {
+        if (CurrentBallThrow == null)
+        {
+            Debug.LogError("No current ball throw to test with!");
+            return;
+        }
+        
+        float[] testRunRates = { 0.3f, 0.7f, 1.2f, 1.6f, 2.0f };
+        
+        foreach (float runRate in testRunRates)
+        {
+            Debug.Log($"\n===== Testing Run Rate: {runRate:F2} =====");
+            debugRunRateOverride = runRate;
+            
+            List<AttackCardData> cards = CardSelectionLogic.GetSmartCardSelection(
+                CurrentBallThrow,
+                maxHandSize,
+                runRate,
+                CurrntTurn,
+                ScoreManager.Instance.MaxBalls,
+                ScoreManager.Instance.currentRuns
+            );
+            
+            Debug.Log($"Cards selected for {CurrentBallThrow.ballLength} {CurrentBallThrow.ballLine}:");
+            foreach (var card in cards)
+            {
+                Debug.Log($"  - {card.excelBattinStrategy}");
+            }
+        }
+        
+        debugRunRateOverride = -1; // Reset
+    }
 }
