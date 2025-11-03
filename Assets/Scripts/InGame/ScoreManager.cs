@@ -19,7 +19,15 @@ public class ScoreManager : MonoBehaviour
     public ParticleSystem fireworkEffect;
     public ParticleSystem fireworkEffect2;
     private bool canUpdateChaseDisplay = false;
+    private bool hattrickTriggered = false;
     public GameObject gamePuaseInstructionText;
+    
+    [Header("Hat-trick Animation")]
+    private int consecutiveBoundaries = 0;
+    [SerializeField] Image hatTrickImage; // Assign the hat-trick image in inspector
+    [SerializeField] float flipDuration = 0.3f; // Duration for each flip (3 flips total)
+    [SerializeField] float punchStrength = 0.5f; // Strength of the punch effect
+    [SerializeField] AudioClip hatTrickSound; // Optional: Special sound for hat-trick
 
 
     void Awake()
@@ -52,6 +60,70 @@ public class ScoreManager : MonoBehaviour
             fireworkEffect2.Play();
         }
     }
+    
+    // Simple hat-trick animation with image
+    private void TriggerHatTrickAnimation()
+    {
+        hattrickTriggered = true;
+        Debug.Log("HAT-TRICK! Player hit 3 boundaries in a row!");
+        
+        // Play special hat-trick sound if available
+        if (hatTrickSound != null && gameAudioSource != null)
+        {
+            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
+        }
+        
+        // Start the simple image animation
+        if (hatTrickImage != null)
+        {
+            StartCoroutine(PlayHatTrickImageAnimation());
+        }
+        
+        // Trigger fireworks for extra celebration
+        TriggerFirework();
+    }
+    
+    private IEnumerator PlayHatTrickImageAnimation()
+    {
+        // Make sure image is active and starts at scale 0
+        hatTrickImage.gameObject.SetActive(true);
+        hatTrickImage.transform.localScale = Vector3.zero;
+        
+        // Create animation sequence
+        Sequence hatTrickSequence = DOTween.Sequence();
+        
+        // Scale up from 0 to 1
+        hatTrickSequence.Append(hatTrickImage.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+        
+        // Do 3 quick flips (rotate 360 degrees 3 times)
+        for (int i = 0; i < 1; i++)
+        {
+            hatTrickSequence.Append(hatTrickImage.transform.DORotate(new Vector3(0, 0, 360f * (i + 1)), flipDuration, RotateMode.FastBeyond360)
+                .SetEase(Ease.Linear));
+        }
+        
+        // Punch effect
+        hatTrickSequence.Append(hatTrickImage.transform.DOPunchScale(Vector3.one * punchStrength, 0.5f, 10, 1f));
+        
+        // Wait for the sequence to complete
+        yield return hatTrickSequence.WaitForCompletion();
+        
+        // Stay visible for 3 seconds
+        yield return new WaitForSeconds(3f);
+        
+        // Scale down to 0
+        yield return hatTrickImage.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack).WaitForCompletion();
+        
+        // Hide the image
+        hatTrickImage.gameObject.SetActive(false);
+        
+        // Reset rotation for next time
+        hatTrickImage.transform.rotation = Quaternion.identity;
+                
+        // Reset music intensity to normal celebratory level
+        musicIntensity.SetExcitement(0.65f);
+    }
+    
     public int currentRuns = 0;
     public int TargetScore = 40;
     public int MaxBalls = 24;
@@ -133,7 +205,6 @@ public class ScoreManager : MonoBehaviour
         int overDisplay = overs + 1;
         int ballsRemain = MaxBalls - ballsBowled;
         remainingBallsText.text = ballsRemain.ToString();
-
         // Animate balls remaining decrease
         if (previousBallsRemaining != -1 && ballsRemain < previousBallsRemaining)
         {
@@ -346,18 +417,36 @@ public class ScoreManager : MonoBehaviour
     {
         if (gameEnded) return;
 
+        // Track consecutive boundaries
+        if (runs == 4 || runs == 6)
+        {
+            consecutiveBoundaries++;
+            Debug.Log($"Boundary hit! Consecutive boundaries: {consecutiveBoundaries}");
+            
+            // Check for hat-trick (3 boundaries in a row)
+            if (consecutiveBoundaries >= 3)
+            {
+                TriggerHatTrickAnimation();
+                // Don't reset immediately - let them continue the streak
+            }
+            
+            PlayCheeringSound();
+        }
+        else if (runs > 0 || runs == -1 || runs == -3)
+        {
+            // Reset consecutive boundaries on any non-boundary score (including wicket or wide)
+            if (consecutiveBoundaries > 0)
+            {
+                Debug.Log($"Consecutive boundaries streak ended at {consecutiveBoundaries}");
+            }
+            consecutiveBoundaries = 0;
+        }
+
         if (runs > 0)
             currentRuns += runs;
         else if (runs == -3)
             currentRuns += 1;
 
-        if (runs == 4 || runs == 6)
-        {
-            PlayCheeringSound();
-        }
-            
-
-        //currentRunsText.text = currentRuns.ToString();
         if (previousRuns < currentRuns)
         {
             AnimateScoreIncrease(previousRuns, currentRuns);
@@ -425,7 +514,13 @@ public class ScoreManager : MonoBehaviour
         PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
         musicIntensity.SetExcitement(.45f);
-        //remainingWicketsText.text = wickets.ToString();
+        
+        // Reset consecutive boundaries on wicket loss
+        if (consecutiveBoundaries > 0)
+        {
+            Debug.Log($"Wicket lost - consecutive boundaries streak of {consecutiveBoundaries} ended");
+            consecutiveBoundaries = 0;
+        }
         
         if (wickets <= 0 && !gameEnded)
         {
@@ -560,6 +655,17 @@ public class ScoreManager : MonoBehaviour
         {
 
             CardsPoolManager.Instance.EndTurn(MaxBalls, (int)outcome != -3);
+            
+            // Wait extra time if hat-trick animation is triggered
+            if (hattrickTriggered)
+            {
+                Debug.Log("Waiting extra time for hat-trick animation to complete");
+                // The animation already pauses the game, so we just need to wait for it to complete
+                // Total wait time: 0.5 (scale up) + 0.9 (3 flips) + 0.5 (punch) + 3 (stay) + 0.5 (scale down) = ~5.4 seconds
+                yield return new WaitForSeconds(2.5f);
+                hattrickTriggered = false;
+            }
+            
             if ((int)outcome >= 4)
                 yield return new WaitForSeconds(2f); //wait for the fireworks animation to complete
             if (!isBattingFirst && EncouragementSystem.Instance != null)
