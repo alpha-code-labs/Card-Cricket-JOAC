@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7882353, g: 0.27663794, b: 0.007843115, a: 1}
+  m_Color: {r: 0.14465404, g: 0.09027333, b: 0.061409716, a: 0.7607843}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -696,11 +696,11 @@ RectTransform:
   - {fileID: 1933989022}
   m_Father: {fileID: 1855719582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: 0}
-  m_SizeDelta: {x: 266.9937, y: 71.6546}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -36, y: 92}
+  m_SizeDelta: {x: 653.7238, y: 120.91998}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &387033165
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +990,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2022267549}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: -1}
+  m_AnchorMax: {x: 1, y: 2}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1017,7 +1017,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 09879df8de260b443973801774211195, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3595,11 +3595,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1855719582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 383, y: -381}
-  m_SizeDelta: {x: 389.4548, y: 77.0513}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 364, y: 415}
+  m_SizeDelta: {x: 389.4548, y: 77.05127}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &1375578135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3637,8 +3637,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294506748
+  m_fontColor: {r: 0.98742133, g: 0.9718958, b: 0.9718958, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3655,13 +3655,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 3
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3908,11 +3908,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1855719582}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184.85608, y: -350}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 106, y: 253}
   m_SizeDelta: {x: 186.249, y: 275.0938}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1613215043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4416,13 +4416,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4748,12 +4748,7 @@ MonoBehaviour:
   countdownText: {fileID: 608107521}
   totalQuestionsText: {fileID: 1310880316}
   attemptingText: {fileID: 705486704}
-  retryPanel: {fileID: 1855719581}
   topRightPanel: {fileID: 1613215041}
-  characterImage: {fileID: 1613215043}
-  dialogText: {fileID: 1375578136}
-  retryButton: {fileID: 294905053}
-  lightmusic: {fileID: 8300000, guid: 38f99c2772b04f349b845c1b5b490b3d, type: 3}
   winningPanel: {fileID: 671289882}
   progressBar: {fileID: 2086543924}
   loadingText: {fileID: 633469733}
@@ -4766,9 +4761,7 @@ MonoBehaviour:
   backgroundMusicSource: {fileID: 2022267551}
   soundEffectSource: {fileID: 191181166}
   backgroundImage: {fileID: 416717366}
-  dialogMessage: This is non negotiable Captain. Try Again
-  typewriterSpeed: 0.05
-  enableTestingMode: 1
+  enableTestingMode: 0
   testCorrectAnswers: 50
   testWinningKey: 119
   testLosingKey: 108

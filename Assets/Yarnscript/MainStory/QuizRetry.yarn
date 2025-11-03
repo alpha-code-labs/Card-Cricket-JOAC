@@ -1,0 +1,26 @@
+title: QuizRetry
+tags: 
+colorID: 0
+position: 0,0
+---
+<<PlayBackgroundMusic  Disappointing_1 >>
+<<SetBGSprite KohliwadaGround>>
+
+
+<<SetCharacterExpression "Ramu" "Serious">>
+Ramu: This is non negotiable Captain.
+
+
+<<AutoAdvance true>>
+Retry.
+<<AutoAdvance false>>
+-> Try Again
+    <<RetryEvent "Quiz Gameplay 11">>
+
+<<HideAllCharacters>>
+
+
+
+
+
+===
