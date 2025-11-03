@@ -86,6 +86,10 @@ public class LocationSwitcher : MonoBehaviour
 
     void Update()
     {
+        if (WorldIntractionDialougeManager.instance.IsDialogueCurrentlyRunning())//Prevent location switching during dialogue
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
         {
             Debug.Log("Add UI Button for this -Escape Key Pressed - Switching to MapSprite");
