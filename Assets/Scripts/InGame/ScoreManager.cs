@@ -129,7 +129,8 @@ public class ScoreManager : MonoBehaviour
     public int MaxBalls = 24;
     public int baseWickets = 2;
     private int wickets;
-    
+
+    [SerializeField] TextMeshProUGUI outcomeCommentaryText;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI currentRunsText;
     [SerializeField] TextMeshProUGUI totalRunsNeededText;
@@ -620,9 +621,12 @@ public class ScoreManager : MonoBehaviour
         BallThrow currentBallThrow = CardsPoolManager.Instance.CurrentBallThrow;
         PitchCondition pitchCondition = currentBallThrow.pitchCondition;
         Debug.Log($"Current Ball Throw: \n{currentBallThrow}\n Pitch Condition: {pitchCondition}");
-        OutCome outcome = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
+        OutcomeResult outcomeResult = ExcelDataSOManager.Instance.outComeCalculator.CalculateOutcome(
             battingStrategy, currentBallThrow, BattingTiming.Perfect, pitchCondition);
-        
+
+        OutCome outcome = outcomeResult.outcome;
+        string commentary = outcomeResult.commentary;
+        Debug.Log($"Commentary for outcome: " + commentary);
         //on wide
         if((int)outcome == -3)
         {
@@ -638,7 +642,7 @@ public class ScoreManager : MonoBehaviour
         if (CardPlayAnimationController.Instance != null)
         {
             yield return CardPlayAnimationController.Instance.PlayCardSequence(
-                cardObject, cardSprite, battingStrategy, outcome);
+                cardObject, cardSprite, battingStrategy, outcome, commentary);
             UpdateScore((int)outcome);
             CardsPoolManager.Instance.DestroyCurrentBallCard();
             yield return new WaitForSeconds(.5f);

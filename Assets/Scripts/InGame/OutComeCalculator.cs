@@ -24,8 +24,8 @@ public class OutComeCalculator : ScriptableObject
     [SerializeField, HideInInspector] private List<OutcomeEntry> hostileOutcomeEntries = new List<OutcomeEntry>();
 
     // Runtime lookup dictionaries for each pitch condition
-    private Dictionary<OutcomeKey, OutCome> friendlyOutcomeLookup;
-    private Dictionary<OutcomeKey, OutCome> hostileOutcomeLookup;
+    private Dictionary<OutcomeKey, OutcomeResult> friendlyOutcomeLookup;
+    private Dictionary<OutcomeKey, OutcomeResult> hostileOutcomeLookup;
 
     public void BuildLookupDictionary()
     {
@@ -35,7 +35,7 @@ public class OutComeCalculator : ScriptableObject
         Debug.Log($"Hostile entries count: {hostileOutcomeEntries.Count}");
 
         // Build friendly lookup
-        friendlyOutcomeLookup = new Dictionary<OutcomeKey, OutCome>();
+        friendlyOutcomeLookup = new Dictionary<OutcomeKey, OutcomeResult>();
         int friendlyCount = 0;
         int hostileCount = 0;
 
@@ -44,19 +44,19 @@ public class OutComeCalculator : ScriptableObject
             var key = new OutcomeKey(entry);
             if (!friendlyOutcomeLookup.ContainsKey(key))
             {
-                friendlyOutcomeLookup[key] = entry.outcome;
+                friendlyOutcomeLookup[key] = new OutcomeResult(entry.outcome, entry.commentary);
                 friendlyCount++;
             }
         }
 
         // Build hostile lookup
-        hostileOutcomeLookup = new Dictionary<OutcomeKey, OutCome>();
+        hostileOutcomeLookup = new Dictionary<OutcomeKey, OutcomeResult>();
         foreach (var entry in hostileOutcomeEntries)
         {
             var key = new OutcomeKey(entry);
             if (!hostileOutcomeLookup.ContainsKey(key))
             {
-                hostileOutcomeLookup[key] = entry.outcome;
+                hostileOutcomeLookup[key] = new OutcomeResult(entry.outcome, entry.commentary);
                 hostileCount++;
             }
         }
@@ -65,10 +65,10 @@ public class OutComeCalculator : ScriptableObject
     }
 
     // Overloaded method with bowler details
-    public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing, PitchCondition pitchCondition)
+    public OutcomeResult CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing, PitchCondition pitchCondition)
     {
         // Select the appropriate lookup based on pitch condition
-        Dictionary<OutcomeKey, OutCome> selectedLookup = pitchCondition == PitchCondition.Friendly 
+        Dictionary<OutcomeKey, OutcomeResult> selectedLookup = pitchCondition == PitchCondition.Friendly 
             ? friendlyOutcomeLookup 
             : hostileOutcomeLookup;
         
@@ -92,25 +92,25 @@ public class OutComeCalculator : ScriptableObject
         };
         
         string debugKey = $"{key.typeOfBowler}, {key.side}, {key.typeOfBall}, {key.lineOfBall}, {key.lengthOfBall}, {key.shotSelected}";
-        if (selectedLookup.TryGetValue(key, out OutCome outcome))
+        if (selectedLookup.TryGetValue(key, out OutcomeResult outcome))
         {
             Debug.Log($"Outcome found: {outcome} for {battingStrategy} with keys {debugKey} on {pitchCondition} pitch");
             return outcome;
         }
         Debug.LogWarning($"No outcome found for: {battingStrategy} with {timing} timing vs Key: {debugKey} on {pitchCondition} pitch");
-
-        return OutCome.NoRun;
+    
+        return new OutcomeResult(OutCome.NoRun);
     }
     
     //original method for backward compatibility
-    public OutCome CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing)
+    public OutcomeResult CalculateOutcome(BattingStrategy battingStrategy, BallThrow ballThrow, BattingTiming timing)
     {
         // Default to friendly pitch for backward compatibility
         return CalculateOutcome(battingStrategy, ballThrow, timing, PitchCondition.Friendly);
     }
     public BallThrow GetRandomBallThrow(TypeOfBowler bowlerType, Side bowlerSide, PitchCondition pitchCondition = PitchCondition.Friendly)
     {
-        Dictionary<OutcomeKey, OutCome> selectedLookup = pitchCondition == PitchCondition.Friendly 
+        Dictionary<OutcomeKey, OutcomeResult> selectedLookup = pitchCondition == PitchCondition.Friendly 
             ? friendlyOutcomeLookup 
             : hostileOutcomeLookup;
             
@@ -192,7 +192,7 @@ public class OutComeCalculator : ScriptableObject
             return;
         }
 
-        int sheetIndex = pitchType == "Friendly" ? 1 : 0;
+        int sheetIndex = pitchType == "Friendly" ? 0 : 1;
 
         try
         {
@@ -291,6 +291,7 @@ public class OutComeCalculator : ScriptableObject
     {
         try
         {
+            Debug.Log($"Parsing row {row}..." + worksheet.Cells[row, 10].Value?.ToString());
             var entry = new OutcomeEntry
             {
                 typeOfBowler = ParseEnum<TypeOfBowler>(worksheet.Cells[row, 1].Value?.ToString()),
@@ -299,7 +300,10 @@ public class OutComeCalculator : ScriptableObject
                 lineOfBall = ParseEnum<BallLine>(worksheet.Cells[row, 4].Value?.ToString()),
                 lengthOfBall = ParseEnum<BallLength>(worksheet.Cells[row, 5].Value?.ToString()),
                 shotSelected = ParseEnum<BattingStrategy>(worksheet.Cells[row, 6].Value?.ToString()),
+                commentary = worksheet.Cells[row, 10].Value?.ToString(),
             };
+
+            Debug.Log("commentary: " + entry.commentary);
 
             string outcomeStr = worksheet.Cells[row, 8].Value?.ToString();
             string specialOutcome = worksheet.Cells[row, 9].Value?.ToString();
@@ -428,6 +432,7 @@ public class OutcomeEntry
     public BattingTiming timing;
     public OutCome outcome;
     public SpecialOutcome specialOutcome; // New field for special outcomes
+    public string commentary;
 }
 
 [Serializable]
@@ -486,5 +491,18 @@ public class OutcomeKey : IEquatable<OutcomeKey>
                lengthOfBall == other.lengthOfBall &&
                timing == other.timing &&
                shotSelected == other.shotSelected;
+    }
+}
+
+[Serializable]
+public class OutcomeResult
+{
+    public OutCome outcome;
+    public string commentary;
+    
+    public OutcomeResult(OutCome outcome, string commentary = "")
+    {
+        this.outcome = outcome;
+        this.commentary = commentary;
     }
 }

@@ -15,6 +15,7 @@ public class CardPlayAnimationController : MonoBehaviour
     [Header("UI Prefabs")]
     [SerializeField] private GameObject shotTextPrefab; // Text showing shot name
     [SerializeField] private GameObject outcomeTextPrefab; // Text for OUT/WIDE
+    [SerializeField] private GameObject outcomeCommentaryText; // commentary
     [SerializeField] private GameObject flyingNumberPrefab; // Flying number for runs
 
     [Header("Animation Timings")]
@@ -22,7 +23,13 @@ public class CardPlayAnimationController : MonoBehaviour
     [SerializeField] private float shotTextDuration = 0.2f;
     [SerializeField] private float outcomeDisplayDuration = 0.5f;
     [SerializeField] private float statsUpdateDuration = 0.5f;
+    [SerializeField] private float commentaryDisplayDuration = 2f; // Commentary stays for 2 seconds
     // [SerializeField] private float processingPause = 0.5f;
+
+    [Header("Commentary Settings")]
+    [SerializeField] private Vector3 commentaryOffset = new Vector3(0, -100, 0); // Position offset from center
+    [SerializeField] private float commentaryFadeInDuration = 0.3f;
+    [SerializeField] private float commentaryFadeOutDuration = 0.3f;
 
     private bool isAnimating = false;
 
@@ -33,7 +40,7 @@ public class CardPlayAnimationController : MonoBehaviour
 
     public bool IsAnimating => isAnimating;
 
-    public IEnumerator PlayCardSequence(GameObject cardObject, Sprite cardSprite, BattingStrategy strategy, OutCome outcome)
+    public IEnumerator PlayCardSequence(GameObject cardObject, Sprite cardSprite, BattingStrategy strategy, OutCome outcome, string commentary = "")
     {
         isAnimating = true;
 
@@ -43,16 +50,99 @@ public class CardPlayAnimationController : MonoBehaviour
         // Phase 2: Shot name appears (0.2s)
         yield return StartCoroutine(ShowShotName(strategy));
 
-        // Phase 3: Outcome display (0.5s)
+        // Phase 3: Outcome display with commentary (runs concurrently)
         yield return StartCoroutine(ShowOutcome(outcome, strategy == BattingStrategy.Leave));
-
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(ShowCommentary(commentary, outcome));
         // Phase 4: Stats emphasis (0.5s)
         yield return StartCoroutine(AnimateStatsUpdate());
 
-        // Phase 5: Processing pause
+        // Phase 5: Wait for commentary to finish (if still showing)
+        // Commentary total time = fadeIn + display + fadeOut = 0.3 + 2 + 0.3 = 2.6s
+        // We've already waited for outcome (0.5s) and stats (0.5s) = 1s
+        // So we need to wait an additional 1.6s for commentary to complete
+        yield return new WaitForSeconds(1.6f);
+
+        // Phase 6: Processing pause
         // yield return new WaitForSeconds(processingPause);
 
         isAnimating = false;
+    }
+
+    private IEnumerator ShowCommentary(string commentary, OutCome outcome)
+    {
+        if (string.IsNullOrEmpty(commentary))
+        {
+            // Generate default commentary based on outcome
+            commentary = GenerateDefaultCommentary(outcome);
+        }
+
+        GameObject commentaryObj;
+
+        if (outcomeCommentaryText == null)
+        {
+            // Create commentary text dynamically
+            commentaryObj = new GameObject("CommentaryText");
+            commentaryObj.transform.SetParent(transform);
+            TextMeshProUGUI text = commentaryObj.AddComponent<TextMeshProUGUI>();
+            text.text = commentary;
+            text.fontSize = 32;
+            text.alignment = TextAlignmentOptions.Center;
+            text.color = Color.white;
+            text.fontStyle = FontStyles.Italic;
+
+            RectTransform rect = commentaryObj.GetComponent<RectTransform>();
+            rect.position = centerStage.position + commentaryOffset;
+            rect.sizeDelta = new Vector2(600, 150);
+
+            // Add outline for better visibility
+            Outline outline = commentaryObj.AddComponent<Outline>();
+            outline.effectColor = Color.black;
+            outline.effectDistance = new Vector2(2, -2);
+        }
+        else
+        {
+            commentaryObj = Instantiate(outcomeCommentaryText, centerStage.position + commentaryOffset, Quaternion.identity, transform);
+            TextMeshProUGUI text = commentaryObj.GetComponent<TextMeshProUGUI>();
+            text.text = commentary;
+        }
+
+        TextMeshProUGUI commentaryText = commentaryObj.GetComponent<TextMeshProUGUI>();
+        
+        // Fade in animation
+        commentaryText.alpha = 0;
+        commentaryText.DOFade(1f, commentaryFadeInDuration);
+        commentaryObj.transform.localScale = new Vector3(0.8f, 0.8f, 1f);
+        commentaryObj.transform.DOScale(1f, commentaryFadeInDuration).SetEase(Ease.OutBack);
+
+        // Wait for display duration
+        yield return new WaitForSeconds(commentaryFadeInDuration + commentaryDisplayDuration);
+
+        // Fade out animation
+        commentaryText.DOFade(0f, commentaryFadeOutDuration);
+        commentaryObj.transform.DOScale(0.9f, commentaryFadeOutDuration);
+
+        yield return new WaitForSeconds(commentaryFadeOutDuration);
+
+        Destroy(commentaryObj);
+    }
+
+    private string GenerateDefaultCommentary(OutCome outcome)
+    {
+        int runs = (int)outcome;
+        
+        if (runs == 6)
+            return "That's a massive six! What a shot!";
+        else if (runs == 4)
+            return "Beautiful boundary! Perfectly timed!";
+        else if (runs > 0)
+            return $"Good running between the wickets! {runs} run{(runs > 1 ? "s" : "")} added.";
+        else if (runs == -1)
+            return "Oh no! That's a wicket! The batsman has to go!";
+        else if (runs == -3)
+            return "Wide ball! Extra run for the batting team.";
+        else
+            return "Dot ball. No run scored.";
     }
 
     private IEnumerator AnimateCardToCenter(GameObject cardObject, Sprite cardSprite)
