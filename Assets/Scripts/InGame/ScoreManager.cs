@@ -372,7 +372,7 @@ public class ScoreManager : MonoBehaviour
          if (!isBattingFirst && EncouragementSystem.Instance != null)
         {
             int _ballsRemaining = runs == -3 ? MaxBalls - CardsPoolManager.Instance.CurrntTurn : MaxBalls - CardsPoolManager.Instance.CurrntTurn - 1;
-            // EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore, _ballsRemaining);
+            EncouragementSystem.Instance.CheckMilestones(currentRuns-currentGameplayConfig.initialScore, TargetScore-currentGameplayConfig.initialScore);
         }
 
         if (isBattingFirst)
@@ -665,7 +665,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Debug.Log("Loading gameplay 2 as date is not found");
-            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
             TargetScore = currentGameplayConfig.winScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
@@ -824,9 +824,6 @@ public class ScoreManager : MonoBehaviour
         seq.Insert(0, remainingBallsText.DOColor(targetColor, ballAnimDuration * 0.4f));
         seq.Insert(ballAnimDuration * 0.6f, remainingBallsText.DOColor(Color.white, ballAnimDuration * 0.4f));
     }
-
-
-    
     void ShowChaseDisplayAfterCountdown()
     {
         if (chaseDisplayText != null && chaseDisplayContainer != null)
