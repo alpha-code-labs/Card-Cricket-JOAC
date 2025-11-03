@@ -42,13 +42,12 @@ public class ScoreManager : MonoBehaviour
 
         // Initially hide pause intruction
         gamePuaseInstructionText.SetActive(false);
-        musicIntensity.SetExcitement(.3f);
     }
     public void TriggerFirework()
     {
         if (fireworkEffect != null)
         {
-            musicIntensity.SetExcitement(.7f);
+            musicIntensity.SetExcitement(.65f);
             fireworkEffect.Play();
             fireworkEffect2.Play();
         }
@@ -425,7 +424,7 @@ public class ScoreManager : MonoBehaviour
         wickets--;
         PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
-        musicIntensity.SetExcitement(.4f);
+        musicIntensity.SetExcitement(.45f);
         //remainingWicketsText.text = wickets.ToString();
         
         if (wickets <= 0 && !gameEnded)
@@ -500,6 +499,7 @@ public class ScoreManager : MonoBehaviour
         {
             PlayGameWonCheeringSound();
             TriggerFirework();
+            musicIntensity.SetExcitement(.5f);
             yield return new WaitForSeconds(5f);
         }
         yield return new WaitForSeconds(3f);
@@ -721,6 +721,9 @@ public class ScoreManager : MonoBehaviour
         {
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
+
+
+        musicIntensity.SetExcitement(.55f);
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)

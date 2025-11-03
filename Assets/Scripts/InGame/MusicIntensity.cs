@@ -57,10 +57,10 @@ public class MusicIntensity : MonoBehaviour
 
         // Reverb send (dB): -6 → -20 (dryer when excited)
         float rev = Mathf.Lerp(-6f, -20f, x);
-        mixer.SetFloat(pRev, rev);
+        // mixer.SetFloat(pRev, rev);
 
         // Expose raw for debugging/visualization if you like
-        mixer.SetFloat(pExcite, x);
+        // mixer.SetFloat(pExcite, x);
 
          //Add pitch modulation
         float pitch = Mathf.Lerp(1.0f, 1.05f, Mathf.SmoothStep(0f, 1f, x)); // up to +5% speed when fully excited
