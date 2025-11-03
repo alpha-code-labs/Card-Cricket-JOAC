@@ -55,7 +55,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (fireworkEffect != null)
         {
-            musicIntensity.SetExcitement(.65f);
+            // musicIntensity.SetExcitement(.65f);
             fireworkEffect.Play();
             fireworkEffect2.Play();
         }
@@ -121,7 +121,7 @@ public class ScoreManager : MonoBehaviour
         hatTrickImage.transform.rotation = Quaternion.identity;
                 
         // Reset music intensity to normal celebratory level
-        musicIntensity.SetExcitement(0.65f);
+        // musicIntensity.SetExcitement(0.65f);
     }
     
     public int currentRuns = 0;
@@ -513,7 +513,7 @@ public class ScoreManager : MonoBehaviour
         wickets--;
         PlayGroaningSound();
         AnimateWicketLoss(previousWickets, wickets);
-        musicIntensity.SetExcitement(.45f);
+        // musicIntensity.SetExcitement(.45f);
         
         // Reset consecutive boundaries on wicket loss
         if (consecutiveBoundaries > 0)
@@ -594,7 +594,7 @@ public class ScoreManager : MonoBehaviour
         {
             PlayGameWonCheeringSound();
             TriggerFirework();
-            musicIntensity.SetExcitement(.5f);
+            // musicIntensity.SetExcitement(.5f);
             yield return new WaitForSeconds(5f);
         }
         yield return new WaitForSeconds(3f);
@@ -829,7 +829,7 @@ public class ScoreManager : MonoBehaviour
         }
 
 
-        musicIntensity.SetExcitement(.55f);
+        // musicIntensity.SetExcitement(.55f);
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)

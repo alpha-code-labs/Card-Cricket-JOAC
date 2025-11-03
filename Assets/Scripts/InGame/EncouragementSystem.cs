@@ -29,6 +29,7 @@ public class EncouragementSystem : MonoBehaviour
     [Header("Display Settings")]
     [SerializeField] float autoSkipDelay = 3f; // Auto skip after this many seconds (0 = disabled)
     [SerializeField] bool pauseGameDuringEncouragement = true;
+    [SerializeField] MusicIntensity musicIntensity;
     
     [Header("Milestone Tracking")]
     private bool milestone50Triggered = false;
@@ -89,25 +90,28 @@ public class EncouragementSystem : MonoBehaviour
         float percentage = (float)currentRuns / targetScore * 100f;
         int runsNeeded = targetScore - currentRuns;
         
-        string triggeredDialogue = null;
+        string triggeredDialogue = null;    
         
         // Check for 10 runs to go (highest priority)
         if (runsNeeded <= 10 && runsNeeded > 0 && !milestone10RunsTriggered)
         {
             milestone10RunsTriggered = true;
             triggeredDialogue = "This is it my boy, Final 10 runs. It's now or never.";
+            musicIntensity.SetExcitement(.8f);
         }
         // Check for 75% milestone
         else if (percentage >= 75f && !milestone75Triggered && !milestone10RunsTriggered)
         {
             milestone75Triggered = true;
             triggeredDialogue = "Come on Raju, getting close. Do not lose it from here.";
+            musicIntensity.SetExcitement(.65f);
         }
         // Check for 50% milestone
         else if (percentage >= 50f && !milestone50Triggered && !milestone75Triggered && !milestone10RunsTriggered)
         {
             milestone50Triggered = true;
             triggeredDialogue = "Come on Raju, half way there. Keep your focus.";
+            musicIntensity.SetExcitement(.55f);
         }
         
         if (triggeredDialogue != null)

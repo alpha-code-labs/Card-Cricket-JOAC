@@ -5664,6 +5664,8 @@ MonoBehaviour:
     pitchCondition: 0
   baseMaxHandSize: 4
   baseMaxRedraws: 1
+  useSmartCardSelection: 1
+  debugRunRateOverride: -1
   hand: {fileID: 1101043969}
   ballerCardTransform: {fileID: 1398403219}
   BallThrowText: {fileID: 873582954}
@@ -11358,6 +11360,10 @@ MonoBehaviour:
   fireworkEffect: {fileID: 2129397314}
   fireworkEffect2: {fileID: 724427815}
   gamePuaseInstructionText: {fileID: 232652933}
+  hatTrickImage: {fileID: 1567575374}
+  flipDuration: 0.3
+  punchStrength: 0.5
+  hatTrickSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
   currentRuns: 0
   TargetScore: 15
   MaxBalls: 12
@@ -12220,12 +12226,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1688630403}
   skipButton: {fileID: 80269495}
   skipButtonText: {fileID: 911427031}
-  happyExpression: {fileID: 21300000, guid: 99377572f37926d4cae6696994a0cec8, type: 3}
-  lovingExpression: {fileID: 21300000, guid: 7fa51cdc09d0ead4d9747de5b855aaef, type: 3}
-  relievedExpression: {fileID: 21300000, guid: 21249a05211e9724c810d394f2c8b747, type: 3}
-  seriousExpression: {fileID: 21300000, guid: 0d74e85f3b870e345a3714762e70a35c, type: 3}
-  overjoyedExpression: {fileID: 21300000, guid: 99377572f37926d4cae6696994a0cec8, type: 3}
-  sadExpression: {fileID: 21300000, guid: 3b74f994e1060c7488ae1826c9ebc98d, type: 3}
+  defaultExpression: {fileID: 0}
   slideInDuration: 0.5
   dialogueBoxExpandDuration: 0.3
   textFadeInDuration: 0.3
@@ -12234,6 +12235,7 @@ MonoBehaviour:
   onScreenPosition: {x: 0, y: 0}
   autoSkipDelay: 3
   pauseGameDuringEncouragement: 1
+  musicIntensity: {fileID: 0}
 --- !u!4 &602577866
 Transform:
   m_ObjectHideFlags: 0
@@ -29052,6 +29054,7 @@ RectTransform:
   - {fileID: 1662522130}
   - {fileID: 232652934}
   - {fileID: 156464179}
+  - {fileID: 1567575373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -29640,6 +29643,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552231043}
+  m_CullTransparentMesh: 1
+--- !u!1 &1567575372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567575373}
+  - component: {fileID: 1567575375}
+  - component: {fileID: 1567575374}
+  m_Layer: 5
+  m_Name: Hattrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1567575373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567575372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1297978291}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 550, y: 550}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1567575374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567575372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 96b363e92c49e814791a435ac25cd3b7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1567575375
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567575372}
   m_CullTransparentMesh: 1
 --- !u!1 &1574690228
 GameObject:
