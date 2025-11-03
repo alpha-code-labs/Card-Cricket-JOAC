@@ -5346,20 +5346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae4fdec23cc46447b19f53f332224ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testStrategy: 9
-  testTiming: 4
-  testBall:
-    bowlerType: 0
-    bowlerSide: 1
-    ballType: 0
-    ballLine: 0
-    ballLength: 3
-    pitchCondition: 0
-  bg: {fileID: 0}
-  BAR: {fileID: 1254361791}
-  MARKER: {fileID: 1405364057}
-  isTimingMeterActive: 0
-  battingStrategy: 0
 --- !u!114 &66519960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29105,7 +29091,7 @@ MonoBehaviour:
   shotTextDuration: 0.2
   outcomeDisplayDuration: 0.5
   statsUpdateDuration: 0.5
-  commentaryDisplayDuration: 2
+  commentaryDisplayDuration: 3
   commentaryOffset: {x: 0, y: 0, z: 0}
   commentaryFadeInDuration: 0.3
   commentaryFadeOutDuration: 0.3
