@@ -52,7 +52,6 @@ public class CardPlayAnimationController_Tutorial : MonoBehaviour
 
         // Phase 3: Outcome display with commentary (runs concurrently)
         yield return StartCoroutine(ShowOutcome(outcome, strategy == BattingStrategy.Leave));
-        yield return new WaitForSeconds(0.5f);
         // StartCoroutine(ShowCommentary(commentary, outcome));
         // Phase 4: Stats emphasis (0.5s)
         yield return StartCoroutine(AnimateStatsUpdate());
