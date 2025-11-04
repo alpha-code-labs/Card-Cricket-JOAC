@@ -17,6 +17,10 @@ Ramu: That's my boy—always stay hungry, always be greedy when it comes to scor
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: Yes, I am completely switched on—I can do this.
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+<<AutoAdvance  true>>
+Please make a choice
+<<AutoAdvance false>>
 -> Try Again
     <<RetryEvent "Card Gameplay 1">>
 -> Continue
