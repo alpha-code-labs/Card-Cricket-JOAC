@@ -12225,7 +12225,7 @@ MonoBehaviour:
   onScreenPosition: {x: 0, y: 0}
   autoSkipDelay: 3
   pauseGameDuringEncouragement: 1
-  musicIntensity: {fileID: 0}
+  musicIntensity: {fileID: 726285464}
 --- !u!4 &602577866
 Transform:
   m_ObjectHideFlags: 0
@@ -17415,7 +17415,7 @@ MonoBehaviour:
   pThresh: Music_Comp_Thresh
   pRev: Music_RevSend
   target: 0.366
-  rampSeconds: 1.5
+  rampSeconds: 3
 --- !u!4 &726285465
 Transform:
   m_ObjectHideFlags: 0

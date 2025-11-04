@@ -176,7 +176,7 @@ public class EncouragementSystem : MonoBehaviour
         yield return TypewriterEffect(dialogue);
         
         // Show skip button
-        skipButton.gameObject.SetActive(true);
+        // skipButton.gameObject.SetActive(true);
         skipButton.transform.localScale = Vector3.zero;
         skipButton.transform.DOScale(Vector3.one, 0.2f).SetEase(Ease.OutBack);
         

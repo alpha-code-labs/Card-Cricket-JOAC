@@ -59,6 +59,7 @@ public class ScoreManager : MonoBehaviour
             fireworkEffect.Play();
             fireworkEffect2.Play();
         }
+        PlayCheeringSound();
     }
     
     // Simple hat-trick animation with image
@@ -431,7 +432,7 @@ public class ScoreManager : MonoBehaviour
                 // Don't reset immediately - let them continue the streak
             }
             
-            PlayCheeringSound();
+            // PlayCheeringSound();
         }
         else if (runs > 0 || runs == -1 || runs == -3)
         {
@@ -833,7 +834,7 @@ public class ScoreManager : MonoBehaviour
         }
 
 
-        // musicIntensity.SetExcitement(.55f);
+        musicIntensity.SetExcitement(.4f);
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
