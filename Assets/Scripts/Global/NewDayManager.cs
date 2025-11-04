@@ -105,7 +105,7 @@ public class NewDayManager : MonoBehaviour
                 break;
         }
     }
-    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 0.5f, float fadeDuration = 1f)
+    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 1.5f, float fadeDuration = 1f)
     {
         dateText.text = textToDisplay;
         if (dateText.alpha != 1)
