@@ -234,7 +234,7 @@ title: SixthBall
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
-    Ramu: Excellent! Sweep shots work perfectly against spinners.
+    Ramu: Captain, playing sweep against good length deliveries is always risky. Be careful.
 <<elseif $selection == "StraightDrivePush" || $selection == "CoverDriveNormal">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
@@ -268,7 +268,7 @@ title: SeventhBall
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
-    Ramu: Brilliant! Pull shot is perfect for short deliveries.
+    Ramu: Captain, Watch the line of the ball. A cut shot is more suited for this delivery.
 <<elseif $selection == "CutShotNormal" || $selection == "CutShotLofted">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
