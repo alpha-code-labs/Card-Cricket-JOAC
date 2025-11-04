@@ -159,20 +159,9 @@ MonoBehaviour:
     - eventName: scene_131
       eventDescription: I tried my best.
       eventType: 0
-  - date: 1990/04/30
-    events:
-    - eventName: scene_132
-      eventDescription: Visual Noval System
-      eventType: 0
-    - eventName: scene_133
-      eventDescription: VN system
-      eventType: 5
-    - eventName: scene_134
-      eventDescription: 'Coach dev congratulate '
-      eventType: 0
     - eventName: scene_135
-      eventDescription: 'Uncle dev take the wheel inside the net '
+      eventDescription: Ramu Parting Ways Scene Moved Closer for Demo
       eventType: 0
-    - eventName: Scene135_01_Ch1End
-      eventDescription: Post Chapter 1 Ch2 comming Soon
+    - eventName: Demo
+      eventDescription: Demo End Image
       eventType: 0
