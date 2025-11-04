@@ -61,7 +61,7 @@ public class CardPlayAnimationController : MonoBehaviour
         // Commentary total time = fadeIn + display + fadeOut = 0.3 + 2 + 0.3 = 2.6s
         // We've already waited for outcome (0.5s) and stats (0.5s) = 1s
         // So we need to wait an additional 1.6s for commentary to complete
-        yield return new WaitForSeconds(1.6f);
+        // yield return new WaitForSeconds(1.6f);
 
         // Phase 6: Processing pause
         // yield return new WaitForSeconds(processingPause);
