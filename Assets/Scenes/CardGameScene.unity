@@ -11280,8 +11280,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1423723911}
-  - {fileID: 1552231044}
   - {fileID: 1121265623}
+  - {fileID: 1552231044}
   - {fileID: 339452427}
   - {fileID: 44926447}
   - {fileID: 1876001304}
@@ -11377,6 +11377,7 @@ MonoBehaviour:
   difficultChaseColor: {r: 1, g: 0.6, b: 0.2, a: 1}
   criticalChaseColor: {r: 1, g: 0.3, b: 0.3, a: 1}
   cheeringSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
+  battingSound: {fileID: 8300000, guid: 44e6b46cad3d7754ca7b1e23600d76cc, type: 3}
   cheeringSound_gameWon: {fileID: 8300000, guid: 0211a0855d707d9419e550495bafeb1a, type: 3}
   groaningSound: {fileID: 8300000, guid: 0608b70dd9b654b44b161767bfa5672f, type: 3}
   cheeringVolume: 1

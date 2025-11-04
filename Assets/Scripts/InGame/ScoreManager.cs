@@ -59,7 +59,6 @@ public class ScoreManager : MonoBehaviour
             fireworkEffect.Play();
             fireworkEffect2.Play();
         }
-        PlayCheeringSound();
     }
     
     // Simple hat-trick animation with image
@@ -155,6 +154,7 @@ public class ScoreManager : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] AudioClip cheeringSound; // Assign your cheering audio file here
+    [SerializeField] AudioClip battingSound; // Assign your batting audio file here
     [SerializeField] AudioClip cheeringSound_gameWon;
     [SerializeField] AudioClip groaningSound;
     [SerializeField] float cheeringVolume = 1f;
@@ -351,6 +351,36 @@ public class ScoreManager : MonoBehaviour
         Debug.Log($"Cheering sound played for boundary!");
     }
 
+        private void PlayBattingSound()
+    {
+        if (battingSound == null)
+        {
+            Debug.LogWarning("Batting sound not assigned!");
+            return;
+        }
+
+        // Use dedicated audio source if available, otherwise use the main game audio source
+        AudioSource audioSource = cheeringAudioSource != null ? cheeringAudioSource : gameAudioSource;
+
+        if (audioSource != null)
+        {
+            // If using the same audio source as game sounds, we might want to stop current sound
+            if (audioSource == gameAudioSource && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
+            audioSource.PlayOneShot(battingSound, cheeringVolume);
+        }
+        else
+        {
+            // Fallback: Play at the camera position if no audio source is set
+            AudioSource.PlayClipAtPoint(battingSound, Camera.main.transform.position, cheeringVolume);
+        }
+
+        Debug.Log($"Batting sound played!");
+    }
+
     private void PlayGroaningSound()
     {
         if (groaningSound == null)
@@ -424,15 +454,14 @@ public class ScoreManager : MonoBehaviour
         {
             consecutiveBoundaries++;
             Debug.Log($"Boundary hit! Consecutive boundaries: {consecutiveBoundaries}");
-            
+            PlayCheeringSound();
+
             // Check for hat-trick (3 boundaries in a row)
             if (consecutiveBoundaries >= 3)
             {
                 TriggerHatTrickAnimation();
                 // Don't reset immediately - let them continue the streak
             }
-            
-            // PlayCheeringSound();
         }
         else if (runs > 0 || runs == -1 || runs == -3)
         {
@@ -635,7 +664,7 @@ public class ScoreManager : MonoBehaviour
         }
         //play batting sound
         if((int)outcome != -3 && (int)outcome != -4)
-            gameAudioSource.Play();
+            gameAudioSource.PlayOneShot(battingSound, 1f);
         if((int)outcome >=4)
         {
             TriggerFirework();

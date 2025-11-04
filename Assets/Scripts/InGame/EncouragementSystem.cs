@@ -136,7 +136,11 @@ public class EncouragementSystem : MonoBehaviour
         if (_isShowingEncouragement) return;
         
         _isShowingEncouragement = true;
-        
+         // Stop any active commentary immediately
+        if (CardPlayAnimationController.Instance != null)
+        {
+            CardPlayAnimationController.Instance.StopCommentary();
+        }
         // Pause the game if configured
         if (pauseGameDuringEncouragement)
         {
