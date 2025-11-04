@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 164009113}
   - component: {fileID: 164009112}
   - component: {fileID: 164009111}
-  - component: {fileID: 164009110}
+  - component: {fileID: 164009114}
   m_Layer: 5
   m_Name: Canvas Game
   m_TagString: Untagged
@@ -693,27 +693,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &164009110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164009108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd8b6811627af4dbc68eddfa01ab05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerStage: {fileID: 2056206742}
-  scorePosition: {fileID: 72031969}
-  shotTextPrefab: {fileID: 5979193527220999022, guid: 063dc95926f74d245b856718b4b90ca8, type: 3}
-  outcomeTextPrefab: {fileID: 1403160339365830246, guid: 9e1a820c74bdf5940b6940599ee25368, type: 3}
-  flyingNumberPrefab: {fileID: 4013791164943137827, guid: e3ea235ff58c95249b315996c5366edb, type: 3}
-  cardFlyDuration: 1.3
-  shotTextDuration: 0.2
-  outcomeDisplayDuration: 0.5
-  statsUpdateDuration: 0.5
 --- !u!114 &164009111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +756,32 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
+--- !u!114 &164009114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164009108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c7f61a684d6e64bb725c172ceb57f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerStage: {fileID: 2056206742}
+  scorePosition: {fileID: 72031969}
+  shotTextPrefab: {fileID: 5979193527220999022, guid: 063dc95926f74d245b856718b4b90ca8, type: 3}
+  outcomeTextPrefab: {fileID: 1403160339365830246, guid: 9e1a820c74bdf5940b6940599ee25368, type: 3}
+  outcomeCommentaryText: {fileID: 0}
+  flyingNumberPrefab: {fileID: 4013791164943137827, guid: e3ea235ff58c95249b315996c5366edb, type: 3}
+  cardFlyDuration: 0.3
+  shotTextDuration: 0.2
+  outcomeDisplayDuration: 0.5
+  statsUpdateDuration: 0.5
+  commentaryDisplayDuration: 2
+  commentaryOffset: {x: 0, y: -100, z: 0}
+  commentaryFadeInDuration: 0.3
+  commentaryFadeOutDuration: 0.3
 --- !u!1 &220481298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1078,8 @@ MonoBehaviour:
     pitchCondition: 0
   baseMaxHandSize: 4
   baseMaxRedraws: 1
+  useSmartCardSelection: 1
+  debugRunRateOverride: -1
   hand: {fileID: 1392834893}
   ballerCardTransform: {fileID: 826276919}
   BallThrowText: {fileID: 1821664796}
@@ -1153,6 +1160,31 @@ MonoBehaviour:
   BallThrowText: {fileID: 0}
   cardPrefab: {fileID: 9059906081896085217, guid: e2c7fbdc639354f4c8ddb3e18b8216ac, type: 3}
   currentTutorialBall: None
+  cardOutroDuration: 0.4
+  cardOutroCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   dialogueRunner: {fileID: 0}
   variableStorage: {fileID: 0}
   ballerCardPrefab: {fileID: 9059906081896085217, guid: 861cfae5cb02e3441aa843a7bc23bd9a, type: 3}
@@ -2560,17 +2592,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969511441}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 901738728}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -66.049}
-  m_SizeDelta: {x: 372.329, y: 431.901}
+  m_AnchoredPosition: {x: 674, y: 95}
+  m_SizeDelta: {x: 220, y: 304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969511443
 MonoBehaviour:
@@ -4909,7 +4941,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d48530b43076e3642bb477743eed6afc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.416
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -33,6 +33,10 @@ Raju: I know, but we were so close to winning and I missed out.
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: It's fine - we are all shooting in the dark, but you will get there.
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+<<AutoAdvance  true>>
+Please make a choice
+<<AutoAdvance false>>
 -> Try Again
     <<RetryEvent "Card Gameplay 17">>
 -> Continue

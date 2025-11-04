@@ -5346,20 +5346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae4fdec23cc46447b19f53f332224ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testStrategy: 9
-  testTiming: 4
-  testBall:
-    bowlerType: 0
-    bowlerSide: 1
-    ballType: 0
-    ballLine: 0
-    ballLength: 3
-    pitchCondition: 0
-  bg: {fileID: 0}
-  BAR: {fileID: 1254361791}
-  MARKER: {fileID: 1405364057}
-  isTimingMeterActive: 0
-  battingStrategy: 0
 --- !u!114 &66519960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11294,8 +11280,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1423723911}
-  - {fileID: 1552231044}
   - {fileID: 1121265623}
+  - {fileID: 1552231044}
   - {fileID: 339452427}
   - {fileID: 44926447}
   - {fileID: 1876001304}
@@ -11391,6 +11377,7 @@ MonoBehaviour:
   difficultChaseColor: {r: 1, g: 0.6, b: 0.2, a: 1}
   criticalChaseColor: {r: 1, g: 0.3, b: 0.3, a: 1}
   cheeringSound: {fileID: 8300000, guid: fc9bcf56fbebbde4eadb45098e6f7e34, type: 3}
+  battingSound: {fileID: 8300000, guid: 44e6b46cad3d7754ca7b1e23600d76cc, type: 3}
   cheeringSound_gameWon: {fileID: 8300000, guid: 0211a0855d707d9419e550495bafeb1a, type: 3}
   groaningSound: {fileID: 8300000, guid: 0608b70dd9b654b44b161767bfa5672f, type: 3}
   cheeringVolume: 1
@@ -12239,7 +12226,7 @@ MonoBehaviour:
   onScreenPosition: {x: 0, y: 0}
   autoSkipDelay: 3
   pauseGameDuringEncouragement: 1
-  musicIntensity: {fileID: 0}
+  musicIntensity: {fileID: 726285464}
 --- !u!4 &602577866
 Transform:
   m_ObjectHideFlags: 0
@@ -17429,7 +17416,7 @@ MonoBehaviour:
   pThresh: Music_Comp_Thresh
   pRev: Music_RevSend
   target: 0.366
-  rampSeconds: 1.5
+  rampSeconds: 3
 --- !u!4 &726285465
 Transform:
   m_ObjectHideFlags: 0
@@ -29105,7 +29092,7 @@ MonoBehaviour:
   shotTextDuration: 0.2
   outcomeDisplayDuration: 0.5
   statsUpdateDuration: 0.5
-  commentaryDisplayDuration: 2
+  commentaryDisplayDuration: 3
   commentaryOffset: {x: 0, y: 0, z: 0}
   commentaryFadeInDuration: 0.3
   commentaryFadeOutDuration: 0.3

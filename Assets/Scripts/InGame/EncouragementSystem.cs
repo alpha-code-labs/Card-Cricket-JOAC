@@ -136,7 +136,11 @@ public class EncouragementSystem : MonoBehaviour
         if (_isShowingEncouragement) return;
         
         _isShowingEncouragement = true;
-        
+         // Stop any active commentary immediately
+        if (CardPlayAnimationController.Instance != null)
+        {
+            CardPlayAnimationController.Instance.StopCommentary();
+        }
         // Pause the game if configured
         if (pauseGameDuringEncouragement)
         {
@@ -176,7 +180,7 @@ public class EncouragementSystem : MonoBehaviour
         yield return TypewriterEffect(dialogue);
         
         // Show skip button
-        skipButton.gameObject.SetActive(true);
+        // skipButton.gameObject.SetActive(true);
         skipButton.transform.localScale = Vector3.zero;
         skipButton.transform.DOScale(Vector3.one, 0.2f).SetEase(Ease.OutBack);
         

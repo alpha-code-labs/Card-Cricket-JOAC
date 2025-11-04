@@ -9,7 +9,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Serious">>
-Ramu: Finals. They posted 130 in 60 balls. Tough ask.
+Ramu: Finals. They posted 129 in 60 balls. Tough ask.
 
 <<SetCharacterExpression "Raju" "Tired">>
 Raju: More than two runs per ball. I'm tired but ready.

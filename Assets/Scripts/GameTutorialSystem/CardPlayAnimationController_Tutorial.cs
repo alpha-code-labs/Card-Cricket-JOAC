@@ -4,9 +4,9 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-public class CardPlayAnimationController : MonoBehaviour
+public class CardPlayAnimationController_Tutorial : MonoBehaviour
 {
-    public static CardPlayAnimationController Instance;
+    public static CardPlayAnimationController_Tutorial Instance;
 
     [Header("Animation Targets")]
     [SerializeField] private Transform centerStage; // Center position for card animation
@@ -31,9 +31,6 @@ public class CardPlayAnimationController : MonoBehaviour
     [SerializeField] private float commentaryFadeInDuration = 0.3f;
     [SerializeField] private float commentaryFadeOutDuration = 0.3f;
 
-    private GameObject currentCommentaryObj;
-    private Coroutine commentaryCoroutine;
-
     private bool isAnimating = false;
 
     void Awake()
@@ -55,10 +52,9 @@ public class CardPlayAnimationController : MonoBehaviour
 
         // Phase 3: Outcome display with commentary (runs concurrently)
         yield return StartCoroutine(ShowOutcome(outcome, strategy == BattingStrategy.Leave));
-        // yield return new WaitForSeconds(0.5f);
+        // StartCoroutine(ShowCommentary(commentary, outcome));
         // Phase 4: Stats emphasis (0.5s)
         yield return StartCoroutine(AnimateStatsUpdate());
-        commentaryCoroutine = StartCoroutine(ShowCommentary(commentary, outcome));
 
         // Phase 5: Wait for commentary to finish (if still showing)
         // Commentary total time = fadeIn + display + fadeOut = 0.3 + 2 + 0.3 = 2.6s
@@ -72,22 +68,6 @@ public class CardPlayAnimationController : MonoBehaviour
         isAnimating = false;
     }
 
-    public void StopCommentary()
-    {
-        if (commentaryCoroutine != null)
-        {
-            StopCoroutine(commentaryCoroutine);
-            commentaryCoroutine = null;
-        }
-        
-        if (currentCommentaryObj != null)
-        {
-            currentCommentaryObj.GetComponent<TextMeshProUGUI>().DOKill();
-            currentCommentaryObj.transform.DOKill();
-            Destroy(currentCommentaryObj);
-            currentCommentaryObj = null;
-        }
-    }
     private IEnumerator ShowCommentary(string commentary, OutCome outcome)
     {
         if (string.IsNullOrEmpty(commentary))
@@ -125,7 +105,7 @@ public class CardPlayAnimationController : MonoBehaviour
             TextMeshProUGUI text = commentaryObj.GetComponent<TextMeshProUGUI>();
             text.text = commentary;
         }
-        currentCommentaryObj = commentaryObj;
+
         TextMeshProUGUI commentaryText = commentaryObj.GetComponent<TextMeshProUGUI>();
         
         // Fade in animation
@@ -144,7 +124,6 @@ public class CardPlayAnimationController : MonoBehaviour
         yield return new WaitForSeconds(commentaryFadeOutDuration);
 
         Destroy(commentaryObj);
-        currentCommentaryObj = null;
     }
 
     private string GenerateDefaultCommentary(OutCome outcome)

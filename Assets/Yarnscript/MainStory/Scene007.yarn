@@ -20,6 +20,10 @@ Raju: I know, but I just did not make the right shot selection—I am embarrasse
 
 <<SetCharacterExpression "Ramu" "Smiling">>
 Ramu: Smile captain—we will have more chances, heads up, tomorrow is another day.
+<<SetCharacterExpression "Raju" "SeriousWithBat">>
+<<AutoAdvance  true>>
+Please make a choice
+<<AutoAdvance false>>
 -> Try Again
     <<RetryEvent "Card Gameplay 1">>
 -> Continue
