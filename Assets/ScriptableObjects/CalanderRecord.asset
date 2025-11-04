@@ -38,36 +38,12 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post-Tutorial Cutscene
       eventType: 0
-  - date: 1990/03/01
+  - date: 1990/04/07
     events:
     - eventName: scene_21
       eventDescription: Real-world cricket lessons
       eventType: 0
     - eventName: scene_22
-      eventDescription: Map System
-      eventType: 1
-  - date: 1990/04/05
-    events:
-    - eventName: scene_101
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_102
-      eventDescription: Map System
-      eventType: 1
-  - date: 1990/04/06
-    events:
-    - eventName: scene_103
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_104
-      eventDescription: Map System
-      eventType: 1
-  - date: 1990/04/07
-    events:
-    - eventName: scene_105
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_106
       eventDescription: Map System
       eventType: 1
   - date: 1990/04/08

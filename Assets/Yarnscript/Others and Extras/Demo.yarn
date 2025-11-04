@@ -1,6 +1,6 @@
 ﻿title: Demo
 ---
-<<SetBGSprite "chapter1end">>
+<<SetBGSprite "DemoEnd">>
 <<wait  5>>
 <<GoToMainMenu>>
 ===
