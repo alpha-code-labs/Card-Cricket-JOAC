@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 public class CardsPoolManager_Tutorial : MonoBehaviour
@@ -33,7 +35,9 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
 
     private GameObject ballerCard;
     public string currentTutorialBall = "None";
-
+    [Header("Card Animation Settings")]
+    [SerializeField] float cardOutroDuration = 0.4f;
+    [SerializeField] AnimationCurve cardOutroCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     [Header("Yarn Spinner References")]
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private InMemoryVariableStorage variableStorage;
@@ -214,9 +218,14 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
         OnTurnStarted?.Invoke();
     }
 
-    [ContextMenu("End Turn")]
-    public void EndTurn(bool incrementBalls = true)
+    public void EndTurn(bool isNormalDelivery = true)
     {
+        StartCoroutine(EndTurnWithAnimation(isNormalDelivery));
+    }
+    [ContextMenu("End Turn")]
+    private IEnumerator EndTurnWithAnimation(bool incrementBalls = true)
+    {
+        yield return AnimateCardsOut();
         // Timer.Instance.EndTurnTimer();
         // Logic to end a turn, e.g., moving cards from HandCards to DiscardPile
         foreach (var card in HandCards)
@@ -224,13 +233,54 @@ public class CardsPoolManager_Tutorial : MonoBehaviour
             DiscardPile.Add(card);
             card.gameObject.SetActive(false); // Optionally deactivate the card
         }
-        
+
         SetCardsInteractable(true);
         HandCards.Clear();
         // EnergyManager.Instance.IncreaseEnergy(2); // Increment energy at the end of the turn
         CurrntTurn++; // Increment the turn number
         //StartTurn(incrementBalls); // Start the next turn
     }
+
+    public IEnumerator AnimateCardsOut()
+    {
+        if (HandCards.Count == 0) yield break;
+
+        List<Sequence> animations = new List<Sequence>();
+
+        for (int i = 0; i < HandCards.Count; i++)
+        {
+            var card = HandCards[i];
+            if (card == null || card.gameObject == null) continue;
+
+            RectTransform cardRect = card.GetComponent<RectTransform>();
+            Image cardImage = card.GetComponent<Image>();
+            CanvasGroup canvasGroup = card.GetComponent<CanvasGroup>();
+            if (canvasGroup == null)
+                canvasGroup = card.gameObject.AddComponent<CanvasGroup>();
+
+            // Create staggered animation for each card
+            Sequence seq = DOTween.Sequence();
+
+            // Add delay based on card position for staggered effect
+            float delay = i * 0.05f;
+
+            seq.AppendInterval(delay);
+
+            // Animate card flying down and fading out
+            seq.Append(cardRect.DOAnchorPosY(cardRect.anchoredPosition.y - 300f, cardOutroDuration)
+                .SetEase(Ease.InBack));
+            seq.Join(cardRect.DORotate(new Vector3(0, 0, Random.Range(-15f, 15f)), cardOutroDuration));
+            seq.Join(cardRect.DOScale(0.7f, cardOutroDuration));
+            seq.Join(canvasGroup.DOFade(0, cardOutroDuration * 0.8f));
+
+            animations.Add(seq);
+        }
+
+        // Wait for all animations to complete
+        float maxDuration = cardOutroDuration + (HandCards.Count * 0.05f);
+        yield return new WaitForSeconds(maxDuration);
+    }
+    
     [ContextMenu("Draw Card")]
     void DrawCard()
     {

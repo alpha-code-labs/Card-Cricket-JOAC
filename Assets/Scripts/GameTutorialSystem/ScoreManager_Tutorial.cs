@@ -160,9 +160,9 @@ public class ScoreManager_Tutorial : MonoBehaviour
         OutCome outcome = outcomeResult.outcome;
 
         // Play animation sequence
-        if (CardPlayAnimationController.Instance != null)
+        if (CardPlayAnimationController_Tutorial.Instance != null)
         {
-            yield return CardPlayAnimationController.Instance.PlayCardSequence(
+            yield return CardPlayAnimationController_Tutorial.Instance.PlayCardSequence(
                 cardObject, cardSprite, battingStrategy, outcome);
             // Update score immediately (but don't show yet)
             UpdateScore((int)outcome);

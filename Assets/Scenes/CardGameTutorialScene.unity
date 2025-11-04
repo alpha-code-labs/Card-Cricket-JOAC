@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 164009113}
   - component: {fileID: 164009112}
   - component: {fileID: 164009111}
-  - component: {fileID: 164009110}
+  - component: {fileID: 164009114}
   m_Layer: 5
   m_Name: Canvas Game
   m_TagString: Untagged
@@ -693,27 +693,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &164009110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164009108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd8b6811627af4dbc68eddfa01ab05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerStage: {fileID: 2056206742}
-  scorePosition: {fileID: 72031969}
-  shotTextPrefab: {fileID: 5979193527220999022, guid: 063dc95926f74d245b856718b4b90ca8, type: 3}
-  outcomeTextPrefab: {fileID: 1403160339365830246, guid: 9e1a820c74bdf5940b6940599ee25368, type: 3}
-  flyingNumberPrefab: {fileID: 4013791164943137827, guid: e3ea235ff58c95249b315996c5366edb, type: 3}
-  cardFlyDuration: 1.3
-  shotTextDuration: 0.2
-  outcomeDisplayDuration: 0.5
-  statsUpdateDuration: 0.5
 --- !u!114 &164009111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +756,32 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
+--- !u!114 &164009114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164009108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c7f61a684d6e64bb725c172ceb57f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerStage: {fileID: 2056206742}
+  scorePosition: {fileID: 72031969}
+  shotTextPrefab: {fileID: 5979193527220999022, guid: 063dc95926f74d245b856718b4b90ca8, type: 3}
+  outcomeTextPrefab: {fileID: 1403160339365830246, guid: 9e1a820c74bdf5940b6940599ee25368, type: 3}
+  outcomeCommentaryText: {fileID: 0}
+  flyingNumberPrefab: {fileID: 4013791164943137827, guid: e3ea235ff58c95249b315996c5366edb, type: 3}
+  cardFlyDuration: 0.3
+  shotTextDuration: 0.2
+  outcomeDisplayDuration: 0.5
+  statsUpdateDuration: 0.5
+  commentaryDisplayDuration: 2
+  commentaryOffset: {x: 0, y: -100, z: 0}
+  commentaryFadeInDuration: 0.3
+  commentaryFadeOutDuration: 0.3
 --- !u!1 &220481298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1078,8 @@ MonoBehaviour:
     pitchCondition: 0
   baseMaxHandSize: 4
   baseMaxRedraws: 1
+  useSmartCardSelection: 1
+  debugRunRateOverride: -1
   hand: {fileID: 1392834893}
   ballerCardTransform: {fileID: 826276919}
   BallThrowText: {fileID: 1821664796}
@@ -4909,7 +4916,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d48530b43076e3642bb477743eed6afc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.416
   m_Pitch: 1
   Loop: 1
   Mute: 0
