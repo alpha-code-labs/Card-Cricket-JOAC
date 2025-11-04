@@ -86,11 +86,14 @@ public class TransitionScreenManager : MonoBehaviour
     void SceneTransitionFinished(SceneNames processThisSceneTransitionFinish)
     {
         Time.timeScale = 1;
+        switch (processThisSceneTransitionFinish)
+        {
+            case SceneNames.NewDayScene:
+                NewDayManager.instance.BeginNewDaySequence();
+                break;
+        }
     }
-
 }
-
-
 public enum SceneNames
 {
     CardGameScene,

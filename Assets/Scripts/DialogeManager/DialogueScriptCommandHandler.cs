@@ -53,6 +53,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         if (Input.GetKeyDown(KeyCode.A))
         {
             if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
@@ -78,6 +79,7 @@ public class DialogueScriptCommandHandler : MonoBehaviour
                 Debug.LogError("DialogueRunner not assigned!");
             }
         }
+#endif
     }
 
     public static void InitializeSpriteMapping()

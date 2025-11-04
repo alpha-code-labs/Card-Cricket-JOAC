@@ -22,7 +22,11 @@ public class NewDayManager : MonoBehaviour
     void Start()
     {
         dateText = GetComponentInChildren<TextMeshProUGUI>();
-        BeginNewDaySequence();
+        dateText.text = "";
+        if (currentEventIndex == 0)
+            SetFilmGrain(true);
+        else
+            SetFilmGrain(false);
     }
     public void BeginNewDaySequence()
     {
@@ -33,7 +37,6 @@ public class NewDayManager : MonoBehaviour
 
     IEnumerator StartEventWithTransition()
     {
-        // AudioSFXManager.instance.PlayOneShotSFX(SFXType.HeartBeat);
         string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
@@ -44,15 +47,15 @@ public class NewDayManager : MonoBehaviour
         EventRecord events = currentDateRecord.events[currentEventIndex];
         if (currentEventIndex == 0)
         {
-            SetFilmGrain(true);
             DateTime previousDate = CalanderSystem.instance.GetPreviousDateTime(GameManager.instance.currentSaveData.currentDate);
             DateTime currentDate = DateTime.Parse(GameManager.instance.currentSaveData.currentDate);
-            yield return AnimateDateProgression(previousDate, currentDate);
-        }
-        else
-        {
-            SetFilmGrain(false);
-            dateText.text = "";
+            if (currentDate == previousDate && currentDate == DateTime.Parse("1988/07/18"))
+            {
+                //Special Case for first day of game no animation
+                yield return DisplayTextThenFade(PrettyStrings.GetPrettyDateString(currentDate.ToString()) + "\nSomewhere in Dharavi, Mumbai");
+            }
+            else
+                yield return AnimateDateProgression(previousDate, currentDate);
         }
 
         Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
@@ -102,7 +105,7 @@ public class NewDayManager : MonoBehaviour
                 break;
         }
     }
-    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 2f, float fadeDuration = 1f)
+    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 0.5f, float fadeDuration = 1f)
     {
         dateText.text = textToDisplay;
         if (dateText.alpha != 1)
