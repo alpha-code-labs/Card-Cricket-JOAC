@@ -161,7 +161,7 @@ position: 44,-312
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
-    Ramu: Good choice. It’s an aggressive choice. Good when you want to make quick runs. All batting shots with Aggressive will result in 4 runs, if it's the right choice.
+    Ramu: Good choice. It’s an aggressive choice. Good when you want to make quick runs.
 <<elseif $selection == "Leave">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
@@ -203,7 +203,7 @@ title: FifthBall
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
     <<showCharacterImage center>>
-    Ramu: No captain! You can't play aggressive shots to yorkers. That's Out
+    Ramu: Captain, Playing aggressive shots on yorkers is fine but will always result in 1 run.
 <<elseif $selection == "Leave">>
     <<resetToOriginalPresets>>
     <<moveDialogue top>>
