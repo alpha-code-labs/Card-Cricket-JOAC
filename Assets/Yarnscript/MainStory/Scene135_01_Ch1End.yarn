@@ -2,5 +2,5 @@
 ---
 <<SetBGSprite "chapter1end">>
 <<wait  5>>
-<<GoToMainMenu>>
+// <<GoToMainMenu>>
 ===
