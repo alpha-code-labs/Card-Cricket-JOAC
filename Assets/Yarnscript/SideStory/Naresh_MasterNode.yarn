@@ -90,18 +90,18 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 2
-Despite yesterday's dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
+Despite an earlier dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
 
 Naresh notices the young man's return with irritation and grudging recognition of his persistence.
 
 <<SetCharacterExpression "Naresh" Irritated>>
-Naresh: You again? I thought I made myself clear yesterday.
+Naresh: You again? I thought I made myself clear the last time we spoke.
 
 <<SetCharacterExpression "Naresh" Angry>>
 Naresh: Don't you boys have anything better to do than hang around places where you don't belong?
 
 <<SetCharacterExpression "Raju" Excited>>
-Raju: I can't stop thinking about cricket, bhaiya. Every night I try to practice what I saw yesterday.
+Raju: I can't stop thinking about cricket, bhaiya. Every night I try to practice what I saw the other day.
 
 <<SetCharacterExpression "Raju" Anxious>>
 Raju: But I know I'm missing things. I just want to learn, even if I can only watch from out here.
@@ -184,7 +184,7 @@ Naresh: Back again, I see. And what's that you're carrying?
 Naresh: Don't tell me you're planning to write complaints about being kept out.
 
 <<SetCharacterExpression "Raju" Excited>>
-Raju: It's my cricket journal, bhaiya. I've been writing down everything I observe here.
+Raju: It's my cricket journal, bhaiya. I've been writing down everything I observe when I'm here.
 
 <<SetCharacterExpression "Raju" Proud>>
 Raju: Different techniques, how the students hold their bats, what the coach corrects them for.
@@ -199,7 +199,7 @@ Naresh: You're... taking notes? On cricket technique?
 Naresh: By watching from outside the fence?
 
 <<SetCharacterExpression "Raju" Excited>>
-Raju: Yesterday I saw a student struggling with his forward defensive shot.
+Raju: Recently I saw a student struggling with his forward defensive shot.
 
 <<SetCharacterExpression "Raju" Confident>>
 Raju: The coach showed him three times how to position his front foot, but I could see the real problem.
@@ -427,15 +427,15 @@ tags:
 <<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
-Encouraged by yesterday's positive response, Raju approaches during equipment maintenance time, hoping for deeper conversation about cricket techniques.
+Encouraged by the response, Raju approaches during equipment maintenance time, hoping for deeper conversation about cricket techniques.
 
 The quiet period of maintenance provides perfect opportunity for conversation. The accumulated trust over four days has created space for more substantive cricket education.
 
 <<SetCharacterExpression "Naresh" Smiling>>
-Naresh: Ah, the cricket scholar returns. What observations have you added to that famous notebook of yours today?
+Naresh: Ah, the cricket scholar returns. What observations have you added to that famous notebook of yours recently?
 
 <<SetCharacterExpression "Raju" Excited>>
-Raju: I've been thinking about something I observed yesterday, bhaiya.
+Raju: I've been thinking about something I observed the other day, bhaiya.
 
 <<SetCharacterExpression "Raju" Quizzical>>
 Raju: When students practice their drives, they focus on power, but the most successful shots emphasize timing and placement.
@@ -499,7 +499,7 @@ tags:
 <<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
-Building on yesterday's revelation, Raju visits during the quiet period, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
+Building on that revelation, Raju visits during the quiet period, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
 
 The academy grounds take on new significance. Naresh's district-level experience has established him as a credible source of both technical knowledge and practical wisdom.
 
@@ -507,7 +507,7 @@ The academy grounds take on new significance. Naresh's district-level experience
 Naresh: Back for more cricket analysis, scholar?
 
 <<SetCharacterExpression "Naresh" Mischievous>>
-Naresh: I've been thinking about our conversation yesterday, about technique versus equipment. Want to see something interesting?
+Naresh: I've been thinking about our recent conversation, about technique versus equipment. Want to see something interesting?
 
 <<SetCharacterExpression "Raju" Excited>>
 Raju: Always, bhaiya! What did you want to show me?
@@ -561,13 +561,13 @@ Naresh: What if I helped you understand technique through observation and explan
 Raju: That would be incredible, bhaiya! I'd learn more from your experience than from any expensive coaching.
 
 <<SetCharacterExpression "Naresh" Serious>>
-Naresh: Then let's start with the basics. Tomorrow, if you want to continue this cricket education, I'll show you some things.
+Naresh: Then let's start with the basics. Next time, if you want to continue this cricket education, I'll show you some things.
 
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: Things that no amount of watching can teach. But remember - this stays between us.
 
 <<HideAllCharacters>>
-As Naresh commits to informal cricket instruction, both understand they're embarking on something professionally risky yet representing unprecedented opportunity. The promise creates anticipation for tomorrow's session.
+As Naresh commits to informal cricket instruction, both understand they're embarking on something professionally risky yet representing unprecedented opportunity. The promise creates anticipation for the next session.
 
 <<set $Naresh_Day = 6>>
 <<EndEvent true>>
@@ -581,7 +581,7 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)
-With anticipation from yesterday's promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
+With anticipation from that promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
 
 The academy grounds take on a sacred quality. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 
@@ -589,16 +589,16 @@ The academy grounds take on a sacred quality. The empty facility represents both
 Naresh: Psst! Over here, beta.
 
 <<SetCharacterExpression "Naresh" Excited>>
-Naresh: The paying students are gone, Coach Sharma won't return until morning, and the administrative staff has left for the day.
+Naresh: The paying students are gone, Coach Sharma won't return until the next day, and the administrative staff has left for now.
 
 <<SetCharacterExpression "Raju" Quizzical>>
-Raju: What is it, bhaiya? You seem... different today.
+Raju: What is it, bhaiya? You seem... different right now.
 
 <<SetCharacterExpression "Naresh" Serious>>
 Naresh: Five days of watching your dedication, your analytical approach, your genuine love for cricket...
 
 <<SetCharacterExpression "Naresh" Anxious>>
-Naresh: I've decided to do something I've never done before. Something that could cost me my job if anyone finds out.
+Naresh: I've decided to do something I've never done in all my time here. Something that could cost me my job if anyone finds out.
 
 <<SetCharacterExpression "Naresh" Excited>>
 Naresh: I'm going to let you inside. Just for a short while.

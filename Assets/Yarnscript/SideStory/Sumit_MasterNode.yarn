@@ -112,7 +112,7 @@ Raju: Both challenging and educational.
 Raju: When do you want to organize this?
 
 <<SetCharacterExpression "Sumit" "Excited">>
-Sumit: Let's start planning tomorrow!
+Sumit: Let's start planning next time!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: I'll think about the best challenges for us.
@@ -121,7 +121,7 @@ Sumit: I'll think about the best challenges for us.
 Raju: Great! I'm really looking forward to this.
 
 <<HideAllCharacters>>
-As Raju leaves with anticipation building for tomorrow's planning session, he carries excitement about testing his mental abilities against a peer. The prospect of intellectual competition has transformed a routine day into something meaningful.
+As Raju leaves with anticipation building for the upcoming planning session, he carries excitement about testing his mental abilities against a peer. The prospect of intellectual competition has transformed a routine day into something meaningful.
 
 <<set $Sumit_Day = 2>>
 <<EndEvent true>>
@@ -227,7 +227,7 @@ Raju: Good question. Let me think about it.
 Raju: Maybe we should decide on the main approach first?
 
 <<SetCharacterExpression "Sumit" "Smiling">>
-Sumit: Yes! Let's meet tomorrow to finalize everything.
+Sumit: Yes! Let's meet next time to finalize everything.
 
 <<HideAllCharacters>>
 As their planning conversation concludes, both friends understand they've moved beyond casual entertainment into serious mental exercise. Their systematic thinking reflects growing maturity in approaching competition.
@@ -509,13 +509,13 @@ title: Sumit_Day5
 // Day 5 - Continuing Competition
 After successfully completing their first day of competition, Sumit continues the challenge with Raju, eager to explore different aspects of their cognitive abilities.
 
-The competition setting welcomes both friends as they return with growing understanding of their respective mental strengths and areas for improvement from yesterday's challenges.
+The competition setting welcomes both friends as they return with growing understanding of their respective mental strengths and areas for improvement from the earlier challenges.
 
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Back for round two of our intellectual competition!
 
 <<SetCharacterExpression "Sumit" "Excited">>
-Sumit: Yesterday was really enlightening.
+Sumit: Last time was really enlightening.
 
 <<SetCharacterExpression "Sumit" "Astonished">>
 Sumit: I learned things about my thinking patterns I never realized!
@@ -533,7 +533,7 @@ Raju: And areas where I definitely need more practice!
 Sumit: That's exactly what I hoped would happen!
 
 <<SetCharacterExpression "Sumit" "Determined">>
-Sumit: Today let's make the challenges even more complex.
+Sumit: This time let's make the challenges even more complex.
 
 <<SetCharacterExpression "Sumit" "Smiling">>
 Sumit: Really push our intellectual boundaries!
@@ -542,16 +542,16 @@ Sumit: Really push our intellectual boundaries!
 Raju: I'm ready for more advanced challenges!
 
 <<SetCharacterExpression "Raju" "Smiling">>
-Raju: Yesterday gave me confidence in handling intellectual pressure.
+Raju: Last time gave me confidence in handling intellectual pressure.
 
 <<SetCharacterExpression "Sumit" "Excited">>
 Sumit: Perfect attitude!
 
 <<SetCharacterExpression "Sumit" "Smiling">>
-Sumit: Let's see if we can both perform even better today.
+Sumit: Let's see if we can both perform even better this time.
 
 <<SetCharacterExpression "Sumit" "Excited">>
-Sumit: By applying what we learned from yesterday!
+Sumit: By applying what we learned from last time!
 
 <<HideAllCharacters>>
 As the second day unfolds with increased complexity and growing confidence, their friendly rivalry continues providing educational value while strengthening appreciation for mental challenges.
