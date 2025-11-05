@@ -1,9 +1,11 @@
 using UnityEngine;
 using System.Collections;
+#if !UNITY_WEBGL
 using Steamworks;
-
+#endif
 public class SteamScript : MonoBehaviour
 {
+#if !UNITY_WEBGL
 	void Start()
 	{
 		if (SteamManager.Initialized)
@@ -33,4 +35,5 @@ public class SteamScript : MonoBehaviour
 			Debug.Log("Steam Overlay has been closed");
 		}
 	}
+#endif
 }
