@@ -2,5 +2,5 @@
 ---
 <<SetBGSprite "DemoEnd">>
 <<wait  5>>
-<<GoToMainMenu>>
+// <<GoToMainMenu>>
 ===
