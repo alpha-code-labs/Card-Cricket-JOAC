@@ -818,7 +818,7 @@ public class ScoreManager : MonoBehaviour
         // Update UI based on game mode
         if (isBattingFirst)
         {
-
+            musicIntensity.SetExcitement(.65f);
             totalRunsNeededText.text = "";
             currentRunsText.text = currentRuns.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
@@ -826,6 +826,7 @@ public class ScoreManager : MonoBehaviour
         }
         else
         {
+            musicIntensity.SetExcitement(.55f);
             currentRunsText.text = currentRuns.ToString();
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
@@ -834,12 +835,6 @@ public class ScoreManager : MonoBehaviour
 
         UpdateScore(0);
         UpdateBallsAndOvers(0);
-
-        if (redrawButton != null)
-        {
-            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
-            StartCoroutine(UpdateRedrawButtonRoutine()); // Initial update after delay
-        }
 
         if (BatterImage != null)
         {
@@ -858,8 +853,8 @@ public class ScoreManager : MonoBehaviour
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
 
-
-        musicIntensity.SetExcitement(.4f);
+        //update redraw button state when turn starts
+        CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
@@ -973,11 +968,6 @@ public class ScoreManager : MonoBehaviour
         //show pause intruction
         if(gamePuaseInstructionText != null)
             gamePuaseInstructionText.SetActive(true);
-    }
-    IEnumerator UpdateRedrawButtonRoutine()
-    {
-        yield return new WaitForSeconds(6f);
-        UpdateRedrawButton();
     }
     
     // Keep existing utility methods unchanged
