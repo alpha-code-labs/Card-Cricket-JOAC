@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: 80 runs against school league boys. They didn't expect that from our lane.
+Ramu: 110 runs against school league boys. They didn't expect that from our lane.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: Their bowler kept staring after every boundary.

@@ -103,14 +103,11 @@ MonoBehaviour:
       eventType: 0
   - date: 1990/04/13
     events:
-    - eventName: scene_121
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_122
-      eventDescription: Chasing 185 over 10 balls
-      eventType: 0
     - eventName: scene_123
       eventDescription: luck has maxed
+      eventType: 0
+    - eventName: scene_122
+      eventDescription: Chasing 185 over 10 balls
       eventType: 0
     - eventName: Card Gameplay 9
       eventDescription: Gameplay System
