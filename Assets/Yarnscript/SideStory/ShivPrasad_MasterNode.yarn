@@ -114,7 +114,7 @@ position: -75,-229
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
-Despite yesterday's difficult conversation, Raju stays home. He sits in their small courtyard, practicing his cricket grip with an old bat.
+Despite the previous day's difficult conversation, Raju stays home. He sits in their small courtyard, practicing his cricket grip with an old bat.
 
 Raju positions himself where his father will see him. His movements show dedication and a calculated attempt to prove his commitment. He waits for Shiv to return from work.
 
@@ -122,7 +122,7 @@ Raju positions himself where his father will see him. His movements show dedicat
 Shiv Prasad: Again with that bat in your hands? Beta, don't you ever rest?
 
 <<SetCharacterExpression "ShivPrasad" "Disappointed">>
-Shiv Prasad: I thought we discussed this yesterday.
+Shiv Prasad: I thought we discussed this the other day.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I do rest, Baba. But when I hold this bat...
@@ -213,7 +213,7 @@ position: -75,-229
 <<PlayBackgroundMusic ShivPrasad>>
 <<SetBGSprite HutInterior>>
 
-After two intense days, Raju approaches his father directly after dinner. Yesterday's discussion opened a small door of possibility.
+After two intense days, Raju approaches his father directly after dinner. The previous discussion opened a small door of possibility.
 
 The quiet intimacy of their meal creates the perfect atmosphere. Raju senses this will be pivotal. The flickering oil lamp casts dancing shadows as father and son prepare to negotiate the terms of a test.
 
@@ -734,7 +734,7 @@ On the day of the crucial mathematics test, Raju wakes earlier than necessary. H
 The quiet creates a sacred space. Both understand this is their final conversation before the test. Six days of preparation hang in the air. Light filters through their small window, illuminating promise and uncertainty.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
-Shiv Prasad: Beta, today is your test day.
+Shiv Prasad: Beta, this is your test day.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: After all this preparation, all this effort to prove balance...
@@ -848,7 +848,7 @@ Raju: Cricket will make me a better student, not worse.
 Raju: Everything I've learned this week proves that.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
-Shiv Prasad: Then go to school today and show your teacher.
+Shiv Prasad: Then go to school now and show your teacher.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Show yourself. Show me.

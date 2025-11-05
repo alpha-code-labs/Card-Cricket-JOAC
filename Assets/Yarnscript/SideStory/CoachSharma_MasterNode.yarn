@@ -150,9 +150,9 @@ tags:
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-Despite yesterday's harsh dismissal, Raju returns to the prestigious sports academy.
+Despite the previous day's harsh dismissal, Raju returns to the prestigious sports academy.
 
-His resolve is strengthened rather than weakened by yesterday's confrontation.
+His resolve is strengthened rather than weakened by the earlier confrontation.
 
 The academy grounds stretch out before him.
 
@@ -164,7 +164,7 @@ Yet his hunger for genuine improvement compels him to return.
 Coach Sharma: You again?
 
 <<SetCharacterExpression "CoachSharma"  "Irritated">>
-Coach Sharma: Didn't I make myself clear yesterday?
+Coach Sharma: Didn't I make myself clear the last time?
 
 <<SetCharacterExpression "CoachSharma"  "Angry">>
 Coach Sharma: Why do you persist in wasting your time here?
@@ -292,7 +292,7 @@ Raju: With complete dedication.
 Coach Sharma: Very well.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-Coach Sharma: Come back tomorrow.
+Coach Sharma: Come back next time.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 Coach Sharma: Before my regular sessions begin.
@@ -308,7 +308,7 @@ Raju: I won't disappoint you.
 
 <<HideAllCharacters>>
 
-As Raju departs the academy, he understands that tomorrow will mark the beginning of a different kind of test.
+As Raju departs the academy, he understands that his next visit will mark the beginning of a different kind of test.
 
 One that measures character through unglamorous labor rather than flashy skill demonstration.
 
@@ -351,7 +351,7 @@ Coach Sharma: Emotional fire burns bright.
 Coach Sharma: But it often burns out quickly.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-Coach Sharma: Come back tomorrow and we'll see if your intensity survives real work.
+Coach Sharma: Come back next time and we'll see if your intensity survives real work.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: I'll be here, sir.
@@ -367,7 +367,7 @@ His passionate commitment has been accepted as a challenge by Coach Sharma.
 
 His choice of the passionate path reflects his belief that genuine love for cricket can overcome any obstacle.
 
-Though tomorrow will test whether his intensity can survive the grinding reality of unglamorous preparation work.
+Though his next session will test whether his intensity can survive the grinding reality of unglamorous preparation work.
 
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
@@ -401,7 +401,7 @@ Raju: Let me learn your standards and exceed them consistently.
 Coach Sharma: Interesting approach.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-Coach Sharma: Come back tomorrow.
+Coach Sharma: Come back next time.
 
 <<SetCharacterExpression "CoachSharma" "Skeptical">>
 Coach Sharma: We'll see if your methodical planning survives the reality of actual work.
@@ -419,7 +419,7 @@ Raju: But execution without planning is inefficient.
 
 As Raju leaves the academy, his strategic approach has been accepted as a legitimate test.
 
-He understands that tomorrow will reveal whether his methodical thinking can translate into effective action.
+He understands that his next opportunity will reveal whether his methodical thinking can translate into effective action.
 
 His choice of the analytical path reflects a belief that intelligent preparation can maximize limited opportunities.
 
@@ -641,7 +641,7 @@ The academy nets beckon tantalizingly as Raju completes another session of prepa
 
 His hands are eager to grip a proper cricket bat after days of proving his character through unglamorous labor.
 
-Coach Sharma's presence carries a different energy today.
+Coach Sharma's presence carries a different energy this time.
 
 The period of testing commitment through routine tasks may be giving way to evaluation of actual cricket potential.
 
@@ -765,11 +765,11 @@ title: CoachSharma_Day5
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-After yesterday's successful demonstration of his natural cricket ability, Raju returns.
+After the previous session's successful demonstration of his natural cricket ability, Raju returns.
 
 He hopes that Coach Sharma's recognition might translate into actual coaching opportunity.
 
-The academy grounds carry a different energy today.
+The academy grounds carry a different energy at this moment.
 
 Raju approaches with the knowledge that he has crossed a crucial threshold.
 
@@ -785,7 +785,7 @@ Seeds that now await uncertain ground to determine whether they can grow into ge
 Coach Sharma: You're back again, I see.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-Coach Sharma: Yesterday's assessment confirmed what I suspected.
+Coach Sharma: The previous assessment confirmed what I suspected.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 Coach Sharma: You have genuine natural ability that can't be taught.
@@ -803,7 +803,7 @@ Raju: Sir, does that mean you might be willing to teach me?
 Raju: Even though I can't afford the regular academy fees?
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
-Coach Sharma: I've been thinking about exactly that question since yesterday's session.
+Coach Sharma: I've been thinking about exactly that question since the last session.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
 Coach Sharma: About what you said.

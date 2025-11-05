@@ -166,7 +166,7 @@ After thinking about Suresh's story, Raju returns to the auto stand, determined 
 The familiar bustle provides a backdrop as Raju approaches for the second day. His resolve has strengthened, not weakened.
 
 <<SetCharacterExpression "Suresh" "Smiling">>
-Suresh: Back again, champ? I thought after yesterday's reality check, you might decide to focus on safer pursuits.
+Suresh: Back again, champ? I thought after our last conversation's reality check, you might decide to focus on safer pursuits.
 
 <<SetCharacterExpression "Suresh" "Skeptical">>
 Suresh: Didn't get scared off by my lecture about the harsh world of professional cricket?
@@ -457,7 +457,7 @@ position: -7,75
 <<SetBGSprite AutoStand>>
 
 // Scene Setup - Day 3
-Building on yesterday's conversation, Raju seeks Suresh's practical advice about navigating the specific challenges young cricketers face.
+Building on their previous conversation, Raju seeks Suresh's practical advice about navigating the specific challenges young cricketers face.
 
 The auto stand has become an unexpected classroom. Their developing relationship is transforming chance meetings into systematic education.
 
@@ -465,7 +465,7 @@ The auto stand has become an unexpected classroom. Their developing relationship
 Suresh: You're becoming a regular visitor, champ.
 
 <<SetCharacterExpression "Suresh" "Quizzical">>
-Suresh: I can see you've got something specific on your mind today.
+Suresh: I can see you've got something specific on your mind right now.
 
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Not just general cricket talk, but particular challenges you're trying to figure out.
@@ -616,7 +616,7 @@ The auto stand has transformed into the site of meaningful mentorship. Four days
 Suresh: My regular visitor returns!
 
 <<SetCharacterExpression "Suresh" "Confident">>
-Suresh: I can see something different in your posture today, champ.
+Suresh: I can see something different in your posture now, champ.
 
 <<SetCharacterExpression "Suresh" "Confident">>
 Suresh: Not just eagerness to learn, but confidence from having absorbed lessons.

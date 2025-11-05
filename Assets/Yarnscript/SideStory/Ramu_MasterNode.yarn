@@ -56,7 +56,7 @@ Ramu: Talent means nothing without hard work.
 Raju: But... I'm tired, bhaiya.
 
 <<SetCharacterExpression Raju Sad>>
-Raju: Yesterday's practice went so late. Can't I rest today?
+Raju: The previous day's practice went so late. Can't I rest now?
 
 <<SetCharacterExpression Raju Sad>>
 Raju: Just this once?
@@ -189,7 +189,7 @@ The heat is unforgiving at Koliwada Ground. Despite the sweltering temperature, 
 The dusty ground shimmers in the heat. Raju's decision to test his practice lessons against older players represents a leap in confidence.
 
 <<SetCharacterExpression Sumit Excited>>
-Sumit: Come on, Raju! Yesterday your brother said you were special.
+Sumit: Come on, Raju! The other day your brother said you were special.
 
 <<SetCharacterExpression Sumit Mischievous>>
 Sumit: Let's see if you can handle my fastest ball!
@@ -225,7 +225,7 @@ Ramu: I don't care how well he was playing!
 Ramu: Look at this bruise!
 
 <<SetCharacterExpression Ramu Angry>>
-Ramu: No more for today. You want to break bones over a game?
+Ramu: No more for now. You want to break bones over a game?
 
 <<SetCharacterExpression Raju Disappointed>>
 Raju: But bhaiya, I was doing really well before this happened.
@@ -267,7 +267,7 @@ Ramu: What if you sacrifice everything else and it doesn't work out?
 Raju: But what if it does work out?
 
 <<SetCharacterExpression Raju Confident>>
-Raju: What if yesterday's practice and today's playing mean something?
+Raju: What if the earlier practice and this playing mean something?
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Then you'll need to be more careful. More disciplined.
@@ -406,7 +406,7 @@ position: 469,238
 <<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-Three days of consistent practice have created a routine. Today, Raju seeks out his brother at Koliwada Ground to show how the lessons are paying off in real games.
+Three days of consistent practice have created a routine. Now, Raju seeks out his brother at Koliwada Ground to show how the lessons are paying off in real games.
 
 <<HideAllCharacters>>
 
@@ -422,7 +422,7 @@ Amit: Better than kids twice his age. You must be proud!
 Ramu: He's just having a lucky day.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Tomorrow might be different. Cricket is unpredictable.
+Ramu: Next time might be different. Cricket is unpredictable.
 
 <<SetCharacterExpression Raju Excited>>
 Raju: Bhaiya! Did you see that six?
@@ -548,7 +548,7 @@ position: 934,-229
 <<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-The morning sun casts long shadows across the ground as Raju and Ramu return for another day of practice. The air between them carries the weight of yesterday's conversation.
+The morning sun casts long shadows across the ground as Raju and Ramu return for another day of practice. The air between them carries the weight of their previous conversation.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: I understand your fears, bhaiya.
@@ -637,7 +637,7 @@ position: 902,93
 <<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-The determination in Raju's eyes is unmistakable as he steps onto the practice ground. Today, he will show his brother the depth of his commitment.
+The determination in Raju's eyes is unmistakable as he steps onto the practice ground. At this moment, he will show his brother the depth of his commitment.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: I'll prove my commitment is unbreakable, bhaiya.
@@ -807,7 +807,7 @@ position: 189,214
 <<SetBGSprite HutInterior>>
 <<HideAllCharacters>>
 
-Yesterday's conversation has forced Ramu to confront whether Raju is prepared for serious training.
+Their previous conversation has forced Ramu to confront whether Raju is prepared for serious training.
 
 <<HideAllCharacters>>
 
@@ -820,7 +820,7 @@ Ramu: Wake up, little brother.
 Ramu: If you want to play cricket seriously, if you want me to consider that tournament...
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: You need to show me something today.
+Ramu: You need to show me something right now.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: Show you what, bhaiya? I'll do anything.
@@ -898,7 +898,7 @@ Raju: Because I want this, bhaiya. I really want to play cricket.
 Raju: Not just for fun, but for real.
 
 <<SetCharacterExpression Raju Determined>>
-Raju: Like those players you talked to yesterday.
+Raju: Like those players you talked to before.
 
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Want is not enough.
@@ -939,17 +939,17 @@ position: -184,-151
 <<SetBGSprite HutInterior>>
 <<HideAllCharacters>>
 
-After six consecutive days of consistent practice, Raju joins his brother for another session. Today's practice will likely draw attention from neighbors.
+After six consecutive days of consistent practice, Raju joins his brother for another session. This practice will likely draw attention from neighbors.
 
 <<HideAllCharacters>>
 
 The Kohliwada Ground has become unexpected neighborhood entertainment. Curious residents time their daily activities to witness the intense training sessions.
 
 <<SetCharacterExpression Ramu Smiling>>
-Ramu: Ready for today's session, champ?
+Ramu: Ready for the session, champ?
 
 <<SetCharacterExpression Ramu Excited>>
-Ramu: Word's gotten around the neighborhood about your batting yesterday.
+Ramu: Word's gotten around the neighborhood about your batting from before.
 
 <<SetCharacterExpression Ramu Smiling>>
 Ramu: Mrs. Das asked me if you're really serious about this tournament.
@@ -988,7 +988,7 @@ Ramu: That means something, Raju. That means you're not just playing anymore.
 Ramu: You're performing.
 
 <<SetCharacterExpression Raju Excited>>
-Raju: It feels different today.
+Raju: It feels different right now.
 
 <<SetCharacterExpression Raju Confident>>
 Raju: Like I'm not just hitting balls - like I'm proving something.
@@ -1038,14 +1038,14 @@ position: 526,-86
 <<SetBGSprite HutInterior>>
 <<HideAllCharacters>>
 
-For the eighth consecutive day, Raju meets his brother for practice. Today carries special weight - Ramu will either commit to tournament registration or suggest waiting.
+For the eighth consecutive day, Raju meets his brother for practice. This session carries special weight - Ramu will either commit to tournament registration or suggest waiting.
 
 <<HideAllCharacters>>
 
 The familiar atmosphere carries unprecedented significance. Both understand this will be a decisive practice session.
 
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Seven days ago, when you first asked me to help with cricket...
+Ramu: A week earlier, when you first asked me to help with cricket...
 
 <<SetCharacterExpression Ramu Skeptical>>
 Ramu: I thought it was just another kid's fantasy.

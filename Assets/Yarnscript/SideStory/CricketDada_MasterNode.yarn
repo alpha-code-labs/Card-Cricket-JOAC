@@ -63,7 +63,7 @@ Raju: But how do you remember so many details from decades ago?
 Cricket Dada: When you love something truly, every moment becomes precious.
 
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
-Cricket Dada: I remember Kapil Dev's catch in 1983 like it happened yesterday. That catch changed everything.
+Cricket Dada: I remember Kapil Dev's catch in 1983 like it was right before my eyes. That catch changed everything.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: The one that dismissed Viv Richards? I've read about that!
@@ -116,9 +116,9 @@ position: -7,-50
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Day 2
-Eager to continue yesterday's conversation, Raju returns after school. He brings a notebook to record the incredible stories.
+Eager to continue their previous conversation, Raju returns after school. He brings a notebook to record the incredible stories.
 
-The hospital feels more familiar today. Raju's notebook represents his serious intention to preserve Cricket Dada's memories.
+The hospital feels more familiar now. Raju's notebook represents his serious intention to preserve Cricket Dada's memories.
 
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
 Cricket Dada: Ah, my young friend returns! I was hoping you would come back.
@@ -222,9 +222,9 @@ position: -75,-229
 <<SetBGSprite SurakshaHospital>>
 
 // Scene Setup - Day 3
-Raju brings a cricket magazine he bought with his lunch money. But today, something feels different about Cricket Dada.
+Raju brings a cricket magazine he bought with his lunch money. But this time, something feels different about Cricket Dada.
 
-The room carries different energy today. Raju detects a melancholy beneath Cricket Dada's usual enthusiasm.
+The room carries different energy this time. Raju detects a melancholy beneath Cricket Dada's usual enthusiasm.
 
 <<SetCharacterExpression "Raju" "Excited">>
 Raju: I brought you this cricket magazine, Dada.
@@ -242,7 +242,7 @@ Cricket Dada: But this means more to me than you know.
 Cricket Dada: It's been so long since anyone thought to bring me something.
 
 <<SetCharacterExpression "Raju" "Worried">>
-Raju: Dada, something is troubling you today. I can see it.
+Raju: Dada, something is troubling you right now. I can see it.
 
 <<SetCharacterExpression "CricketDada" "Sad">>
 Cricket Dada: You're very perceptive, beta.
@@ -456,7 +456,7 @@ position: -7,75
 // Scene Setup - Day 4
 Curious whether Cricket Dada contacted his family, Raju makes what might be his final visit to the hospital.
 
-The hospital buzzes with different energy today. Raju approaches with nervous anticipation about what he might find.
+The hospital buzzes with different energy this time. Raju approaches with nervous anticipation about what he might find.
 
 <<SetCharacterExpression "CricketDada" "Overjoyed">>
 Cricket Dada: Beta! Come, come quickly!

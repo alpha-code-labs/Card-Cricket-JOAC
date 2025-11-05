@@ -37,7 +37,7 @@ Her weathered hands sort through cleaning supplies and tiffin containers with qu
 Kamla: Raju, beta, before you run off with that cricket bat, come help your mother.
 
 <<SetCharacterExpression "Kamla" "Serious">>
-Kamla: I need you to carry these tiffins and laundry up to the big building today.
+Kamla: I need you to carry these tiffins and laundry up to the big building this morning.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: The High-Rise Condos?
@@ -172,7 +172,7 @@ position: -75,-229
 
 The familiar warmth of their small home welcomes Raju as he settles beside his mother.
 
-His mind still processes yesterday's encounter with casual cruelty at the wealthy apartment.
+His mind still processes the previous day's encounter with casual cruelty at the wealthy apartment.
 
 The simple comfort of being in a space where his worth is never questioned creates a stark contrast to the high-rise complex.
 
@@ -195,7 +195,7 @@ Kamla: They look down on us not because we're less than them.
 Kamla: But because looking down makes them feel taller.
 
 <<SetCharacterExpression "Kamla" "Proud">>
-Kamla: But here's what I noticed yesterday, and what that rich boy didn't see.
+Kamla: But here's what I noticed back then, and what that rich boy didn't see.
 
 <<SetCharacterExpression "Kamla" "Smiling">>
 Kamla: You held your head high.
@@ -735,7 +735,7 @@ Each purchase decision reflects the harsh mathematics of poverty.
 
 Where every rupee spent on one need means another need goes unmet.
 
-Though today's shopping trip carries the anticipation of a significant moment.
+Though this shopping trip carries the anticipation of a significant moment.
 
 That neither fully expects.
 
@@ -919,7 +919,7 @@ Through improvements that validate both his talent and her faith in his potentia
 Kamla: Look at that smile, beta!
 
 <<SetCharacterExpression "Kamla" "Smiling">>
-Kamla: How was practice today?
+Kamla: How was practice this afternoon?
 
 <<SetCharacterExpression "Kamla" "Overjoyed">>
 Kamla: You look like you conquered the entire cricket field.
@@ -931,7 +931,7 @@ Raju: Ma, it was incredible!
 Raju: Using the proper cricket ball made such a difference.
 
 <<SetCharacterExpression "Raju" "Proud">>
-Raju: I hit six boundaries today - clean, powerful shots.
+Raju: I hit six boundaries just now - clean, powerful shots.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: That went exactly where I aimed them.

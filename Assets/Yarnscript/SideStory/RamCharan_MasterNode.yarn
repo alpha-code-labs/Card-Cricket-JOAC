@@ -186,7 +186,7 @@ position: -75,-229
 <<SetBGSprite Library>>
 
 <<HideAllCharacters>>
-Despite yesterday's harsh rejection, Raju returns to the library.
+Despite the previous harsh rejection, Raju returns to the library.
 
 <<HideAllCharacters>>
 Determined to prove that his interest in learning is genuine and persistent.
@@ -198,7 +198,7 @@ The library's familiar quiet embraces him as he returns for the second day.
 His determination to prove his intellectual seriousness is strengthened rather than weakened.
 
 <<HideAllCharacters>>
-The rows of books seem less intimidating today.
+The rows of books seem less intimidating now.
 
 <<HideAllCharacters>>
 More like allies in his quest to demonstrate that academic curiosity and athletic passion can coexist.
@@ -213,13 +213,13 @@ It will demand genuine engagement with learning for its own sake.
 Ram Charan: Back again?
 
 <<SetCharacterExpression "RamCharan" "Skeptical">>
-Ram Charan: Most boys run away and never return when they receive the kind of honest assessment I gave you yesterday.
+Ram Charan: Most boys run away and never return when they receive the kind of honest assessment I gave you the other day.
 
 <<SetCharacterExpression "RamCharan" "Quizzical">>
 Ram Charan: They prefer easy encouragement to truthful criticism about their misplaced priorities.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Sir, I came to read and learn, just like I said yesterday.
+Raju: Sir, I came to read and learn, just like I said before.
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: I understand that you think cricket is a distraction.
@@ -329,7 +329,7 @@ Raju: I want to prove that I can handle intellectual challenges.
 Raju: With the same dedication I bring to cricket practice.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
-Ram Charan: Very well. Come back tomorrow.
+Ram Charan: Very well. Come back another day.
 
 <<SetCharacterExpression "RamCharan" "Serious">>
 Ram Charan: If your intellectual curiosity is genuine, I'll provide materials.
@@ -390,7 +390,7 @@ Raju: I want to find a way to make them strengthen each other.
 Ram Charan: Mature thinking for someone your age.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
-Ram Charan: Come back tomorrow.
+Ram Charan: Come back another day.
 
 <<SetCharacterExpression "RamCharan" "Smiling">>
 Ram Charan: If you're serious about integration rather than just making excuses.
@@ -414,7 +414,7 @@ Rather than dismissal.
 His choice to seek integration rather than choosing sides reflects a wisdom beyond his years.
 
 <<HideAllCharacters>>
-Tomorrow will reveal how intellectual discipline and passionate pursuits might actually enhance each other.
+The future will reveal how intellectual discipline and passionate pursuits might actually enhance each other.
 
 <<set $RamCharan_Day = 3>>
 <<EndEvent true>>
@@ -454,7 +454,7 @@ Raju: Let me earn the right to be here.
 Ram Charan: Interesting approach.
 
 <<SetCharacterExpression "RamCharan" "Confident">>
-Ram Charan: Come back tomorrow.
+Ram Charan: Come back another day.
 
 <<SetCharacterExpression "RamCharan" "Neutral">>
 Ram Charan: If your willingness to serve is genuine.
