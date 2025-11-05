@@ -755,10 +755,10 @@ Vendor: Madam, that's excellent quality - genuine leather, regulation weight.
 Vendor: Your son would practice like a real cricketer with that ball.
 
 <<SetCharacterExpression "Vendor" "Neutral">>
-Vendor: Only fifteen rupees, a very good price.
+Vendor: Only 100 rupees, a very good price.
 
 <<SetCharacterExpression "Kamla" "Worried">>
-Kamla: Fifteen rupees...
+Kamla: 100 rupees...
 
 <<SetCharacterExpression "Kamla" "Anxious">>
 Kamla: That's my lunch money for three days.
@@ -818,7 +818,7 @@ Vendor: This ball will last for years with proper care.
 Raju: Ma, you didn't have to do this.
 
 <<SetCharacterExpression "Raju" "Shocked">>
-Raju: I know what fifteen rupees means to our family.
+Raju: I know what 100 rupees means to our family.
 
 <<SetCharacterExpression "Raju" "Crying">>
 Raju: I know what you're giving up.
