@@ -21,7 +21,7 @@ Raju: A… substitute? Me?
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: You—I asked, they said yes, today you belong.
 
-<<SetCharacterExpression "Raju" "Determined">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: I'm eight.
 
 <<SetCharacterExpression "Ramu" "Excited">>

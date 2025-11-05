@@ -56,7 +56,7 @@ Pinky sees Raju solving something incorrectly in his notebook.
 Pinky: You're approaching that completely wrong.
 
 <<SetCharacterExpression "Pinky" "Skeptical">>
-Pinky: The quadratic formula isn't meant to be guessed at.
+Pinky: This formula isn't meant to be guessed at.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: There's a systematic method.
@@ -104,9 +104,9 @@ position: -75,-229
 <<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
-Encouraged by yesterday's productive session, Raju returns to the library after school. He carries not only his homework but additional practice problems.
+Encouraged by the productive session earlier, Raju returns to the library after school. He carries not only his homework but additional practice problems.
 
-The library welcomes Raju's return. Pinky sits at her usual table surrounded by advanced books. Today something in her posture suggests an emotional burden, creating an opportunity for deeper connection.
+The library welcomes Raju's return. Pinky sits at her usual table surrounded by advanced books. On this occasion something in her posture suggests an emotional burden, creating an opportunity for deeper connection.
 
 <<SetCharacterExpression "Raju" "Worried">>
 Raju: Is everything alright?
@@ -188,7 +188,7 @@ position: -75,-229
 <<PlayBackgroundMusic Pinky>>
 <<SetBGSprite PublicSchool>>
 
-After two successful library sessions, Raju continues this routine. His mathematical understanding has improved remarkably. Today he brings a small gesture of appreciation - a pencil set purchased with saved lunch money.
+After two successful library sessions, Raju continues this routine. His mathematical understanding has improved remarkably. On this visit he brings a small gesture of appreciation - a pencil set purchased with saved lunch money.
 
 The library welcomes Raju as he arrives for his third consecutive day. The modest gift of pencils tucked in his bag represents gratitude for her generous tutoring. Their academic partnership has begun developing into something more meaningful.
 
@@ -229,7 +229,7 @@ Pinky: I've been preparing for this entrance exams for two years.
 Pinky: I study by candlelight after everyone sleeps.
 
 <<SetCharacterExpression "Pinky" "Pained">>
-Pinky: I've memorized entire anatomy chapters, practiced thousands of chemistry equations.
+Pinky: I've memorized entire chapters, practiced thousands of chemistry equations.
 
 <<SetCharacterExpression "Pinky" "Crying">>
 Pinky: But none of it matters if my parents separate.
@@ -523,9 +523,6 @@ Pinky: I can't afford to sleep normally.
 <<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: Every minute counts now.
 
-<<SetCharacterExpression "Pinky" "Worried">>
-Pinky: My engagement ceremony is scheduled for two weeks after exams.
-
 <<SetCharacterExpression "Pinky" "Pained">>
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
@@ -548,7 +545,7 @@ Pinky: Strategic thinking includes resource management.
 Pinky: And our minds are resources that need proper maintenance.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: When I'm stressed about cricket performance, Coach Ramu always tells me something important.
+Raju: When I'm stressed about cricket performance, Ramu Bhaiya always tells me something important.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Focus on executing basics perfectly rather than trying to force extraordinary results.
@@ -610,7 +607,7 @@ Pinky: My engagement ceremony is scheduled for two weeks after exams.
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
 <<SetCharacterExpression "Raju" "Loving">>
-Raju: Remember what we talked about yesterday?
+Raju: Remember what we talked about earlier?
 
 <<SetCharacterExpression "Raju" "Determined">>
 Raju: You don't have to carry this burden alone.
@@ -742,7 +739,7 @@ title: Pinky_Day5
 
 On the final day before major exams begin, Raju spends time with Pinky for what might be their last collaborative study session. Rather than cramming additional material, he wants to use this session for review and mutual encouragement.
 
-The library takes on almost sacred significance as Raju and Pinky prepare for their final pre-exam study session. Both understand tomorrow will mark the culmination of their intensive collaboration and the beginning of tests that could determine whether their dreams survive family opposition.
+The library takes on almost sacred significance as Raju and Pinky prepare for their final pre-exam study session. Both understand the next day will mark the culmination of their intensive collaboration and the beginning of tests that could determine whether their dreams survive family opposition.
 
 <<SetCharacterExpression "Pinky" "Proud">>
 Pinky: Look at your improvement in mathematics.
@@ -796,7 +793,7 @@ Pinky: Exactly.
 Pinky: Your father needs to see that cricket excellence and academic excellence can coexist.
 
 <<SetCharacterExpression "Pinky" "Confident">>
-Pinky: My parents need to see that education creates opportunities worth delaying traditional expectations.
+Pinky: My parents need to see that education creates opportunities worth delaying.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: We've both proven that this week.
@@ -808,13 +805,13 @@ Raju: Your strategic study methods have improved my grades while respecting my c
 Raju: My questions have strengthened your teaching abilities while you've maintained your top ranking.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
-Pinky: Win or lose tomorrow, this partnership has been the most rewarding academic experience of my school career.
+Pinky: Win or lose in the exams, this partnership has been the most rewarding academic experience of my school career.
 
 <<SetCharacterExpression "Pinky" "Pained">>
 Pinky: You've helped me understand that knowledge becomes more powerful when it's shared.
 
 <<HideAllCharacters>>
-As their final preparation session concludes with both students having demonstrated remarkable academic progress, Raju and Pinky understand tomorrow's exams represent more than academic evaluation - they embody tests of whether passion and responsibility can truly coexist when supported by strategic thinking and mutual collaboration.
+As their final preparation session concludes with both students having demonstrated remarkable academic progress, Raju and Pinky understand the upcoming exams represent more than academic evaluation - they embody tests of whether passion and responsibility can truly coexist when supported by strategic thinking and mutual collaboration.
 
 <<set $Pinky_Day = 6>>
 <<EndEvent true>>
@@ -893,7 +890,7 @@ Pinky: The scholarship convinced them that education could improve our family's 
 Raju: A week ago, we were both struggling against family expectations.
 
 <<SetCharacterExpression "Raju" "Proud">>
-Raju: Today, we've both earned the freedom to chase our dreams.
+Raju: Now, we've both earned the freedom to chase our dreams.
 
 <<SetCharacterExpression "Pinky" "Smiling">>
 Pinky: But we also learned something more important than academic success.

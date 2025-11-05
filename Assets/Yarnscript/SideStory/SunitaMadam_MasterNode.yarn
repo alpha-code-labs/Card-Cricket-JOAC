@@ -157,7 +157,7 @@ position: -75,-229
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Despite yesterday's harsh dismissal, Raju returns to the prestigious school.
+Despite the harsh dismissal earlier, Raju returns to the prestigious school.
 
 Driven by an unshakeable belief that education represents his best chance.
 
@@ -165,7 +165,7 @@ The Summit Heights School school grounds are well-lit.
 
 His persistent return demonstrates a level of determination that few adults would show in the face of such discouragement.
 
-Yesterday's confrontation has taught him to expect hostility.
+The earlier confrontation has taught him to expect hostility.
 
 Yet his belief in the transformative power of education compels him to risk further humiliation in pursuit of any opportunity.
 
@@ -177,7 +177,7 @@ As he approaches the gates once more, the same teacher from yesterday spots him.
 Sunita Madam: You again?
 
 <<SetCharacterExpression "SunitaMadam" Irritated>>
-Sunita Madam: Didn't I make myself perfectly clear yesterday?
+Sunita Madam: Didn't I make myself perfectly clear last time?
 
 <<SetCharacterExpression "SunitaMadam" Angry>>
 Sunita Madam: Why do you persist in wasting your time here?
@@ -314,7 +314,7 @@ As Raju walks away from the second encounter, something significant has shifted.
 
 His intellectual abilities acknowledged for the first time by someone from the privileged educational world.
 
-He understands that yesterday's humiliation has transformed into today's opportunity through the simple act of demonstrating knowledge rather than merely claiming it.
+He understands that the earlier humiliation has transformed into this opportunity through the simple act of demonstrating knowledge rather than merely claiming it.
 
 Sunita Madam's shift from dismissive hostility to cautious interest represents a crucial breakthrough.
 
@@ -559,7 +559,7 @@ As Raju articulates his track record of overcoming obstacles, Sunita Madam begin
 
 That his confidence stems not from naive optimism but from demonstrated ability to achieve goals that seemed impossible.
 
-His examples of previous successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
+His examples of past successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
 
 Reflect genuine capability rather than empty boasting.
 
@@ -572,13 +572,13 @@ tags:
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Encouraged by yesterday's more positive response, Raju returns to the school once again.
+Encouraged by that more positive response, Raju returns to the school once again.
 
 Hoping that his consistent demonstration of intellectual curiosity and respectful behavior might further soften Sunita Madam's initial prejudice.
 
 He approaches the school with growing confidence.
 
-Yesterday's breakthrough has established a foundation for genuine educational mentorship.
+The recent breakthrough has established a foundation for genuine educational mentorship.
 
 His persistence having transformed initial hostility into cautious respect.
 
@@ -590,7 +590,7 @@ While his continued respectful approach demonstrates understanding rather than p
 Sunita Madam: Persistent boy.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
-Sunita Madam: I honestly thought you would give up after our previous conversations.
+Sunita Madam: I honestly thought you would give up after our earlier conversations.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 Sunita Madam: Most children your age lose interest.
@@ -714,11 +714,11 @@ tags:
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Building on yesterday's positive interaction, Raju approaches with a specific request.
+Building on that positive interaction, Raju approaches with a specific request.
 
 This will test whether her words about supporting his educational development translate into concrete action.
 
-The Summit Heights School school grounds seem different today.
+The Summit Heights School school grounds seem different now.
 
 As Raju approaches for what he senses will be a pivotal conversation.
 
@@ -734,7 +734,7 @@ Though the challenge now lies in converting philosophical support into practical
 
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
-Sunita Madam: You have something particular on your mind today, don't you?
+Sunita Madam: You have something particular on your mind, don't you?
 
 <<SetCharacterExpression "SunitaMadam" Quizzical>>
 Sunita Madam: I can see it in your posture.
@@ -743,7 +743,7 @@ Sunita Madam: I can see it in your posture.
 Sunita Madam: This isn't just another casual visit hoping for encouragement.
 
 <<SetCharacterExpression "Raju" Excited>>
-Raju: Ma'am, I've been thinking about what you said yesterday.
+Raju: Ma'am, I've been thinking about what you said before.
 
 <<SetCharacterExpression "Raju" Excited>>
 Raju: About finding ways to support my educational development.
@@ -827,7 +827,7 @@ Sunita Madam: Here's a reading list to start with.
 Sunita Madam: Literature, mathematics, history.
 
 <<SetCharacterExpression "SunitaMadam" Serious>>
-Sunita Madam: Study these books thoroughly and come back next week.
+Sunita Madam: Study these books thoroughly and come back soon.
 
 <<SetCharacterExpression "SunitaMadam" Serious>>
 Sunita Madam: Prepared to discuss what you've learned.
@@ -898,7 +898,7 @@ Setting the stage for opportunities, that could fundamentally alter his life's t
 
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
-Sunita Madam: You have something important to discuss today, don't you?
+Sunita Madam: You have something important to discuss, don't you?
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 Sunita Madam: I've learned to recognize that focused expression.

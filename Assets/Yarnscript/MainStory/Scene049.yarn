@@ -18,7 +18,7 @@ Raju: Reporting.
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Today's not like the lane matches—there's a pot at the end with real notes, half for ground repairs, the rest for winners.
 
-<<SetCharacterExpression "Raju" "Anxious">>
+<<SetCharacterExpression "Raju" "Smiling">>
 Raju: Maa's medicines, Baba's knee towel, new soles for my shoes… I counted it twice in my head.
 
 <<SetCharacterExpression "Ramu" "Confident">>

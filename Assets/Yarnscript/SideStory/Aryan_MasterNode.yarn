@@ -27,7 +27,7 @@ position: -7,-175
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-Despite knowing the discomfort it brings, Raju accompanies his mother to the high-rise complex today, carrying her work basket.
+Despite knowing the discomfort it brings, Raju accompanies his mother to the high-rise complex this morning, carrying her work basket.
 
 The gleaming marble floors mock Raju's worn sandals.
 
@@ -96,7 +96,7 @@ Aryan: You think you can beat someone with real coaching?
 Aryan: Tell you what, slum boy.
 
 <<SetCharacterExpression "Aryan" "Determined">>
-Aryan: If you're so confident, come back tomorrow.
+Aryan: If you're so confident, come back next time.
 
 <<SetCharacterExpression "Aryan" "Smiling">>
 Aryan: Bring whatever pathetic excuse for cricket equipment you have.
@@ -110,7 +110,7 @@ Aryan's mocking laughter echoes as Raju walks away. His hands clench into fists.
 
 A fire of determination burns away the initial sting of humiliation.
 
-Tomorrow will be about much more than cricket. It's a clash between two worlds.
+The next encounter will be about much more than cricket. It's a clash between two worlds.
 
 <<set $Aryan_Day = 2>>
 <<EndEvent true>>
@@ -186,7 +186,7 @@ Aryan: The confident little slum boy thinks he can actually compete.
 Aryan: This will be entertaining.
 
 <<SetCharacterExpression "Aryan" "Serious">>
-Aryan: Tomorrow, right here in this courtyard.
+Aryan: Next time, right here in this courtyard.
 
 <<SetCharacterExpression "Aryan" "Confident">>
 Aryan: A proper cricket challenge.
@@ -212,7 +212,7 @@ As Raju departs the complex, he feels the weight of what he has committed to.
 
 Not just a game of cricket, but a public test of everything he believes.
 
-The anticipation mixes with anxiety. Failure tomorrow would validate every cruel assumption about his background.
+The anticipation mixes with anxiety. Failure in the upcoming match would validate every cruel assumption about his background.
 
 <<set $Aryan_Day = 3>>
 <<EndEvent true>>
@@ -225,7 +225,7 @@ position: -75,-229
 <<PlayBackgroundMusic Angry_1>>
 <<SetBGSprite WellingtonEstate>>
 
-Knowing that upcoming challenge with Aryan will be witnessed by his friends, Raju visits the complex again today.
+Knowing that upcoming challenge with Aryan will be witnessed by his friends, Raju visits the complex once more.
 
 The complex buzzes with excitement. Word of the cricket challenge has spread among the wealthy children.
 
@@ -273,7 +273,7 @@ Aryan: Oh look, everyone! The challenger arrives!
 Aryan: Perfect timing.
 
 <<SetCharacterExpression "Aryan" "Mischievous">>
-Aryan: I was just telling my friends about tomorrow's entertainment.
+Aryan: I was just telling my friends about the upcoming entertainment.
 
 <<SetCharacterExpression "Aryan" "Confident">>
 Aryan: Are you ready for your public humiliation, slum boy?
@@ -336,7 +336,7 @@ As Raju leaves the complex, he maintains his composed demeanor despite the mount
 
 He feels the inner strength that comes from refusing to be drawn into petty verbal battles.
 
-His choice to remain dignified sets the stage for tomorrow's confrontation to be decided by skill rather than bluster.
+His choice to remain dignified sets the stage for the coming confrontation to be decided by skill rather than bluster.
 
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
@@ -382,7 +382,7 @@ Aryan's taunts echo in his ears.
 
 He feels the dangerous energy of someone pushed beyond his breaking point.
 
-The verbal battle has escalated the stakes. Tomorrow will test pride, dignity, and fundamental beliefs about justice and worth.
+The verbal battle has escalated the stakes. The match ahead will test pride, dignity, and fundamental beliefs about justice and worth.
 
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
@@ -546,7 +546,7 @@ Raju: You'll see.
 
 As Raju leaves the complex, anger courses through his veins.
 
-Tomorrow's battle looms like a storm on the horizon.
+The upcoming battle looms like a storm on the horizon.
 
 The cricket match has become something far more significant than either boy initially intended.
 
