@@ -56,7 +56,7 @@ Pinky sees Raju solving something incorrectly in his notebook.
 Pinky: You're approaching that completely wrong.
 
 <<SetCharacterExpression "Pinky" "Skeptical">>
-Pinky: The quadratic formula isn't meant to be guessed at.
+Pinky: This formula isn't meant to be guessed at.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: There's a systematic method.
