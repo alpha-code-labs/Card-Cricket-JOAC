@@ -836,12 +836,6 @@ public class ScoreManager : MonoBehaviour
         UpdateScore(0);
         UpdateBallsAndOvers(0);
 
-        if (redrawButton != null)
-        {
-            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
-            StartCoroutine(UpdateRedrawButtonRoutine()); // Initial update after delay
-        }
-
         if (BatterImage != null)
         {
             batterOriginalPosition = BatterImage.rectTransform.anchoredPosition;
@@ -858,6 +852,9 @@ public class ScoreManager : MonoBehaviour
         {
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
+
+        //update redraw button state when turn starts
+        CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
@@ -971,11 +968,6 @@ public class ScoreManager : MonoBehaviour
         //show pause intruction
         if(gamePuaseInstructionText != null)
             gamePuaseInstructionText.SetActive(true);
-    }
-    IEnumerator UpdateRedrawButtonRoutine()
-    {
-        yield return new WaitForSeconds(6f);
-        UpdateRedrawButton();
     }
     
     // Keep existing utility methods unchanged
