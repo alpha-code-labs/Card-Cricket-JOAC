@@ -96,7 +96,7 @@ public class EncouragementSystem : MonoBehaviour
         if (runsNeeded <= 10 && runsNeeded > 0 && !milestone10RunsTriggered)
         {
             milestone10RunsTriggered = true;
-            triggeredDialogue = "This is it my boy, Final 10 runs. It's now or never.";
+            triggeredDialogue = "This is it my boy, Final " +  runsNeeded + " runs. It's now or never.";
             musicIntensity.SetExcitement(.8f);
         }
         // Check for 75% milestone
