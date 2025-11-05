@@ -56,7 +56,7 @@ Ramu: Talent means nothing without hard work.
 Raju: But... I'm tired, bhaiya.
 
 <<SetCharacterExpression Raju Sad>>
-Raju: The previous day's practice went so late. Can't I rest now?
+Raju: The practice went so late. Can't I rest now?
 
 <<SetCharacterExpression Raju Sad>>
 Raju: Just this once?
@@ -548,7 +548,7 @@ position: 934,-229
 <<SetBGSprite KohliwadaGround>>
 <<HideAllCharacters>>
 
-The morning sun casts long shadows across the ground as Raju and Ramu return for another day of practice. The air between them carries the weight of their previous conversation.
+The morning sun casts long shadows across the ground as Raju and Ramu return for another day of practice. The air between them carries the weight of their earlier conversation.
 
 <<SetCharacterExpression Raju Determined>>
 Raju: I understand your fears, bhaiya.
@@ -807,7 +807,7 @@ position: 189,214
 <<SetBGSprite HutInterior>>
 <<HideAllCharacters>>
 
-Their previous conversation has forced Ramu to confront whether Raju is prepared for serious training.
+Their conversation has forced Ramu to confront whether Raju is prepared for serious training.
 
 <<HideAllCharacters>>
 

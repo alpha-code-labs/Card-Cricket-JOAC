@@ -150,7 +150,7 @@ tags:
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-Despite the previous day's harsh dismissal, Raju returns to the prestigious sports academy.
+Despite an earlier harsh dismissal, Raju returns to the prestigious sports academy.
 
 His resolve is strengthened rather than weakened by the earlier confrontation.
 
@@ -602,7 +602,7 @@ Raju: First the heavy equipment, then the detailed setup.
 Raju: Finishing with quality inspection.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: Each step builds on the previous one.
+Raju: Each step builds on the one before.
 
 <<SetCharacterExpression "CoachSharma" "Quizzical">>
 Coach Sharma: You're not just working hard - you're working smart.
@@ -765,7 +765,7 @@ title: CoachSharma_Day5
 <<PlayBackgroundMusic CoachSharma>>
 <<SetBGSprite SportsAcademy>>
 
-After the previous session's successful demonstration of his natural cricket ability, Raju returns.
+After demonstrating his natural cricket ability, Raju returns.
 
 He hopes that Coach Sharma's recognition might translate into actual coaching opportunity.
 
@@ -785,7 +785,7 @@ Seeds that now await uncertain ground to determine whether they can grow into ge
 Coach Sharma: You're back again, I see.
 
 <<SetCharacterExpression "CoachSharma" "Serious">>
-Coach Sharma: The previous assessment confirmed what I suspected.
+Coach Sharma: That assessment confirmed what I suspected.
 
 <<SetCharacterExpression "CoachSharma" "Smiling">>
 Coach Sharma: You have genuine natural ability that can't be taught.

@@ -152,7 +152,7 @@ position: 423,-115
 <<SetBGSprite GeneralStore>>
 <<HideAllCharacters>>
 
-Despite the previous day's introduction to demanding retail, Raju returns during restocking, hoping to observe how Agarwal Uncle prepares for business.
+Despite the introduction to demanding retail, Raju returns during restocking, hoping to observe how Agarwal Uncle prepares for business.
 
 <<HideAllCharacters>>
 
@@ -162,7 +162,7 @@ The store emanates methodical efficiency. Agarwal Uncle systematically checks de
 Agarwal Uncle: Back again, beta?
 
 <<SetCharacterExpression "AgarwalUncle" "Quizzical">>
-Agarwal Uncle: I thought the previous day's madness might have scared you off.
+Agarwal Uncle: I thought the day's madness might have scared you off.
 
 <<SetCharacterExpression "AgarwalUncle" "Smiling">>
 Agarwal Uncle: Most people don't see the hours of preparation behind every smooth transaction.
@@ -281,7 +281,7 @@ position: -98,99
 
 With Agarwal Uncle's question weighing on his mind, Raju returns during afternoon inventory period, ready to demonstrate how he might assist.
 
-The store hums with organizational activity. This visit carries different significance - the previous day's honest conversation has established an atmosphere of mutual assessment.
+The store hums with organizational activity. This visit carries different significance - the earlier honest conversation has established an atmosphere of mutual assessment.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
 Agarwal Uncle: Well beta, you've been asking to help for three days now.
@@ -573,7 +573,7 @@ position: 685,-46
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After the previous day's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
+After the selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
 The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
@@ -662,7 +662,7 @@ position: 375,142
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After the previous day's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
+After the selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
 The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
@@ -751,7 +751,7 @@ position: 374,-300
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After the previous day's selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
+After the selection, Raju arrives early to begin implementing his chosen approach before the rush tests his abilities.
 
 The store welcomes Raju's early arrival. The calm provides ideal conditions for beginning without peak pressure.
 
@@ -839,12 +839,12 @@ position: 20,-238
 <<PlayBackgroundMusic AgarewalUncle>>
 <<SetBGSprite GeneralStore>>
 
-After successfully completing his first full day, Raju returns eager to build on the previous day's experience and continue proving his value.
+After successfully completing his first full day, Raju returns eager to build on the experience and continue proving his value.
 
-The familiar store greets Raju with growing confidence. The previous day's success has validated both his capabilities and Agarwal Uncle's trust.
+The familiar store greets Raju with growing confidence. The day's success has validated both his capabilities and Agarwal Uncle's trust.
 
 <<SetCharacterExpression "AgarwalUncle" "Excited">>
-Agarwal Uncle: You returned, beta! The previous session was quite impressive.
+Agarwal Uncle: You returned, beta! The session was quite impressive.
 
 <<SetCharacterExpression "AgarwalUncle" "Proud">>
 Agarwal Uncle: You handled the pressure better than many experienced workers.
@@ -853,7 +853,7 @@ Agarwal Uncle: You handled the pressure better than many experienced workers.
 Agarwal Uncle: Are you prepared to take on greater responsibility at present?
 
 <<SetCharacterExpression "Raju" "Excited">>
-Raju: Definitely, uncle! The previous session taught me so much.
+Raju: Definitely, uncle! The session taught me so much.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: About retail operations and customer service.
@@ -865,7 +865,7 @@ Raju: I feel like I understand your business much more deeply now.
 Agarwal Uncle: Excellent! Now I want to see if you can handle more complex challenges.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-Agarwal Uncle: The previous session was basic assistance.
+Agarwal Uncle: The session was basic assistance.
 
 <<SetCharacterExpression "AgarwalUncle" "Confident">>
 Agarwal Uncle: Now we test whether you can truly contribute to business success.
@@ -880,7 +880,7 @@ Raju: Working here has shown me how much skill successful retail requires.
 Raju: And how much dedication.
 
 <<SetCharacterExpression "AgarwalUncle" "Serious">>
-Agarwal Uncle: Then let's see if you can maintain the previous session's quality.
+Agarwal Uncle: Then let's see if you can maintain the session's quality.
 
 <<SetCharacterExpression "AgarwalUncle" "Confident">>
 Agarwal Uncle: While handling increased responsibility.
@@ -895,7 +895,7 @@ Raju: I won't let you or the customers down, uncle!
 Agarwal Uncle: I'm beginning to believe that, beta.
 
 <<SetCharacterExpression "AgarwalUncle" "Proud">>
-Agarwal Uncle: Your work in the previous session exceeded my expectations significantly.
+Agarwal Uncle: Your work exceeded my expectations significantly.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: That means so much coming from you, uncle.

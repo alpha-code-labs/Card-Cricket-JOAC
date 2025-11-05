@@ -90,7 +90,7 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 2
-Despite the previous day's dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
+Despite an earlier dismissal, Raju returns to the academy at the same time. He positions himself at a respectful distance, hoping to watch without causing trouble.
 
 Naresh notices the young man's return with irritation and grudging recognition of his persistence.
 
@@ -427,7 +427,7 @@ tags:
 <<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
-Encouraged by the previous day's positive response, Raju approaches during equipment maintenance time, hoping for deeper conversation about cricket techniques.
+Encouraged by the response, Raju approaches during equipment maintenance time, hoping for deeper conversation about cricket techniques.
 
 The quiet period of maintenance provides perfect opportunity for conversation. The accumulated trust over four days has created space for more substantive cricket education.
 
@@ -499,7 +499,7 @@ tags:
 <<PlayBackgroundMusic Naresh>>
 <<SetBGSprite SportsAcademy>>
 
-Building on the previous day's revelation, Raju visits during the quiet period, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
+Building on that revelation, Raju visits during the quiet period, hoping to learn from someone who has experienced both playing and maintaining cricket at higher levels.
 
 The academy grounds take on new significance. Naresh's district-level experience has established him as a credible source of both technical knowledge and practical wisdom.
 
@@ -581,7 +581,7 @@ tags:
 <<SetBGSprite SportsAcademy>>
 
 // Scene Setup - Day 7 (Final Day)
-With anticipation from the previous day's promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
+With anticipation from that promise, Raju arrives during a quiet period, knowing this time might offer the privacy needed for informal mentorship.
 
 The academy grounds take on a sacred quality. The empty facility represents both opportunity and danger - a chance for hands-on learning balanced against the threat of discovery.
 

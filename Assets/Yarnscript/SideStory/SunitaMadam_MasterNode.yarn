@@ -157,7 +157,7 @@ position: -75,-229
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Despite the previous harsh dismissal, Raju returns to the prestigious school.
+Despite the harsh dismissal earlier, Raju returns to the prestigious school.
 
 Driven by an unshakeable belief that education represents his best chance.
 
@@ -559,7 +559,7 @@ As Raju articulates his track record of overcoming obstacles, Sunita Madam begin
 
 That his confidence stems not from naive optimism but from demonstrated ability to achieve goals that seemed impossible.
 
-His examples of previous successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
+His examples of past successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
 
 Reflect genuine capability rather than empty boasting.
 
@@ -572,7 +572,7 @@ tags:
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Encouraged by the previous more positive response, Raju returns to the school once again.
+Encouraged by that more positive response, Raju returns to the school once again.
 
 Hoping that his consistent demonstration of intellectual curiosity and respectful behavior might further soften Sunita Madam's initial prejudice.
 
@@ -590,7 +590,7 @@ While his continued respectful approach demonstrates understanding rather than p
 Sunita Madam: Persistent boy.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
-Sunita Madam: I honestly thought you would give up after our previous conversations.
+Sunita Madam: I honestly thought you would give up after our earlier conversations.
 
 <<SetCharacterExpression "SunitaMadam" Smiling>>
 Sunita Madam: Most children your age lose interest.
@@ -714,7 +714,7 @@ tags:
 <<PlayBackgroundMusic Light_03>>
 <<SetBGSprite PrivateSchool>>
 
-Building on the previous positive interaction, Raju approaches with a specific request.
+Building on that positive interaction, Raju approaches with a specific request.
 
 This will test whether her words about supporting his educational development translate into concrete action.
 
