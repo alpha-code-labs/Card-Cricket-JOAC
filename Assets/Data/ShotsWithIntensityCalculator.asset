@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6b2c8aedbe9294cae57c961502a6d0, type: 3}
   m_Name: ShotsWithIntensityCalculator
   m_EditorClassIdentifier: 
-  friendlyExcelFilePath: Data/cricket_outcomes_v12.xlsx
-  hostileExcelFilePath: Data/cricket_outcomes_v11.xlsx
+  friendlyExcelFilePath: Data/cricket_outcomes_v13.xlsx
+  hostileExcelFilePath: Data/no_file.xlsx
   friendlyOutcomeEntries:
   - typeOfBowler: 0
     side: 1
@@ -240752,7 +240752,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 25
     timing: 0
-    outcome: 1
+    outcome: -1
     specialOutcome: 0
     commentary: Defensive shot - you get single
   - typeOfBowler: 1
@@ -240762,7 +240762,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 26
     timing: 0
-    outcome: 2
+    outcome: -1
     specialOutcome: 0
     commentary: Controlled shot into the gap - comfortable two runs
   - typeOfBowler: 1
@@ -240772,7 +240772,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 27
     timing: 0
-    outcome: 4
+    outcome: -1
     specialOutcome: 0
     commentary: Aggressive intent rewarded with boundary
   - typeOfBowler: 1
@@ -240782,7 +240782,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 28
     timing: 0
-    outcome: 6
+    outcome: -1
     specialOutcome: 0
     commentary: Perfect connection on lofted shot - sailed over the boundary
   - typeOfBowler: 1
@@ -242152,7 +242152,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 25
     timing: 0
-    outcome: 1
+    outcome: -1
     specialOutcome: 0
     commentary: Defensive shot - you get single
   - typeOfBowler: 1
@@ -242162,7 +242162,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 26
     timing: 0
-    outcome: 2
+    outcome: -1
     specialOutcome: 0
     commentary: Controlled shot into the gap - comfortable two runs
   - typeOfBowler: 1
@@ -242172,7 +242172,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 27
     timing: 0
-    outcome: 4
+    outcome: -1
     specialOutcome: 0
     commentary: Aggressive intent rewarded with boundary
   - typeOfBowler: 1
@@ -242182,7 +242182,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 28
     timing: 0
-    outcome: 6
+    outcome: -1
     specialOutcome: 0
     commentary: Perfect connection on lofted shot - sailed over the boundary
   - typeOfBowler: 1
@@ -243552,7 +243552,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 25
     timing: 0
-    outcome: 1
+    outcome: -1
     specialOutcome: 0
     commentary: Defensive shot - you get single
   - typeOfBowler: 1
@@ -243562,7 +243562,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 26
     timing: 0
-    outcome: 2
+    outcome: -1
     specialOutcome: 0
     commentary: Controlled shot into the gap - comfortable two runs
   - typeOfBowler: 1
@@ -243572,7 +243572,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 27
     timing: 0
-    outcome: 4
+    outcome: -1
     specialOutcome: 0
     commentary: Aggressive intent rewarded with boundary
   - typeOfBowler: 1
@@ -243582,7 +243582,7 @@ MonoBehaviour:
     lengthOfBall: 2
     shotSelected: 28
     timing: 0
-    outcome: 6
+    outcome: -1
     specialOutcome: 0
     commentary: Perfect connection on lofted shot - sailed over the boundary
   - typeOfBowler: 1
