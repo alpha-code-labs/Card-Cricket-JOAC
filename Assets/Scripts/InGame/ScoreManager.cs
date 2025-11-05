@@ -818,7 +818,7 @@ public class ScoreManager : MonoBehaviour
         // Update UI based on game mode
         if (isBattingFirst)
         {
-
+            musicIntensity.SetExcitement(.65f);
             totalRunsNeededText.text = "";
             currentRunsText.text = currentRuns.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
@@ -826,6 +826,7 @@ public class ScoreManager : MonoBehaviour
         }
         else
         {
+            musicIntensity.SetExcitement(.55f);
             currentRunsText.text = currentRuns.ToString();
             totalRunsNeededText.text = "/ " + TargetScore.ToString();
             totalWicketsText.text = "/ " + wickets.ToString();
@@ -857,9 +858,6 @@ public class ScoreManager : MonoBehaviour
         {
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
-
-
-        musicIntensity.SetExcitement(.4f);
     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
