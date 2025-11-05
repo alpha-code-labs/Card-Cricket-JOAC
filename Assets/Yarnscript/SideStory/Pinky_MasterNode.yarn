@@ -56,7 +56,7 @@ Pinky sees Raju solving something incorrectly in his notebook.
 Pinky: You're approaching that completely wrong.
 
 <<SetCharacterExpression "Pinky" "Skeptical">>
-Pinky: The quadratic formula isn't meant to be guessed at.
+Pinky: This formula isn't meant to be guessed at.
 
 <<SetCharacterExpression "Pinky" "Serious">>
 Pinky: There's a systematic method.
@@ -229,7 +229,7 @@ Pinky: I've been preparing for this entrance exams for two years.
 Pinky: I study by candlelight after everyone sleeps.
 
 <<SetCharacterExpression "Pinky" "Pained">>
-Pinky: I've memorized entire anatomy chapters, practiced thousands of chemistry equations.
+Pinky: I've memorized entire chapters, practiced thousands of chemistry equations.
 
 <<SetCharacterExpression "Pinky" "Crying">>
 Pinky: But none of it matters if my parents separate.
@@ -523,9 +523,6 @@ Pinky: I can't afford to sleep normally.
 <<SetCharacterExpression "Pinky" "Anxious">>
 Pinky: Every minute counts now.
 
-<<SetCharacterExpression "Pinky" "Worried">>
-Pinky: My engagement ceremony is scheduled for two weeks after exams.
-
 <<SetCharacterExpression "Pinky" "Pained">>
 Pinky: So these tests represent my only chance to prove education's value to my parents.
 
@@ -548,7 +545,7 @@ Pinky: Strategic thinking includes resource management.
 Pinky: And our minds are resources that need proper maintenance.
 
 <<SetCharacterExpression "Raju" "Determined">>
-Raju: When I'm stressed about cricket performance, Coach Ramu always tells me something important.
+Raju: When I'm stressed about cricket performance, Ramu Bhaiya always tells me something important.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: Focus on executing basics perfectly rather than trying to force extraordinary results.
@@ -796,7 +793,7 @@ Pinky: Exactly.
 Pinky: Your father needs to see that cricket excellence and academic excellence can coexist.
 
 <<SetCharacterExpression "Pinky" "Confident">>
-Pinky: My parents need to see that education creates opportunities worth delaying traditional expectations.
+Pinky: My parents need to see that education creates opportunities worth delaying.
 
 <<SetCharacterExpression "Raju" "Confident">>
 Raju: We've both proven that this week.
