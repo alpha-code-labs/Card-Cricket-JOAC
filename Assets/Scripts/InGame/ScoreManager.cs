@@ -801,7 +801,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Debug.Log("Loading gameplay 2 as date is not found");
-            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
             TargetScore = currentGameplayConfig.winScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
@@ -853,9 +853,14 @@ public class ScoreManager : MonoBehaviour
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
 
-        //update redraw button state when turn starts
-        CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
-    }
+        if(redrawButton != null)
+        {
+            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
+            //update redraw button state when turn starts
+            CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
+
+        }
+     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
     {
