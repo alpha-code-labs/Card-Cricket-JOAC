@@ -460,16 +460,12 @@ public class ScoreManager : MonoBehaviour
             if (consecutiveBoundaries >= 3)
             {
                 TriggerHatTrickAnimation();
-                // Don't reset immediately - let them continue the streak
+                consecutiveBoundaries = 0; // Reset after triggering
             }
         }
         else
         {
-            // Reset consecutive boundaries on any non-boundary score (including wicket or wide)
-            if (consecutiveBoundaries > 0)
-            {
-                Debug.Log($"Consecutive boundaries streak ended at {consecutiveBoundaries}");
-            }
+            // Reset streak if no boundary
             consecutiveBoundaries = 0;
         }
 
