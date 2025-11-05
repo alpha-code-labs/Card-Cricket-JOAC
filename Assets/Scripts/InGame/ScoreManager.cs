@@ -463,7 +463,7 @@ public class ScoreManager : MonoBehaviour
                 // Don't reset immediately - let them continue the streak
             }
         }
-        else if (runs > 0 || runs == -1 || runs == -3)
+        else
         {
             // Reset consecutive boundaries on any non-boundary score (including wicket or wide)
             if (consecutiveBoundaries > 0)
