@@ -100,6 +100,9 @@ MonoBehaviour:
     - eventName: scene_22
       eventDescription: Map System
       eventType: 1
+    - eventName: scene_22 Free
+      eventDescription: Map System
+      eventType: 1
   - date: 1990/03/02
     events:
     - eventName: scene_23
@@ -485,6 +488,22 @@ MonoBehaviour:
       eventType: 1
   - date: 1990/04/11
     events:
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/12
+    events:
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/13
+    events:
     - eventName: scene_113
       eventDescription: real prize money
       eventType: 0
@@ -500,7 +519,7 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post gameplay scene switceher
       eventType: 0
-  - date: 1990/04/12
+  - date: 1990/04/14
     events:
     - eventName: Skip
       eventDescription: 
@@ -514,7 +533,7 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post gameplay scene switcher
       eventType: 0
-  - date: 1990/04/13
+  - date: 1990/04/15
     events:
     - eventName: scene_123
       eventDescription: luck has maxed
@@ -534,7 +553,7 @@ MonoBehaviour:
     - eventName: scene_127
       eventDescription: First paper
       eventType: 0
-  - date: 1990/04/15
+  - date: 1990/04/16
     events:
     - eventName: scene_129
       eventDescription: prepared well
@@ -545,7 +564,7 @@ MonoBehaviour:
     - eventName: scene_131
       eventDescription: I tried my best.
       eventType: 0
-  - date: 1990/04/30
+  - date: 1990/05/01
     events:
     - eventName: scene_132
       eventDescription: Visual Noval System
