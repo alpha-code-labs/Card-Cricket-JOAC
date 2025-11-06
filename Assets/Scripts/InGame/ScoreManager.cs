@@ -64,14 +64,9 @@ public class ScoreManager : MonoBehaviour
     // Simple hat-trick animation with image
     private void TriggerHatTrickAnimation()
     {
+        
         hattrickTriggered = true;
         Debug.Log("HAT-TRICK! Player hit 3 boundaries in a row!");
-        
-        // Play special hat-trick sound if available
-        if (hatTrickSound != null && gameAudioSource != null)
-        {
-            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
-        }
         
         // Start the simple image animation
         if (hatTrickImage != null)
@@ -85,6 +80,13 @@ public class ScoreManager : MonoBehaviour
     
     private IEnumerator PlayHatTrickImageAnimation()
     {
+        yield return new WaitForSeconds(0.5f); // Slight delay before starting
+        CardPlayAnimationController.Instance.StopCommentary();
+        // Play special hat-trick sound if available
+        if (hatTrickSound != null && gameAudioSource != null)
+        {
+            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
+        }
         // Make sure image is active and starts at scale 0
         hatTrickImage.gameObject.SetActive(true);
         hatTrickImage.transform.localScale = Vector3.zero;
@@ -448,7 +450,6 @@ public class ScoreManager : MonoBehaviour
     public void UpdateScore(int runs)
     {
         if (gameEnded) return;
-
         // Track consecutive boundaries
         if (runs == 4 || runs == 6)
         {
