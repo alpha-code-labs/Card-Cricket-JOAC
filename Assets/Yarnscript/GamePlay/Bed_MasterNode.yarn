@@ -1,9 +1,8 @@
 ﻿title: Bed
 ---
 <<SetBGSprite black>>
-<<SetNextDateWithForcedCutscene>>
 <<start_snoring>>
 You Went To Sleep
 <<stop_snoring>>
-<<RetryCurrentEvent>>
+<<EndEvent true>>
 ===
