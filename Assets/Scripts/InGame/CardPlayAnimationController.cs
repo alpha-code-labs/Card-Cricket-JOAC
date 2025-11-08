@@ -313,7 +313,7 @@ public class CardPlayAnimationController : MonoBehaviour
         if (outcomeTextPrefab == null)
         {
             textObj = new GameObject("OutcomeText");
-            textObj.transform.SetParent(transform);
+            textObj.transform.SetParent(centerStage.transform);
             TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
             text.text = message;
             text.fontSize = 56;
@@ -327,7 +327,7 @@ public class CardPlayAnimationController : MonoBehaviour
         }
         else
         {
-            textObj = Instantiate(outcomeTextPrefab, centerStage.position, Quaternion.identity, transform);
+            textObj = Instantiate(outcomeTextPrefab, centerStage.position, Quaternion.identity, centerStage.transform);
             TextMeshProUGUI text = textObj.GetComponent<TextMeshProUGUI>();
             text.text = message;
             text.color = color;
