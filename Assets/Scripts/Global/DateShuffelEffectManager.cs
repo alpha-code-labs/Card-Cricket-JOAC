@@ -56,8 +56,9 @@ public class DateShuffleEffectManager : MonoBehaviour
         // Animate through each day with progressively faster speed
         for (int i = 0; i < totalDays; i++)
         {
-            const int SkipLength = 7;
-            if (i % SkipLength == 0 && i >= SkipLength) // Skip weekends
+            const int SkipLength = 4;
+            const int SkipOffset = 14;
+            if (i % SkipLength == 0 && i >= SkipOffset) // Skip weekends
             {
                 i += SkipLength - 1;
                 if (i >= totalDays)
