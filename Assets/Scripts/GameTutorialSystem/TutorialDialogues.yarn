@@ -1,11 +1,13 @@
 ﻿title: Start_Tutorial
 position: -68,-14
 ---
-<<disableRaycasterOnMainDialogueSystem>>
+// <<disableRaycasterOnMainDialogueSystem>>
 <<declare $selection = "None">>
 <<declare $flipButtonClicked = false>>
 <<declare $showFlipButton = false>>
-
+<<enableAutoAdvance>>
+...
+<<disableAutoAdvance>>
 <<showCharacterImage top>>
 Ramu: All right captain, this is your batting arena. Lets get you well versed with this. Its going to be your lifeline on this journey.
 

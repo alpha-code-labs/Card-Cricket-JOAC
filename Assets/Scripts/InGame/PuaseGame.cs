@@ -45,7 +45,7 @@ public class PauseGame : MonoBehaviour
         }
     }
 
-    void Pause()
+    public void Pause()
     {
         if (pauseButton != null)
             pauseButton.gameObject.SetActive(true);
@@ -69,7 +69,7 @@ public class PauseGame : MonoBehaviour
         AudioListener.pause = true; 
     }
 
-    void Resume()
+    public void Resume()
     {
         if (pauseButton != null)
             pauseButton.gameObject.SetActive(false);
