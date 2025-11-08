@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d5cbd9f6ce49e4eb435be10b014ee4, type: 3}
+  m_Name: PlayerStats
+  m_EditorClassIdentifier: 
+  serializedMatchStats:
+  - gameplayNumber: 3
+    matchDate: 1989/02/02
+    attempts:
+    - attemptNumber: 1
+      runsScored: 46
+      ballsFaced: 21
+      wicketsLost: 2
+      boundaries: 3
+      fours: 3
+      sixes: 0
+      wonMatch: 1
+      strikeRate: 219.04762
+    - attemptNumber: 2
+      runsScored: 0
+      ballsFaced: 1
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 0

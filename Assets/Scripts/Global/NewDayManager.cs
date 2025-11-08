@@ -227,4 +227,24 @@ public class NewDayManager : MonoBehaviour
     {
         currentEventIndex = index;
     }
+    [YarnCommand("SetNextDateWithForcedCutscene")]
+    public static void SetNextDateWith()//Sets the next date that has a forced cutscene skips everything else
+    {
+        TypeOfEvent eventType = TypeOfEvent.ForcedCutscene;
+        while (currentDateRecord.events[currentEventIndex].eventType != eventType)
+        {
+            currentEventIndex++;
+            if (currentEventIndex >= currentDateRecord.events.Count)
+            {
+                GameManager.instance.currentSaveData.currentDate = CalanderSystem.instance.GetNextDate(GameManager.instance.currentSaveData.currentDate);
+                currentDateRecord = CalanderSystem.instance.GetDateRecordFromDate(GameManager.instance.currentSaveData.currentDate);
+                if (currentDateRecord == null)
+                {
+                    Debug.LogError("No next date record found, cannot set next date with forced cutscene");
+                    return;
+                }
+                currentEventIndex = 0;
+            }
+        }
+    }
 }
