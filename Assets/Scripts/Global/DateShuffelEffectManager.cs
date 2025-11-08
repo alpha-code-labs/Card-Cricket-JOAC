@@ -52,10 +52,17 @@ public class DateShuffleEffectManager : MonoBehaviour
 
         // Start with 1 second delay and reduce by 20% each iteration
         float currentDelay = 1f;
-
+        float currentTime = Time.time;
         // Animate through each day with progressively faster speed
         for (int i = 0; i < totalDays; i++)
         {
+            const int SkipLength = 7;
+            if (i % SkipLength == 0 && i >= SkipLength) // Skip weekends
+            {
+                i += SkipLength - 1;
+                if (i >= totalDays)
+                    i = totalDays - 1;
+            }
             currentAnimatedDate = startDate.AddDays(i + 1);
             currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
 
@@ -79,7 +86,7 @@ public class DateShuffleEffectManager : MonoBehaviour
             // Reduce delay by 20% for next iteration (multiply by 0.8)
             currentDelay *= 0.8f;
         }
-
+        Debug.Log($"Animated from {startDate} to {endDate} took {Time.time - currentTime} seconds.");
         // Final format showing "from -> to" 
         yield return new WaitForSeconds(1f);
         yield return dateText.DOFade(0.5f, 1f).WaitForCompletion();
