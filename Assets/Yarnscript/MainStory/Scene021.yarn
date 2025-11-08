@@ -61,7 +61,19 @@ Ramu: Here's the rule of the free world: no teacher, only clues—you'll talk, h
 Raju: Do I have to finish in one go?
 
 <<SetCharacterExpression "Ramu" "Smiling">>
-Ramu: Walk where your feet want, return when your heart is full, go out again when curious—multi-paths, same boy, just remember the free world watches how you carry yourself more than what you carry.
+Ramu: No rush, no schedule. Walk where your feet want, explore what calls to you. When you're tired or the day feels heavy, come back to this home—your home—and sleep in your bed.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: Time will pass while you rest, the sun will move, and you'll wake ready to walk again. Go out when curious, return when your heart is full, leave again when the morning feels right.
+
+<<SetCharacterExpression "Raju" "Quizzical">>
+Raju: So I can always come back here?
+
+<<SetCharacterExpression "Ramu" "Smiling">>
+Ramu: Always. This door stays open. Rest when you need it, then step out fresh—multi-paths, same boy, your own pace.
+
+<<SetCharacterExpression "Ramu" "Confident">>
+Ramu: Just remember the free world watches how you carry yourself more than what you carry.
 
 <<SetCharacterExpression "Raju" "Quizzical">>
 Raju: And if I choose wrong?

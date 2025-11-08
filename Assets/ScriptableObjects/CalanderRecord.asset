@@ -100,6 +100,9 @@ MonoBehaviour:
     - eventName: scene_22
       eventDescription: Map System
       eventType: 1
+    - eventName: scene_22 Free
+      eventDescription: Map System
+      eventType: 1
   - date: 1990/03/02
     events:
     - eventName: scene_23
@@ -129,9 +132,6 @@ MonoBehaviour:
     - eventName: scene_29
       eventDescription: Time to go. You're nervous?
       eventType: 0
-    - eventName: Scene 29_a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_30
       eventDescription: Quarterfinals captain.
       eventType: 0
@@ -146,9 +146,6 @@ MonoBehaviour:
     - eventName: scene_31
       eventDescription: Just another evening match?
       eventType: 0
-    - eventName: scene_31a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_32
       eventDescription: Semifinals
       eventType: 0
@@ -163,9 +160,6 @@ MonoBehaviour:
     - eventName: scene_33
       eventDescription: Finals evening
       eventType: 0
-    - eventName: scene_33a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_34
       eventDescription: Finals captain
       eventType: 0
@@ -250,9 +244,6 @@ MonoBehaviour:
       eventType: 0
   - date: 1990/03/16
     events:
-    - eventName: scene_53
-      eventDescription: 
-      eventType: 1
     - eventName: scene_54
       eventDescription: Semifinals today captain
       eventType: 0
@@ -264,9 +255,6 @@ MonoBehaviour:
       eventType: 0
   - date: 1990/03/17
     events:
-    - eventName: scene_57
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_58
       eventDescription: We are chasing
       eventType: 0
@@ -373,9 +361,6 @@ MonoBehaviour:
     - eventName: scene_85
       eventDescription: March has been full of cricket.
       eventType: 0
-    - eventName: scene_85a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_86
       eventDescription: School league tournament
       eventType: 0
@@ -390,9 +375,6 @@ MonoBehaviour:
     - eventName: scene_87
       eventDescription: ' Made it to semifinals again.'
       eventType: 0
-    - eventName: scene_87a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_88
       eventDescription: Finals to close March
       eventType: 0
@@ -407,9 +389,6 @@ MonoBehaviour:
     - eventName: scene_89
       eventDescription: 'Finals to close March. '
       eventType: 0
-    - eventName: scene_89a
-      eventDescription: Map System
-      eventType: 1
     - eventName: scene_90
       eventDescription: Finals. They posted 100 in 40 balls.
       eventType: 0
@@ -509,6 +488,22 @@ MonoBehaviour:
       eventType: 1
   - date: 1990/04/11
     events:
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/12
+    events:
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+    - eventName: FreeTime
+      eventDescription: Map System
+      eventType: 1
+  - date: 1990/04/13
+    events:
     - eventName: scene_113
       eventDescription: real prize money
       eventType: 0
@@ -524,7 +519,7 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post gameplay scene switceher
       eventType: 0
-  - date: 1990/04/12
+  - date: 1990/04/14
     events:
     - eventName: Skip
       eventDescription: 
@@ -538,16 +533,13 @@ MonoBehaviour:
     - eventName: PostGameplay
       eventDescription: Post gameplay scene switcher
       eventType: 0
-  - date: 1990/04/13
+  - date: 1990/04/15
     events:
-    - eventName: scene_121
-      eventDescription: Map System
-      eventType: 1
-    - eventName: scene_122
-      eventDescription: Chasing 185 over 10 balls
-      eventType: 0
     - eventName: scene_123
       eventDescription: luck has maxed
+      eventType: 0
+    - eventName: scene_122
+      eventDescription: Chasing 185 over 10 balls
       eventType: 0
     - eventName: Card Gameplay 9
       eventDescription: Gameplay System
@@ -561,7 +553,7 @@ MonoBehaviour:
     - eventName: scene_127
       eventDescription: First paper
       eventType: 0
-  - date: 1990/04/15
+  - date: 1990/04/16
     events:
     - eventName: scene_129
       eventDescription: prepared well
@@ -572,7 +564,7 @@ MonoBehaviour:
     - eventName: scene_131
       eventDescription: I tried my best.
       eventType: 0
-  - date: 1990/04/30
+  - date: 1990/05/01
     events:
     - eventName: scene_132
       eventDescription: Visual Noval System

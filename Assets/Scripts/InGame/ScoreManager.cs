@@ -156,14 +156,9 @@ public class ScoreManager : MonoBehaviour
     // Simple hat-trick animation with image
     private void TriggerHatTrickAnimation()
     {
+        
         hattrickTriggered = true;
         Debug.Log("HAT-TRICK! Player hit 3 boundaries in a row!");
-        
-        // Play special hat-trick sound if available
-        if (hatTrickSound != null && gameAudioSource != null)
-        {
-            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
-        }
         
         // Start the simple image animation
         if (hatTrickImage != null)
@@ -177,6 +172,13 @@ public class ScoreManager : MonoBehaviour
     
     private IEnumerator PlayHatTrickImageAnimation()
     {
+        yield return new WaitForSeconds(0.5f); // Slight delay before starting
+        CardPlayAnimationController.Instance.StopCommentary();
+        // Play special hat-trick sound if available
+        if (hatTrickSound != null && gameAudioSource != null)
+        {
+            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
+        }
         // Make sure image is active and starts at scale 0
         hatTrickImage.gameObject.SetActive(true);
         hatTrickImage.transform.localScale = Vector3.zero;
@@ -893,7 +895,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Debug.Log("Loading gameplay 2 as date is not found");
-            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
             TargetScore = currentGameplayConfig.winScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
@@ -947,9 +949,14 @@ public class ScoreManager : MonoBehaviour
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
 
-        //update redraw button state when turn starts
-        CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
-    }
+        if(redrawButton != null)
+        {
+            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
+            //update redraw button state when turn starts
+            CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
+
+        }
+     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
     {

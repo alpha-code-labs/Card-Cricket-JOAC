@@ -16,6 +16,10 @@ public class WorldIntractionDialougeManager : MonoBehaviour
     {
         return YarnDialogSystemSingleTonMaker.instance.dialogueRunner.IsDialogueRunning;
     }
+    public void SkipFreeTime()
+    {
+        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("SkipFreeTime");
+    }
     string YesChoice;
     string NoChoice;
     Action OnDialogueConfirmed;
