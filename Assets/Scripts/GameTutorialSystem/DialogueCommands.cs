@@ -32,6 +32,7 @@ public class DialogueCommands : MonoBehaviour
         if (linePresenter != null)
         {
             linePresenter.autoAdvance = true;
+            linePresenter.autoAdvanceDelay = 0.5f;
             Debug.Log("Enabled AutoAdvance on LinePresenter");
         }
         else

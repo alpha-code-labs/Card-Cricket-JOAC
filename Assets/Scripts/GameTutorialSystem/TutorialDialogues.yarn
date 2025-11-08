@@ -6,10 +6,10 @@ position: -68,-14
 <<declare $flipButtonClicked = false>>
 <<declare $showFlipButton = false>>
 <<enableAutoAdvance>>
-...
+All right captain.
 <<disableAutoAdvance>>
 <<showCharacterImage top>>
-Ramu: All right captain, this is your batting arena. Lets get you well versed with this. Its going to be your lifeline on this journey.
+Ramu: This is your batting arena. Lets get you well versed with this. Its going to be your lifeline on this journey.
 
 <<showBallingCard>>
 <<showCharacterImage top>>
