@@ -343,6 +343,7 @@ public class PlayerStatsTableUI : MonoBehaviour
         // Only count stats from games that have been played
         foreach (var matchStat in allMatchStats)
         {
+            if(matchStat.gameplayNumber <= 0) continue;
             totalAttempts += matchStat.TotalAttempts;
             totalOuts += matchStat.TotalOuts;
             
