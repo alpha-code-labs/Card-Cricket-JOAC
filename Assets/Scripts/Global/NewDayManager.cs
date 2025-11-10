@@ -11,22 +11,17 @@ using Yarn.Unity;
 public class NewDayManager : MonoBehaviour
 {
     public static NewDayManager instance;
+    DateShuffleEffectManager dateShuffelEffectManager;
     void Awake()
     {
         instance = this;
     }
-    TextMeshProUGUI dateText;
     public static DateRecord currentDateRecord;
     public static int currentEventIndex = 0;//Dont Modify This Directly you are probably making a mistake if you want to
     public static bool isEvening = false;
     void Start()
     {
-        dateText = GetComponentInChildren<TextMeshProUGUI>();
-        dateText.text = "";
-        if (currentEventIndex == 0)
-            SetFilmGrain(true);
-        else
-            SetFilmGrain(false);
+        dateShuffelEffectManager = GetComponentInChildren<DateShuffleEffectManager>();
     }
     public void BeginNewDaySequence()
     {
@@ -40,7 +35,7 @@ public class NewDayManager : MonoBehaviour
         string prettyDate = PrettyStrings.GetPrettyDateString(GameManager.instance.currentSaveData.currentDate);
         if (currentEventIndex >= currentDateRecord.events.Count)
         {
-            yield return DisplayTextThenFade(prettyDate + "\n Day End");
+            yield return dateShuffelEffectManager.DisplayTextThenFade(prettyDate + "\n Day End");
             EndDay();
             yield break;
         }
@@ -52,10 +47,10 @@ public class NewDayManager : MonoBehaviour
             if (currentDate == previousDate && currentDate == DateTime.Parse("1988/07/18"))
             {
                 //Special Case for first day of game no animation
-                yield return DisplayTextThenFade(PrettyStrings.GetPrettyDateString(currentDate.ToString()) + "\nSomewhere in Dharavi, Mumbai");
+                yield return dateShuffelEffectManager.DisplayTextThenFade(PrettyStrings.GetPrettyDateString(currentDate.ToString()) + "\nSomewhere in Dharavi, Mumbai");
             }
             else
-                yield return AnimateDateProgression(previousDate, currentDate);
+                yield return dateShuffelEffectManager.AnimateDateProgression(previousDate, currentDate);
         }
 
         Debug.Log($"Starting Event: {events.eventName} of type {events.eventType}");
@@ -64,26 +59,26 @@ public class NewDayManager : MonoBehaviour
         {
             case TypeOfEvent.ForcedCutscene:
                 if (currentEventIndex != 0)
-                    yield return DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
+                    yield return dateShuffelEffectManager.DisplayTextThenFade("");//remove this if you dont want to proprly wait and want transistions to be fast
                 DialogueScriptCommandHandler.currentNode = events.eventName;
                 TransitionScreenManager.instance.LoadScene(SceneNames.CutsceneScene);
                 // TransitionScreenManager.instance.LoadScene("yarn-test");
                 break;
             case TypeOfEvent.FreeTime:
                 string timeOfDay = isEvening ? "Evening" : "Morning";
-                yield return DisplayTextThenFade($"Free Time\n{timeOfDay}");
+                yield return dateShuffelEffectManager.DisplayTextThenFade($"Free Time\n{timeOfDay}");
                 TransitionScreenManager.instance.LoadScene(SceneNames.WorldNav);
                 break;
             case TypeOfEvent.Speical:
-                yield return DisplayTextThenFade("");
+                yield return dateShuffelEffectManager.DisplayTextThenFade("");
                 //Load Special Event
                 break;
             case TypeOfEvent.CardGamePlayTutorial:
-                yield return DisplayTextThenFade("");
+                yield return dateShuffelEffectManager.DisplayTextThenFade("");
                 TransitionScreenManager.instance.LoadScene(SceneNames.CardGameTutorialScene);
                 break;
             case TypeOfEvent.QuizGamePlay:
-                yield return DisplayTextThenFade("");
+                yield return dateShuffelEffectManager.DisplayTextThenFade("");
                 TransitionScreenManager.instance.LoadScene(SceneNames.QuizGamePlay);
                 break;
             case TypeOfEvent.SkipDayOrEvening:
@@ -95,7 +90,7 @@ public class NewDayManager : MonoBehaviour
                 //Skip to next day or evening
                 break;
             case TypeOfEvent.GamePlay:
-                yield return DisplayTextThenFade("");
+                yield return dateShuffelEffectManager.DisplayTextThenFade("");
                 //ScoreManager.Instance.SetTargetFromEventName(events.eventName);
                 TransitionScreenManager.instance.LoadScene(SceneNames.CardGameScene);
                 //Load GamePlay                
@@ -105,77 +100,7 @@ public class NewDayManager : MonoBehaviour
                 break;
         }
     }
-    IEnumerator DisplayTextThenFade(string textToDisplay, float displayDuration = 1.5f, float fadeDuration = 1f)
-    {
-        dateText.text = textToDisplay;
-        if (dateText.alpha != 1)
-        {
-            yield return new WaitForSeconds(displayDuration);
-            yield return dateText.DOFade(1f, fadeDuration).WaitForCompletion();
-        }
-        yield return new WaitForSeconds(displayDuration);
-        yield return dateText.DOFade(0f, fadeDuration).WaitForCompletion();
-    }
 
-    IEnumerator AnimateDateProgression(DateTime startDate, DateTime endDate)
-    {
-        // Calculate the total number of days between dates
-        int totalDays = (endDate - startDate).Days;
-
-        // Start with the previous date
-        DateTime currentAnimatedDate = startDate;
-        string currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
-        dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
-
-        // Make sure the text is visible
-        if (dateText.alpha != 1f)
-        {
-            yield return dateText.DOFade(1f, 0.3f).WaitForCompletion();
-        }
-
-        // Hold at the starting date for 1 second
-        yield return new WaitForSeconds(1f);
-
-        // Start with 1 second delay and reduce by 20% each iteration
-        float currentDelay = 1f;
-
-        // Animate through each day with progressively faster speed
-        for (int i = 0; i < totalDays; i++)
-        {
-            currentAnimatedDate = startDate.AddDays(i + 1);
-            currentDateString = currentAnimatedDate.ToString("yyyy/MM/dd");
-
-            // Use current delay, minimum 0.05 seconds
-            float timeForThisDay = Mathf.Max(currentDelay, 0.05f);
-
-            // Create a smooth transition effect
-            float fadeTime = timeForThisDay * 0.3f;
-            yield return dateText.DOFade(0.7f, fadeTime).WaitForCompletion();
-            dateText.text = PrettyStrings.GetPrettyDateString(currentDateString);
-            AudioSFXManager.instance.PlayOneShotSFX(SFXType.ProjectorClick);
-            yield return dateText.DOFade(1f, fadeTime).WaitForCompletion();
-
-            // Wait for the remaining time for this day
-            float remainingTime = timeForThisDay - (fadeTime * 2);
-            if (remainingTime > 0)
-            {
-                yield return new WaitForSeconds(remainingTime);
-            }
-
-            // Reduce delay by 20% for next iteration (multiply by 0.8)
-            currentDelay *= 0.8f;
-        }
-
-        // Final format showing "from -> to" 
-        yield return new WaitForSeconds(1f);
-        yield return dateText.DOFade(0.5f, 1f).WaitForCompletion();
-    }
-    VideoPlayer videoPlayer;
-    void SetFilmGrain(bool enable)
-    {
-        videoPlayer = Camera.main.GetComponent<VideoPlayer>();
-        videoPlayer.enabled = enable;
-    }
     public string GetCurrentEventName()
     {
         return currentDateRecord.events[currentEventIndex].eventName;
