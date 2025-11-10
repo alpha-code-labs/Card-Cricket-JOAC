@@ -8,6 +8,7 @@ using Yarn.Unity;
 public class YarnDialogSystemSingleTonMaker : MonoBehaviour
 {
     public static YarnDialogSystemSingleTonMaker instance;
+    [SerializeField] Image UIBlocker;
     private void Awake()
     {
         if (instance == null)
@@ -24,6 +25,9 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     {
         dialogueRunner = GetComponent<DialogueRunner>();
         dialogueRunner.LoadStateFromPersistentStorage("yarnSaveData.json");
+
+        dialogueRunner.onDialogueComplete.AddListener(HandleDialogueComplete);
+        dialogueRunner.onDialogueStart.AddListener(HandleDialogueStart);
     }
     public DialogueRunner dialogueRunner;
     [YarnCommand("AutoAdvance")]
@@ -35,6 +39,14 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     public static void GoToMainMenu()
     {
         TransitionScreenManager.instance.LoadScene(SceneNames.MainMenu);
+    }
+    void HandleDialogueComplete()
+    {
+        UIBlocker.raycastTarget = false;
+    }
+    void HandleDialogueStart()
+    {
+        UIBlocker.raycastTarget = true;
     }
 
 }
