@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: 100 from 40 balls in a final. Against proper coaching. You proved something today.
+Ramu: 130 from 60 balls in a final. Against proper coaching. You proved something today.
 
 <<SetCharacterExpression "Raju" "Smiling">>
 Raju: That dawn practice pays off Bhai.
