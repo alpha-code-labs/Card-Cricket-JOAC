@@ -46,6 +46,7 @@ public class Timer : MonoBehaviour
 
     public void PauseTimer()
     {
+        Debug.Log("Pausing Timer");
         if (isPaused) return;
         isPaused = true;
         if (currentTimerCoroutine != null)
@@ -56,6 +57,7 @@ public class Timer : MonoBehaviour
 
     public void ResumeTimer()
     {
+        Debug.Log("Resuming Timer");
         if (isPaused && pausedTimeRemaining > 0)
         {
             isPaused = false;
@@ -177,6 +179,8 @@ public class Timer : MonoBehaviour
 
     IEnumerator TimerCoroutine(int duration)
     {
+        if(isPaused)
+            yield break;
         float timeLeft = duration;
 
         while (timeLeft > 0)
@@ -208,8 +212,7 @@ public class Timer : MonoBehaviour
        if (ScoreManager.Instance != null)
         {
             Debug.Log("Time's up! Losing a wicket.");
-            ScoreManager.Instance.LooseWicket();
-            ScoreManager.Instance.UpdateScore(0);
+            ScoreManager.Instance.UpdateScore(-1);
             ScoreManager.Instance.UpdateBallsAndOvers(CardsPoolManager.Instance.CurrntTurn+1);
 
             // Show timeout message (optional)

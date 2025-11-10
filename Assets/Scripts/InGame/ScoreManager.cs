@@ -21,6 +21,7 @@ public class ScoreManager : MonoBehaviour
     private bool canUpdateChaseDisplay = false;
     private bool hattrickTriggered = false;
     public GameObject gamePuaseInstructionText;
+    public PlayerStatsTableUI playerStatsTableUI;
     
     [Header("Hat-trick Animation")]
     private int consecutiveBoundaries = 0;
@@ -28,7 +29,98 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] float flipDuration = 0.3f; // Duration for each flip (3 flips total)
     [SerializeField] float punchStrength = 0.5f; // Strength of the punch effect
     [SerializeField] AudioClip hatTrickSound; // Optional: Special sound for hat-trick
+    private Dictionary<int, int> boundaryCount = new Dictionary<int, int>(); // Track 4s and 6s separately
+    private int totalBallsFaced = 0;
+    private int totalWicketsLostInMatch = 0;
+    
+    // Add this method to be called in Start() after configuration is loaded
+    private void InitializeStatsTracking()
+    {
+        if (PlayerStatsTracker.Instance != null && currentGameplayConfig != null)
+        {
+            PlayerStatsTracker.Instance.StartTrackingMatch(
+                currentGameplayConfig.gameplayNumber,
+                currentGameplayConfig.date
+            );
+            
+            // Initialize boundary tracking
+            boundaryCount[4] = 0;
+            boundaryCount[6] = 0;
+            totalBallsFaced = 0;
+            totalWicketsLostInMatch = 0;
+            
+            Debug.Log($"Initialized stats tracking for gameplay {currentGameplayConfig.gameplayNumber}");
+        }
+        else
+        {
+            if (PlayerStatsTracker.Instance == null)
+                Debug.LogError("PlayerStatsTracker.Instance is null");
+            if (currentGameplayConfig == null)
+                Debug.LogError("currentGameplayConfig is null");
+        }
+    }
 
+    // Modify your existing UpdateScore method to include this tracking:
+    private void TrackScoreForStats(int runs)
+    {
+        if (PlayerStatsTracker.Instance == null) return;
+
+        // Track runs and balls faced
+        if (runs == -3) // Wide ball
+        {
+            PlayerStatsTracker.Instance.RecordRuns(1, false); // 1 run, no ball faced
+        }
+        else if (runs == -1) // Wicket
+        {
+            totalBallsFaced++;
+            totalWicketsLostInMatch++;
+            PlayerStatsTracker.Instance.RecordWicketLost();
+        }
+        else if (runs >= 0) // Normal scoring
+        {
+            totalBallsFaced++;
+            PlayerStatsTracker.Instance.RecordRuns(runs, true);
+
+            // Track boundaries
+            if (runs == 4)
+            {
+                boundaryCount[4]++;
+            }
+            else if (runs == 6)
+            {
+                boundaryCount[6]++;
+            }
+        }
+    }
+    
+     private void RecordMatchEndStats(string result)
+    {
+        if (PlayerStatsTracker.Instance == null) return;
+        
+        bool won = (result == "won");
+        PlayerStatsTracker.Instance.EndMatch(won);
+        
+        // Show stats summary if you want
+        ShowPostMatchStats();
+    }
+    
+    // Optional: Show stats after match
+    private void ShowPostMatchStats()
+    {
+        if (PlayerStatsTracker.Instance == null) return;
+        
+        var currentMatchStats = PlayerStatsTracker.Instance.GetCurrentMatchStats();
+        if (currentMatchStats != null)
+        {
+            Debug.Log("=== Match Statistics ===");
+            Debug.Log($"Match #{currentMatchStats.gameplayNumber}");
+            Debug.Log($"Average Runs: {currentMatchStats.AverageRuns:F1}");
+            Debug.Log($"Best Score: {currentMatchStats.BestScore}");
+            Debug.Log($"Strike Rate: {currentMatchStats.AverageStrikeRate:F1}");
+            Debug.Log($"Most Boundaries: {currentMatchStats.MostBoundaries}");
+            Debug.Log($"Win Rate: {currentMatchStats.WinRate:F1}%");
+        }
+    }
 
     void Awake()
     {
@@ -64,14 +156,9 @@ public class ScoreManager : MonoBehaviour
     // Simple hat-trick animation with image
     private void TriggerHatTrickAnimation()
     {
+        
         hattrickTriggered = true;
         Debug.Log("HAT-TRICK! Player hit 3 boundaries in a row!");
-        
-        // Play special hat-trick sound if available
-        if (hatTrickSound != null && gameAudioSource != null)
-        {
-            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
-        }
         
         // Start the simple image animation
         if (hatTrickImage != null)
@@ -85,6 +172,13 @@ public class ScoreManager : MonoBehaviour
     
     private IEnumerator PlayHatTrickImageAnimation()
     {
+        yield return new WaitForSeconds(0.5f); // Slight delay before starting
+        CardPlayAnimationController.Instance.StopCommentary();
+        // Play special hat-trick sound if available
+        if (hatTrickSound != null && gameAudioSource != null)
+        {
+            gameAudioSource.PlayOneShot(hatTrickSound, cheeringVolume * 1.2f);
+        }
         // Make sure image is active and starts at scale 0
         hatTrickImage.gameObject.SetActive(true);
         hatTrickImage.transform.localScale = Vector3.zero;
@@ -448,7 +542,7 @@ public class ScoreManager : MonoBehaviour
     public void UpdateScore(int runs)
     {
         if (gameEnded) return;
-
+        TrackScoreForStats(runs);
         // Track consecutive boundaries
         if (runs == 4 || runs == 6)
         {
@@ -502,8 +596,6 @@ public class ScoreManager : MonoBehaviour
             totalRunsNeededText.text = "/ " + TargetScore;
             scoreText.text = "Score: " + currentRuns + " / " + TargetScore.ToString();
             Canvas.ForceUpdateCanvases();
-
-
         }
 
         // Update chase display after scoring
@@ -617,13 +709,15 @@ public class ScoreManager : MonoBehaviour
     private IEnumerator EndGameAfterDelay()
     {
         //check if player won the match
-        if(currentGameplayConfig.winScore <= currentRuns)
+        if (currentGameplayConfig.winScore <= currentRuns)
         {
             PlayGameWonCheeringSound();
             TriggerFirework();
+            RecordMatchEndStats("won");
             // musicIntensity.SetExcitement(.5f);
             yield return new WaitForSeconds(5f);
         }
+        RecordMatchEndStats("Lost");
         yield return new WaitForSeconds(3f);
         
         // Re-enable the main dialogue system
@@ -801,7 +895,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             Debug.Log("Loading gameplay 2 as date is not found");
-            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1989/02/02");
+            currentGameplayConfig = GameplayConfiguration.Instance.GetConfigForDate("1990/04/13");
             TargetScore = currentGameplayConfig.winScore;
             MaxBalls = currentGameplayConfig.balls;
             isBattingFirst = currentGameplayConfig.isBattingFirst;
@@ -810,6 +904,8 @@ public class ScoreManager : MonoBehaviour
             Debug.Log($"Batting First: {isBattingFirst}, CurrentRuns: {currentRuns}, Target: {TargetScore}, Balls: {MaxBalls}");
 
         }
+
+        InitializeStatsTracking();
 
         previousRuns = currentRuns;
         previousWickets = wickets;
@@ -853,9 +949,14 @@ public class ScoreManager : MonoBehaviour
             CardsPoolManager.OnTurnStarted += ShowChaseDisplayAfterCountdown;
         }
 
-        //update redraw button state when turn starts
-        CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
-    }
+        if(redrawButton != null)
+        {
+            redrawButton.onClick.AddListener(OnRedrawButtonClicked);
+            //update redraw button state when turn starts
+            CardsPoolManager.OnTurnStarted += UpdateRedrawButton;
+
+        }
+     }
 
     private void AnimateScoreIncrease(int fromScore, int toScore)
     {

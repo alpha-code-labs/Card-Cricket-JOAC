@@ -1,0 +1,8 @@
+﻿title: SkipFreeTime
+---
+Skip Free Time?
+-> Yes
+    <<SetNextDateWithForcedCutscene>>//This Sets the next date and event index
+    <<RetryCurrentEvent>>//This retries the current event which is now the next FC event
+-> No
+===
