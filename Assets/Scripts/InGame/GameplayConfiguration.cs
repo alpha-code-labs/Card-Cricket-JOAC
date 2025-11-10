@@ -91,13 +91,13 @@ void InitializeConfigurations()
         { "1990/03/17", new GameplayConfig(6, "1990/03/17", 48, 104, 0, 104, PitchCondition.Friendly) },
 
         // 7: Batting first, winScore = 0 + 144 = 144
-        { "1990/04/11", new GameplayConfig(7, "1990/04/11", 72, 0, 0, 144, PitchCondition.Friendly) },
+        { "1990/04/13", new GameplayConfig(7, "1990/04/13", 72, 0, 0, 144, PitchCondition.Friendly) },
 
         // 8: Batting first, winScore = 0 + 156 = 156
-        { "1990/04/12", new GameplayConfig(8, "1990/04/12", 72, 0, 0, 156, PitchCondition.Friendly) },
+        { "1990/04/14", new GameplayConfig(8, "1990/04/14", 72, 0, 0, 156, PitchCondition.Friendly) },
 
         // 9: Chasing 180 -> winScore = 0 + 180 = 180
-        { "1990/04/13", new GameplayConfig(9, "1990/04/13", 72, 180, 0, 180, PitchCondition.Friendly) },
+        { "1990/04/15", new GameplayConfig(9, "1990/04/15", 72, 180, 0, 180, PitchCondition.Friendly) },
 
         // 12: Chasing 66 -> winScore = 75 + 66 = 141
         { "1990/03/05", new GameplayConfig(12, "1990/03/05", 36, 66, 75, 141, PitchCondition.Friendly) },
