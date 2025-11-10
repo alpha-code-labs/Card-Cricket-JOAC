@@ -82,8 +82,6 @@ public class NewDayManager : MonoBehaviour
                 TransitionScreenManager.instance.LoadScene(SceneNames.QuizGamePlay);
                 break;
             case TypeOfEvent.SkipDayOrEvening:
-                if (isEvening)
-                    EndDay();
                 isEvening = true;
                 currentEventIndex++;
                 BeginNewDaySequence();
