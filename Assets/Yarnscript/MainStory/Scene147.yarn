@@ -8,7 +8,7 @@ position: 0,0
 <<SetBGSprite kohliwadaGround>>
 
 <<SetCharacterExpression "Ramu" "Excited">>
-Ramu: 110 runs! That tall boy from church lane couldn't believe it.
+Ramu: 120 runs! That tall boy from church lane couldn't believe it.
 
 <<SetCharacterExpression "Raju" "Tired">>
 Raju: My arms are tired but my head is clear.
