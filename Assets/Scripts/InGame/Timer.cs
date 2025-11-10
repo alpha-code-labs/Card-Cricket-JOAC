@@ -212,8 +212,7 @@ public class Timer : MonoBehaviour
        if (ScoreManager.Instance != null)
         {
             Debug.Log("Time's up! Losing a wicket.");
-            ScoreManager.Instance.LooseWicket();
-            ScoreManager.Instance.UpdateScore(0);
+            ScoreManager.Instance.UpdateScore(-1);
             ScoreManager.Instance.UpdateBallsAndOvers(CardsPoolManager.Instance.CurrntTurn+1);
 
             // Show timeout message (optional)
