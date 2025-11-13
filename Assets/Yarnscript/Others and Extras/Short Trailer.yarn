@@ -24,15 +24,12 @@ Raju: I want to be a cricket champ.
 // 00:00:09 — Immediate Conflict (Father–Son Confrontation)
 // ------------------------------------------------------------
 <<SetBGSprite HutInterior>>
-<<SetCharacterExpression ShivPrasad Serious>>
+<<SetCharacterExpression ShivPrasad Furious>>
 Father: Cricket? Again?
-Father: Raju, you're wasting your time!
-
-<<SetCharacterExpression Raju Worried>>
-Raju: Bauji… I can handle both.
-
+<<SetCharacterExpression ShivPrasad Angry>>
+Father: You're wasting your time!
 <<SetCharacterExpression ShivPrasad Serious>>
-Father: Handle both?
+Father: You can't handle both!
 Father: Get ninety percent… or forget cricket.
 
 
