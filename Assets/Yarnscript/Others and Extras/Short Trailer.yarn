@@ -7,17 +7,16 @@
 // ------------------------------------------------------------
 // 00:00:00 — Opening Quote (Ambition Theme)
 // ------------------------------------------------------------
-Some dreams are born with the weight of responsibility.
-Are you willing to fight for them?
-
+Some dreams get crushed under the weight of resposiblity.
+Will you fight for yours?
 
 // ------------------------------------------------------------
 // 00:00:05 — Raju's Dream (Direct to Audience)
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Determined>>
-Raju: I do.
-Raju: And mine is to become a cricket champ.
+Raju: I will.
+Raju: And mine is to become a cricketer.
 
 // ------------------------------------------------------------
 // 00:00:09 — Immediate Conflict (Father–Son Confrontation)
@@ -31,7 +30,6 @@ Father: You're wasting your time!
 Father: You can't handle both!
 Father: Get ninety percent… or forget cricket.
 
-
 // ------------------------------------------------------------
 // 00:00:16 — Support System Strengthens (Encouragement)
 // ------------------------------------------------------------
@@ -39,21 +37,21 @@ Father: Get ninety percent… or forget cricket.
 <<SetCharacterExpression Ramu Serious>>
 Ramu: Don't break, Raju. You have talent. Keep pushing.
 
-<<SetBGSprite PublicSchool>>
-<<SetCharacterExpression Pinky Serious>>
-Pinky: You say you want to be a champ—then study like one.
+// <<SetBGSprite PublicSchool>>
+// <<SetCharacterExpression Pinky Serious>>
+// Pinky: You say you want to be a champ—then study like one.
 
-<<SetBGSprite HutInterior>>
-<<SetCharacterExpression Kamla Serious>>
-Kamla: Raju, dreams take effort. Help me first, then go practice.
+// <<SetBGSprite HutInterior>>
+// <<SetCharacterExpression Kamla Serious>>
+// Kamla: Raju, dreams take effort. Help me first, then go practice.
 
 
 // ------------------------------------------------------------
 // 00:00:24 — Cricket Opportunity (Hope & Stakes)
 // ------------------------------------------------------------
-<<SetBGSprite PrivateSchool>>
-<<SetCharacterExpression SunitaMadam Disapproving>>
-Sunita Madam: Prepare for your exams next month. No distractions.
+// <<SetBGSprite PrivateSchool>>
+// <<SetCharacterExpression SunitaMadam Disapproving>>
+// Sunita Madam: Prepare for your exams next month. No distractions.
 
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression CoachDev Serious>>
@@ -75,7 +73,6 @@ Narrator: Can he balance both dreams and duties?
 Raju (monologue): I belive I have talent…
 Raju (monologue): But can I prove it — to him?
 Raju (monologue): Can I prove it to the world?
-
 
 // ------------------------------------------------------------
 // 00:00:40 — CTA (Title Card)
