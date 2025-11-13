@@ -1,67 +1,94 @@
 ﻿title: Short_Trailer
 ---
 <<SetBGSprite black>>
-<<wait 3>>
 <<AutoAdvance true>>
 <<HideAllCharacters>>
-
+<<SetTypewriterSpeed 25>>
 // ------------------------------------------------------------
 // 00:00:00 — Opening Quote (Ambition Theme)
 // ------------------------------------------------------------
 On-screen text: "Every dream begins with a spark."
 On-screen text: "Do you have ambitions? Dreams? Aspirations?"
 
+
 // ------------------------------------------------------------
-// 00:00:04 — Raju's Answer (Direct to Audience)
+// 00:00:05 — Raju's Dream (Direct to Audience)
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
-<<SetCharacterExpression Raju Neutral>>
+<<SetCharacterExpression Raju Determined>>
 Raju: I do.
 Raju: I want to be a cricket champ.
 
+
 // ------------------------------------------------------------
-// 00:00:06 — Support System
+// 00:00:09 — Immediate Conflict (Father–Son Confrontation)
+// ------------------------------------------------------------
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression ShivPrasad Serious>>
+Father: Cricket? Again?
+Father: Raju, you're wasting your time!
+
+<<SetCharacterExpression Raju Worried>>
+Raju: Bauji… I can handle both.
+
+<<SetCharacterExpression ShivPrasad Serious>>
+Father: Handle both?
+Father: Get ninety percent… or forget cricket.
+
+
+// ------------------------------------------------------------
+// 00:00:16 — Support System Strengthens (Encouragement)
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Go on, Raju. Show them what you’ve got.
+Ramu: Don’t break, Raju. You have talent. Keep pushing.
 
-// ------------------------------------------------------------
-// 00:00:08 — Responsibilities & Pressure
-// ------------------------------------------------------------
 <<SetBGSprite PublicSchool>>
 <<SetCharacterExpression Pinky Serious>>
-Pinky: Focus! This chapter always comes in exams!
+Pinky: And study properly! I’m not tutoring you again for free!
 
 <<SetBGSprite HutInterior>>
-<<SetCharacterExpression ShivPrasad Serious>>
-Father: Ninety percent… or forget cricket.
+<<SetCharacterExpression Kamla Serious>>
+Kamla: Raju, dreams take effort. Help me first, then go practice.
+
 
 // ------------------------------------------------------------
-// 00:00:12 — Cricket Opportunity
+// 00:00:24 — Cricket Opportunity (Hope & Stakes)
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression CoachDev Serious>>
-Coach Dev: Tournament next month. Play well… they’ll notice you.
+Coach Dev: There's a tournament next month. Scouts will be watching.
+
 
 // ------------------------------------------------------------
-// 00:00:15 — Conflict Focus (Core Message)
+// 00:00:28 — Core Conflict (Montage)
 // ------------------------------------------------------------
-// Quick montage of studying → batting → helping mother
-Narrator: Two goals. One dream.
-Narrator: Can he balance both?
+// Suggested visuals: studying → batting → chores → night lamp → running → cricket swing
+<<SetCharacterExpression Raju Neutral>>
+Narrator: Two paths. One boy.
+Narrator: Can he balance both dreams and duties?
+
 
 // ------------------------------------------------------------
-// 00:00:18 — Emotional Determination
+// 00:00:33 — Determination Moment (Hero Beat)
 // ------------------------------------------------------------
+<<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Determined>>
 Raju (monologue): I’ll prove myself… to everyone.
 
+
 // ------------------------------------------------------------
-// 00:00:22 — CTA
+// 00:00:36 — Rising Montage + Stakes
+// ------------------------------------------------------------
+Narrator: To his father…
+Narrator: To his coaches…
+Narrator: To the world.
+
+
+// ------------------------------------------------------------
+// 00:00:40 — CTA (Title Card)
 // ------------------------------------------------------------
 <<SetBGSprite black>>
-//<<music fadeOut=1.0>>
 On-screen text: "GULLY CHAMP — Chapter 1: The First Innings"
 On-screen text: "Wishlist on Steam"
 On-screen text: "Coming Soon"
