@@ -6,7 +6,7 @@ position: 0,0
 
 <<PlayBackgroundMusic Exciting_1>>
 <<SetBGSprite hutInterior>>
-Press Spacebar to advance dialogue.//TODO: Remove this line after adding proper instructions. for AndroidiOS
+{GetAdvanceButtonTip()}.
 
 <<SetCharacterExpression "Ramu" "Excited">>
 Ramu: Oye, birthday hero… close your eyes.

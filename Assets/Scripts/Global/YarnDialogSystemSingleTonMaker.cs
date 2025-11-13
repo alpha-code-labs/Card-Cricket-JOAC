@@ -48,6 +48,26 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     {
         UIBlocker.raycastTarget = true;
     }
+    [YarnFunction("GetAdvanceButtonTip")]
+    public static string GetAdvanceButtonTip()
+    {
+        if (Application.isEditor)
+        {
+            return "Press Space to advance (Editor)";
+        }
+        else if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.LinuxPlayer)
+        {
+            return "Press Space to advance";
+        }
+        else if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            return "Touch here to continue";
+        }
+        else
+        {
+            return "Press here to advance";
+        }
+    }
 
 }
 enum Reward
