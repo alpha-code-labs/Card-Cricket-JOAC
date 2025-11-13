@@ -38,11 +38,11 @@ Father: Get ninety percent… or forget cricket.
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Ramu Serious>>
-Ramu: Don’t break, Raju. You have talent. Keep pushing.
+Ramu: Don't break, Raju. You have talent. Keep pushing.
 
 <<SetBGSprite PublicSchool>>
 <<SetCharacterExpression Pinky Serious>>
-Pinky: And study properly! I’m not tutoring you again for free!
+Pinky: And study properly! I'm not tutoring you again for free!
 
 <<SetBGSprite HutInterior>>
 <<SetCharacterExpression Kamla Serious>>
@@ -71,7 +71,7 @@ Narrator: Can he balance both dreams and duties?
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Determined>>
-Raju (monologue): I’ll prove myself… to everyone.
+Raju (monologue): I'll prove myself… to everyone.
 
 
 // ------------------------------------------------------------
