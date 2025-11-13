@@ -7,8 +7,8 @@
 // ------------------------------------------------------------
 // 00:00:00 — Opening Quote (Ambition Theme)
 // ------------------------------------------------------------
-On-screen text: "Some dreams are born with the weight of responsibility."
-On-screen text: "Are you willing to fight for them?"
+Some dreams are born with the weight of responsibility.
+Are you willing to fight for them?
 
 
 // ------------------------------------------------------------
@@ -81,7 +81,7 @@ Raju (monologue): Can I prove it to the world?
 // 00:00:40 — CTA (Title Card)
 // ------------------------------------------------------------
 <<SetBGSprite black>>
-On-screen text: "GULLY CHAMP — Chapter 1: The First Innings"
-On-screen text: "Wishlist on Steam"
-On-screen text: "Coming Soon"
+GULLY CHAMP — Chapter 1: The First Innings
+Wishlist on Steam
+Coming Soon
 ===
