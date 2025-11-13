@@ -42,7 +42,7 @@ Ramu: Don't break, Raju. You have talent. Keep pushing.
 
 <<SetBGSprite PublicSchool>>
 <<SetCharacterExpression Pinky Serious>>
-Pinky: And study properly! I'm not tutoring you again for free!
+Pinky: You say you want to be a champ—then study like one.
 
 <<SetBGSprite HutInterior>>
 <<SetCharacterExpression Kamla Serious>>
@@ -52,15 +52,17 @@ Kamla: Raju, dreams take effort. Help me first, then go practice.
 // ------------------------------------------------------------
 // 00:00:24 — Cricket Opportunity (Hope & Stakes)
 // ------------------------------------------------------------
+<<SetBGSprite PrivateSchool>>
+<<SetCharacterExpression "SunitaMadam" Disapproving>>
+Sunita Madam: prepare for your exams next month. No distractions.
+
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression CoachDev Serious>>
 Coach Dev: There's a tournament next month. Scouts will be watching.
 
-
 // ------------------------------------------------------------
-// 00:00:28 — Core Conflict (Montage)
+// 00:00:28 — Core Conflict (No Montage) just key visuals
 // ------------------------------------------------------------
-// Suggested visuals: studying → batting → chores → night lamp → running → cricket swing
 <<SetCharacterExpression Raju Neutral>>
 Narrator: Two paths. One boy.
 Narrator: Can he balance both dreams and duties?
@@ -71,15 +73,9 @@ Narrator: Can he balance both dreams and duties?
 // ------------------------------------------------------------
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Determined>>
-Raju (monologue): I'll prove myself… to everyone.
-
-
-// ------------------------------------------------------------
-// 00:00:36 — Rising Montage + Stakes
-// ------------------------------------------------------------
-Narrator: To his father…
-Narrator: To his coaches…
-Narrator: To the world.
+Raju (monologue): I belive I have talent…
+Raju (monologue): But can I prove it — to him?
+Raju (monologue): Can I prove it to the world?
 
 
 // ------------------------------------------------------------
