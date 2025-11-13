@@ -7,8 +7,8 @@
 // ------------------------------------------------------------
 // 00:00:00 — Opening Quote (Ambition Theme)
 // ------------------------------------------------------------
-On-screen text: "Every dream begins with a spark."
-On-screen text: "Do you have ambitions? Dreams? Aspirations?"
+On-screen text: "Some dreams are born with the weight of responsibility."
+On-screen text: "Are you willing to fight for them?"
 
 
 // ------------------------------------------------------------
@@ -17,8 +17,7 @@ On-screen text: "Do you have ambitions? Dreams? Aspirations?"
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression Raju Determined>>
 Raju: I do.
-Raju: I want to be a cricket champ.
-
+Raju: And mine is to become a cricket champ.
 
 // ------------------------------------------------------------
 // 00:00:09 — Immediate Conflict (Father–Son Confrontation)
@@ -53,8 +52,8 @@ Kamla: Raju, dreams take effort. Help me first, then go practice.
 // 00:00:24 — Cricket Opportunity (Hope & Stakes)
 // ------------------------------------------------------------
 <<SetBGSprite PrivateSchool>>
-<<SetCharacterExpression "SunitaMadam" Disapproving>>
-Sunita Madam: prepare for your exams next month. No distractions.
+<<SetCharacterExpression SunitaMadam Disapproving>>
+Sunita Madam: Prepare for your exams next month. No distractions.
 
 <<SetBGSprite KohliwadaGround>>
 <<SetCharacterExpression CoachDev Serious>>
