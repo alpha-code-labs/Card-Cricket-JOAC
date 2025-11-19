@@ -21,6 +21,7 @@ public class ScoreManager : MonoBehaviour
     private bool canUpdateChaseDisplay = false;
     private bool hattrickTriggered = false;
     public GameObject gamePuaseInstructionText;
+    public GameObject pauseButton;
     public PlayerStatsTableUI playerStatsTableUI;
     
     [Header("Hat-trick Animation")]
@@ -142,6 +143,8 @@ public class ScoreManager : MonoBehaviour
 
         // Initially hide pause intruction
         gamePuaseInstructionText.SetActive(false);
+        if(pauseButton != null)
+            pauseButton.SetActive(false);
     }
     public void TriggerFirework()
     {
@@ -1069,6 +1072,8 @@ public class ScoreManager : MonoBehaviour
         //show pause intruction
         if(gamePuaseInstructionText != null)
             gamePuaseInstructionText.SetActive(true);
+        if(pauseButton != null)
+            pauseButton.SetActive(true);
     }
     
     // Keep existing utility methods unchanged

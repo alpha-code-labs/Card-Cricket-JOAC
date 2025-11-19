@@ -4,11 +4,12 @@ using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
+    public Button resumeButton;
     public Button pauseButton;
+    public TextMeshProUGUI pauseText;
     public GameObject handCards;
     public GameObject ballerCard;
     public GameObject redrawButton;
-    public TMP_Text puaseInstructionText;
     public GameObject blackOverlayPanel;
     private bool isPaused = false;
     
@@ -16,14 +17,16 @@ public class PauseGame : MonoBehaviour
     void Start()
     {
         // Attach Resume() function to the pause button
-        if (pauseButton != null)
+        if (resumeButton != null)
         {
-            pauseButton.onClick.AddListener(Resume);
-            pauseButton.gameObject.SetActive(false); // Hide pause button initially
+            resumeButton.onClick.AddListener(Resume);
+            resumeButton.gameObject.SetActive(false); // Hide pause button initially
         }
 
-        if (puaseInstructionText != null)
-            puaseInstructionText.text = "Press 'Esc' to Pause";
+        if (pauseButton != null)
+        {
+            pauseButton.onClick.AddListener(Pause);
+        }
 
         if (blackOverlayPanel != null)
             blackOverlayPanel.SetActive(false);
@@ -47,8 +50,14 @@ public class PauseGame : MonoBehaviour
 
     public void Pause()
     {
+        if (resumeButton != null)
+            resumeButton.gameObject.SetActive(true);
         if (pauseButton != null)
-            pauseButton.gameObject.SetActive(true);
+            pauseButton.gameObject.SetActive(false);
+        if (pauseText != null)
+        {
+           pauseText.gameObject.SetActive(false);
+        }
 
         //hide handCards, baller card and redraw button
         if (handCards != null)
@@ -61,9 +70,6 @@ public class PauseGame : MonoBehaviour
         if (blackOverlayPanel != null)
             blackOverlayPanel.SetActive(true);
         
-        if (puaseInstructionText != null)
-            puaseInstructionText.text = "Press 'Esc' to Resume";
-
         Time.timeScale = 0f;  // Freeze time
         isPaused = true;
         AudioListener.pause = true; 
@@ -71,8 +77,15 @@ public class PauseGame : MonoBehaviour
 
     public void Resume()
     {
+        if (resumeButton != null)
+            resumeButton.gameObject.SetActive(false);
         if (pauseButton != null)
-            pauseButton.gameObject.SetActive(false);
+            pauseButton.gameObject.SetActive(true);
+        if (pauseText != null)
+        {
+            pauseText.gameObject.SetActive(true);
+        }
+        
 
         //Unhide handCards, ballerCard and redraw button
         if (handCards != null)
@@ -84,9 +97,6 @@ public class PauseGame : MonoBehaviour
 
         if (blackOverlayPanel != null)
             blackOverlayPanel.SetActive(false);
-        
-        if (puaseInstructionText != null)
-            puaseInstructionText.text = "Press 'Esc' to Pause";
 
         Time.timeScale = 1f;  // Resume time
         isPaused = false;
