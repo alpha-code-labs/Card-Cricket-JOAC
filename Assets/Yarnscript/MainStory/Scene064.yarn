@@ -122,7 +122,8 @@ Raju: Ninety—I'll bring it home.
 Shiv Prasad: Then go wash your hands—tea is getting cold, and promises are warmer when made clean.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

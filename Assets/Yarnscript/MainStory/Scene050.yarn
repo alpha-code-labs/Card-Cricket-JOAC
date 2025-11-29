@@ -19,7 +19,8 @@ Raju: I am all in. Completely focussed. Ready to roar.
 Ramu: Good. Let's go.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

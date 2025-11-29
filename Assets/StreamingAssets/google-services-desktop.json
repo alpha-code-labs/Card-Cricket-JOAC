@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513015427520",
+    "project_id": "gullychamp-6a930",
+    "storage_bucket": "gullychamp-6a930.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513015427520:android:e0b1c1380b9579b9dad825",
+        "android_client_info": {
+          "package_name": "com.alphacodelabs.GullyChamp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABkaEht2O5WfrkZmPDRGqAaGLBgHoqfU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

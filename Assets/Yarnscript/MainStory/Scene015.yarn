@@ -19,7 +19,8 @@ Ramu: That's my boy - stay humble and grounded. Tomorrow is another day with a f
 Raju: Yes I am aware. I am completely switched on. I can do this.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

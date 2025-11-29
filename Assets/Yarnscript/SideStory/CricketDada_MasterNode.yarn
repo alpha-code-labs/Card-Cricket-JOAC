@@ -102,7 +102,7 @@ Cricket Dada: I would like that very much, beta. Very much indeed.
 
 // Scene Conclusion
 As Raju leaves, Cricket Dada's stories echo in his mind. The elderly man's passion is inspiring, but his loneliness is concerning.
-
+<<EndSideStoryEvent "CricketDada_Day1">>
 <<set $CricketDada_Day = 2>>
 <<EndEvent true>>
 ===
@@ -208,7 +208,7 @@ Cricket Dada: I'll be waiting, beta. I'll be waiting.
 
 // Scene Conclusion
 Raju's notebook fills with cricket wisdom. Cricket Dada has become more than a storyteller - he's becoming a mentor.
-
+<<EndSideStoryEvent "CricketDada_Day2">>
 <<set $CricketDada_Day = 3>>
 <<EndEvent true>>
 ===
@@ -440,7 +440,7 @@ Cricket Dada: Beta, you've given this old man hope. Real hope.
 
 // Scene Conclusion
 Raju leaves carrying the weight of Cricket Dada's revelation and hope that his advice might bridge fifteen years of separation.
-
+<<EndSideStoryEvent "CricketDada_Day3">>
 <<set $CricketDada_Day = 4>>
 <<EndEvent true>>
 ===
@@ -558,7 +558,7 @@ Cricket Dada: Yes! Just like the old days. Beta, sit next to me. I'll explain ev
 
 // Scene Conclusion
 As the family gathers around the television, Raju witnesses the joy of reconciliation. Cricket Dada's transformation is complete - from lonely patient to surrounded patriarch.
-
+<<EndSideStoryEvent "CricketDada_Day4">>
 <<set $CricketDada_Complete = true>>
 
 <<jump Resourcefulness>>

@@ -30,7 +30,8 @@ Raju: Good. I can focus on my shots without the noise.
 Ramu: Exactly. Use these matches to try things. That late cut you've been practicing? Test it today.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -19,7 +19,8 @@ Ramu: All the best. Take calculated risks.
 Raju: I'll try my best.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

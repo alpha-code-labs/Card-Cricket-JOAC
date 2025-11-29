@@ -20,7 +20,8 @@ Ramu: That's the right mindset. Take the win learn from it move forward. Home fo
 Raju: Yes. Maa will be happy we're early.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

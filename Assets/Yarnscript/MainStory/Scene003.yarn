@@ -16,7 +16,8 @@ Raju: Ok, I am set—practice, study, play, repeat with focus and discipline.
 Ramu: That's like my brother—let's go.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

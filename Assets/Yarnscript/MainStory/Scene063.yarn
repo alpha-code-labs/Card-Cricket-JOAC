@@ -104,7 +104,8 @@ Coach Dev: Good night, ShivPrasad-ji.
 Shiv Prasad: Good night.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

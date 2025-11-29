@@ -26,7 +26,8 @@ Ramu: Tomorrow's another day with a fresh challenge—keep the focus on.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

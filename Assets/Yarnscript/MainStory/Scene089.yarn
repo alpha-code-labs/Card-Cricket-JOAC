@@ -38,7 +38,8 @@ Raju: Just another match.
 Ramu: Just another match, but play it complete—half-hearted cricket teaches full-hearted bad habits.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

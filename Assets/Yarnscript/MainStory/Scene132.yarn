@@ -86,7 +86,8 @@ Raju: Double knot.
 Shiv Prasad: Good—come, all of you.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

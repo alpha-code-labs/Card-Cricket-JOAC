@@ -39,7 +39,8 @@ Please make a choice
 -> Try Again
     <<RetryEvent "Card Gameplay 4">>
 -> Continue
-	<<EndEvent>>
+	<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<HideAllCharacters>>
 <<StopBackgroundMusic>>
 <<wait 3>>

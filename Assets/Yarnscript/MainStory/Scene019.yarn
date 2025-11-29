@@ -111,7 +111,8 @@ Ramu: Promises wake me faster. Good night, Maa. Good night, Baba.
 Kamla: Good night, coach. Good Night Hope.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

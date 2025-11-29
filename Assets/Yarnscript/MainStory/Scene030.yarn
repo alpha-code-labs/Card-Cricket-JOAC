@@ -24,7 +24,8 @@ Raju: That's aggressive batting.
 Ramu: It's practice tournament. Perfect time to test your attacking shots. Go for it.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

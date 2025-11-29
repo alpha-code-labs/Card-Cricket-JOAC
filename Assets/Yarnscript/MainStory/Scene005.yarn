@@ -70,7 +70,8 @@ Raju: Raju—reporting.
 Ramu: Play well.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

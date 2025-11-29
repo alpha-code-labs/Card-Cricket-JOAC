@@ -21,7 +21,8 @@ Ramu: That tall boy from church lane is bowling—remember he's fast but straigh
 Raju: I'll try my best.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

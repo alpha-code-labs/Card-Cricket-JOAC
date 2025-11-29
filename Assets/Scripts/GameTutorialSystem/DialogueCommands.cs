@@ -308,6 +308,7 @@ public class DialogueCommands : MonoBehaviour
         
         //implement...
         Debug.Log("calling end event");
+        FirebaseEventLogger.LogTutorialEnd();
         NewDayManager.EndEvent();
     }
 

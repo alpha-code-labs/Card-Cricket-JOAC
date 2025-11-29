@@ -138,7 +138,7 @@ Agarwal Uncle: Come back another time. We'll talk more when it's not so chaotic.
 <<HideAllCharacters>>
 
 As Raju exits the crowded store, he carries deep appreciation for retail complexity and strengthened determination to prove his commitment.
-
+<<EndSideStoryEvent "AgarwalUncle_Day1">>
 <<set $AgarwalUncle_Day = 2>>
 <<EndEvent true>>
 ===
@@ -266,7 +266,7 @@ Raju: And I'm ready to show you rather than just tell you.
 <<HideAllCharacters>>
 
 As their conversation concludes with Agarwal Uncle's direct inquiry, Raju recognizes his offers have progressed into serious evaluation.
-
+<<EndSideStoryEvent "AgarwalUncle_Day2">>
 <<set $AgarwalUncle_Day = 3>>
 <<EndEvent true>>
 ===
@@ -548,7 +548,7 @@ Agarwal Uncle: We'll start your real education in retail operations.
 <<HideAllCharacters>>
 
 As Raju prepares to begin his chosen role, both understand they're creating a genuine learning partnership that could benefit them both.
-
+<<EndSideStoryEvent "AgarwalUncle_Day3">>
 <<set $AgarwalUncle_Day = 4>>
 <<EndEvent true>>
 ===
@@ -649,7 +649,7 @@ Agarwal Uncle: You're learning already. Now let's begin.
 <<HideAllCharacters>>
 
 As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
-
+<<EndSideStoryEvent "AgarwalUncle_Day4a">>
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>
 ===
@@ -738,7 +738,7 @@ Agarwal Uncle: You're learning already. Now let's begin.
 <<HideAllCharacters>>
 
 As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
-
+<<EndSideStoryEvent "AgarwalUncle_Day4b">>
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>
 ===
@@ -827,7 +827,7 @@ Agarwal Uncle: You're learning already. Now let's begin.
 <<HideAllCharacters>>
 
 As preparation intensifies, both understand the next few hours will provide definitive evidence of whether his assistance represents genuine value.
-
+<<EndSideStoryEvent "AgarwalUncle_Day4c">>
 <<set $AgarwalUncle_Day = 5>>
 <<EndEvent true>>
 ===
@@ -918,7 +918,7 @@ Agarwal Uncle: That attitude will take you far in life, beta.
 <<HideAllCharacters>>
 
 As the day unfolds with expanded responsibilities, both recognize they're moving beyond experimentation into sustainable partnership.
-
+<<EndSideStoryEvent "AgarwalUncle_Day5">>
 <<set $AgarwalUncle_Day = 6>>
 <<EndEvent true>>
 ===
@@ -1050,7 +1050,7 @@ Agarwal Uncle: And to me as well, beta. Welcome to the business!
 <<HideAllCharacters>>
 
 As their conversation concludes with formalization of their working relationship, both understand they've created something valuable - a partnership that strengthens both individuals and the local community.
-
+<<EndSideStoryEvent "AgarwalUncle_Day6">>
 <<set $AgarwalUncle_Complete = true>>
 <<jump Resourcefulness>>
 ===

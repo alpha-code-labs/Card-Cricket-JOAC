@@ -32,7 +32,8 @@ Ramu: Because we don't know how to try soft. We play our way, every day. Ready?
 Raju: Ready.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

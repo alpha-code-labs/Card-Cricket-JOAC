@@ -23,7 +23,8 @@ Ramu: All the best. I am heading out to work. You focus and remember the 5 coins
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

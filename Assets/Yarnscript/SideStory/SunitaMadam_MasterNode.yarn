@@ -145,7 +145,7 @@ He wants to prove that intellectual curiosity and educational ambition cannot be
 The encounter has crystallized his understanding of the barriers that separate him from quality education.
 
 Simultaneously fueling his determination to find ways around or through those obstacles thus transforming humiliation into motivation.
-
+<<EndSideStoryEvent "SunitaMadam_Day1">>
 <<set $SunitaMadam_Day = 2>>
 <<EndEvent true>>
 ===
@@ -319,7 +319,7 @@ He understands that the earlier humiliation has transformed into this opportunit
 Sunita Madam's shift from dismissive hostility to cautious interest represents a crucial breakthrough.
 
 That validates his belief that merit can transcend social prejudice when properly demonstrated.
-
+<<EndSideStoryEvent "SunitaMadam_Day2">>
 <<set $SunitaMadam_Day = 3>>
 <<EndEvent true>>
 ===
@@ -418,7 +418,7 @@ As Raju demonstrates academic capabilities that exceed Sunita Madam's expectatio
 Through sophisticated literary analysis and critical thinking both teacher and student recognize that their relationship has transformed.
 
 His choice to prove himself through intellectual rigor has validated his belief that merit can overcome social barriers when properly demonstrated and fairly evaluated.
-
+<<EndSideStoryEvent "SunitaMadam_Day3a">>
 <<set $SunitaMadam_Day = 4>>
 <<EndEvent true>>
 ===
@@ -490,7 +490,7 @@ His approach reflects lessons learned from his mother.
 About earning respect through consistent character.
 
 Transforming what could have been seen as servility into evidence of mature understanding about how relationships and trust develop over time.
-
+<<EndSideStoryEvent "SunitaMadam_Day3b">>
 <<set $SunitaMadam_Day = 4>>
 <<EndEvent true>>
 ===
@@ -562,7 +562,7 @@ That his confidence stems not from naive optimism but from demonstrated ability 
 His examples of past successes in diverse areas provide concrete evidence that his claims about overcoming barriers through persistence.
 
 Reflect genuine capability rather than empty boasting.
-
+<<EndSideStoryEvent "SunitaMadam_Day3c">>
 <<set $SunitaMadam_Day = 4>>
 <<EndEvent true>>
 ===
@@ -703,7 +703,7 @@ The transformation from initial prejudice to recognition of merit demonstrates c
 
 While the promise of continued support validates Raju's belief that education can serve as a bridge between circumstances and aspirations.
 
-
+<<EndSideStoryEvent "SunitaMadam_Day4">>
 <<set $SunitaMadam_Day = 5>>
 <<EndEvent true>>
 ===
@@ -870,7 +870,7 @@ That he must validate through sustained effort and demonstrated growth.
 While her willingness to take professional risk on his behalf creates both opportunity and obligation.
 
 His heart swells with gratitude and renewed purpose as he clutches the precious list.
-
+<<EndSideStoryEvent "SunitaMadam_Day5">>
 <<set $SunitaMadam_Day = 6>>
 <<EndEvent true>>
 ===
@@ -1057,7 +1057,7 @@ Her commitment to providing practical support for the scholarship examination, v
 
 Her challenge to become someone who opens doors for others, transforms his personal success into a broader mission of social change.
 
-
+<<EndSideStoryEvent "SunitaMadam_Day6">>
 <<set $SunitaMadam_Complete = true>>
 <<jump Resourcefulness>>
 ===

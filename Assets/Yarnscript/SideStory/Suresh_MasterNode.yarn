@@ -147,7 +147,7 @@ The conversation winds down naturally, both having shared something meaningful. 
 
 // Scene Conclusion
 As Raju walks away, he carries both Suresh's story and his warning about balancing passion with practicality.
-
+<<EndSideStoryEvent "Suresh_Day1">>
 <<set $Suresh_Day = 2>>
 <<EndEvent true>>
 ===
@@ -443,7 +443,7 @@ Something has shifted between them. What started as casual conversation has evol
 
 // Scene Conclusion
 Their mentor-student relationship is solidifying. Suresh's abandoned dreams are finding new purpose through Raju's journey.
-
+<<EndSideStoryEvent "Suresh_Day2">>
 <<set $Suresh_Day = 3>>
 <<EndEvent true>>
 ===
@@ -594,7 +594,7 @@ Raju tucks the advice away carefully, already planning how to implement each sug
 
 // Scene Conclusion
 Raju absorbs Suresh's practical advice about networking, tournaments, and documentation. This insider knowledge could save years of trial and error.
-
+<<EndSideStoryEvent "Suresh_Day3">>
 <<set $Suresh_Day = 4>>
 <<EndEvent true>>
 ===
@@ -754,7 +754,7 @@ They share a moment of quiet understanding, a bond forged through honest convers
 
 // Scene Conclusion
 As Raju departs carrying practical guidance and ongoing support promises, he recognizes that Suresh's mentorship embodies the power of community support to overcome systemic barriers.
-
+<<EndSideStoryEvent "Suresh_Day4">>
 <<set $Suresh_Complete = true>>
 
 <<jump Foresight>>

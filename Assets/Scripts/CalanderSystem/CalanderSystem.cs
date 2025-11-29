@@ -9,12 +9,13 @@ public class CalanderSystem : MonoBehaviour
     void Awake()
     {
         instance = this;
+        LoadDateRecordsDict();
     }
     [SerializeField] internal CalanderRecord calanderRecord;
     Dictionary<string, DateRecord> dateRecords = new Dictionary<string, DateRecord>();
     public void Start()
     {
-        LoadDateRecordsDict();
+        
     }
     void LoadDateRecordsDict()
     {

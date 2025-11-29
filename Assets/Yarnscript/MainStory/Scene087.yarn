@@ -28,7 +28,8 @@ Raju: Should we do anything special?
 Ramu: No, special is for special days—today is practice.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -104,25 +104,55 @@ public class NewDayManager : MonoBehaviour
         return currentDateRecord.events[currentEventIndex].eventName;
     }
 
-    [YarnCommand("EndEvent")]
-    public static void EndEvent(bool FreeTimeConsumed = false)
+[YarnCommand("EndEvent")]
+public static void EndEvent(bool FreeTimeConsumed = false)
+{
+    Debug.Log($"🎬 EndEvent Called - isButtonMode: {GameFlowManager.isButtonMode}");
+    
+    if (GameFlowManager.isButtonMode)
     {
+        Debug.Log("📌 Button Mode - Loading Gameplay");
+        
+        string nextGameplay = GameFlowManager.nextGameplayName;
+
+        if (string.IsNullOrEmpty(nextGameplay))
+        {
+            Debug.Log("❌ No gameplay found. Returning to MainMenu");
+            // ✅ CHANGE THIS
+            TransitionScreenManager.instance.LoadScene(SceneNames.MainMenu);
+            return;
+        }
+
+        Debug.Log($"⚙️ Loading Gameplay: {nextGameplay}");
+        PlayerPrefs.SetString("CurrentGameplayName", nextGameplay);
+        // ✅ CHANGE THIS
+        TransitionScreenManager.instance.LoadScene(SceneNames.CardGameScene);
+    }
+    else
+    {
+        // Full game flow
         if (FreeTimeConsumed)
             isEvening = true;
         currentEventIndex++;
+        // ✅ CHANGE THIS
         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
+}
+
     [YarnCommand("RetryCurrentEvent")]//special command to retry the current event
     public static void RetryCurrentEvent()
     {
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+      //  TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+
+       TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     [YarnCommand("RetryEvent")]//special command to retry a specific event by name
     public static void RetryEvent(string eventName)//only works for current day
     {
         int resetToIndex = currentDateRecord.events.FindIndex(e => e.eventName == eventName);
         currentEventIndex = resetToIndex;
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+       // TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+         TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
     }
     public void EndDay()
     {
@@ -131,7 +161,9 @@ public class NewDayManager : MonoBehaviour
         GameManager.instance.currentSaveData.currentDate = CalanderSystem.instance.GetNextDate(GameManager.instance.currentSaveData.currentDate);
         SaveSystem.SaveDataToFile();
         YarnDialogSystemSingleTonMaker.instance.dialogueRunner.SaveStateToPersistentStorage("yarnSaveData.json");
-        TransitionScreenManager.instance.LoadScene("NewDayScene");
+        //TransitionScreenManager.instance.LoadScene("NewDayScene");
+        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+
     }
     [YarnFunction("GetCurrentEventName")]
     public static string GetCurrentEventNameStatic(int i)

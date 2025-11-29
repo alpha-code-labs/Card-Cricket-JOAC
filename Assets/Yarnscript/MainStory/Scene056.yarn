@@ -29,7 +29,8 @@ Ramu: Tomorrow another day, fresh challenge—yes, let's go and sleep.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -25,7 +25,8 @@ Ramu: Lets go champion.
 Raju: Yes, I am ready.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

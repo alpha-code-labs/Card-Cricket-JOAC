@@ -74,7 +74,8 @@ Ramu: Face up. Chin up.
 Raju: For us.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

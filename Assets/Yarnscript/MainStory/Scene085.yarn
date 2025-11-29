@@ -31,7 +31,8 @@ Raju: Prize money?
 Ramu: Decent, enough for groceries if we win, but we're playing for form, not funds.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

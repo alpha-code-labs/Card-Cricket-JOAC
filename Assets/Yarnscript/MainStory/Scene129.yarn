@@ -23,7 +23,8 @@ Ramu: A little bit of nerves are good. Keeps you on your toes. Steady hands and 
 Raju: Thank you bhai.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -369,6 +369,14 @@ public class PlayerStatsTableUI : MonoBehaviour
         
         // 3. Overall Strike Rate (runs per 100 balls)
         float overallStrikeRate = totalBalls > 0 ? (totalRuns * 100f) / totalBalls : 0;
+
+    GameManager.instance.currentSaveData.strikeRate = overallStrikeRate;
+    GameManager.instance.currentSaveData.battingAverage = battingAverage;
+    Debug.Log($"✅ Stats saved to SaveData: SR={overallStrikeRate:F1}, BA={battingAverage:F1}");
+
+    SaveSystem.SaveStatsToLocal();
+
+    GameManager.instance.SaveStatsToFirestore(overallStrikeRate, battingAverage);
         
         // Update basic career row texts
         if (careerAttemptsText != null) 

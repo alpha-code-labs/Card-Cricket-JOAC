@@ -53,7 +53,8 @@ Raju: Thanks.
 Aryan: I hope not. Cant take your beggar face anymore.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

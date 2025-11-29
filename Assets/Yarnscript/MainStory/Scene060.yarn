@@ -32,7 +32,8 @@ Ramu: I am aware—those are eyes of appreciation marveling at your talent, and 
 Raju: Thanks bhai.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

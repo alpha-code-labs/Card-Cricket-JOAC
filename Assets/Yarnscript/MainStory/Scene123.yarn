@@ -41,7 +41,8 @@ Raju: 5 coins.
 Aryan: Talking gibberish just like you always do. See you
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

@@ -19,7 +19,8 @@ Ramu: That's my boy - stay humble and grounded. Tomorrow is another day with a f
 Raju: Thank you bhai for this chance - I really appreciate it.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

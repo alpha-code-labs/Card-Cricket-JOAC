@@ -26,7 +26,8 @@ Ramu: Yes. We are there. Lets go.
 Raju: Yes sir.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

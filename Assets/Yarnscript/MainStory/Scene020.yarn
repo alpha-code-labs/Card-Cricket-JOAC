@@ -108,7 +108,8 @@ Raju: Thank you Maa, Baba, bat, and Bhai.
 Ramu: From today, you practice like you're choosing yourself. Let's go open that window.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

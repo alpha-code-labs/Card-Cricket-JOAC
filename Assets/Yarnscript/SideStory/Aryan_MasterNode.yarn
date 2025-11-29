@@ -111,7 +111,7 @@ Aryan's mocking laughter echoes as Raju walks away. His hands clench into fists.
 A fire of determination burns away the initial sting of humiliation.
 
 The next encounter will be about much more than cricket. It's a clash between two worlds.
-
+<<EndSideStoryEvent "Aryan_Day1">>
 <<set $Aryan_Day = 2>>
 <<EndEvent true>>
 ===
@@ -213,7 +213,7 @@ As Raju departs the complex, he feels the weight of what he has committed to.
 Not just a game of cricket, but a public test of everything he believes.
 
 The anticipation mixes with anxiety. Failure in the upcoming match would validate every cruel assumption about his background.
-
+<<EndSideStoryEvent "Aryan_Day2">>
 <<set $Aryan_Day = 3>>
 <<EndEvent true>>
 ===
@@ -337,7 +337,7 @@ As Raju leaves the complex, he maintains his composed demeanor despite the mount
 He feels the inner strength that comes from refusing to be drawn into petty verbal battles.
 
 His choice to remain dignified sets the stage for the coming confrontation to be decided by skill rather than bluster.
-
+<<EndSideStoryEvent "Aryan_Day3a">>
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -383,7 +383,7 @@ Aryan's taunts echo in his ears.
 He feels the dangerous energy of someone pushed beyond his breaking point.
 
 The verbal battle has escalated the stakes. The match ahead will test pride, dignity, and fundamental beliefs about justice and worth.
-
+<<EndSideStoryEvent "Aryan_Day3b">>
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -433,7 +433,7 @@ As Raju departs the complex, his mind processes the valuable intelligence he has
 His strategic approach reflects a mature understanding.
 
 Victory often belongs not to the most naturally gifted or best-equipped competitor, but to the one who combines preparation with intelligence.
-
+<<EndSideStoryEvent "Aryan_Day3c">>
 <<set $Aryan_Day = 4>>
 <<EndEvent true>>
 ===
@@ -499,7 +499,7 @@ As Raju walks away from his final pre-match encounter, he carries quiet confiden
 He has discovered that inner peace can be more powerful than external bravado.
 
 His refusal to be baited into anger has revealed a strength of character that transcends superficial markers of social status.
-
+<<EndSideStoryEvent "Aryan_Day4a">>
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
 ===
@@ -551,7 +551,7 @@ The upcoming battle looms like a storm on the horizon.
 The cricket match has become something far more significant than either boy initially intended.
 
 A collision between two worldviews, two definitions of strength, and two competing claims about what truly matters.
-
+<<EndSideStoryEvent "Aryan_Day4b">>
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
 ===
@@ -606,7 +606,7 @@ He knows Aryan's strengths, weaknesses, and psychological triggers.
 His strategic preparation represents a different kind of courage.
 
 This challenge will be a battle between different philosophies of competition and success.
-
+<<EndSideStoryEvent "Aryan_Day4c">>
 <<set $Aryan_Day = 5>>
 <<EndEvent true>>
 ===
@@ -707,7 +707,7 @@ Their preconceptions shattered by Raju's unexpected display of genuine cricket m
 The young man from the slums stands quietly in the center of the courtyard.
 
 The moment represents more than athletic victory - it is a fundamental challenge to assumptions about wealth and worth.
-
+<<EndSideStoryEvent "Aryan_Day5">>
 <<set $Aryan_Day = 6>>
 <<EndEvent true>>
 ===
@@ -808,7 +808,7 @@ He has challenged and changed entrenched assumptions about class, worth, and cap
 His victory over Aryan represents more than personal triumph.
 
 It stands as proof that dignity, skill, and character cannot be purchased, inherited, or taken away by those who mistake privilege for superiority.
-
+<<EndSideStoryEvent "Aryan_Day6">>
 <<set $Aryan_Complete = true>>
 <<jump Courage>>
 ===

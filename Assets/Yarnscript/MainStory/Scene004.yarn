@@ -61,7 +61,8 @@ Raju: Face up, chin up—I'm ready.
 Ramu: Good—today you watch, next time you belong out there.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

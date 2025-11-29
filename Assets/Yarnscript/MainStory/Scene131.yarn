@@ -38,7 +38,8 @@ Shiv Prasad: in 15 days.
 Raju: In 15 days.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

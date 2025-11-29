@@ -40,6 +40,28 @@ public class PlayerStatsTracker : MonoBehaviour
             PlayerStatsSaveSystem.LoadIntoPlayerStats(playerStats, savedData);
         }
     }
+
+
+    private void OnEnable()
+{
+    // ✅ Reload from JSON whenever this scene becomes active
+    if (playerStats != null)
+    {
+        var savedData = PlayerStatsSaveSystem.LoadStats();
+        PlayerStatsSaveSystem.LoadIntoPlayerStats(playerStats, savedData);
+        Debug.Log($"✅ Reloaded stats - Total matches: {playerStats.GetAllMatchStats().Count}");
+    }
+}
+
+private void OnApplicationQuit()
+{
+    Debug.Log("💾 Game closing - saving all stats...");
+    if (playerStats != null)
+    {
+        PlayerStatsSaveSystem.SaveStats(playerStats);
+        Debug.Log("✅ Stats saved on quit");
+    }
+}
     
     private void LoadOrCreateStats()
     {

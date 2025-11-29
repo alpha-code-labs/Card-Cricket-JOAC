@@ -21,7 +21,8 @@ Ramu: Exactly. No settling in. Attack from ball one. They set this target thinki
 Raju: Let's prove them wrong.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

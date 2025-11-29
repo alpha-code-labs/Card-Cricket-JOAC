@@ -1,6 +1,21 @@
 using System.IO;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
+
+[System.Serializable]
+ public class UsernameData
+{
+    public string userName;
+    public string deviceInfo;
+
+    public UsernameData()
+    {
+        userName = "";
+         deviceInfo = ""; 
+        
+    }
+}
 [System.Serializable]
 public class SaveData
 {
@@ -9,7 +24,13 @@ public class SaveData
     public int courage;
     public int resourcefulness;
     public int foresight;
+    public string userName;
 
+     public float strikeRate;  //Strike Rate for Leaderboards
+    public float battingAverage; //Batting Average for Leaderboards
+   
+     public bool hasCampaignStarted;
+   public bool hasCompletedChapter1;
     // Constructor with default values
     public SaveData()
     {
@@ -27,5 +48,10 @@ public class SaveData
         courage = 0;
         resourcefulness = 0;
         foresight = 0;
+        strikeRate = 0f;
+        battingAverage = 0f;
+        userName = "";
+        hasCompletedChapter1 = false;
+        hasCampaignStarted = false;
     }
 }

@@ -119,7 +119,8 @@ Ramu: That's it. Play like work.
 Raju: Reporting.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

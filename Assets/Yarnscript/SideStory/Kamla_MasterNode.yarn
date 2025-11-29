@@ -158,7 +158,7 @@ Forces that judge people by economic circumstances rather than character.
 Kamla's quiet strength in the face of casual cruelty has taught him something valuable.
 
 About maintaining self-respect in a world that often offers little respect in return.
-
+<<EndSideStoryEvent "Kamla_Day1">>
 <<set $Kamla_Day = 2>>
 <<EndEvent true>>
 ===
@@ -300,7 +300,7 @@ And believes in his potential despite all external obstacles.
 Her promise of quiet but constant support provides a foundation of confidence.
 
 That will sustain him through future challenges and rejections.
-
+<<EndSideStoryEvent "Kamla_Day2">>
 <<set $Kamla_Day = 3>>
 <<EndEvent true>>
 ===
@@ -397,7 +397,7 @@ His willingness to sacrifice immediate gratification for family responsibility r
 That transforms her view of his cricket dreams.
 
 From childish fantasy into potentially achievable goals built on solid moral foundation.
-
+<<EndSideStoryEvent "Kamla_Day3a">>
 <<set $Kamla_Day = 4>>
 <<EndEvent true>>
 ===
@@ -443,7 +443,7 @@ Rather than mere compliance.
 His ability to find energy for both responsibilities and dreams suggests character development.
 
 That transforms her understanding of what his cricket ambitions might realistically achieve.
-
+<<EndSideStoryEvent "Kamla_Day3b">>
 <<set $Kamla_Day = 4>>
 <<EndEvent true>>
 ===
@@ -489,7 +489,7 @@ His sophisticated understanding of the relationship between personal responsibil
 That his cricket goals might be grounded in realistic planning.
 
 Rather than wishful thinking.
-
+<<EndSideStoryEvent "Kamla_Day3c">>
 <<set $Kamla_Day = 4>>
 <<EndEvent true>>
 ===
@@ -710,7 +710,7 @@ The exposure to extreme wealth has clarified the stakes involved.
 While Raju's consistent responsibility has earned him the chance to prove something important.
 
 That athletic ambition and family duty can indeed strengthen each other.
-
+<<EndSideStoryEvent "Kamla_Day4">>
 <<set $Kamla_Day = 5>>
 <<EndEvent true>>
 ===
@@ -886,7 +886,7 @@ The weight of her trust and the magnitude of her sacrifice settle into Raju's co
 Transforming the leather ball into a sacred object.
 
 That carries the responsibility to honor both her belief and the family resources invested in his potential.
-
+<<EndSideStoryEvent "Kamla_Day5">>
 <<set $Kamla_Day = 6>>
 <<EndEvent true>>
 ===
@@ -1017,7 +1017,7 @@ The investment in the cricket ball has already paid dividends.
 In confidence and performance.
 
 Validating Kamla's decision to sacrifice immediate needs for long-term potential.
-
+<<EndSideStoryEvent "Kamla_Day6">>
 <<set $Kamla_Day = 7>>
 <<EndEvent true>>
 ===
@@ -1139,7 +1139,7 @@ Kamla's commitment represents not just support for his athletic goals.
 But validation of his worth as a person.
 
 Capable of transforming dreams into reality through dedication and integrity.
-
+<<EndSideStoryEvent "Kamla_Day7">>
 <<set $Kamla_Complete = true>>
 <<jump Humility>>
 ===

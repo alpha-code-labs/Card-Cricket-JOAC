@@ -58,7 +58,8 @@ Ramu: For us—alright captain, sleeves up, words end here.
 Ramu: Ready? Step out with a steady heart.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

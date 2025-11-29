@@ -1,0 +1,217 @@
+using UnityEngine;
+using Firebase.Firestore;
+using Firebase.Extensions;
+using System.Collections.Generic;
+using System.Linq;
+using TMPro;
+using UnityEngine.UI;
+
+public class LeaderboardStrikeManager : MonoBehaviour
+{
+    private static LeaderboardStrikeManager instance;
+    private FirebaseFirestore db;
+    
+    [SerializeField] private Transform leaderboardContent; // ScrollView Content
+    [SerializeField] private GameObject leaderboardStripPrefab; // LeaderboardStrip prefab
+    [SerializeField] private TextMeshProUGUI loadingText; // Optional: Show "Loading..." message
+    [SerializeField] private GameObject leaderboardPanel; // Your leaderboard panel
+    
+    private List<LeaderboardEntry> leaderboardData = new List<LeaderboardEntry>();
+    private string strikeRatesCollection = "strikeRates";
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            // DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        db = FirebaseFirestore.DefaultInstance;
+        // Data will load when button is clicked, not automatically
+    }
+
+    // ✅ ADD DUMMY DATA FOR TESTING
+    public void AddDummyData()
+    {
+        leaderboardData.Clear();
+
+        // Add dummy entries
+        leaderboardData.Add(new LeaderboardEntry { userName = "Mukesh", strikeRate = 45.5f });
+        leaderboardData.Add(new LeaderboardEntry { userName = "Raju", strikeRate = 78.3f });
+        leaderboardData.Add(new LeaderboardEntry { userName = "Arjun", strikeRate = 62.1f });
+        leaderboardData.Add(new LeaderboardEntry { userName = "Virat", strikeRate = 89.7f });
+        leaderboardData.Add(new LeaderboardEntry { userName = "Rohit", strikeRate = 55.4f });
+
+        // Sort in descending order
+        leaderboardData = leaderboardData.OrderByDescending(x => x.strikeRate).ToList();
+
+        // Display leaderboard
+        DisplayLeaderboard();
+
+        Debug.Log($"✅ Dummy data loaded - {leaderboardData.Count} entries");
+    }
+
+    // ✅ FETCH LEADERBOARD DATA FROM FIRESTORE
+    public void FetchAndDisplayLeaderboard()
+    {
+        if (db == null)
+        {
+            Debug.LogError("❌ Firestore not initialized!");
+            return;
+        }
+
+        if (loadingText != null)
+            loadingText.text = "Loading Leaderboard...";
+
+        leaderboardData.Clear();
+
+        db.Collection(strikeRatesCollection)
+            .GetSnapshotAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted && !task.IsFaulted)
+                {
+                    QuerySnapshot snapshot = task.Result;
+
+                    // ✅ EXTRACT DATA FROM FIRESTORE
+                    foreach (DocumentSnapshot document in snapshot.Documents)
+                    {
+                        try
+                        {
+                            string userName = document.GetValue<string>("userName");
+                            float strikeRate = document.GetValue<double>("strikeRate").ToString() == "" ? 0 : (float)document.GetValue<double>("strikeRate");
+
+                            leaderboardData.Add(new LeaderboardEntry
+                            {
+                                userName = userName,
+                                strikeRate = strikeRate
+                            });
+
+                            Debug.Log($"✅ Loaded: {userName} - {strikeRate:F1}");
+                        }
+                        catch (System.Exception e)
+                        {
+                            Debug.LogWarning($"⚠️ Error parsing document: {e.Message}");
+                        }
+                    }
+
+                    // ✅ SORT IN DESCENDING ORDER (Highest strike rate = Rank 1)
+                    leaderboardData = leaderboardData.OrderByDescending(x => x.strikeRate).ToList();
+
+                    // ✅ DISPLAY LEADERBOARD
+                    DisplayLeaderboard();
+
+                    if (loadingText != null)
+                        loadingText.text = "";
+                }
+                else
+                {
+                    Debug.LogError($"❌ Error fetching leaderboard: {task.Exception}");
+                    if (loadingText != null)
+                        loadingText.text = "Error Loading Leaderboard";
+                }
+            });
+    }
+
+    // ✅ DISPLAY LEADERBOARD IN UI
+    private void DisplayLeaderboard()
+    {
+        // Clear existing entries
+        foreach (Transform child in leaderboardContent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // ✅ CREATE LEADERBOARD ENTRIES WITH RANK (1, 2, 3...)
+        for (int i = 0; i < leaderboardData.Count; i++)
+        {
+            int rank = i + 1; // Rank starts from 1
+            
+            GameObject stripInstance = Instantiate(leaderboardStripPrefab, leaderboardContent);
+            
+            // ✅ SET Y POSITION MANUALLY FOR SPACING (133 pixels each)
+            RectTransform stripRect = stripInstance.GetComponent<RectTransform>();
+            if (stripRect != null)
+            {
+                float yPosition = -88 - (i * 133); // First entry at -140, then -273, -406, etc.
+                stripRect.anchoredPosition = new Vector2(stripRect.anchoredPosition.x, yPosition);
+            }
+            
+            // ✅ FIND TEXTMESHPRO COMPONENTS BY NAME
+            TextMeshProUGUI rankText = FindTextMeshProByName(stripInstance, "RankText");
+            TextMeshProUGUI userNameText = FindTextMeshProByName(stripInstance, "UserName");
+            TextMeshProUGUI strikeRateText = FindTextMeshProByName(stripInstance, "StrikeRate");
+            
+            if (rankText != null && userNameText != null && strikeRateText != null)
+            {
+                rankText.text = rank.ToString();
+                userNameText.text = leaderboardData[i].userName;
+                strikeRateText.text = leaderboardData[i].strikeRate.ToString("F1");
+                
+                Debug.Log($"✅ Displayed Rank {rank}: {leaderboardData[i].userName} - Strike Rate: {leaderboardData[i].strikeRate:F1} at Y: {stripRect.anchoredPosition.y}");
+            }
+            else
+            {
+                // Debug: Show what TextMeshPro components actually exist
+                TextMeshProUGUI[] allTexts = stripInstance.GetComponentsInChildren<TextMeshProUGUI>();
+                Debug.LogError($"❌ Could not find all TextMeshPro components. Found {allTexts.Length} components:");
+                for (int j = 0; j < allTexts.Length; j++)
+                {
+                    Debug.LogError($"   TextMeshPro {j}: Name = '{allTexts[j].gameObject.name}', Text = '{allTexts[j].text}'");
+                }
+                Debug.LogError($"Looking for: 'RankText', 'UserName', 'StrikeRate'");
+            }
+        }
+
+        Debug.Log($"✅ Leaderboard displayed with {leaderboardData.Count} total entries");
+    }
+
+    // ✅ HELPER METHOD TO FIND TEXTMESHPRO BY NAME
+    private TextMeshProUGUI FindTextMeshProByName(GameObject parent, string textName)
+    {
+        TextMeshProUGUI[] allTexts = parent.GetComponentsInChildren<TextMeshProUGUI>();
+        foreach (TextMeshProUGUI text in allTexts)
+        {
+            if (text.gameObject.name == textName)
+            {
+                return text;
+            }
+        }
+        return null;
+    }
+
+    public static LeaderboardStrikeManager GetInstance()
+    {
+        return instance;
+    }
+
+    // ✅ OPEN LEADERBOARD PANEL AND FETCH DATA
+    public void OpenLeaderboardPanel()
+    {
+        if (leaderboardPanel != null)
+        {
+            leaderboardPanel.SetActive(true);
+            Debug.Log("✅ Leaderboard panel opened");
+        }
+        FetchAndDisplayLeaderboard();
+    }
+
+    // ✅ CLOSE LEADERBOARD PANEL
+    public void CloseLeaderboardPanel()
+    {
+        if (leaderboardPanel != null)
+        {
+            leaderboardPanel.SetActive(false);
+            Debug.Log("✅ Leaderboard panel closed");
+        }
+    }
+}
+

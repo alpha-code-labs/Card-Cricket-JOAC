@@ -722,14 +722,52 @@ public class ScoreManager : MonoBehaviour
         }
         RecordMatchEndStats("Lost");
         yield return new WaitForSeconds(3f);
+          // Save stats to Firestore
+         SaveStatsToFirestore();
         
         // Re-enable the main dialogue system
         enableRaycasterOnMainDialogueSystem();
         
         // Call NewDayManager to end the event
+        // NewDayManager.EndEvent();
+
+  if (GameFlowManager.isButtonMode)
+    {
+        // Button mode: Show PostGameplay dialogue
+        if (YarnDialogSystemSingleTonMaker.instance != null && 
+            YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
+        {
+            Debug.Log("🎬 Starting PostGameplay Yarn script (Button Mode)");
+            YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("PostGameplay");
+        }
+        else
+        {
+            Debug.LogError("Cannot start PostGameplay - YarnDialogSystemSingleTonMaker not ready");
+        }
+    }
+    else
+    {
+        // Campaign mode: Normal event end
+        Debug.Log("📍 Ending event normally (Campaign Mode)");
         NewDayManager.EndEvent();
     }
+    }
     
+
+
+    void SaveStatsToFirestore()
+{
+    FirestoreStatsManager firestoreStats = FirestoreStatsManager.GetInstance();
+    if (firestoreStats != null && PlayerStatsTracker.Instance != null)
+    {
+        var currentStats = PlayerStatsTracker.Instance.GetCurrentMatchStats();
+        if (currentStats != null)
+        {
+            firestoreStats.SaveGameplayStatsToFirestore(currentStats);
+            Debug.Log($"💾 Gameplay {currentGameplayConfig.gameplayNumber} stats saved to Firestore");
+        }
+    }
+}
     public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
         StartCoroutine(PlayCardSequence(battingStrategy, cardObject, cardSprite));

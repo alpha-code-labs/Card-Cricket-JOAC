@@ -139,7 +139,7 @@ He feels the familiar sting of rejection based on economic circumstances rather 
 Yet beneath the hurt lies a burning determination.
 
 Someday he will return to demonstrate that passion and persistence can overcome barriers.
-
+<<EndSideStoryEvent "CoachSharma_Day1">>
 <<set $CoachSharma_Day = 2>>
 <<EndEvent true>>
 ===
@@ -315,7 +315,7 @@ One that measures character through unglamorous labor rather than flashy skill d
 His choice of the steady, consistent path reflects a mature understanding.
 
 Respect must be built through reliable action rather than dramatic gestures.
-
+<<EndSideStoryEvent "CoachSharma_Day2a">>
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
 ===
@@ -368,7 +368,7 @@ His passionate commitment has been accepted as a challenge by Coach Sharma.
 His choice of the passionate path reflects his belief that genuine love for cricket can overcome any obstacle.
 
 Though his next session will test whether his intensity can survive the grinding reality of unglamorous preparation work.
-
+<<EndSideStoryEvent "CoachSharma_Day2b">>
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
 ===
@@ -424,7 +424,7 @@ He understands that his next opportunity will reveal whether his methodical thin
 His choice of the analytical path reflects a belief that intelligent preparation can maximize limited opportunities.
 
 Though the coming challenge will test whether his systematic approach can handle unpredictable demands of practical work.
-
+<<EndSideStoryEvent "CoachSharma_Day2c">>
 <<set $CoachSharma_Day = 3>>
 <<EndEvent true>>
 ===
@@ -502,7 +502,7 @@ His chosen path of quiet consistency is already distinguishing him.
 Different from the typical responses Coach Sharma expects from young people seeking cricket training.
 
 His methodical approach to simple tasks reveals a maturity that transcends age and economic background.
-
+<<EndSideStoryEvent "CoachSharma_Day3a">>
 <<set $CoachSharma_Day = 4>>
 <<EndEvent true>>
 ===
@@ -564,7 +564,7 @@ His emotional fire can indeed fuel sustained effort rather than simply burning b
 His ability to maintain enthusiasm for unglamorous work reveals depth.
 
 His love for cricket runs deeper than surface excitement, encompassing every aspect of the sport.
-
+<<EndSideStoryEvent "CoachSharma_Day3b">>
 <<set $CoachSharma_Day = 4>>
 <<EndEvent true>>
 ===
@@ -625,7 +625,7 @@ Strategic thinking can indeed enhance rather than replace passionate commitment.
 His ability to find meaning and efficiency in routine tasks reveals intellectual maturity.
 
 He transforms simple labor into purposeful preparation for larger goals.
-
+<<EndSideStoryEvent "CoachSharma_Day3c">>
 <<set $CoachSharma_Day = 4>>
 <<EndEvent true>>
 ===
@@ -755,7 +755,7 @@ The system measures potential in rupees rather than ability.
 Yet his brief taste of proper cricket assessment has revealed both the extent of his natural gifts and the magnitude of what proper coaching might achieve.
 
 A burning awareness of possibilities that remain tantalizingly out of reach.
-
+<<EndSideStoryEvent "CoachSharma_Day4">>
 <<set $CoachSharma_Day = 5>>
 <<EndEvent true>>
 ===
@@ -893,7 +893,7 @@ The deal with Coach Sharma represents more than a chance for cricket training.
 It is an opportunity to prove that character and dedication can overcome systemic barriers.
 
 Barriers that separate talent from opportunity.
-
+<<EndSideStoryEvent "CoachSharma_Day5">>
 <<set $CoachSharma_Day = 6>>
 <<EndEvent true>>
 ===
@@ -1048,7 +1048,7 @@ Denied by economic circumstances.
 This weight settles on his shoulders, transforming personal achievement into something larger.
 
 A chance to challenge the fundamental assumptions about who deserves access to excellence.
-
+<<EndSideStoryEvent "CoachSharma_Day6">>
 <<set $CoachSharma_Complete = true>>
 <<jump Humility>>
 ===

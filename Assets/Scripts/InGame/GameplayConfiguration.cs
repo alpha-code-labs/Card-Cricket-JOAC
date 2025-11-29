@@ -121,6 +121,9 @@ void InitializeConfigurations()
 
     public GameplayConfig GetConfigForDate(string date)
     {
+
+         Debug.Log($"🔍 Looking for date: '{date}'");
+    Debug.Log($"📋 Available dates in config: {string.Join(", ", gameplayConfigs.Keys)}");
         if (gameplayConfigs.ContainsKey(date))
         {
             return gameplayConfigs[date];
@@ -129,16 +132,40 @@ void InitializeConfigurations()
         Debug.LogError($"No gameplay configuration found for date: {date}");
         return null;
     }
+//inital code 
+    // public GameplayConfig GetCurrentGameplayConfig()
+    // {
+    //     if (NewDayManager.currentDateRecord != null)
+    //     {
+    //         string currentDate = NewDayManager.currentDateRecord.date;
+    //         return GetConfigForDate(currentDate);
+    //     }
 
-    public GameplayConfig GetCurrentGameplayConfig()
+    //     Debug.LogError("No current date record available!");
+    //     return null;
+    // }
+
+
+public GameplayConfig GetCurrentGameplayConfig()
+{
+    // ✅ Try button mode first (uses GameManager date)
+    string currentDate = GameManager.instance.currentSaveData.currentDate;
+    
+    if (!string.IsNullOrEmpty(currentDate))
     {
-        if (NewDayManager.currentDateRecord != null)
-        {
-            string currentDate = NewDayManager.currentDateRecord.date;
-            return GetConfigForDate(currentDate);
-        }
-
-        Debug.LogError("No current date record available!");
-        return null;
+        Debug.Log($"📅 Getting gameplay config for date: {currentDate}");
+        return GetConfigForDate(currentDate);
     }
+    
+    // ✅ Fallback to NewDayManager for normal campaign
+    if (NewDayManager.currentDateRecord != null)
+    {
+        string dateFromRecord = NewDayManager.currentDateRecord.date;
+        Debug.Log($"📅 Getting gameplay config from NewDayManager date: {dateFromRecord}");
+        return GetConfigForDate(dateFromRecord);
+    }
+
+    Debug.LogError("❌ No current date available!");
+    return null;
+}
 }

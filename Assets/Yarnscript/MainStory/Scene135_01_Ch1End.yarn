@@ -1,6 +1,6 @@
 ﻿title: Scene135_01_Ch1End
 ---
 <<SetBGSprite "chapter1end">>
-<<wait  5>>
-// <<GoToMainMenu>>
+<<wait 3>>
+<<GoToMainMenu>>
 ===

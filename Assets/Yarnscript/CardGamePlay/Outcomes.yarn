@@ -8,6 +8,11 @@ title: PostGameplay
 <<declare $gameResult = "">> // "won", "lost_wickets", "lost_runs"
 <<declare $initialScore = 0 as Number>>
 
+
+<<if IsButtonMode()>>
+    <<LogGameplayEnd "ButtonModeGameplay{$gameplayNumber}">>
+    <<EndButtonModeGameplay>>
+<<else>>
 // Check which gameplay based on gameplay number
 <<if $gameplayNumber == 0>>
     <<jump scene_3>>
@@ -44,13 +49,18 @@ title: PostGameplay
 <<else>>
     Error: Unknown gameplay number {$gameplayNumber}!
 <<endif>>
+
+<<endif>>
 ===
 
 
 title: Gameplay0Result
 ---
 // Gameplay 0: Tutorial batting first with 6 balls
-<<EndEvent>>
+
+<<LogGameplayEnd "Gameplay0">>
+// <<EndEvent>>
+<<jump scene_3>>
 ===
 // =========================
 // Updated as per new balls & runs mapping
@@ -74,6 +84,7 @@ title: Gameplay0Result
 
 title: Gameplay1Result
 ---
+<<LogGameplayEnd "Gameplay1">>
 // Gameplay 1: Batting first with 24 balls -> performance tiers at 12 / 24 / 48 runs
 <<if ($finalScore - $initialScore) < 12>>
     <<jump scene_7>>
@@ -88,6 +99,8 @@ title: Gameplay1Result
 
 title: Gameplay2Result
 ---
+
+<<LogGameplayEnd "Gameplay2">>
 // Gameplay 2: Batting first with 24 balls -> performance tiers at 13 / 26 / 52 runs
 <<if ($finalScore - $initialScore) < 13 >>
     <<jump scene_12>>
@@ -102,6 +115,8 @@ title: Gameplay2Result
 
 title: Gameplay3Result
 ---
+
+<<LogGameplayEnd "Gameplay3">>
 // Gameplay 3: Chasing 44 runs in 24 balls
 <<if ($finalScore - $initialScore) < 44>>
     <<jump scene_17>>
@@ -112,6 +127,8 @@ title: Gameplay3Result
 
 title: Gameplay4Result
 ---
+
+<<LogGameplayEnd "Gameplay4">>
 // Gameplay 4: Batting first with 48 balls -> performance tiers at 24 / 48 / 96 runs
 <<if ($finalScore - $initialScore) < 24>>
     <<jump scene_51a>>
@@ -126,6 +143,7 @@ title: Gameplay4Result
 
 title: Gameplay5Result
 ---
+<<LogGameplayEnd "Gameplay5">>
 // Gameplay 5: Batting first with 48 balls -> performance tiers at 22 / 44 / 88 runs
 <<if ($finalScore - $initialScore) < 22>>
     <<jump scene_55a>>
@@ -140,6 +158,8 @@ title: Gameplay5Result
 
 title: Gameplay6Result
 ---
+
+<<LogGameplayEnd "Gameplay6">>
 // Gameplay 6: Chasing 104 runs in 48 balls
 <<if ($finalScore - $initialScore) < 104>>
     <<jump scene_59a>>
@@ -150,6 +170,8 @@ title: Gameplay6Result
 
 title: Gameplay7Result
 ---
+
+<<LogGameplayEnd "Gameplay7">>
 // Gameplay 7: Batting first with 72 balls -> performance tiers at 36 / 72 / 144 runs
 <<if ($finalScore - $initialScore) < 36>>
     <<jump scene_115>>
@@ -164,6 +186,7 @@ title: Gameplay7Result
 
 title: Gameplay8Result
 ---
+<<LogGameplayEnd "Gameplay8">>
 // Gameplay 8: Chasing 156 runs in 72 balls
 <<if ($finalScore - $initialScore) < 156>>
     <<jump scene_119>>
@@ -174,6 +197,7 @@ title: Gameplay8Result
 
 title: Gameplay9Result
 ---
+<<LogGameplayEnd "Gameplay9">>
 // Gameplay 9: Chasing 180 runs in 72 balls
 <<if ($finalScore - $initialScore) < 180>>
     <<jump scene_124>>
@@ -184,6 +208,7 @@ title: Gameplay9Result
 
 title: Gameplay12Result
 ---
+<<LogGameplayEnd "Gameplay12">>
 // Gameplay 12: Batting first with 36 balls, target 66 runs
 <<if ($finalScore - $initialScore) < 66>>
     <<jump scene_138>>
@@ -194,6 +219,8 @@ title: Gameplay12Result
 
 title: Gameplay13Result
 ---
+
+<<LogGameplayEnd "Gameplay13">>
 // Gameplay 13: Chasing 72 runs in 36 balls
 <<if ($finalScore - $initialScore) < 72>>
     <<jump scene_140>>
@@ -204,6 +231,8 @@ title: Gameplay13Result
 
 title: Gameplay14Result
 ---
+
+<<LogGameplayEnd "Gameplay14">>
 // Gameplay 14: Chasing 78 runs in 36 balls
 <<if ($finalScore - $initialScore) < 78>>
     <<jump scene_142>>
@@ -214,6 +243,8 @@ title: Gameplay14Result
 
 title: Gameplay15Result
 ---
+
+<<LogGameplayEnd "Gameplay15">>
 // Gameplay 15: Batting first with 60 balls, target 110 runs
 <<if ($finalScore - $initialScore) < 110>>
     <<jump scene_144>>
@@ -224,6 +255,8 @@ title: Gameplay15Result
 
 title: Gameplay16Result
 ---
+
+<<LogGameplayEnd "Gameplay16">>
 // Gameplay 16: Chasing 120 runs in 60 balls
 <<if ($finalScore - $initialScore) < 120>>
     <<jump scene_146>>
@@ -234,6 +267,8 @@ title: Gameplay16Result
 
 title: Gameplay17Result
 ---
+
+<<LogGameplayEnd "Gameplay17">>
 // Gameplay 17: Chasing 130 runs in 60 balls
 <<if ($finalScore - $initialScore) < 130>>
     <<jump scene_148>>

@@ -17,7 +17,8 @@ Raju: Had to take some risks but they paid off.
 Ramu: Tomorrow's the finals. Small prize but good practice for bigger things.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

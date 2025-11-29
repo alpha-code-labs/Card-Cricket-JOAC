@@ -33,7 +33,16 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     private Dictionary<String, AudioClip> musicDictionary;
     void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+           
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate
+        }
+        
         InitializeMusicDictionary();
         InitializeSpriteMapping();
     }
@@ -46,10 +55,42 @@ public class DialogueScriptCommandHandler : MonoBehaviour
             Debug.LogWarning("Testing?: currentNode was null, defaulting to 'scene_1'");
         }
 
-        Debug.Log($"Starting Dialogue at node: {currentNode}");
+        
         HideAllCharacters();
-        YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
+        StartCoroutine(WaitForYarnAndStartDialogue());
+        
+        // YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
     }
+
+IEnumerator WaitForYarnAndStartDialogue()
+{
+    float timeout = 5f;
+    float elapsed = 0f;
+    
+    while (YarnDialogSystemSingleTonMaker.instance == null && elapsed < timeout)
+    {
+        elapsed += Time.deltaTime;
+        yield return null;
+    }
+
+    if (YarnDialogSystemSingleTonMaker.instance == null)
+    {
+        Debug.LogError("❌ YarnDialogSystemSingleTonMaker.instance is NULL after timeout!");
+        yield break;
+    }
+
+    if (YarnDialogSystemSingleTonMaker.instance.dialogueRunner == null)
+    {
+        Debug.LogError("❌ dialogueRunner is NULL!");
+        yield break;
+    }
+
+    // ✅ NOW call HideAllCharacters after Yarn is ready
+    HideAllCharacters();
+    
+    Debug.Log($"✅ Starting Dialogue at node: {currentNode}");
+    YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue(currentNode);
+}
 
     void Update()
     {
@@ -262,6 +303,12 @@ public class DialogueScriptCommandHandler : MonoBehaviour
     [YarnCommand("PlayBackgroundMusic")]
     public static void PlayBackgroundMusic(string musicName)
     {
+          if (Instance == null)
+    {
+        Debug.LogWarning($"DialogueScriptCommandHandler not initialized. Cannot play music: {musicName}");
+        return;
+    }
+
         // Try to find music in dictionary
         if (Instance.musicDictionary.ContainsKey(musicName))
         {
@@ -350,7 +397,149 @@ public class DialogueScriptCommandHandler : MonoBehaviour
         }
         musicAudioSource.volume = 0f;
     }
+
+    [YarnCommand("LogMainStoryCutsceneEnd")]
+    public static void LogMainStoryCutsceneEnd()
+    {
+        FirebaseEventLogger.LogCutsceneEnd(currentNode);
+        Debug.Log($"✅ Main Story Cutscene End Logged: {currentNode}");
+    }
+
+
+    [YarnCommand("EndSideStoryEvent")]
+public static void EndSideStoryEvent(string dayName)
+{
+    FirebaseEventLogger.LogSideStoryDayEnd(dayName);
+    Debug.Log($"✅ Side Story Day End Logged: {dayName}");
+    
+    // NewDayManager.currentEventIndex++;
+    // TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
 }
+
+
+
+
+
+// ✅ ADD THIS METHOD
+private static void UpdateAndSaveStats()
+{
+    Debug.Log("🏁 Game ended - Calculating and saving stats...");
+    
+    PlayerStatsTracker statsTracker = PlayerStatsTracker.Instance;
+    if (statsTracker == null) return;
+
+    var allMatchStats = statsTracker.GetAllStats();
+    if (allMatchStats == null) return;
+
+    int totalOuts = 0;
+    float totalRuns = 0;
+    float totalBalls = 0;
+
+    // Calculate stats
+    foreach (var matchStat in allMatchStats)
+    {
+        if (matchStat.gameplayNumber <= 0) continue;
+        totalOuts += matchStat.TotalOuts;
+
+        foreach (var attempt in matchStat.attempts)
+        {
+            totalRuns += attempt.runsScored;
+            totalBalls += attempt.ballsFaced;
+        }
+    }
+
+    // ✅ Calculate
+    float battingAverage = totalOuts > 0 ? totalRuns / totalOuts : totalRuns;
+    float strikeRate = totalBalls > 0 ? (totalRuns * 100f) / totalBalls : 0;
+
+    // ✅ Save to SaveData
+    GameManager.instance.currentSaveData.strikeRate = strikeRate;
+    GameManager.instance.currentSaveData.battingAverage = battingAverage;
+    Debug.Log($"✅ Stats saved to SaveData: SR={strikeRate:F1}, BA={battingAverage:F1}");
+
+    // ✅ Save to JSON
+    SaveSystem.SaveStatsToLocal();
+
+    // ✅ Save to Firestore
+    GameManager.instance.SaveStatsToFirestore(strikeRate, battingAverage);
+
+    Debug.Log("✅ Stats auto-saved to JSON and Firestore!");
+}
+
+[YarnCommand("LogGameplayEnd")]
+public static void LogGameplayEndCommand(string gameplayName)
+{
+    FirebaseEventLogger.LogGameplayEnd(gameplayName);
+    UpdateAndSaveGameStats();  
+}
+
+private static void UpdateAndSaveGameStats()
+{
+    Debug.Log("🏁 Game ended - Calculating and saving stats...");
+    
+    PlayerStatsTracker statsTracker = PlayerStatsTracker.Instance;
+    if (statsTracker == null) return;
+
+    var allMatchStats = statsTracker.GetAllStats();
+    if (allMatchStats == null) return;
+
+    int totalOuts = 0;
+    float totalRuns = 0;
+    float totalBalls = 0;
+
+    foreach (var matchStat in allMatchStats)
+    {
+        if (matchStat.gameplayNumber <= 0) continue;
+        totalOuts += matchStat.TotalOuts;
+
+        foreach (var attempt in matchStat.attempts)
+        {
+            totalRuns += attempt.runsScored;
+            totalBalls += attempt.ballsFaced;
+        }
+    }
+
+    float battingAverage = totalOuts > 0 ? totalRuns / totalOuts : totalRuns;
+    float strikeRate = totalBalls > 0 ? (totalRuns * 100f) / totalBalls : 0;
+
+    GameManager.instance.currentSaveData.strikeRate = strikeRate;
+    GameManager.instance.currentSaveData.battingAverage = battingAverage;
+    Debug.Log($"✅ Stats saved to SaveData: SR={strikeRate:F1}, BA={battingAverage:F1}");
+
+    SaveSystem.SaveStatsToLocal();
+    GameManager.instance.SaveStatsToFirestore(strikeRate, battingAverage);
+
+    Debug.Log("✅ Stats auto-saved to JSON and Firestore!");
+}
+
+[YarnFunction("IsButtonMode")]
+public static bool IsButtonMode()
+{
+    return GameFlowManager.isButtonMode;
+}
+
+[YarnCommand("EndButtonModeGameplay")]
+public static void EndButtonModeGameplay()
+{
+    Debug.Log("🎬 EndButtonModeGameplay - Returning to MainMenu");
+    
+    GameFlowManager.isButtonMode = false; // ✅ Reset here
+    
+    TransitionScreenManager.instance.LoadScene(SceneNames.MainMenu);
+    Debug.Log("✅ MainMenu load initiated");
+}
+
+
+[YarnFunction("DebugIsButtonMode")]
+public static string DebugIsButtonMode()
+{
+    bool isButtonMode = GameFlowManager.isButtonMode;
+    Debug.Log($"🔍 IsButtonMode check: {isButtonMode}");
+    return isButtonMode ? "TRUE" : "FALSE";
+}
+}
+
+
 
 public enum EmotionType
 {

@@ -18,7 +18,8 @@ Raju: The practice is showing Bhai.
 Ramu: Tomorrow will be tougher. Rest well tonight.
 
 <<HideAllCharacters>>
-<<EndEvent>>
+<<EndEvent>> 
+<<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>
 

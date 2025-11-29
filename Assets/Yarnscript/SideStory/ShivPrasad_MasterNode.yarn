@@ -102,7 +102,7 @@ Shiv Prasad: But never let it become more important than your education.
 
 <<HideAllCharacters>>
 Shiv's practical wisdom hangs heavy in the air. Raju understands the tension between dreams and security. His father's words carry genuine concern, yet they feel like barriers around what makes him feel most alive.
-
+<<EndSideStoryEvent "ShivPrasad_Day1">>
 <<set $ShivPrasad_Day = 2>>
 <<EndEvent true>>
 ===
@@ -201,6 +201,7 @@ Shiv Prasad: Prove your cricket makes you a better student.
 
 <<HideAllCharacters>>
 Shiv's challenge hangs in the air like a bridge between doubt and possibility. Raju recognizes his father has offered something precious - a genuine opportunity. The weight of expectation settles on his young shoulders.
+<<EndSideStoryEvent "ShivPrasad_Day2">>
 
 <<set $ShivPrasad_Day = 3>>
 <<EndEvent true>>
@@ -357,6 +358,7 @@ Shiv Prasad: It's about proving you understand priorities.
 
 <<HideAllCharacters>>
 Raju's dramatic reduction in cricket shows maturity that impresses Shiv. The sacrifice represents more than test prep - it tests character. His choice reflects understanding that responsibility sometimes requires temporary sacrifice of joy.
+<<EndSideStoryEvent "ShivPrasad_Day3a">>
 
 <<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
@@ -409,6 +411,7 @@ Shiv Prasad: Show me these cricket principles actually improving your performanc
 
 <<HideAllCharacters>>
 Raju's theory about transferable benefits enters uncharted territory. Sports and education might complement rather than compete. The challenge requires consciousness of learning processes most children never attempt.
+<<EndSideStoryEvent "ShivPrasad_Day3b">>
 
 <<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
@@ -455,6 +458,7 @@ Shiv Prasad: Not just good feelings, beta.
 
 <<HideAllCharacters>>
 Raju attempts harnessing cricket passion as fuel for academics. A delicate balance where sports enthusiasm must enhance rather than distract from math. The challenge requires consciousness of emotional states, transforming prep into an experiment.
+<<EndSideStoryEvent "ShivPrasad_Day3c">>
 
 <<set $ShivPrasad_Day = 4>>
 <<EndEvent true>>
@@ -505,6 +509,7 @@ Shiv Prasad: Your sacrifice shows real character, beta.
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: Perhaps you're more mature than I gave you credit for.
 
+<<EndSideStoryEvent "ShivPrasad_Day4a">>
 
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
@@ -542,6 +547,7 @@ Shiv Prasad: Perhaps there's more wisdom in your cricket than I realized.
 
 <<SetCharacterExpression "ShivPrasad" "Proud">>
 Shiv Prasad: You're showing me something I hadn't considered.
+<<EndSideStoryEvent "ShivPrasad_Day4b">>
 
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
@@ -585,6 +591,8 @@ Shiv Prasad: But energy without proper direction can be wasteful.
 
 <<SetCharacterExpression "ShivPrasad" "Serious">>
 Shiv Prasad: Show me directed results.
+
+<<EndSideStoryEvent "ShivPrasad_Day4c">>
 
 <<set $ShivPrasad_Day = 5>>
 <<EndEvent true>>
@@ -718,6 +726,7 @@ Raju: But I won't give up. I can't give up.
 
 <<HideAllCharacters>>
 As day six concludes, both acknowledge the complexity of balancing passion and responsibility. The conversation evolved from opposition to nuanced understanding. Raju's exhaustion revealed practical limitations, while his determination earned growing respect.
+<<EndSideStoryEvent "ShivPrasad_Day5">>
 
 <<set $ShivPrasad_Day = 6>>
 <<EndEvent true>>
@@ -879,6 +888,7 @@ Shiv Prasad: Every day you must show cricket makes you better at everything else
 
 <<HideAllCharacters>>
 As Raju prepares to leave for school, he understands the test represents more than academics - it's the culmination of proving passion and responsibility can coexist. The promise of cricket support creates both motivation and pressure. This marks the beginning, not the end.
+<<EndSideStoryEvent "ShivPrasad_Day6">>
 
 <<set $ShivPrasad_Complete = true>>
 <<jump Humility>>

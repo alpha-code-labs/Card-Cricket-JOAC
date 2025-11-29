@@ -18,6 +18,7 @@ public class WorldIntractionDialougeManager : MonoBehaviour
     }
     public void SkipFreeTime()
     {
+        FirebaseEventLogger.LogSkipButtonOnMap();
         YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("SkipFreeTime");
     }
     string YesChoice;
