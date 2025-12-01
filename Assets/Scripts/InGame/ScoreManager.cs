@@ -755,7 +755,7 @@ public class ScoreManager : MonoBehaviour
     
 
 
-    void SaveStatsToFirestore()
+void SaveStatsToFirestore()
 {
     FirestoreStatsManager firestoreStats = FirestoreStatsManager.GetInstance();
     if (firestoreStats != null && PlayerStatsTracker.Instance != null)
@@ -763,8 +763,21 @@ public class ScoreManager : MonoBehaviour
         var currentStats = PlayerStatsTracker.Instance.GetCurrentMatchStats();
         if (currentStats != null)
         {
+            // ✅ EXISTING: Save detailed stats to playerStats collection
             firestoreStats.SaveGameplayStatsToFirestore(currentStats);
             Debug.Log($"💾 Gameplay {currentGameplayConfig.gameplayNumber} stats saved to Firestore");
+            
+            // ✅ NEW: Upload to leaderboard_gameplay collection for ranking
+            FirestoreGameplayLeaderboardManager leaderboardManager = FirestoreGameplayLeaderboardManager.GetInstance();
+            if (leaderboardManager != null)
+            {
+                leaderboardManager.UploadGameplayStats(currentGameplayConfig.gameplayNumber, currentStats);
+                Debug.Log($"🏆 Gameplay {currentGameplayConfig.gameplayNumber} leaderboard stats uploaded");
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ FirestoreGameplayLeaderboardManager not found - leaderboard stats not uploaded");
+            }
         }
     }
 }

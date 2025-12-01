@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LeaderboardsPanelController : MonoBehaviour
 {
@@ -8,10 +9,16 @@ public class LeaderboardsPanelController : MonoBehaviour
     [SerializeField] Button closeButton;
     
     [Header("Block Background Clicks")]
-    [SerializeField] GameObject blockingPanel; // Full screen invisible panel to block clicks
+    [SerializeField] GameObject blockingPanel;
     
     [Header("Optional - Disable World Interactions")]
-    [SerializeField] GameObject worldInteractionsParent; // Parent of all GoTo objects (MapSprite)
+    [SerializeField] GameObject worldInteractionsParent;
+    
+    // ✅ NEW: No Internet Error Panel
+    [Header("Error Handling UI")]
+    [SerializeField] GameObject noInternetPanel;
+    [SerializeField] TextMeshProUGUI noInternetMessageText;
+    [SerializeField] Button noInternetCloseButton;
 
     private void Start()
     {
@@ -20,6 +27,10 @@ public class LeaderboardsPanelController : MonoBehaviour
 
         if (closeButton != null)
             closeButton.onClick.AddListener(ClosePanel);
+        
+        // ✅ NEW: No Internet close button
+        if (noInternetCloseButton != null)
+            noInternetCloseButton.onClick.AddListener(CloseNoInternetPanel);
 
         // Panel starts hidden
         if (leaderboardsPanel != null)
@@ -27,10 +38,29 @@ public class LeaderboardsPanelController : MonoBehaviour
             
         if (blockingPanel != null)
             blockingPanel.SetActive(false);
+        
+        // ✅ NEW: No Internet panel starts hidden
+        if (noInternetPanel != null)
+            noInternetPanel.SetActive(false);
+    }
+
+    // ✅ NEW: Check Internet Connection
+    private bool HasInternetConnection()
+    {
+        return Application.internetReachability != NetworkReachability.NotReachable;
     }
 
     public void OpenPanel()
     {
+        Debug.Log("🏆 Leaderboards button clicked...");
+        
+        // ✅ NEW: Check internet first
+        if (!HasInternetConnection())
+        {
+            ShowNoInternetPanel("No internet connection.\nLeaderboards cannot be loaded.");
+            return;
+        }
+        
         Debug.Log("🏆 Opening Leaderboards Panel...");
         
         // Enable blocking panel first
@@ -54,6 +84,42 @@ public class LeaderboardsPanelController : MonoBehaviour
         if (blockingPanel != null)
             blockingPanel.SetActive(false);
             
+        // Re-enable world interactions
+        EnableWorldInteractions();
+    }
+    
+    // ✅ NEW: Show No Internet Panel
+    private void ShowNoInternetPanel(string message)
+    {
+        Debug.Log($"📵 No Internet: {message}");
+        
+        // Enable blocking panel to prevent background clicks
+        if (blockingPanel != null)
+            blockingPanel.SetActive(true);
+        
+        if (noInternetPanel != null)
+        {
+            noInternetPanel.SetActive(true);
+            
+            if (noInternetMessageText != null)
+                noInternetMessageText.text = message;
+        }
+        
+        // Disable world interactions
+        DisableWorldInteractions();
+    }
+    
+    // ✅ NEW: Close No Internet Panel
+    private void CloseNoInternetPanel()
+    {
+        Debug.Log("❌ Closing No Internet Panel...");
+        
+        if (noInternetPanel != null)
+            noInternetPanel.SetActive(false);
+        
+        if (blockingPanel != null)
+            blockingPanel.SetActive(false);
+        
         // Re-enable world interactions
         EnableWorldInteractions();
     }
@@ -105,5 +171,9 @@ public class LeaderboardsPanelController : MonoBehaviour
 
         if (closeButton != null)
             closeButton.onClick.RemoveListener(ClosePanel);
+        
+        // ✅ NEW: Remove no internet button listener
+        if (noInternetCloseButton != null)
+            noInternetCloseButton.onClick.RemoveListener(CloseNoInternetPanel);
     }
 }

@@ -54,6 +54,9 @@ public class QuizManager : MonoBehaviour
     private bool isAnswering = false;
     private bool gameStarted = false;
 
+
+    private bool isTransitioning = false;
+
     // Retry Panel Variables
 
 
@@ -465,6 +468,12 @@ public class QuizManager : MonoBehaviour
 
     public void OnNextButtonPressed134()
     {
+           if (isTransitioning) return;
+    isTransitioning = true;
+    
+    // ✅ Disable button visually
+    if (nextButton != null)
+        nextButton.interactable = false;
         Debug.Log("Next button pressed - Transitioning to next Day Wise sequence");
         NewDayManager.EndEvent();
         

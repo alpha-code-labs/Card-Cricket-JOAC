@@ -133,6 +133,78 @@ MonoBehaviour:
       sixes: 0
       wonMatch: 0
       strikeRate: 100
+    - attemptNumber: 14
+      runsScored: 8
+      ballsFaced: 5
+      wicketsLost: 3
+      boundaries: 1
+      fours: 0
+      sixes: 1
+      wonMatch: 0
+      strikeRate: 160
+    - attemptNumber: 15
+      runsScored: 34
+      ballsFaced: 12
+      wicketsLost: 3
+      boundaries: 4
+      fours: 1
+      sixes: 3
+      wonMatch: 0
+      strikeRate: 283.33334
+    - attemptNumber: 16
+      runsScored: 9
+      ballsFaced: 4
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 225
+    - attemptNumber: 17
+      runsScored: 7
+      ballsFaced: 3
+      wicketsLost: 3
+      boundaries: 1
+      fours: 0
+      sixes: 1
+      wonMatch: 0
+      strikeRate: 233.33333
+    - attemptNumber: 18
+      runsScored: 19
+      ballsFaced: 8
+      wicketsLost: 3
+      boundaries: 2
+      fours: 0
+      sixes: 2
+      wonMatch: 0
+      strikeRate: 237.5
+    - attemptNumber: 19
+      runsScored: 0
+      ballsFaced: 2
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 0
+    - attemptNumber: 20
+      runsScored: 14
+      ballsFaced: 5
+      wicketsLost: 3
+      boundaries: 2
+      fours: 1
+      sixes: 1
+      wonMatch: 0
+      strikeRate: 280
+    - attemptNumber: 21
+      runsScored: 4
+      ballsFaced: 2
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 200
   - gameplayNumber: 9
     matchDate: 1990/04/15
     attempts:
@@ -223,6 +295,15 @@ MonoBehaviour:
     - attemptNumber: 6
       runsScored: 1
       ballsFaced: 1
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 100
+    - attemptNumber: 7
+      runsScored: 2
+      ballsFaced: 2
       wicketsLost: 3
       boundaries: 0
       fours: 0
@@ -370,3 +451,81 @@ MonoBehaviour:
       sixes: 0
       wonMatch: 0
       strikeRate: 133.33333
+    - attemptNumber: 4
+      runsScored: 21
+      ballsFaced: 13
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 161.53847
+  - gameplayNumber: 12
+    matchDate: 1990/03/05
+    attempts:
+    - attemptNumber: 1
+      runsScored: 0
+      ballsFaced: 2
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 0
+    - attemptNumber: 2
+      runsScored: 1
+      ballsFaced: 2
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 50
+  - gameplayNumber: 13
+    matchDate: 1990/03/06
+    attempts:
+    - attemptNumber: 1
+      runsScored: 16
+      ballsFaced: 7
+      wicketsLost: 3
+      boundaries: 3
+      fours: 3
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 228.57143
+  - gameplayNumber: 14
+    matchDate: 1990/03/07
+    attempts:
+    - attemptNumber: 1
+      runsScored: 8
+      ballsFaced: 5
+      wicketsLost: 3
+      boundaries: 1
+      fours: 1
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 160
+  - gameplayNumber: 4
+    matchDate: 1990/03/15
+    attempts:
+    - attemptNumber: 1
+      runsScored: 14
+      ballsFaced: 6
+      wicketsLost: 3
+      boundaries: 2
+      fours: 1
+      sixes: 1
+      wonMatch: 0
+      strikeRate: 233.33333
+  - gameplayNumber: 15
+    matchDate: 1990/03/28
+    attempts:
+    - attemptNumber: 1
+      runsScored: 33
+      ballsFaced: 13
+      wicketsLost: 3
+      boundaries: 4
+      fours: 4
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 253.84616
