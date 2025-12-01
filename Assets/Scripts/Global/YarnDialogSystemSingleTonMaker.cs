@@ -28,6 +28,8 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
 
         dialogueRunner.onDialogueComplete.AddListener(HandleDialogueComplete);
         dialogueRunner.onDialogueStart.AddListener(HandleDialogueStart);
+
+        UIBlocker.raycastTarget = false;
     }
     public DialogueRunner dialogueRunner;
     [YarnCommand("AutoAdvance")]
