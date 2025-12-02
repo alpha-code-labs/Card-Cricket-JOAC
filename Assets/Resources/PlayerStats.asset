@@ -205,6 +205,15 @@ MonoBehaviour:
       sixes: 0
       wonMatch: 0
       strikeRate: 200
+    - attemptNumber: 22
+      runsScored: 16
+      ballsFaced: 7
+      wicketsLost: 3
+      boundaries: 1
+      fours: 1
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 228.57143
   - gameplayNumber: 9
     matchDate: 1990/04/15
     attempts:
@@ -481,6 +490,15 @@ MonoBehaviour:
       sixes: 0
       wonMatch: 0
       strikeRate: 50
+    - attemptNumber: 3
+      runsScored: 5
+      ballsFaced: 5
+      wicketsLost: 3
+      boundaries: 0
+      fours: 0
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 100
   - gameplayNumber: 13
     matchDate: 1990/03/06
     attempts:
@@ -529,3 +547,15 @@ MonoBehaviour:
       sixes: 0
       wonMatch: 0
       strikeRate: 253.84616
+  - gameplayNumber: 5
+    matchDate: 1990/03/16
+    attempts:
+    - attemptNumber: 1
+      runsScored: 26
+      ballsFaced: 12
+      wicketsLost: 3
+      boundaries: 4
+      fours: 4
+      sixes: 0
+      wonMatch: 0
+      strikeRate: 216.66667
