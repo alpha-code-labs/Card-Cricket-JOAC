@@ -1,0 +1,85 @@
+﻿title: Short_Trailer
+---
+<<SetBGSprite black>>
+<<AutoAdvance true>>
+<<HideAllCharacters>>
+<<SetTypewriterSpeed 25>>
+// ------------------------------------------------------------
+// 00:00:00 — Opening Quote (Ambition Theme)
+// ------------------------------------------------------------
+Some dreams get crushed under the weight of resposiblity.
+Will you fight for yours?
+
+// ------------------------------------------------------------
+// 00:00:05 — Raju's Dream (Direct to Audience)
+// ------------------------------------------------------------
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression Raju Determined>>
+Raju: I will.
+Raju: And mine is to become a cricketer.
+
+// ------------------------------------------------------------
+// 00:00:09 — Immediate Conflict (Father–Son Confrontation)
+// ------------------------------------------------------------
+<<SetBGSprite HutInterior>>
+<<SetCharacterExpression ShivPrasad Furious>>
+Father: Cricket? Again?
+<<SetCharacterExpression ShivPrasad Angry>>
+Father: You're wasting your time!
+<<SetCharacterExpression ShivPrasad Serious>>
+Father: You can't handle both!
+Father: Get ninety percent… or forget cricket.
+
+// ------------------------------------------------------------
+// 00:00:16 — Support System Strengthens (Encouragement)
+// ------------------------------------------------------------
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression Ramu Serious>>
+Ramu: Don't break, Raju. You have talent. Keep pushing.
+
+// <<SetBGSprite PublicSchool>>
+// <<SetCharacterExpression Pinky Serious>>
+// Pinky: You say you want to be a champ—then study like one.
+
+// <<SetBGSprite HutInterior>>
+// <<SetCharacterExpression Kamla Serious>>
+// Kamla: Raju, dreams take effort. Help me first, then go practice.
+
+
+// ------------------------------------------------------------
+// 00:00:24 — Cricket Opportunity (Hope & Stakes)
+// ------------------------------------------------------------
+// <<SetBGSprite PrivateSchool>>
+// <<SetCharacterExpression SunitaMadam Disapproving>>
+// Sunita Madam: Prepare for your exams next month. No distractions.
+
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression CoachDev Serious>>
+Coach Dev: There's a tournament next month. Scouts will be watching.
+
+// ------------------------------------------------------------
+// 00:00:28 — Core Conflict (No Montage) just key visuals
+// ------------------------------------------------------------
+<<SetCharacterExpression Raju Neutral>>
+Narrator: Two paths. One boy.
+Narrator: Can he balance both dreams and duties?
+
+
+// ------------------------------------------------------------
+// 00:00:33 — Determination Moment (Hero Beat)
+// ------------------------------------------------------------
+<<SetBGSprite KohliwadaGround>>
+<<SetCharacterExpression Raju Determined>>
+Raju (monologue): I belive I have talent…
+Raju (monologue): But can I prove it — to him?
+Raju (monologue): Can I prove it to the world?
+
+// ------------------------------------------------------------
+// 00:00:40 — CTA (Title Card)
+// ------------------------------------------------------------
+<<HideAllCharacters>>
+<<SetBGSprite black>>
+GULLY CHAMP — Chapter 1 The First Innings
+Wishlist on Steam
+Coming Soon
+===

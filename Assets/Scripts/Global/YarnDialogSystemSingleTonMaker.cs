@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn;
 using Yarn.Unity;
 
 public class YarnDialogSystemSingleTonMaker : MonoBehaviour
@@ -24,6 +25,7 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     void Start()
     {
         dialogueRunner = GetComponent<DialogueRunner>();
+        linePresenter = dialogueRunner.GetComponentInChildren<LinePresenter>();
         dialogueRunner.LoadStateFromPersistentStorage("yarnSaveData.json");
 
         dialogueRunner.onDialogueComplete.AddListener(HandleDialogueComplete);
@@ -32,6 +34,7 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
         UIBlocker.raycastTarget = false;
     }
     public DialogueRunner dialogueRunner;
+    LinePresenter linePresenter;
     [YarnCommand("AutoAdvance")]
     public static void AutoAdvance(bool isAuto)
     {
@@ -41,6 +44,16 @@ public class YarnDialogSystemSingleTonMaker : MonoBehaviour
     public static void GoToMainMenu()
     {
         TransitionScreenManager.instance.LoadScene(SceneNames.MainMenu);
+    }
+    [YarnCommand("SetTypewriterSpeed")]
+    public static void SetTypewriterSpeed(int speed)
+    {
+        instance.linePresenter.typewriterEffectSpeed = speed;
+    }
+    [YarnCommand("ResetTypewriterSpeed")]
+    public static void ResetTypewriterSpeed()
+    {
+        instance.linePresenter.typewriterEffectSpeed = 60;//Default Speed
     }
     void HandleDialogueComplete()
     {
