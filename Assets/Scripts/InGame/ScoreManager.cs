@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using PimDeWitte.UnityMainThreadDispatcher;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -720,10 +721,14 @@ public class ScoreManager : MonoBehaviour
             // musicIntensity.SetExcitement(.5f);
             yield return new WaitForSeconds(5f);
         }
-        RecordMatchEndStats("Lost");
-        yield return new WaitForSeconds(3f);
-          // Save stats to Firestore
-         SaveStatsToFirestore();
+        else
+        {
+            RecordMatchEndStats("lost");
+            yield return new WaitForSeconds(3f);
+        }
+
+        // Save stats to Firestore
+        SaveStatsToFirestore();
         
         // Re-enable the main dialogue system
         enableRaycasterOnMainDialogueSystem();
@@ -731,56 +736,80 @@ public class ScoreManager : MonoBehaviour
         // Call NewDayManager to end the event
         // NewDayManager.EndEvent();
 
-  if (GameFlowManager.isButtonMode)
-    {
-        // Button mode: Show PostGameplay dialogue
-        if (YarnDialogSystemSingleTonMaker.instance != null && 
-            YarnDialogSystemSingleTonMaker.instance.dialogueRunner != null)
+        Time.timeScale = 0f;
+        //try showing ads before ending event
+        bool adShown = false;
+        if (InterstitialAdManager.Instance != null)
         {
-            Debug.Log("🎬 Starting PostGameplay Yarn script (Button Mode)");
-            YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("PostGameplay");
+            adShown = InterstitialAdManager.Instance.TryShow(
+                placement: "gameplay_complete",
+                onClosed: ContinueAfterAd
+            );
         }
-        else
+        
+        Debug.Log("Ad shown: " + adShown);
+
+        // If no ad shown (not ready/cooldown), continue immediately.
+        if (!adShown)
         {
-            Debug.LogError("Cannot start PostGameplay - YarnDialogSystemSingleTonMaker not ready");
+            Debug.Log("No ad shown, continuing immediately.");
+            ContinueAfterAd();
         }
+            
     }
-    else
+
+    void ContinueAfterAd()
     {
-        // Campaign mode: Normal event end
-        Debug.Log("📍 Ending event normally (Campaign Mode)");
-        NewDayManager.EndEvent();
-    }
+ 
+        UnityMainThreadDispatcher.Instance().Enqueue(() =>
+        {
+            Time.timeScale = 1f;
+            Debug.Log("Continuing after ad (if any).");
+
+            if (GameFlowManager.isButtonMode)
+            {
+                if (YarnDialogSystemSingleTonMaker.instance?.dialogueRunner != null)
+                {
+                    Debug.Log("🎬 Starting PostGameplay Yarn script");
+                    YarnDialogSystemSingleTonMaker.instance.dialogueRunner.StartDialogue("PostGameplay");
+                }
+            }
+            else
+            {
+                Debug.Log("📍 Ending event normally");
+                NewDayManager.EndEvent();
+            }
+        });
     }
     
 
 
-void SaveStatsToFirestore()
-{
-    FirestoreStatsManager firestoreStats = FirestoreStatsManager.GetInstance();
-    if (firestoreStats != null && PlayerStatsTracker.Instance != null)
+    void SaveStatsToFirestore()
     {
-        var currentStats = PlayerStatsTracker.Instance.GetCurrentMatchStats();
-        if (currentStats != null)
+        FirestoreStatsManager firestoreStats = FirestoreStatsManager.GetInstance();
+        if (firestoreStats != null && PlayerStatsTracker.Instance != null)
         {
-            // ✅ EXISTING: Save detailed stats to playerStats collection
-            firestoreStats.SaveGameplayStatsToFirestore(currentStats);
-            Debug.Log($"💾 Gameplay {currentGameplayConfig.gameplayNumber} stats saved to Firestore");
-            
-            // ✅ NEW: Upload to leaderboard_gameplay collection for ranking
-            FirestoreGameplayLeaderboardManager leaderboardManager = FirestoreGameplayLeaderboardManager.GetInstance();
-            if (leaderboardManager != null)
+            var currentStats = PlayerStatsTracker.Instance.GetCurrentMatchStats();
+            if (currentStats != null)
             {
-                leaderboardManager.UploadGameplayStats(currentGameplayConfig.gameplayNumber, currentStats);
-                Debug.Log($"🏆 Gameplay {currentGameplayConfig.gameplayNumber} leaderboard stats uploaded");
-            }
-            else
-            {
-                Debug.LogWarning("⚠️ FirestoreGameplayLeaderboardManager not found - leaderboard stats not uploaded");
+                // ✅ EXISTING: Save detailed stats to playerStats collection
+                firestoreStats.SaveGameplayStatsToFirestore(currentStats);
+                Debug.Log($"💾 Gameplay {currentGameplayConfig.gameplayNumber} stats saved to Firestore");
+                
+                // ✅ NEW: Upload to leaderboard_gameplay collection for ranking
+                FirestoreGameplayLeaderboardManager leaderboardManager = FirestoreGameplayLeaderboardManager.GetInstance();
+                if (leaderboardManager != null)
+                {
+                    leaderboardManager.UploadGameplayStats(currentGameplayConfig.gameplayNumber, currentStats);
+                    Debug.Log($"🏆 Gameplay {currentGameplayConfig.gameplayNumber} leaderboard stats uploaded");
+                }
+                else
+                {
+                    Debug.LogWarning("⚠️ FirestoreGameplayLeaderboardManager not found - leaderboard stats not uploaded");
+                }
             }
         }
     }
-}
     public void PlayExcelBattingStrategy(BattingStrategy battingStrategy, GameObject cardObject, Sprite cardSprite)
     {
         StartCoroutine(PlayCardSequence(battingStrategy, cardObject, cardSprite));

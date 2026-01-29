@@ -147,7 +147,7 @@ The encounter has crystallized his understanding of the barriers that separate h
 Simultaneously fueling his determination to find ways around or through those obstacles thus transforming humiliation into motivation.
 <<EndSideStoryEvent "SunitaMadam_Day1">>
 <<set $SunitaMadam_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: SunitaMadam_Day2
 tags: 
@@ -321,7 +321,7 @@ Sunita Madam's shift from dismissive hostility to cautious interest represents a
 That validates his belief that merit can transcend social prejudice when properly demonstrated.
 <<EndSideStoryEvent "SunitaMadam_Day2">>
 <<set $SunitaMadam_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: SunitaMadam_Day3
 ---
@@ -420,7 +420,7 @@ Through sophisticated literary analysis and critical thinking both teacher and s
 His choice to prove himself through intellectual rigor has validated his belief that merit can overcome social barriers when properly demonstrated and fairly evaluated.
 <<EndSideStoryEvent "SunitaMadam_Day3a">>
 <<set $SunitaMadam_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: SunitaMadam_Day3b
 tags:
@@ -492,7 +492,7 @@ About earning respect through consistent character.
 Transforming what could have been seen as servility into evidence of mature understanding about how relationships and trust develop over time.
 <<EndSideStoryEvent "SunitaMadam_Day3b">>
 <<set $SunitaMadam_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: SunitaMadam_Day3c
 tags:
@@ -564,7 +564,7 @@ His examples of past successes in diverse areas provide concrete evidence that h
 Reflect genuine capability rather than empty boasting.
 <<EndSideStoryEvent "SunitaMadam_Day3c">>
 <<set $SunitaMadam_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: SunitaMadam_Day4
 tags: 
@@ -705,7 +705,7 @@ While the promise of continued support validates Raju's belief that education ca
 
 <<EndSideStoryEvent "SunitaMadam_Day4">>
 <<set $SunitaMadam_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: SunitaMadam_Day5
@@ -872,7 +872,7 @@ While her willingness to take professional risk on his behalf creates both oppor
 His heart swells with gratitude and renewed purpose as he clutches the precious list.
 <<EndSideStoryEvent "SunitaMadam_Day5">>
 <<set $SunitaMadam_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: SunitaMadam_Day6

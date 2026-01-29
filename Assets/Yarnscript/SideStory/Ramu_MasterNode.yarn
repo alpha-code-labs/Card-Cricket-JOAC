@@ -171,7 +171,7 @@ Ramu: Further than expensive coaching ever could.
 As the first practice session concludes, both understand they've begun something significant - a serious training regimen that could determine if talent becomes skill.
 <<EndSideStoryEvent "Ramu_Day1">>
 <<set $Ramu_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day2
@@ -295,7 +295,7 @@ Ramu: That's why we need to be smarter about this.
 As they leave the ground, both understand the day has revealed truths about talent, risk, and the complex calculus of pursuing dreams from their disadvantaged position.
 <<EndSideStoryEvent "Ramu_Day2">>
 <<set $Ramu_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day3
@@ -395,7 +395,7 @@ Ramu: Despite my harsh words, or maybe because of them.
 Their conversation on the ground reveals the emotional complexity behind Ramu's seemingly harsh approach. Both gain deeper understanding of how fear and hope coexist.
 <<EndSideStoryEvent "Ramu_Day3">>
 <<set $Ramu_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day4
@@ -521,7 +521,7 @@ Ramu: Show me through your actions that you understand what this path demands.
     
     
 <<set $Ramu_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 
@@ -625,7 +625,7 @@ Ramu: And what gives me hope.
 As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 <<EndSideStoryEvent "Ramu_Day5a">>
 <<set $Ramu_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day5b
@@ -711,7 +711,7 @@ Ramu: And what gives me hope.
 As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 <<EndSideStoryEvent "Ramu_Day5b">>
 <<set $Ramu_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day5c
@@ -797,7 +797,7 @@ Ramu: And what gives me hope.
 As both brothers acknowledge the emotional complexity of pursuing dreams, their relationship reaches a new level of honesty and mutual understanding.
 <<EndSideStoryEvent "Ramu_Day5c">>
 <<set $Ramu_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day6
@@ -929,7 +929,7 @@ Ramu: Now we find out if you're serious about that tournament.
 As the grueling training session concludes, both understand they've crossed a threshold from casual practice to serious athletic development.
 <<EndSideStoryEvent "Ramu_Day6">>
 <<set $Ramu_Day = 7>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day7
@@ -1028,7 +1028,7 @@ Ramu: Now let's show them what six days of real practice looks like.
 As the seventh day's practice unfolds before an appreciative audience, their private journey has evolved into a community celebration.
 <<EndSideStoryEvent "Ramu_Day7">>
 <<set $Ramu_Day = 8>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Ramu_Day8

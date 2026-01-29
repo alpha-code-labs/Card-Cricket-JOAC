@@ -175,7 +175,7 @@ He confronts an uncomfortable question.
 Does pursuing cricket represent an escape from responsibilities or a legitimate path toward a meaningful future?
 <<EndSideStoryEvent "RamCharan_Day1">>
 <<set $RamCharan_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: RamCharan_Day2
 tags: 
@@ -356,7 +356,7 @@ His decision to embrace the most demanding path available reflects a growing und
 That true confidence comes not from avoiding difficult tests but from meeting them head-on.
 <<EndSideStoryEvent "RamCharan_Day2a">>
 <<set $RamCharan_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: RamCharan_Day2b
 tags:
@@ -417,7 +417,7 @@ His choice to seek integration rather than choosing sides reflects a wisdom beyo
 The future will reveal how intellectual discipline and passionate pursuits might actually enhance each other.
 <<EndSideStoryEvent "RamCharan_Day2b">>
 <<set $RamCharan_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: RamCharan_Day2c
 tags:
@@ -481,7 +481,7 @@ In ways that academic prowess alone might not have achieved.
 His choice of the service path reflects a maturity that recognizes respect must be earned through consistent action.
 <<EndSideStoryEvent "RamCharan_Day2c">>
 <<set $RamCharan_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: RamCharan_Day3
 ---

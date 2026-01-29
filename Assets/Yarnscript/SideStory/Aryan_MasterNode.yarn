@@ -113,7 +113,7 @@ A fire of determination burns away the initial sting of humiliation.
 The next encounter will be about much more than cricket. It's a clash between two worlds.
 <<EndSideStoryEvent "Aryan_Day1">>
 <<set $Aryan_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day2
 tags: 
@@ -215,7 +215,7 @@ Not just a game of cricket, but a public test of everything he believes.
 The anticipation mixes with anxiety. Failure in the upcoming match would validate every cruel assumption about his background.
 <<EndSideStoryEvent "Aryan_Day2">>
 <<set $Aryan_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day3
 tags: 
@@ -339,7 +339,7 @@ He feels the inner strength that comes from refusing to be drawn into petty verb
 His choice to remain dignified sets the stage for the coming confrontation to be decided by skill rather than bluster.
 <<EndSideStoryEvent "Aryan_Day3a">>
 <<set $Aryan_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day3b
 tags:
@@ -385,7 +385,7 @@ He feels the dangerous energy of someone pushed beyond his breaking point.
 The verbal battle has escalated the stakes. The match ahead will test pride, dignity, and fundamental beliefs about justice and worth.
 <<EndSideStoryEvent "Aryan_Day3b">>
 <<set $Aryan_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day3c
 tags:
@@ -435,7 +435,7 @@ His strategic approach reflects a mature understanding.
 Victory often belongs not to the most naturally gifted or best-equipped competitor, but to the one who combines preparation with intelligence.
 <<EndSideStoryEvent "Aryan_Day3c">>
 <<set $Aryan_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day4
 ---
@@ -501,7 +501,7 @@ He has discovered that inner peace can be more powerful than external bravado.
 His refusal to be baited into anger has revealed a strength of character that transcends superficial markers of social status.
 <<EndSideStoryEvent "Aryan_Day4a">>
 <<set $Aryan_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Aryan_Day4b
@@ -553,7 +553,7 @@ The cricket match has become something far more significant than either boy init
 A collision between two worldviews, two definitions of strength, and two competing claims about what truly matters.
 <<EndSideStoryEvent "Aryan_Day4b">>
 <<set $Aryan_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Aryan_Day4c
@@ -608,7 +608,7 @@ His strategic preparation represents a different kind of courage.
 This challenge will be a battle between different philosophies of competition and success.
 <<EndSideStoryEvent "Aryan_Day4c">>
 <<set $Aryan_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day5
 ---
@@ -709,7 +709,7 @@ The young man from the slums stands quietly in the center of the courtyard.
 The moment represents more than athletic victory - it is a fundamental challenge to assumptions about wealth and worth.
 <<EndSideStoryEvent "Aryan_Day5">>
 <<set $Aryan_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Aryan_Day6
 ---

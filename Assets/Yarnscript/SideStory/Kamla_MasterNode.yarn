@@ -160,7 +160,7 @@ Kamla's quiet strength in the face of casual cruelty has taught him something va
 About maintaining self-respect in a world that often offers little respect in return.
 <<EndSideStoryEvent "Kamla_Day1">>
 <<set $Kamla_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Kamla_Day2
 tags: 
@@ -302,7 +302,7 @@ Her promise of quiet but constant support provides a foundation of confidence.
 That will sustain him through future challenges and rejections.
 <<EndSideStoryEvent "Kamla_Day2">>
 <<set $Kamla_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Kamla_Day3
 tags: 
@@ -399,7 +399,7 @@ That transforms her view of his cricket dreams.
 From childish fantasy into potentially achievable goals built on solid moral foundation.
 <<EndSideStoryEvent "Kamla_Day3a">>
 <<set $Kamla_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Kamla_Day3b
 tags:
@@ -445,7 +445,7 @@ His ability to find energy for both responsibilities and dreams suggests charact
 That transforms her understanding of what his cricket ambitions might realistically achieve.
 <<EndSideStoryEvent "Kamla_Day3b">>
 <<set $Kamla_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Kamla_Day3c
 tags:
@@ -491,7 +491,7 @@ That his cricket goals might be grounded in realistic planning.
 Rather than wishful thinking.
 <<EndSideStoryEvent "Kamla_Day3c">>
 <<set $Kamla_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 title: Kamla_Day4
 ---
@@ -712,7 +712,7 @@ While Raju's consistent responsibility has earned him the chance to prove someth
 That athletic ambition and family duty can indeed strengthen each other.
 <<EndSideStoryEvent "Kamla_Day4">>
 <<set $Kamla_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Kamla_Day5
@@ -888,7 +888,7 @@ Transforming the leather ball into a sacred object.
 That carries the responsibility to honor both her belief and the family resources invested in his potential.
 <<EndSideStoryEvent "Kamla_Day5">>
 <<set $Kamla_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Kamla_Day6
@@ -1019,7 +1019,7 @@ In confidence and performance.
 Validating Kamla's decision to sacrifice immediate needs for long-term potential.
 <<EndSideStoryEvent "Kamla_Day6">>
 <<set $Kamla_Day = 7>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Kamla_Day7

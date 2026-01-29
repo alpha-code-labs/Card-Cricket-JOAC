@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using PimDeWitte.UnityMainThreadDispatcher;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -105,7 +106,7 @@ public class NewDayManager : MonoBehaviour
     }
 
 [YarnCommand("EndEvent")]
-public static void EndEvent(bool FreeTimeConsumed = false)
+public static void EndEvent(bool FreeTimeConsumed = false, bool isSideStory = false)
 {
     Debug.Log($"🎬 EndEvent Called - isButtonMode: {GameFlowManager.isButtonMode}");
     
@@ -130,12 +131,46 @@ public static void EndEvent(bool FreeTimeConsumed = false)
     }
     else
     {
-        // Full game flow
-        if (FreeTimeConsumed)
-            isEvening = true;
-        currentEventIndex++;
-        // ✅ CHANGE THIS
-        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+        //load ad if side story
+        
+        if(isSideStory && InterstitialAdManager.Instance != null)
+        {
+            Time.timeScale = 0f;
+            bool adShown = false;
+            adShown = InterstitialAdManager.Instance.TryShow(
+                placement: "sidestory_complete",
+                onClosed: () =>
+                {
+                    UnityMainThreadDispatcher.Instance().EnqueueAsync(() =>
+                    {
+                        Time.timeScale = 1f;
+                        if (FreeTimeConsumed)
+                            isEvening = true;
+                        currentEventIndex++;
+                        // ✅ CHANGE THIS
+                        TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+                    });
+                }
+            );
+
+            if (!adShown)
+            {
+                Time.timeScale = 1f;
+                if (FreeTimeConsumed)
+                    isEvening = true;
+                currentEventIndex++;
+                // ✅ CHANGE THIS
+                TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+            }
+        }
+        else
+        {
+            if (FreeTimeConsumed)
+                    isEvening = true;
+                currentEventIndex++;
+                // ✅ CHANGE THIS
+                TransitionScreenManager.instance.LoadScene(SceneNames.NewDayScene);
+        }
     }
 }
 

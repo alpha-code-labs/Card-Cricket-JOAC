@@ -149,7 +149,7 @@ The conversation winds down naturally, both having shared something meaningful. 
 As Raju walks away, he carries both Suresh's story and his warning about balancing passion with practicality.
 <<EndSideStoryEvent "Suresh_Day1">>
 <<set $Suresh_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Suresh_Day2
@@ -445,7 +445,7 @@ Something has shifted between them. What started as casual conversation has evol
 Their mentor-student relationship is solidifying. Suresh's abandoned dreams are finding new purpose through Raju's journey.
 <<EndSideStoryEvent "Suresh_Day2">>
 <<set $Suresh_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Suresh_Day3
@@ -596,7 +596,7 @@ Raju tucks the advice away carefully, already planning how to implement each sug
 Raju absorbs Suresh's practical advice about networking, tournaments, and documentation. This insider knowledge could save years of trial and error.
 <<EndSideStoryEvent "Suresh_Day3">>
 <<set $Suresh_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Suresh_Day4

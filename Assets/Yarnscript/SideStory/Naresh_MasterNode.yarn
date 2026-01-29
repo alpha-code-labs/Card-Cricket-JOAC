@@ -79,7 +79,7 @@ Raju: Maybe. But without dreams, there's no reason to work toward reality.
 As Raju walks away, he carries both disappointment and unexpected determination. The brief encounter has strengthened his resolve to find a way to overcome these obstacles.
 <<EndSideStoryEvent "Naresh_Day1">>
 <<set $Naresh_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Naresh_Day2
@@ -161,7 +161,7 @@ Raju: Even watching from outside teaches me more about cricket than I could lear
 As the second day concludes, Naresh shows the first signs of softening. Raju's analytical approach has distinguished him from other unauthorized visitors.
 <<EndSideStoryEvent "Naresh_Day2">>
 <<set $Naresh_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Naresh_Day3
@@ -417,7 +417,7 @@ Regardless of which path Raju chose, his sincerity and dedication have made a la
 As Naresh examines Raju's detailed observations, their relationship transforms from suspicious monitoring to genuine mentorship consideration. The notebook has provided concrete evidence of serious cricket study.
 <<EndSideStoryEvent "Naresh_Day3">>
 <<set $Naresh_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Naresh_Day4
@@ -489,7 +489,7 @@ Naresh: It's rare to find someone who studies cricket the way you do.
 As Naresh reveals his cricket background, both discover a profound connection based on shared passion. The revelation transforms their relationship into kindred spirits separated by circumstances rather than fundamental differences.
 <<EndSideStoryEvent "Naresh_Day4">>
 <<set $Naresh_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Naresh_Day5
@@ -570,7 +570,7 @@ Naresh: Things that no amount of watching can teach. But remember - this stays b
 As Naresh commits to informal cricket instruction, both understand they're embarking on something professionally risky yet representing unprecedented opportunity. The promise creates anticipation for the next session.
 <<EndSideStoryEvent "Naresh_Day5">>
 <<set $Naresh_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Naresh_Day6

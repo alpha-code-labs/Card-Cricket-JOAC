@@ -94,7 +94,7 @@ Pinky: You have to understand things well enough to explain them to yourself.
 As Raju packs his books, Pinky's clear explanation still resonates. He has encountered something rare - a peer who combines academic excellence with teaching ability. The brief interaction transformed his frustration into genuine comprehension.
 <<EndSideStoryEvent "Pinky_Day1">>
 <<set $Pinky_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day2
@@ -178,7 +178,7 @@ Pinky: Careful observation, logical analysis, systematic solutions.
 As their second tutoring session concludes, both students begin to recognize their academic collaboration serves purposes beyond mere homework. The partnership reveals intellectual compatibility and mutual respect that transcends different backgrounds and goals.
 <<EndSideStoryEvent "Pinky_Day2">>
 <<set $Pinky_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day3
@@ -353,7 +353,7 @@ Pinky: Excellence speaks louder than family expectations.
 As their collaborative approach takes shape through Pinky's systematic study schedules and Raju's enthusiastic adoption of organized learning, both discover their partnership generates better results than either could achieve individually. Outstanding exam performance might provide the evidence needed to convince skeptical families.
 <<EndSideStoryEvent "Pinky_Day3a">>
 <<set $Pinky_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day3b
@@ -420,7 +420,7 @@ Pinky: With your support, I feel strong enough to fight for my future.
 As their emotional support strengthens both students' resolve, the library transforms into a sanctuary where mutual encouragement provides psychological foundation to maintain hope. Raju's recognition of Pinky's teaching abilities and her acknowledgment of his genuine support create a partnership based on emotional understanding.
 <<EndSideStoryEvent "Pinky_Day3b">>
 <<set $Pinky_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day3c
@@ -487,7 +487,7 @@ Pinky: This is exactly how we'll overcome family limitations.
 As their collaborative study approach evolves into sophisticated partnership that enhances both students' academic performance through mutual support, Raju and Pinky discover working together produces better results than either could achieve alone. Their combined success provides concrete evidence that cooperation offers the most effective path toward overcoming barriers.
 <<EndSideStoryEvent "Pinky_Day3c">>
 <<set $Pinky_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day4
@@ -575,7 +575,7 @@ Pinky: Our partnership is actually making both of us stronger, not dividing our 
 As pre-exam pressure tests their partnership's resilience, their collaboration demonstrates that mutual assistance enhances rather than compromises individual performance. The application of systematic thinking to stress management and integration of cricket coaching wisdom with academic preparation show how cross-disciplinary insights strengthen their approach.
 <<EndSideStoryEvent "Pinky_Day4a">>
 <<set $Pinky_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day4b
@@ -655,7 +655,7 @@ Pinky: With your support, I feel ready to face whatever comes.
 As their emotional support system proves its value under intense pressure, both students discover that encouragement and belief create resilience that pure academic preparation alone cannot provide. Their partnership demonstrates how mutual support transforms individual struggle into shared strength.
 <<EndSideStoryEvent "Pinky_Day4b">>
 <<set $Pinky_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day4c
@@ -729,7 +729,7 @@ Pinky: We're demonstrating that mutual support enhances individual achievement r
 As their collaborative partnership proves its effectiveness under examination pressure, both students discover that strategic cooperation creates resilience and enhanced performance that neither could achieve through isolated effort. Their systematic approach to mutual support demonstrates how properly structured collaboration strengthens both participants.
 <<EndSideStoryEvent "Pinky_Day4c">>
 <<set $Pinky_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day5
@@ -814,7 +814,7 @@ Pinky: You've helped me understand that knowledge becomes more powerful when it'
 As their final preparation session concludes with both students having demonstrated remarkable academic progress, Raju and Pinky understand the upcoming exams represent more than academic evaluation - they embody tests of whether passion and responsibility can truly coexist when supported by strategic thinking and mutual collaboration.
 <<EndSideStoryEvent "Pinky_Day5">>
 <<set $Pinky_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: Pinky_Day6

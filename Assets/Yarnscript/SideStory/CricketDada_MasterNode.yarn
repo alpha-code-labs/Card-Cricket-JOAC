@@ -104,7 +104,7 @@ Cricket Dada: I would like that very much, beta. Very much indeed.
 As Raju leaves, Cricket Dada's stories echo in his mind. The elderly man's passion is inspiring, but his loneliness is concerning.
 <<EndSideStoryEvent "CricketDada_Day1">>
 <<set $CricketDada_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: CricketDada_Day2
@@ -210,7 +210,7 @@ Cricket Dada: I'll be waiting, beta. I'll be waiting.
 Raju's notebook fills with cricket wisdom. Cricket Dada has become more than a storyteller - he's becoming a mentor.
 <<EndSideStoryEvent "CricketDada_Day2">>
 <<set $CricketDada_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: CricketDada_Day3
@@ -442,7 +442,7 @@ Cricket Dada: Beta, you've given this old man hope. Real hope.
 Raju leaves carrying the weight of Cricket Dada's revelation and hope that his advice might bridge fifteen years of separation.
 <<EndSideStoryEvent "CricketDada_Day3">>
 <<set $CricketDada_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: CricketDada_Day4

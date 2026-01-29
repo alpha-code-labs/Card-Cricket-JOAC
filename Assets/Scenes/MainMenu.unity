@@ -2820,6 +2820,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352772231}
   m_CullTransparentMesh: 1
+--- !u!1 &362390121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362390123}
+  - component: {fileID: 362390124}
+  m_Layer: 0
+  m_Name: MobileAds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362390123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362390121}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6484175, y: -0.91252285, z: 6.2454214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &362390124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362390121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde95f0c53ecafd40b29ab5bf6591e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidAdUnitId: ca-app-pub-8084077036098985/5556465384
+  iosAdUnitId: ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx
+  cooldownSeconds: 420
+  maxInterstitialsPerSession: 20
+  autoLoad: 1
+  verboseLogging: 1
 --- !u!1 &369563073
 GameObject:
   m_ObjectHideFlags: 0
@@ -13774,6 +13824,50 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1550657600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550657602}
+  - component: {fileID: 1550657601}
+  m_Layer: 0
+  m_Name: MainThreadDispatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1550657601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550657600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795b729cfb9de4a489c8312c16da9b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1550657602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550657600}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6484175, y: -0.91252285, z: 6.2454214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1561455488 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8803042505532210507, guid: 4efd33a37c1e74c4cbb8a63d7ccbfbb2, type: 3}
@@ -15998,6 +16092,10 @@ PrefabInstance:
     - target: {fileID: 3064821880958821022, guid: caad9ac8093f6f4418d08a1b684854ab, type: 3}
       propertyPath: m_Name
       value: LeaderBoardBattingAvgepanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835957756392769184, guid: caad9ac8093f6f4418d08a1b684854ab, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 7156252710947722774, guid: caad9ac8093f6f4418d08a1b684854ab, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20355,6 +20453,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 659040018}
+    - target: {fileID: 6079954248589348906, guid: 3f246071499d2f740ab881b27e9fa7dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00024414062
+      objectReference: {fileID: 0}
     - target: {fileID: 8684448392598222239, guid: 3f246071499d2f740ab881b27e9fa7dc, type: 3}
       propertyPath: m_Name
       value: LeaderBoardStrikepanel
@@ -21670,6 +21772,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 484104840}
     m_Modifications:
+    - target: {fileID: 4706673519888920367, guid: 4efd33a37c1e74c4cbb8a63d7ccbfbb2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -76.16846
+      objectReference: {fileID: 0}
     - target: {fileID: 8128457680767780738, guid: 4efd33a37c1e74c4cbb8a63d7ccbfbb2, type: 3}
       propertyPath: m_Name
       value: ErrorHandling
@@ -22128,7 +22234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3202522331972790519, guid: 031588599e195cc4c87dda45b5cf1928, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.2988
+      value: -7.298828
       objectReference: {fileID: 0}
     - target: {fileID: 4738110850069813161, guid: 031588599e195cc4c87dda45b5cf1928, type: 3}
       propertyPath: m_Type
@@ -22244,3 +22350,5 @@ SceneRoots:
   - {fileID: 40797755}
   - {fileID: 277813258}
   - {fileID: 562662810}
+  - {fileID: 362390123}
+  - {fileID: 1550657602}

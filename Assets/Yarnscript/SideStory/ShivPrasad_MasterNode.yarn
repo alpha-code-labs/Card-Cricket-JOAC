@@ -104,7 +104,7 @@ Shiv Prasad: But never let it become more important than your education.
 Shiv's practical wisdom hangs heavy in the air. Raju understands the tension between dreams and security. His father's words carry genuine concern, yet they feel like barriers around what makes him feel most alive.
 <<EndSideStoryEvent "ShivPrasad_Day1">>
 <<set $ShivPrasad_Day = 2>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day2
@@ -204,7 +204,7 @@ Shiv's challenge hangs in the air like a bridge between doubt and possibility. R
 <<EndSideStoryEvent "ShivPrasad_Day2">>
 
 <<set $ShivPrasad_Day = 3>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day3
@@ -361,7 +361,7 @@ Raju's dramatic reduction in cricket shows maturity that impresses Shiv. The sac
 <<EndSideStoryEvent "ShivPrasad_Day3a">>
 
 <<set $ShivPrasad_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day3b
@@ -414,7 +414,7 @@ Raju's theory about transferable benefits enters uncharted territory. Sports and
 <<EndSideStoryEvent "ShivPrasad_Day3b">>
 
 <<set $ShivPrasad_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day3c
@@ -461,7 +461,7 @@ Raju attempts harnessing cricket passion as fuel for academics. A delicate balan
 <<EndSideStoryEvent "ShivPrasad_Day3c">>
 
 <<set $ShivPrasad_Day = 4>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day4
@@ -512,7 +512,7 @@ Shiv Prasad: Perhaps you're more mature than I gave you credit for.
 <<EndSideStoryEvent "ShivPrasad_Day4a">>
 
 <<set $ShivPrasad_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day4b
@@ -550,7 +550,7 @@ Shiv Prasad: You're showing me something I hadn't considered.
 <<EndSideStoryEvent "ShivPrasad_Day4b">>
 
 <<set $ShivPrasad_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day4c
@@ -595,7 +595,7 @@ Shiv Prasad: Show me directed results.
 <<EndSideStoryEvent "ShivPrasad_Day4c">>
 
 <<set $ShivPrasad_Day = 5>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day5
@@ -729,7 +729,7 @@ As day six concludes, both acknowledge the complexity of balancing passion and r
 <<EndSideStoryEvent "ShivPrasad_Day5">>
 
 <<set $ShivPrasad_Day = 6>>
-<<EndEvent true>>
+<<EndEvent true true>>
 ===
 
 title: ShivPrasad_Day6
