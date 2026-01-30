@@ -122,7 +122,7 @@ Raju: Understood—I accept.
 Shiv Prasad: Now let's make the home quiet enough for the answers to hear us.
 
 <<HideAllCharacters>>
-<<EndEvent>> 
+<<EndEvent false true>> 
 <<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>

@@ -98,7 +98,7 @@ Coach Dev: Then we practice under the stand or go home early—safety, school, a
 Coach Dev: Enough planning—come here, all of you, this is the part I'm not strict about.
 
 <<HideAllCharacters>>
-<<EndEvent>> 
+<<EndEvent false true>> 
 <<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>

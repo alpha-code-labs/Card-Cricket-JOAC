@@ -109,7 +109,7 @@ Ramu: Go on, Captain. Make the ground remember you without making a noise about 
 Raju: Reporting.
 
 <<HideAllCharacters>>
-<<EndEvent>> 
+<<EndEvent false true>> 
 <<LogMainStoryCutsceneEnd>>
 <<StopBackgroundMusic>>
 <<wait 3>>

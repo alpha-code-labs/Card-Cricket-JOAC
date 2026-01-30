@@ -236,7 +236,7 @@ Raju: The bat. And also… you.
 
 <<HideAllCharacters>>
 <<LogMainStoryCutsceneEnd>>
-<<EndEvent>> 
+<<EndEvent false true>> 
 <<StopBackgroundMusic>>
 <<wait 3>>
 

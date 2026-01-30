@@ -106,7 +106,7 @@ public class NewDayManager : MonoBehaviour
     }
 
 [YarnCommand("EndEvent")]
-public static void EndEvent(bool FreeTimeConsumed = false, bool isSideStory = false)
+public static void EndEvent(bool FreeTimeConsumed = false, bool shouldShowAd = false)
 {
     Debug.Log($"🎬 EndEvent Called - isButtonMode: {GameFlowManager.isButtonMode}");
     
@@ -133,7 +133,7 @@ public static void EndEvent(bool FreeTimeConsumed = false, bool isSideStory = fa
     {
         //load ad if side story
         
-        if(isSideStory && InterstitialAdManager.Instance != null)
+        if(shouldShowAd && InterstitialAdManager.Instance != null)
         {
             Time.timeScale = 0f;
             bool adShown = false;
